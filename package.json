@@ -1,0 +1,29 @@
+{
+  "name": "shoptrade-2.0",
+  "version": "1.0.0",
+  "description": "Shoptrade website based on Shopify 2.0",
+  "main": "index.js",
+  "scripts": {
+    "watch-scss": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shop-trade/shoptrade-2.0.git"
+  },
+  "keywords": [
+    "shoptrade-website",
+    "shoptrade-marketing-website"
+  ],
+  "author": "shoptrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shop-trade/shoptrade-2.0/issues"
+  },
+  "homepage": "https://github.com/shop-trade/shoptrade-2.0#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  }
+}
