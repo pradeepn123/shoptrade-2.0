@@ -1,0 +1,80 @@
+/* Marquee styles */
+.marquee {
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    background: var(--clr-7f);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* Pause animation when reduced-motion is set */
+@media (prefers-reduced-motion: reduce) {
+    .marquee__content {
+        animation-play-state: paused !important;
+    }
+}
+
+/* Enable animation */
+.enable-animation .marquee__content {
+    animation: scroll 10s linear infinite;
+}
+
+
+
+/* Pause on hover */
+.marquee--hover-pause:hover .marquee__content {
+    animation-play-state: paused;
+}
+
+.Marquee-tag {
+    display: flex;
+    align-items: center;
+    width: 460px;
+
+    // background: rgba(255, 255, 255, .1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-right: 40px;
+    }
+}
+
+.homeMarque {
+    background-color: var(--COLOR-BLACK);
+}
+
+
+.image01 {
+    width: 34.28px;
+    height: 59px;
+}
+
+
+.image02 {
+    width: 198px;
+    height: 62px;
+}

@@ -1,0 +1,51 @@
+.ourNumbers {
+    padding-top: 60px;
+
+    &__wrp {
+        max-width: 580px;
+        width: 100%;
+    }
+
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+        padding: 0;
+        margin-top: 60px;
+        list-style: none;
+
+    }
+
+    &__cardItem {
+        text-align: center;
+        width: calc(100%/3);
+        padding: 130px 80px;
+        background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+        mix-blend-mode: darken;
+
+        &:not(:last-child) {
+            border-right: 1px solid var(--COLOR-BLACK);
+        }
+
+    }
+
+    &__cardbody {
+        padding: 18px 48px;
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 20px;
+    }
+
+    &__count {
+        font-family: Minecraft;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        color: var(--COLOR-BLACK);
+        margin-bottom: 16px;
+
+    }
+}

@@ -1,0 +1,40 @@
+<section class="vedio">
+  <div class="container">
+    <div class="vedio__wrp">
+      <div class="vedio__container">
+
+        <img class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/>
+        <a href="" class="play-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icon.svg?v=1665507277"/>
+        </a>
+        <div class="vedio__info">
+          <h2 class="h1-main clr-w m-0">{{ section.settings.vedioHeading }}
+          </h2>
+          <P class="clr-w m-0">{{ section.settings.vedioSubHeading }}
+          </P>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "vedio section",
+    "settings": [
+      {
+        "id": "vedioHeading",
+        "label": "Headding text",
+        "type": "text"
+      }, {
+        "id": "vedioSubHeading",
+        "label": "Headding sub text",
+        "type": "text"
+      }, {
+        "id": "vedioThumbnailImage",
+        "label": " Thumbnail Image",
+        "type": "image_picker"
+      }
+    ]
+  }
+{% endschema %}}

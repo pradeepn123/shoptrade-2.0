@@ -1,0 +1,104 @@
+.uiDesign {
+    &__item {
+        width: 206px;
+        height: 149px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid var(--COLOR-BLACK);
+
+        &:not(:last-child) {
+            border-right: 1px solid var(--COLOR-BLACK);
+        }
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        &.active {
+            background-color: var(--COLOR-PRIMARY);
+            transition: .5S ease ALL;
+            cursor: pointer;
+        }
+    }
+
+    .left-icons {
+        .uiDesign__item {
+            border-right: 1px solid var(--COLOR-BLACK);
+            border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+    }
+
+    .uiDesingDrwa {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 130px;
+    }
+
+    .right-icons {
+        .uiDesign__item {
+            border-left: 1px solid var(--COLOR-BLACK);
+            border-bottom: 1px solid var(--COLOR-BLACK);
+            border-right: 0;
+        }
+    }
+
+    .uiText {
+        // width: 100%;
+    }
+}
+
+
+//TEXT ANIMATION
+
+.UImainText {
+    max-width: 790px;
+    width: 100%;
+    padding: 40px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 14px;
+    text-align: center;
+    display: none;
+    &.active {
+        display: block;
+    }
+    h2 {
+
+        font-family: 'Minecraft';
+        position: relative;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin: 0;
+       
+        // padding: 10px 0;
+    }
+
+    h2 {
+        animation-name: reveal-colored;
+        animation-duration: 4s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 40px;
+    }
+
+    @keyframes reveal-colored {
+        0% {
+            max-width: 0;
+        }
+
+        100% {
+            max-width: 100%;
+        }
+    }
+}

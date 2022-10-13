@@ -1,3 +1,110 @@
-h1{
-    color: orange;
+
+
+@font-face {
+    font-family: Minecraft;
+    src: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Minecraft_1.ttf?v=1665556964");
+}
+
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+.h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 108%;
+    letter-spacing: 0.01em;
+    color: var(--COLOR-BLACK);
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+.h1-main {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: var(--COLOR-BLACK);
+}
+
+.fnt-700 {
+    font-weight: 700;
+}
+.fnt-600 {
+    font-weight: 600;
+}
+
+//margin 
+
+.m-0 {
+    margin: 0;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+//width
+
+.w-100 {
+    width: 100%;
+}
+
+//color class
+
+.clr-w {
+    color: var(--COLOR-WHITE);
+}
+
+.clr-b {
+    color: var(--COLOR-BLACK);
+}
+//fonts
+
+.fnt-20 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+
+
+}
+
+.swiper-container {
+    overflow: hidden;
 }
