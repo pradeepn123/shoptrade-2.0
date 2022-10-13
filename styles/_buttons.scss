@@ -57,5 +57,45 @@
         }
     }
 
-  
+
+}
+
+
+.btn-contact {
+    // width: 85px;
+    padding: 16px 8px 24px;
+
+    display: inline-block;
+    // height: 58px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/contact-btn.png?v=1665646309");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease all;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 105%;
+        height: 90%;
+        bottom: 12PX;
+        left: 0;
+        background-color: var(--COLOR-PRIMARY);
+        border: 1px solid var(--COLOR-BLACK);
+        border-radius: 10px 6px 11px;
+        z-index: -1;
+        transition: .5s ease all;
+    }
+    
+    &:hover {
+        transition: .5s ease all;
+
+        padding: 17px 9px 25px;
+        &::after {
+            width: 100%;
+            height: 80%;
+            transition: .5s ease all;
+
+        }
+    }
 }

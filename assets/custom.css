@@ -97,6 +97,15 @@ body {
   color: var(--COLOR-BLACK);
 }
 
+.fnt-16 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
 .fnt-20 {
   font-weight: 400;
   font-size: 20px;
@@ -106,6 +115,12 @@ body {
 
 .swiper-container {
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none;
+  }
 }
 
 .homeBanner {
@@ -194,6 +209,38 @@ body {
   height: 100%;
   width: 100%;
   transform-origin: left;
+  transition: 0.5s ease all;
+}
+
+.btn-contact {
+  padding: 16px 8px 24px;
+  display: inline-block;
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/contact-btn.png?v=1665646309");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: 0.5s ease all;
+}
+.btn-contact::after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 90%;
+  bottom: 12PX;
+  left: 0;
+  background-color: var(--COLOR-PRIMARY);
+  border: 1px solid var(--COLOR-BLACK);
+  border-radius: 10px 6px 11px;
+  z-index: -1;
+  transition: 0.5s ease all;
+}
+.btn-contact:hover {
+  transition: 0.5s ease all;
+  padding: 17px 9px 25px;
+}
+.btn-contact:hover::after {
+  width: 100%;
+  height: 80%;
   transition: 0.5s ease all;
 }
 
@@ -434,6 +481,28 @@ body {
 
 .newsletter {
   padding: 120px 0;
+  position: relative;
+}
+.newsletter::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(-80%, -50%);
+  width: 394px;
+  height: 394px;
+  background: #FF7121;
+  filter: blur(94.5px);
+}
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(80%, -50%);
+  width: 394px;
+  height: 394px;
+  background: #FF7121;
+  filter: blur(94.5px);
 }
 .newsletter__wrp {
   max-width: 759px;
@@ -503,6 +572,21 @@ body {
   border-right: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
 }
+.testimonials__slide:not(:last-child) .testimonials__head {
+  position: relative;
+}
+.testimonials__slide:not(:last-child) .testimonials__head::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 70px;
+  background-size: 100%;
+  transform: translate(50%, 50%);
+}
 .testimonials__head {
   padding: 0 40px;
   border-bottom: 1px solid var(--COLOR-BLACK);
@@ -525,6 +609,9 @@ body {
 .testimonials__footer .designation {
   font-size: 14px;
   color: var(--COLOR-BLACK);
+}
+.testimonials__wrp {
+  border-bottom: 1px solid var(--COLOR-BLACK);
 }
 .testimonials__profile {
   display: flex;
@@ -569,6 +656,18 @@ body {
   padding: 100px;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.testimonials__profileDescription::after {
+  content: "";
+  position: absolute;
+  background: #FF7121;
+  filter: blur(94.5px);
+  width: 394px;
+  height: 394px;
+  right: -30%;
+  top: -30%;
 }
 .testimonials__profileDescription h3 {
   font-weight: 700;
@@ -626,6 +725,31 @@ body {
   align-items: center;
   justify-content: center;
   padding: 130px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--COLOR-BLACK);
+}
+.uiDesign .uiDesingDrwa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 334px;
+  height: 315px;
+  background: #FF7121;
+  filter: blur(124px);
+}
+.uiDesign .uiDesingDrwa::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  width: 334px;
+  height: 315px;
+  background: #FF7121;
+  filter: blur(124px);
 }
 .uiDesign .right-icons .uiDesign__item {
   border-left: 1px solid var(--COLOR-BLACK);
@@ -671,4 +795,132 @@ body {
   100% {
     max-width: 100%;
   }
+}
+
+.shoptrade {
+  padding: 36px 0;
+}
+.shoptrade__nav-list {
+  display: flex;
+  list-style-type: none;
+}
+.shoptrade .nav-item {
+  margin-left: 40px;
+}
+@media (min-width: 992px) {
+  .shoptrade .nav-item:last-child {
+    display: none;
+  }
+}
+.shoptrade .nav-link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .js-hamberger {
+    display: none;
+  }
+}
+
+.shopify-footer__Head {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.shopify-footer__links {
+  padding: 36px 16px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  flex-basis: 20%;
+}
+.shopify-footer__links:not(:last-child) {
+  border-right: 1px solid var(--COLOR-BLACK);
+}
+.shopify-footer__links a {
+  color: var(--COLOR-BLACK) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+.shopify-footer__Content {
+  display: flex;
+}
+.shopify-footer__Content > div:not(:last-child) {
+  border-right: 1px solid var(--COLOR-BLACK);
+}
+.shopify-footer__block {
+  padding: 35px 55px 55px;
+}
+.shopify-footer__blockList {
+  margin-top: 48px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.shopify-footer__blockitem {
+  display: flex;
+  align-items: center;
+}
+.shopify-footer__blockitem:not(:last-child) {
+  margin-bottom: 24px;
+}
+.shopify-footer__blockImage {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+.shopify-footer__blockText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.08em;
+  color: #000000;
+  margin: 0;
+  margin-left: 15px;
+}
+.shopify-footer .social-icons {
+  padding: 35px 54px;
+  border-bottom: 1px solid var(--COLOR-BLACK);
+}
+.shopify-footer .social-icons a {
+  display: inline-block;
+}
+.shopify-footer .social-icons a:not(:last-child) {
+  margin-right: 26px;
+}
+.shopify-footer .social-icons__wrp {
+  margin-top: 26px;
+}
+.shopify-footer .rating {
+  padding: 54px 50px 54px;
+}
+
+.footerBottom {
+  padding: 24px 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--COLOR-BLACK);
+}
+.footerBottom__links a {
+  display: inline-block;
+}
+.footerBottom__links a:not(:last-child) {
+  margin-right: 26px;
 }

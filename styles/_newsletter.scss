@@ -1,5 +1,27 @@
 .newsletter {
     padding: 120px 0;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(-80%,-50%);
+        width: 394px;
+        height: 394px;
+        background: #FF7121;
+        filter: blur(94.5px);
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(80%,-50%);
+        width: 394px;
+        height: 394px;
+        background: #FF7121;
+        filter: blur(94.5px);
+    }
 
     &__wrp {
         max-width: 759px;

@@ -46,10 +46,10 @@
     {{ content_for_header }}
 
     {%- liquid
-               assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-               assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-               assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-             %}
+                assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+                assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+                assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+              %}
 
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -343,7 +343,9 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% section 'announcement-bar' %}
+    {%- comment -%}
+      {% section 'announcement-bar' %}
+    {%- endcomment -%}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
