@@ -1,0 +1,145 @@
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonials__header">
+      <h2 class="h1-main">Testimonial</h2>
+      <div class="slider-arrow">
+        <div class="js-arrow-left arrow-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-left.png?v=1665638248"/>
+        </div>
+        <div class="js-arrow-right arrow-icon">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-right.png?v=1665638248"/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="testimonials__wrp">
+    <div class="swiper-container js-testimonial-slider">
+
+      <ul class="swiper-wrapper testimonials__slider">
+
+        {% for block in section.blocks %}
+
+          <li class="testimonials__slide swiper-slide">
+            <div class="testimonials__head">
+              <div>
+                <img src="{{ block.settings.sliderImage | image_url }} "/>
+
+              </div>
+            </div>
+            <div class="testimonials__body">
+              <p class="fnt-600 clr-b m-0">
+                {{ block.settings.sliderText }}
+              </p>
+
+              <div class="testimonials__footer">
+                <h5 class="m-0">
+                  {{ block.settings.name }}
+                </h5>
+                <p class="designation m-0">
+                  {{ block.settings.designation }}
+                </p>
+              </div>
+            </div>
+          </li>
+
+        {% endfor %}
+
+
+
+      </ul>
+      {% assign profileType = section.blocks | where: 'type', 'profileType' %}
+      {% for block in profileType %}
+        <div class="testimonials__profile">
+          <ul class="testimonials__profileList">
+            <li class="testimonials__profileItem">
+              <div class="testimonials__profileCard">
+                <img src="{{ block.settings.profileImage | image_url }}"/>
+                <div class="testimonials__details">
+                  <h5 class="testimonials__profileName">
+                    {{ block.settings.profileName }}
+                  </h5>
+                  <p class="testimonials__profileDesignation">
+                    {{ block.settings.profileDesignation }}
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="testimonials__profileDescription ">
+            <h3 class="h2">
+              {{ block.settings.ProfileDescription }}
+            </h3>
+          </div>
+
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+
+  {
+    "name": "testimonials",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "sliderr items",
+        "type": "sliderType",
+        "settings": [
+          {
+            "id": "sliderImage",
+            "label": "slider Logo",
+            "type": "image_picker"
+          }, {
+            "id": "sliderText",
+            "label": "slider main text",
+            "type": "text"
+          }, {
+            "id": "name",
+            "label": "name",
+            "type": "text"
+          }, {
+            "id": "designation",
+            "label": "Designation",
+            "type": "text"
+          }
+        ]
+      }, {
+        "name": "profile section",
+        "type": "profileType",
+        "settings": [
+          {
+            "id": "profileImage",
+            "label": "profile Logo",
+            "type": "image_picker"
+          }, {
+            "id": "profileName",
+            "label": "Profile Name",
+            "type": "text"
+          }, {
+            "id": "profileDesignation",
+            "label": "Profile Designation",
+            "type": "text"
+          }, {
+            "id": "ProfileDescription",
+            "label": "profile info",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+
+
+
+  }
+{% endschema %}}}}}}}}}}}}

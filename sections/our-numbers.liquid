@@ -1,0 +1,68 @@
+<section class="ourNumbers">
+  <div class="container">
+    <div class="ourNumbers__wrp">
+      <h2 class="h1-main m-0">{{ section.settings.heading }}
+      </h2>
+      <p>
+        {{ section.settings.Subheading }}
+      </p>
+    </div>
+  </div>
+
+  <ul class="ourNumbers__cards">
+
+    {% for block in section.blocks %}
+      <li class="ourNumbers__cardItem">
+        <div class="ourNumbers__cardbody">
+          <h3 class="ourNumbers__count">
+            {{ block.settings.cardNumber }}
+          </h3>
+          <p class="fnt-20 clr-b">{{ block.settings.countText }}
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+
+{% schema %}
+  {
+    "name": "our numbers section",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text",
+        "default": "Our Numbers"
+      }, {
+        "id": "Subheading",
+        "label": "Sub Heading",
+        "type": "text",
+        "default": "We’re confident that numbers can speak louder when it comes to the quality of work we’ve provided so far."
+      }
+    ],
+    "blocks": [
+
+      {
+        "name": "Count Block",
+        "type": "countblock",
+        "settings": [
+          {
+            "id": "cardNumber",
+            "label": "Number Count",
+            "type": "text"
+          }, {
+            "id": "countText",
+            "label": "Count Text",
+            "type": "text"
+          }
+        ]
+
+      }
+
+
+
+    ]
+  }
+{% endschema %}}

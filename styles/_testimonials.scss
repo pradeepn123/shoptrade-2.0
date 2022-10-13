@@ -1,0 +1,132 @@
+.testimonials {
+    &__slider {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    &__slide {
+        width: 512px;
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-right: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+
+    }
+
+    &__head {
+        padding: 0 40px;
+        border-bottom: 1px solid var(--COLOR-BLACK);
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__body {
+        padding: 50px 80px 60px 40px;
+    }
+
+    &__footer {
+        margin-top: 60px;
+
+        h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 158%;
+            letter-spacing: 0.03em;
+        }
+
+        .designation {
+            font-size: 14px;
+            color: var(--COLOR-BLACK);
+        }
+    }
+
+    &__profile {
+        display: flex;
+        flex: 1;
+    }
+
+    &__profileList {
+        padding: 0;
+        margin: 0;
+        border-right: 1px solid var(--COLOR-BLACK);
+
+    }
+
+    &__profileItem {
+        display: flex;
+
+
+    }
+
+    &__profileCard {
+        width: 512px;
+        padding: 52px 82px 80px;
+    }
+
+    &__profille__img {
+        width: 417px;
+        height: 354px;
+        object-fit: contain;
+    }
+
+    &__details {
+        margin-top: 30px;
+    }
+
+    &__profileName {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 158%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--COLOR-BLACK);
+        margin: 0;
+    }
+
+    &__profileDesignation {
+        font-size: 18px;
+        color: var(--COLOR-BLACK);
+        text-align: center;
+        margin: 0;
+    }
+
+    &__profileDescription {
+        padding: 100px;
+        display: flex;
+        align-items: center;
+
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 165%;
+            letter-spacing: -0.03em;
+            color: var(--COLOR-BLACK);
+        }
+    }
+
+    .slider-arrow {
+        display: flex;
+        align-items: center;
+
+        .arrow-icon {
+            &:first-child {
+                margin-right: 40px;
+            }
+
+            img {
+                width: 67.06px;
+                height: 66.96px;
+                object-fit: contain;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

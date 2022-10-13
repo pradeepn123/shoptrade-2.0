@@ -2,220 +2,315 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "settings": {
+        "bannerHead": "Enterprise level solutions tailored for your business",
+        "bannerSubText": "Global shopify plus global expert agency",
+        "imagebanner": "shopify:\/\/shop_images\/banner-image.png"
+      }
+    },
+    "marquee": {
+      "type": "marquee",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "116094d0-983b-443e-aebf-1c58e6585a3f": {
+          "type": "marqueeType",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "imageDoller": "shopify:\/\/shop_images\/Union.png",
+            "imageLogo": "shopify:\/\/shop_images\/shopify-plus.png"
           }
         },
-        "text": {
-          "type": "text",
+        "dfba2e09-4eb3-42c6-9b72-45667155df1d": {
+          "type": "marqueeType",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "imageDoller": "shopify:\/\/shop_images\/Union.png",
+            "imageLogo": "shopify:\/\/shop_images\/shopify-plus.png"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "116094d0-983b-443e-aebf-1c58e6585a3f",
+        "dfba2e09-4eb3-42c6-9b72-45667155df1d"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "uiDesign": {
+      "type": "UI-Design",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "c5021b03-7911-4622-9b37-f03eab8c0f28": {
+          "type": "UIiconType",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
+            "UIicons": "shopify:\/\/shop_images\/Idea.png"
           }
         },
-        "text": {
-          "type": "text",
+        "a2f5ec58-8009-4f8c-9156-e471336816d7": {
+          "type": "UIiconType",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "UIicons": "shopify:\/\/shop_images\/Format_shapes.png"
+          }
+        },
+        "0e37d95a-fe26-486a-b790-7fd859828004": {
+          "type": "UIiconType",
+          "settings": {
+            "UIicons": "shopify:\/\/shop_images\/Public.png"
+          }
+        },
+        "4e8bbced-1392-4fe8-9aae-851fafe04187": {
+          "type": "UIiconType",
+          "settings": {
+            "UIicons": "shopify:\/\/shop_images\/Poll.png"
+          }
+        },
+        "cc328e09-44d1-4062-bc07-12cdca750cb7": {
+          "type": "UIiconType",
+          "settings": {
+            "UIicons": "shopify:\/\/shop_images\/Alt_route.png"
+          }
+        },
+        "a92a33d9-57e6-48fe-808c-747bd8f23952": {
+          "type": "UIiconType",
+          "settings": {
+            "UIicons": "shopify:\/\/shop_images\/Widgets.png"
+          }
+        },
+        "021015bc-eebf-4aa5-a352-ad8af0beb4aa": {
+          "type": "leftUiIconType",
+          "settings": {
+            "leftUIicons": "shopify:\/\/shop_images\/Mark_email_read.png"
+          }
+        },
+        "06db5bb4-d863-4542-afe8-10f1b959ad27": {
+          "type": "leftUiIconType",
+          "settings": {
+            "leftUIicons": "shopify:\/\/shop_images\/Payment.png"
+          }
+        },
+        "f1d4436c-aea7-40b7-83b2-eaf85618bc29": {
+          "type": "leftUiIconType",
+          "settings": {
+            "leftUIicons": "shopify:\/\/shop_images\/Autorenew.png"
+          }
+        },
+        "daf72a1d-1f88-48d1-a996-5edcce66f04f": {
+          "type": "rightUiIconType",
+          "settings": {
+            "rightUIicons": "shopify:\/\/shop_images\/Trending_up.png"
+          }
+        },
+        "2eb76c4c-dde5-496f-be55-c96084123300": {
+          "type": "rightUiIconType",
+          "settings": {
+            "rightUIicons": "shopify:\/\/shop_images\/Rss_feed.png"
+          }
+        },
+        "d746ba12-cf2a-4674-8716-7ea7b13e30c7": {
+          "type": "rightUiIconType",
+          "settings": {
+            "rightUIicons": "shopify:\/\/shop_images\/Widgets.png"
+          }
+        },
+        "8114c243-d1a2-4838-97b2-73c06d5b16bc": {
+          "type": "topText",
+          "settings": {
+            "topText": "USER INTERFACE DESIGN"
+          }
+        },
+        "200d21c4-3100-4bb6-9cba-5e1475f5cb5d": {
+          "type": "topText",
+          "settings": {
+            "topText": "USER INTERFACE DESIGN 2"
+          }
+        },
+        "bb1ef7ce-5d60-4ce0-ab4c-26e254eadfef": {
+          "type": "leftText",
+          "settings": {
+            "leftText": "USER INTERFACE DESIGN left"
+          }
+        },
+        "ad3947c6-6dbf-49eb-afe3-52b160b6a0e8": {
+          "type": "rightText",
+          "settings": {
+            "rightText": "USER INTERFACE DESIGN right"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "c5021b03-7911-4622-9b37-f03eab8c0f28",
+        "a2f5ec58-8009-4f8c-9156-e471336816d7",
+        "0e37d95a-fe26-486a-b790-7fd859828004",
+        "4e8bbced-1392-4fe8-9aae-851fafe04187",
+        "cc328e09-44d1-4062-bc07-12cdca750cb7",
+        "a92a33d9-57e6-48fe-808c-747bd8f23952",
+        "021015bc-eebf-4aa5-a352-ad8af0beb4aa",
+        "06db5bb4-d863-4542-afe8-10f1b959ad27",
+        "f1d4436c-aea7-40b7-83b2-eaf85618bc29",
+        "daf72a1d-1f88-48d1-a996-5edcce66f04f",
+        "2eb76c4c-dde5-496f-be55-c96084123300",
+        "d746ba12-cf2a-4674-8716-7ea7b13e30c7",
+        "8114c243-d1a2-4838-97b2-73c06d5b16bc",
+        "200d21c4-3100-4bb6-9cba-5e1475f5cb5d",
+        "bb1ef7ce-5d60-4ce0-ab4c-26e254eadfef",
+        "ad3947c6-6dbf-49eb-afe3-52b160b6a0e8"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "ourWork": {
+      "type": "our-work",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "97481e62-2db3-4b14-b26a-f57b817e6d76": {
+          "type": "cardType",
           "settings": {
-            "collection": ""
+            "cardImage": "shopify:\/\/shop_images\/image_19.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png"
           }
         },
-        "product": {
-          "type": "product",
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
+          "type": "cardType",
           "settings": {
-            "product": "",
-            "second_image": false
+            "cardImage": "shopify:\/\/shop_images\/image_77.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "821fbf2b-7e10-42f4-a60e-280102bbbcb0": {
+          "type": "cardType",
           "settings": {
-            "collection": ""
+            "cardImage": "shopify:\/\/shop_images\/image_25.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png"
+          }
+        },
+        "5e235ad6-01a5-4cad-830b-cef51b7c3121": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/0E4A7234_1200x_805121df-5348-4cf1-9f2e-8520665bec88.webp",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png"
+          }
+        },
+        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_76.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "97481e62-2db3-4b14-b26a-f57b817e6d76",
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
+        "821fbf2b-7e10-42f4-a60e-280102bbbcb0",
+        "5e235ad6-01a5-4cad-830b-cef51b7c3121",
+        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Our Works"
       }
     },
-    "video": {
-      "type": "video",
+    "vedio": {
+      "type": "vedio",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "vedioHeading": "The Start",
+        "vedioSubHeading": "We know what it takes to build from groud up.",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/vedio-thumbnail_9633a6f6-8f45-42b6-b92c-af8100bf50fc.png"
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "ourNumbers": {
+      "type": "our-numbers",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "478ac17c-a129-4c95-9181-58b88cb26ad3": {
+          "type": "countblock",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "cardNumber": "$300M+",
+            "countText": "Revenue generated through our solutions"
           }
         },
-        "column2": {
-          "type": "column",
+        "e91a7fce-c17e-40b9-b121-499e3c788fe4": {
+          "type": "countblock",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "cardNumber": "200+",
+            "countText": "Projects done and still counting"
           }
         },
-        "column3": {
-          "type": "column",
+        "65fccf09-cc85-4551-af88-3959b9857428": {
+          "type": "countblock",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "cardNumber": "30+",
+            "countText": "Countries served in the last year"
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "478ac17c-a129-4c95-9181-58b88cb26ad3",
+        "e91a7fce-c17e-40b9-b121-499e3c788fe4",
+        "65fccf09-cc85-4551-af88-3959b9857428"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Our Numbers",
+        "Subheading": "We’re confident that numbers can speak louder when it comes to the quality of work we’ve provided so far."
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "3f894121-9d92-46bb-bf80-14e51a90257d": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/hataspace.png",
+            "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
+            "name": "Harley Finkelstein",
+            "designation": "President of Shopify"
+          }
+        },
+        "5400a35e-a308-4e5f-8af3-d8d3c33a3fbe": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/image_24.png",
+            "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
+            "name": "Harley Finkelstein",
+            "designation": "President of Shopify"
+          }
+        },
+        "ee18843b-9af9-4d7a-912f-2e64c6eb37c8": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/image_78.png",
+            "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
+            "name": "Harley Finkelstein",
+            "designation": "President of Shopify"
+          }
+        },
+        "0a225a0e-6b27-4395-bce2-f5dddd5f43c4": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/testimonial-profile.png",
+            "profileName": "Harley Finkelstein",
+            "profileDesignation": "President of Shopify",
+            "ProfileDescription": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love."
+          }
+        }
+      },
+      "block_order": [
+        "3f894121-9d92-46bb-bf80-14e51a90257d",
+        "5400a35e-a308-4e5f-8af3-d8d3c33a3fbe",
+        "ee18843b-9af9-4d7a-912f-2e64c6eb37c8",
+        "0a225a0e-6b27-4395-bce2-f5dddd5f43c4"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "marquee",
+    "uiDesign",
+    "ourWork",
+    "vedio",
+    "ourNumbers",
+    "testimonials",
+    "newsletter"
   ]
 }
