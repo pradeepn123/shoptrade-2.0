@@ -97,6 +97,10 @@ body {
   color: var(--COLOR-BLACK);
 }
 
+.clr-o {
+  color: var(--COLOR-PRIMARY);
+}
+
 .fnt-16 {
   font-weight: 300;
   font-size: 16px;
@@ -110,7 +114,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 130%;
-  text-align: center;
 }
 
 .swiper-container {
@@ -123,8 +126,16 @@ body {
   }
 }
 
+.flex-1 {
+  flex: 1;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
 .homeBanner {
-  padding: 130px 0 100px;
+  padding: 130px 0;
   position: relative;
   overflow: hidden;
 }
@@ -196,7 +207,7 @@ body {
   background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
   border: 2px solid var(--COLOR-BLACK);
   border-radius: 12px 24px;
-  width: 185px;
+  width: 108%;
   height: 125%;
   z-index: -1;
   transition: 0.5s ease all;
@@ -236,7 +247,6 @@ body {
 }
 .btn-contact:hover {
   transition: 0.5s ease all;
-  padding: 17px 9px 25px;
 }
 .btn-contact:hover::after {
   width: 100%;
@@ -326,6 +336,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
   border-top: 1px solid var(--COLOR-BLACK);
 }
 .ourWork__card {
@@ -373,6 +384,11 @@ body {
   width: 100%;
   height: 397px;
 }
+@media (min-width: 1620px) {
+  .ourWork__cardBody .img-wrp {
+    height: 570px;
+  }
+}
 .ourWork__cardBody .img-wrp .thumb-img {
   width: 100%;
   height: 100%;
@@ -405,12 +421,74 @@ body {
   align-items: center;
   padding: 14px;
 }
-.ourWork__cardBody .btn-wrp .btn::after {
-  width: 230px;
+.ourWork__cardBody .btn-wrp .btn:hover {
+  width: 215px;
+  transition: 0.5s ease all;
 }
 
+.vedio {
+  border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+  position: relative;
+}
+.vedio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc((100% - 1320px) / 2);
+  border: 1px solid var(--COLOR-BLACK);
+}
+.vedio::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc((100% - 1320px) / 2);
+  border: 1px solid var(--COLOR-BLACK);
+}
+@media (min-width: 992px) {
+  .vedio::after, .vedio::before {
+    width: calc((100% - 960px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .vedio::after, .vedio::before {
+    width: calc((100% - 1140px) / 2);
+  }
+}
+@media (min-width: 1440px) {
+  .vedio::after, .vedio::before {
+    width: calc((100% - 1320px) / 2);
+  }
+}
 .vedio__wrp {
   padding: 100px;
+  border-right: 1px solid var(--COLOR-BLACK);
+  border-left: 1px solid var(--COLOR-BLACK);
+  position: relative;
+}
+.vedio__wrp::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -37px;
+  height: 41px;
+  width: 37px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+}
+.vedio__wrp::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  right: -37px;
+  height: 41px;
+  width: 37px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
 }
 .vedio__container {
   border: 2px solid #000000;
@@ -435,6 +513,48 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.model-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+.model-popup__wrp {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.model-popup__vedio {
+  max-width: 960px;
+  width: 100%;
+  height: 480px;
+  margin: auto;
+}
+.model-popup .close-model {
+  position: relative;
+  display: block;
+  float: right;
+  top: -26px;
+  cursor: pointer;
+}
+.model-popup .close-model::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+.model-popup .close-model::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  transform: rotate(45deg);
 }
 
 .ourNumbers {
@@ -462,6 +582,17 @@ body {
 }
 .ourNumbers__cardItem:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
+  position: relative;
+}
+.ourNumbers__cardItem:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  right: 2px;
+  height: 41px;
+  width: 37px;
+  transform: rotate(-90deg) translateY(50%);
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
 }
 .ourNumbers__cardbody {
   padding: 18px 48px;
@@ -482,6 +613,7 @@ body {
 .newsletter {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 .newsletter::after {
   content: "";
@@ -513,6 +645,16 @@ body {
 }
 .newsletter__head {
   border-bottom: 1px solid var(--COLOR-BLACK);
+  position: relative;
+}
+.newsletter__head::after {
+  content: "";
+  position: absolute;
+  height: 41px;
+  width: 37px;
+  left: 0;
+  transform: rotate(180deg) translateY(50%);
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
 }
 .newsletter__head h3 {
   color: var(--COLOR-BLACK);
@@ -696,7 +838,7 @@ body {
 }
 
 .uiDesign__item {
-  width: 206px;
+  width: 146px;
   height: 149px;
   display: flex;
   align-items: center;
@@ -706,6 +848,16 @@ body {
 .uiDesign__item:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
 }
+@media (min-width: 1336px) {
+  .uiDesign__item {
+    width: 206px;
+  }
+}
+@media (min-width: 1660px) {
+  .uiDesign__item {
+    width: 275px;
+  }
+}
 .uiDesign__list {
   padding: 0;
   margin: 0;
@@ -714,6 +866,9 @@ body {
   background-color: var(--COLOR-PRIMARY);
   transition: 0.5S ease ALL;
   cursor: pointer;
+}
+.uiDesign__item.active path {
+  fill: #fff;
 }
 .uiDesign .left-icons .uiDesign__item {
   border-right: 1px solid var(--COLOR-BLACK);
@@ -867,6 +1022,27 @@ body {
 }
 .shopify-footer__block {
   padding: 35px 55px 55px;
+  position: relative;
+}
+.shopify-footer__block:first-child::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+  height: 41px;
+  width: 37px;
+  top: -2px;
+  right: 2px;
+  transform: rotate(270deg) translateY(50%);
+}
+.shopify-footer__block:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+  height: 41px;
+  width: 37px;
+  bottom: -2px;
+  right: 2px;
+  transform: rotate(-270deg) translateY(-50%);
 }
 .shopify-footer__blockList {
   margin-top: 48px;

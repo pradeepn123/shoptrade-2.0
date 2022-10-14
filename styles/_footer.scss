@@ -45,6 +45,32 @@
 
     &__block {
         padding: 35px 55px 55px;
+        position: relative;
+        &:first-child {
+            &::after {
+
+                position: absolute;
+                content: '';
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                height: 41px;
+                width: 37px;
+                top:-2px;
+                right: 2px;
+                transform: rotate(270deg) translateY(50%);
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                height: 41px;
+                width: 37px;
+                bottom:-2px;
+                right: 2px;
+                transform: rotate(-270deg) translateY(-50%);
+            }
+        }
     }
 
     &__blockList {

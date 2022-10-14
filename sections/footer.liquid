@@ -10,7 +10,7 @@
 
   </ul>
   <div class="shopify-footer__Content">
-    <div class="shopify-footer__block">
+    <div class="shopify-footer__block flex-1">
       <h5 class="fnt-20 m-0">Let’s Work Together</h5>
       <ul class="shopify-footer__blockList">
 
@@ -28,7 +28,7 @@
       </ul>
 
     </div>
-    <div class="shopify-footer__block">
+    <div class="shopify-footer__block flex-1">
       <h5 class="fnt-20 m-0">Office</h5>
       <ul class="shopify-footer__blockList">
 
@@ -46,7 +46,7 @@
       </ul>
 
     </div>
-    <div class="">
+    <div class="flex-1">
       <div class="social-icons">
         <h5 class="fnt-20 m-0">Socials</h5>
         <div class="social-icons__wrp">
@@ -66,19 +66,26 @@
   </div>
   <div class="footerBottom">
     <div class="footerBottom__links">
-      <a href="" class="fnt-16">
-        Terms of Condition
-      </a>
-      <a href="" class="fnt-16">
+
+      {%- for item in section.settings.footerBottomLink.links -%}
+        <a href="{{ item.url }}" class="fnt-16">
+          {{ item.title }}
+        </a>
+      {%- endfor -%}
+
+      {%- comment -%}
+        <a href="" class="fnt-16">
         Privacy Policy
-      </a>
-      <a href="" class="fnt-16">
+        </a>
+        <a href="" class="fnt-16">
         Site Map
-      </a>
+        </a>
+      {%- endcomment -%}
     </div>
     <div class="footerBottom__copyright">
       <P class="fnt-16 m-0">
-        2022 Shop Trade , LLC. All rights reserved
+        {{ shop.name }}
+        , LLC. All rights reserved
 
       </P>
     </div>
@@ -92,6 +99,10 @@
       {
         "id": "footerLink",
         "label": "footer links",
+        "type": "link_list"
+      }, {
+        "id": "footerBottomLink",
+        "label": "footer bottom Link",
         "type": "link_list"
       }
 
@@ -139,4 +150,4 @@
       }
     ]
   }
-{% endschema %}}}}}}}}}}}}}
+{% endschema %}

@@ -94,6 +94,9 @@ body {
 .clr-b {
     color: var(--COLOR-BLACK);
 }
+.clr-o {
+    color: var(--COLOR-PRIMARY);
+}
 
 //fonts
 
@@ -110,7 +113,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
-    text-align: center;
+    // text-align: center;
 
 
 }
@@ -123,4 +126,12 @@ body {
     @media (min-width:992px) {
         display: none;
     }
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.hide-scroll {
+    overflow: hidden;
 }

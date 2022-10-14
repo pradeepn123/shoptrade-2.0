@@ -4,7 +4,8 @@
       {% for block in section.blocks limit: 7 %}
         <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
           <div>
-            <img src="{{ block.settings.UIicons | image_url }}"/>
+
+            {{ block.settings.UIicons }}
           </div>
         </li>
       {% endfor %}
@@ -15,7 +16,7 @@
         {% for block in leftIcons limit: 4 %}
           <li class="uiDesign__item " data-id="left-{{ forloop.index }}">
             <div>
-              <img src="{{ block.settings.leftUIicons | image_url }}"/>
+              {{ block.settings.leftUIicons }}
             </div>
           </li>
         {% endfor %}
@@ -71,7 +72,7 @@
         {% for block in leftIcons limit: 4 %}
           <li class="uiDesign__item " data-id="right-{{ forloop.index }}">
             <div>
-              <img src="{{ block.settings.rightUIicons | image_url }}"/>
+              {{ block.settings.rightUIicons }}
             </div>
           </li>
         {% endfor %}
@@ -88,13 +89,13 @@
     "name": "UI",
     "blocks": [
       {
-        "name": "UI Icons",
+        "name": "Top Icons",
         "type": "UIiconType",
         "settings": [
           {
             "id": "UIicons",
-            "label": "Icon",
-            "type": "image_picker"
+            "label": "Top Icon",
+            "type": "text"
           }
         ]
       },
@@ -104,8 +105,8 @@
         "settings": [
           {
             "id": "leftUIicons",
-            "label": "left Icon",
-            "type": "image_picker"
+            "label": "Left Icon",
+            "type": "text"
           }
         ]
       },
@@ -115,8 +116,8 @@
         "settings": [
           {
             "id": "rightUIicons",
-            "label": "right Icon",
-            "type": "image_picker"
+            "label": "Right Icon",
+            "type": "text"
           }
         ]
       },
@@ -153,4 +154,4 @@
       }
     ]
   }
-{% endschema %}}}}}}
+{% endschema %}

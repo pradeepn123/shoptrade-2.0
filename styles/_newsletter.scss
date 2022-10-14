@@ -1,22 +1,24 @@
 .newsletter {
     padding: 120px 0;
     position: relative;
+    overflow: hidden;
     &::after {
         content: "";
         position: absolute;
         top: 50%;
-        transform: translate(-80%,-50%);
+        transform: translate(-80%, -50%);
         width: 394px;
         height: 394px;
         background: #FF7121;
         filter: blur(94.5px);
     }
+
     &::before {
         content: "";
         position: absolute;
         top: 50%;
         right: 0;
-        transform: translate(80%,-50%);
+        transform: translate(80%, -50%);
         width: 394px;
         height: 394px;
         background: #FF7121;
@@ -33,6 +35,18 @@
 
     &__head {
         border-bottom: 1px solid var(--COLOR-BLACK);
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 41px;
+            width: 37px;
+            left: 0;
+        
+            transform: rotate(180deg) translateY(50%);
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+        }
 
         h3 {
             color: var(--COLOR-BLACK);

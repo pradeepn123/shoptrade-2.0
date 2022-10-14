@@ -208,7 +208,8 @@
           "eec1ccab-5c43-472a-9de0-eb5c1de8604c"
         ],
         "settings": {
-          "footerLink": "footer"
+          "footerLink": "footer",
+          "footerBottomLink": "footer-bottom"
         }
       }
     },

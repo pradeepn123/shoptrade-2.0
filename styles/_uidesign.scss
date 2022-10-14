@@ -1,6 +1,6 @@
 .uiDesign {
     &__item {
-        width: 206px;
+        width: 146px;
         height: 149px;
         display: flex;
         align-items: center;
@@ -9,6 +9,13 @@
 
         &:not(:last-child) {
             border-right: 1px solid var(--COLOR-BLACK);
+        }
+
+        @media (min-width:1336px) {
+            width: 206px;
+        }
+        @media (min-width:1660px) {
+            width: 275px;
         }
     }
 
@@ -22,6 +29,11 @@
             background-color: var(--COLOR-PRIMARY);
             transition: .5S ease ALL;
             cursor: pointer;
+
+
+            path {
+                fill: #fff;
+            }
         }
     }
 
