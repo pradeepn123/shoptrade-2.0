@@ -1867,15 +1867,35 @@ body {
   transform: translate(-50%, -50%);
   z-index: 99;
 }
+@media (max-width: 991px) {
+  .showcaseBanner__logo {
+    width: 200px;
+  }
+}
 .showcaseBanner__imgWrp {
   padding: 40px;
   border-right: 1px solid var(--COLOR-BLACK);
   border-left: 1px solid var(--COLOR-BLACK);
 }
+@media (max-width: 991px) {
+  .showcaseBanner__imgWrp {
+    padding: 40px 20px;
+  }
+}
 .showcaseBanner__img {
   width: 100%;
   height: 562px;
   object-fit: cover;
+}
+@media (max-width: 991px) {
+  .showcaseBanner__img {
+    height: 288px;
+  }
+}
+@media (max-width: 767px) {
+  .showcaseBanner__img {
+    height: 188px;
+  }
 }
 
 .showcaseMarque .Marquee-tag p {
@@ -1892,13 +1912,29 @@ body {
 .role__card {
   display: flex;
 }
+@media (max-width: 991px) {
+  .role__card {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
 .role__cardItem {
   flex-basis: 50%;
   padding: 90px 50px 90px 70px;
 }
+@media (max-width: 991px) {
+  .role__cardItem {
+    padding: 40px 20px;
+  }
+}
 .role__cardItem:first-child {
   border-right: 1px solid var(--COLOR-BLACK);
   position: relative;
+}
+@media (max-width: 991px) {
+  .role__cardItem:first-child {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
 }
 .role__cardItem:first-child::after {
   position: absolute;
@@ -1910,6 +1946,16 @@ body {
   right: 2px;
   transform: rotate(-270deg) translateY(-50%);
 }
+@media (max-width: 991px) {
+  .role__cardItem:first-child::after {
+    width: 15px;
+    height: 17px;
+    background-size: cover;
+    right: 0;
+    bottom: -18px;
+    transform: rotate(0) translateY(-50%);
+  }
+}
 .role__head {
   font-weight: 700;
   font-size: 36px;
@@ -1917,6 +1963,13 @@ body {
   letter-spacing: -0.03em;
   color: var(--COLOR-BLACK);
   margin-bottom: 32px;
+  margin-top: 0;
+}
+@media (max-width: 991px) {
+  .role__head {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 .role__text {
   font-weight: 500;
@@ -1925,6 +1978,12 @@ body {
   letter-spacing: -0.03em;
   color: #000000;
   margin: 0;
+}
+@media (max-width: 991px) {
+  .role__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .showcaseImages__imgWrp {
@@ -1935,6 +1994,11 @@ body {
   flex-basis: 50%;
   padding: 80px 0 70px;
 }
+@media (max-width: 991px) {
+  .showcaseImages__img {
+    flex-basis: 100%;
+  }
+}
 .showcaseImages__img img {
   width: 100%;
   height: 640px;
@@ -1942,14 +2006,45 @@ body {
   border-radius: 15px;
   box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
 }
+@media (max-width: 991px) {
+  .showcaseImages__img img {
+    height: 436px;
+  }
+}
+@media (max-width: 767px) {
+  .showcaseImages__img img {
+    height: 336px;
+  }
+}
 .showcaseImages__img:nth-child(odd) {
   padding: 80px 32px 70px 0;
+}
+@media (max-width: 991px) {
+  .showcaseImages__img:nth-child(odd) {
+    padding: 60px 20px 20px;
+  }
 }
 .showcaseImages__img:nth-child(even) {
   padding: 80px 0 70px 32px;
 }
+@media (max-width: 991px) {
+  .showcaseImages__img:nth-child(even) {
+    padding: 20px 20px 60px;
+  }
+}
 .showcaseImages__largeImage {
+  width: 100%;
   height: 669.37px;
+}
+@media (max-width: 767px) {
+  .showcaseImages__largeImage {
+    height: 382px;
+  }
+}
+@media (max-width: 767px) {
+  .showcaseImages__largeImage {
+    height: 182px;
+  }
 }
 .showcaseImages__largeImage img {
   width: 100%;
@@ -1962,9 +2057,20 @@ body {
 .showcaseClient {
   padding: 90px 0 70px;
 }
+@media (max-width: 991px) {
+  .showcaseClient {
+    padding: 40px 0 40px;
+  }
+}
 .showcaseClient h4 {
   margin-top: 0;
   margin-bottom: 24px;
+}
+@media (max-width: 991px) {
+  .showcaseClient h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 .showcaseClient p {
   max-width: 1055px;
@@ -1975,11 +2081,27 @@ body {
   letter-spacing: -0.03em;
   color: #000000;
 }
+@media (max-width: 991px) {
+  .showcaseClient p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .showcaseClient__img {
   margin-top: 90px;
   width: 100%;
   height: 571.04px;
   object-fit: cover;
+}
+@media (max-width: 992px) {
+  .showcaseClient__img {
+    height: 356px;
+  }
+}
+@media (max-width: 767px) {
+  .showcaseClient__img {
+    height: 156px;
+  }
 }
 
 .img-boxshodow {
@@ -1996,9 +2118,28 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  .responsiveImages {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+}
 .responsiveImages__item {
   flex-basis: 384.68px;
   height: 689.5px;
+}
+@media (max-width: 1335px) {
+  .responsiveImages__item {
+    flex-basis: 290.68px;
+  }
+}
+@media (max-width: 991px) {
+  .responsiveImages__item {
+    padding: 30px 60px;
+    flex-basis: 50%;
+    height: 485px;
+  }
 }
 
 .showcaseReview {
@@ -2006,17 +2147,31 @@ body {
   border-bottom: 1px solid var(--COLOR-BLACK);
   margin-bottom: 80px;
 }
+@media (max-width: 991px) {
+  .showcaseReview {
+    margin-bottom: 60px;
+  }
+}
 .showcaseReview__wrp {
   border-right: 1px solid var(--COLOR-BLACK);
   border-left: 1px solid var(--COLOR-BLACK);
   display: flex;
 }
+@media (max-width: 767px) {
+  .showcaseReview__wrp {
+    flex-direction: column;
+  }
+}
 .showcaseReview__img {
   padding: 40px;
   flex-basis: 50%;
-  border-radius: 22px;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 767px) {
+  .showcaseReview__img {
+    padding: 10px 20px;
+  }
 }
 .showcaseReview__img .arrow-btn {
   position: absolute;
@@ -2028,6 +2183,12 @@ body {
   width: 100%;
   height: 570px;
   object-fit: cover;
+  border-radius: 22px;
+}
+@media (max-width: 991px) {
+  .showcaseReview__img .thumbnail {
+    height: 310px;
+  }
 }
 .showcaseReview__infoWrp {
   padding: 40px;
@@ -2036,6 +2197,11 @@ body {
   align-items: center;
   position: relative;
   border-left: 1px solid var(--COLOR-BLACK);
+}
+@media (max-width: 991px) {
+  .showcaseReview__infoWrp {
+    padding: 40px 20px;
+  }
 }
 .showcaseReview__infoWrp::after {
   position: absolute;
@@ -2055,6 +2221,13 @@ body {
   color: var(--COLOR-BLACK);
   margin-bottom: 16px;
   position: relative;
+}
+@media (max-width: 991px) {
+  .showcaseReview__infoWrp h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
 .showcaseReview__infoWrp h3::after {
   position: absolute;
