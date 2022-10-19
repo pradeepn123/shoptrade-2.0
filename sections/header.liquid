@@ -3,15 +3,14 @@
     <div class="header-container">
 
       <a class="navbar-brand order-2" href="#">
-        <img src="{{ section.settings.logo | image_url }}" alt="logo">
+        <img class="only-desktop" src="{{ section.settings.logo | image_url }}" alt="logo">
+        <img class="only-mobile" src="{{ section.settings.logombile | image_url }}" alt="logo">
       </a>
       <button class="d-flex p-0 js-hamberger" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="" id="navbarSupportedContent">
-        <div class="d-lg-none p-4 close-btn">
-          <img class="js-close-icon" src="img/close-menu.svg" alt="">
-        </div>
+      <div class="navbarSupportedContent">
+     
         <div class="shoptrade__menu-wrp">
 
           <ul class="navbar-nav shoptrade__nav-list d-flex  ">
@@ -61,7 +60,13 @@
         "id": "logo",
         "label": "Logo",
         "type": "image_picker"
-      }, {
+      },{
+        "id": "logombile",
+        "label": "Logo mobile",
+        "type": "image_picker"
+      }, 
+      
+      {
         "id": "menu",
         "type": "link_list",
         "label": "Main menu"

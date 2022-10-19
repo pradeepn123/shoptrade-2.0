@@ -1,0 +1,399 @@
+.showcaseBanner {
+    h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width:991px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    }
+
+    &__creditList {
+        margin-left: 50px;
+        position: relative;
+
+        &:hover {
+            .creditDrop {
+                display: block;
+            }
+        }
+    }
+
+    &__credit {
+        display: flex;
+        list-style: none;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding: 0;
+
+
+    }
+
+    &__creditItem {
+        width: 67.06px;
+        height: 67.06px;
+        border-radius: 50%;
+        border: 1px solid var(--COLOR-BLACK);
+        overflow: hidden;
+
+        &:nth-child(1) {
+            z-index: 99;
+        }
+
+        &:not(:last-child) {
+            margin-right: -15px;
+            position: relative;
+
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        @media (max-width:991px) {
+            margin-top: 20px;
+            justify-content: space-between;
+            width:  100%;
+        }
+
+        .link-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 194%;
+            letter-spacing: 0.06em;
+            color: var(--COLOR-BLACK);
+            margin-top: 6px;
+
+        }
+    }
+
+    .creditDrop {
+        position: absolute;
+        top: 85%;
+        right: 0;
+        width: 344px;
+        border-radius: 23px;
+        // border: 1px solid var(--COLOR-BLACK);
+        padding: 42px 30px 26px;
+        // background-color: var(--COLOR-WHITE);
+        background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/dropimg.png?v=1666081575");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 999;
+        display: none;
+
+        &__item {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__itemImage {
+            width: 67.06px;
+            height: 67.06px;
+            border-radius: 50%;
+            border: 1px solid var(--COLOR-BLACK);
+            overflow: hidden;
+            margin-right: 16px;
+        }
+
+        &__itemBody {
+            p {
+                font-family: Minecraft !important;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 104%;
+                margin: 0;
+                letter-spacing: 0.06em;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.showcaseBanner {
+    &__bannerrImage {
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+        position: relative;
+        margin-top: 40px;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+
+    &__imgWrp {
+        padding: 40px;
+        border-right: 1px solid var(--COLOR-BLACK);
+        border-left: 1px solid var(--COLOR-BLACK);
+
+    }
+
+    &__img {
+        width: 100%;
+        height: 562px;
+        object-fit: cover;
+    }
+}
+
+.showcaseMarque {
+    .Marquee-tag {
+        p {
+            font-size: 36px;
+            line-height: 100%;
+            letter-spacing: 0.06em;
+            font-family: Minecraft;
+        }
+    }
+}
+
+.role {
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+
+    // background-color: #1E1E1E;;
+    &__card {
+        display: flex;
+    }
+
+    &__cardItem {
+        flex-basis: 50%;
+        padding: 90px 50px 90px 70px;
+
+        &:first-child {
+            border-right: 1px solid var(--COLOR-BLACK);
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                height: 41px;
+                width: 37px;
+                bottom: -2px;
+                right: 2px;
+                transform: rotate(-270deg) translateY(-50%);
+            }
+        }
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: var(--COLOR-BLACK);
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+        color: #000000;
+        margin: 0;
+    }
+}
+
+//showcase images
+
+.showcaseImages {
+    &__imgWrp {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__img {
+        flex-basis: 50%;
+        padding: 80px 0 70px;
+
+        img {
+            width: 100%;
+            height: 640px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+
+        }
+
+        &:nth-child(odd) {
+            padding: 80px 32px 70px 0;
+
+        }
+
+        &:nth-child(even) {
+            padding: 80px 0 70px 32px;
+
+        }
+
+
+    }
+
+    &__largeImage {
+        height: 669.37px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+
+            box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+
+        }
+    }
+}
+
+//client 
+
+.showcaseClient {
+    padding: 90px 0 70px;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    p {
+        max-width: 1055px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.03em;
+        color: #000000;
+    }
+
+    &__img {
+        margin-top: 90px;
+        width: 100%;
+        height: 571.04px;
+        object-fit: cover;
+
+
+    }
+}
+
+.img-boxshodow {
+    border-radius: 15px;
+    box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.responsiveImages {
+    margin-top: 90px;
+    margin-bottom: 70px;
+    margin-left: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        flex-basis: 384.68px;
+        height: 689.5px;
+    }
+}
+
+
+//Review
+
+.showcaseReview {
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    margin-bottom: 80px;
+
+    &__wrp {
+        border-right: 1px solid var(--COLOR-BLACK);
+        border-left: 1px solid var(--COLOR-BLACK);
+        display: flex;
+    }
+
+    &__img {
+        padding: 40px;
+        flex-basis: 50%;
+        border-radius: 22px;
+        overflow: hidden;
+        position: relative;
+
+        .arrow-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 570px;
+            object-fit: cover;
+        }
+    }
+
+    &__infoWrp {
+        padding: 40px;
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border-left: 1px solid var(--COLOR-BLACK);
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            height: 41px;
+            width: 37px;
+            bottom: -2px;
+            left: 2px;
+            transform: rotate(-270deg) translateY(50%);
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 165%;
+            letter-spacing: -0.03em;
+            color: var(--COLOR-BLACK);
+            margin-bottom: 16px;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/backquote.png?v=1666152408);
+                left: 0;
+                top: -15px;
+                transform: translate(-50%, -50%);
+            }
+
+        }
+
+        p {
+            margin-bottom: 4px;
+        }
+    }
+}

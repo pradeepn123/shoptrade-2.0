@@ -5,7 +5,7 @@
         {{ section.settings.heading }}
       </h2>
       <div class="">
-        <a href="" class="d-inline-block">
+        <a href="" class="d-inline-block arrow-btn">
           <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
         </a>
       </div>
@@ -13,9 +13,10 @@
     </div>
 
   </div>
-  <ul class="ourWork__cards">
+  <ul class="ourWork__cards swiper-container js-work-slider">
+    <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <li class="ourWork__card">
+      <li class="ourWork__card swiper-slide">
         <div class="ourWork__cardHead">
           <div class="marquee  enable-animation">
             <div class="marquee__content">
@@ -70,6 +71,7 @@
         </div>
       </li>
     {% endfor %}
+  </div>
 
   </ul>
 </section>

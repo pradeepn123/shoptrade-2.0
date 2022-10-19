@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "work": {
+      "type": "work",
+      "blocks": {
+        "0dc37d69-d0f6-4f56-80df-1b3b9d837f55": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_19.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardLink": ""
+          }
+        },
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_77.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
+            "cardLink": ""
+          }
+        },
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_25.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
+            "cardLink": ""
+          }
+        },
+        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_76.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
+            "cardLink": ""
+          }
+        },
+        "a042d646-89ce-4d16-8b64-aea734310f47": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_23.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
+            "cardLink": ""
+          }
+        }
+      },
+      "block_order": [
+        "0dc37d69-d0f6-4f56-80df-1b3b9d837f55",
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890",
+        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
+        "a042d646-89ce-4d16-8b64-aea734310f47"
+      ],
+      "settings": {
+        "heading": "Transform your brand with the power of a global audience"
+      }
+    }
+  },
+  "order": [
+    "work"
+  ]
+}

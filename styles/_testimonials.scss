@@ -27,6 +27,10 @@
                     height: 70px;
                     background-size: 100%;
                     transform: translate(50%, 50%);
+                    @media (max-width:991px) {
+                        width: 15px;
+                        height: 27px;
+                    }
                 }
             }
         }
@@ -66,8 +70,11 @@
     }
 
     &__profile {
-        display: flex;
-        flex: 1;
+
+        @media (min-width:992px) {
+            display: flex;
+            flex: 1;
+        }
     }
 
     &__profileList {
@@ -86,6 +93,19 @@
     &__profileCard {
         width: 512px;
         padding: 52px 82px 80px;
+        text-align: center;
+
+        @media (max-width:991px) {
+            padding: 40px 50px;
+        }
+
+
+        img {
+            @media (max-width:991px) {
+                width: 253.54px;
+                height: 277.73px;
+            }
+        }
     }
 
     &__profille__img {
@@ -113,6 +133,8 @@
         color: var(--COLOR-BLACK);
         text-align: center;
         margin: 0;
+
+
     }
 
     &__profileDescription {
@@ -121,6 +143,10 @@
         align-items: center;
         overflow: hidden;
         position: relative;
+
+        @media (max-width:991px) {
+            padding: 60px 40px
+        }
 
         &::after {
             content: "";
@@ -131,6 +157,13 @@
             height: 394px;
             right: -30%;
             top: -30%;
+
+            @media (max-width:991px) {
+                width: 282.08px;
+                height: 267.81px;
+                right: -30%;
+                top: -30%;
+            }
         }
 
         h3 {
@@ -139,6 +172,11 @@
             line-height: 165%;
             letter-spacing: -0.03em;
             color: var(--COLOR-BLACK);
+
+            @media (max-width:991px) {
+                font-size: 20px;
+
+            }
         }
     }
 

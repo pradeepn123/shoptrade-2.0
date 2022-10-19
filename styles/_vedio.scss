@@ -26,26 +26,34 @@
         // height: 1px;
         width: calc((100% - 1320px)/2);
         border: 1px solid var(--COLOR-BLACK);
-        
-      
+
+
 
     }
 
-    &::after,&::before{
+    &::after,
+    &::before {
+        @media (min-width:768px) {
+
+            width: calc((100% - 720px)/2);
+
+        }
         @media (min-width:992px) {
-            
+
             width: calc((100% - 960px)/2);
-            
+
         }
+
         @media (min-width:1200px) {
-            
+
             width: calc((100% - 1140px)/2);
-            
+
         }
+
         @media (min-width:1440px) {
-            
+
             width: calc((100% - 1320px)/2);
-            
+
         }
     }
 
@@ -54,6 +62,11 @@
         border-right: 1px solid var(--COLOR-BLACK);
         border-left: 1px solid var(--COLOR-BLACK);
         position: relative;
+
+        @media (max-width:991px) {
+            padding: 30px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -63,7 +76,15 @@
             height: 41px;
             width: 37px;
             background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+
+            @media (max-width:991px) {
+                left: -13px;
+                height: 14px;
+                width: 15px;
+                background-size: contain;
+            }
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -73,7 +94,15 @@
             height: 41px;
             width: 37px;
             background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+
+            @media (max-width:991px) {
+                right: -13px;
+                height: 14px;
+                width: 15px;
+                background-size: contain;
+            }
         }
+
 
     }
 
@@ -84,12 +113,37 @@
         height: 593px;
         overflow: hidden;
         position: relative;
+
+        @media (max-width:767px) {
+            height: 362px;
+        }
+        @media (max-width:767px) {
+            height: 162px;
+        }
+
+
+
     }
 
     &__info {
         position: absolute;
         bottom: 43px;
         left: 47px;
+
+        @media (max-width:991px) {
+            bottom: 15px;
+            left: 20px;
+        }
+
+        .h1-main {
+            @media (max-width:991px) {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 8px;
+        }
     }
 
     &__thumbnail {

@@ -60,6 +60,11 @@
 
     img {
         margin-right: 40px;
+
+        @media (max-width:991px) {
+            height: 40px;
+            object-fit: contain;
+        }
     }
 }
 

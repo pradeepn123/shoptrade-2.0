@@ -123,6 +123,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo.png",
+          "logombile": "shopify:\/\/shop_images\/logo_mobile.png",
           "menu": "main-menu"
         }
       },
