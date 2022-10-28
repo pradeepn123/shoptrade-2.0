@@ -1,0 +1,202 @@
+{
+  "sections": {
+    "banner": {
+      "type": "serviceBanner",
+      "settings": {
+        "heading": "Problem solvers at heart, we’re here to build long standing relationships"
+      }
+    },
+    "ourservices": {
+      "type": "serivecesOurServices",
+      "blocks": {
+        "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Design",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Headless Commerce",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "7de9a382-de41-4034-9eb7-985a4001f0ab": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Development",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "System Integrations",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Replatforming",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "659e6233-0209-4682-aead-afcbd918713a": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Internationalization",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "652be96d-9e9c-4402-afa1-0df03979a209": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Performance enhancement",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+          }
+        },
+        "57217090-2113-46e1-b790-eb3fc9b915ca": {
+          "type": "serviceCard",
+          "disabled": true,
+          "settings": {
+            "cardHeading": "",
+            "cardList": ""
+          }
+        }
+      },
+      "block_order": [
+        "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088",
+        "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20",
+        "7de9a382-de41-4034-9eb7-985a4001f0ab",
+        "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee",
+        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6",
+        "1a756da3-7bd4-44b9-b318-a700d8e6c624",
+        "659e6233-0209-4682-aead-afcbd918713a",
+        "652be96d-9e9c-4402-afa1-0df03979a209",
+        "57217090-2113-46e1-b790-eb3fc9b915ca"
+      ],
+      "settings": {
+        "heading": "Our Services"
+      }
+    },
+    "ourPartners": {
+      "type": "servicesOurPartner",
+      "blocks": {
+        "b5bfe992-dbb7-409e-b9af-13f7026e396a": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector.png"
+          }
+        },
+        "21f3d53c-8195-4421-a06e-0aeabb06f60f": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_5.png"
+          }
+        },
+        "94a352a6-3280-414f-8eb3-04d8405464b8": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_1.png"
+          }
+        },
+        "d3701225-c8f5-40db-80ad-1ac7fab29251": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_6.png"
+          }
+        },
+        "0dc77df7-6b84-4806-81fb-ee722aaba8ba": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_7.png"
+          }
+        },
+        "aa849ca4-7a62-417f-84e5-e54298bb2eb1": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_4.png"
+          }
+        },
+        "b0b7d829-e88b-4c47-b6e2-507b10144ace": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_2.png"
+          }
+        },
+        "d31975e4-2fd8-423c-9e36-19d464cbe529": {
+          "type": "partnersLogo",
+          "settings": {
+            "partnersLogo": "shopify:\/\/shop_images\/Vector_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "b5bfe992-dbb7-409e-b9af-13f7026e396a",
+        "21f3d53c-8195-4421-a06e-0aeabb06f60f",
+        "94a352a6-3280-414f-8eb3-04d8405464b8",
+        "d3701225-c8f5-40db-80ad-1ac7fab29251",
+        "0dc77df7-6b84-4806-81fb-ee722aaba8ba",
+        "aa849ca4-7a62-417f-84e5-e54298bb2eb1",
+        "b0b7d829-e88b-4c47-b6e2-507b10144ace",
+        "d31975e4-2fd8-423c-9e36-19d464cbe529"
+      ],
+      "settings": {
+        "heading": "Our Partners"
+      }
+    },
+    "serviceShowcase": {
+      "type": "serviceShowcase",
+      "blocks": {
+        "155001b4-249c-4384-8b5e-4d4c9f32e232": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/banner-showcase.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
+            "cardLink": ""
+          }
+        },
+        "e5d302cc-53f8-4cd1-9deb-aef1cb356e92": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/review-image.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
+            "cardLink": ""
+          }
+        },
+        "965d6888-7062-4c71-909f-2f2112b24df6": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_25.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardLink": ""
+          }
+        }
+      },
+      "block_order": [
+        "155001b4-249c-4384-8b5e-4d4c9f32e232",
+        "e5d302cc-53f8-4cd1-9deb-aef1cb356e92",
+        "965d6888-7062-4c71-909f-2f2112b24df6"
+      ],
+      "settings": {
+        "heading": "Showcase"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "ourservices",
+    "ourPartners",
+    "serviceShowcase"
+  ]
+}

@@ -1,0 +1,50 @@
+<section class="mission"> 
+    <div class="container">
+        <div class="mission__wrp">
+            <div class="mission__imgContainer">
+                <img class="mission__img" src="{{ section.settings.bannerImage | image_url }}">
+            </div>
+            <div class="mission__content">
+                {%- for block in section.blocks -%}
+                    <div class="mission__item">
+                        <h3 class="fnt-24 fnt-700">{{ block.settings.heading }}</h3>
+                        <p class="fnt-16 fnt-400"> Our mission lays beyond pixel perfect design and high quality code, which are just tools on our path to establishing a network of entrepreneurs that help each other with the sole purpose of scaling their business. In an ever changing online world, the only way to stay ahead of the curve is by surrounding yourself with like minded energetic professionals.</p>
+                    </div>
+                    
+                {%- endfor -%}
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name":"misiion vision",
+        "settings":[
+            {
+                "id":"bannerImage",
+                "label":"image",
+                "type":"image_picker"
+            }
+        ],
+        "blocks":[
+            {
+                "name":"mission-vision",
+                "type":"mission",
+                "limit":2,
+                "settings":[
+                    {
+                        "id":"heading",
+                        "label":"mission-vision heading",
+                        "type":"text"
+                    },{
+                        "id":"subheading",
+                        "label":"mission-vision sub heading",
+                        "type":"text"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

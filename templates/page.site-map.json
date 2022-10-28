@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "site-map": {
+      "type": "site-map",
+      "blocks": {
+        "4c43dc08-05ab-494b-9775-e808d46eeb14": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Home",
+            "siteUrl": "",
+            "siteSublinks": ""
+          }
+        },
+        "7f2e1738-b385-4f1f-8d39-42c39999beb5": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Works",
+            "siteUrl": "shopify:\/\/pages\/work",
+            "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"\">Hathaspace<\/a>\n                    <\/li>\n  <li class=\"site-list__item\">\n                        <a href=\"\">Elevatione<\/a>\n                    <\/li>\n  <li class=\"site-list__item\">\n                        <a href=\"\">Angles90<\/a>\n                    <\/li>\n  <li class=\"site-list__item\">\n                        <a href=\"\">Leaf<\/a>\n                    <\/li>\n  <li class=\"site-list__item\">\n                        <a href=\"\">Adapt Health<\/a>\n                    <\/li>\n  <li class=\"site-list__item\">\n                        <a href=\"\">Bump Boxx<\/a>\n                    <\/li>\n\n\n<\/ul>"
+          }
+        },
+        "2ccb7238-3377-4a9e-b7b7-63696fba3123": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Services",
+            "siteUrl": "shopify:\/\/pages\/services",
+            "siteSublinks": ""
+          }
+        },
+        "84a7fefc-8faa-479a-be2d-ca782ef3b678": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "About us",
+            "siteUrl": "shopify:\/\/pages\/about",
+            "siteSublinks": ""
+          }
+        },
+        "dfcc8886-9cc7-477e-a379-35308171c998": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Blogs",
+            "siteUrl": "shopify:\/\/blogs\/amet",
+            "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n       <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n\n\n<\/ul>"
+          }
+        },
+        "bb8e0b52-7fc0-45b9-99f1-85025ad93503": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Careers",
+            "siteUrl": "",
+            "siteSublinks": ""
+          }
+        },
+        "5366d1a6-93f7-4862-8e49-dd8973520bb0": {
+          "type": "sitelink",
+          "settings": {
+            "siteName": "Let’s Talk",
+            "siteUrl": "shopify:\/\/pages\/contact",
+            "siteSublinks": ""
+          }
+        }
+      },
+      "block_order": [
+        "4c43dc08-05ab-494b-9775-e808d46eeb14",
+        "7f2e1738-b385-4f1f-8d39-42c39999beb5",
+        "2ccb7238-3377-4a9e-b7b7-63696fba3123",
+        "84a7fefc-8faa-479a-be2d-ca782ef3b678",
+        "dfcc8886-9cc7-477e-a379-35308171c998",
+        "bb8e0b52-7fc0-45b9-99f1-85025ad93503",
+        "5366d1a6-93f7-4862-8e49-dd8973520bb0"
+      ],
+      "settings": {
+        "heading": "Site map"
+      }
+    }
+  },
+  "order": [
+    "site-map"
+  ]
+}

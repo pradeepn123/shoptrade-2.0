@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.3/swiper-bundle.css" integrity="sha512-mXY1LeioQ/fb7ALXZiaUvv0UAapAWkF1UI7X+4lXOJySh13sVf/4WG+01splhtJrp39UL9Sq3e8JWsbhf2sm2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"/>
     <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
 
     {%- if settings.favicon != blank -%}
@@ -361,7 +361,7 @@
     </ul>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.3/swiper-bundle.min.js" integrity="sha512-4MIWP9ui3MVR0iuCnJ9l6b9DWrCspboU0BbX5DNXoSJ4ZQXjrY7+sPJEehrR0rAx88jVUT9f9Hoa7fawwB3jHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js" ></script>
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
@@ -391,8 +391,16 @@
       }
     </script>
 
-    <script src="{{ 'home.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'common.js' | asset_url }}" defer="defer"></script>
+    {% if template == 'index' %}
+      <script src="{{ 'home.js' | asset_url }}" defer="defer"></script>
+      
+    {% endif %}
+
+    {% if page.handle == "about" %}
+      <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
+      
+    {% endif %}
 
 
     {%- if settings.predictive_search_enabled -%}

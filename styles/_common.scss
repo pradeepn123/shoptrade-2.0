@@ -20,10 +20,7 @@ body {
     }
 }
 
-.h4 {
- 
-
-}
+.h4 {}
 
 .container {
     max-width: 100%;
@@ -51,6 +48,12 @@ body {
         max-width: 1320px;
     }
 
+}
+
+.mobile-only {
+    @media (max-width:767px) {
+        display: none;
+    }
 }
 
 .v-center {
@@ -88,6 +91,13 @@ body {
     padding: 0 !important;
 }
 
+.my-60 {
+    margin: 60px 0;
+}
+
+.position-relative {
+    position: relative;
+}
 
 
 .d-inline-block {
@@ -103,6 +113,7 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 //width
 
 .w-100 {
@@ -123,12 +134,21 @@ body {
     color: var(--COLOR-PRIMARY);
 }
 
+.text-d-none {
+    text-decoration: none;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
 //fonts
 
 .fnt-16 {
     font-weight: 300;
     font-size: 16px;
-    line-height: 100%;
+    // line-height: 100%;
+    line-height: 130%;
     letter-spacing: -0.03em;
     color: #000000;
     text-decoration: none;
@@ -146,6 +166,7 @@ body {
     font-size: 48px;
     line-height: 100%;
     letter-spacing: -0.03em;
+
     @media (max-width:991px) {
         font-size: 24px;
     }
@@ -171,4 +192,155 @@ body {
 
 .hide-scroll {
     overflow: hidden;
+}
+
+main {
+    padding-top: 130px;
+
+    @media (max-width:991px) {
+        padding-top: 80px;
+    }
+}
+
+.border-topBottom {
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.select-input {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* or 16px */
+
+    letter-spacing: -0.03em;
+
+    color: #000000;
+    border: 0;
+    border-bottom: 2px solid var(--COLOR-BLACK);
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+
+.contact-agree {
+    display: flex;
+    // align-items: flex-start;
+
+    input[type='checkbox'] {
+        width: 30px !important;
+        margin-right: 20px;
+    }
+}
+
+.field__input:not(:placeholder-shown),
+.field__input {
+    padding: 20px 20px 20px 0 !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom: 2px solid var(--COLOR-BLACK) !important;
+
+    &:focus,
+    &:hover {
+        box-shadow: none !important;
+        border: 0;
+    }
+}
+
+.field__label {
+    left: 0 !important;
+
+}
+
+.field__input {
+    margin-bottom: 0 !important;
+
+    &:focus {
+        &~.field__label {
+            top: 0 !important;
+        }
+    }
+}
+
+.field {
+    overflow: hidden;
+
+   
+}
+
+.field:after {
+    box-shadow: none !important;
+    content: "";
+    position: absolute !important;
+    bottom: 0px;
+    transform: translateY(50%);
+    right: 0;
+    height: 41px;
+    width: 37px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+
+}
+
+.page-width--narrow {
+    margin-left: 0 !important;
+}
+@media screen and (min-width: 750px) {
+    .page-width--narrow {
+        padding: 40px 0rem !important;
+    }
+
+}
+@media screen and (min-width: 990px) {
+    .page-width--narrow {
+        max-width: 863px !important;
+
+
+    }
+
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.message-input {
+    .field:after {
+        display: none;
+    }
+    .field__label {
+        left: 20px !important;
+        
+    }
+    .field__input {
+        height: 244px;
+        padding: 20px 20px 40px 20px !important; 
+        border: 0 !important;
+        background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/message.png?v=1666940865");
+        background-size: 100% 100%;
+
+        @media (max-width:767px) {
+            height: 114px;
+        }
+
+        &:focus {
+            &~.field__label {
+                top: 10px !important;
+            }
+        }
+    }
 }

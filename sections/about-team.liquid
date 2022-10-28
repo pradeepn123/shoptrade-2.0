@@ -1,0 +1,77 @@
+<section class="about-team ">
+    <div class="container">
+        <h2 class="h1 my-60">Say Hello to
+        the leaders</h2>
+    </div>
+    <div class="about-team__container border-topBottom">
+        <div class="swiper-container js-team-slider">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="about-team__wrp">
+                            <div class="about-team__img">
+                                <img src="{{ block.settings.image | image_url }}">
+                            </div>
+                            <div class="about-team__info mobile-only">
+                                <h4 class="fnt-40 m-0">{{ block.settings.leaderName }} </h4>
+                                <p class="m-0 clr-b mb-40"> {{ block.settings.designation }} </p>
+                                <p class="fnt-24 fnt-500 m-0 clr-b ">{{ block.settings.info }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                
+                
+            </div>
+        </div>
+        {% comment %} <div class="js-arrow-left center-right">
+            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-left.png?v=1665638248"/>
+        </div> {% endcomment %}
+        <div class="js-arrow-right center-left ">
+            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-right.png?v=1665638248"/>
+        </div>
+      
+    
+    </div>
+ 
+</section>
+
+{% schema %}
+    {
+        "name":"about-team",
+        "settings":[
+            {
+                "id":"heading",
+                "label": "Heading",
+                "type":"text"
+            }
+        ],
+        "blocks":[
+            {
+                "name":"leaders",
+                "type":"leader",
+                "settings":[
+                    {
+                        "id":"image",
+                        "label":"leader Image",
+                        "type":"image_picker"
+                    },{
+                        "id":"leaderName",
+                        "label":"Leader Name",
+                        "type":"text"
+                    },{
+                        "id":"designation",
+                        "label":"Designation",
+                        "type":"text"
+                    },{
+                        "id":"info",
+                        "label":"info",
+                        "type":"text"
+                    }
+                
+                ]
+            
+            }
+        ]
+    }
+{% endschema %}

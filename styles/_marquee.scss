@@ -29,6 +29,17 @@
     }
 }
 
+@keyframes scroll-v {
+    from {
+        
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(calc(-100% - var(--gap)));
+    }
+}
+
 /* Pause animation when reduced-motion is set */
 @media (prefers-reduced-motion: reduce) {
     .marquee__content {
@@ -41,6 +52,14 @@
     animation: scroll 10s linear infinite;
 }
 
+.enable-animation-v .marquee__content {
+    animation: scroll 10s linear infinite;
+
+    @media (min-width:992px) {
+        
+        animation: scroll-v 10s linear infinite;
+    }
+}
 
 
 /* Pause on hover */

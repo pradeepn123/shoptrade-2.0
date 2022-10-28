@@ -5,7 +5,7 @@
         {{ section.settings.heading }}
       </h2>
       <div class="">
-        <a href="" class="d-inline-block arrow-btn">
+        <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
           <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
         </a>
       </div>
@@ -86,7 +86,13 @@
         "label": "heading",
         "type": "text",
         "default": "Our Works"
-      }
+      },{
+        
+        "id":"link",
+        "label":"Nav link",
+        "type":"url"
+    
+    }
 
     ],
     "blocks": [

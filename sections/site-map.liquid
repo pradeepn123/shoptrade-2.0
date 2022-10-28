@@ -1,0 +1,56 @@
+<section class="site-map">
+    <div class="container">
+        <h1 class="h1"> {{ section.settings.heading }} </h1>
+
+        <ul class="site-map__list"> 
+        {%- for block in section.blocks -%}
+            <li>
+                <a class="fnt-24 clr-b arrow-orange" href="{{ block.settings.siteUrl }}"> {{ block.settings.siteName }} <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrow-orange_a302a158-4182-40c2-9a61-8ed900c41695.svg?v=1666854133" /> </a>
+               {{block.settings.siteSublinks }}
+            </li>
+            
+        {%- endfor -%}
+        </ul>
+
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name":"Site map",
+        "settings":[
+
+            {
+                "id":"heading",
+                "type":"text",
+                "label":"Heading"
+            }
+        ],
+        
+       "blocks": [
+        {
+            "type": "sitelink",
+            "name": "Site Link",
+            "settings": [
+                {
+                    "id":"siteName",
+                    "type":"text",
+                    "label":"Site Name"
+
+                },
+                {
+                    "id":"siteUrl",
+                    "type":"url",
+                    "label":"Site Url"
+                },
+                {
+                    "id":"siteSublinks",
+                    "type":"textarea",
+                    "label":"Site sub link"
+                }
+            ]
+        }
+       ]
+       
+    }
+{% endschema %}

@@ -1,0 +1,378 @@
+.services {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width:991px) {
+        padding: 40px 0 50px;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 394px;
+        height: 394px;
+        background: #FF7121;
+        filter: blur(94.5px);
+        right: -20%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @media (max-width:991px) {
+            width: 189.43px;
+            height: 243.3px;
+            top: inherit;
+            bottom: 0;
+            transform: translateY(50%);
+            filter: blur(49.5px);
+        }
+    }
+
+    h1 {
+        max-width: 900px;
+        width: 100%;
+    }
+
+
+}
+
+.ourServices {
+    border-top: 1px solid var(--COLOR-BLACK);
+
+    // border-bottom: 1px solid var(--COLOR-BLACK);
+    &__wrp {
+
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+    }
+
+    &__content {
+        border-left: 1px solid var(--COLOR-BLACK);
+        border-right: 1px solid var(--COLOR-BLACK);
+
+    }
+}
+
+.ourServices {
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__cardItem {
+        padding: 50px 30px;
+        flex-basis: 50%;
+        border-bottom: 1px solid var(--COLOR-BLACK);
+        position: relative;
+
+        @media (max-width:767px) {
+            flex-basis: 100%;
+            padding: 40px 20px;
+        }
+
+        &:not(:last-child)::before {
+            @media (max-width:767px) {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 15px;
+                height: 27px;
+                // background-size: 100%;
+                transform: translate(-50%, 50%);
+            }
+        }
+
+        &:last-child {
+            @media (max-width:767px) {
+
+                border-bottom: 0 solid #000;
+            }
+        }
+
+        &:not(:last-child):after {
+            @media (max-width:767px) {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                background-repeat: no-repeat;
+                width: 15px;
+                height: 27px;
+                // background-size: 100%;
+                transform: translate(50%, 50%);
+                background-size: cover;
+
+            }
+        }
+
+        &:nth-child(odd) {
+            @media (min-width:768px) {
+                border-right: 1px solid var(--COLOR-BLACK);
+                position: relative;
+            }
+
+            &::after {
+                @media (min-width:768px) {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-repeat: no-repeat;
+                    width: 40px;
+                    height: 70px;
+                    background-size: 100%;
+                    transform: translate(50%, 50%);
+                }
+            }
+        }
+
+        &:nth-last-child(2):nth-child(odd) {
+            &::after {
+                display: none;
+            }
+        }
+
+    }
+
+    &__cardListItem {
+        padding: 0;
+        margin-top: 24px;
+        margin-left: 16px;
+        max-width: 480px;
+        width: 100%;
+
+        li {
+            &:not(:last-child) {
+                p {
+                    margin-bottom: 0px;
+
+                }
+
+            }
+        }
+    }
+
+    &__cardText {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--COLOR-BLACK);
+    }
+
+    .service-marque-right {
+        margin: 0 -15px;
+        border-top: 1px solid var(--COLOR-BLACK);
+
+        @media (min-width:991px) {
+            border: 0;
+            margin: 0;
+            position: absolute;
+            left: 0;
+            width: 50px;
+            writing-mode: vertical-lr;
+
+        }
+    }
+
+    .service-marque-left {
+        margin: 0 -15px;
+        border-bottom: 1px solid var(--COLOR-BLACK);
+
+        @media (min-width:991px) {
+            border: 0;
+            margin: 0;
+            position: absolute;
+            left: -65px;
+            top: 0;
+            bottom: 0;
+            // transform: rotate(90deg);
+            writing-mode: vertical-lr;
+
+        }
+
+        .marquee {
+            @media (min-width:991px) {
+                width: 100%;
+                --gap: 3rem;
+
+            }
+
+        }
+
+        .Marquee-tag {
+            @media (min-width:991px) {
+
+                width: 100%;
+            }
+        }
+    }
+
+    .service-marque-right {
+        @media (min-width:991px) {
+            position: absolute;
+            left: inherit;
+            right: -50px;
+            top: 0;
+            bottom: 0;
+            // transform: rotate(90deg);
+            writing-mode: vertical-lr;
+
+        }
+
+        .marquee {
+            @media (min-width:991px) {
+                width: 100%;
+                --gap: 3rem;
+
+            }
+
+
+        }
+
+        .Marquee-tag {
+            @media (min-width:991px) {
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.ourPartners {
+    &__head {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-bottom: 0;
+
+        @media (max-width:991px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin:  0 !important;
+        }
+
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+
+
+    }
+
+    &__listItem {
+        flex-basis: calc(100% / 4);
+        text-align: center;
+        padding: 80px 60px;
+        border: 1px solid var(--COLOR-BLACK);
+
+        @media (max-width:1335px) {
+            flex-basis:calc(100% / 3);
+            padding: 30px;
+        }
+        @media (max-width:991px) {
+            flex-basis: 50%;
+            padding: 30px;
+        }
+
+        img {
+            @media (max-width:991px) {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+
+        &:nth-child(odd){
+            position: relative;
+            &::after {
+                @media (max-width:991px) {
+
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-repeat: no-repeat;
+                    width: 15px;
+                    height: 27px;
+                    background-size: 100%;
+                    transform: translate(50%, 50%);
+                }
+            }
+
+        }
+
+        &:nth-last-child(2){
+            &::after {
+                @media (max-width:991px) {
+                    display: none;
+                }}
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+            position: relative;
+
+            &::after {
+                @media (min-width:992px) and (max-width:1335px) {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-repeat: no-repeat;
+                    width: 40px;
+                    height: 70px;
+                    // background-size: 100%;
+                    transform: translate(50%, 50%);
+                    background-size: contain;
+                }
+            }
+        }
+        &:nth-child(-n+3) {
+            position: relative;
+
+            &::after {
+                @media (min-width:1336px) {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-repeat: no-repeat;
+                    width: 40px;
+                    height: 70px;
+                    // background-size: 100%;
+                    transform: translate(50%, 50%);
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+.service-showcase {
+    h2 {
+        margin: 0;
+        @media (min-width:992px) {
+            margin: 60px 0;
+            
+        }
+
+    }
+}
