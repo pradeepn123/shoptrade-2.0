@@ -555,7 +555,7 @@ main {
   display: flex;
 }
 
-.contact-btn {
+.contact-button {
   font-weight: 500;
   font-size: 24px;
   line-height: 194%;
@@ -565,12 +565,12 @@ main {
   background-color: transparent;
 }
 @media (max-width: 767px) {
-  .contact-btn {
+  .contact-button {
     font-size: 16px;
     padding: 8px 20px;
   }
 }
-.contact-btn.active {
+.contact-button.active {
   padding-bottom: 40px;
   background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Union_9dea3fb2-b3bb-4c9d-ae0d-54d70d779fc1.png?v=1666869297");
   background-size: 100% 100%;
@@ -583,7 +583,7 @@ main {
   border: 1px solid transparent;
 }
 @media (max-width: 767px) {
-  .contact-btn.active {
+  .contact-button.active {
     font-size: 16px;
     padding: 8px 20px 25px 20px;
   }
