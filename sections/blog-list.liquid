@@ -1,0 +1,22 @@
+<section class="work blog-list"> 
+    <ul class="ourWork__cards ">
+        {% for article in blog.articles %}
+            <li class="ourWork__card ">
+
+                <div class="ourWork__cardBody">
+                    <div class="img-container">
+                        <div class="img-wrp">
+                            <img class="thumb-img" src="{{ article.image | image_url }}" alt="{{ article.title }} />
+                            <div class="btn-wrp">
+                            
+                        </div>
+                    </div>
+                    <div class="work-body">
+                            {{ article.excerpt }}
+                            <a class="arrow-o-link " href={{ article.url }}><span>Read more</span> <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-arrow-o.svg?v=1666947561" alt="arrow"/></a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

@@ -1,6 +1,5 @@
 {
   "sections": {
-
     "banner": {
       "type": "showcaseBanner",
       "blocks": {
@@ -142,10 +141,10 @@
         "reviewText": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.",
         "name": "Harley Finkelstein ",
         "company": "Hathaspace"
-
+      }
+    }
   },
   "order": [
-
     "banner",
     "marquee",
     "showcase-role",
@@ -154,4 +153,3 @@
     "showcaseReview"
   ]
 }
-

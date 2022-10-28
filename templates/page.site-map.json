@@ -1,6 +1,5 @@
 {
   "sections": {
-
     "site-map": {
       "type": "site-map",
       "blocks": {
@@ -72,11 +71,10 @@
       ],
       "settings": {
         "heading": "Site map"
-
+      }
+    }
   },
   "order": [
-
     "site-map"
   ]
 }
-

@@ -1,6 +1,5 @@
 {
   "sections": {
-
     "banner": {
       "type": "serviceBanner",
       "settings": {
@@ -191,14 +190,13 @@
       ],
       "settings": {
         "heading": "Showcase"
-
+      }
+    }
   },
   "order": [
-
     "banner",
     "ourservices",
     "ourPartners",
     "serviceShowcase"
   ]
 }
-

@@ -1,12 +1,36 @@
 <section class="blogBanner">
     <div class="container">
-        <h1 class="h1 my-60">BLogs</h1>
+        <h1 class="h1 my-60">{{ section.settings.heading }}</h1>
     </div>
-    <div class="blogBanner__wrp">
-        <div class="blogBanner__img">
-        
-        </div>
-        <div class="blogBanner__info"></div>
-    
+    {% for article in blog.articles %}
+        <div>
+        {% if article.tags contains 'featured' %}
+            <div class="blogBanner__wrp">
+                <div class="blogBanner__img">
+                    <img src="{{ article.image | image_url }}" alt="{{ article.title}}">
+                </div>
+                <div class="blogBanner__info">
+                    <div>
+                        {{ article.excerpt }}
+                        <a class="arrow-o-link " href={{ article.url }}><span>Read more</span> <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-arrow-o.svg?v=1666947561" alt="arrow"/></a>
+                    </div>
+            </div>
+            
+        {% endif %}
     </div>
+    {% endfor %}
+  
 </section>
+
+{% schema %}
+    {
+        "name":"Blogs Banner",
+        "settings":[
+            {
+                "type":"text",
+                "id":"heading",
+                "label":"Heading"
+            }
+        ]
+    }
+{% endschema %}

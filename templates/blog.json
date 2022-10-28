@@ -1,10 +1,19 @@
 {
   "sections": {
-    "blog-banner":{
-      "type":"blog-banner"
+    "blog-banner": {
+      "type": "blog-banner",
+      "settings": {
+        "heading": "Blogs"
+      }
+    },
+    "list": {
+      "type": "blog-list",
+      "settings": {
+      }
     }
   },
   "order": [
-    "blog-banner"
+    "blog-banner",
+    "list"
   ]
 }

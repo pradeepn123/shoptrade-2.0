@@ -1,6 +1,5 @@
 {
   "sections": {
-
     "aboutBanner": {
       "type": "about-banner",
       "settings": {
@@ -254,18 +253,10 @@
       ],
       "settings": {
         "heading": "Meet our Team"
-
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-
       }
     }
   },
   "order": [
-
     "aboutBanner",
     "about-mision",
     "about-culter",
@@ -276,8 +267,3 @@
     "about-teamMembers"
   ]
 }
-
-    "main"
-  ]
-}
-

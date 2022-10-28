@@ -180,6 +180,7 @@
 .button-group {
     display: flex;
 }
+
 .contact-button {
     font-weight: 500;
     font-size: 24px;
@@ -205,9 +206,35 @@
         letter-spacing: 0.06em;
         color: #FFFFFF;
         border: 1px solid transparent;
+
         @media (max-width:767px) {
             font-size: 16px;
-            padding: 8px 20px 25px 20px ;
+            padding: 8px 20px 25px 20px;
         }
     }
+}
+
+.arrow-o-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: #FF7121;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-left: 8px;
+    }
+}
+
+.btn-orange {
+    padding: 18px 33px;
+    background-color: var(--COLOR-PRIMARY);
+    border: 2px solid var(--COLOR-BLACK);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
 }
