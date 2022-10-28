@@ -1,5 +1,6 @@
 {
   "sections": {
+
     "work": {
       "type": "work",
       "blocks": {
@@ -53,10 +54,11 @@
       ],
       "settings": {
         "heading": "Transform your brand with the power of a global audience"
-      }
-    }
+
   },
   "order": [
+
     "work"
   ]
 }
+
