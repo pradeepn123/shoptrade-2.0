@@ -1,8 +1,9 @@
 <section class="testimonials">
   <div class="container">
     <div class="testimonials__header">
-      <h2 class="h1-main">Testimonial</h2>
-      <div class="slider-arrow">
+      <h2 class="h1-main">{{ section.settings.heading }}
+      </h2>
+      <div class="slider-arrow only-desktop">
         <div class="js-arrow-left arrow-icon">
           <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-left.png?v=1665638248"/>
         </div>
@@ -17,31 +18,36 @@
     <div class="swiper-container js-testimonial-slider">
 
       <ul class="swiper-wrapper testimonials__slider">
+        {% assign sliderType = section.blocks | where: 'type', 'sliderType' %}
 
-        {% for block in section.blocks %}
+        {% for block in sliderType %}
+          {%- if block != blank -%}
 
-          <li class="testimonials__slide swiper-slide">
-            <div class="testimonials__head">
-              <div>
-                <img src="{{ block.settings.sliderImage | image_url }} "/>
 
+            <li class="testimonials__slide swiper-slide">
+              <div class="testimonials__head">
+                <div>
+                  <img src="{{ block.settings.sliderImage | image_url }} "/>
+
+                </div>
               </div>
-            </div>
-            <div class="testimonials__body">
-              <p class="fnt-600 clr-b m-0">
-                {{ block.settings.sliderText }}
-              </p>
-
-              <div class="testimonials__footer">
-                <h5 class="m-0">
-                  {{ block.settings.name }}
-                </h5>
-                <p class="designation m-0">
-                  {{ block.settings.designation }}
+              <div class="testimonials__body">
+                <p class="fnt-600 clr-b m-0">
+                  {{ block.settings.sliderText }}
                 </p>
+
+                <div class="testimonials__footer">
+                  <h5 class="m-0">
+                    {{ block.settings.name }}
+                  </h5>
+                  <p class="designation m-0">
+                    {{ block.settings.designation }}
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
+            </li>
+
+          {%- endif -%}
 
         {% endfor %}
 
@@ -81,8 +87,7 @@
 
 
 {% schema %}
-
-  {
+{
     "name": "testimonials",
     "settings": [
       {
@@ -142,4 +147,4 @@
 
 
   }
-{% endschema %}}}}}}}}}}}}
+{% endschema %}

@@ -1,0 +1,76 @@
+<section class="work">
+  <div class="container">
+    <h1 class="">{{ section.settings.heading }}
+    </h1>
+
+  </div>
+  <ul class="ourWork__cards ">
+
+    {% for block in section.blocks %}
+      <li class="ourWork__card ">
+
+        <div class="ourWork__cardBody">
+          <div class="img-container">
+            <div class="img-wrp">
+              <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
+              <div class="btn-wrp">
+                <a hrer="{{ block.settings.cardLink }}" class="btn btn--arrow" href="">
+
+                  <div>
+                    <img class="" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
+
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="work-logo-footer">
+              <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
+            </div>
+
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+
+
+  </ul>
+</section>
+
+{% schema %}
+
+  {
+    "name": "work",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text"
+
+      }
+    ],
+    "blocks": [
+      {
+        "name": "cards",
+        "type": "cardType",
+        "settings": [
+          {
+            "id": "cardImage",
+            "type": "image_picker",
+            "label": "Card image"
+
+          }, {
+            "id": "cardImageBrand",
+            "type": "image_picker",
+            "label": "Brand logo"
+
+          },{
+          "id":"cardLink",
+          "type":"url",
+          "label":"Brand link"
+        }
+        ]
+      }
+    ]
+
+  }
+{% endschema %}

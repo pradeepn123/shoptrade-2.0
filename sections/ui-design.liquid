@@ -1,21 +1,61 @@
 <section class="uiDesign">
-  <div class="uiDesign__wrp">
+  <div class="only-mobile">
     <ul class="uiDesign__list d-flex">
+
+      <div class="swiper-container mobile-logo-slider">
+        <div class="swiper-wrapper">
+       
+            {% for block in section.blocks limit: 7 %}
+              <li class="uiDesign__item swiper-slide " data-id="top-{{ forloop.index }}">
+                <div>
+      
+                  {{ block.settings.UIicons }}
+                </div>
+              </li>
+            {% endfor %}
+
+
+            {%- assign leftIcons = section.blocks | where: 'type','leftUiIconType' -%}
+        {% for block in leftIcons limit: 4 %}
+          <li class="uiDesign__item swiper-slide" data-id="left-{{ forloop.index }}">
+            <div>
+              {{ block.settings.leftUIicons }}
+            </div>
+          </li>
+        {% endfor %}
+
+        {%- assign leftIcons = section.blocks | where: 'type','rightUiIconType' -%}
+        {% for block in leftIcons limit: 4 %}
+          <li class="uiDesign__item swiper-slide" data-id="right-{{ forloop.index }}">
+            <div>
+              {{ block.settings.rightUIicons }}
+            </div>
+          </li>
+        {% endfor %}
+    
+        </div>
+      </div>
+     
+    </ul>
+  </div>
+  <div class="uiDesign__wrp ">
+    <ul class="uiDesign__list d-flex only-desktop">
       {% for block in section.blocks limit: 7 %}
         <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
           <div>
-            <img src="{{ block.settings.UIicons | image_url }}"/>
+
+            {{ block.settings.UIicons }}
           </div>
         </li>
       {% endfor %}
     </ul>
     <div class="d-flex">
-      <ul class="uiDesign__list left-icons">
+      <ul class="uiDesign__list left-icons only-desktop">
         {%- assign leftIcons = section.blocks | where: 'type','leftUiIconType' -%}
         {% for block in leftIcons limit: 4 %}
           <li class="uiDesign__item " data-id="left-{{ forloop.index }}">
             <div>
-              <img src="{{ block.settings.leftUIicons | image_url }}"/>
+              {{ block.settings.leftUIicons }}
             </div>
           </li>
         {% endfor %}
@@ -66,12 +106,12 @@
 
         </div>
       </div>
-      <ul class="uiDesign__list right-icons">
+      <ul class="uiDesign__list right-icons only-desktop">
         {%- assign leftIcons = section.blocks | where: 'type','rightUiIconType' -%}
         {% for block in leftIcons limit: 4 %}
           <li class="uiDesign__item " data-id="right-{{ forloop.index }}">
             <div>
-              <img src="{{ block.settings.rightUIicons | image_url }}"/>
+              {{ block.settings.rightUIicons }}
             </div>
           </li>
         {% endfor %}
@@ -79,6 +119,8 @@
 
     </div>
   </div>
+
+
 </section>
 
 
@@ -88,13 +130,13 @@
     "name": "UI",
     "blocks": [
       {
-        "name": "UI Icons",
+        "name": "Top Icons",
         "type": "UIiconType",
         "settings": [
           {
             "id": "UIicons",
-            "label": "Icon",
-            "type": "image_picker"
+            "label": "Top Icon",
+            "type": "text"
           }
         ]
       },
@@ -104,8 +146,8 @@
         "settings": [
           {
             "id": "leftUIicons",
-            "label": "left Icon",
-            "type": "image_picker"
+            "label": "Left Icon",
+            "type": "text"
           }
         ]
       },
@@ -115,8 +157,8 @@
         "settings": [
           {
             "id": "rightUIicons",
-            "label": "right Icon",
-            "type": "image_picker"
+            "label": "Right Icon",
+            "type": "text"
           }
         ]
       },
@@ -153,4 +195,4 @@
       }
     ]
   }
-{% endschema %}}}}}}
+{% endschema %}

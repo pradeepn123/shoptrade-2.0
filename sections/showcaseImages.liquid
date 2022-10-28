@@ -1,0 +1,58 @@
+<section class="showcaseImages">
+
+    <div class="container">
+        <div class="showcaseImages__imgWrp">
+            {%- assign smallImage = section.blocks | where : 'type','showcaseImageBLock' -%}
+    
+            {%- for block in smallImage -%}
+                <div class="showcaseImages__img">
+                    <img class="" src="{{ block.settings.image | image_url }}">
+                </div>
+            {%- endfor -%}
+            {%- assign largeImage = section.blocks | where : 'type','showcaselardImage' -%}
+            
+            {% for block in largeImage %}
+                <div class="showcaseImages__largeImage">
+                    <img src="{{ block.settings.largeImage | image_url}}">
+                </div>
+            {% endfor %}
+           
+        </div>
+    
+    </div>
+
+</section>
+
+
+{% schema %}
+    {
+        "name":"showcase Images",
+        "blocks": [
+            {
+                "type": "showcaseImageBLock",
+                "name": "Showcase Image block",
+                "settings": [
+                    {
+                        "id":"image",
+                        "type":"image_picker",
+                        "label":"Project image"
+                    }
+                ]
+            },
+            {
+                "type":"showcaselardImage",
+                "name":"Showcase Large Image",
+                "settings": [
+                    {
+                        "id":"largeImage",
+                        "type":"image_picker",
+                        "label":"Project Large image"
+                    
+                    }
+                ]
+            
+            }
+        ]
+        
+    }
+{% endschema %}

@@ -1,0 +1,11 @@
+.blogBanner {
+    &__wrp {
+
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+    }
+
+    &__img {
+        padding: 48px 35px;
+    }
+}

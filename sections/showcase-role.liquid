@@ -1,0 +1,35 @@
+<section class="role">
+    <div class="role__card">
+        {% for item in section.blocks limit: 2 %}
+            <div class="role__cardItem">
+                <h5 class="role__head">{{ item.settings.heading }}</h5>
+                <p class="role__text">{{ item.settings.subHeading }}</p>
+            </div>
+        {% endfor %}
+      
+    </div>
+</section>
+
+
+{% schema %}
+    {
+        "name":"role",
+        "blocks":[
+            {
+                "name":"roleblock",
+                "type":"role",
+                "settings":[
+                    {
+                    "id":"heading",
+                    "label":"Role Heading",
+                    "type":"text"
+                },{
+                    "id":"subHeading",
+                    "label":"Role Sub Heading",
+                    "type":"text"
+                }
+            ]
+            }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,109 @@
+<section class="showcaseBanner"> 
+
+    <div class="container">
+
+        <div class="showcaseBanner__head">
+        <div class="showcaseBanner__header">
+            <h1 class="h1"> {{ section.settings.heading }} </h1>
+            <p class="fnt-48 clr-b"> {{ section.settings.subHeading }} </p>
+        </div>
+        <div class="showcaseBanner__links">
+            <div class="showcaseBanner__linksItem">
+                <a href="#" class="circle-link">
+                    <img src='https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-up-Arrow.svg?v=1666078351' />
+                </a>
+                <p class="link-text">Visit site</p>
+            </div>
+            <div class="showcaseBanner__creditList ">
+                <ul class="showcaseBanner__credit">
+                    {%- for block in section.blocks limit: 3 -%}
+                        <li class="showcaseBanner__creditItem">
+                            <img src="{{ block.settings.profileImage | image_url }}">
+                        </li>
+                    {%- endfor -%}
+                
+                </ul>
+                <p class="link-text text-center">Credits</p>
+                <ul class="creditDrop">
+
+                    {%- for block in section.blocks limit: 3 -%}
+                    <li class="creditDrop__item">
+                        <div class="creditDrop__itemImage">
+                            <img src="{{ block.settings.profileImage | image_url }}">
+                        </div>
+                        <div class="creditDrop__itemBody">
+                            <p>{{ block.settings.profileName }}</p>
+                            <p>{{ block.settings.profileDesignation }}</p>
+                        </div>
+                    </li>
+                {%- endfor -%}
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="showcaseBanner__bannerrImage"> 
+        <div class="container">
+            <div class="showcaseBanner__imgWrp">
+                <img class="showcaseBanner__img" src="{{ section.settings.bannerImage | image_url }}">
+                <img class="showcaseBanner__logo" src='{{ section.settings.bannerImageLogo | image_url }}'>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name":"showcaseBanner",
+    "settings":[
+        {
+            "id":"heading",
+            "label":"Heading",
+            "type":"text"
+        
+        },
+        {
+            "id":"subHeading",
+            "label":"Sub Heading",
+            "type":"text"
+        
+        },{
+            "id":"bannerImage",
+            "label":"Banner Image",
+            "type":"image_picker"
+        
+        },{
+            "id":"bannerImageLogo",
+            "label":"Banner Logo Image",
+            "type":"image_picker"
+        
+        }
+    ],
+    "blocks": [
+        {
+            "type": "creditProfile",
+            "name": "credit profile",
+            "settings": [
+                {
+                    "id":"profileImage",
+                    "label":"profile Image",
+                    "type" : "image_picker"
+                },
+                {
+                    "id":"profileName",
+                    "label":"profile Name",
+                    "type" : "text"
+                },
+                {
+                    "id":"profileDesignation",
+                    "label":"profile Designation",
+                    "type" : "text"
+                }
+            ]
+        }
+    ]
+    
+}
+{% endschema %}

@@ -12,6 +12,29 @@
         border-right: 1px solid var(--COLOR-BLACK);
         border-bottom: 1px solid var(--COLOR-BLACK);
 
+        &:not(:last-child) {
+            .testimonials__head {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-repeat: no-repeat;
+                    width: 40px;
+                    height: 70px;
+                    background-size: 100%;
+                    transform: translate(50%, 50%);
+                    @media (max-width:991px) {
+                        width: 15px;
+                        height: 27px;
+                    }
+                }
+            }
+        }
+
     }
 
     &__head {
@@ -42,9 +65,16 @@
         }
     }
 
+    &__wrp {
+        border-bottom: 1px solid var(--COLOR-BLACK);
+    }
+
     &__profile {
-        display: flex;
-        flex: 1;
+
+        @media (min-width:992px) {
+            display: flex;
+            flex: 1;
+        }
     }
 
     &__profileList {
@@ -63,6 +93,19 @@
     &__profileCard {
         width: 512px;
         padding: 52px 82px 80px;
+        text-align: center;
+
+        @media (max-width:991px) {
+            padding: 40px 50px;
+        }
+
+
+        img {
+            @media (max-width:991px) {
+                width: 253.54px;
+                height: 277.73px;
+            }
+        }
     }
 
     &__profille__img {
@@ -90,12 +133,38 @@
         color: var(--COLOR-BLACK);
         text-align: center;
         margin: 0;
+
+
     }
 
     &__profileDescription {
         padding: 100px;
         display: flex;
         align-items: center;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width:991px) {
+            padding: 60px 40px
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: #FF7121;
+            filter: blur(94.5px);
+            width: 394px;
+            height: 394px;
+            right: -30%;
+            top: -30%;
+
+            @media (max-width:991px) {
+                width: 282.08px;
+                height: 267.81px;
+                right: -30%;
+                top: -30%;
+            }
+        }
 
         h3 {
             font-weight: 700;
@@ -103,6 +172,11 @@
             line-height: 165%;
             letter-spacing: -0.03em;
             color: var(--COLOR-BLACK);
+
+            @media (max-width:991px) {
+                font-size: 20px;
+
+            }
         }
     }
 

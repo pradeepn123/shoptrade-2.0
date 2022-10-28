@@ -1,12 +1,157 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+
+    "banner": {
+      "type": "showcaseBanner",
+      "blocks": {
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
+            "profileName": "Jermy",
+            "profileDesignation": "Product designer"
+          }
+        },
+        "6825669d-a038-4816-a61a-3d341507478e": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
+            "profileName": "Jermy",
+            "profileDesignation": "Product designer"
+          }
+        },
+        "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
+            "profileName": "Jermy",
+            "profileDesignation": "Product designer"
+          }
+        }
+      },
+      "block_order": [
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
+        "6825669d-a038-4816-a61a-3d341507478e",
+        "f11dbc34-f9a6-4f99-a03a-131966c03a5b"
+      ],
+      "settings": {
+        "heading": "Hathaspace",
+        "subHeading": "Smart True HEPA Air Purifiers",
+        "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png",
+        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png"
+      }
+    },
+    "marquee": {
+      "type": "showcaseMarque",
       "settings": {
       }
-    }
+    },
+    "showcase-role": {
+      "type": "showcase-role",
+      "blocks": {
+        "e6f30b36-57ed-4b08-a7d6-785c65646838": {
+          "type": "role",
+          "settings": {
+            "heading": "Our role",
+            "subHeading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat ornare lectus in ac auctor sit vitae. Purus ultrices pellentesque sagittis ultrices erat sit. Duis ac sed viverra ut mauris tellus integer. Nunc, massa neque duis in sed ac ultricies suscipit."
+          }
+        },
+        "a015cadd-5e92-405a-9294-b3b255dbfc4d": {
+          "type": "role",
+          "settings": {
+            "heading": "Our role",
+            "subHeading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat ornare lectus in ac auctor sit vitae. Purus ultrices pellentesque sagittis ultrices erat sit. Duis ac sed viverra ut mauris tellus integer. Nunc, massa neque duis in sed ac ultricies suscipit."
+          }
+        }
+      },
+      "block_order": [
+        "e6f30b36-57ed-4b08-a7d6-785c65646838",
+        "a015cadd-5e92-405a-9294-b3b255dbfc4d"
+      ],
+      "settings": {
+      }
+    },
+    "showcaseImage": {
+      "type": "showcaseImages",
+      "blocks": {
+        "993440ae-4f89-4d68-90f7-7a9a309e95f2": {
+          "type": "showcaseImageBLock",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-showcase01.png"
+          }
+        },
+        "253a3a09-8f21-4360-9de7-69871df3e4c8": {
+          "type": "showcaseImageBLock",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-showcase02.png"
+          }
+        },
+        "01fd597e-3959-4dc5-a0f2-bd6a22921769": {
+          "type": "showcaselardImage",
+          "settings": {
+            "largeImage": "shopify:\/\/shop_images\/large-images.png"
+          }
+        }
+      },
+      "block_order": [
+        "993440ae-4f89-4d68-90f7-7a9a309e95f2",
+        "253a3a09-8f21-4360-9de7-69871df3e4c8",
+        "01fd597e-3959-4dc5-a0f2-bd6a22921769"
+      ],
+      "settings": {
+      }
+    },
+    "showcaseClient": {
+      "type": "showcaseClient",
+      "blocks": {
+        "61296caa-3831-4c0f-9fc9-90d7037e2915": {
+          "type": "resposiveImages",
+          "settings": {
+            "resImg": "shopify:\/\/shop_images\/resImg3.png"
+          }
+        },
+        "635a7297-0c81-41fe-b02c-ca37bab3579d": {
+          "type": "resposiveImages",
+          "settings": {
+            "resImg": "shopify:\/\/shop_images\/resImg2.png"
+          }
+        },
+        "4f21f37a-cc95-4bfa-8a37-74f22404adf8": {
+          "type": "resposiveImages",
+          "settings": {
+            "resImg": "shopify:\/\/shop_images\/resImg1.png"
+          }
+        }
+      },
+      "block_order": [
+        "61296caa-3831-4c0f-9fc9-90d7037e2915",
+        "635a7297-0c81-41fe-b02c-ca37bab3579d",
+        "4f21f37a-cc95-4bfa-8a37-74f22404adf8"
+      ],
+      "settings": {
+        "heading": "The Client",
+        "Subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa erat ipsum, risus vitae nibh. Tempor venenatis integer ut dui eu. Aliquet diam augue lectus tortor. Habitant id arcu, leo gravida nulla purus. Pulvinar vitae pellentesque ut consequat convallis.",
+        "image": "shopify:\/\/shop_images\/client.png"
+      }
+    },
+    "showcaseReview": {
+      "type": "showcaseReview",
+      "settings": {
+        "thumbnail": "shopify:\/\/shop_images\/review-image.png",
+        "vedioUrl": "",
+        "reviewText": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.",
+        "name": "Harley Finkelstein ",
+        "company": "Hathaspace"
+
   },
   "order": [
-    "main"
+
+    "banner",
+    "marquee",
+    "showcase-role",
+    "showcaseImage",
+    "showcaseClient",
+    "showcaseReview"
   ]
 }
+

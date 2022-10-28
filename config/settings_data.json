@@ -107,6 +107,7 @@
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
+              "text_alignment": "center",
               "color_scheme": "background-1",
               "link": ""
             }
@@ -121,59 +122,9 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
-          "logo": "{{ shop.brand.logo }}",
-          "logo_width": 90,
-          "logo_position": "middle-left",
-          "menu": "main-menu",
-          "show_line_separator": true,
-          "enable_sticky_header": true,
-          "margin_bottom": 0,
-          "padding_top": 20,
-          "padding_bottom": 20
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
-        ],
-        "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
-          "payment_enable": true,
-          "margin_top": 48,
-          "padding_top": 36,
-          "padding_bottom": 36
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logombile": "shopify:\/\/shop_images\/logo_mobile.png",
+          "menu": "main-menu"
         }
       },
       "main-password-header": {
@@ -189,8 +140,83 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "8345fd4a-3eb0-410d-91a8-a9d4c14db3a9": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/work.png",
+              "workText": "Book a Meeting"
+            }
+          },
+          "febd0a28-6a43-474d-aeeb-d99261b938e2": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/call.png",
+              "workText": "+1 844 583 0025"
+            }
+          },
+          "8c3edd2e-5b3a-4560-95e4-4e0e551fccfd": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/mail.png",
+              "workText": "hello@shoptrade.co"
+            }
+          },
+          "f0c8dd0e-e716-40f9-b487-bdf1e038e8ca": {
+            "type": "office",
+            "settings": {
+              "officeImage": "shopify:\/\/shop_images\/HQ.png",
+              "officeText": "1228 E 7th Ave Suite 200, Tampa, FL 33605, United States"
+            }
+          },
+          "7dff8849-f76a-4c4e-8710-da6fd3fcb9dd": {
+            "type": "office",
+            "settings": {
+              "officeImage": "shopify:\/\/shop_images\/BR.png",
+              "officeText": "508 1st Floor, Koramangala, Bengaluru, Karnataka, India - 560095"
+            }
+          },
+          "fbe7fc1c-09ce-4a51-8c55-be7e06599ff8": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/Facebook.png"
+            }
+          },
+          "7b29d524-ae20-4874-bad2-b6f8faa020ac": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/Instagram.png"
+            }
+          },
+          "eec1ccab-5c43-472a-9de0-eb5c1de8604c": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/LinkedIn.png"
+            }
+          }
+        },
+        "block_order": [
+          "8345fd4a-3eb0-410d-91a8-a9d4c14db3a9",
+          "febd0a28-6a43-474d-aeeb-d99261b938e2",
+          "8c3edd2e-5b3a-4560-95e4-4e0e551fccfd",
+          "f0c8dd0e-e716-40f9-b487-bdf1e038e8ca",
+          "7dff8849-f76a-4c4e-8710-da6fd3fcb9dd",
+          "fbe7fc1c-09ce-4a51-8c55-be7e06599ff8",
+          "7b29d524-ae20-4874-bad2-b6f8faa020ac",
+          "eec1ccab-5c43-472a-9de0-eb5c1de8604c"
+        ],
+        "settings": {
+          "footerLink": "footer",
+          "footerBottomLink": "footer-bottom"
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
@@ -338,61 +364,8 @@
         "header": {
           "type": "header",
           "settings": {
-            "color_scheme": "background-1",
             "logo": "{{ shop.brand.logo }}",
-            "logo_width": 90,
-            "logo_position": "middle-left",
-            "menu": "main-menu",
-            "menu_type_desktop": "dropdown",
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "mobile_logo_position": "center",
-            "margin_bottom": 0,
-            "padding_top": 20,
-            "padding_bottom": 20
-          }
-        },
-        "footer": {
-          "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Quick links",
-                "menu": "footer"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Info",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "text",
-              "settings": {
-                "heading": "Our mission",
-                "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
-          "settings": {
-            "color_scheme": "background-1",
-            "newsletter_enable": true,
-            "newsletter_heading": "Subscribe to our emails",
-            "show_social": true,
-            "enable_country_selector": false,
-            "enable_language_selector": false,
-            "payment_enable": true,
-            "margin_top": 48,
-            "padding_top": 36,
-            "padding_bottom": 36
+            "menu": "main-menu"
           }
         },
         "main-password-header": {

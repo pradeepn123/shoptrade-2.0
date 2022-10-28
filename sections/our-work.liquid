@@ -5,7 +5,7 @@
         {{ section.settings.heading }}
       </h2>
       <div class="">
-        <a href="" class="d-inline-block">
+        <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
           <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
         </a>
       </div>
@@ -13,9 +13,10 @@
     </div>
 
   </div>
-  <ul class="ourWork__cards">
+  <ul class="ourWork__cards swiper-container js-work-slider">
+    <div class="swiper-wrapper">
     {% for block in section.blocks %}
-      <li class="ourWork__card">
+      <li class="ourWork__card swiper-slide">
         <div class="ourWork__cardHead">
           <div class="marquee  enable-animation">
             <div class="marquee__content">
@@ -23,12 +24,12 @@
 
               <div class="Marquee-tag">
                 <p>
-                  # Development
+                 <span class="clr-o">#</span>  Development
                 </p>
               </div>
               <div class="Marquee-tag">
                 <p>
-                  # Headless
+                 <span class="clr-o">#</span>Headless
                 </p>
               </div>
 
@@ -37,12 +38,12 @@
 
               <div class="Marquee-tag">
                 <p>
-                  # Development
+                 <span class="clr-o">#</span>Development
                 </p>
               </div>
               <div class="Marquee-tag">
                 <p>
-                  # Headless
+                 <span class="clr-o">#</span>Headless
                 </p>
               </div>
 
@@ -54,7 +55,7 @@
             <div class="img-wrp">
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               <div class="btn-wrp">
-                <a hrer="" class="btn btn--orange">
+                <a hrer="" class="btn btn--orange" href="">
                   <div>
                     <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
                   </div>
@@ -70,6 +71,7 @@
         </div>
       </li>
     {% endfor %}
+  </div>
 
   </ul>
 </section>
@@ -84,7 +86,13 @@
         "label": "heading",
         "type": "text",
         "default": "Our Works"
-      }
+      },{
+        
+        "id":"link",
+        "label":"Nav link",
+        "type":"url"
+    
+    }
 
     ],
     "blocks": [
@@ -107,4 +115,4 @@
       }
     ]
   }
-{% endschema %}}
+{% endschema %}

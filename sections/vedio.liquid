@@ -4,8 +4,8 @@
       <div class="vedio__container">
 
         <img class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/>
-        <a href="" class="play-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icon.svg?v=1665507277"/>
+        <a href="" class="play-icon arrow-btn ">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"/>
         </a>
         <div class="vedio__info">
           <h2 class="h1-main clr-w m-0">{{ section.settings.vedioHeading }}
@@ -14,6 +14,19 @@
           </P>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="model-popup">
+    <div class="model-popup__wrp">
+      <div class="model-popup__vedio">
+        <span class="close-model"></span>
+        <iframe width="100%" height="100%" class="iframe-vedio" src="{{ section.settings.vedioUrl }}" frameborder="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        {%- comment -%}
+          <iframe width="460" height="230" src="//www.youtube.com/embed/6HOVX0wQOFY?autoplay=1"  tabindex="-1"></iframe>
+        {%- endcomment -%}
+      </div>
+
     </div>
   </div>
 </section>
@@ -34,7 +47,11 @@
         "id": "vedioThumbnailImage",
         "label": " Thumbnail Image",
         "type": "image_picker"
+      }, {
+        "id": "vedioUrl",
+        "label": "Vedio link",
+        "type": "url"
       }
     ]
   }
-{% endschema %}}
+{% endschema %}

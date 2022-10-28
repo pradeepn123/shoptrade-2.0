@@ -9,13 +9,15 @@
     </div>
   </div>
 
-  <ul class="ourNumbers__cards">
+  <ul class="ourNumbers__cards" id="counter">
 
     {% for block in section.blocks %}
       <li class="ourNumbers__cardItem">
         <div class="ourNumbers__cardbody">
-          <h3 class="ourNumbers__count">
-            {{ block.settings.cardNumber }}
+          <h3 class="ourNumbers__count count" data-count="{{ block.settings.cardNumber }}">
+            {%- comment -%}
+              {{ block.settings.cardNumber }}
+            {%- endcomment -%}
           </h3>
           <p class="fnt-20 clr-b">{{ block.settings.countText }}
           </p>
@@ -51,7 +53,7 @@
           {
             "id": "cardNumber",
             "label": "Number Count",
-            "type": "text"
+            "type": "number"
           }, {
             "id": "countText",
             "label": "Count Text",
@@ -64,5 +66,7 @@
 
 
     ]
+
+    
   }
-{% endschema %}}
+{% endschema %}
