@@ -707,8 +707,8 @@ main {
 }
 
 .image02 {
-  width: 198px;
   height: 62px;
+  object-fit: contain;
 }
 
 .ourWork__headContainer {

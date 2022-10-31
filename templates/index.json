@@ -14,21 +14,26 @@
         "116094d0-983b-443e-aebf-1c58e6585a3f": {
           "type": "marqueeType",
           "settings": {
-            "imageDoller": "shopify:\/\/shop_images\/Union.png",
-            "imageLogo": "shopify:\/\/shop_images\/shopify-plus.png"
+            "imageLogo": "shopify:\/\/shop_images\/shopify-plus_b086ec6c-7bdb-4ad9-9b55-cb5d2b6fb71d.png"
           }
         },
         "dfba2e09-4eb3-42c6-9b72-45667155df1d": {
           "type": "marqueeType",
           "settings": {
-            "imageDoller": "shopify:\/\/shop_images\/Union.png",
-            "imageLogo": "shopify:\/\/shop_images\/shopify-plus.png"
+            "imageLogo": "shopify:\/\/shop_images\/recharge.png"
+          }
+        },
+        "33a3aba2-0271-40d0-93a6-2491fb44160b": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/gargias.png"
           }
         }
       },
       "block_order": [
         "116094d0-983b-443e-aebf-1c58e6585a3f",
-        "dfba2e09-4eb3-42c6-9b72-45667155df1d"
+        "dfba2e09-4eb3-42c6-9b72-45667155df1d",
+        "33a3aba2-0271-40d0-93a6-2491fb44160b"
       ],
       "settings": {
       }
@@ -36,218 +41,143 @@
     "uiDesign": {
       "type": "UI-Design",
       "blocks": {
-        "c5021b03-7911-4622-9b37-f03eab8c0f28": {
-          "type": "UIiconType",
+        "3c86b867-83cc-47fa-aa39-dd0c0b5ab730": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M22.9167 0V6.25H27.0833V0H22.9167ZM8.7972 5.85124L5.85124 8.7972L10.2702 13.2161L13.2161 10.2702L8.7972 5.85124ZM41.2028 5.85124L36.7839 10.2702L39.7298 13.2161L44.1488 8.7972L41.2028 5.85124ZM25 10.4167C16.9701 10.4167 10.4167 16.9701 10.4167 25C10.4167 30.7662 13.8669 35.6297 18.75 37.9883V43.75C18.75 46.0272 20.6395 47.9167 22.9167 47.9167H27.0833C29.3605 47.9167 31.25 46.0272 31.25 43.75V37.9883C36.1331 35.6297 39.5833 30.7662 39.5833 25C39.5833 16.9701 33.0299 10.4167 25 10.4167ZM25 14.5833C30.7785 14.5833 35.4167 19.2215 35.4167 25C35.4167 29.5507 32.5111 33.3809 28.4709 34.8104L27.0833 35.2987V43.75H22.9167V35.2987L21.5291 34.8104C17.4889 33.3809 14.5833 29.5507 14.5833 25C14.5833 19.2215 19.2215 14.5833 25 14.5833ZM0 22.9167V27.0833H6.25V22.9167H0ZM43.75 22.9167V27.0833H50V22.9167H43.75ZM10.2702 36.7839L5.85124 41.2028L8.7972 44.1488L13.2161 39.7298L10.2702 36.7839ZM39.7298 36.7839L36.7839 39.7298L41.2028 44.1488L44.1488 41.2028L39.7298 36.7839Z\" fill=\"black\"><\/path> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M22.9167 0V6.25H27.0833V0H22.9167ZM8.7972 5.85124L5.85124 8.7972L10.2702 13.2161L13.2161 10.2702L8.7972 5.85124ZM41.2028 5.85124L36.7839 10.2702L39.7298 13.2161L44.1488 8.7972L41.2028 5.85124ZM25 10.4167C16.9701 10.4167 10.4167 16.9701 10.4167 25C10.4167 30.7662 13.8669 35.6297 18.75 37.9883V43.75C18.75 46.0272 20.6395 47.9167 22.9167 47.9167H27.0833C29.3605 47.9167 31.25 46.0272 31.25 43.75V37.9883C36.1331 35.6297 39.5833 30.7662 39.5833 25C39.5833 16.9701 33.0299 10.4167 25 10.4167ZM25 14.5833C30.7785 14.5833 35.4167 19.2215 35.4167 25C35.4167 29.5507 32.5111 33.3809 28.4709 34.8104L27.0833 35.2987V43.75H22.9167V35.2987L21.5291 34.8104C17.4889 33.3809 14.5833 29.5507 14.5833 25C14.5833 19.2215 19.2215 14.5833 25 14.5833ZM0 22.9167V27.0833H6.25V22.9167H0ZM43.75 22.9167V27.0833H50V22.9167H43.75ZM10.2702 36.7839L5.85124 41.2028L8.7972 44.1488L13.2161 39.7298L10.2702 36.7839ZM39.7298 36.7839L36.7839 39.7298L41.2028 44.1488L44.1488 41.2028L39.7298 36.7839Z\" fill=\"black\"><\/path> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "a2f5ec58-8009-4f8c-9156-e471336816d7": {
-          "type": "UIiconType",
+        "924fdf0e-ef53-4cb8-b9a2-ad47e02cf621": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_789_3887)\"> <path d=\"M47.9154 14.583V2.08301H35.4154V6.24967H14.582V2.08301H2.08203V14.583H6.2487V35.4163H2.08203V47.9163H14.582V43.7497H35.4154V47.9163H47.9154V35.4163H43.7487V14.583H47.9154ZM6.2487 6.24967H10.4154V10.4163H6.2487V6.24967ZM10.4154 43.7497H6.2487V39.583H10.4154V43.7497ZM35.4154 39.583H14.582V35.4163H10.4154V14.583H14.582V10.4163H35.4154V14.583H39.582V35.4163H35.4154V39.583ZM43.7487 43.7497H39.582V39.583H43.7487V43.7497ZM39.582 10.4163V6.24967H43.7487V10.4163H39.582ZM28.6029 29.1663H21.332L19.8112 33.333H16.4362L23.5195 14.583H26.4362L33.5404 33.333H30.1445L28.6029 29.1663ZM22.2695 26.5413H27.707L24.9987 18.5622L22.2695 26.5413Z\" fill=\"#070707\"><\/path> <\/g> <defs> <clippath id=\"clip0_789_3887\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5126)\"> <path d=\"M47.9154 14.583V2.08301H35.4154V6.24967H14.582V2.08301H2.08203V14.583H6.2487V35.4163H2.08203V47.9163H14.582V43.7497H35.4154V47.9163H47.9154V35.4163H43.7487V14.583H47.9154ZM6.2487 6.24967H10.4154V10.4163H6.2487V6.24967ZM10.4154 43.7497H6.2487V39.583H10.4154V43.7497ZM35.4154 39.583H14.582V35.4163H10.4154V14.583H14.582V10.4163H35.4154V14.583H39.582V35.4163H35.4154V39.583ZM43.7487 43.7497H39.582V39.583H43.7487V43.7497ZM39.582 10.4163V6.24967H43.7487V10.4163H39.582ZM28.6029 29.1663H21.332L19.8112 33.333H16.4362L23.5195 14.583H26.4362L33.5404 33.333H30.1445L28.6029 29.1663ZM22.2695 26.5413H27.707L24.9987 18.5622L22.2695 26.5413Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5126\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "0e37d95a-fe26-486a-b790-7fd859828004": {
-          "type": "UIiconType",
+        "aa5de5ef-6f36-4519-8c9b-5248f4a36d42": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5116)\"> <path d=\"M25.0013 4.16699C13.5013 4.16699 4.16797 13.5003 4.16797 25.0003C4.16797 36.5003 13.5013 45.8337 25.0013 45.8337C36.5013 45.8337 45.8346 36.5003 45.8346 25.0003C45.8346 13.5003 36.5013 4.16699 25.0013 4.16699ZM8.33464 25.0003C8.33464 23.7295 8.5013 22.4795 8.77214 21.292L18.7305 31.2503V33.3337C18.7305 35.6253 20.6055 37.5003 22.8971 37.5003V41.5212C14.7096 40.4795 8.33464 33.4795 8.33464 25.0003ZM37.2721 36.2503C36.7305 34.5628 35.1888 33.3337 33.3138 33.3337H31.2305V27.0837C31.2305 25.9378 30.293 25.0003 29.1471 25.0003H16.6471V20.8337H20.8138C21.9596 20.8337 22.8971 19.8962 22.8971 18.7503V14.5837H27.0638C29.3555 14.5837 31.2305 12.7087 31.2305 10.417V9.56283C37.3346 12.0212 41.668 18.0212 41.668 25.0003C41.668 29.3337 39.9805 33.292 37.2721 36.2503Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5116\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5116)\"> <path d=\"M25.0013 4.16699C13.5013 4.16699 4.16797 13.5003 4.16797 25.0003C4.16797 36.5003 13.5013 45.8337 25.0013 45.8337C36.5013 45.8337 45.8346 36.5003 45.8346 25.0003C45.8346 13.5003 36.5013 4.16699 25.0013 4.16699ZM8.33464 25.0003C8.33464 23.7295 8.5013 22.4795 8.77214 21.292L18.7305 31.2503V33.3337C18.7305 35.6253 20.6055 37.5003 22.8971 37.5003V41.5212C14.7096 40.4795 8.33464 33.4795 8.33464 25.0003ZM37.2721 36.2503C36.7305 34.5628 35.1888 33.3337 33.3138 33.3337H31.2305V27.0837C31.2305 25.9378 30.293 25.0003 29.1471 25.0003H16.6471V20.8337H20.8138C21.9596 20.8337 22.8971 19.8962 22.8971 18.7503V14.5837H27.0638C29.3555 14.5837 31.2305 12.7087 31.2305 10.417V9.56283C37.3346 12.0212 41.668 18.0212 41.668 25.0003C41.668 29.3337 39.9805 33.292 37.2721 36.2503Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5116\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "4e8bbced-1392-4fe8-9aae-851fafe04187": {
-          "type": "UIiconType",
+        "c2aa696a-7827-4c4f-bb52-ce6970f82759": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5113)\"> <path d=\"M39.5833 6.25H10.4167C8.125 6.25 6.25 8.125 6.25 10.4167V39.5833C6.25 41.875 8.125 43.75 10.4167 43.75H39.5833C41.875 43.75 43.75 41.875 43.75 39.5833V10.4167C43.75 8.125 41.875 6.25 39.5833 6.25ZM39.5833 39.5833H10.4167V10.4167H39.5833V39.5833ZM14.5833 20.8333H18.75V35.4167H14.5833V20.8333ZM22.9167 14.5833H27.0833V35.4167H22.9167V14.5833ZM31.25 27.0833H35.4167V35.4167H31.25V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5113\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5113)\"> <path d=\"M39.5833 6.25H10.4167C8.125 6.25 6.25 8.125 6.25 10.4167V39.5833C6.25 41.875 8.125 43.75 10.4167 43.75H39.5833C41.875 43.75 43.75 41.875 43.75 39.5833V10.4167C43.75 8.125 41.875 6.25 39.5833 6.25ZM39.5833 39.5833H10.4167V10.4167H39.5833V39.5833ZM14.5833 20.8333H18.75V35.4167H14.5833V20.8333ZM22.9167 14.5833H27.0833V35.4167H22.9167V14.5833ZM31.25 27.0833H35.4167V35.4167H31.25V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5113\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "cc328e09-44d1-4062-bc07-12cdca750cb7": {
-          "type": "UIiconType",
+        "462c3406-0564-4eab-bdf6-5b95e8cefad5": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5110)\"> <path d=\"M34.7083 9.41667L40.6042 15.3125L34.7083 21.2083L28.8125 15.3125L34.7083 9.41667M18.75 10.4167V18.75H10.4167V10.4167H18.75ZM39.5833 31.25V39.5833H31.25V31.25H39.5833ZM18.75 31.25V39.5833H10.4167V31.25H18.75ZM34.7083 3.52084L22.9167 15.2917L34.7083 27.0833L46.5 15.2917L34.7083 3.52084ZM22.9167 6.25H6.25V22.9167H22.9167V6.25ZM43.75 27.0833H27.0833V43.75H43.75V27.0833ZM22.9167 27.0833H6.25V43.75H22.9167V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5110\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5110)\"> <path d=\"M34.7083 9.41667L40.6042 15.3125L34.7083 21.2083L28.8125 15.3125L34.7083 9.41667ZM18.75 10.4167V18.75H10.4167V10.4167H18.75ZM39.5833 31.25V39.5833H31.25V31.25H39.5833ZM18.75 31.25V39.5833H10.4167V31.25H18.75ZM34.7083 3.52084L22.9167 15.2917L34.7083 27.0833L46.5 15.2917L34.7083 3.52084ZM22.9167 6.25H6.25V22.9167H22.9167V6.25ZM43.75 27.0833H27.0833V43.75H43.75V27.0833ZM22.9167 27.0833H6.25V43.75H22.9167V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5110\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "a92a33d9-57e6-48fe-808c-747bd8f23952": {
-          "type": "UIiconType",
+        "8d816607-e640-4a4f-a0aa-07ec77d0885b": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5119)\"> <path d=\"M20.375 23.25L17.4167 26.2083C16 24.7708 14.625 22.9167 13.6875 20.0833L17.7292 19.0625C18.3958 20.9167 19.3333 22.1875 20.375 23.25ZM22.9167 12.5L14.5833 4.16666L6.25 12.5H12.5417C12.5833 14.1875 12.7083 15.7083 12.9375 17.0208L16.9792 16C16.8333 15 16.7292 13.8125 16.7083 12.5H22.9167ZM43.75 12.5L35.4167 4.16666L27.0833 12.5H33.3125C33.1042 20.1667 30.6458 22.3958 28.0208 24.75C26.9792 25.6667 25.9167 26.6667 25 27.9792C24.2917 26.9583 23.4792 26.1458 22.6458 25.3958L19.7083 28.3333C21.6458 30.1042 22.9167 31.5417 22.9167 35.4167V45.8333H27.0833V35.4167C27.0833 31.2083 28.5625 29.875 30.8125 27.8542C33.6875 25.2708 37.2292 22.0625 37.4792 12.5H43.75Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5119\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5119)\"> <path d=\"M20.375 23.25L17.4167 26.2083C16 24.7708 14.625 22.9167 13.6875 20.0833L17.7292 19.0625C18.3958 20.9167 19.3333 22.1875 20.375 23.25ZM22.9167 12.5L14.5833 4.16666L6.25 12.5H12.5417C12.5833 14.1875 12.7083 15.7083 12.9375 17.0208L16.9792 16C16.8333 15 16.7292 13.8125 16.7083 12.5H22.9167ZM43.75 12.5L35.4167 4.16666L27.0833 12.5H33.3125C33.1042 20.1667 30.6458 22.3958 28.0208 24.75C26.9792 25.6667 25.9167 26.6667 25 27.9792C24.2917 26.9583 23.4792 26.1458 22.6458 25.3958L19.7083 28.3333C21.6458 30.1042 22.9167 31.5417 22.9167 35.4167V45.8333H27.0833V35.4167C27.0833 31.2083 28.5625 29.875 30.8125 27.8542C33.6875 25.2708 37.2292 22.0625 37.4792 12.5H43.75Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5119\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "f07e41bf-01c5-4003-a30a-11753d8e1a52": {
-          "type": "UIiconType",
+        "b70a2247-b524-490e-be4b-2d2e1d2f4071": {
+          "type": "services",
           "settings": {
-            "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5123)\"> <path d=\"M41.6667 37.5C43.9583 37.5 45.8125 35.625 45.8125 33.3333L45.8333 10.4167C45.8333 8.125 43.9583 6.25 41.6667 6.25H8.33333C6.04167 6.25 4.16667 8.125 4.16667 10.4167V33.3333C4.16667 35.625 6.04167 37.5 8.33333 37.5H0C0 39.7917 1.875 41.6667 4.16667 41.6667H45.8333C48.125 41.6667 50 39.7917 50 37.5H41.6667ZM8.33333 10.4167H41.6667V33.3333H8.33333V10.4167ZM25 39.5833C23.8542 39.5833 22.9167 38.6458 22.9167 37.5C22.9167 36.3542 23.8542 35.4167 25 35.4167C26.1458 35.4167 27.0833 36.3542 27.0833 37.5C27.0833 38.6458 26.1458 39.5833 25 39.5833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5123\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "top",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5123)\"> <path d=\"M41.6667 37.5C43.9583 37.5 45.8125 35.625 45.8125 33.3333L45.8333 10.4167C45.8333 8.125 43.9583 6.25 41.6667 6.25H8.33333C6.04167 6.25 4.16667 8.125 4.16667 10.4167V33.3333C4.16667 35.625 6.04167 37.5 8.33333 37.5H0C0 39.7917 1.875 41.6667 4.16667 41.6667H45.8333C48.125 41.6667 50 39.7917 50 37.5H41.6667ZM8.33333 10.4167H41.6667V33.3333H8.33333V10.4167ZM25 39.5833C23.8542 39.5833 22.9167 38.6458 22.9167 37.5C22.9167 36.3542 23.8542 35.4167 25 35.4167C26.1458 35.4167 27.0833 36.3542 27.0833 37.5C27.0833 38.6458 26.1458 39.5833 25 39.5833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5123\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "021015bc-eebf-4aa5-a352-ad8af0beb4aa": {
-          "type": "leftUiIconType",
+        "e1babbe8-035f-43a9-bdeb-2f9b0a1ba4ef": {
+          "type": "services",
           "settings": {
-            "leftUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5139)\"> <path d=\"M41.668 8.33301H8.33464C6.04297 8.33301 4.1888 10.208 4.1888 12.4997L4.16797 37.4997C4.16797 39.7913 6.04297 41.6663 8.33464 41.6663H25.0013V37.4997H8.33464V16.6663L25.0013 27.083L41.668 16.6663V27.083H45.8346V12.4997C45.8346 10.208 43.9596 8.33301 41.668 8.33301ZM25.0013 22.9163L8.33464 12.4997H41.668L25.0013 22.9163ZM36.1263 45.833L28.7513 38.458L31.6888 35.5205L36.1055 39.9372L44.9388 31.1038L47.918 34.0413L36.1263 45.833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5139\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "left",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5139)\"> <path d=\"M41.668 8.33301H8.33464C6.04297 8.33301 4.1888 10.208 4.1888 12.4997L4.16797 37.4997C4.16797 39.7913 6.04297 41.6663 8.33464 41.6663H25.0013V37.4997H8.33464V16.6663L25.0013 27.083L41.668 16.6663V27.083H45.8346V12.4997C45.8346 10.208 43.9596 8.33301 41.668 8.33301ZM25.0013 22.9163L8.33464 12.4997H41.668L25.0013 22.9163ZM36.1263 45.833L28.7513 38.458L31.6888 35.5205L36.1055 39.9372L44.9388 31.1038L47.918 34.0413L36.1263 45.833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5139\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "06db5bb4-d863-4542-afe8-10f1b959ad27": {
-          "type": "leftUiIconType",
+        "4fbb05f4-cd4c-4e51-adfe-ed7f8c302da6": {
+          "type": "services",
           "settings": {
-            "leftUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5143)\"> <path d=\"M41.668 8.33301H8.33464C6.02214 8.33301 4.1888 10.1872 4.1888 12.4997L4.16797 37.4997C4.16797 39.8122 6.02214 41.6663 8.33464 41.6663H41.668C43.9805 41.6663 45.8346 39.8122 45.8346 37.4997V12.4997C45.8346 10.1872 43.9805 8.33301 41.668 8.33301ZM41.668 37.4997H8.33464V24.9997H41.668V37.4997ZM41.668 16.6663H8.33464V12.4997H41.668V16.6663Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5143\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "left",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5143)\"> <path d=\"M41.668 8.33301H8.33464C6.02214 8.33301 4.1888 10.1872 4.1888 12.4997L4.16797 37.4997C4.16797 39.8122 6.02214 41.6663 8.33464 41.6663H41.668C43.9805 41.6663 45.8346 39.8122 45.8346 37.4997V12.4997C45.8346 10.1872 43.9805 8.33301 41.668 8.33301ZM41.668 37.4997H8.33464V24.9997H41.668V37.4997ZM41.668 16.6663H8.33464V12.4997H41.668V16.6663Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5143\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "f1d4436c-aea7-40b7-83b2-eaf85618bc29": {
-          "type": "leftUiIconType",
+        "5b8e04ce-b1e1-426e-95e0-070729c259da": {
+          "type": "services",
           "settings": {
-            "leftUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5146)\"> <path d=\"M24.9987 12.4997V18.7497L33.332 10.4163L24.9987 2.08301V8.33301C15.7904 8.33301 8.33203 15.7913 8.33203 24.9997C8.33203 28.2705 9.29036 31.3122 10.9154 33.8747L13.957 30.833C13.0195 29.1038 12.4987 27.1038 12.4987 24.9997C12.4987 18.1038 18.1029 12.4997 24.9987 12.4997ZM39.082 16.1247L36.0404 19.1663C36.957 20.9163 37.4987 22.8955 37.4987 24.9997C37.4987 31.8955 31.8945 37.4997 24.9987 37.4997V31.2497L16.6654 39.583L24.9987 47.9163V41.6663C34.207 41.6663 41.6654 34.208 41.6654 24.9997C41.6654 21.7288 40.707 18.6872 39.082 16.1247Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5146\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "left",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5146)\"> <path d=\"M24.9987 12.4997V18.7497L33.332 10.4163L24.9987 2.08301V8.33301C15.7904 8.33301 8.33203 15.7913 8.33203 24.9997C8.33203 28.2705 9.29036 31.3122 10.9154 33.8747L13.957 30.833C13.0195 29.1038 12.4987 27.1038 12.4987 24.9997C12.4987 18.1038 18.1029 12.4997 24.9987 12.4997ZM39.082 16.1247L36.0404 19.1663C36.957 20.9163 37.4987 22.8955 37.4987 24.9997C37.4987 31.8955 31.8945 37.4997 24.9987 37.4997V31.2497L16.6654 39.583L24.9987 47.9163V41.6663C34.207 41.6663 41.6654 34.208 41.6654 24.9997C41.6654 21.7288 40.707 18.6872 39.082 16.1247Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5146\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "180d2a94-8aaf-4873-bc63-1ee211cf1fc5": {
-          "type": "leftUiIconType",
+        "2ccb04c2-e0f9-4c17-8224-f0a70600258e": {
+          "type": "services",
           "settings": {
-            "leftUIicons": ""
+            "position": "left",
+            "UIicons": "",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "8a0dc014-4543-4c2b-a2c1-65f77bbb2266": {
-          "type": "leftUiIconType",
+        "c1318b55-9c01-4b21-ad81-daddce89fa3b": {
+          "type": "services",
           "settings": {
-            "leftUIicons": ""
+            "position": "right",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5133)\"> <path d=\"M33.3346 12.5L38.1055 17.2708L27.9388 27.4375L19.6055 19.1042L4.16797 34.5625L7.10547 37.5L19.6055 25L27.9388 33.3333L41.0638 20.2292L45.8346 25V12.5H33.3346Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5133\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "daf72a1d-1f88-48d1-a996-5edcce66f04f": {
-          "type": "rightUiIconType",
+        "850701aa-f147-4209-819e-8c3b73fcdf6c": {
+          "type": "services",
           "settings": {
-            "rightUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5133)\"> <path d=\"M33.3346 12.5L38.1055 17.2708L27.9388 27.4375L19.6055 19.1042L4.16797 34.5625L7.10547 37.5L19.6055 25L27.9388 33.3333L41.0638 20.2292L45.8346 25V12.5H33.3346Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5133\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "right",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5129)\"> <path d=\"M12.8737 41.6663C15.382 41.6663 17.4154 39.633 17.4154 37.1247C17.4154 34.6164 15.382 32.583 12.8737 32.583C10.3654 32.583 8.33203 34.6164 8.33203 37.1247C8.33203 39.633 10.3654 41.6663 12.8737 41.6663Z\" fill=\"black\"><\/path> <path d=\"M8.33203 9.25V15.1458C22.9779 15.1458 34.8529 27.0208 34.8529 41.6667H40.7487C40.7487 23.7708 26.2279 9.25 8.33203 9.25ZM8.33203 21.0417V26.9375C16.457 26.9375 23.0612 33.5417 23.0612 41.6667H28.957C28.957 30.2708 19.7279 21.0417 8.33203 21.0417Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5129\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "2eb76c4c-dde5-496f-be55-c96084123300": {
-          "type": "rightUiIconType",
+        "77a00356-e129-4e02-9ac1-9d19d236e478": {
+          "type": "services",
           "settings": {
-            "rightUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5129)\"> <path d=\"M12.8737 41.6663C15.382 41.6663 17.4154 39.633 17.4154 37.1247C17.4154 34.6164 15.382 32.583 12.8737 32.583C10.3654 32.583 8.33203 34.6164 8.33203 37.1247C8.33203 39.633 10.3654 41.6663 12.8737 41.6663Z\" fill=\"black\"><\/path> <path d=\"M8.33203 9.25V15.1458C22.9779 15.1458 34.8529 27.0208 34.8529 41.6667H40.7487C40.7487 23.7708 26.2279 9.25 8.33203 9.25ZM8.33203 21.0417V26.9375C16.457 26.9375 23.0612 33.5417 23.0612 41.6667H28.957C28.957 30.2708 19.7279 21.0417 8.33203 21.0417Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5129\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
+            "position": "right",
+            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5110)\"> <path d=\"M34.7083 9.41667L40.6042 15.3125L34.7083 21.2083L28.8125 15.3125L34.7083 9.41667ZM18.75 10.4167V18.75H10.4167V10.4167H18.75ZM39.5833 31.25V39.5833H31.25V31.25H39.5833ZM18.75 31.25V39.5833H10.4167V31.25H18.75ZM34.7083 3.52084L22.9167 15.2917L34.7083 27.0833L46.5 15.2917L34.7083 3.52084ZM22.9167 6.25H6.25V22.9167H22.9167V6.25ZM43.75 27.0833H27.0833V43.75H43.75V27.0833ZM22.9167 27.0833H6.25V43.75H22.9167V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5110\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         },
-        "d746ba12-cf2a-4674-8716-7ea7b13e30c7": {
-          "type": "rightUiIconType",
+        "44417285-9944-429b-acd3-2c8a89f9c0a6": {
+          "type": "services",
           "settings": {
-            "rightUIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <g clip-path=\"url(#clip0_536_5110)\"> <path d=\"M34.7083 9.41667L40.6042 15.3125L34.7083 21.2083L28.8125 15.3125L34.7083 9.41667M18.75 10.4167V18.75H10.4167V10.4167H18.75ZM39.5833 31.25V39.5833H31.25V31.25H39.5833ZM18.75 31.25V39.5833H10.4167V31.25H18.75ZM34.7083 3.52084L22.9167 15.2917L34.7083 27.0833L46.5 15.2917L34.7083 3.52084ZM22.9167 6.25H6.25V22.9167H22.9167V6.25ZM43.75 27.0833H27.0833V43.75H43.75V27.0833ZM22.9167 27.0833H6.25V43.75H22.9167V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5110\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>"
-          }
-        },
-        "fb79d856-8ac3-4b3f-9c75-8781574e0b5a": {
-          "type": "rightUiIconType",
-          "settings": {
-            "rightUIicons": ""
-          }
-        },
-        "a45ad1a7-9a5e-46bb-b8e3-6be7968c5ca2": {
-          "type": "rightUiIconType",
-          "settings": {
-            "rightUIicons": ""
-          }
-        },
-        "8114c243-d1a2-4838-97b2-73c06d5b16bc": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN"
-          }
-        },
-        "200d21c4-3100-4bb6-9cba-5e1475f5cb5d": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 2"
-          }
-        },
-        "ae3d4c40-3899-45a8-bb34-b0ed42884974": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 3"
-          }
-        },
-        "2d6ed020-3c08-443d-9e32-8b27b65f5853": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 4"
-          }
-        },
-        "4b0aba0e-3e29-4e19-b9cd-677b0166628d": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 5"
-          }
-        },
-        "eccfe275-5e9f-41ec-92a9-f276efaf9950": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 6"
-          }
-        },
-        "944fdb4c-b9b5-4e55-8d94-d84e5a6144a2": {
-          "type": "topText",
-          "settings": {
-            "topText": "USER INTERFACE DESIGN 7"
-          }
-        },
-        "bb1ef7ce-5d60-4ce0-ab4c-26e254eadfef": {
-          "type": "leftText",
-          "settings": {
-            "leftText": "USER INTERFACE DESIGN left"
-          }
-        },
-        "678b7337-7be6-4fdc-b884-d1e971ba4da0": {
-          "type": "leftText",
-          "settings": {
-            "leftText": "USER INTERFACE DESIGN 2"
-          }
-        },
-        "a596cb1e-0145-45a8-bb9c-0c953935106c": {
-          "type": "leftText",
-          "settings": {
-            "leftText": "USER INTERFACE DESIGN l3"
-          }
-        },
-        "ad3947c6-6dbf-49eb-afe3-52b160b6a0e8": {
-          "type": "rightText",
-          "settings": {
-            "rightText": "USER INTERFACE DESIGN right"
-          }
-        },
-        "1cb4347f-0e7b-4714-a822-79a4b583bb6d": {
-          "type": "rightText",
-          "settings": {
-            "rightText": "USER INTERFACE DESIGN 2"
-          }
-        },
-        "14c1ecc3-3ee0-44cd-97bc-0b95f2f34e19": {
-          "type": "rightText",
-          "settings": {
-            "rightText": "USER INTERFACE DESIGN 3"
+            "position": "right",
+            "UIicons": "",
+            "serviceText": "USER INTERFACE DESIGN"
           }
         }
       },
       "block_order": [
-        "c5021b03-7911-4622-9b37-f03eab8c0f28",
-        "a2f5ec58-8009-4f8c-9156-e471336816d7",
-        "0e37d95a-fe26-486a-b790-7fd859828004",
-        "4e8bbced-1392-4fe8-9aae-851fafe04187",
-        "cc328e09-44d1-4062-bc07-12cdca750cb7",
-        "a92a33d9-57e6-48fe-808c-747bd8f23952",
-        "f07e41bf-01c5-4003-a30a-11753d8e1a52",
-        "021015bc-eebf-4aa5-a352-ad8af0beb4aa",
-        "06db5bb4-d863-4542-afe8-10f1b959ad27",
-        "f1d4436c-aea7-40b7-83b2-eaf85618bc29",
-        "180d2a94-8aaf-4873-bc63-1ee211cf1fc5",
-        "8a0dc014-4543-4c2b-a2c1-65f77bbb2266",
-        "daf72a1d-1f88-48d1-a996-5edcce66f04f",
-        "2eb76c4c-dde5-496f-be55-c96084123300",
-        "d746ba12-cf2a-4674-8716-7ea7b13e30c7",
-        "fb79d856-8ac3-4b3f-9c75-8781574e0b5a",
-        "a45ad1a7-9a5e-46bb-b8e3-6be7968c5ca2",
-        "8114c243-d1a2-4838-97b2-73c06d5b16bc",
-        "200d21c4-3100-4bb6-9cba-5e1475f5cb5d",
-        "ae3d4c40-3899-45a8-bb34-b0ed42884974",
-        "2d6ed020-3c08-443d-9e32-8b27b65f5853",
-        "4b0aba0e-3e29-4e19-b9cd-677b0166628d",
-        "eccfe275-5e9f-41ec-92a9-f276efaf9950",
-        "944fdb4c-b9b5-4e55-8d94-d84e5a6144a2",
-        "bb1ef7ce-5d60-4ce0-ab4c-26e254eadfef",
-        "678b7337-7be6-4fdc-b884-d1e971ba4da0",
-        "a596cb1e-0145-45a8-bb9c-0c953935106c",
-        "ad3947c6-6dbf-49eb-afe3-52b160b6a0e8",
-        "1cb4347f-0e7b-4714-a822-79a4b583bb6d",
-        "14c1ecc3-3ee0-44cd-97bc-0b95f2f34e19"
+        "3c86b867-83cc-47fa-aa39-dd0c0b5ab730",
+        "924fdf0e-ef53-4cb8-b9a2-ad47e02cf621",
+        "aa5de5ef-6f36-4519-8c9b-5248f4a36d42",
+        "c2aa696a-7827-4c4f-bb52-ce6970f82759",
+        "462c3406-0564-4eab-bdf6-5b95e8cefad5",
+        "8d816607-e640-4a4f-a0aa-07ec77d0885b",
+        "b70a2247-b524-490e-be4b-2d2e1d2f4071",
+        "e1babbe8-035f-43a9-bdeb-2f9b0a1ba4ef",
+        "4fbb05f4-cd4c-4e51-adfe-ed7f8c302da6",
+        "5b8e04ce-b1e1-426e-95e0-070729c259da",
+        "2ccb04c2-e0f9-4c17-8224-f0a70600258e",
+        "c1318b55-9c01-4b21-ad81-daddce89fa3b",
+        "850701aa-f147-4209-819e-8c3b73fcdf6c",
+        "77a00356-e129-4e02-9ac1-9d19d236e478",
+        "44417285-9944-429b-acd3-2c8a89f9c0a6"
       ],
       "settings": {
       }
@@ -299,7 +229,8 @@
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2"
       ],
       "settings": {
-        "heading": "Our Works"
+        "heading": "Our Works",
+        "link": ""
       }
     },
     "vedio": {
@@ -418,7 +349,23 @@
     },
     "newsletter": {
       "type": "newsletter",
+      "blocks": {
+        "fd3729bd-ecf7-48d5-8ba8-d61d429c07ac": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fd3729bd-ecf7-48d5-8ba8-d61d429c07ac"
+      ],
       "settings": {
+        "color_scheme": "background-1",
+        "heading": "Sign up for our free ecommerce newsletter.",
+        "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "bac67c8d-1c7f-4d9c-b19e-82f1d970dafd": {
