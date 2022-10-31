@@ -321,6 +321,10 @@ main {
   top: 10px !important;
 }
 
+.newsletter-form__field-wrapper .field:after {
+  display: none;
+}
+
 .homeBanner {
   padding-bottom: 135px;
   position: relative;
@@ -1217,6 +1221,7 @@ main {
   width: 394px;
   height: 394px;
   background: #FF7121;
+  z-index: 2;
   filter: blur(94.5px);
 }
 @media (max-width: 991px) {

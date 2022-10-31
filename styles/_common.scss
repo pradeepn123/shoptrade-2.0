@@ -344,3 +344,10 @@ main {
         }
     }
 }
+
+.newsletter-form__field-wrapper {
+    .field:after {
+
+        display: none;
+    }
+}
