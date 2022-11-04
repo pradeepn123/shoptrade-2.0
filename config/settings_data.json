@@ -107,7 +107,6 @@
             "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
-              "text_alignment": "center",
               "color_scheme": "background-1",
               "link": ""
             }
@@ -127,20 +126,6 @@
           "menu": "main-menu"
         }
       },
-      "main-password-header": {
-        "type": "main-password-header",
-        "settings": {
-          "logo": "{{ shop.brand.logo }}",
-          "logo_max_width": 100,
-          "color_scheme": "background-1"
-        }
-      },
-      "main-password-footer": {
-        "type": "main-password-footer",
-        "settings": {
-          "color_scheme": "background-1"
-        }
-      },
       "footer": {
         "type": "footer",
         "blocks": {
@@ -157,7 +142,7 @@
             "settings": {
               "workImage": "shopify:\/\/shop_images\/call.png",
               "workText": "+1 844 583 0025",
-              "togetherlink": ""
+              "togetherlink": "tel:+1 844 583 0025"
             }
           },
           "8c3edd2e-5b3a-4560-95e4-4e0e551fccfd": {
@@ -185,19 +170,22 @@
           "fbe7fc1c-09ce-4a51-8c55-be7e06599ff8": {
             "type": "social",
             "settings": {
-              "socialIcons": "shopify:\/\/shop_images\/Facebook.png"
+              "socialIcons": "shopify:\/\/shop_images\/Facebook.png",
+              "socailLink": ""
             }
           },
           "7b29d524-ae20-4874-bad2-b6f8faa020ac": {
             "type": "social",
             "settings": {
-              "socialIcons": "shopify:\/\/shop_images\/Instagram.png"
+              "socialIcons": "shopify:\/\/shop_images\/Instagram.png",
+              "socailLink": ""
             }
           },
           "eec1ccab-5c43-472a-9de0-eb5c1de8604c": {
             "type": "social",
             "settings": {
-              "socialIcons": "shopify:\/\/shop_images\/LinkedIn.png"
+              "socialIcons": "shopify:\/\/shop_images\/LinkedIn.png",
+              "socailLink": ""
             }
           }
         },
@@ -214,6 +202,20 @@
         "settings": {
           "footerLink": "footer",
           "footerBottomLink": "footer-bottom"
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "{{ shop.brand.logo }}",
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
         }
       }
     },
