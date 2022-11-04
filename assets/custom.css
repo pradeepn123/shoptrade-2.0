@@ -1,7 +1,8 @@
 :root {
   --COLOR-BLACK: #000000;
   --COLOR-WHITE: #FFFFFF;
-  --COLOR-PRIMARY:#FF7121;
+  --COLOR-PRIMARY: #FF7121;
+  --font-body-family: "Epilogue", sans-serif;
 }
 
 @font-face {
@@ -15,7 +16,7 @@ body {
 .h1 {
   font-weight: 800;
   font-size: 64px;
-  line-height: 108%;
+  line-height: 108% !important;
   letter-spacing: 0.01em;
   color: var(--COLOR-BLACK);
 }
@@ -193,7 +194,7 @@ body {
 }
 
 main {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 @media (max-width: 991px) {
   main {
@@ -321,11 +322,29 @@ main {
   top: 10px !important;
 }
 
+.text-upper {
+  text-transform: uppercase;
+}
+
 .newsletter-form__field-wrapper .field:after {
   display: none;
 }
+.newsletter-form__field-wrapper .field__input {
+  font-size: 16px;
+  padding-right: 40px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  height: auto;
+}
+.newsletter-form__field-wrapper label {
+  font-size: 16px !important;
+}
+.newsletter-form__field-wrapper .field__button {
+  width: auto;
+}
 
 .homeBanner {
+  padding-top: 135px;
   padding-bottom: 135px;
   position: relative;
   overflow: hidden;
@@ -371,6 +390,7 @@ main {
 @media (max-width: 991px) {
   .homeBanner__subText {
     font-size: 18px;
+    max-width: 255px;
   }
 }
 .homeBanner__img {
@@ -378,16 +398,16 @@ main {
   height: 437.31px;
   object-fit: cover;
 }
-@media (max-width: 991px) {
-  .homeBanner__img {
-    width: 100%;
-    height: 276.48px;
-  }
-}
 @media (max-width: 1335px) {
   .homeBanner__img {
     width: 470px;
     height: 371.31px;
+  }
+}
+@media (max-width: 991px) {
+  .homeBanner__img {
+    width: 100%;
+    height: 276.48px;
   }
 }
 @media (min-width: 992px) {
@@ -434,6 +454,7 @@ main {
 @media (max-width: 991px) {
   .btn {
     font-size: 18px;
+    padding: 14px 27px;
   }
 }
 .btn--orange::after {
@@ -444,10 +465,15 @@ main {
   background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
   border: 2px solid var(--COLOR-BLACK);
   border-radius: 12px 24px;
-  width: 108%;
-  height: 125%;
+  width: 105%;
+  height: 115%;
   z-index: -1;
   transition: 0.5s ease all;
+}
+@media (max-width: 991px) {
+  .btn--orange::after {
+    height: 122%;
+  }
 }
 .btn--orange:hover {
   width: 180px;
@@ -489,7 +515,7 @@ main {
 }
 
 .btn-contact {
-  padding: 16px 8px 24px;
+  padding: 16px 8px 32px;
   display: inline-block;
   background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/contact-btn.png?v=1665646309");
   background-repeat: no-repeat;
@@ -804,7 +830,12 @@ main {
   border: 2px solid #000000;
   border-radius: 10px;
   width: 100%;
-  height: 397px;
+  height: 300px;
+}
+@media (min-width: 992px) {
+  .ourWork__cardBody .img-wrp {
+    height: 397px;
+  }
 }
 @media (min-width: 1620px) {
   .ourWork__cardBody .img-wrp {
@@ -827,9 +858,19 @@ main {
   z-index: 99 !important;
   transform: translate(15px, 15px);
 }
+@media (max-width: 991px) {
+  .ourWork__cardBody .btn-wrp {
+    right: -10px;
+  }
+}
 .ourWork__cardBody .btn-wrp .brandLogo {
   width: 100%;
   object-fit: contain;
+}
+@media (max-width: 991px) {
+  .ourWork__cardBody .btn-wrp .brandLogo {
+    height: 22px;
+  }
 }
 .ourWork__cardBody .btn-wrp .btn-arrow {
   width: 17px;
@@ -842,6 +883,11 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 14px;
+}
+@media (max-width: 991px) {
+  .ourWork__cardBody .btn-wrp .btn {
+    width: auto;
+  }
 }
 .ourWork__cardBody .btn-wrp .btn:hover {
   width: 215px;
@@ -1050,8 +1096,10 @@ main {
     font-size: 20px;
   }
 }
-.vedio__info p {
-  font-size: 8px;
+@media (max-width: 991px) {
+  .vedio__info p {
+    font-size: 8px;
+  }
 }
 .vedio__thumbnail {
   width: 100%;
@@ -1079,9 +1127,14 @@ main {
 }
 .model-popup__vedio {
   max-width: 960px;
-  width: 100%;
+  width: 92%;
   height: 480px;
   margin: auto;
+}
+@media (max-width: 991px) {
+  .model-popup__vedio {
+    height: 250px;
+  }
 }
 .model-popup .close-model {
   position: relative;
@@ -1114,6 +1167,12 @@ main {
   max-width: 580px;
   width: 100%;
 }
+.ourNumbers__subHeading {
+  font-weight: 400;
+  font-size: 24.0312px;
+  line-height: 130%;
+  color: var(--COLOR-BLACK);
+}
 .ourNumbers__cards {
   display: flex;
   border-top: 1px solid var(--COLOR-BLACK);
@@ -1121,22 +1180,27 @@ main {
   padding: 0;
   margin-top: 60px;
   list-style: none;
-  background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+  position: relative;
 }
 @media (max-width: 767px) {
   .ourNumbers__cards {
     flex-wrap: wrap;
   }
 }
+.ourNumbers__cards::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+  z-index: -1;
+}
 .ourNumbers__cardItem {
   text-align: center;
-  mix-blend-mode: darken;
   padding: 20px 15px;
   display: flex;
 }
 @media (min-width: 992px) {
   .ourNumbers__cardItem {
-    background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
     width: 33.3333333333%;
     padding: 80px 30px;
   }
@@ -1146,9 +1210,45 @@ main {
     padding: 130px 80px;
   }
 }
-.ourNumbers__cardItem:not(:last-child) {
-  border-right: 1px solid var(--COLOR-BLACK);
-  position: relative;
+@media (max-width: 767px) {
+  .ourNumbers__cardItem {
+    border-right: 1px solid var(--COLOR-BLACK);
+    border-left: 1px solid var(--COLOR-BLACK);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .ourNumbers__cardItem::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -2px;
+    height: 20px;
+    width: 15px;
+    background-size: cover;
+    transform: rotate(-90deg) translateY(50%);
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+  }
+}
+@media (max-width: 767px) {
+  .ourNumbers__cardItem::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    right: 17px;
+    height: 20px;
+    width: 15px;
+    background-size: cover;
+    transform: rotate(-90deg) translateY(50%);
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+  }
+}
+@media (min-width: 768px) {
+  .ourNumbers__cardItem:not(:last-child) {
+    border-right: 1px solid var(--COLOR-BLACK);
+    position: relative;
+  }
 }
 .ourNumbers__cardItem:not(:last-child)::after {
   position: absolute;
@@ -1167,7 +1267,7 @@ main {
 }
 .ourNumbers__cardbody {
   padding: 18px 48px;
-  background: #FFFFFF;
+  background-color: var(--COLOR-WHITE);
   border: 2px solid #000000;
   border-radius: 20px;
   flex: 1;
@@ -1324,10 +1424,14 @@ main {
   margin-bottom: 0;
 }
 .testimonials__slide {
-  width: 512px;
   border-top: 1px solid var(--COLOR-BLACK);
   border-right: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
+}
+@media (min-width: 1204px) {
+  .testimonials__slide {
+    width: 512px !important;
+  }
 }
 .testimonials__slide:not(:last-child) .testimonials__head {
   position: relative;
@@ -1357,8 +1461,22 @@ main {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .testimonials__head {
+    height: 58px;
+    padding: 10px 40px;
+  }
+}
 .testimonials__body {
   padding: 50px 80px 60px 40px;
+}
+@media (max-width: 991px) {
+  .testimonials__body {
+    padding: 50px 20px;
+  }
+}
+.testimonials__body p {
+  line-height: 165%;
 }
 .testimonials__footer {
   margin-top: 60px;
@@ -1389,6 +1507,48 @@ main {
 }
 .testimonials__profileItem {
   display: flex;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .testimonials__profileItem {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
+}
+.testimonials__profileItem::after {
+  position: absolute;
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+  height: 41px;
+  width: 37px;
+  bottom: -2px;
+  right: 2px;
+  transform: rotate(-270deg) translateY(-50%);
+}
+@media (max-width: 767px) {
+  .testimonials__profileItem::after {
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -2px;
+    right: 0px;
+    width: 15px;
+    height: 20px;
+    z-index: 9;
+    transform: rotate(0deg) translateY(50%);
+  }
+}
+@media (max-width: 767px) {
+  .testimonials__profileItem::before {
+    position: absolute;
+    content: "";
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left: 0px;
+    width: 15px;
+    height: 20px;
+    transform: rotate(180deg) translateY(-50%);
+  }
 }
 .testimonials__profileCard {
   width: 512px;
@@ -1559,6 +1719,13 @@ main {
   background: #FF7121;
   filter: blur(124px);
 }
+@media (max-width: 991px) {
+  .uiDesign .uiDesingDrwa::before {
+    width: 170px;
+    height: 170px;
+    transform: translate(50%, -78%);
+  }
+}
 .uiDesign .uiDesingDrwa::after {
   content: "";
   position: absolute;
@@ -1569,6 +1736,13 @@ main {
   height: 315px;
   background: #FF7121;
   filter: blur(124px);
+}
+@media (max-width: 991px) {
+  .uiDesign .uiDesingDrwa::after {
+    width: 170px;
+    height: 170px;
+    transform: translate(-50%, 78%);
+  }
 }
 .uiDesign .right-icons .uiDesign__item {
   border-left: 1px solid var(--COLOR-BLACK);
@@ -1626,7 +1800,7 @@ main {
 }
 
 .shoptrade {
-  padding: 36px 0;
+  padding: 24px 0;
   background-color: var(--COLOR-WHITE);
   position: fixed;
   left: 0;
@@ -1696,6 +1870,11 @@ main {
 @media (max-width: 991px) {
   .shoptrade__nav-list {
     flex-direction: column;
+  }
+}
+@media (min-width: 1336px) {
+  .shoptrade__nav-list {
+    margin-left: 72px;
   }
 }
 @media (max-width: 991px) {

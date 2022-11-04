@@ -13,11 +13,17 @@ $(document).ready(function(){
     $("body").removeClass("hide-scroll")
 
     $(".model-popup").fadeOut()
-
+    $(".iframe-vedio").attr("src", "")
   })
 
 
 
+  //mobile hamberger
+
+  $(".js-hamberger").click(function(){
+   
+    $(".shoptrade").toggleClass("active")
+  })
 
   //count on scroll
 

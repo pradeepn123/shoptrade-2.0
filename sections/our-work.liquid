@@ -21,31 +21,14 @@
           <div class="marquee  enable-animation">
             <div class="marquee__content">
 
-
-              <div class="Marquee-tag">
-                <p>
-                 <span class="clr-o">#</span>  Development
-                </p>
-              </div>
-              <div class="Marquee-tag">
-                <p>
-                 <span class="clr-o">#</span>Headless
-                </p>
-              </div>
-
+              {{ block.settings.cardMarque }}
+              
+              
             </div>
             <div class="marquee__content aria-hidden=" true"">
+              {{ block.settings.cardMarque }}
 
-              <div class="Marquee-tag">
-                <p>
-                 <span class="clr-o">#</span>Development
-                </p>
-              </div>
-              <div class="Marquee-tag">
-                <p>
-                 <span class="clr-o">#</span>Headless
-                </p>
-              </div>
+              
 
             </div>
           </div>
@@ -110,6 +93,14 @@
             "type": "image_picker",
             "label": "Logo"
 
+          },{
+            "id":"buttonLink",
+            "label":"Button link",
+            "type":"url"
+          },{
+            "id":"cardMarque",
+            "label":"Tag slider",
+            "type":"html"
           }
         ]
       }

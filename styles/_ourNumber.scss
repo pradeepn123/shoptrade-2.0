@@ -6,41 +6,98 @@
         width: 100%;
     }
 
+    &__subHeading {
+        font-weight: 400;
+        font-size: 24.0312px;
+        line-height: 130%;
+        color: var(--COLOR-BLACK);
+    }
 
     &__cards {
         display: flex;
-       
+
         border-top: 1px solid var(--COLOR-BLACK);
         border-bottom: 1px solid var(--COLOR-BLACK);
         padding: 0;
         margin-top: 60px;
         list-style: none;
-        background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+
+        position: relative;
 
         @media (max-width:767px) {
             flex-wrap: wrap;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            inset: 0;
+            background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+            z-index: -1;
         }
     }
 
     &__cardItem {
         text-align: center;
-        // background-color: var(--COLOR-WHITE);
-        mix-blend-mode: darken;
+
         padding: 20px 15px;
         display: flex;
+
         @media (min-width:992px) {
-            background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
+            // background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
             width: calc(100%/3);
             padding: 80px 30px;
         }
+
         @media (min-width:1336px) {
-        
+
             padding: 130px 80px;
         }
 
-        &:not(:last-child) {
+        @media (max-width:767px) {
             border-right: 1px solid var(--COLOR-BLACK);
-            position: relative;
+            border-left: 1px solid var(--COLOR-BLACK);
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        &::before {
+            @media (max-width:767px) {
+
+                position: absolute;
+                content: '';
+                top: -2px;
+                left: -2px;
+                height: 20px;
+                width: 15px;
+                background-size: cover;
+                transform: rotate(-90deg) translateY(50%);
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            }
+
+        }
+        &::after {
+            @media (max-width:767px) {
+
+                position: absolute;
+                content: '';
+                top: -2px;
+                right: 17px;
+                height: 20px;
+                width: 15px;
+                background-size: cover;
+                transform: rotate(-90deg) translateY(50%);
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            }
+
+        }
+
+        &:not(:last-child) {
+            @media (min-width:768px) {
+
+                border-right: 1px solid var(--COLOR-BLACK);
+                position: relative;
+            }
 
             &::after {
                 position: absolute;
@@ -62,14 +119,14 @@
 
     &__cardbody {
         padding: 18px 48px;
-        background: #FFFFFF;
+        background-color: var(--COLOR-WHITE);
         border: 2px solid #000000;
         border-radius: 20px;
         flex: 1;
 
         @media (max-width:1335px) {
 
-        padding: 18px 20px;
+            padding: 18px 20px;
         }
     }
 

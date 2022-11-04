@@ -11,7 +11,7 @@ body {
 .h1 {
     font-weight: 800;
     font-size: 64px;
-    line-height: 108%;
+    line-height: 108% !important;
     letter-spacing: 0.01em;
     color: var(--COLOR-BLACK);
 
@@ -195,7 +195,7 @@ body {
 }
 
 main {
-    padding-top: 130px;
+    padding-top: 100px;
 
     @media (max-width:991px) {
         padding-top: 80px;
@@ -345,9 +345,31 @@ main {
     }
 }
 
+.text-upper {
+    text-transform: uppercase;
+}
 .newsletter-form__field-wrapper {
     .field:after {
 
         display: none;
+    }
+
+    .field__input {
+        font-size: 16px;
+        padding-right: 40px !important;
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        height: auto;
+
+       
+        
+    }
+    
+    label {
+        font-size: 16px !important;
+
+    }
+    .field__button {
+        width: auto;
     }
 }

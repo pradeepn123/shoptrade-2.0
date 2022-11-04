@@ -19,6 +19,7 @@
 
     @media (max-width:991px) {
         font-size: 18px;
+        padding: 14px 27px;
     }
 
     // z-index: 99;
@@ -32,10 +33,15 @@
             background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
             border: 2px solid var(--COLOR-BLACK);
             border-radius: 12px 24px;
-            width: 108%;
-            height: 125%;
+            // width: 108%;
+            // height: 125%;
+            width: 105%;
+            height: 115%;
             z-index: -1;
             transition: .5s ease all;
+            @media (max-width:991px) {
+                height: 122%;
+            }
         }
 
         &:hover {
@@ -49,6 +55,8 @@
                 // right: 0;
                 transform-origin: left;
                 transition: .5s ease all;
+
+        
             }
 
             // &::after {
@@ -98,7 +106,7 @@
 
 .btn-contact {
     // width: 85px;
-    padding: 16px 8px 24px;
+    padding: 16px 8px 32px;
 
     display: inline-block;
     // height: 58px;

@@ -1,4 +1,5 @@
 .homeBanner {
+    padding-top: 135px;
     padding-bottom: 135px;
     position: relative;
     overflow: hidden;
@@ -40,6 +41,8 @@
         color: var(--COLOR-BLACK);
         @media (max-width:991px) {
             font-size: 18px;
+            max-width: 255px;
+            // width: 100%;
         }
     }
 
@@ -47,13 +50,13 @@
         width: 550px;
         height: 437.31px;
         object-fit: cover;
-        @media (max-width:991px) {
-            width: 100%;
-            height: 276.48px;
-        }
         @media (max-width:1335px) {
             width: 470px;
             height: 371.31px;
+        }
+        @media (max-width:991px) {
+            width: 100%;
+            height: 276.48px;
         }
     }
 

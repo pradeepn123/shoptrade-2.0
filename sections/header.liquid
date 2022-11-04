@@ -1,8 +1,8 @@
 <header class="shoptrade">
   <div class="container">
     <div class="header-container">
-
-      <a class="navbar-brand order-2" href="#">
+      <div class="v-center">
+      <a class="navbar-brand order-2" href="/">
         <img class="only-desktop" src="{{ section.settings.logo | image_url }}" alt="logo">
         <img class="only-mobile" src="{{ section.settings.logombile | image_url }}" alt="logo">
       </a>
@@ -30,7 +30,7 @@
 
         </div>
       </div>
-
+    </div>
       <div class="contact-btn">
         {%- for link in section.settings.menu.links -%}
           {%- if forloop.last -%}

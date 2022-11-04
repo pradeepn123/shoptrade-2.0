@@ -11,17 +11,19 @@
   </ul>
   <div class="shopify-footer__Content">
     <div class="shopify-footer__block flex-1">
-      <h5 class="fnt-20 m-0">Let’s Work Together</h5>
+      <h5 class="fnt-20 m-0 text-upper ">Let’s Work Together</h5>
       <ul class="shopify-footer__blockList">
 
         {%- assign work = section.blocks | where: 'type',"work" -%}
         {%- for item in work -%}
           <li class="shopify-footer__blockitem">
+            <a href="{{ item.settings.togetherlink }}  "  style="text-decoration:none" >
             <div class="v-center">
               <img src="{{ item.settings.workImage | image_url }}" class="shopify-footer__blockImg">
+              <p class="shopify-footer__blockText">{{item.settings.workText }}
             </div>
-            <p class="shopify-footer__blockText">{{item.settings.workText }}
             </p>
+          </a>
           </li>
         {%- endfor -%}
 
@@ -29,7 +31,7 @@
 
     </div>
     <div class="shopify-footer__block flex-1">
-      <h5 class="fnt-20 m-0">Office</h5>
+      <h5 class="fnt-20 m-0 text-upper" >Office</h5>
       <ul class="shopify-footer__blockList">
 
         {%- assign office = section.blocks | where: 'type',"office" -%}
@@ -38,7 +40,7 @@
             <div class="v-center">
               <img src="{{ item.settings.officeImage | image_url }}" class="shopify-footer__blockImg">
             </div>
-            <p class="shopify-footer__blockText">{{item.settings.officeText }}
+            <p class="shopify-footer__blockText">{{ item.settings.officeText }}
             </p>
           </li>
         {%- endfor -%}
@@ -48,11 +50,11 @@
     </div>
     <div class="flex-1">
       <div class="social-icons">
-        <h5 class="fnt-20 m-0">Socials</h5>
+        <h5 class="fnt-20 m-0 text-upper ">Socials</h5>
         <div class="social-icons__wrp">
-          {%- assign social = section.blocks | where: 'type',"social" -%}
+          {%- assign social = section.blocks | where: 'type' , "social" -%}
           {%- for item in social -%}
-            <a href="">
+            <a href="{{ item.socailLink }}">
               <img src="{{ item.settings.socialIcons | image_url }}">
             </a>
 
@@ -121,6 +123,10 @@
             "id": "workText",
             "label": "work text",
             "type": "text"
+          },{
+            "id":"togetherlink",
+            "label":"link",
+            "type":"url"
           }
         ]
       }, {
@@ -145,6 +151,10 @@
             "id": "socialIcons",
             "label": "social icons",
             "type": "image_picker"
+          },{
+            "id":"socailLink",
+            "label":"link",
+            "type":"url"
           }
         ]
       }

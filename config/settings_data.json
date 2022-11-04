@@ -148,21 +148,24 @@
             "type": "work",
             "settings": {
               "workImage": "shopify:\/\/shop_images\/work.png",
-              "workText": "Book a Meeting"
+              "workText": "Book a Meeting",
+              "togetherlink": "shopify:\/\/pages\/contact"
             }
           },
           "febd0a28-6a43-474d-aeeb-d99261b938e2": {
             "type": "work",
             "settings": {
               "workImage": "shopify:\/\/shop_images\/call.png",
-              "workText": "+1 844 583 0025"
+              "workText": "+1 844 583 0025",
+              "togetherlink": ""
             }
           },
           "8c3edd2e-5b3a-4560-95e4-4e0e551fccfd": {
             "type": "work",
             "settings": {
               "workImage": "shopify:\/\/shop_images\/mail.png",
-              "workText": "hello@shoptrade.co"
+              "workText": "hello@shoptrade.co",
+              "togetherlink": "mailto:info@shoptrade.co"
             }
           },
           "f0c8dd0e-e716-40f9-b487-bdf1e038e8ca": {

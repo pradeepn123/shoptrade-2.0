@@ -1,5 +1,5 @@
 .shoptrade {
-    padding: 36px 0;
+    padding: 24px 0;
     background-color: var(--COLOR-WHITE);
     position: fixed;
     left: 0;
@@ -82,11 +82,13 @@
 
     &__nav-list {
         padding: 0;
-
         @media (max-width:991px) {
             flex-direction: column;
         }
-
+        @media (min-width:1336px) {
+            margin-left: 72px;
+            
+        }
     }
 
     .navbar-brand {
