@@ -167,6 +167,7 @@
 
 
         img {
+            object-fit: contain;
             @media (max-width:991px) {
                 width: 253.54px;
                 height: 277.73px;

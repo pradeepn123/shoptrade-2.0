@@ -7,10 +7,10 @@
         <div class="homeBanner__content">
           <p class="homeBanner__subText">
          
-            {{section.settings.bannerSubText}}
+            {{ section.settings.bannerSubText }}
           </p>
           <h1 class="h1">
-            {{section.settings.bannerHead}}
+            {{ section.settings.bannerHead }}
           </h1>
           <a href="{{ section.settings.bannerBtnlink }}" class="btn btn--orange"> {{ section.settings.bannerBtn }} </a>
         </div>
@@ -18,7 +18,16 @@
       <div class="homeBanner__imgWrp">
         <div class="v-center">
           <div class="homeBanner__imgContainer">
-            <img class="homeBanner__img" src="{{section.settings.imagebanner | image_url}}" alt="banner image"/>
+            {% if section.settings.mediaType == "image" %}
+              <img class="homeBanner__img" src="{{section.settings.imagebanner | image_url}}" alt="banner image"/>
+              {% else %}
+              
+              <video autoplay width="100%" height="100%" muted loop playsinline preload="metadata">
+                <source src="{{ section.settings.Bannervedio }}" type="video/mp4">
+              </video>
+              
+            {% endif %}
+
           </div>
         </div>
       </div>
@@ -42,12 +51,6 @@
         "id": "bannerSubText",
         "default": "Global shopify plus global expert agency",
         "label": "Banner sub text"
-      }, {
-        "type": "image_picker",
-        "id": "imagebanner",
-        "label": "Banner image"
-
-// "default": "https://cdn.shopify.com/s/files/1/0662/5122/7356/files/banner.png?v=1665395460"
       },{
         "type":"text",
         "label":"Button text",
@@ -56,6 +59,31 @@
         "type":"url",
         "label":"link",
         "id":"bannerBtnlink"
+      },{
+        "id":"mediaType",
+        "label":"Media Type",
+        "type":"select",
+        "options":[{
+          "value":"image",
+          "label":"Image"
+
+        },{
+          "value":"vedio",
+          "label":"Vedio"
+
+        }
+        ]
+      }, {
+        "type": "image_picker",
+        "id": "imagebanner",
+        "label": "Banner image"
+
+// "default": "https://cdn.shopify.com/s/files/1/0662/5122/7356/files/banner.png?v=1665395460"
+      },{
+        "id":"Bannervedio",
+        "label":"Vedio",
+        "type":"video"
+       
       }
 
     ]

@@ -15,10 +15,10 @@ $(document).ready(function () {
 
         },
         1028: {
-            slidesPerView: "auto",
+            slidesPerView: 1.8,
             // spaceBetween: 30
         },
-        768: {
+        767: {
             slidesPerView: 1.2,
             // spaceBetween: 10
         }

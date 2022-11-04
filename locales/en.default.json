@@ -56,7 +56,7 @@
     }
   },
   "newsletter": {
-    "label": "Email",
+    "label": "Enter Your Email ID",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },

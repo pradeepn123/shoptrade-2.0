@@ -68,7 +68,17 @@
 
     &__imgContainer {
         position: relative;
+       
+        width: 550px;
+        height: 437.31px;
+        object-fit: cover;
+        @media (max-width:1335px) {
+            width: 470px;
+            height: 371.31px;
+        }
         @media (max-width:991px) {
+            width: 100%;
+            height: 276.48px;
             margin-bottom: 40px;
         }
         &::after {
@@ -78,7 +88,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            // background-image: url("../assets/banner-shape.png");
+            background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Subtract.png?v=1667215748");
+            background-size: cover;
         }
     }
 }

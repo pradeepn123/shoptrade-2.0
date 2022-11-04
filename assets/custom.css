@@ -417,9 +417,20 @@ main {
 }
 .homeBanner__imgContainer {
   position: relative;
+  width: 550px;
+  height: 437.31px;
+  object-fit: cover;
+}
+@media (max-width: 1335px) {
+  .homeBanner__imgContainer {
+    width: 470px;
+    height: 371.31px;
+  }
 }
 @media (max-width: 991px) {
   .homeBanner__imgContainer {
+    width: 100%;
+    height: 276.48px;
     margin-bottom: 40px;
   }
 }
@@ -430,6 +441,8 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Subtract.png?v=1667215748");
+  background-size: cover;
 }
 
 .btn {
@@ -533,7 +546,7 @@ main {
   position: absolute;
   width: 105%;
   height: 90%;
-  bottom: 12PX;
+  bottom: 14PX;
   left: 0;
   background-color: var(--COLOR-PRIMARY);
   border: 1px solid var(--COLOR-BLACK);
@@ -1560,6 +1573,9 @@ main {
     padding: 40px 50px;
   }
 }
+.testimonials__profileCard img {
+  object-fit: contain;
+}
 @media (max-width: 991px) {
   .testimonials__profileCard img {
     width: 253.54px;
@@ -1981,6 +1997,7 @@ main {
 }
 @media (max-width: 991px) {
   .shopify-footer__links {
+    font-size: 18px;
     flex: 1;
     border-bottom: 1px solid #000000;
   }
@@ -1997,6 +2014,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .shopify-footer__Content {
+    flex-direction: column;
+  }
 }
 .shopify-footer__Content > div:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
@@ -2020,7 +2042,7 @@ main {
   right: 2px;
   transform: rotate(270deg) translateY(50%);
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .shopify-footer__block:first-child::after {
     height: 17px;
     width: 15px;
@@ -2046,7 +2068,7 @@ main {
   right: 2px;
   transform: rotate(-270deg) translateY(-50%);
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .shopify-footer__block:nth-child(2)::after {
     height: 17px;
     width: 15px;
@@ -2130,6 +2152,9 @@ main {
 }
 .shopify-footer .social-icons__wrp {
   margin-top: 26px;
+}
+.shopify-footer .social-icons__wrp img {
+  object-fit: contain;
 }
 .shopify-footer .rating {
   padding: 54px 50px 54px;
@@ -2830,7 +2855,8 @@ main {
     left: -65px;
     top: 0;
     bottom: 0;
-    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
   }
 }
 @media (min-width: 991px) {

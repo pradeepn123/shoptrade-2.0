@@ -5,9 +5,10 @@
       "settings": {
         "bannerHead": "Enterprise level solutions tailored for your business",
         "bannerSubText": "Global shopify plus global expert agency",
-        "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
         "bannerBtn": "View works",
-        "bannerBtnlink": "shopify:\/\/pages\/work"
+        "bannerBtnlink": "shopify:\/\/pages\/work",
+        "mediaType": "image",
+        "imagebanner": "shopify:\/\/shop_images\/banner-image.png"
       }
     },
     "marquee": {
