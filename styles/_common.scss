@@ -72,6 +72,9 @@ body {
         font-size: 42px;
     }
 }
+.fnt-800 {
+    font-weight: 800;
+}
 
 .fnt-700 {
     font-weight: 700 !important;
@@ -161,6 +164,13 @@ body {
 
 }
 
+.fnt-24 {
+    font-weight: 500;
+font-size: 24px;
+line-height: 165%;
+letter-spacing: -0.03em;
+}
+
 .fnt-48 {
     font-weight: 500;
     font-size: 48px;
@@ -198,7 +208,7 @@ main {
     padding-top: 128px;
 
     @media (max-width:991px) {
-        padding-top: 80px;
+        padding-top: 87px;
     }
 }
 

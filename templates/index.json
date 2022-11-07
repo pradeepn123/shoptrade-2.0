@@ -191,7 +191,7 @@
         "97481e62-2db3-4b14-b26a-f57b817e6d76": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_19.png",
+            "cardImage": "shopify:\/\/shop_images\/hathaspace-img_d70b93a7-ad23-4a1c-b44b-ee140d0f05ac.png",
             "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
             "buttonLink": "shopify:\/\/pages\/showcase",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
@@ -200,7 +200,7 @@
         "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_77.png",
+            "cardImage": "shopify:\/\/shop_images\/elevation-img.png",
             "cardImageBrand": "shopify:\/\/shop_images\/elevatione.png",
             "buttonLink": "shopify:\/\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
@@ -218,16 +218,25 @@
         "5e235ad6-01a5-4cad-830b-cef51b7c3121": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/0E4A7234_1200x_805121df-5348-4cf1-9f2e-8520665bec88.webp",
+            "cardImage": "shopify:\/\/shop_images\/adaptive-img.png",
             "cardImageBrand": "shopify:\/\/shop_images\/adapthealth.png",
             "buttonLink": "shopify:\/\/pages\/adapthealth",
+            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
+          }
+        },
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/bumpbox.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/bumpbox-logo.png",
+            "buttonLink": "shopify:\/\/pages\/pumpbox",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
         },
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_76.png",
+            "cardImage": "shopify:\/\/shop_images\/bunni-coffee.png",
             "cardImageBrand": "shopify:\/\/shop_images\/bunni.png",
             "buttonLink": "shopify:\/\/pages\/bunni-coffe",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
@@ -239,6 +248,7 @@
         "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0",
         "5e235ad6-01a5-4cad-830b-cef51b7c3121",
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7",
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2"
       ],
       "settings": {

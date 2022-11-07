@@ -81,4 +81,10 @@ $(document).ready(function(){
 
   });
 
+  // $(".shoptrade__nav-list li").click(function(){
+
+  //   $(".shoptrade__nav-list li").removeClass("active")
+  //   $(this).addClass("active")
+  // })
+
 })

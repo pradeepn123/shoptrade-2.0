@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 60px 0;
+        // padding: 60px 0;
 
         @media (max-width:991px) {
             padding: 40px 0;
@@ -47,7 +47,7 @@
         &::after {
             content: '';
             position: absolute;
-            right: 0;
+            right: -0.4px;
             bottom: 0;
             background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382");
             background-repeat: no-repeat;
@@ -107,14 +107,16 @@
 
         .img-wrp {
             overflow: hidden;
-            border: 2px solid #000000;
-            border-radius: 10px;
+            // border: 2px solid #000000;
+            // border-radius: 10px;
             width: 100%;
             height: 300px;
+
             @media (min-width:992px) {
-                
+
                 height: 397px;
             }
+
             @media (min-width:1620px) {
                 height: 570px;
             }
@@ -136,17 +138,21 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            z-index: 99 !important;
+            z-index: 1 !important;
             transform: translate(15px, 15px);
-        @media (max-width:991px) {
-            right: -10px;
-        }
+
+            @media (max-width:991px) {
+                right: -10px;
+            }
+
             .brandLogo {
                 width: 100%;
-                object-fit: contain;
+
+                // object-fit: contain;
                 @media (max-width:991px) {
                     height: 22px;
                 }
+
                 // margin-right: 20px;
             }
 
@@ -162,9 +168,11 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 14px;
+
                 @media (max-width:991px) {
                     width: auto;
                 }
+
                 &::after {
                     // width: 230px;
                 }
@@ -200,6 +208,7 @@
         text-align: center;
         padding: 24px 16px 32px;
         border-top: 2px solid #000;
+        height: 108PX;
 
         @media (max-width:991px) {
             padding: 24px 16px 32px;
@@ -208,9 +217,9 @@
     }
 
     .ourWork__cards {
-    
-            overflow: hidden;
-     
+
+        overflow: hidden;
+
 
 
     }
@@ -264,10 +273,28 @@
 
     .brandLogo {
         object-fit: contain;
-        width: -webkit-fill-available;
+
     }
 
     .btn-wrp {
         right: -15px;
+    }
+}
+
+.btn-arrrow-work {
+    width: 34px;
+    height: 28px;
+}
+
+.work-h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: 0.02em;
+    color: var(--COLOR-BLACK);
+    max-width: 806px;
+    width: 100%;
+    @media (max-width:991px) {
+        font-size: 36px;
     }
 }

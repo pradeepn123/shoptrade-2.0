@@ -6,7 +6,7 @@
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_19.png",
+            "cardImage": "shopify:\/\/shop_images\/hathaspace-img_d70b93a7-ad23-4a1c-b44b-ee140d0f05ac.png",
             "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
             "cardLink": ""
           }
@@ -14,7 +14,7 @@
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_77.png",
+            "cardImage": "shopify:\/\/shop_images\/elevation-img.png",
             "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
             "cardLink": ""
           }
@@ -22,7 +22,7 @@
         "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_25.png",
+            "cardImage": "shopify:\/\/shop_images\/angles-img.png",
             "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
             "cardLink": ""
           }
@@ -30,15 +30,15 @@
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_76.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
+            "cardImage": "shopify:\/\/shop_images\/bunni-coffee.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/bunni.png",
             "cardLink": ""
           }
         },
         "a042d646-89ce-4d16-8b64-aea734310f47": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_23.png",
+            "cardImage": "shopify:\/\/shop_images\/elevation-img.png",
             "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
             "cardLink": ""
           }

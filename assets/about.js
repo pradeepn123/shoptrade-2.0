@@ -8,6 +8,7 @@ $(document).ready(function(){
         centerdSlides:"true",
         loop:true,
         freemode : true,
+        speed:2000,
         autoplay: {
             duration:2000
           },
@@ -28,6 +29,7 @@ $(document).ready(function(){
         }
       });
     let aboutCulterBottom = new Swiper('.js-bottom-image-slider', {
+        speed:2000,
 
         // slidesPerView: 3,
         centerdSlides:"true",

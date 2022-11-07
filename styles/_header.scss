@@ -6,6 +6,7 @@
     right: 0;
     top: 0;
     z-index: 9999;
+
     @media (max-width:921px) {
         padding: 20px 0;
     }
@@ -82,12 +83,35 @@
 
     &__nav-list {
         padding: 0;
+
         @media (max-width:991px) {
             flex-direction: column;
         }
+
         @media (min-width:1336px) {
             margin-left: 72px;
-            
+
+        }
+
+        .nav-item[aria-current="page"] {
+            border: 2px solid var(--COLOR-BLACK);
+            border-radius: 160px;
+            padding-left: 8px;
+            padding-right: 8px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: var(--COLOR-PRIMARY);
+                border: 1px solid var(--COLOR-BLACK);
+                border-radius: 160px;
+                bottom: -18px;
+                width: 11px;
+                height: 9px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 

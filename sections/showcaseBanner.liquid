@@ -9,7 +9,7 @@
         </div>
         <div class="showcaseBanner__links">
             <div class="showcaseBanner__linksItem">
-                <a href="#" class="circle-link">
+                <a href="{{ section.settings.websiteLInk}}" class="circle-link">
                     <img src='https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-up-Arrow.svg?v=1666078351' />
                 </a>
                 <p class="link-text">Visit site</p>
@@ -91,6 +91,10 @@
             "label":"Banner Logo Image",
             "type":"image_picker"
         
+        },{
+            "label":"website link",
+            "type":"url",
+            "id":"websiteLInk"
         }
     ],
     "blocks": [

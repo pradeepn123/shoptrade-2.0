@@ -1,60 +1,22 @@
+
+
+
+
+
+
+
+
+
 <section class="ourServices">
     <div class="container">
         <h2 class="h1-main">{{ section.settings.heading }}</h2>
     </div>
     <div class="ourServices__wrp">
+        
         <div class="container position-relative">
             <div class="service-marque-left"> 
                 <div class="marquee marquee--hover-pause enable-animation-v p-0 ">
-                    <div class="marquee__content">
-            
-            
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>  Development
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Headless
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>  Development
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Headless
-                        </p>
-                    </div>
-            
-                    </div>
-                    <div class="marquee__content aria-hidden=" true"">
-            
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Development
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Headless
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Development
-                        </p>
-                    </div>
-                    <div class="Marquee-tag">
-                        <p>
-                        <span class="clr-o">#</span>Headless
-                        </p>
-                    </div>
-            
-                    </div>
+                    {{ section.settings.leftMargue }}
                 </div>
         
         </div>
@@ -76,55 +38,8 @@
 
 
                 <div class="marquee marquee--hover-pause enable-animation-v p-0 ">
-                     <div class="marquee__content">
-             
-             
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>  Development
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Headless
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>  Development
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Headless
-                         </p>
-                       </div>
-             
-                     </div>
-                     <div class="marquee__content aria-hidden=" true"">
-             
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Development
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Headless
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Development
-                         </p>
-                       </div>
-                       <div class="Marquee-tag">
-                         <p>
-                          <span class="clr-o">#</span>Headless
-                         </p>
-                       </div>
-             
-                     </div>
+                    {{ section.settings.rightMargue }}
+                     
                    </div> 
             </div>
         </div>
@@ -144,6 +59,15 @@
                 "label":"Heading",
                 "type":"text"
             
+            },{
+                "id":"leftMargue",
+                "label":"Left side slider",
+                "type":"html"
+            }
+            ,{
+                "id":"rightMargue",
+                "label":"right side slider",
+                "type":"html"
             }
         ],
         "blocks":[

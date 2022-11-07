@@ -3,7 +3,8 @@
     "banner": {
       "type": "serviceBanner",
       "settings": {
-        "heading": "Problem solvers at heart, we’re here to build long standing relationships"
+        "heading": "Problem solvers at heart, we’re here to build long standing relationships",
+        "buttonLink": "shopify:\/\/pages\/contact"
       }
     },
     "ourservices": {
@@ -86,7 +87,9 @@
         "57217090-2113-46e1-b790-eb3fc9b915ca"
       ],
       "settings": {
-        "heading": "Our Services"
+        "heading": "Our Services",
+        "leftMargue": "<div class=\"marquee__content\">\n            \n            \n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>  Development\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div> <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div> <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>  Development\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div>\n            \n                    <\/div>\n                    <div class=\"marquee__content aria-hidden=\" true=\"\">\n            \n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Development\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Development\n                        <\/p>\n                    <\/div>\n                    <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div>\n            \n                    <\/div>",
+        "rightMargue": "<div class=\"marquee__content\">\n             \n             \n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>  Development\n                         <\/p>\n                       <\/div> <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div> <div class=\"Marquee-tag\">\n                        <p>\n                        <span class=\"clr-o\">#<\/span>Headless\n                        <\/p>\n                    <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Headless\n                         <\/p>\n                       <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>  Development\n                         <\/p>\n                       <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Headless\n                         <\/p>\n                       <\/div>\n             \n                     <\/div>\n                     <div class=\"marquee__content aria-hidden=\" true=\"\">\n             \n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Development\n                         <\/p>\n                       <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Headless\n                         <\/p>\n                       <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Development\n                         <\/p>\n                       <\/div>\n                       <div class=\"Marquee-tag\">\n                         <p>\n                          <span class=\"clr-o\">#<\/span>Headless\n                         <\/p>\n                       <\/div>\n             \n                     <\/div>"
       }
     },
     "ourPartners": {
@@ -162,8 +165,8 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/banner-showcase.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/image_24.png",
-            "cardLink": ""
+            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardLink": "shopify:\/\/pages\/showcase"
           }
         },
         "e5d302cc-53f8-4cd1-9deb-aef1cb356e92": {
@@ -178,7 +181,7 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/image_25.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/angles.png",
             "cardLink": ""
           }
         }
@@ -189,7 +192,8 @@
         "965d6888-7062-4c71-909f-2f2112b24df6"
       ],
       "settings": {
-        "heading": "Showcase"
+        "heading": "Showcase",
+        "link": ""
       }
     }
   },

@@ -302,7 +302,7 @@
 
                     content: "";
                     position: absolute;
-                    right: 0;
+                    right: 0px;
                     bottom: 0;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
                     background-repeat: no-repeat;
@@ -351,7 +351,7 @@
                 @media (min-width:1336px) {
                     content: "";
                     position: absolute;
-                    right: 0;
+                    right: -.4px;
                     bottom: 0;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
                     background-repeat: no-repeat;
@@ -374,5 +374,27 @@
             
         }
 
+    }
+}
+
+
+.Marquee0-c {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    p {
+
+        animation: textAnimation linear infinite  6s;
+        white-space: nowrap;
+    }
+   
+
+    @keyframes textAnimation {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
     }
 }

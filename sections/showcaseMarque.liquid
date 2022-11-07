@@ -3,51 +3,27 @@
         <div class="marquee__content">
 
 
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>  Development
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Headless
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>  Development
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Headless
-            </p>
-          </div>
-
+          {{ section.settings.slider }}
+          
         </div>
         <div class="marquee__content aria-hidden=" true"">
-
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Development
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Headless
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Development
-            </p>
-          </div>
-          <div class="Marquee-tag">
-            <p>
-             <span class="clr-o">#</span>Headless
-            </p>
-          </div>
+          
+          {{ section.settings.slider }}
+          
 
         </div>
       </div>
 </section>
+
+{% schema %}
+  {
+    "name":"Marquee",
+    "settings":[
+      {
+        "type": "html",
+        "label":"Text slider",
+        "id":"slider"
+      }
+    ]
+  }
+{% endschema %}
