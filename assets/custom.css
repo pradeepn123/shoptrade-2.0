@@ -194,7 +194,7 @@ body {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 128px;
 }
 @media (max-width: 991px) {
   main {
@@ -2302,6 +2302,9 @@ main {
   margin: 0;
   letter-spacing: 0.06em;
   color: #000000;
+}
+.showcaseBanner .creditDrop__itemBody p:first-child {
+  margin-bottom: 4px;
 }
 
 .showcaseBanner__bannerrImage {

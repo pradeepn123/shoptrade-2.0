@@ -124,6 +124,9 @@
                 margin: 0;
                 letter-spacing: 0.06em;
                 color: #000000;
+                &:first-child {
+                    margin-bottom: 4px;
+                }
             }
         }
     }

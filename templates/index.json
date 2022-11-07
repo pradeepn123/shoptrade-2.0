@@ -201,8 +201,8 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/image_77.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
-            "buttonLink": "",
+            "cardImageBrand": "shopify:\/\/shop_images\/elevatione.png",
+            "buttonLink": "shopify:\/\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
         },
@@ -210,8 +210,8 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/image_25.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
-            "buttonLink": "",
+            "cardImageBrand": "shopify:\/\/shop_images\/angles.png",
+            "buttonLink": "shopify:\/\/pages\/angles",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
         },
@@ -219,8 +219,8 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/0E4A7234_1200x_805121df-5348-4cf1-9f2e-8520665bec88.webp",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
-            "buttonLink": "",
+            "cardImageBrand": "shopify:\/\/shop_images\/adapthealth.png",
+            "buttonLink": "shopify:\/\/pages\/adapthealth",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
         },
@@ -228,8 +228,8 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/image_76.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
-            "buttonLink": "",
+            "cardImageBrand": "shopify:\/\/shop_images\/bunni.png",
+            "buttonLink": "shopify:\/\/pages\/bunni-coffe",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
         }
