@@ -131,9 +131,10 @@ $(document).ready(function () {
 
   //mobile hamberger
 
-  $(".js-hamberger").click(function(){
-    $(".shoptrade").toggleClass("active")
-  })
+  // $(".js-hamberger").click(function(){
+  //   alert(1)
+  //   $(".shoptrade").toggleClass("active")
+  // })
 
   
   $(".uiDesign__item").hover(function () {

@@ -21,12 +21,12 @@
 }
 
 .contact__button {
-  margin-top: 5rem;
+  margin-top: 36rem;
 }
 
 @media screen and (min-width: 750px) {
   .contact__button {
-    margin-top: 8rem;
+    margin-top: 72px;
   }
 }
 

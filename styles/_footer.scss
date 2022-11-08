@@ -42,6 +42,8 @@
             cursor: pointer;
             text-decoration: none;
 
+         
+
         }
     }
 
@@ -247,7 +249,7 @@
     &__links {
         a {
             display: inline-block;
-
+           
             &:not(:last-child) {
                 margin-right: 26px;
             }

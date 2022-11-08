@@ -50,6 +50,32 @@ body {
 
 }
 
+.field__label,
+.platform-type {
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 100% !important;
+
+    letter-spacing: -0.03em !important;
+
+    color: rgba(0, 0, 0, 0.39) !important;
+}
+
+.article-comment {
+    border: 2px solid var(--COLOR-BLACK);
+    padding-left: 20px;
+
+    .field__label {
+        left: 15px !important;
+    }
+
+    .field__input {
+
+        border-bottom: none !important;
+    }
+
+}
+
 .mobile-only {
     @media (min-width:768px) {
         display: none !important;
@@ -72,6 +98,7 @@ body {
         font-size: 42px;
     }
 }
+
 .fnt-800 {
     font-weight: 800;
 }
@@ -166,10 +193,10 @@ body {
 
 .fnt-24 {
     font-weight: 500;
-font-size: 24px;
-line-height: 165%;
-letter-spacing: -0.03em;
-font-family: var( --font-body-family);
+    font-size: 24px;
+    line-height: 165%;
+    letter-spacing: -0.03em;
+    font-family: var(--font-body-family);
 }
 
 .fnt-48 {
@@ -209,7 +236,7 @@ main {
     padding-top: 128px;
 
     @media (max-width:991px) {
-        padding-top: 87px;
+        padding-top: 92px;
     }
 }
 
@@ -253,19 +280,27 @@ main {
     // align-items: flex-start;
 
     input[type='checkbox'] {
-        width: 30px !important;
+        width: 20px !important;
+        height: 20px;
         margin-right: 20px;
+    }
+
+    label {
+        line-height: 28px;
     }
 }
 
 .field__input:not(:placeholder-shown),
 .field__input {
+    font-family: 'Epilogue', sans-serif !important;
+    height: auto !important;
     padding: 20px 20px 20px 0 !important;
     border-left-color: transparent !important;
     border-right-color: transparent !important;
     border-top-color: transparent !important;
     border-bottom: 2px solid var(--COLOR-BLACK) !important;
-
+    font-size: 16px;
+    letter-spacing: -0.03em !important;
     &:focus,
     &:hover {
         box-shadow: none !important;
@@ -291,7 +326,7 @@ main {
 .field {
     overflow: hidden;
 
-   
+
 }
 
 .field:after {
@@ -310,12 +345,14 @@ main {
 .page-width--narrow {
     margin-left: 0 !important;
 }
+
 @media screen and (min-width: 750px) {
     .page-width--narrow {
         padding: 40px 0rem !important;
     }
 
 }
+
 @media screen and (min-width: 990px) {
     .page-width--narrow {
         max-width: 863px !important;
@@ -333,17 +370,19 @@ main {
     .field:after {
         display: none;
     }
+
     .field__label {
         left: 20px !important;
-        
+
     }
+
     .field__input {
         height: 244px;
-        padding: 20px 20px 40px 20px !important; 
+        padding: 20px 20px 40px 20px !important;
         border: 0 !important;
         background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/message.png?v=1666940865");
         background-size: 100% 100%;
-
+        
         @media (max-width:767px) {
             height: 114px;
         }
@@ -359,6 +398,7 @@ main {
 .text-upper {
     text-transform: uppercase;
 }
+
 .newsletter-form__field-wrapper {
     .field:after {
 
@@ -371,15 +411,19 @@ main {
         padding-top: 16px !important;
         padding-bottom: 16px !important;
         height: auto;
+        font-family: 'Epilogue', sans-serif !important;
+     
 
-       
-        
+
     }
-    
+
     label {
         font-size: 16px !important;
+        font-family: 'Epilogue', sans-serif !important;
+
 
     }
+
     .field__button {
         width: auto;
     }
@@ -389,19 +433,36 @@ main {
     display: flex;
     margin-bottom: 25px;
     justify-content: flex-end;
+
     @media (min-width:992px) {
         display: block;
         position: fixed;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        
+
     }
 
     img {
-        @media  (max-width:991px) {
+        @media (max-width:991px) {
             width: 25px;
             height: 25px;
         }
     }
+}
+
+.contact-details  {
+    p {
+        line-height: 168%;
+    }
+}
+
+.message-input {
+    .field {
+        margin-top: 32px ;
+    }
+}
+
+.mt-0 {
+    margin-top: 0 !important;
 }
