@@ -1,10 +1,14 @@
 .homeBanner {
-    padding-top: 100px;
-    padding-bottom: 135px;
+    // padding-top: 100px;
+    // padding-bottom: 135px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: relative;
     overflow: hidden;
+    height: 71vh;
     @media (max-width:991px) {
         padding: 30px 0 60px;
+        height: auto;
     }
 
     &::after {
@@ -16,6 +20,7 @@
         filter: blur(94.5px);
         left: 0;
         bottom: -52%;
+        z-index: -1;
         @media (max-width:991px) {
             width: 170px;
             height: 170px;
@@ -93,3 +98,11 @@
         }
     }
 }
+
+.homeMarque {
+    .marquee {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+  

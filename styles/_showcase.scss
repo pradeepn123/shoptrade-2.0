@@ -298,7 +298,8 @@
             height: 640px;
             object-fit: cover;
             border-radius: 15px;
-            box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+            // box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 10px 60px 0px rgba(187,184,184,1);
 
             @media (max-width:991px) {
                 height: 436px;

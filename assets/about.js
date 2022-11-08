@@ -7,8 +7,7 @@ $(document).ready(function(){
         // slidesPerView: 3,
         centerdSlides:"true",
         loop:true,
-        // freemode : true,
-        speed:2000,
+        freemode : true,
         autoplay: {
             duration:2000
           },
@@ -29,15 +28,14 @@ $(document).ready(function(){
         }
       });
     let aboutCulterBottom = new Swiper('.js-bottom-image-slider', {
-        speed:2000,
 
         // slidesPerView: 3,
         centerdSlides:"true",
         loop:true,
-        // freemode : true,
+        freemode : true,
 
         autoplay: {
-            duration:2000
+            duration:3000
         },
         spaceBetween: 40,
        
@@ -60,10 +58,9 @@ $(document).ready(function(){
     let aboutTeam = new Swiper('.js-team-slider', {
 
         slidesPerView: 1,
-        speed:2000,
        
-        loop:true,
-    
+        // loop:true,
+        // freeMode : true,
 
         // autoplay: {
         //     duration:3000
@@ -85,12 +82,48 @@ $(document).ready(function(){
                 spaceBetween: 30
             },
             480: {
-                slidesPerView: 1.2,
+                slidesPerView: 1,
                 spaceBetween: 10
             }
         }
       });
 
+
+    let aboutTeamContent = new Swiper('.js-team-content-slider', {
+
+        slidesPerView: 1,
+       
+        // loop:true,
+        // freeMode : true,
+
+        // autoplay: {
+        //     duration:3000
+        // },
+        spaceBetween: 40,
+        navigation: {
+          nextEl: ' .js-arrow-right ',
+          prevEl: ' .js-arrow-left',
+        },
+       
+        // direction :"ltr",
+        breakpoints: {
+            1920: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            1028: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+      });
+
+      aboutTeam.controller.control = aboutTeamContent;
+    aboutTeamContent.controller.control = aboutTeam;
 
 
 })

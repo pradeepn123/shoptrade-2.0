@@ -51,8 +51,8 @@ body {
 }
 
 .mobile-only {
-    @media (max-width:767px) {
-        display: none;
+    @media (min-width:768px) {
+        display: none !important;
     }
 }
 
@@ -169,6 +169,7 @@ body {
 font-size: 24px;
 line-height: 165%;
 letter-spacing: -0.03em;
+font-family: var( --font-body-family);
 }
 
 .fnt-48 {
@@ -381,5 +382,26 @@ main {
     }
     .field__button {
         width: auto;
+    }
+}
+
+.social-media-icons {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: flex-end;
+    @media (min-width:992px) {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+
+    img {
+        @media  (max-width:991px) {
+            width: 25px;
+            height: 25px;
+        }
     }
 }

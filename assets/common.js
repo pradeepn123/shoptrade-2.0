@@ -31,7 +31,7 @@ $(document).ready(function(){
   $(window).scroll(function () {
 
     var oTop = $('#counter').offset().top - window.innerHeight;
-    if (counted == 0 && $(window).scrollTop() > oTop) {
+    if (counted == 0 && $(window).scrollTop() > (oTop - 200 )) {
       $('.count').each(function () {
         var $this = $(this),
           countTo = $this.attr('data-count');

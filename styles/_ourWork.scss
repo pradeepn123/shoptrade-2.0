@@ -185,6 +185,11 @@
             }
         }
     }
+
+    .img-wrp {
+        border-radius: 10px;
+        border: 2px solid var(--COLOR-BLACK);
+    }
 }
 
 
@@ -203,8 +208,14 @@
     .img-container {
         border-radius: 10px;
         border: 2px solid var(--COLOR-BLACK);
+        box-shadow: 10px 10px 60px 0px rgba(187,184,184,1);
+
     }
 
+    .img-wrp {
+        border-radius: 10px 10px 0 0 ;
+        overflow: hidden;
+    }
     .work-logo-footer {
         text-align: center;
         padding: 24px 16px 32px;

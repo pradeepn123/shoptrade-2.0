@@ -94,23 +94,28 @@
         }
 
         .nav-item[aria-current="page"] {
-            border: 2px solid var(--COLOR-BLACK);
-            border-radius: 160px;
-            padding-left: 8px;
-            padding-right: 8px;
-            position: relative;
+            @media (min-width:992px) {
+
+                border: 2px solid var(--COLOR-BLACK);
+                border-radius: 160px;
+                padding-left: 8px;
+                padding-right: 8px;
+                position: relative;
+            }
 
             &::after {
-                content: '';
-                position: absolute;
-                background: var(--COLOR-PRIMARY);
-                border: 1px solid var(--COLOR-BLACK);
-                border-radius: 160px;
-                bottom: -18px;
-                width: 11px;
-                height: 9px;
-                left: 50%;
-                transform: translateX(-50%);
+                @media (min-width:992px) {
+                    content: '';
+                    position: absolute;
+                    background: var(--COLOR-PRIMARY);
+                    border: 1px solid var(--COLOR-BLACK);
+                    border-radius: 160px;
+                    bottom: -18px;
+                    width: 11px;
+                    height: 9px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
     }

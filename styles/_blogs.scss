@@ -63,6 +63,7 @@
         border-right: 1px solid var(--COLOR-BLACK);
         position: relative;
 
+       
         @media (max-width:991px) {
             padding: 22px;
             border-bottom: 1px solid var(--COLOR-BLACK);
@@ -187,4 +188,143 @@
 .article-image {
     width: 49%;
     object-fit: cover;
+}
+
+.blog-details { 
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    .media {
+        overflow: visible;
+    }
+    &__heroImage {
+        padding: 40px 34px;
+        background-color: transparent !important;
+        border-right: 1px solid var(--COLOR-BLACK);
+        border-left: 1px solid var(--COLOR-BLACK);
+        position: relative;
+        @media (max-width:991px) {
+            padding: 20px;
+        }
+        img {
+            position: relative !important;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 70px;
+            background-size: 100%;
+            transform: translate(50%, 50%);
+            @media (max-width:991px) {
+                width: 10px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            right: inherit;
+            left: 0;
+            bottom: 0;
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 70px;
+            background-size: 100%;
+            transform: translate(-50%, 50%);
+            @media (max-width:991px) {
+                width: 10px;
+                height: 20px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+            }
+        }
+    }
+}
+
+.article__content {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+
+}
+
+.article__contentWrp  {
+    border-right: 1px solid var(--COLOR-BLACK);
+    border-left: 1px solid var(--COLOR-BLACK);
+    padding-bottom: 32px;
+    position: relative;
+    @media (max-width:991px) {
+        padding: 20px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 70px;
+        background-size: 100%;
+        transform: translate(50%, 50%);
+        @media (max-width:991px) {
+            width: 10px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: inherit;
+        left: 0;
+        bottom: 0;
+        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 70px;
+        background-size: 100%;
+        transform: translate(-50%, 50%);
+
+        @media (max-width:991px) {
+            width: 10px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+    }
+}
+
+.comment-formwrp {
+    border-right: 1px solid var(--COLOR-BLACK);
+    border-left: 1px solid var(--COLOR-BLACK);
+    .article-template__comment-wrapper {
+        margin-top: 0;
+        padding-top: 78px;
+        padding-bottom: 54px;
+    }
+}
+
+.article-container {
+    p:last-child {
+        margin-bottom: 0 ;
+    }
+}
+
+.article-template header {
+    margin-top: 0 !important;
+    @media (min-width:992px) {
+        padding-top: 64px;
+        
+    }
 }

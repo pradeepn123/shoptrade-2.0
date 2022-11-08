@@ -1,16 +1,18 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article-template " itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
+        
         <div class="container">
           {% render block %}
         </div>
       {%- when 'featured_image'-%}
         {%- if article.image -%}
+          <div class="blog-details">
           <div class="container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
+            <div class="article-template__hero-{{ block.settings.image_height }} media blog-details__heroImage"
               itemprop="image"
               {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
             >
@@ -30,34 +32,49 @@
                 alt="{{ article.image.alt | escape }}">
             </div>
           </div>
+        </div>
         {%- endif -%}
-
+        <div class="article__content">
         {%- when 'title'-%}
+      
           <div class="container">
-          <header class="" {{ block.shopify_attributes }}>
-            <div class='article-container'>
-
-            <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
-            <div class="d-flex">
-              {%- if block.settings.blog_show_date -%}
-                <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-              {%- endif -%}
-              {%- if block.settings.blog_show_author -%}
-                <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                  <span itemprop="name">{{ article.author }}</span>
-                </span>
-              {%- endif -%}
-            
-            </div>
-          </header>
+            <div class="article__contentWrp">
+            <header class="" {{ block.shopify_attributes }}>
+              <div class='article-container'>
+                <div class="social-media-icons">
+                  {% assign social = section.blocks | where : 'type', 'social' %}
+                  {% for block in social %}
+                    
+                    <div class="social-media-item">
+                     
+                          <a href="{{ block.settings.socialLink }} ">
+                            <img src="{{ block.settings.socialIcons | image_url }}">
+                          </a>
+                    </div>
+                  {% endfor %}
+                  </div>
+                  <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+                  <div class="d-flex">
+                    {%- if block.settings.blog_show_date -%}
+                      <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+                    {%- endif -%}
+                    {%- if block.settings.blog_show_author -%}
+                      <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">{{ article.author }}</span>
+                      </span>
+                    {%- endif -%}
+                  
+                  </div>    
+                </div>
+            </header>
 
         {%- when 'content'-%}
             <div class='article-container'>
               <div class="article-template__content  rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+                
                   {{ article.content }}
               </div>
-            </div>
-        </div>
+            
         {%- when 'share' -%}
           {% comment %} <div class="article-template__social-sharing container" {{ block.shopify_attributes }}>
             <share-button class="share-button" {{ block.shopify_attributes }}>
@@ -99,13 +116,20 @@
           </div> {% endcomment %}
     {%- endcase -%}
   {%- endfor -%}
-
+</div>
   <div class="article-template__back element-margin-top center">
+
+   
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
   </div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="comment-formwrp">
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper article-container comment-form">
       <div id="comments" class="container">
@@ -252,6 +276,8 @@
         {% endform %}
       </div>
   </div>
+</div>
+</div>
   {%- endif -%}
 </article>
 
@@ -378,6 +404,20 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
+        }
+      ]
+    },{
+      "name": "social icons",
+      "type": "social",
+      "settings": [
+        {
+          "id": "socialIcons",
+          "label": "social icons",
+          "type": "image_picker"
+        },{
+          "id":"socialLink",
+          "label":"link",
+          "type":"url"
         }
       ]
     }
