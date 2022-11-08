@@ -3,7 +3,7 @@
     {%- for link in section.settings.footerLink.links -%}
       <li class="shopify-footer__links">
         <a class="shopify-footer__link" href="">
-          {{link.title}}
+          {{ link.title }}
         </a>
       </li>
     {%- endfor -%}
@@ -14,13 +14,13 @@
       <h5 class="fnt-20 m-0 text-upper ">Let’s Work Together</h5>
       <ul class="shopify-footer__blockList">
 
-        {%- assign work = section.blocks | where: 'type',"work" -%}
+        {%- assign work = section.blocks | where: 'type' , "work" -%}
         {%- for item in work -%}
           <li class="shopify-footer__blockitem">
             <a href="{{ item.settings.togetherlink }}  "  style="text-decoration:none" >
             <div class="v-center">
               <img src="{{ item.settings.workImage | image_url }}" class="shopify-footer__blockImg">
-              <p class="shopify-footer__blockText">{{item.settings.workText }}
+              <p class="shopify-footer__blockText">{{ item.settings.workText }}
             </div>
             </p>
           </a>
@@ -34,7 +34,7 @@
       <h5 class="fnt-20 m-0 text-upper" >Office</h5>
       <ul class="shopify-footer__blockList">
 
-        {%- assign office = section.blocks | where: 'type',"office" -%}
+        {%- assign office = section.blocks | where: 'type' , "office" -%}
         {%- for item in office -%}
           <li class="shopify-footer__blockitem">
             <div class="v-center">

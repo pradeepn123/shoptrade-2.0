@@ -355,7 +355,7 @@ main {
 }
 
 .homeBanner {
-  padding-top: 135px;
+  padding-top: 100px;
   padding-bottom: 135px;
   position: relative;
   overflow: hidden;
@@ -676,8 +676,6 @@ main {
   user-select: none;
   gap: var(--gap);
   background: var(--clr-7f);
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .marquee__content {
@@ -701,7 +699,7 @@ main {
     transform: translateY(0);
   }
   to {
-    transform: translateY(calc(-100% - var(--gap)));
+    transform: translateY(-50%);
   }
 }
 /* Pause animation when reduced-motion is set */
@@ -720,7 +718,7 @@ main {
 }
 @media (min-width: 992px) {
   .enable-animation-v .marquee__content {
-    animation: scroll-v 10s linear infinite;
+    animation: scroll-v 5s linear infinite;
   }
 }
 
@@ -832,6 +830,7 @@ main {
 }
 .ourWork__cardHead {
   opacity: 0;
+  margin-top: 40px;
 }
 .ourWork__cardHead p {
   font-family: Minecraft;
@@ -839,6 +838,7 @@ main {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .ourWork__cardBody {
   padding: 40px 72px 72px 35px;
