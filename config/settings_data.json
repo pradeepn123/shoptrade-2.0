@@ -11,6 +11,37 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "bf493e11-c07c-47f5-99a0-9060a649d427": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/work.png",
+              "workText": "Book a Meeting",
+              "togetherlink": "shopify:\/\/pages\/contact"
+            }
+          },
+          "db12f8d7-c1d9-40f1-ba95-87a17f614c3a": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/call.png",
+              "workText": "+1 844 583 0025",
+              "togetherlink": "tel:+1 844 583 0025"
+            }
+          },
+          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9": {
+            "type": "work",
+            "settings": {
+              "workImage": "shopify:\/\/shop_images\/work.png",
+              "workText": "hello@shoptrade.co",
+              "togetherlink": "mailto:hello@shoptrade.co"
+            }
+          }
+        },
+        "block_order": [
+          "bf493e11-c07c-47f5-99a0-9060a649d427",
+          "db12f8d7-c1d9-40f1-ba95-87a17f614c3a",
+          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9"
+        ],
         "settings": {
           "footerLink": "footer",
           "footerBottomLink": "footer-bottom"
