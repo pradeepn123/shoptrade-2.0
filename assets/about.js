@@ -7,7 +7,7 @@ $(document).ready(function(){
         // slidesPerView: 3,
         centerdSlides:"true",
         loop:true,
-        freemode : true,
+        // freemode : true,
         speed:2000,
         autoplay: {
             duration:2000
@@ -34,10 +34,10 @@ $(document).ready(function(){
         // slidesPerView: 3,
         centerdSlides:"true",
         loop:true,
-        freemode : true,
+        // freemode : true,
 
         autoplay: {
-            duration:3000
+            duration:2000
         },
         spaceBetween: 40,
        
@@ -60,9 +60,10 @@ $(document).ready(function(){
     let aboutTeam = new Swiper('.js-team-slider', {
 
         slidesPerView: 1,
+        speed:2000,
        
         loop:true,
-        freeMode : true,
+    
 
         // autoplay: {
         //     duration:3000

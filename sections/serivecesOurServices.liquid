@@ -11,17 +11,34 @@
     <div class="container">
         <h2 class="h1-main">{{ section.settings.heading }}</h2>
     </div>
+   
+ 
+
+    
     <div class="ourServices__wrp">
         
         <div class="container position-relative">
             <div class="service-marque-left"> 
                 <div class="marquee marquee--hover-pause enable-animation-v p-0 ">
-                    {{ section.settings.leftMargue }}
+                    
+                    
+                    <div class="marquee__content">
+                        
+                        
+                        {{ section.settings.leftMargue }}
+                        
+                        
+                    </div>
+                    <div class="marquee__content" aria-hidden=" true=">
+                        
+                        {{ section.settings.leftMargue }}
+                       
+                   
+                
+                        </div>
                 </div>
         
         </div>
-      
-        
             <div class="ourServices__content">
                 <ul class='ourServices__card'>
 
@@ -31,12 +48,9 @@
                             {{ block.settings.cardList }}
                         </li>
                     {%- endfor -%}
-                   
                 </ul>
             </div>
             <div class="service-marque-right">
-
-
                 <div class="marquee marquee--hover-pause enable-animation-v p-0 ">
                     {{ section.settings.rightMargue }}
                      
@@ -93,3 +107,40 @@
         
     }
 {% endschema %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="marquee__content aria-hidden=" true="">
+    <div class="Marquee-tag">
+        <p>
+        <span class="clr-o">#</span>Development
+        </p>
+    </div>
+    <div class="Marquee-tag">
+        <p>
+        <span class="clr-o">#</span>Headless
+        </p>
+    </div>
+    <div class="Marquee-tag">
+        <p>
+        <span class="clr-o">#</span>Development
+        </p>
+    </div>
+    <div class="Marquee-tag">
+        <p>
+        <span class="clr-o">#</span>Headless
+        </p>
+    </div>
+
+</div>

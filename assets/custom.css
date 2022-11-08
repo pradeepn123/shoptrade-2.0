@@ -701,7 +701,7 @@ main {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% - var(--gap)));
   }
 }
 /* Pause animation when reduced-motion is set */

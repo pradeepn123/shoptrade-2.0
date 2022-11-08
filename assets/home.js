@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
   let testimonial = new Swiper('.js-testimonial-slider', {
+    speed:2000,
 
     slidesPerView: 1.2,
     navigation: {
@@ -25,6 +26,7 @@ $(document).ready(function () {
     }
   });
   let logo = new Swiper('.mobile-logo-slider', {
+    speed:2000,
 
     slidesPerView: "auto",
     // navigation: {
@@ -93,6 +95,7 @@ $(document).ready(function () {
   
       mySwiper = new Swiper ('.js-work-slider', {
 
+        speed:2000,
         
         slidesPerView: 1.2,
   
