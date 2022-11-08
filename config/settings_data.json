@@ -35,12 +35,52 @@
               "workText": "hello@shoptrade.co",
               "togetherlink": "mailto:hello@shoptrade.co"
             }
+          },
+          "541cd2b6-c97b-4993-a6a5-8321cb74334f": {
+            "type": "office",
+            "settings": {
+              "officeImage": "shopify:\/\/shop_images\/HQ.png",
+              "officeText": "1228 E 7th Ave Suite 200, Tampa, FL 33605, United States"
+            }
+          },
+          "033f647e-512b-4664-a49e-971590198d28": {
+            "type": "office",
+            "settings": {
+              "officeImage": "shopify:\/\/shop_images\/BR.png",
+              "officeText": "508 1st Floor, Koramangala, Bengaluru, Karnataka, India - 560095"
+            }
+          },
+          "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/Facebook.png",
+              "socailLink": ""
+            }
+          },
+          "add81eb4-0979-4e24-903d-4c12438da9ad": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/Instagram.png",
+              "socailLink": ""
+            }
+          },
+          "e751e079-4ac3-49f4-932e-dae294a34145": {
+            "type": "social",
+            "settings": {
+              "socialIcons": "shopify:\/\/shop_images\/LinkedIn.png",
+              "socailLink": ""
+            }
           }
         },
         "block_order": [
           "bf493e11-c07c-47f5-99a0-9060a649d427",
           "db12f8d7-c1d9-40f1-ba95-87a17f614c3a",
-          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9"
+          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9",
+          "541cd2b6-c97b-4993-a6a5-8321cb74334f",
+          "033f647e-512b-4664-a49e-971590198d28",
+          "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a",
+          "add81eb4-0979-4e24-903d-4c12438da9ad",
+          "e751e079-4ac3-49f4-932e-dae294a34145"
         ],
         "settings": {
           "footerLink": "footer",
