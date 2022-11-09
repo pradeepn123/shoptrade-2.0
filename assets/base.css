@@ -452,6 +452,13 @@ h1,
 
   h1,
   .h1 {
+    font-size: 52px;
+  }
+}
+@media only screen and (min-width: 1336px) {
+
+  h1,
+  .h1 {
     font-size: 64px;
   }
 }

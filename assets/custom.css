@@ -103,6 +103,11 @@ body {
   letter-spacing: -0.03em;
   color: var(--COLOR-BLACK);
 }
+@media (max-width: 1335px) {
+  .h1-main {
+    font-size: 56px;
+  }
+}
 @media (max-width: 991px) {
   .h1-main {
     font-size: 42px;
@@ -1382,6 +1387,7 @@ input::-moz-placeholder {
   text-align: center;
   padding: 20px 15px;
   display: flex;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .ourNumbers__cardItem {
@@ -1692,6 +1698,7 @@ input::-moz-placeholder {
 .testimonials__profileItem {
   display: flex;
   position: relative;
+  height: 100%;
 }
 @media (max-width: 767px) {
   .testimonials__profileItem {
@@ -1999,12 +2006,12 @@ input::-moz-placeholder {
   top: 0;
   z-index: 9999;
 }
-@media (max-width: 921px) {
+@media (max-width: 991px) {
   .shoptrade {
     padding: 20px 0;
   }
 }
-@media (max-width: 921px) {
+@media (max-width: 991px) {
   .shoptrade.active .navbarSupportedContent {
     transform: translateX(0);
     transition: 0.5s ease all;
@@ -2046,7 +2053,7 @@ input::-moz-placeholder {
   color: #000000;
   text-decoration: none;
 }
-@media (max-width: 921px) {
+@media (max-width: 991px) {
   .shoptrade .navbarSupportedContent {
     position: fixed;
     inset: 0;

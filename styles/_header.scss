@@ -7,14 +7,14 @@
     top: 0;
     z-index: 9999;
 
-    @media (max-width:921px) {
+    @media (max-width:991px) {
         padding: 20px 0;
     }
 
     &.active {
 
         .navbarSupportedContent {
-            @media (max-width:921px) {
+            @media (max-width:991px) {
                 transform: translateX(0);
                 transition: .5s ease all;
             }
@@ -67,7 +67,7 @@
     }
 
     .navbarSupportedContent {
-        @media (max-width:921px) {
+        @media (max-width:991px) {
             position: fixed;
             inset: 0;
             background: #fff;
