@@ -467,6 +467,12 @@ input::-moz-placeholder {
   top: 0 !important;
 }
 
+.terms-condition p {
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--COLOR-BLACK);
+}
+
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -660,8 +666,8 @@ input::-moz-placeholder {
   background: linear-gradient(0deg, #FFFFFF 10.42%, #FF985D 69.79%);
   border: 2px solid #000000;
   border-radius: 10px 18px 12px 19px;
-  width: 115%;
-  height: 115%;
+  width: 115% !important;
+  height: 115% !important;
   z-index: -1;
   transition: 0.5s ease all;
 }
@@ -669,8 +675,8 @@ input::-moz-placeholder {
   width: 80px !important;
 }
 .btn--arrow:hover::after {
-  height: 100%;
-  width: 100%;
+  height: 100% !important;
+  width: 100% !important;
   transform-origin: left;
   transition: 0.5s ease all;
   z-index: -1;
@@ -1074,8 +1080,8 @@ input::-moz-placeholder {
   background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
   border: 2px solid var(--COLOR-BLACK);
   border-radius: 12px 24px;
-  width: 105%;
-  height: 115%;
+  width: 104%;
+  height: 110%;
   z-index: -1;
   transition: 0.5s ease all;
 }
@@ -1170,7 +1176,7 @@ input::-moz-placeholder {
   object-fit: contain;
 }
 .work .btn-wrp {
-  left: 83%;
+  left: 90%;
 }
 
 .btn-arrrow-work {
@@ -2963,8 +2969,8 @@ input::-moz-placeholder {
 .services::after {
   position: absolute;
   content: "";
-  width: 394px;
-  height: 394px;
+  width: 365px;
+  height: 340px;
   background: #FF7121;
   filter: blur(94.5px);
   right: -20%;

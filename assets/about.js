@@ -3,6 +3,7 @@
 $(document).ready(function(){
 
     let aboutCulterTop = new Swiper('.js-top-image-slider', {
+        speed:2000,
 
         // slidesPerView: 3,
         centerdSlides:"true",
@@ -28,6 +29,7 @@ $(document).ready(function(){
         }
       });
     let aboutCulterBottom = new Swiper('.js-bottom-image-slider', {
+        speed:2000,
 
         // slidesPerView: 3,
         centerdSlides:"true",
@@ -58,7 +60,7 @@ $(document).ready(function(){
     let aboutTeam = new Swiper('.js-team-slider', {
 
         slidesPerView: 1,
-       
+        speed:2000,
         // loop:true,
         // freeMode : true,
 
@@ -92,6 +94,7 @@ $(document).ready(function(){
     let aboutTeamContent = new Swiper('.js-team-content-slider', {
 
         slidesPerView: 1,
+        speed:2000,
        
         // loop:true,
         // freeMode : true,

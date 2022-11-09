@@ -1,0 +1,26 @@
+<section class="terms-condition">
+
+    <div class="container">
+        <h1 class="h1-main my-60">{{ section.settings.heading }}</h1>
+       {{ section.settings.temsConditionBlock }}
+    </div>
+
+</section>
+
+{% schema %}
+    {
+        "name":"tems and condition",
+        "settings":[
+            {
+                "id":"heading",
+                "label":"Heading",
+                "type":"text"
+            },
+            {
+                "id":"temsConditionBlock",
+                "type":"richtext",
+                "label":"Terms and condition Content"
+            }
+        ]
+    }
+{% endschema %}
