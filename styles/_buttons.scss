@@ -72,6 +72,11 @@
     &--arrow {
         padding: 18px 20px;
         background-color: var(--COLOR-PRIMARY);
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 75px !important;
+        display: flex;
+        justify-content: center !important;
 
         @media (max-width:991px) {
             padding: 15px;
@@ -98,6 +103,22 @@
             z-index: -1;
             transition: .5s ease all;
         }
+
+        &:hover {
+            // transform: translate(-10px,-10px);
+            width: 80px !important;
+            &::after {
+                height: 100%;
+                width: 100%;
+                // left: 0;
+                // right: 0;
+                transform-origin: left;
+                transition: .5s ease all;
+                z-index: -1;
+        
+            }
+        }
+
     }
 
 
@@ -107,7 +128,7 @@
 .btn-contact {
     // width: 85px;
     padding: 16px 8px 32px;
-
+    margin-right: 5px;
     display: inline-block;
     // height: 58px;
     background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/contact-btn.png?v=1665646309");
@@ -136,7 +157,7 @@
 
     &:hover {
         transition: .5s ease all;
-
+        margin-right: 0;
         // padding: 17px 9px 25px;
         &::after {
             width: 100%;

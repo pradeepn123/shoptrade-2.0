@@ -150,9 +150,9 @@
         .btn-wrp {
             position: absolute;
             bottom: 0;
-            right: 0;
+            left: 48%;
             z-index: 1 !important;
-            transform: translate(15px, 15px);
+            transform: translate(-15px, 15px);
 
             @media (max-width:991px) {
                 right: -10px;
@@ -187,13 +187,31 @@
                 }
 
                 &::after {
-                    // width: 230px;
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: 0;
+                    background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
+                    border: 2px solid var(--COLOR-BLACK);
+                    border-radius: 12px 24px;
+                    width: 105%;
+                    height: 115%;
+                    z-index: -1;
+                    transition: 0.5s ease all;
                 }
 
                 &:hover {
                     width: 215px;
                     transition: .5s ease all;
+                   
+                    &::after {
+                        width: 99%;
+                        height: 98%;
+                    transition: .5s ease all;
+
+                    }
                 }
+              
             }
         }
     }
@@ -280,7 +298,7 @@
     }
 
     .btn {
-        width: auto !important;
+        // width: auto !important;
     }
 
     .btn-arrow {
@@ -301,7 +319,7 @@
     }
 
     .btn-wrp {
-        right: -15px;
+        left: 83%;
     }
 }
 

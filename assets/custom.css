@@ -635,6 +635,11 @@ input::-moz-placeholder {
 .btn--arrow {
   padding: 18px 20px;
   background-color: var(--COLOR-PRIMARY);
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 75px !important;
+  display: flex;
+  justify-content: center !important;
 }
 @media (max-width: 991px) {
   .btn--arrow {
@@ -660,9 +665,20 @@ input::-moz-placeholder {
   z-index: -1;
   transition: 0.5s ease all;
 }
+.btn--arrow:hover {
+  width: 80px !important;
+}
+.btn--arrow:hover::after {
+  height: 100%;
+  width: 100%;
+  transform-origin: left;
+  transition: 0.5s ease all;
+  z-index: -1;
+}
 
 .btn-contact {
   padding: 16px 8px 32px;
+  margin-right: 5px;
   display: inline-block;
   background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/contact-btn.png?v=1665646309");
   background-repeat: no-repeat;
@@ -690,6 +706,7 @@ input::-moz-placeholder {
 }
 .btn-contact:hover {
   transition: 0.5s ease all;
+  margin-right: 0;
 }
 .btn-contact:hover::after {
   width: 100%;
@@ -1015,9 +1032,9 @@ input::-moz-placeholder {
 .ourWork__cardBody .btn-wrp {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 48%;
   z-index: 1 !important;
-  transform: translate(15px, 15px);
+  transform: translate(-15px, 15px);
 }
 @media (max-width: 991px) {
   .ourWork__cardBody .btn-wrp {
@@ -1049,8 +1066,26 @@ input::-moz-placeholder {
     width: auto;
   }
 }
+.ourWork__cardBody .btn-wrp .btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid var(--COLOR-BLACK);
+  border-radius: 12px 24px;
+  width: 105%;
+  height: 115%;
+  z-index: -1;
+  transition: 0.5s ease all;
+}
 .ourWork__cardBody .btn-wrp .btn:hover {
   width: 215px;
+  transition: 0.5s ease all;
+}
+.ourWork__cardBody .btn-wrp .btn:hover::after {
+  width: 99%;
+  height: 98%;
   transition: 0.5s ease all;
 }
 .ourWork .img-wrp {
@@ -1120,9 +1155,6 @@ input::-moz-placeholder {
     transform: translate(-50%, 50%);
   }
 }
-.work .btn {
-  width: auto !important;
-}
 .work .btn-arrow {
   margin-left: 0;
 }
@@ -1138,7 +1170,7 @@ input::-moz-placeholder {
   object-fit: contain;
 }
 .work .btn-wrp {
-  right: -15px;
+  left: 83%;
 }
 
 .btn-arrrow-work {
@@ -2202,10 +2234,30 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .shopify-footer__links {
+    padding: 20px 13px;
     font-size: 18px;
     flex: 1;
     border-bottom: 1px solid #000000;
   }
+}
+@media (max-width: 991px) {
+  .shopify-footer__links:nth-child(1), .shopify-footer__links:nth-child(2), .shopify-footer__links:nth-child(3) {
+    flex-basis: 33.3333333333%;
+  }
+}
+.shopify-footer__links:last-child a {
+  position: relative;
+}
+.shopify-footer__links:last-child a::after {
+  position: absolute;
+  content: "";
+  background: #FF7121;
+  width: 12px;
+  height: 10px;
+  border-radius: 50%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .shopify-footer__links:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);

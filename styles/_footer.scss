@@ -27,11 +27,37 @@
         flex-basis: calc(100%/5);
 
         @media (max-width:991px) {
+            padding: 20px 13px;
+
             font-size: 18px;
             flex: 1;
             border-bottom: 1px solid #000000;
         }
 
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3){
+        @media (max-width:991px) {
+            flex-basis: calc(100% / 3);
+        }
+        }
+        &:last-child {
+            a {
+                position: relative; 
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    background: #FF7121;
+                    width: 12px;
+                    height: 10px;
+                    border-radius: 50%;
+                    left: -20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
 
         &:not(:last-child) {
             border-right: 1px solid var(--COLOR-BLACK);

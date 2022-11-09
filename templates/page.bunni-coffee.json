@@ -37,12 +37,14 @@
         "heading": "Bunni Coffee",
         "subHeading": "Smart True HEPA Air Purifiers",
         "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png",
-        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png"
+        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png",
+        "websiteLInk": ""
       }
     },
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
+        "slider": "<div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div><div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div>"
       }
     },
     "showcase-role": {
@@ -137,7 +139,7 @@
       "type": "showcaseReview",
       "settings": {
         "thumbnail": "shopify:\/\/shop_images\/review-image.png",
-        "vedioUrl": "",
+        "vedioUrl": "http:\/\/www.youtube.com\/embed\/6HOVX0wQOFY",
         "reviewText": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.",
         "name": "Harley Finkelstein ",
         "company": "Hathaspace"
