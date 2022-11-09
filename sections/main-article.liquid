@@ -53,7 +53,7 @@
                     </div>
                   {% endfor %}
                   </div>
-                  <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+                  <h1 class="article-template__title fnt-40" itemprop="headline">{{ article.title | escape }}</h1>
                   <div class="d-flex">
                     {%- if block.settings.blog_show_date -%}
                       <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -120,7 +120,7 @@
   <div class="article-template__back element-margin-top center">
 
    
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+    <a href="{{ blog.url }}" class="fnt-20 article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
@@ -255,6 +255,7 @@
                 class="text-area field__input"
                 aria-required="true"
                 required
+                style="border:0 !important"
                 {% if form.errors contains 'body' %}
                   aria-invalid="true"
                   aria-describedby="CommentForm-body-error"

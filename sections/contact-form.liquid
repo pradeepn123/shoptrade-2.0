@@ -105,6 +105,7 @@
             <label for="platform-type">What’s your current platform ? *</label>
             <div class="">
               <select id="platform-type" class="select-input" name="contact[platform]">
+                <option value="none"> Choose </option>
                 <option>Returns</option>
                 <option>Shipping</option>
                 <option>Custom order</option>
@@ -116,6 +117,7 @@
             <label for="inquire">Type of Inquiry * *</label>
             <div class="">
               <select id="inquire" class="select-input" name="contact[inquire]">
+                <option value="none"> Choose </option>
                 <option>Returns</option>
                 <option>Shipping</option>
                 <option>Custom order</option>
@@ -127,9 +129,10 @@
             <label for="about-us">How did you hear about us ?</label>
             <div class="">
               <select id="about-us" class="select-input" name="contact[about-us]">
-                <option>Returns</option>
-                <option>Shipping</option>
-                <option>Custom order</option>
+                <option value="none"> Choose </option>
+                <option value="">Returns</option>
+                <option value="">Shipping</option>
+                <option value="">Custom order</option>
                 <option>Other</option>
               </select>
               
@@ -149,14 +152,14 @@
               >
                 {{- form.body -}}
               </textarea>
-              <label class="form__label field__label" for="ContactForm-body">Let us know how we can be of help to you</label>
+              {% comment %} <label class="form__label field__label" for="ContactForm-body">Let us know how we can be of help to you</label> {% endcomment %}
             </div>
           
           </div>
     
           <div class="contact-agree">
             <input id="contact-time" type="checkbox" name="contact[agree]" value="agree">       
-            <label for="contact-time">I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches</label>
+            <label for="contact-time clr-b">I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches</label>
           </div>
           <div class="contact__button">
             <button type="submit" class="btn btn--orange">

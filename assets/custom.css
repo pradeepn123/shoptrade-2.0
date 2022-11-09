@@ -75,7 +75,14 @@ body {
   left: 15px !important;
 }
 .article-comment .field__input {
+  line-height: 28px !important;
   border-bottom: none !important;
+}
+.article-comment textarea.text-area {
+  border-bottom-color: transparent !important;
+}
+.article-comment textarea.text-area:focus ~ .field__label {
+  top: 6px !important;
 }
 
 @media (min-width: 768px) {
@@ -125,6 +132,11 @@ body {
 .my-60 {
   margin: 60px 0;
 }
+@media (max-width: 991px) {
+  .my-60 {
+    margin: 40px 0;
+  }
+}
 
 .position-relative {
   position: relative;
@@ -153,7 +165,7 @@ body {
 }
 
 .clr-b {
-  color: var(--COLOR-BLACK);
+  color: var(--COLOR-BLACK) !important;
 }
 
 .clr-o {
@@ -179,7 +191,7 @@ body {
 
 .fnt-20 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 20px !important;
   line-height: 130%;
 }
 
@@ -189,6 +201,18 @@ body {
   line-height: 165%;
   letter-spacing: -0.03em;
   font-family: var(--font-body-family);
+}
+
+.fnt-40 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 991px) {
+  .fnt-40 {
+    font-size: 28px;
+  }
 }
 
 .fnt-48 {
@@ -226,7 +250,7 @@ body {
 }
 
 main {
-  padding-top: 128px;
+  padding-top: 130px;
 }
 @media (max-width: 991px) {
   main {
@@ -274,12 +298,12 @@ main {
 }
 .contact-agree label {
   line-height: 28px;
+  color: var(--COLOR-BLACK);
 }
 
 .field__input:not(:placeholder-shown),
 .field__input {
   font-family: "Epilogue", sans-serif !important;
-  height: auto !important;
   padding: 20px 20px 20px 0 !important;
   border-left-color: transparent !important;
   border-right-color: transparent !important;
@@ -297,6 +321,7 @@ main {
 
 .field__label {
   left: 0 !important;
+  top: 28px !important;
 }
 
 .field__input {
@@ -348,7 +373,7 @@ main {
 }
 .message-input .field__input {
   height: 244px;
-  padding: 20px 20px 40px 20px !important;
+  padding: 28px 20px 40px 20px !important;
   border: 0 !important;
   background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/message.png?v=1666940865");
   background-size: 100% 100%;
@@ -416,6 +441,25 @@ main {
 
 .mt-0 {
   margin-top: 0 !important;
+}
+
+input::-moz-placeholder {
+  opacity: 1 !important;
+}
+
+.text-area::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.39);
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.field__input:not(:placeholder-shown) ~ .field__label {
+  top: 0 !important;
 }
 
 .homeBanner {
@@ -739,6 +783,7 @@ main {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .contact__button {
@@ -863,6 +908,8 @@ main {
   border-right: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 992px) {
   .ourWork__card {
@@ -919,6 +966,9 @@ main {
 }
 .ourWork__cardBody {
   padding: 40px 72px 72px 35px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 @media (max-width: 991px) {
   .ourWork__cardBody {
@@ -948,6 +998,14 @@ main {
 }
 .ourWork__cardBody .img-container {
   position: relative;
+}
+.ourWork__cardBody .work-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ourWork__cardBody .work-body p {
+  flex: 1;
 }
 .ourWork__cardBody .btn-wrp {
   position: absolute;
@@ -3691,6 +3749,7 @@ main {
 .blogBanner {
   position: relative;
   overflow: hidden;
+  border-top: 1px solid var(--COLOR-BLACK);
 }
 .blogBanner::after {
   content: "";
@@ -3713,7 +3772,7 @@ main {
   border-bottom: 1px solid var(--COLOR-BLACK);
   display: flex;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .blogBanner__wrp {
     flex-direction: column;
   }
@@ -3769,6 +3828,10 @@ main {
   .blogBanner__img::after {
     transform: rotate(0deg) translateY(50%);
     right: -2px;
+    width: 19px;
+    bottom: 0;
+    height: 20px;
+    background-size: contain;
   }
 }
 .blogBanner__img img {
@@ -3786,7 +3849,7 @@ main {
 }
 @media (max-width: 991px) {
   .blogBanner__img img {
-    width: 400px;
+    width: 100%;
     height: 300px;
   }
 }

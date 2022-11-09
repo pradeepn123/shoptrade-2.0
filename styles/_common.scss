@@ -70,8 +70,18 @@ body {
     }
 
     .field__input {
-
+        line-height: 28px !important;
         border-bottom: none !important;
+    }
+
+    textarea.text-area {
+        border-bottom-color:  transparent !important;
+
+        &:focus {
+            &~.field__label  {
+                top: 6px !important;
+            }
+        }
     }
 
 }
@@ -123,6 +133,10 @@ body {
 
 .my-60 {
     margin: 60px 0;
+
+    @media (max-width:991px) {
+        margin: 40px 0;
+    }
 }
 
 .position-relative {
@@ -157,7 +171,7 @@ body {
 }
 
 .clr-b {
-    color: var(--COLOR-BLACK);
+    color: var(--COLOR-BLACK) !important;
 }
 
 .clr-o {
@@ -186,7 +200,7 @@ body {
 
 .fnt-20 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 130%;
 
 }
@@ -197,6 +211,17 @@ body {
     line-height: 165%;
     letter-spacing: -0.03em;
     font-family: var(--font-body-family);
+}
+
+.fnt-40 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+
+    @media (max-width:991px) {
+        font-size: 28px;
+    }
 }
 
 .fnt-48 {
@@ -233,7 +258,7 @@ body {
 }
 
 main {
-    padding-top: 128px;
+    padding-top: 130px;
 
     @media (max-width:991px) {
         padding-top: 92px;
@@ -287,13 +312,14 @@ main {
 
     label {
         line-height: 28px;
+        color: var(--COLOR-BLACK)
     }
 }
 
 .field__input:not(:placeholder-shown),
 .field__input {
     font-family: 'Epilogue', sans-serif !important;
-    height: auto !important;
+    // height: auto !important;
     padding: 20px 20px 20px 0 !important;
     border-left-color: transparent !important;
     border-right-color: transparent !important;
@@ -301,6 +327,7 @@ main {
     border-bottom: 2px solid var(--COLOR-BLACK) !important;
     font-size: 16px;
     letter-spacing: -0.03em !important;
+
     &:focus,
     &:hover {
         box-shadow: none !important;
@@ -310,7 +337,7 @@ main {
 
 .field__label {
     left: 0 !important;
-
+    top: 28px !important;
 }
 
 .field__input {
@@ -373,16 +400,17 @@ main {
 
     .field__label {
         left: 20px !important;
+       
 
     }
 
     .field__input {
         height: 244px;
-        padding: 20px 20px 40px 20px !important;
+        padding: 28px 20px 40px 20px !important;
         border: 0 !important;
         background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/message.png?v=1666940865");
         background-size: 100% 100%;
-        
+
         @media (max-width:767px) {
             height: 114px;
         }
@@ -412,7 +440,7 @@ main {
         padding-bottom: 16px !important;
         height: auto;
         font-family: 'Epilogue', sans-serif !important;
-     
+
 
 
     }
@@ -451,7 +479,7 @@ main {
     }
 }
 
-.contact-details  {
+.contact-details {
     p {
         line-height: 168%;
     }
@@ -459,10 +487,36 @@ main {
 
 .message-input {
     .field {
-        margin-top: 32px ;
+        margin-top: 32px;
     }
 }
 
 .mt-0 {
     margin-top: 0 !important;
+}
+
+input::-moz-placeholder {
+    opacity: 1 !important;
+   }
+
+.text-area {
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        /* identical to box height, or 16px */
+
+        letter-spacing: -0.03em;
+
+        color: rgba(0, 0, 0, 0.39);
+
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+.field__input:not(:placeholder-shown){
+    & ~ .field__label {
+        top: 0 !important;
+    }
 }

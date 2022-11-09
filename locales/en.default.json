@@ -208,8 +208,8 @@
     "contact": {
       "form": {
         "title": "Contact form",
-        "name": "Name",
-        "email": "Email",
+        "name": "Contact Name",
+        "email": "Email address",
         "phone": "Phone number",
         "comment": "Comment",
         "send": "Submit",

@@ -26,13 +26,37 @@
           "type": "content",
           "settings": {
           }
+        },
+        "afbf44d8-cfa2-430a-b0fb-7913ef4ecbe4": {
+          "type": "social",
+          "settings": {
+            "socialIcons": "shopify:\/\/shop_images\/Facebook.png",
+            "socialLink": ""
+          }
+        },
+        "acb1a8dc-3095-43f9-8ee2-58bb18a525b4": {
+          "type": "social",
+          "settings": {
+            "socialIcons": "shopify:\/\/shop_images\/Instagram.png",
+            "socialLink": ""
+          }
+        },
+        "7ff56504-ecf0-407b-b9d8-0852ff66116d": {
+          "type": "social",
+          "settings": {
+            "socialIcons": "shopify:\/\/shop_images\/LinkedIn.png",
+            "socialLink": ""
+          }
         }
       },
       "block_order": [
         "featured_image",
         "title",
         "share",
-        "content"
+        "content",
+        "afbf44d8-cfa2-430a-b0fb-7913ef4ecbe4",
+        "acb1a8dc-3095-43f9-8ee2-58bb18a525b4",
+        "7ff56504-ecf0-407b-b9d8-0852ff66116d"
       ],
       "settings": {
       }
