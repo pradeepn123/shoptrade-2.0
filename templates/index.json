@@ -17,26 +17,96 @@
         "116094d0-983b-443e-aebf-1c58e6585a3f": {
           "type": "marqueeType",
           "settings": {
-            "imageLogo": "shopify:\/\/shop_images\/shopify-plus_b086ec6c-7bdb-4ad9-9b55-cb5d2b6fb71d.png"
+            "imageLogo": "shopify:\/\/shop_images\/Frame_12.png"
           }
         },
         "dfba2e09-4eb3-42c6-9b72-45667155df1d": {
           "type": "marqueeType",
           "settings": {
-            "imageLogo": "shopify:\/\/shop_images\/recharge.png"
+            "imageLogo": "shopify:\/\/shop_images\/Frame_2.png"
           }
         },
         "33a3aba2-0271-40d0-93a6-2491fb44160b": {
           "type": "marqueeType",
           "settings": {
-            "imageLogo": "shopify:\/\/shop_images\/gargias.png"
+            "imageLogo": "shopify:\/\/shop_images\/Frame_7.png"
+          }
+        },
+        "bdc22d13-0c67-4e19-87d7-b564dd10e34d": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_10.png"
+          }
+        },
+        "ef27cdff-6ea4-43fb-b47c-fa416baf0bdf": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_8.png"
+          }
+        },
+        "561fc497-3d40-45cc-a8f4-fbc46c8e1643": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_6.png"
+          }
+        },
+        "d0cb2067-c0fc-4bfa-af76-dd59d2026880": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_9.png"
+          }
+        },
+        "82954450-52e9-4f56-8ffc-176ada4e3db8": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_5.png"
+          }
+        },
+        "7b76f9ff-6e9f-4c1b-a7ca-a8b50ecbbb7e": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_4.png"
+          }
+        },
+        "e57e9c29-541c-4b80-8aad-c6ac9b981b29": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_3.png"
+          }
+        },
+        "7276e1ef-4a19-421d-8a81-d3f3de7e6c06": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_11.png"
+          }
+        },
+        "f83dcf24-9a7d-452c-8f7a-d78fc1609f60": {
+          "type": "marqueeType",
+          "settings": {
+            "imageLogo": "shopify:\/\/shop_images\/Frame_2.png"
+          }
+        },
+        "c560fec3-4407-4bdd-8a67-bfb5dba8dc2b": {
+          "type": "marqueeType",
+          "disabled": true,
+          "settings": {
           }
         }
       },
       "block_order": [
         "116094d0-983b-443e-aebf-1c58e6585a3f",
         "dfba2e09-4eb3-42c6-9b72-45667155df1d",
-        "33a3aba2-0271-40d0-93a6-2491fb44160b"
+        "33a3aba2-0271-40d0-93a6-2491fb44160b",
+        "bdc22d13-0c67-4e19-87d7-b564dd10e34d",
+        "ef27cdff-6ea4-43fb-b47c-fa416baf0bdf",
+        "561fc497-3d40-45cc-a8f4-fbc46c8e1643",
+        "d0cb2067-c0fc-4bfa-af76-dd59d2026880",
+        "82954450-52e9-4f56-8ffc-176ada4e3db8",
+        "7b76f9ff-6e9f-4c1b-a7ca-a8b50ecbbb7e",
+        "e57e9c29-541c-4b80-8aad-c6ac9b981b29",
+        "7276e1ef-4a19-421d-8a81-d3f3de7e6c06",
+        "f83dcf24-9a7d-452c-8f7a-d78fc1609f60",
+        "c560fec3-4407-4bdd-8a67-bfb5dba8dc2b"
       ],
       "settings": {
       }
@@ -49,7 +119,7 @@
           "settings": {
             "position": "top",
             "UIicons": "<svg width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"> <path d=\"M22.9167 0V6.25H27.0833V0H22.9167ZM8.7972 5.85124L5.85124 8.7972L10.2702 13.2161L13.2161 10.2702L8.7972 5.85124ZM41.2028 5.85124L36.7839 10.2702L39.7298 13.2161L44.1488 8.7972L41.2028 5.85124ZM25 10.4167C16.9701 10.4167 10.4167 16.9701 10.4167 25C10.4167 30.7662 13.8669 35.6297 18.75 37.9883V43.75C18.75 46.0272 20.6395 47.9167 22.9167 47.9167H27.0833C29.3605 47.9167 31.25 46.0272 31.25 43.75V37.9883C36.1331 35.6297 39.5833 30.7662 39.5833 25C39.5833 16.9701 33.0299 10.4167 25 10.4167ZM25 14.5833C30.7785 14.5833 35.4167 19.2215 35.4167 25C35.4167 29.5507 32.5111 33.3809 28.4709 34.8104L27.0833 35.2987V43.75H22.9167V35.2987L21.5291 34.8104C17.4889 33.3809 14.5833 29.5507 14.5833 25C14.5833 19.2215 19.2215 14.5833 25 14.5833ZM0 22.9167V27.0833H6.25V22.9167H0ZM43.75 22.9167V27.0833H50V22.9167H43.75ZM10.2702 36.7839L5.85124 41.2028L8.7972 44.1488L13.2161 39.7298L10.2702 36.7839ZM39.7298 36.7839L36.7839 39.7298L41.2028 44.1488L44.1488 41.2028L39.7298 36.7839Z\" fill=\"black\"><\/path> <\/svg>",
-            "serviceText": "USER INTERFACE DESIGN 1 USER INTERFACE DESIGN 1"
+            "serviceText": "USER INTERFACE DESIGN 1"
           }
         },
         "924fdf0e-ef53-4cb8-b9a2-ad47e02cf621": {
@@ -191,8 +261,8 @@
         "97481e62-2db3-4b14-b26a-f57b817e6d76": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/hathaspace-img_d70b93a7-ad23-4a1c-b44b-ee140d0f05ac.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardImage": "shopify:\/\/shop_images\/buunni.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
             "buttonLink": "shopify:\/\/pages\/showcase",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -200,8 +270,8 @@
         "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/elevation-img.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/elevatione.png",
+            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
             "buttonLink": "shopify:\/\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -209,8 +279,8 @@
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_25.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/angles.png",
+            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
             "buttonLink": "shopify:\/\/pages\/angles",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -218,8 +288,8 @@
         "5e235ad6-01a5-4cad-830b-cef51b7c3121": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/adaptive-img.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/adapthealth.png",
+            "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
             "buttonLink": "shopify:\/\/pages\/adapthealth",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -227,8 +297,8 @@
         "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bumpbox.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/bumpbox-logo.png",
+            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
             "buttonLink": "shopify:\/\/pages\/pumpbox",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -236,8 +306,8 @@
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bunni-coffee.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/bunni.png",
+            "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
             "buttonLink": "shopify:\/\/pages\/bunni-coffe",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>"
           }
@@ -306,7 +376,6 @@
         "3f894121-9d92-46bb-bf80-14e51a90257d": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/hataspace.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
@@ -315,7 +384,6 @@
         "5400a35e-a308-4e5f-8af3-d8d3c33a3fbe": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_24.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
@@ -324,7 +392,6 @@
         "ee18843b-9af9-4d7a-912f-2e64c6eb37c8": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_78.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
@@ -333,7 +400,6 @@
         "80408b5c-e690-402a-99ff-3a3b46fa6346": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_24.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
@@ -351,7 +417,6 @@
         "a9b7527a-9d31-42ae-9b94-f012e576032a": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_78.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
