@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $(".loader ").hide()
       //model 
   $(".play-icon").click(function (e) {
     $("body").addClass("hide-scroll")
