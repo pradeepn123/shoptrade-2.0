@@ -165,23 +165,23 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/banner-showcase.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/hataspace.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
             "cardLink": "shopify:\/\/pages\/showcase"
           }
         },
         "e5d302cc-53f8-4cd1-9deb-aef1cb356e92": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/review-image.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/image_78.png",
+            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
             "cardLink": ""
           }
         },
         "965d6888-7062-4c71-909f-2f2112b24df6": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_25.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/angles.png",
+            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
             "cardLink": ""
           }
         }
