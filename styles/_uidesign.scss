@@ -135,6 +135,42 @@
 
     &.active {
         display: block;
+
+        h2 {
+            
+            display: inline;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                inset: 0;
+                height: 110%;
+              }
+    
+              &::before{
+                background: white;
+                animation: typing 5000ms steps(25) 2s forwards;
+                top: -1px;
+              }
+              
+              &::after{
+                top: -3px;
+                width: .2rem;
+                background: black;
+                animation: typing 5000ms steps(25) 2s forwards, blink 800ms infinite;
+              }
+    
+              @keyframes typing{
+                to{
+                  left: 100%;
+                }
+              }
+              
+              @keyframes blink{
+                to{
+                  background: transparent;
+                }
+              }
+        }
     }
 
     h2 {
@@ -142,7 +178,8 @@
         font-family: 'Minecraft';
         position: relative;
         font-weight: 500;
-        font-size: 48px;
+        // font-size: 48px;
+        font-size: 32px;
         line-height: 100%;
         letter-spacing: 0.06em;
         color: #000000;
@@ -156,22 +193,24 @@
     }
 
     h2 {
-        animation-name: reveal-colored;
-        animation-duration: 4s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: infinite;
-        overflow: hidden;
-        white-space: nowrap;
+        // animation-name: reveal-colored;
+        // animation-duration: 4s;
+        // animation-timing-function: ease-out;
+        // animation-iteration-count: infinite;
+        // overflow: hidden;
+        // white-space: nowrap;
         // font-size: 40px;
-    }
-
-    @keyframes reveal-colored {
-        0% {
-            max-width: 0;
-        }
-
-        100% {
-            max-width: 100%;
+        &.active {
         }
     }
+
+    // @keyframes reveal-colored {
+    //     0% {
+    //         max-width: 0;
+    //     }
+
+    //     100% {
+    //         max-width: 100%;
+    //     }
+    // }
 }

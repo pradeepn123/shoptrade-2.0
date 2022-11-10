@@ -37,7 +37,7 @@
     }
 
     to {
-        transform: translateY(-50% );
+        transform: translateY(-40% );
     }
 }
 
@@ -57,7 +57,7 @@
     animation: scroll 10s linear infinite;
 
     @media (min-width:992px) {
-        animation: scroll-v 5s linear infinite;
+        animation: scroll-v 7s linear infinite;
     }
 }
 

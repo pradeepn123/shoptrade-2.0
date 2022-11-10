@@ -850,7 +850,7 @@ input::-moz-placeholder {
     transform: translateY(0);
   }
   to {
-    transform: translateY(-50%);
+    transform: translateY(-40%);
   }
 }
 /* Pause animation when reduced-motion is set */
@@ -869,7 +869,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 992px) {
   .enable-animation-v .marquee__content {
-    animation: scroll-v 5s linear infinite;
+    animation: scroll-v 7s linear infinite;
   }
 }
 
@@ -2003,11 +2003,41 @@ input::-moz-placeholder {
 .UImainText.active {
   display: block;
 }
+.UImainText.active h2 {
+  display: inline;
+}
+.UImainText.active h2::before, .UImainText.active h2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 110%;
+}
+.UImainText.active h2::before {
+  background: white;
+  animation: typing 5000ms steps(25) 2s forwards;
+  top: -1px;
+}
+.UImainText.active h2::after {
+  top: -3px;
+  width: 0.2rem;
+  background: black;
+  animation: typing 5000ms steps(25) 2s forwards, blink 800ms infinite;
+}
+@keyframes typing {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
 .UImainText h2 {
   font-family: "Minecraft";
   position: relative;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: 0.06em;
   color: #000000;
@@ -2018,23 +2048,6 @@ input::-moz-placeholder {
     font-size: 18px;
   }
 }
-.UImainText h2 {
-  animation-name: reveal-colored;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  overflow: hidden;
-  white-space: nowrap;
-}
-@keyframes reveal-colored {
-  0% {
-    max-width: 0;
-  }
-  100% {
-    max-width: 100%;
-  }
-}
-
 .shoptrade {
   padding: 24px 0;
   background-color: var(--COLOR-WHITE);
@@ -4160,8 +4173,8 @@ input::-moz-placeholder {
   .site-map::after {
     top: 10%;
     bottom: inherit;
-    width: 676px;
-    height: 676px;
+    width: 500px;
+    height: 500px;
   }
 }
 .site-map__list {
@@ -4176,7 +4189,7 @@ input::-moz-placeholder {
   justify-content: flex-start;
 }
 .site-map__list > li {
-  padding: 48px 40px;
+  padding: 32px 40px;
 }
 @media (max-width: 991px) {
   .site-map__list > li {

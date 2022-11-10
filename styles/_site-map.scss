@@ -18,8 +18,8 @@
 
             top: 10%;
             bottom: inherit;
-            width: 676px;
-            height: 676px;
+            width: 500px;
+            height: 500px;
 
         }
     }
@@ -37,7 +37,7 @@
         }
 
         &>li {
-            padding: 48px 40px;
+            padding: 32px 40px;
 
             @media (max-width:991px) {
                 padding: 40px 20px;
