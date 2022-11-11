@@ -14,7 +14,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Design",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Our Design and UX team create seamless, user-centric designs that showcase your brand and supercharge your revenue. We’ll work together to create the perfect design that not only meets your brief, but makes sure your website stays easy to manage.\nWe don’t just design to convert, we design to retain. Expect your customers to leave delighted, and keep coming back for more.       <\/p>                                <\/li>   \n                            <\/ul>"
           }
         },
         "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20": {
@@ -28,7 +28,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Development",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">We develop online stores that convert visitors to customers and are ready to scale, using the power of Shopify Plus. We’ll build your Shopify store compliant, accessible and extensible as well as optimized for SEO, performance, internationalization, and mobile.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\"> Our team has built custom themes for some of the most complex requirements out there, that don’t only push the boundaries of Shopify Plus, but e-commerce as a whole <\/p>                                <\/li>\n<\/ul>"
           }
         },
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
