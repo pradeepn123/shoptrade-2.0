@@ -519,6 +519,8 @@ input::-moz-placeholder {
   position: relative;
   overflow: hidden;
   height: 71vh;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 991px) {
   .homeBanner {
