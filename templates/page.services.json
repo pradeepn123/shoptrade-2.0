@@ -63,7 +63,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Performance enhancement",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\"> When it comes to e-commerce, time really is money. A slow store can damage your bounce rate, hurt your conversions, and slash your search positions.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">We use a custom development framework and keep a stern focus when designing-to-convert, creating Shopify stores that are some of the fastest out there. Passionate about performance, we can keep tuning your website for speed as well, so that even as your business expands, your store remains lightning-fast.<\/p>                                <\/li>\n<\/ul>"
           }
         },
         "57217090-2113-46e1-b790-eb3fc9b915ca": {
