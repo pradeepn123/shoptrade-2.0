@@ -248,12 +248,21 @@
             "designation": "HEAD OF ENGINEERING",
             "info": "<p>Driven and self-motivated, Amit is very passionate about software development and strives to better both himself and the development community.<\/p><p>He has a paramount experience of over 4 years in building scalable applications for numerous ventures.<\/p><p>As the Head of Engineering, Amit continues to be an indispensable asset to the team  with his proactive approach and visionary perspective.<\/p>"
           }
+        },
+        "ab82fb80-c459-47ff-94cd-853833815e37": {
+          "type": "leader",
+          "settings": {
+            "leaderName": "Akila Mohan",
+            "designation": "SENIOR MANAGER - PEOPLE OPERATIONS",
+            "info": "<p>Akila specializes in Human Resources and administration, having held a number of positions in the field with an illustrious experience of 7 years.<\/p><p>She oversees all aspects of human resources management including recruitment, people operations and workplace culture.<\/p><p>Akila is a powerful force at ShopTrade and uses her positive attitude and tireless energy to encourage others to work hard and succeed.<\/p>"
+          }
         }
       },
       "block_order": [
         "e2afeea0-98f6-4d39-9431-25648dbf8c61",
         "a05d5efa-924e-48c8-aea7-2c943520e36c",
-        "5f14a654-4617-46f6-b298-091472cde689"
+        "5f14a654-4617-46f6-b298-091472cde689",
+        "ab82fb80-c459-47ff-94cd-853833815e37"
       ],
       "settings": {
         "heading": ""
