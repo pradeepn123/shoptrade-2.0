@@ -19,7 +19,7 @@
           <li class="shopify-footer__blockitem">
             <a href="{{ item.settings.togetherlink }}  "  style="text-decoration:none" >
             <div class="v-center">
-              <img src="{{ item.settings.workImage | image_url }}" class="shopify-footer__blockImg">
+              <img src="{{ item.settings.workImage-svg }}" class="shopify-footer__blockImg">
               <p class="shopify-footer__blockText">{{ item.settings.workText }}
             </div>
             </p>
@@ -38,7 +38,7 @@
         {%- for item in office -%}
           <li class="shopify-footer__blockitem">
             <div class="v-center">
-              <img src="{{ item.settings.officeImage | image_url }}" class="shopify-footer__blockImg">
+              <img src="{{ item.settings.officeImage-svg  }}" class="shopify-footer__blockImg">
             </div>
             <p class="shopify-footer__blockText">{{ item.settings.officeText }}
             </p>
@@ -55,7 +55,7 @@
           {%- assign social = section.blocks | where: 'type' , "social" -%}
           {%- for item in social -%}
             <a href="{{ item.socailLink }}">
-              <img src="{{ item.settings.socialIcons | image_url }}">
+              <img src="{{ item.settings.socialIcons-svg }}">
             </a>
 
           {%- endfor -%}
@@ -116,9 +116,9 @@
         "type": "work",
         "settings": [
           {
-            "id": "workImage",
+            "id": "workImage-svg",
             "label": "work item",
-            "type": "image_picker"
+            "type": "url"
           }, {
             "id": "workText",
             "label": "work text",
@@ -134,9 +134,9 @@
         "type": "office",
         "settings": [
           {
-            "id": "officeImage",
+            "id": "officeImage-svg",
             "label": "office item",
-            "type": "image_picker"
+            "type": "url"
           }, {
             "id": "officeText",
             "label": "office text",
@@ -148,9 +148,9 @@
         "type": "social",
         "settings": [
           {
-            "id": "socialIcons",
+            "id": "socialIcons-svg",
             "label": "social icons",
-            "type": "image_picker"
+            "type": "url"
           },{
             "id":"socailLink",
             "label":"link",

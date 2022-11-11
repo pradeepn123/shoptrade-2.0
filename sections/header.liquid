@@ -3,8 +3,8 @@
     <div class="header-container">
       <div class="v-center">
       <a class="navbar-brand order-2" href="/">
-        <img class="only-desktop" src="{{ section.settings.logo | image_url }}" alt="logo">
-        <img class="only-mobile" src="{{ section.settings.logombile | image_url }}" alt="logo">
+        <img class="only-desktop" src="{{ section.settings.logo-svg  }}" alt="logo">
+        <img class="only-mobile" src="{{ section.settings.logombile-svg }}" alt="logo">
       </a>
       <button class="d-flex p-0 js-hamberger" type="button">
         <span class="navbar-toggler-icon"></span>
@@ -57,13 +57,13 @@
     "name": "Header",
     "settings": [
       {
-        "id": "logo",
+        "id": "logo-svg",
         "label": "Logo",
-        "type": "image_picker"
+        "type": "url"
       },{
-        "id": "logombile",
+        "id": "logombile-svg",
         "label": "Logo mobile",
-        "type": "image_picker"
+        "type": "url"
       }, 
       
       {
