@@ -371,6 +371,17 @@
             "careerbtn": "",
             "careerLink": ""
           }
+        },
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "opening",
+            "memberImage": "shopify:\/\/shop_images\/Vinod.jpg",
+            "memberName": "Vinod",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
         }
       },
       "block_order": [
@@ -382,7 +393,8 @@
         "c82d69dd-0a55-4bee-9c38-88f027091d0b",
         "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
         "3b11f28a-2ded-4057-9dfe-1740745bab46",
-        "21f45427-c113-4cd9-85de-b6801c87055a"
+        "21f45427-c113-4cd9-85de-b6801c87055a",
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3"
       ],
       "settings": {
         "heading": "Meet our Team"
