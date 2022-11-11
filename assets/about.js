@@ -61,7 +61,7 @@ $(document).ready(function(){
 
         slidesPerView: 1,
         speed:2000,
-        // loop:true,
+        loop:true,
         // freeMode : true,
 
         // autoplay: {
@@ -96,7 +96,7 @@ $(document).ready(function(){
         slidesPerView: 1,
         speed:2000,
        
-        // loop:true,
+        loop:true,
         // freeMode : true,
 
         // autoplay: {
