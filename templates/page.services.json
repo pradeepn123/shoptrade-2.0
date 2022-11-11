@@ -21,7 +21,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Headless Commerce",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Headless commerce is the decoupling of your website front-end (the “head”) from your back-end content and commerce systems. This brings extreme flexibility and crazy-fast site speed.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">But headless setups require huge expertise and higher ongoing costs, which is why we believe they’re only right for very specific business cases. If you’re interested in headless, we can talk you through the many options for this architecture, and have our team deliver a best-in-class result.     <\/p>                                <\/li>                             <\/ul>"
           }
         },
         "7de9a382-de41-4034-9eb7-985a4001f0ab": {
@@ -42,7 +42,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Replatforming",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Moving between platforms can be a pretty daunting task. But it doesn’t have to be. Most of our Shopify Plus projects involve migrating brands from Magento, CommerceCloud alongside other e-commerce platforms.   <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">So, if we’re handling your brand’s replatforming project, know you’ll be in safe hands. By this, we mean your data will be transferred seamlessly. Your integrations, connected flawlessly. And all that traffic kept safe and sound.    <\/p>                                <\/li>                             <\/ul>"
           }
         },
         "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
