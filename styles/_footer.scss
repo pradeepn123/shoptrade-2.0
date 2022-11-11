@@ -50,11 +50,12 @@
                     content: '';
                     background: #FF7121;
                     width: 12px;
-                    height: 10px;
+                    height: 12px;
                     border-radius: 50%;
                     left: -20px;
                     top: 50%;
                     transform: translateY(-50%);
+                    animation: pulse 1500ms infinite;
                 }
             }
         }

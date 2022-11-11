@@ -557,3 +557,20 @@ input::-moz-placeholder {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+//   .pulse {
+//     width: 55px;
+//     height: 55px;
+//     border-radius: 50px;
+//     background: #fbb32f;
+//     animation: pulse 1500ms infinite;
+//   }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--COLOR-PRIMARY);
+    }
+    100% {
+      box-shadow: 0 0 0 12px #fbb32f01;
+    }
+  }

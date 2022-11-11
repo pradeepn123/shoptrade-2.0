@@ -505,6 +505,14 @@ input::-moz-placeholder {
     transform: rotate(360deg);
   }
 }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--COLOR-PRIMARY);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(251, 179, 47, 0.0039215686);
+  }
+}
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -2315,11 +2323,12 @@ input::-moz-placeholder {
   content: "";
   background: #FF7121;
   width: 12px;
-  height: 10px;
+  height: 12px;
   border-radius: 50%;
   left: -20px;
   top: 50%;
   transform: translateY(-50%);
+  animation: pulse 1500ms infinite;
 }
 .shopify-footer__links:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
