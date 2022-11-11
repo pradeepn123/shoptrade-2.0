@@ -5,7 +5,7 @@
             <p class='fnt-16'>{{ section.settings.subheading }}
             
         </p>
-        <a href="{{ section.settings.btnlink }}" class="btn btn--orange">Contact us</a>
+        <a href="{{ section.settings.btnlink }}" class="btn btn--orange">{{ section.settings.button_text }}</a>
     </div>
     </div>
 
@@ -26,7 +26,13 @@
                 "label":"sub Heading",
                 "type": "text"
             
-            },{
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button text"
+            },
+            {
                 "id":"btnlink",
                 "label":"Button link",
                 "type":"url"
