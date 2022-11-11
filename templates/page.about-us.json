@@ -30,7 +30,7 @@
         "9b6d8825-12d4-4c22-916f-288410252c45"
       ],
       "settings": {
-        "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png"
+        "bannerImage": "shopify:\/\/shop_images\/5K8A6607.jpg"
       }
     },
     "about-culter": {
@@ -215,7 +215,7 @@
       ],
       "settings": {
         "vedioHeading": "Our Values",
-        "vedioThumbnailImage": "shopify:\/\/shop_images\/Rectangle_253.png",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/5K8A6537.jpg",
         "vedioUrl": "http:\/\/www.youtube.com\/embed\/6HOVX0wQOFY"
       }
     },
@@ -225,25 +225,45 @@
         "e2afeea0-98f6-4d39-9431-25648dbf8c61": {
           "type": "leader",
           "settings": {
-            "image": "shopify:\/\/shop_images\/leader.png",
+            "image": "shopify:\/\/shop_images\/Mifuras.png",
             "leaderName": "Mohommadu Mifuras",
             "designation": "Founder & CEO",
-            "info": "Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients."
+            "info": "<p>Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients.<\/p>"
           }
         },
         "a05d5efa-924e-48c8-aea7-2c943520e36c": {
           "type": "leader",
           "settings": {
-            "image": "shopify:\/\/shop_images\/010.jpg",
+            "image": "shopify:\/\/shop_images\/Deekshith.png",
             "leaderName": "Deekshith K Suvarna",
             "designation": "DIRECTOR & HEAD OF DESIGN",
-            "info": "Deekshith is an accomplished professional with over 8 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best."
+            "info": "<p>Deekshith is an accomplished professional with over 10 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.<\/p>"
+          }
+        },
+        "5f14a654-4617-46f6-b298-091472cde689": {
+          "type": "leader",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amit.png",
+            "leaderName": "Amit Kumar Gupta",
+            "designation": "HEAD OF ENGINEERING",
+            "info": "<p>Driven and self-motivated, Amit is very passionate about software development and strives to better both himself and the development community.<\/p><p>He has a paramount experience of over 4 years in building scalable applications for numerous ventures.<\/p><p>As the Head of Engineering, Amit continues to be an indispensable asset to the team  with his proactive approach and visionary perspective.<\/p>"
+          }
+        },
+        "ab82fb80-c459-47ff-94cd-853833815e37": {
+          "type": "leader",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Akila.png",
+            "leaderName": "Akila Mohan",
+            "designation": "SENIOR MANAGER - PEOPLE OPERATIONS",
+            "info": "<p>Akila specializes in Human Resources and administration, having held a number of positions in the field with an illustrious experience of 7 years.<\/p><p>She oversees all aspects of human resources management including recruitment, people operations and workplace culture.<\/p><p>Akila is a powerful force at ShopTrade and uses her positive attitude and tireless energy to encourage others to work hard and succeed.<\/p>"
           }
         }
       },
       "block_order": [
         "e2afeea0-98f6-4d39-9431-25648dbf8c61",
-        "a05d5efa-924e-48c8-aea7-2c943520e36c"
+        "a05d5efa-924e-48c8-aea7-2c943520e36c",
+        "5f14a654-4617-46f6-b298-091472cde689",
+        "ab82fb80-c459-47ff-94cd-853833815e37"
       ],
       "settings": {
         "heading": ""
@@ -267,8 +287,8 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/010.jpg",
-            "memberName": "Name",
+            "memberImage": "shopify:\/\/shop_images\/Akila.jpg",
+            "memberName": "Akila",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
             "careerbtn": "",
             "careerLink": ""
@@ -278,8 +298,9 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberName": "Name",
-            "memberDesignation": "FED",
+            "memberImage": "shopify:\/\/shop_images\/mathew.jpg",
+            "memberName": "Mathew",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -288,8 +309,42 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberName": "Name",
-            "memberDesignation": "FED",
+            "memberImage": "shopify:\/\/shop_images\/Amit.jpg",
+            "memberName": "Amit",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Pradeep.jpg",
+            "memberName": "Pradeep",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "016c8a11-e388-4b39-9134-63619cde6f81": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Faizel.jpg",
+            "memberName": "Faizel",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "96ec600a-46e6-4781-bf21-2a08ef282c77": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Rosh.jpg",
+            "memberName": "Rosh",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -299,7 +354,10 @@
         "3b77e0db-3387-41ff-9681-15226a08b7bd",
         "3b11f28a-2ded-4057-9dfe-1740745bab46",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
-        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96"
+        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b",
+        "016c8a11-e388-4b39-9134-63619cde6f81",
+        "96ec600a-46e6-4781-bf21-2a08ef282c77"
       ],
       "settings": {
         "heading": "Meet our Team"

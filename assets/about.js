@@ -68,10 +68,10 @@ $(document).ready(function(){
         //     duration:3000
         // },
         spaceBetween: 40,
-        navigation: {
-          nextEl: ' .js-arrow-right ',
-          prevEl: ' .js-arrow-left',
-        },
+        // navigation: {
+        //   nextEl: ' .js-arrow-right ',
+        //   prevEl: ' .js-arrow-left',
+        // },
        
         // direction :"ltr",
         breakpoints: {
