@@ -228,7 +228,7 @@
             "image": "shopify:\/\/shop_images\/leader.png",
             "leaderName": "Mohommadu Mifuras",
             "designation": "Founder & CEO",
-            "info": "Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients."
+            "info": "<p>Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients.<\/p>"
           }
         },
         "a05d5efa-924e-48c8-aea7-2c943520e36c": {
@@ -237,13 +237,23 @@
             "image": "shopify:\/\/shop_images\/010.jpg",
             "leaderName": "Deekshith K Suvarna",
             "designation": "DIRECTOR & HEAD OF DESIGN",
-            "info": "Deekshith is an accomplished professional with over 8 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best."
+            "info": "<p>Deekshith is an accomplished professional with over 10 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.<\/p>"
+          }
+        },
+        "5f14a654-4617-46f6-b298-091472cde689": {
+          "type": "leader",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amit.jpg",
+            "leaderName": "Amit Kumar Gupta",
+            "designation": "HEAD OF ENGINEERING",
+            "info": "<p>Driven and self-motivated, Amit is very passionate about software development and strives to better both himself and the development community.<\/p><p>He has a paramount experience of over 4 years in building scalable applications for numerous ventures.<\/p><p>As the Head of Engineering, Amit continues to be an indispensable asset to the team  with his proactive approach and visionary perspective.<\/p>"
           }
         }
       },
       "block_order": [
         "e2afeea0-98f6-4d39-9431-25648dbf8c61",
-        "a05d5efa-924e-48c8-aea7-2c943520e36c"
+        "a05d5efa-924e-48c8-aea7-2c943520e36c",
+        "5f14a654-4617-46f6-b298-091472cde689"
       ],
       "settings": {
         "heading": ""
