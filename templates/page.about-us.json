@@ -222,6 +222,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/010.jpg",
             "memberName": "Name",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
             "careerbtn": "",
