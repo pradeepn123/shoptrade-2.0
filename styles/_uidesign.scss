@@ -148,7 +148,7 @@
     
               &::before{
                 background: white;
-                animation: typing 5000ms steps(25) 2s forwards;
+                animation: typing 3000ms steps(25) 2s forwards;
                 top: -1px;
               }
               
@@ -156,7 +156,7 @@
                 top: -3px;
                 width: .2rem;
                 background: black;
-                animation: typing 5000ms steps(25) 2s forwards, blink 800ms infinite;
+                animation: typing 3000ms steps(25) 2s forwards, blink 800ms infinite;
               }
     
               @keyframes typing{
