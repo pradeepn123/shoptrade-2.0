@@ -299,7 +299,7 @@
         "c82d69dd-0a55-4bee-9c38-88f027091d0b": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
+            "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Pradeep.jpg",
             "memberName": "Pradeep",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
@@ -310,7 +310,7 @@
         "016c8a11-e388-4b39-9134-63619cde6f81": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
+            "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Faizel.jpg",
             "memberName": "Faizel",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
@@ -321,7 +321,7 @@
         "96ec600a-46e6-4781-bf21-2a08ef282c77": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
+            "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Rosh.jpg",
             "memberName": "Rosh",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
