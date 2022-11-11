@@ -1,14 +1,15 @@
 .shoptrade {
-    padding: 24px 0;
+    padding: 24px 80px;
     background-color: var(--COLOR-WHITE);
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 9999;
-
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  
     @media (max-width:991px) {
-        padding: 20px 0;
+        padding: 20px 15px;
     }
 
     &.active {

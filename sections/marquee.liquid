@@ -4,16 +4,18 @@
 
             {% for block in section.blocks %}
             <div class="Marquee-tag">
+                {{ block.settings.imagelogo }}
                 {% comment %} <img class="image01" src="{{ block.settings.imageDoller | image_url }}" alt="marguee one"/> {% endcomment %}
-                <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" />
+                {% comment %} <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" /> {% endcomment %}
             </div>
         {% endfor %}
         </div>
         <div class="marquee__content aria-hidden="true"">
             {% for block in section.blocks %}
                 <div class="Marquee-tag">
+                    {{ block.settings.imagelogo }}
                     {% comment %} <img class="image01" src="{{ block.settings.imageDoller | image_url }}" alt="marguee one"/> {% endcomment %}
-                    <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" />
+                    {% comment %} <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" /> {% endcomment %}
                 </div>
             {% endfor %}
         </div>
@@ -26,14 +28,14 @@
     "name":"Marguee",
     "blocks":[
         {
-            "name":"Marquee Image",
+            "name":"Marquee Logo",
             "type":"marqueeType",
             "settings": [
                
                 {
-                    "type":"image_picker",
+                    "type":"html",
                     "label":"logo",
-                    "id":"imageLogo"
+                    "id":"imagelogo"
                 }
             ]
 

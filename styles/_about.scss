@@ -54,7 +54,7 @@
                 right: 0;
                 height: 41px;
                 width: 37px;
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
 
                 @media (max-width:991px) {
                     right: -4px;
@@ -75,7 +75,7 @@
                     width: 15px;
                     height: 13px;
                     background-size: contain;
-                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
                 }
             }
 
@@ -131,7 +131,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             height: 41px;
             width: 37px;
             bottom: -2px;
@@ -244,7 +244,7 @@
                     position: absolute;
                     right: 0;
                     bottom: 0;
-                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                     background-repeat: no-repeat;
                     width: 40px;
                     height: 70px;
@@ -289,7 +289,7 @@
                 width: 15px;
                 height: 13px;
                 background-size: contain;
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             }
         }
 
@@ -304,7 +304,7 @@
                 width: 15px;
                 height: 13px;
                 background-size: contain;
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             }
         }
 
@@ -375,7 +375,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             height: 41px;
             width: 37px;
             bottom: -2px;
@@ -426,7 +426,7 @@
         &::after {
             position: absolute;
             content: "";
-            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/halfDiamand.png?v=1665740888);
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             height: 41px;
             width: 37px;
             top: -2px;
@@ -483,6 +483,12 @@
 }
 
 .about-team-members {
+
+    &__imgMain {
+        width: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
     &__wrp {
         border-top: 1px solid var(--COLOR-BLACK);
 
@@ -536,7 +542,7 @@
                         position: absolute;
                         right: 0;
                         bottom: 0;
-                        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/diament.png?v=1665483382);
+                        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                         background-repeat: no-repeat;
                         width: 40px;
                         height: 70px;
