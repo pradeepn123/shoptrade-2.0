@@ -383,6 +383,17 @@
             "careerLink": ""
           }
         },
+        "3b11f28a-2ded-4057-9dfe-1740745bab46": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Sivanashi.jpg",
+            "memberName": "Shivanshi",
+            "memberDesignation": "Front-end Developer",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "436484f0-034c-4e1e-8ef4-471b6aae546a": {
           "type": "cardType",
           "settings": {
@@ -394,12 +405,12 @@
             "careerLink": ""
           }
         },
-        "3b11f28a-2ded-4057-9dfe-1740745bab46": {
+        "b83a8738-e232-4799-a200-a99760854011": {
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Sivanashi.jpg",
-            "memberName": "Shivanshi",
+            "memberImage": "shopify:\/\/shop_images\/Prince.jpg",
+            "memberName": "Prince",
             "memberDesignation": "Front-end Developer",
             "careerbtn": "",
             "careerLink": ""
@@ -450,8 +461,9 @@
         "21f45427-c113-4cd9-85de-b6801c87055a",
         "60038901-e4a8-4923-8048-f3c74cc08420",
         "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
-        "436484f0-034c-4e1e-8ef4-471b6aae546a",
         "3b11f28a-2ded-4057-9dfe-1740745bab46",
+        "436484f0-034c-4e1e-8ef4-471b6aae546a",
+        "b83a8738-e232-4799-a200-a99760854011",
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4"
