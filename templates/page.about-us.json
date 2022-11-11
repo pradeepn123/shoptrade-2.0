@@ -69,19 +69,37 @@
         "0e20ac06-e4bf-41c9-be31-2ccba5c674ef": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_266.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0457.jpg"
           }
         },
         "8f0e95fd-eaf3-45eb-b259-7cd15a3bb6d3": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_253.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/5K8A6501.jpg"
           }
         },
         "613e1f8a-e13e-42c5-81b4-e2080047f105": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_254.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0454.jpg"
+          }
+        },
+        "b54ebf91-e2d0-4a44-87a7-111ab10a9d67": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0419.jpg"
+          }
+        },
+        "ad7f45e4-bafb-4555-ab54-2149c5fe9f9f": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0461.jpg"
+          }
+        },
+        "7ec0eda3-c968-4865-86be-3b301d0ff70f": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0433.jpg"
           }
         }
       },
@@ -93,7 +111,10 @@
         "09aedff5-84f0-4283-acf0-064aad02cc39",
         "0e20ac06-e4bf-41c9-be31-2ccba5c674ef",
         "8f0e95fd-eaf3-45eb-b259-7cd15a3bb6d3",
-        "613e1f8a-e13e-42c5-81b4-e2080047f105"
+        "613e1f8a-e13e-42c5-81b4-e2080047f105",
+        "b54ebf91-e2d0-4a44-87a7-111ab10a9d67",
+        "ad7f45e4-bafb-4555-ab54-2149c5fe9f9f",
+        "7ec0eda3-c968-4865-86be-3b301d0ff70f"
       ],
       "settings": {
         "heading": "Work Culture"
