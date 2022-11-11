@@ -357,7 +357,7 @@
         "65fccf09-cc85-4551-af88-3959b9857428": {
           "type": "countblock",
           "settings": {
-            "cardNumber": 400,
+            "cardNumber": 30,
             "countText": "Countries served in the last year"
           }
         }
