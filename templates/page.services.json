@@ -35,7 +35,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "System Integrations",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Your e-commerce team should be focused on growth. Not bogged down by manually inputting data again and again into overly-complex spreadsheets.\n<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">Let us connect your online store to the back-end of your retail operations. We’ll integrate all your product, customer and order data between Shopify and your ERP, PIM and marketing systems. Then, watch your team get their time back to focus on what matters the most.   <\/p>\n<\/li>\n<\/ul>"
           }
         },
         "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
