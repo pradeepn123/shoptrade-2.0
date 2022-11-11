@@ -125,6 +125,7 @@
       "settings": {
         "heading": "Are you the pro we're searching for?",
         "subheading": "We are constantly looking for talent across the board. Feel like you have what it takes To make a difference for our clients.",
+        "button_text": "View Our Openings",
         "btnlink": "shopify:\/\/pages\/contact"
       }
     },
@@ -283,17 +284,6 @@
             "careerLink": ""
           }
         },
-        "3b11f28a-2ded-4057-9dfe-1740745bab46": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Sivanashi.jpg",
-            "memberName": "Akila",
-            "memberDesignation": "Design II -  (User Interface Design Specialist)",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "ea4195cb-784f-4d5b-a273-edd40889edf6": {
           "type": "cardType",
           "settings": {
@@ -305,24 +295,13 @@
             "careerLink": ""
           }
         },
-        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96": {
+        "8affedcf-6ef6-495a-92aa-94e5cc62a68b": {
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Amit.jpg",
-            "memberName": "Amit",
-            "memberDesignation": "Design II -  (User Interface Design Specialist)",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
-        "c82d69dd-0a55-4bee-9c38-88f027091d0b": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Pradeep.jpg",
-            "memberName": "Pradeep",
-            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "memberImage": "shopify:\/\/shop_images\/Sushant.png",
+            "memberName": "Sushant",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -348,16 +327,110 @@
             "careerbtn": "",
             "careerLink": ""
           }
+        },
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Pradeep.jpg",
+            "memberName": "Pradeep Neginhal",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Keerthi.png",
+            "memberName": "Keerthi Sindhura",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "3b11f28a-2ded-4057-9dfe-1740745bab46": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Sivanashi.jpg",
+            "memberName": "Shivanshi",
+            "memberDesignation": "Design II -  (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "21f45427-c113-4cd9-85de-b6801c87055a": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Sahrudh.jpg",
+            "memberName": "Sahrudh",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Vinod.jpg",
+            "memberName": "Vinod",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/shivanand.jpg",
+            "memberName": "Shivanand",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "40841869-daac-4449-bf3c-6f3406395749": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Ritu.jpg",
+            "memberName": "Ritu",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "opening",
+            "memberImage": "shopify:\/\/shop_images\/Sakashi_2354c3c2-8857-4391-920c-68ce3b4bbca7.jpg",
+            "memberName": "Sakshi",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
         }
       },
       "block_order": [
         "3b77e0db-3387-41ff-9681-15226a08b7bd",
-        "3b11f28a-2ded-4057-9dfe-1740745bab46",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
-        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
-        "c82d69dd-0a55-4bee-9c38-88f027091d0b",
+        "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
         "016c8a11-e388-4b39-9134-63619cde6f81",
-        "96ec600a-46e6-4781-bf21-2a08ef282c77"
+        "96ec600a-46e6-4781-bf21-2a08ef282c77",
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b",
+        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
+        "3b11f28a-2ded-4057-9dfe-1740745bab46",
+        "21f45427-c113-4cd9-85de-b6801c87055a",
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
+        "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
+        "40841869-daac-4449-bf3c-6f3406395749",
+        "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4"
       ],
       "settings": {
         "heading": "Meet our Team"
