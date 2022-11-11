@@ -1,5 +1,5 @@
 .btn {
-    width: 173px;
+    // width: 173px;
     padding: 22px 30px;
     background: #FFFFFF;
     color: var(--COLOR-BLACK);
@@ -45,7 +45,9 @@
         }
 
         &:hover {
-            width: 180px;
+            // width: 105%;
+            padding-right: 33px;
+            padding-left: 33px;
             transition: .5s ease all;
             background-color: #fff;
             &::after {
