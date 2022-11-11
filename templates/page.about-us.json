@@ -411,7 +411,7 @@
             "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/shivanand.jpg",
             "memberName": "Shivanand",
-            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "memberDesignation": "Front-end Intern",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -422,7 +422,7 @@
             "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Ritu.jpg",
             "memberName": "Ritu",
-            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "memberDesignation": "Front-end Intern",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -430,10 +430,10 @@
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
+            "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Sakashi_2354c3c2-8857-4391-920c-68ce3b4bbca7.jpg",
             "memberName": "Sakshi",
-            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "memberDesignation": "Front-end Intern",
             "careerbtn": "",
             "careerLink": ""
           }
