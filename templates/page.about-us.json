@@ -349,6 +349,17 @@
             "careerbtn": "",
             "careerLink": ""
           }
+        },
+        "8affedcf-6ef6-495a-92aa-94e5cc62a68b": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Sushant.png",
+            "memberName": "Sushant",
+            "memberDesignation": "Design II - (User Interface Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
         }
       },
       "block_order": [
@@ -358,7 +369,8 @@
         "96ec600a-46e6-4781-bf21-2a08ef282c77",
         "c82d69dd-0a55-4bee-9c38-88f027091d0b",
         "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
-        "3b11f28a-2ded-4057-9dfe-1740745bab46"
+        "3b11f28a-2ded-4057-9dfe-1740745bab46",
+        "8affedcf-6ef6-495a-92aa-94e5cc62a68b"
       ],
       "settings": {
         "heading": "Meet our Team"
