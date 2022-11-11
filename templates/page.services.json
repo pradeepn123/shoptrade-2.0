@@ -48,8 +48,8 @@
         "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardHeading": "Custom Shopify App",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Have you got a super-specific functionality requirement? So niche, there isn’t an existing app to cater for it? Well, not yet... <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">Our App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.    <\/p>                                <\/li>                             <\/ul>"
           }
         },
         "659e6233-0209-4682-aead-afcbd918713a": {
