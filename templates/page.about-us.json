@@ -267,7 +267,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/010.jpg",
+            "memberImage": "shopify:\/\/shop_images\/Akila.jpg",
             "memberName": "Name",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
             "careerbtn": "",
@@ -278,6 +278,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/mathew.jpg",
             "memberName": "Name",
             "memberDesignation": "FED",
             "careerbtn": "",
@@ -288,8 +289,42 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Amit.jpg",
             "memberName": "Name",
             "memberDesignation": "FED",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "opening",
+            "memberImage": "shopify:\/\/shop_images\/Pradeep.jpg",
+            "memberName": "",
+            "memberDesignation": "",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "016c8a11-e388-4b39-9134-63619cde6f81": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "opening",
+            "memberImage": "shopify:\/\/shop_images\/Faizel.jpg",
+            "memberName": "",
+            "memberDesignation": "",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "96ec600a-46e6-4781-bf21-2a08ef282c77": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "opening",
+            "memberImage": "shopify:\/\/shop_images\/Rosh.jpg",
+            "memberName": "",
+            "memberDesignation": "",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -299,7 +334,10 @@
         "3b77e0db-3387-41ff-9681-15226a08b7bd",
         "3b11f28a-2ded-4057-9dfe-1740745bab46",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
-        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96"
+        "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
+        "c82d69dd-0a55-4bee-9c38-88f027091d0b",
+        "016c8a11-e388-4b39-9134-63619cde6f81",
+        "96ec600a-46e6-4781-bf21-2a08ef282c77"
       ],
       "settings": {
         "heading": "Meet our Team"
