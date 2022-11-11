@@ -55,8 +55,8 @@
         "659e6233-0209-4682-aead-afcbd918713a": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "Internationalization",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>   \n<li>  <p class=\"ourServices__cardText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non tristique amet, tellus, enim, tellus fringilla pharetra pulvinar. Ut nec.                                <\/p>                                <\/li>                             <\/ul>"
+            "cardHeading": "Offline to Online",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Does your brand use physical channels as well as a Shopify store? There are omnichannel technologies available to connect your online-to-offline touchpoints.<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">If you run permanent physical stores or temporary pop-ups, Shopify POS can unify your online and in-person sales. If you sell events’ tickets and want to streamline the check-in experience, then Event Ticketing could be for you.      <\/p>\n<\/li>\n<\/ul>"
           }
         },
         "652be96d-9e9c-4402-afa1-0df03979a209": {
