@@ -39,37 +39,67 @@
         "b2ffb29a-2d06-4ef0-9029-2fb8a9793cf5": {
           "type": "slideTop",
           "settings": {
-            "slideImgRight": "shopify:\/\/shop_images\/Rectangle_253.png"
+            "slideImgRight": "shopify:\/\/shop_images\/5K8A6475.jpg"
           }
         },
         "0a16cc30-9181-4176-bc66-e762c3fe9962": {
           "type": "slideTop",
           "settings": {
-            "slideImgRight": "shopify:\/\/shop_images\/Rectangle_254.png"
+            "slideImgRight": "shopify:\/\/shop_images\/5K8A6537.jpg"
           }
         },
         "4947c60c-8a3f-457d-bf6d-4da837ffaf9d": {
           "type": "slideTop",
           "settings": {
-            "slideImgRight": "shopify:\/\/shop_images\/Rectangle_255.png"
+            "slideImgRight": "shopify:\/\/shop_images\/5K8A6478.jpg"
+          }
+        },
+        "624c4150-253c-4966-8721-aec0cd39753b": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/5K8A6568.jpg"
+          }
+        },
+        "09aedff5-84f0-4283-acf0-064aad02cc39": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/5K8A6607.jpg"
           }
         },
         "0e20ac06-e4bf-41c9-be31-2ccba5c674ef": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_266.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0457.jpg"
           }
         },
         "8f0e95fd-eaf3-45eb-b259-7cd15a3bb6d3": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_253.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/5K8A6501.jpg"
           }
         },
         "613e1f8a-e13e-42c5-81b4-e2080047f105": {
           "type": "slideBottom",
           "settings": {
-            "slideImgLeft": "shopify:\/\/shop_images\/Rectangle_254.png"
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0454.jpg"
+          }
+        },
+        "b54ebf91-e2d0-4a44-87a7-111ab10a9d67": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0419.jpg"
+          }
+        },
+        "ad7f45e4-bafb-4555-ab54-2149c5fe9f9f": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0461.jpg"
+          }
+        },
+        "7ec0eda3-c968-4865-86be-3b301d0ff70f": {
+          "type": "slideBottom",
+          "settings": {
+            "slideImgLeft": "shopify:\/\/shop_images\/Pro-Capture-One-0433.jpg"
           }
         }
       },
@@ -77,9 +107,14 @@
         "b2ffb29a-2d06-4ef0-9029-2fb8a9793cf5",
         "0a16cc30-9181-4176-bc66-e762c3fe9962",
         "4947c60c-8a3f-457d-bf6d-4da837ffaf9d",
+        "624c4150-253c-4966-8721-aec0cd39753b",
+        "09aedff5-84f0-4283-acf0-064aad02cc39",
         "0e20ac06-e4bf-41c9-be31-2ccba5c674ef",
         "8f0e95fd-eaf3-45eb-b259-7cd15a3bb6d3",
-        "613e1f8a-e13e-42c5-81b4-e2080047f105"
+        "613e1f8a-e13e-42c5-81b4-e2080047f105",
+        "b54ebf91-e2d0-4a44-87a7-111ab10a9d67",
+        "ad7f45e4-bafb-4555-ab54-2149c5fe9f9f",
+        "7ec0eda3-c968-4865-86be-3b301d0ff70f"
       ],
       "settings": {
         "heading": "Work Culture"
@@ -89,7 +124,7 @@
       "type": "about-joinus",
       "settings": {
         "heading": "Are you the pro we're searching for?",
-        "subheading": "Partner with a world class agile development team, ready to bring your projects to life. Leverage our 8+ years of experience and jumpstart your business with a team of professionals distributed across the globe. Collectively, we turn ideas into a reality.",
+        "subheading": "We are constantly looking for talent across the board. Feel like you have what it takes To make a difference for our clients.",
         "btnlink": "shopify:\/\/pages\/contact"
       }
     },
@@ -146,29 +181,29 @@
         "6fa82323-d7a3-4a2b-958a-46837237aba7": {
           "type": "vedioCard",
           "settings": {
-            "vedioHead": "Versatile",
-            "vedioSubtext": "We don’t believe in hard problems. We believe in hidden solutions. And we thrive when working towards finding them. We don’t take NO for an answer."
+            "vedioHead": "Personal Touch",
+            "vedioSubtext": "Each of our customers ranks first on our priority list. We’re constantly seeking ways to make your life easier. We treat each project as our own and we get heavily invested in your product, no matter what."
           }
         },
         "73c5c6de-80e1-4bc5-b8ba-f3e7b55d5115": {
           "type": "vedioCard",
           "settings": {
-            "vedioHead": "Modern",
-            "vedioSubtext": "In an ever changing industry such as ours, one might think that it's hard to keep up to date with the latest technology & design trends. We beg to differ"
+            "vedioHead": "Transparency",
+            "vedioSubtext": "We believe that transparency is the foundation of successful long term collaborations, and we love those. When working with ShopTrade you’ll embark in a journey while our team of professionals will guide you at every step."
           }
         },
         "e3f355ec-e052-419e-9be4-872532236f38": {
           "type": "vedioCard",
           "settings": {
-            "vedioHead": "Trustworthy",
-            "vedioSubtext": "We’re treating every client as the first one. We’re bringing the concept of family run business from offline to online. We’re your partner, not just another vendor."
+            "vedioHead": "Passion",
+            "vedioSubtext": "We surround ourselves only with passionate people, because we believe in win-win-win relationships where our clients are delighted with successful products that help their user base and we thrive while doing so."
           }
         },
         "4ececf78-c611-4a13-b56a-1756af125f0d": {
           "type": "vedioCard",
           "settings": {
-            "vedioHead": "Modern",
-            "vedioSubtext": "In an ever changing industry such as ours, one might think that it's hard to keep up to date with the latest technology & design trends. We beg to differ"
+            "vedioHead": "Quality",
+            "vedioSubtext": "Our priority is delivering highly scalable pixel perfect solutions. We’re not here to jump from one project to the other but rather to help our clients becoming established brands in their market, and the only way to do so is with quality services."
           }
         }
       },
@@ -193,12 +228,22 @@
             "image": "shopify:\/\/shop_images\/leader.png",
             "leaderName": "Mohommadu Mifuras",
             "designation": "Founder & CEO",
-            "info": "Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a aproven record of scaling online bussiness ,  working with companies looking to transition to , or expand  ,  their online preesence . He has ssuccessfully built,  developed and launched a significant number of DTC brands for his clients."
+            "info": "Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients."
+          }
+        },
+        "a05d5efa-924e-48c8-aea7-2c943520e36c": {
+          "type": "leader",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/010.jpg",
+            "leaderName": "Deekshith K Suvarna",
+            "designation": "DIRECTOR & HEAD OF DESIGN",
+            "info": "Deekshith is an accomplished professional with over 8 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best."
           }
         }
       },
       "block_order": [
-        "e2afeea0-98f6-4d39-9431-25648dbf8c61"
+        "e2afeea0-98f6-4d39-9431-25648dbf8c61",
+        "a05d5efa-924e-48c8-aea7-2c943520e36c"
       ],
       "settings": {
         "heading": ""

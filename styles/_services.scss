@@ -89,7 +89,7 @@
             }
         }
 
-        &:last-child {
+        &:last-child {            
             @media (max-width:767px) {
 
                 border-bottom: 0 solid #000;
@@ -112,7 +112,7 @@
 
             }
         }
-
+        
         &:nth-child(odd) {
             @media (min-width:768px) {
                 border-right: 1px solid var(--COLOR-BLACK);
