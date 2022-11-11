@@ -7,12 +7,17 @@
         <div class="container">
             <div class='about-value__wrp'>
                 <div class="about-value__vedioWrp">
+                 
                     <div class="vedio__container">
 
-                        <img class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/>
-                        <a href="" class="play-icon arrow-btn ">
-                          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"/>
-                        </a>
+                        <img class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/> 
+                      
+                        {% if section.settings.vedioUrl != null %}
+                          <a href="" class="play-icon arrow-btn ">
+                            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"/>
+                          </a>
+                          
+                        {% endif %}
                       
                       </div>
                 </div>
