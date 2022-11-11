@@ -195,10 +195,20 @@
             "designation": "Founder & CEO",
             "info": "Mifras is a young entrepreneur with a deep understanding of eCommerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients."
           }
+        },
+        "a05d5efa-924e-48c8-aea7-2c943520e36c": {
+          "type": "leader",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/010.jpg",
+            "leaderName": "Deekshith K Suvarna",
+            "designation": "DIRECTOR & HEAD OF DESIGN",
+            "info": "Deekshith is an accomplished professional with over 8 years of experience in UI\/UX design, Graphic Design and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best."
+          }
         }
       },
       "block_order": [
-        "e2afeea0-98f6-4d39-9431-25648dbf8c61"
+        "e2afeea0-98f6-4d39-9431-25648dbf8c61",
+        "a05d5efa-924e-48c8-aea7-2c943520e36c"
       ],
       "settings": {
         "heading": ""
