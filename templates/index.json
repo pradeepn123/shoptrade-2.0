@@ -396,23 +396,24 @@
         "ee18843b-9af9-4d7a-912f-2e64c6eb37c8": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/angles90-logo.png",
-            "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
-            "name": "Harley Finkelstein",
-            "designation": "President of Shopify"
+            "sliderImage": "shopify:\/\/shop_images\/synchro_25ac6246-a5cd-45d7-b959-c53279beb7fb.png",
+            "sliderText": "“Their communication and responsiveness are impressive in the workflow.“",
+            "name": "Graham Ryan",
+            "designation": "Founder & CEO"
           }
         },
         "80408b5c-e690-402a-99ff-3a3b46fa6346": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/logo-club.png",
-            "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
-            "name": "Harley Finkelstein",
-            "designation": "President of Shopify"
+            "sliderImage": "shopify:\/\/shop_images\/AeroCare_Logo_large_53f79d75-d249-45f6-a22f-a8eba87dd0a6.png",
+            "sliderText": "“I am continually impressed by their expertise in Shopify and web development.“",
+            "name": "Eddie Rosado",
+            "designation": "VP of Product Development, AeroCare Holdings, Inc"
           }
         },
         "a9b7527a-9d31-42ae-9b94-f012e576032a": {
           "type": "sliderType",
+          "disabled": true,
           "settings": {
             "sliderImage": "shopify:\/\/shop_images\/logo-hata.png",
             "sliderText": "“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “",
