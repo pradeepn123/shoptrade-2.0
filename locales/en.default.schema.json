@@ -235,16 +235,20 @@
           "label": "Facebook",
           "info": "https:\/\/facebook.com\/shopify"
         },
-        "social_pinterest_link": {
-          "label": "Pinterest",
-          "info": "https:\/\/pinterest.com\/shopify"
-        },
         "social_instagram_link": {
           "label": "Instagram",
           "info": "http:\/\/instagram.com\/shopify"
         },
+        "social_linkedIn_link": {
+          "label": "LinkedIn",
+          "info": "https:\/\/linkedIn.com\/shopify"
+        },
+        "social_pinterest_link": {
+          "label": "Pinterest",
+          "info": "https:\/\/pinterest.com\/shopify"
+        },
         "social_tiktok_link": {
-          "label": "TikTok",
+          "label": "tiktok",
           "info": "https:\/\/tiktok.com\/@shopify"
         },
         "social_tumblr_link": {

@@ -129,10 +129,12 @@
         position: absolute;
         bottom: 43px;
         left: 47px;
+        right: 47px;
 
         @media (max-width:991px) {
             bottom: 15px;
             left: 20px;
+            right: 20PX;
         }
 
         .h1-main {

@@ -2,7 +2,7 @@
   <ul class="shopify-footer__Head">
     {%- for link in section.settings.footerLink.links -%}
       <li class="shopify-footer__links">
-        <a class="shopify-footer__link" href="">
+        <a class="shopify-footer__link" href="{{ link.url }}">
           {{ link.title }}
         </a>
       </li>
@@ -17,13 +17,13 @@
         {%- assign work = section.blocks | where: 'type' , "work" -%}
         {%- for item in work -%}
           <li class="shopify-footer__blockitem">
-            <a href="{{ item.settings.togetherlink }}  "  style="text-decoration:none" >
-            <div class="v-center">
-              <img src="{{ item.settings.workImage-svg }}" class="shopify-footer__blockImg">
-              <p class="shopify-footer__blockText">{{ item.settings.workText }}
-            </div>
-            </p>
-          </a>
+            <a href="{{ item.settings.togetherlink }}  " style="text-decoration:none">
+              <div class="v-center">
+                <img src="{{ item.settings.workImage-svg }}" class="shopify-footer__blockImg">
+                <p class="shopify-footer__blockText">{{ item.settings.workText }}
+                </div>
+              </p>
+            </a>
           </li>
         {%- endfor -%}
 
@@ -31,7 +31,7 @@
 
     </div>
     <div class="shopify-footer__block flex-1">
-      <h5 class="fnt-20 m-0 text-upper" >Office</h5>
+      <h5 class="fnt-20 m-0 text-upper">Office</h5>
       <ul class="shopify-footer__blockList">
 
         {%- assign office = section.blocks | where: 'type' , "office" -%}
@@ -52,17 +52,41 @@
       <div class="social-icons">
         <h5 class="fnt-20 m-0 text-upper ">Socials</h5>
         <div class="social-icons__wrp">
-          {%- assign social = section.blocks | where: 'type' , "social" -%}
+          {% comment %} {%- assign social = section.blocks | where: 'type' , "social" -%}
           {%- for item in social -%}
             <a href="{{ item.socailLink }}">
               <img src="{{ item.settings.socialIcons-svg }}">
             </a>
 
-          {%- endfor -%}
+          {%- endfor -%} {% endcomment %}
+          <a href="{{ settings.social_facebook_link }}"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+            aria-describedby="new-window-0">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Facebook_1.svg?v=1668162476">
+        </a>
+        <a href="{{ settings.social_instagram_link }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          aria-describedby="new-window-0">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Instagram_1.svg?v=1668162476">
+          
+        </a>
+        <a href="{{ settings.social_linkedIn_link }}"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          aria-describedby="new-window-0">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/LinkedIn.svg?v=1668162336">
+          
+        </a>
         </div>
       </div>
       <div class="rating">
-        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="true" data-expandifr="true" data-scale="100" data-clutchcompany-id="1012274"></div>
+        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+        <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="true" data-expandifr="true" data-scale="100" data-clutchcompany-id="1012274"></div>
       </div>
     </div>
   </div>
@@ -123,10 +147,10 @@
             "id": "workText",
             "label": "work text",
             "type": "text"
-          },{
-            "id":"togetherlink",
-            "label":"link",
-            "type":"url"
+          }, {
+            "id": "togetherlink",
+            "label": "link",
+            "type": "url"
           }
         ]
       }, {
@@ -151,10 +175,10 @@
             "id": "socialIcons-svg",
             "label": "social icons",
             "type": "url"
-          },{
-            "id":"socailLink",
-            "label":"link",
-            "type":"url"
+          }, {
+            "id": "socailLink",
+            "label": "link",
+            "type": "url"
           }
         ]
       }

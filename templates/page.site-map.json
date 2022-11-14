@@ -39,7 +39,7 @@
           "type": "sitelink",
           "settings": {
             "siteName": "Blogs",
-            "siteUrl": "shopify:\/\/blogs\/amet",
+            "siteUrl": "shopify:\/\/blogs\/insights",
             "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n       <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n\n\n<\/ul>"
           }
         },

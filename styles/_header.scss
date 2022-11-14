@@ -6,10 +6,20 @@
     right: 0;
     top: 0;
     z-index: 9999;
-    border-bottom: 1px solid var(--COLOR-BLACK);
-  
+    transition: .5s ease all;
+
+
     @media (max-width:991px) {
         padding: 20px 15px;
+    }
+
+    &.fixed-header {
+        @media (min-width:991px) {
+            border-bottom: 1px solid var(--COLOR-BLACK);
+            transform: translateY(-100%);
+            transition: .5s ease all;
+
+        }
     }
 
     &.active {

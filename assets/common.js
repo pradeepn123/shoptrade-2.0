@@ -56,22 +56,22 @@ $(document).ready(function(){
                 // Nine Zeroes for Billions
                 return Math.abs(Number(labelValue)) >= 1.0e+9
 
-                  ? (Math.abs(Number(labelValue)) / 1.0e+9).toFixed(2) + "B"
+                  ? (Math.abs(Number(labelValue)) / 1.0e+9).toFixed(0) + "B"
                   // Six Zeroes for Millions 
                   : Math.abs(Number(labelValue)) >= 1.0e+6
 
-                    ? (Math.abs(Number(labelValue)) / 1.0e+6).toFixed(2) + "M"
+                    ? (Math.abs(Number(labelValue)) / 1.0e+6).toFixed(0) + "M"
                     // Three Zeroes for Thousands
                     : Math.abs(Number(labelValue)) >= 1.0e+3
 
-                      ? (Math.abs(Number(labelValue)) / 1.0e+3).toFixed(2) + "K"
+                      ? (Math.abs(Number(labelValue)) / 1.0e+3).toFixed(0) + "K"
 
                       : Math.abs(Number(labelValue));
 
               }
 
-              let finalCount = convertToInternationalCurrencySystem(this.countNum)
-              $this.text(finalCount + "+");
+              let finalCount = convertToInternationalCurrencySystem( this.countNum)
+              $this.text("$" + finalCount + "+");
               //alert('finished');
             }
 
@@ -80,6 +80,17 @@ $(document).ready(function(){
       counted = 1;
     }
 
+  });
+
+  let temp=0;
+  $(window).scroll(function(){
+    var sticky = $('header'),
+      scroll = $(window).scrollTop();
+      temp = scroll
+    if (scroll >= 100 && temp >= scroll ) 
+      sticky.addClass('fixed-header');
+    else 
+      sticky.removeClass('fixed-header');
   });
 
   // $(".shoptrade__nav-list li").click(function(){
