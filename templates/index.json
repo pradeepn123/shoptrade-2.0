@@ -7,8 +7,9 @@
         "bannerSubText": "Globally Recognised Shopify Plus Agency",
         "bannerBtn": "View works",
         "bannerBtnlink": "shopify:\/\/pages\/work",
-        "mediaType": "image",
-        "imagebanner": "shopify:\/\/shop_images\/banner-image.png"
+        "mediaType": "video",
+        "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
+        "vedioUrl": "https:\/\/www.youtube.com\/watch?v=6HOVX0wQOFY"
       }
     },
     "marquee": {
@@ -334,7 +335,7 @@
         "videoHeading": "The Start",
         "vedioSubHeading": "Our founder is a young entrepreneur at heart. Molded by the hardships of building something from nothing, he inspired the same notions into what later became ShopTrade. An agency for like-minded entrepreneurs.",
         "vedioThumbnailImage": "shopify:\/\/shop_images\/mifras_ccf899d7-6f3f-4b1a-b86c-c77b18439a5d.jpg",
-        "vedioUrl": "http:\/\/www.youtube.com\/embed\/6HOVX0wQOFY"
+        "vedioUrl": "https:\/\/www.youtube.com\/watch?v=6HOVX0wQOFY"
       }
     },
     "ourNumbers": {
@@ -343,14 +344,14 @@
         "478ac17c-a129-4c95-9181-58b88cb26ad3": {
           "type": "countblock",
           "settings": {
-            "cardNumber": 30000,
+            "cardNumber": 3000000,
             "countText": "Revenue generated through our solutions"
           }
         },
         "e91a7fce-c17e-40b9-b121-499e3c788fe4": {
           "type": "countblock",
           "settings": {
-            "cardNumber": 10000,
+            "cardNumber": 200,
             "countText": "Projects done and still counting"
           }
         },

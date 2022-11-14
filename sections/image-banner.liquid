@@ -1,13 +1,19 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <section class="homeBanner">
-  <p>{{ section.settings.vedioUrl }}</p>
- 
+
   {% if section.settings.mediaType == "video" %}
     <div class="video-container">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6HOVX0wQOFY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% comment %} <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
+    
+        {%- if section.settings.vedioUrl.type == 'youtube' -%}
+          <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/{{ section.settings.vedioUrl.id }}?enablejsapi=1&autoplay=1&mute=1&controls=0&rel=0&autohide=1&showinfo=0&wmode=transparent" class="js-youtube"  title="{{ section.settings.description | escape }}"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {%- else -%}
+          <iframe width="100%" height="100%" src="https://player.vimeo.com/video/{{ section.settings.vedioUrl.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+        {%- endif -%}
+  
     </div>
-
+    
   {% endif %}
   <div class="container ">
     <div class="homeBanner__wrp">
