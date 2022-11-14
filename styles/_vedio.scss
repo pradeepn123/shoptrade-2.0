@@ -55,6 +55,11 @@
             width: calc((100% - 1320px)/2);
 
         }
+        @media (min-width:1600px) {
+
+            width: calc((100% - 1530px)/2);
+
+        }
     }
 
     &__wrp {

@@ -1307,6 +1307,11 @@ input::-moz-placeholder {
     width: calc((100% - 1320px) / 2);
   }
 }
+@media (min-width: 1600px) {
+  .vedio::after, .vedio::before {
+    width: calc((100% - 1530px) / 2);
+  }
+}
 .vedio__wrp {
   padding: 100px;
   border-right: 1px solid var(--COLOR-BLACK);
