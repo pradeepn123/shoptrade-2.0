@@ -2134,7 +2134,6 @@ input::-moz-placeholder {
 }
 @media (min-width: 991px) {
   .shoptrade.fixed-header {
-    border-bottom: 1px solid var(--COLOR-BLACK);
     transform: translateY(-100%);
     transition: 0.5s ease all;
   }

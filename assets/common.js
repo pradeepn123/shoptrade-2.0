@@ -82,15 +82,16 @@ $(document).ready(function(){
 
   });
 
-  let temp=0;
+  let lastScroll =0;
   $(window).scroll(function(){
     var sticky = $('header'),
-      scroll = $(window).scrollTop();
-    console.log(scroll)
-    if (scroll >= 100 && temp >= scroll ) 
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 100 && scroll > lastScroll) 
       sticky.addClass('fixed-header');
     else 
       sticky.removeClass('fixed-header');
+      lastScroll= scroll
   });
 
   // $(".shoptrade__nav-list li").click(function(){

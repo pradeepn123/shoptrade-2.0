@@ -15,7 +15,7 @@
 
     &.fixed-header {
         @media (min-width:991px) {
-            border-bottom: 1px solid var(--COLOR-BLACK);
+            // border-bottom: 1px solid var(--COLOR-BLACK);
             transform: translateY(-100%);
             transition: .5s ease all;
 
