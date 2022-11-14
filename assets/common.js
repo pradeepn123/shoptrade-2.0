@@ -86,7 +86,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var sticky = $('header'),
       scroll = $(window).scrollTop();
-      temp = scroll
+    console.log(scroll)
     if (scroll >= 100 && temp >= scroll ) 
       sticky.addClass('fixed-header');
     else 

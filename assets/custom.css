@@ -57,6 +57,11 @@ body {
     max-width: 1320px;
   }
 }
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1530px;
+  }
+}
 
 .field__label,
 .platform-type {
@@ -479,7 +484,8 @@ input::-moz-placeholder {
   border-top: 10px solid var(--COLOR-PRIMARY);
   width: 80px;
   height: 80px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
   animation: spin 2s linear infinite;
   position: absolute;
   top: 50%;
@@ -513,12 +519,18 @@ input::-moz-placeholder {
     box-shadow: 0 0 0 12px rgba(251, 179, 47, 0.0039215686);
   }
 }
+.video-container {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
   overflow: hidden;
-  height: 71vh;
+  height: 72vh;
   display: flex;
   align-items: center;
 }

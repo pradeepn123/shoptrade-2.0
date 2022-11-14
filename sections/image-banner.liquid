@@ -1,6 +1,14 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <section class="homeBanner">
+  <p>{{ section.settings.vedioUrl }}</p>
+ 
+  {% if section.settings.mediaType == "video" %}
+    <div class="video-container">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6HOVX0wQOFY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  {% endif %}
   <div class="container ">
     <div class="homeBanner__wrp">
       <div class="v-center">
@@ -15,22 +23,18 @@
           <a href="{{ section.settings.bannerBtnlink }}" class="btn btn--orange"> {{ section.settings.bannerBtn }} </a>
         </div>
       </div>
+      {% if section.settings.mediaType == "image" %}
       <div class="homeBanner__imgWrp">
         <div class="v-center">
           <div class="homeBanner__imgContainer">
-            {% if section.settings.mediaType == "image" %}
+           
               <img class="homeBanner__img" src="{{section.settings.imagebanner | image_url}}" alt="banner image"/>
-              {% else %}
               
-              <video autoplay width="100%" height="100%" muted loop playsinline preload="metadata">
-                <source src="{{ section.settings.Bannervedio }}" type="video/mp4">
-              </video>
-              
-            {% endif %}
-
           </div>
         </div>
       </div>
+            
+    {% endif %}
     </div>
   </div>
 </section>
@@ -68,8 +72,8 @@
           "label":"Image"
 
         },{
-          "value":"vedio",
-          "label":"Vedio"
+          "value":"video",
+          "label":"Video"
 
         }
         ]
@@ -80,10 +84,13 @@
 
 // "default": "https://cdn.shopify.com/s/files/1/0662/5122/7356/files/banner.png?v=1665395460"
       },{
-        "id":"Bannervedio",
-        "label":"Vedio",
-        "type":"video"
-       
+        "id": "vedioUrl",
+        "label": "Vedio link",
+        "type": "video_url",
+        "accept": [
+          "youtube",
+          "vimeo"
+        ]
       }
 
     ]
