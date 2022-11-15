@@ -33,10 +33,18 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 49.89%;
-     
 
-      
+        @media (min-width:992px) {
+            width: 33.23%;
+        }
+
+        @media (min-width:1024px) {
+            width: 49.89%;
+        }
+
+        @media (min-width:1336px) {
+            width: 33.26%;
+        }
 
         &::after {
             content: '';

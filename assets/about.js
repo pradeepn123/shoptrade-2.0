@@ -57,17 +57,15 @@ $(document).ready(function () {
             }
         }
     });
+
+
     let aboutTeam = new Swiper('.js-team-slider', {
 
         slidesPerView: 1,
-        speed: 6000,
+        speed: 500,
         loop: true,
-        allowTouchMove: false,
-        disableOnInteraction: true,
-        spaceBetween: 40,
-        autoplay: {
-            delay: 1,
-        },
+        effect:'fade',
+       
         breakpoints: {
             1920: {
                 slidesPerView: 1,
@@ -88,20 +86,17 @@ $(document).ready(function () {
     let aboutTeamContent = new Swiper('.js-team-content-slider', {
 
         slidesPerView: 1,
-        speed: 6000,
+        speed: 1000,
 
         loop: true,
-        allowTouchMove: false,
-        disableOnInteraction: true,
+   
         spaceBetween: 40,
         navigation: {
             nextEl: ' .js-arrow-right ',
             prevEl: ' .js-arrow-left',
         },
 
-        autoplay: {
-            delay: 1,
-        },
+    
         breakpoints: {
             1920: {
                 slidesPerView: 1,

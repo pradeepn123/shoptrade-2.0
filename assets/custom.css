@@ -1031,7 +1031,21 @@ input::-moz-placeholder {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 49.89%;
+}
+@media (min-width: 992px) {
+  .ourWork__card {
+    width: 33.23%;
+  }
+}
+@media (min-width: 1024px) {
+  .ourWork__card {
+    width: 49.89%;
+  }
+}
+@media (min-width: 1336px) {
+  .ourWork__card {
+    width: 33.26%;
+  }
 }
 .ourWork__card::after {
   content: "";
@@ -4208,6 +4222,9 @@ input::-moz-placeholder {
   font-size: 16px;
   line-height: 159%;
   color: var(--COLOR-BLACK);
+}
+.blog-list .ourWork__card {
+  width: 49.89%;
 }
 .blog-list .ourWork__cardBody {
   padding: 34px 34px 54px;
