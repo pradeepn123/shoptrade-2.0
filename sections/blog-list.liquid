@@ -2,15 +2,16 @@
     <ul class="ourWork__cards ">
         {% for article in blog.articles %}
             <li class="ourWork__card ">
+              <a href="{{ article.url }}" style="text-decoration:none">
                 <div class="ourWork__cardHead">
-                    <div class="marquee  enable-animation">
-                      <div class="marquee__content">
+                    {% comment %} <div class="marquee  enable-animation"> {% endcomment %}
+                      {% comment %} <div class="marquee__content">
           
                        {{ article.metafields.custom.aritcle_marquee.value }}
                         
                         
-                      </div>
-                      <div class="marquee__content" aria-hidden=" true">
+                      </div> {% endcomment %}
+                      {% comment %} <div class="marquee__content" aria-hidden=" true">
                    
                         {% comment %} <div class="Marquee-tag">
                             <p>
@@ -26,8 +27,8 @@
 
                         
           
-                      </div>
-                    </div>
+                      </div> {% endcomment %}
+                    {% comment %} </div> {% endcomment %}
                   </div>
                 <div class="ourWork__cardBody">
                     <div class="img-container">
@@ -38,10 +39,12 @@
                         </div>
                     </div>
                     <div class="work-body">
-                            {{ article.excerpt }}
-                            <a class="arrow-o-link " href={{ article.url }}><span>Read more</span> <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-arrow-o.svg?v=1666947561" alt="arrow"/></a>
+
+                          <h3>  {{ article.title }} </h3>
+                           
                     </div>
                 </div>
+              </a>
             </li>
         {% endfor %}
     </ul>

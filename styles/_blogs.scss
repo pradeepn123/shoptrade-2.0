@@ -2,6 +2,7 @@
     position: relative;
     overflow: hidden;
     border-top: 1px solid var(--COLOR-BLACK);
+
     &::after {
         content: '';
         position: absolute;
@@ -25,7 +26,7 @@
         border-top: 1px solid var(--COLOR-BLACK);
         border-bottom: 1px solid var(--COLOR-BLACK);
         display: flex;
-        
+
         @media (max-width:991px) {
             flex-direction: column;
         }
@@ -63,7 +64,7 @@
         border-right: 1px solid var(--COLOR-BLACK);
         position: relative;
 
-       
+
         @media (max-width:991px) {
             padding: 22px;
             border-bottom: 1px solid var(--COLOR-BLACK);
@@ -156,11 +157,28 @@
         }
     }
 
+    .img-container {
+        // border-color: transparent !important;
+        transition: transform 200ms ease, box-shadow 200ms ease, -webkit-transform 200ms ease;
+        box-shadow: none;
+        &:hover {
+            box-shadow: 0 0 50px -5px rgb(0 0 0 / 45%);
+            transition: transform 200ms ease, box-shadow 200ms ease, -webkit-transform 200ms ease;
+            -webkit-transform: translate(0px, -5px);
+            -ms-transform: translate(0px, -5px);
+            transform: translate(0px, -5px);
+        }
+    }
+
     .img-wrp {
+ 
+        overflow: hidden;
         @media (min-width:133px) {
             height: 454px;
 
         }
+
+      
     }
 
 }
@@ -172,9 +190,11 @@
     width: 100%;
     margin: auto;
 }
+
 .article-template__link {
     color: var(--COLOR-PRIMARY) !important;
 }
+
 .article-template {
     p {
         font-weight: 400;
@@ -194,24 +214,29 @@
     object-fit: cover;
 }
 
-.blog-details { 
+.blog-details {
     border-top: 1px solid var(--COLOR-BLACK);
     border-bottom: 1px solid var(--COLOR-BLACK);
+
     .media {
         overflow: visible;
     }
+
     &__heroImage {
         padding: 40px 34px;
         background-color: transparent !important;
         border-right: 1px solid var(--COLOR-BLACK);
         border-left: 1px solid var(--COLOR-BLACK);
         position: relative;
+
         @media (max-width:991px) {
             padding: 20px;
         }
+
         img {
             position: relative !important;
         }
+
         &::after {
             content: "";
             position: absolute;
@@ -223,14 +248,16 @@
             height: 70px;
             background-size: 100%;
             transform: translate(50%, 50%);
+
             @media (max-width:991px) {
                 width: 10px;
                 height: 20px;
                 background-size: contain;
                 background-repeat: no-repeat;
-                
+
             }
         }
+
         &::before {
             content: "";
             position: absolute;
@@ -243,12 +270,13 @@
             height: 70px;
             background-size: 100%;
             transform: translate(-50%, 50%);
+
             @media (max-width:991px) {
                 width: 10px;
                 height: 20px;
                 background-size: contain;
                 background-repeat: no-repeat;
-                
+
             }
         }
     }
@@ -259,14 +287,16 @@
 
 }
 
-.article__contentWrp  {
+.article__contentWrp {
     border-right: 1px solid var(--COLOR-BLACK);
     border-left: 1px solid var(--COLOR-BLACK);
     padding-bottom: 32px;
     position: relative;
+
     @media (max-width:991px) {
         padding: 20px;
     }
+
     &::after {
         content: "";
         position: absolute;
@@ -278,14 +308,16 @@
         height: 70px;
         background-size: 100%;
         transform: translate(50%, 50%);
+
         @media (max-width:991px) {
             width: 10px;
             height: 20px;
             background-size: contain;
             background-repeat: no-repeat;
-            
+
         }
     }
+
     &::before {
         content: "";
         position: absolute;
@@ -304,7 +336,7 @@
             height: 20px;
             background-size: contain;
             background-repeat: no-repeat;
-            
+
         }
     }
 }
@@ -312,6 +344,7 @@
 .comment-formwrp {
     border-right: 1px solid var(--COLOR-BLACK);
     border-left: 1px solid var(--COLOR-BLACK);
+
     .article-template__comment-wrapper {
         margin-top: 0;
         padding-top: 78px;
@@ -321,14 +354,15 @@
 
 .article-container {
     p:last-child {
-        margin-bottom: 0 ;
+        margin-bottom: 0;
     }
 }
 
 .article-template header {
     margin-top: 0 !important;
+
     @media (min-width:992px) {
         padding-top: 64px;
-        
+
     }
 }
