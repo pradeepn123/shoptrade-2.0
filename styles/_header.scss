@@ -94,6 +94,7 @@
 
     &__nav-list {
         padding: 0;
+     
 
         @media (max-width:991px) {
             flex-direction: column;
@@ -103,8 +104,12 @@
             margin-left: 72px;
 
         }
+        .nav-item {
+            border: 2px solid transparent;
+            transition: .5s ease all;
+        }
 
-        .nav-item[aria-current="page"] {
+        .nav-item[aria-current="page"] ,.nav-item:hover{
             @media (min-width:992px) {
 
                 border: 2px solid var(--COLOR-BLACK);
@@ -112,6 +117,8 @@
                 padding-left: 8px;
                 padding-right: 8px;
                 position: relative;
+                transition: .5s ease all;
+
             }
 
             &::after {
@@ -126,6 +133,7 @@
                     height: 9px;
                     left: 50%;
                     transform: translateX(-50%);
+                    transition: .5s ease all;
                 }
             }
         }
@@ -203,13 +211,13 @@
 }
 
 .only-mobile {
-    @media (min-width:992px) {
+    @media (min-width:820px) {
         display: none !important;
     }
 }
 
 .only-desktop {
-    @media (max-width:991px) {
+    @media (max-width:819px) {
         display: none !important;
     }
 }

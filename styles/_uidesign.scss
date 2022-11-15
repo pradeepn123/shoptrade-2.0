@@ -11,6 +11,11 @@
             border-right: 1px solid var(--COLOR-BLACK);
         }
 
+        @media (min-width:820px) {
+            width: 118px;
+            height: 118px;
+
+        }
         @media (min-width:992px) {
             width: 146px;
             height: 149px;
@@ -188,7 +193,8 @@
         margin: 0;
 
         @media (max-width:1335px) {
-            font-size: 18px;
+            font-size: 12px;
+            // font-size: 18px;
         }
 
         // padding: 10px 0;

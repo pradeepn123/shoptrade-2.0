@@ -80,7 +80,7 @@ $(document).ready(function () {
   
     // breakpoint where swiper will be destroyed
     // and switches to a dual-column layout
-    const breakpoint = window.matchMedia( '(min-width:991px)' );
+    const breakpoint = window.matchMedia( '(min-width:920px)' );
   
     // keep track of swiper instances to destroy later
     let mySwiper;
@@ -123,10 +123,14 @@ $(document).ready(function () {
         grabCursor: true,
           breakpoints: {
     
-        768: {
-            slidesPerView: 1.2,
+        919: {
+            slidesPerView: 2.1,
             spaceBetween: 10
-        }
+        },
+        720: {
+          slidesPerView: 1.2,
+          spaceBetween: 10
+      }
     }
   
   

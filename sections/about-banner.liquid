@@ -1,7 +1,7 @@
 <section class="services"> 
     <div class="container">
         <h1 class="h1"> {{ section.settings.heading }}</h1>
-        <a href="{{ section.settings.btnlink }}" class="btn btn--orange">Contact us</a>
+        <a href="{{ section.settings.btnlink }}" class="btn btn--orange">{{ section.settings.btntext }}</a>
     </div>
 </section>
 
@@ -17,6 +17,10 @@
                 "id":"btnlink",
                 "label":"Button link",
                 "type":"url"
+            },{
+                "id":"btntext",
+                "label":"Button Text",
+                "type":"text"
             }
         ]
     }

@@ -222,6 +222,12 @@
 
             &:not(:last-child) {
                 margin-right: 26px;
+                @media (max-width:991px) {
+                    margin-right: 0;
+                }
+                @media (max-width:767px) {
+                    margin-right: 12px;
+                }
             }
         }
 

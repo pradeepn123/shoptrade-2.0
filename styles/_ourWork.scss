@@ -33,6 +33,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
+
         @media (min-width:992px) {
             width: 33.23%;
         }
@@ -87,6 +88,7 @@
     &__cardHead {
         opacity: 0;
         margin-top: 40px;
+
         p {
             font-family: Minecraft;
             font-weight: 500;
@@ -104,7 +106,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
-    
+
         @media (max-width:991px) {
             padding: 20px 45px 60px 20px;
         }
@@ -138,6 +140,7 @@
 
             position: relative;
         }
+
         .work-body {
             flex: 1;
             display: flex;
@@ -147,6 +150,7 @@
                 flex: 1;
             }
         }
+
         .btn-wrp {
             position: absolute;
             bottom: 0;
@@ -162,6 +166,7 @@
                 width: 100%;
                 height: 26px;
                 object-fit: contain;
+
                 @media (max-width:991px) {
                     height: 22px;
                 }
@@ -186,6 +191,7 @@
                     width: auto;
                 }
 
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -203,15 +209,19 @@
                 &:hover {
                     width: 215px;
                     transition: .5s ease all;
-                   
+
+                    @media (max-width:991px) {
+                        width: 150px;
+                    }
+
                     &::after {
                         width: 99%;
                         height: 98%;
-                    transition: .5s ease all;
+                        transition: .5s ease all;
 
                     }
                 }
-              
+
             }
         }
     }
@@ -238,14 +248,15 @@
     .img-container {
         border-radius: 10px;
         border: 2px solid var(--COLOR-BLACK);
-        box-shadow: 10px 10px 60px 0px rgba(187,184,184,1);
+        box-shadow: 10px 10px 60px 0px rgba(187, 184, 184, 1);
 
     }
 
     .img-wrp {
-        border-radius: 10px 10px 0 0 ;
+        border-radius: 10px 10px 0 0;
         overflow: hidden;
     }
+
     .work-logo-footer {
         text-align: center;
         padding: 24px 16px 32px;
@@ -336,6 +347,7 @@
     color: var(--COLOR-BLACK);
     max-width: 806px;
     width: 100%;
+
     @media (max-width:991px) {
         font-size: 36px;
     }
