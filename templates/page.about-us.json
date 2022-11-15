@@ -475,7 +475,7 @@
         "23fba3fc-0c8f-4369-99e0-f209920713bb": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
+            "profileType": "member",
             "memberImage": "shopify:\/\/shop_images\/Hussain.jpg",
             "memberName": "Hussain",
             "memberDesignation": "Office Assistant",
