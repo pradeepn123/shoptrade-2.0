@@ -244,6 +244,19 @@
                 font-size: 20px;
 
             }
+            position: relative;
+            &::after {
+                content: '';
+                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/double-qoutes.svg?v=1668488491);
+                background-repeat: no-repeat;
+                left: 0;
+                top: -30px;
+                position: absolute;
+                width: 31px;
+                height: 26px;
+                transform: translate(-50%,-50%);
+
+            }
         }
     }
 

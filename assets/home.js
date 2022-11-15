@@ -25,6 +25,25 @@ $(document).ready(function () {
         }
     }
   });
+
+ 
+
+  let marquee = new Swiper('.js-marquee-slider', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView:'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true
+  });
+  
+
+
+
   let logo = new Swiper('.mobile-logo-slider', {
     speed:1000,
 

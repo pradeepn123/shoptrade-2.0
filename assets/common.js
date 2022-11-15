@@ -11,10 +11,14 @@ $(document).ready(function(){
   })
 
   $(".close-model").click(function () {
-    $("body").removeClass("hide-scroll")
+    // $('.yt_player_iframe').contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 
+    // $('.yt_player_iframe').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+    $("body").removeClass("hide-scroll")
+    let src = $('.yt_player_iframe').attr("src")
+    $('.yt_player_iframe').attr("src",src)
     $(".model-popup").fadeOut()
-    $(".iframe-vedio").attr("src", "")
+  
   })
 
 
@@ -103,3 +107,4 @@ $(document).ready(function(){
 
 
 })
+

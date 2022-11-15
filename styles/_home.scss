@@ -103,10 +103,20 @@
 }
 
 .homeMarque {
+    padding-top: 20px;
+    padding-bottom: 20px;
     .marquee {
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
+
+    .swiper-slide {
+        width: 350px !important;
+
+    }
+
+    .swiper-wrapper{
+        -webkit-transition-timing-function:linear !important; 
+        -o-transition-timing-function:linear !important;          transition-timing-function:linear !important; 
+     }
     .marquee__content {
 
         @media (min-width:1336px) {

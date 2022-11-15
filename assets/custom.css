@@ -633,9 +633,17 @@ input::-moz-placeholder {
   background-size: cover;
 }
 
-.homeMarque .marquee {
+.homeMarque {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.homeMarque .swiper-slide {
+  width: 350px !important;
+}
+.homeMarque .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 @media (min-width: 1336px) {
   .homeMarque .marquee__content {
@@ -1929,11 +1937,23 @@ input::-moz-placeholder {
   line-height: 165%;
   letter-spacing: -0.03em;
   color: var(--COLOR-BLACK);
+  position: relative;
 }
 @media (max-width: 991px) {
   .testimonials__profileDescription h3 {
     font-size: 20px;
   }
+}
+.testimonials__profileDescription h3::after {
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/double-qoutes.svg?v=1668488491);
+  background-repeat: no-repeat;
+  left: 0;
+  top: -30px;
+  position: absolute;
+  width: 31px;
+  height: 26px;
+  transform: translate(-50%, -50%);
 }
 .testimonials .slider-arrow {
   display: flex;

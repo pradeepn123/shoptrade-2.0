@@ -1,5 +1,5 @@
 <section class="homeMarque">
-    <div class="marquee marquee--hover-pause enable-animation-banner">
+    {% comment %} <div class="marquee marquee--hover-pause enable-animation-banner">
         <div class="marquee__content">
 
             {% for block in section.blocks %}
@@ -20,6 +20,22 @@
             {% endfor %}
         </div>
     </div>
+    </div> {% endcomment %}
+
+    <div class="swiper-container js-marquee-slider">
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+                <div class="swiper-slide">
+                <div class="Marquee-tag">
+                    {{ block.settings.imagelogo }}
+                    {% comment %} <img class="image01" src="{{ block.settings.imageDoller | image_url }}" alt="marguee one"/> {% endcomment %}
+                    {% comment %} <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" /> {% endcomment %}
+                </div>
+            </div>
+            {% endfor %}
+         
+            
+        </div>
     </div>
 </section>
 
