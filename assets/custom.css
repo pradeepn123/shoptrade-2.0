@@ -2139,14 +2139,14 @@ input::-moz-placeholder {
 }
 .UImainText.active h2::before {
   background: white;
-  animation: typing 3000ms steps(25) 2s forwards;
+  animation: typing 1000ms steps(25) 0.5s forwards;
   top: -1px;
 }
 .UImainText.active h2::after {
   top: -3px;
   width: 0.2rem;
   background: black;
-  animation: typing 3000ms steps(25) 2s forwards, blink 800ms infinite;
+  animation: typing 1000ms steps(25) 0.5s forwards, blink 500ms infinite;
 }
 @keyframes typing {
   to {
