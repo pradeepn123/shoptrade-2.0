@@ -139,7 +139,7 @@
       "type": "showcaseReview",
       "settings": {
         "thumbnail": "shopify:\/\/shop_images\/review-image.png",
-        "vedioUrl": "https:\/\/www.youtube.com\/embed\/6HOVX0wQOFY?enablejsapi=1&rel=0",
+        "vedioUrl": "",
         "reviewText": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.",
         "name": "Harley Finkelstein ",
         "company": "Hathaspace"
