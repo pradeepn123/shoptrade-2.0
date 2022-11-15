@@ -37,7 +37,8 @@
         "heading": "Hathaspace",
         "subHeading": "Smart True HEPA Air Purifiers",
         "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png",
-        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png"
+        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png",
+        "websiteLInk": ""
       }
     },
     "marquee": {
@@ -138,7 +139,7 @@
       "type": "showcaseReview",
       "settings": {
         "thumbnail": "shopify:\/\/shop_images\/review-image.png",
-        "vedioUrl": "",
+        "vedioUrl": "https:\/\/www.youtube.com\/embed\/6HOVX0wQOFY?enablejsapi=1&rel=0",
         "reviewText": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.",
         "name": "Harley Finkelstein ",
         "company": "Hathaspace"
