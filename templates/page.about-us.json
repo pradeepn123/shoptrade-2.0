@@ -266,6 +266,7 @@
         },
         "5f14a654-4617-46f6-b298-091472cde689": {
           "type": "leader",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_4644.png",
             "leaderName": "Amit Kumar Gupta",
@@ -275,6 +276,7 @@
         },
         "ab82fb80-c459-47ff-94cd-853833815e37": {
           "type": "leader",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_4643.png",
             "leaderName": "Akila Mohan",
@@ -307,6 +309,28 @@
             "careerLink": ""
           }
         },
+        "47d83363-f737-4021-9a78-dac7fdb6f6cc": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
+            "memberName": "Mohammadu Mifras",
+            "memberDesignation": "Founder & CEO",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "428fa980-e55f-4f3e-b895-9ec4f26f79b4": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Deekshith.jpg",
+            "memberName": "Deekshith K Suvarna",
+            "memberDesignation": "Director & Head of Design",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "ea4195cb-784f-4d5b-a273-edd40889edf6": {
           "type": "cardType",
           "settings": {
@@ -314,6 +338,28 @@
             "memberImage": "shopify:\/\/shop_images\/mathew.jpg",
             "memberName": "Mathew Dadesky",
             "memberDesignation": "Growth Manager",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "d8e3652f-9ea3-43c8-943a-8a1a127b912d": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
+            "memberName": "Amit Gupta",
+            "memberDesignation": "Head of Engineering",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "64445639-0ce3-4892-9ce3-ac0a061592d3": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Akila_73a008e1-3d35-401c-bb5b-9307f23781ac.jpg",
+            "memberName": "Akila Mohan",
+            "memberDesignation": "Senior Manager - People Operation",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -486,7 +532,11 @@
       },
       "block_order": [
         "3b77e0db-3387-41ff-9681-15226a08b7bd",
+        "47d83363-f737-4021-9a78-dac7fdb6f6cc",
+        "428fa980-e55f-4f3e-b895-9ec4f26f79b4",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
+        "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
+        "64445639-0ce3-4892-9ce3-ac0a061592d3",
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
         "016c8a11-e388-4b39-9134-63619cde6f81",
         "96ec600a-46e6-4781-bf21-2a08ef282c77",
