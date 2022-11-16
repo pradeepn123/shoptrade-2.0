@@ -97,7 +97,7 @@ $(document).ready(function () {
               $this.text(Math.floor(this.countNum));
             },
             complete: function () {
-              $this.text("$" + $this.attr('data-converted') + $this.attr("data-charactor") );
+              $this.text($this.attr('data-currrencySige') + $this.attr('data-converted') + $this.attr("data-charactor") );
             
             }
 

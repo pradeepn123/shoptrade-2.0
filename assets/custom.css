@@ -604,6 +604,11 @@ input::-moz-placeholder {
     bottom: -20%;
   }
 }
+@media (min-width: 1660px) {
+  .homeBanner__content {
+    flex-basis: 60%;
+  }
+}
 .homeBanner__wrp {
   display: flex;
 }
@@ -2243,7 +2248,7 @@ input::-moz-placeholder {
   }
 }
 .shoptrade {
-  padding: 24px 80px;
+  padding: 8px 80px;
   background-color: var(--COLOR-WHITE);
   position: fixed;
   left: 0;
@@ -2330,8 +2335,7 @@ input::-moz-placeholder {
 .shoptrade__nav-list .nav-item {
   border: 2px solid transparent;
   transition: 0.5s ease all;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px;
 }
 @media (min-width: 992px) {
   .shoptrade__nav-list .nav-item[aria-current=page], .shoptrade__nav-list .nav-item:hover {
@@ -2508,7 +2512,7 @@ input::-moz-placeholder {
   border-right: 1px solid var(--COLOR-BLACK);
 }
 .shopify-footer__block {
-  padding: 35px 55px 55px;
+  padding: 35px 55px 55px 80px;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -4006,7 +4010,6 @@ input::-moz-placeholder {
 }
 .about-team-members__wrp {
   border-top: 1px solid var(--COLOR-BLACK);
-  border-bottom: 1px solid var(--COLOR-BLACK);
 }
 .about-team-members__container {
   display: flex;
@@ -4014,13 +4017,10 @@ input::-moz-placeholder {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  border-right: 1px solid var(--COLOR-BLACK);
-  border-left: 1px solid var(--COLOR-BLACK);
 }
 .about-team-members__container li {
   width: 33.3333333333%;
-  border-right: 1px solid var(--COLOR-BLACK);
-  border-bottom: 1px solid var(--COLOR-BLACK);
+  border: 1px solid var(--COLOR-BLACK);
   position: relative;
 }
 @media (max-width: 991px) {
@@ -4031,11 +4031,6 @@ input::-moz-placeholder {
 @media (max-width: 767px) {
   .about-team-members__container li {
     width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .about-team-members__container li:nth-child(3n) {
-    border-right: none;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {

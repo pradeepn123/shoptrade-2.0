@@ -1,5 +1,5 @@
 .shoptrade {
-    padding: 24px 80px;
+    padding: 8px 80px;
     background-color: var(--COLOR-WHITE);
     position: fixed;
     left: 0;
@@ -107,8 +107,7 @@
         .nav-item {
             border: 2px solid transparent;
             transition: .5s ease all;
-            padding-left: 8px;
-            padding-right: 8px;
+            padding: 8px;
         }
 
         .nav-item[aria-current="page"] ,.nav-item:hover{

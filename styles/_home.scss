@@ -32,9 +32,9 @@
     }
 
     &__content {
-        // @media (min-width:1660px) {
-        //     width: 700px;
-        // }
+        @media (min-width:1660px) {
+            flex-basis: 60%;
+        }
     }
     &__wrp {
         display: flex;

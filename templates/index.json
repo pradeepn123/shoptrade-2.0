@@ -344,6 +344,7 @@
         "478ac17c-a129-4c95-9181-58b88cb26ad3": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "$",
             "cardNumber": 300000000,
             "countText": "Revenue generated through our solutions"
           }
@@ -351,6 +352,7 @@
         "e91a7fce-c17e-40b9-b121-499e3c788fe4": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 200,
             "countText": "Projects done and still counting"
           }
@@ -358,6 +360,7 @@
         "65fccf09-cc85-4551-af88-3959b9857428": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 30,
             "countText": "Countries served in the last year"
           }
