@@ -344,7 +344,7 @@
         "478ac17c-a129-4c95-9181-58b88cb26ad3": {
           "type": "countblock",
           "settings": {
-            "cardNumber": 3000000,
+            "cardNumber": 300000000,
             "countText": "Revenue generated through our solutions"
           }
         },
