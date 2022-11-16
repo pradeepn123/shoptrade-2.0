@@ -307,6 +307,17 @@
             "careerLink": ""
           }
         },
+        "47d83363-f737-4021-9a78-dac7fdb6f6cc": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
+            "memberName": "Mohammadu Mifras",
+            "memberDesignation": "Founder & CEO",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "ea4195cb-784f-4d5b-a273-edd40889edf6": {
           "type": "cardType",
           "settings": {
@@ -483,23 +494,13 @@
             "careerLink": ""
           }
         },
-        "47d83363-f737-4021-9a78-dac7fdb6f6cc": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
-            "memberName": "Mohammadu Mifras",
-            "memberDesignation": "Founder & CEO",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "428fa980-e55f-4f3e-b895-9ec4f26f79b4": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
-            "memberName": "",
-            "memberDesignation": "",
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Deekshith.jpg",
+            "memberName": "Deekshith K Suvarna",
+            "memberDesignation": "Director & Head of Design",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -527,6 +528,7 @@
       },
       "block_order": [
         "3b77e0db-3387-41ff-9681-15226a08b7bd",
+        "47d83363-f737-4021-9a78-dac7fdb6f6cc",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
         "016c8a11-e388-4b39-9134-63619cde6f81",
@@ -543,7 +545,6 @@
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
         "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "47d83363-f737-4021-9a78-dac7fdb6f6cc",
         "428fa980-e55f-4f3e-b895-9ec4f26f79b4",
         "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
         "64445639-0ce3-4892-9ce3-ac0a061592d3"
