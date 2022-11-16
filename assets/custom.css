@@ -2285,7 +2285,7 @@ input::-moz-placeholder {
   list-style-type: none;
 }
 .shoptrade .nav-item {
-  margin-left: 40px;
+  margin-left: 28px;
 }
 @media (max-width: 991px) {
   .shoptrade .nav-item {
@@ -2330,13 +2330,13 @@ input::-moz-placeholder {
 .shoptrade__nav-list .nav-item {
   border: 2px solid transparent;
   transition: 0.5s ease all;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 @media (min-width: 992px) {
   .shoptrade__nav-list .nav-item[aria-current=page], .shoptrade__nav-list .nav-item:hover {
     border: 2px solid var(--COLOR-BLACK);
     border-radius: 160px;
-    padding-left: 8px;
-    padding-right: 8px;
     position: relative;
     transition: 0.5s ease all;
   }
