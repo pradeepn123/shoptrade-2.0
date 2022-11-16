@@ -178,8 +178,12 @@
     .img-wrp {
  
         overflow: hidden;
-        @media (min-width:133px) {
+        @media (min-width:1336px) {
             height: 454px;
+
+        }
+        @media (min-width:1680px) {
+            height: 580px;
 
         }
 

@@ -1135,9 +1135,14 @@ input::-moz-placeholder {
 .ourWork__cardBody .btn-wrp {
   position: absolute;
   bottom: 0;
-  left: 48%;
+  left: 60%;
   z-index: 1 !important;
   transform: translate(-15px, 15px);
+}
+@media (max-width: 1680px) {
+  .ourWork__cardBody .btn-wrp {
+    left: 48%;
+  }
 }
 @media (max-width: 991px) {
   .ourWork__cardBody .btn-wrp {
@@ -2048,6 +2053,11 @@ input::-moz-placeholder {
 @media (min-width: 1660px) {
   .uiDesign__item {
     width: 237px;
+  }
+}
+@media (min-width: 1920px) {
+  .uiDesign__item {
+    width: 275px;
   }
 }
 .uiDesign__list {
@@ -3397,7 +3407,7 @@ input::-moz-placeholder {
     padding: 30px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .ourPartners__listItem img {
     width: 100%;
     object-fit: contain;
@@ -4021,12 +4031,17 @@ input::-moz-placeholder {
 }
 .about-team-members__img {
   width: 100%;
-  height: 420px;
+  height: 500px;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+@media (max-width: 1680px) {
+  .about-team-members__img {
+    height: 420px;
+  }
 }
 @media (max-width: 767px) {
   .about-team-members__img {
@@ -4252,9 +4267,14 @@ input::-moz-placeholder {
 .blog-list .img-wrp {
   overflow: hidden;
 }
-@media (min-width: 133px) {
+@media (min-width: 1336px) {
   .blog-list .img-wrp {
     height: 454px;
+  }
+}
+@media (min-width: 1680px) {
+  .blog-list .img-wrp {
+    height: 580px;
   }
 }
 
