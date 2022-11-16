@@ -166,6 +166,7 @@
         // border-color: transparent !important;
         transition: transform 200ms ease, box-shadow 200ms ease, -webkit-transform 200ms ease;
         box-shadow: none;
+        overflow: hidden;
         &:hover {
             box-shadow: 0 0 50px -5px rgb(0 0 0 / 45%);
             transition: transform 200ms ease, box-shadow 200ms ease, -webkit-transform 200ms ease;

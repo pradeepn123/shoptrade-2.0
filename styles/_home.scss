@@ -13,6 +13,10 @@
         height: auto;
     }
 
+    @media (min-width:1680px) {
+        height: 76vh;
+    }
+
     &::after {
         position: absolute;
         content: '';
