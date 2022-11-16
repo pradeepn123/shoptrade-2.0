@@ -41,7 +41,11 @@
             <div class="article__contentWrp">
             <header class="" {{ block.shopify_attributes }}>
               <div class='article-container'>
-                <div class="social-media-icons">
+                
+                {% render 'social-sharing', share_title: blog.title, share_permalink: blog.url, share_image: false %}
+
+                
+                {% comment %} <div class="social-media-icons">
           
                     
                     <div class="social-media-item">
@@ -89,7 +93,7 @@
                     
                   
                   </div>    
-                </div>
+                </div> {% endcomment %}
             </header>
 
         {%- when 'content'-%}

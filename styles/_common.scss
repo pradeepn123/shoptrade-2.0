@@ -484,6 +484,8 @@ main {
 }
 
 .social-media-icons {
+    list-style: none;
+    padding: 0;
     display: flex;
     margin-bottom: 25px;
     justify-content: flex-end;
@@ -491,7 +493,7 @@ main {
     @media (min-width:992px) {
         display: block;
         position: fixed;
-        left: 0;
+        left: 4px;
         top: 50%;
         transform: translateY(-50%);
 

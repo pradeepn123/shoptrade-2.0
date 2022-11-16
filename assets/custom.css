@@ -441,6 +441,8 @@ main {
 }
 
 .social-media-icons {
+  list-style: none;
+  padding: 0;
   display: flex;
   margin-bottom: 25px;
   justify-content: flex-end;
@@ -449,7 +451,7 @@ main {
   .social-media-icons {
     display: block;
     position: fixed;
-    left: 0;
+    left: 4px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -4007,6 +4009,7 @@ input::-moz-placeholder {
 }
 .about-team-members__wrp {
   border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
 }
 .about-team-members__container {
   display: flex;
