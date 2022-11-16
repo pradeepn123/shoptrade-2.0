@@ -31,6 +31,11 @@
         }
     }
 
+    &__content {
+        // @media (min-width:1660px) {
+        //     width: 700px;
+        // }
+    }
     &__wrp {
         display: flex;
         @media (max-width:991px) {
@@ -109,7 +114,7 @@
     }
 
     .swiper-slide {
-        width: 350px !important;
+        width: auto !important;
 
     }
 

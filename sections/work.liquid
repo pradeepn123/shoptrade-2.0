@@ -16,7 +16,7 @@
               <div class="btn-wrp">
                 <a hrer="{{ block.settings.cardLink }}" class="btn btn--arrow" href="">
                   <div>
-                    <img class="btn-arrrow-work" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
+                    <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                   </div>
                 </a>
               </div>
@@ -65,6 +65,10 @@
           "id":"cardLink",
           "type":"url",
           "label":"Link"
+        },{
+          "id":"btn-icon",
+          "label":"Button Icon",
+          "type":"url"
         }
         ]
       }

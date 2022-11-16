@@ -31,6 +31,18 @@ $(document).ready(function () {
   })
 
 
+  let lastScroll = 0;
+  $(window).scroll(function () {
+    var sticky = $('header'),
+      scroll = $(window).scrollTop();
+
+    if (scroll >= 100 && scroll > lastScroll)
+      sticky.addClass('fixed-header');
+    else
+      sticky.removeClass('fixed-header');
+    lastScroll = scroll
+  });
+
   // conversion 
   function convertToInternationalCurrencySystem(labelValue) {
 
@@ -96,17 +108,6 @@ $(document).ready(function () {
 
   });
 
-  let lastScroll = 0;
-  $(window).scroll(function () {
-    var sticky = $('header'),
-      scroll = $(window).scrollTop();
-
-    if (scroll >= 100 && scroll > lastScroll)
-      sticky.addClass('fixed-header');
-    else
-      sticky.removeClass('fixed-header');
-    lastScroll = scroll
-  });
 
   // $(".shoptrade__nav-list li").click(function(){
 

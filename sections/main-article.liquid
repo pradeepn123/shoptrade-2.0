@@ -78,14 +78,15 @@
                   </div>
                   <h1 class="article-template__title fnt-40" itemprop="headline">{{ article.title | escape }}</h1>
                   <div class="d-flex">
-                    {%- if block.settings.blog_show_date -%}
-                      <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
-                    {%- endif -%}
                     {%- if block.settings.blog_show_author -%}
                       <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
                         <span itemprop="name">{{ article.author }}</span>
                       </span>
                     {%- endif -%}
+                    {%- if block.settings.blog_show_date -%}
+                      <span class="circle-divider caption-with-letter-spacing blog-date" itemprop="dateCreated pubdate datePublished">{{ article.published_at | date: "%d  %b  %Y" }}</span>
+                    {%- endif -%}
+                    
                   
                   </div>    
                 </div>

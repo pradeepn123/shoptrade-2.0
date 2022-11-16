@@ -29,7 +29,7 @@ $(document).ready(function () {
  
 
   let marquee = new Swiper('.js-marquee-slider', {
-    spaceBetween: 0,
+    spaceBetween: 50,
     centeredSlides: true,
     speed: 6000,
     autoplay: {
@@ -38,10 +38,11 @@ $(document).ready(function () {
     loop: true,
     slidesPerView:'auto',
     allowTouchMove: false,
-    disableOnInteraction: true
+    // disableOnInteraction: true,
+    pauseOnMouseEnter:true
   });
   
-
+  
 
 
   let logo = new Swiper('.mobile-logo-slider', {
