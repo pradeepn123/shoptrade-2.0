@@ -3822,18 +3822,8 @@ input::-moz-placeholder {
 }
 
 .about-team__img {
-  padding: 95px 120px;
   position: relative;
-}
-@media (max-width: 991px) {
-  .about-team__img {
-    padding: 60px 20px;
-  }
-}
-@media (max-width: 767px) {
-  .about-team__img {
-    padding: 60px 40px;
-  }
+  text-align: center;
 }
 .about-team__img img {
   width: 370px;
@@ -3865,6 +3855,8 @@ input::-moz-placeholder {
   max-width: 40%;
   position: relative;
   border-right: 1px solid var(--COLOR-BLACK);
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .about-team .about-team__imgWrp {
@@ -3966,6 +3958,11 @@ input::-moz-placeholder {
   .about-team__info h4 {
     font-size: 24px;
   }
+}
+.about-team__info p {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--COLOR-BLACK);
 }
 @media (max-width: 991px) {
   .about-team__info p.m-0.clr-b.mb-40 {

@@ -67,7 +67,7 @@ $(document).ready(function () {
         speed: 500,
         loop: true,
         effect:'fade',
-       
+        centerdSlides:true,
         breakpoints: {
             1920: {
                 slidesPerView: 1,
