@@ -266,6 +266,7 @@
         },
         "5f14a654-4617-46f6-b298-091472cde689": {
           "type": "leader",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_4644.png",
             "leaderName": "Amit Kumar Gupta",
@@ -275,6 +276,7 @@
         },
         "ab82fb80-c459-47ff-94cd-853833815e37": {
           "type": "leader",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_4643.png",
             "leaderName": "Akila Mohan",
