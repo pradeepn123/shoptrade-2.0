@@ -158,6 +158,7 @@
         "90b8dc87-9ded-4ba2-a76b-49929ffadc7b": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 5,
             "countNumText": "years",
             "countText": "We’re young, but with a total sum of 5 years worth of domain experience, we’re here to help you get to the next stage."
@@ -166,6 +167,7 @@
         "648a9e2b-a543-4f8d-aaef-5aeb7cd76c77": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 100,
             "countNumText": "success rate",
             "countText": "It’s not always easy, but no matter what, we deliver. It’s our mission to go above and beyond for our clients."
@@ -174,6 +176,7 @@
         "7795aa9c-d920-4b6d-b64b-577a34c135d4": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 200,
             "countNumText": "project",
             "countText": "Successfully delivered 200+ projects so far. Always on the lookout for the next one."
@@ -182,6 +185,7 @@
         "30516584-aa72-4e58-aef0-21345561c7b7": {
           "type": "countblock",
           "settings": {
+            "currrencySige": "",
             "cardNumber": 95,
             "countNumText": "retention",
             "countText": "We're treating every client as the first one. That's why most of them stick with us."
@@ -368,7 +372,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Sushant.png",
+            "memberImage": "shopify:\/\/shop_images\/Sushanth.jpg",
             "memberName": "Sushanth Suvarna",
             "memberDesignation": "Admin & HR Associate",
             "careerbtn": "",
