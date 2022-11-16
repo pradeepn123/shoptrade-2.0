@@ -340,6 +340,17 @@
             "careerLink": ""
           }
         },
+        "d8e3652f-9ea3-43c8-943a-8a1a127b912d": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
+            "memberName": "Amit Gupta",
+            "memberDesignation": "Head of Engineering",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b": {
           "type": "cardType",
           "settings": {
@@ -505,23 +516,13 @@
             "careerLink": ""
           }
         },
-        "d8e3652f-9ea3-43c8-943a-8a1a127b912d": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "memberImage": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
-            "memberName": "Amit Gupta",
-            "memberDesignation": "Head of Engineering",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "64445639-0ce3-4892-9ce3-ac0a061592d3": {
           "type": "cardType",
           "settings": {
-            "profileType": "opening",
-            "memberName": "",
-            "memberDesignation": "",
+            "profileType": "member",
+            "memberImage": "shopify:\/\/shop_images\/Akila_73a008e1-3d35-401c-bb5b-9307f23781ac.jpg",
+            "memberName": "Akila Mohan",
+            "memberDesignation": "Senior Manager - People Operation",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -532,6 +533,7 @@
         "47d83363-f737-4021-9a78-dac7fdb6f6cc",
         "428fa980-e55f-4f3e-b895-9ec4f26f79b4",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
+        "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
         "016c8a11-e388-4b39-9134-63619cde6f81",
         "96ec600a-46e6-4781-bf21-2a08ef282c77",
@@ -547,7 +549,6 @@
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
         "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
         "64445639-0ce3-4892-9ce3-ac0a061592d3"
       ],
       "settings": {
