@@ -631,7 +631,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 1336px) {
   .homeBanner__content {
-    flex-basis: 60%;
+    flex-basis: 55%;
   }
 }
 .homeBanner__wrp {
