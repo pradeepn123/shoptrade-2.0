@@ -266,7 +266,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
-            "buttonLink": "shopify:\/\/pages\/angles",
+            "buttonLink": "https:\/\/www.elevatione.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
