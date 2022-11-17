@@ -2303,7 +2303,6 @@ input::-moz-placeholder {
 }
 .shoptrade {
   padding: 8px 80px;
-  background-color: var(--COLOR-WHITE);
   position: fixed;
   left: 0;
   right: 0;
@@ -2318,7 +2317,8 @@ input::-moz-placeholder {
 }
 @media (min-width: 991px) {
   .shoptrade.fixed-header {
-    transform: translateY(-100%);
+    background-color: var(--COLOR-WHITE);
+    border-bottom: 1px solid var(--COLOR-BLACK);
     transition: 0.5s ease all;
   }
 }

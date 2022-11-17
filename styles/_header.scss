@@ -1,6 +1,6 @@
 .shoptrade {
     padding: 8px 80px;
-    background-color: var(--COLOR-WHITE);
+    // background-color: var(--COLOR-WHITE);
     position: fixed;
     left: 0;
     right: 0;
@@ -16,7 +16,9 @@
     &.fixed-header {
         @media (min-width:991px) {
             // border-bottom: 1px solid var(--COLOR-BLACK);
-            transform: translateY(-100%);
+            // transform: translateY(-100%);
+            background-color: var(--COLOR-WHITE);
+            border-bottom: 1px solid var(--COLOR-BLACK);
             transition: .5s ease all;
 
         }
