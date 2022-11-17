@@ -9,7 +9,7 @@
         "bannerBtnlink": "shopify:\/\/pages\/work",
         "mediaType": "video",
         "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
-        "vedioUrl": "shopify:\/\/files\/videos\/banner video.mp4"
+        "vedioUrl": "shopify:\/\/files\/videos\/Untitled design-2 (1).mp4"
       }
     },
     "marquee": {
@@ -261,30 +261,12 @@
     "ourWork": {
       "type": "our-work",
       "blocks": {
-        "97481e62-2db3-4b14-b26a-f57b817e6d76": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/buunni.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
-            "buttonLink": "shopify:\/\/pages\/showcase",
-            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
-          }
-        },
-        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/chill.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
-            "buttonLink": "shopify:\/\/pages\/elevatione",
-            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
-          }
-        },
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0": {
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
-            "buttonLink": "shopify:\/\/pages\/angles",
+            "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
+            "buttonLink": "https:\/\/www.elevatione.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
@@ -292,17 +274,17 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
-            "buttonLink": "shopify:\/\/pages\/adapthealth",
+            "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
+            "buttonLink": "https:\/\/hathaspace.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
-        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
-            "buttonLink": "shopify:\/\/pages\/pumpbox",
+            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
+            "buttonLink": "https:\/\/chill.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
@@ -310,19 +292,37 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
-            "buttonLink": "shopify:\/\/pages\/bunni-coffe",
+            "cardImageBrand": "shopify:\/\/shop_images\/WILD_JUNKIE_3f61b3d9-67d7-4b9b-bf90-c9a4635dd183.png",
+            "buttonLink": "https:\/\/wildjunkieboutique.com\/",
+            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
+          }
+        },
+        "97481e62-2db3-4b14-b26a-f57b817e6d76": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/buunni.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/BUUNNI_0bd4f7ca-e7a9-467c-a300-13379547888e.png",
+            "buttonLink": "shopify:\/\/pages\/showcase",
+            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
+          }
+        },
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/BUMPBOXX_06bcd82a-4e3e-421a-8158-629832f7777c.png",
+            "buttonLink": "shopify:\/\/pages\/pumpbox",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         }
       },
       "block_order": [
-        "97481e62-2db3-4b14-b26a-f57b817e6d76",
-        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0",
         "5e235ad6-01a5-4cad-830b-cef51b7c3121",
-        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7",
-        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2"
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
+        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2",
+        "97481e62-2db3-4b14-b26a-f57b817e6d76",
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7"
       ],
       "settings": {
         "heading": "Our Works",
@@ -333,8 +333,8 @@
       "type": "vedio",
       "settings": {
         "videoHeading": "The Start",
-        "vedioSubHeading": "Our founder is a young entrepreneur at heart. Molded by the hardships of building something from nothing, he inspired the same notions into what later became ShopTrade. An agency for like-minded entrepreneurs.",
-        "vedioThumbnailImage": "shopify:\/\/shop_images\/mifras_ccf899d7-6f3f-4b1a-b86c-c77b18439a5d.jpg",
+        "vedioSubHeading": "UNITE: Mobilizing Entrepreneurship",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/image_145.png",
         "vedioUrl": "https:\/\/www.youtube.com\/watch?v=6HOVX0wQOFY"
       }
     },

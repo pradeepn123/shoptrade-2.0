@@ -3,6 +3,7 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/shoptradeco",
     "social_instagram_link": "instagram.com",
     "social_linkedIn_link": "linkedin.com",
+    "favicon": "shopify:\/\/shop_images\/Fevicon_T.png",
     "sections": {
       "header": {
         "type": "header",
