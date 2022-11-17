@@ -1244,7 +1244,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .ourWork__cardBody .btn-wrp .btn {
-    width: auto;
+    width: 110px;
   }
 }
 .ourWork__cardBody .btn-wrp .btn::after {
@@ -1266,7 +1266,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .ourWork__cardBody .btn-wrp .btn:hover {
-    width: 150px;
+    width: 120px;
   }
 }
 .ourWork__cardBody .btn-wrp .btn:hover::after {
@@ -1872,6 +1872,7 @@ input::-moz-placeholder {
   border-top: 1px solid var(--COLOR-BLACK);
   border-right: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
+  height: auto !important;
 }
 @media (min-width: 1204px) {
   .testimonials__slide {
@@ -2295,6 +2296,11 @@ input::-moz-placeholder {
     font-size: 12px;
   }
 }
+@media (max-width: 320px) {
+  .UImainText h2 {
+    font-size: 11px;
+  }
+}
 .shoptrade {
   padding: 8px 80px;
   background-color: var(--COLOR-WHITE);
@@ -2711,7 +2717,7 @@ input::-moz-placeholder {
     position: relative;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .shopify-footer .rating::after {
     position: absolute;
     content: "";

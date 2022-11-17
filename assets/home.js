@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   let testimonial = new Swiper('.js-testimonial-slider', {
     speed:1000,
-
+    autoHeight: false,
     slidesPerView: 1.2,
     navigation: {
       nextEl: '.slider-arrow .js-arrow-right',

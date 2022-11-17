@@ -26,10 +26,11 @@
         border-top: 1px solid var(--COLOR-BLACK);
         border-right: 1px solid var(--COLOR-BLACK);
         border-bottom: 1px solid var(--COLOR-BLACK);
-
+        height: auto !important;
         @media (min-width:1204px) {
             width: 512px !important;
         }
+     
 
 
         &:not(:last-child) {
