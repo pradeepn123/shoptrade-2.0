@@ -261,24 +261,6 @@
     "ourWork": {
       "type": "our-work",
       "blocks": {
-        "97481e62-2db3-4b14-b26a-f57b817e6d76": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/buunni.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/BUUNNI_0bd4f7ca-e7a9-467c-a300-13379547888e.png",
-            "buttonLink": "shopify:\/\/pages\/showcase",
-            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
-          }
-        },
-        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/chill.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
-            "buttonLink": "shopify:\/\/pages\/elevatione",
-            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
-          }
-        },
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0": {
           "type": "cardType",
           "settings": {
@@ -297,12 +279,12 @@
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
-        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/BUMPBOXX_06bcd82a-4e3e-421a-8158-629832f7777c.png",
-            "buttonLink": "shopify:\/\/pages\/pumpbox",
+            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
+            "buttonLink": "shopify:\/\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         },
@@ -314,15 +296,33 @@
             "buttonLink": "shopify:\/\/pages\/bunni-coffe",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
+        },
+        "97481e62-2db3-4b14-b26a-f57b817e6d76": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/buunni.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/BUUNNI_0bd4f7ca-e7a9-467c-a300-13379547888e.png",
+            "buttonLink": "shopify:\/\/pages\/showcase",
+            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
+          }
+        },
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/BUMPBOXX_06bcd82a-4e3e-421a-8158-629832f7777c.png",
+            "buttonLink": "shopify:\/\/pages\/pumpbox",
+            "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
+          }
         }
       },
       "block_order": [
-        "97481e62-2db3-4b14-b26a-f57b817e6d76",
-        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0",
         "5e235ad6-01a5-4cad-830b-cef51b7c3121",
-        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7",
-        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2"
+        "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
+        "da4a40d1-85b4-45ff-ad41-f19bde0b63e2",
+        "97481e62-2db3-4b14-b26a-f57b817e6d76",
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7"
       ],
       "settings": {
         "heading": "Our Works",
