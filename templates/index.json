@@ -311,7 +311,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
             "cardImageBrand": "shopify:\/\/shop_images\/BUMPBOXX_06bcd82a-4e3e-421a-8158-629832f7777c.png",
-            "buttonLink": "shopify:\/\/pages\/pumpbox",
+            "buttonLink": "https:\/\/bumpboxx.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
         }
