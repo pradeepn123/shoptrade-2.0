@@ -3,7 +3,7 @@
     "aboutBanner": {
       "type": "about-banner",
       "settings": {
-        "heading": "Skyrocket your business with a team of highly skilled professionals",
+        "heading": "Scale your business with a team of highly skilled professionals",
         "btnlink": "",
         "btntext": ""
       }
@@ -15,14 +15,14 @@
           "type": "mission",
           "settings": {
             "heading": "Our Mission",
-            "subheading": "Our mission lays beyond pixel perfect design and high quality code, which are just tools on our path to establishing a network of entrepreneurs that help each other with the sole purpose of scaling their business. In an ever changing online world, the only way to stay ahead of the curve is by surrounding yourself with like minded energetic professionals."
+            "subheading": "Our mission is to establish a network of entrepreneurs that help each other with the sole purpose of scaling their businesses. In an ever-changing online world, the only way to stay ahead of the curve is by surrounding yourself with like-minded energetic professionals."
           }
         },
         "9b6d8825-12d4-4c22-916f-288410252c45": {
           "type": "mission",
           "settings": {
             "heading": "Our Vision",
-            "subheading": "Our vision is to become the swiss knife that every online entrepreneur has in their pockets and we’re getting there through smart partnerships with established companies, building our own suite of products and enabling clients to reach new business heights by providing them on-demand teams of professionals."
+            "subheading": "Our vision is to become the swiss army knife that every online entrepreneur has in their pockets. We’re getting there through intelligent partnerships with established companies, building our own suite of products, and enabling clients to reach new business heights by providing them with on-demand teams of agile professionals."
           }
         }
       },
@@ -210,21 +210,21 @@
           "type": "vedioCard",
           "settings": {
             "vedioHead": "Personal Touch",
-            "vedioSubtext": "Each of our customers ranks first on our priority list. We’re constantly seeking ways to make your life easier. We treat each project as our own and we get heavily invested in your product, no matter what."
+            "vedioSubtext": "Each of our customers ranks first on our priority list. We’re constantly seeking ways to make your life easier. We treat each project as our own, and we get heavily invested in your product, no matter whether you’re a start-up, mid-sized, or enterprise-level company."
           }
         },
         "73c5c6de-80e1-4bc5-b8ba-f3e7b55d5115": {
           "type": "vedioCard",
           "settings": {
             "vedioHead": "Transparency",
-            "vedioSubtext": "We believe that transparency is the foundation of successful long term collaborations, and we love those. When working with ShopTrade you’ll embark in a journey while our team of professionals will guide you at every step."
+            "vedioSubtext": "Transparency is the foundation of successful long-term collaborations, and we love those. When working with ShopTrade, you’ll embark on a journey of growth while our team of professionals will guide you every step of the way."
           }
         },
         "e3f355ec-e052-419e-9be4-872532236f38": {
           "type": "vedioCard",
           "settings": {
             "vedioHead": "Passion",
-            "vedioSubtext": "We surround ourselves only with passionate people, because we believe in win-win-win relationships where our clients are delighted with successful products that help their user base and we thrive while doing so."
+            "vedioSubtext": "We surround ourselves only with passionate people because we believe in win-win relationships where our clients are delighted with successful products that take their customer base and conversion to a new level."
           }
         },
         "4ececf78-c611-4a13-b56a-1756af125f0d": {

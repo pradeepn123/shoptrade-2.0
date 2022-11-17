@@ -1371,14 +1371,12 @@
         "label": "t:settings_schema.social-media.settings.social_twitter_link.label",
         "info": "t:settings_schema.social-media.settings.social_twitter_link.info"
       },
-     
       {
         "type": "text",
         "id": "social_pinterest_link",
         "label": "t:settings_schema.social-media.settings.social_pinterest_link.label",
         "info": "t:settings_schema.social-media.settings.social_pinterest_link.info"
       },
-    
       {
         "type": "text",
         "id": "social_tiktok_link",
