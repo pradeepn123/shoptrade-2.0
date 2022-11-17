@@ -265,7 +265,7 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/buunni.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/BUUNNI_COFFEE.png",
             "buttonLink": "shopify:\/\/pages\/showcase",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
@@ -283,7 +283,7 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
             "buttonLink": "shopify:\/\/pages\/angles",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
@@ -292,7 +292,7 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
             "buttonLink": "shopify:\/\/pages\/adapthealth",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>"
           }
