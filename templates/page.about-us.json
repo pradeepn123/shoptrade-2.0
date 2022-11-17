@@ -161,7 +161,7 @@
             "currrencySige": "",
             "cardNumber": 5,
             "countNumText": "years",
-            "countText": "We’re young, but with a total sum of 5 years worth of domain experience, we’re here to help you get to the next stage."
+            "countText": "We’re young, but with 5+ years' worth of domain experience, we’re here to help you get to the next stage.  "
           }
         },
         "648a9e2b-a543-4f8d-aaef-5aeb7cd76c77": {
@@ -231,7 +231,7 @@
           "type": "vedioCard",
           "settings": {
             "vedioHead": "Quality",
-            "vedioSubtext": "Our priority is delivering highly scalable pixel perfect solutions. We’re not here to jump from one project to the other but rather to help our clients becoming established brands in their market, and the only way to do so is with quality services."
+            "vedioSubtext": "Our priority is delivering highly scalable pixel-perfect solutions. We’re not here to jump from one project to the other but rather to help our clients becoming established brands in their market, and the only way to do so is with high-quality services."
           }
         }
       },
