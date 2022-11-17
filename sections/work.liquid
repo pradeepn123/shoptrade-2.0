@@ -14,11 +14,20 @@
             <div class="img-wrp" >
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               <div class="btn-wrp">
-                <a hrer="{{ block.settings.cardLink }}" class="btn btn--arrow" href="">
+                {% if block.settings.clickble %}
+                  <a hrer="{{ block.settings.cardLink }}" class="btn btn--arrow" href="">
+                    <div>
+                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
+                    </div>
+                  </a>
+                {% else %}
+                <a hrer="{{ block.settings.cardLink }}" class="btn btn--arrow unclickble" href="">
                   <div>
                     <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                   </div>
                 </a>
+                {% endif %}
+               
               </div>
             </div>
             <div class="work-logo-footer">
@@ -61,7 +70,16 @@
             "type": "image_picker",
             "label": "Logo"
 
-          },{
+          },
+          {
+            "id":"clickble",
+            "type":"checkbox",
+            "label":"Clickable Button",
+            "default":true
+
+          },
+          
+          {
           "id":"cardLink",
           "type":"url",
           "label":"Link"

@@ -42,6 +42,15 @@ $(document).ready(function () {
     pauseOnMouseEnter:true
   });
   
+
+  $('.js-marquee-slider').on('mouseenter', function(e){
+
+    marquee.autoplay.stop()
+  })
+  $('.js-marquee-slider').on('mouseleave', function(e){
+ 
+    marquee.autoplay.start();
+  })
   
 
 

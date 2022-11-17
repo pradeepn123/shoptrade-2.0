@@ -291,5 +291,8 @@
 }
 
 .contact__button {
-    margin-top: 72px !important;
+    margin-top: 72px !important;  
+    .btn {
+        width: 172px;
+    }
 }

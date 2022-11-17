@@ -151,16 +151,24 @@
 
     .ourWork__card {
         width: 49.89% ;
+        @media (max-width:767px) {
+            width: 100%;
+        }
+        &:nth-child(odd) {
+            .ourWork__cardBody {
+                padding: 34px 34px 54px 80px;
+        
+                @media (max-width:991px) {
+                    padding: 40px 22px;
+                }
+        
+        
+            }
+        }
     
     }
 
-    .ourWork__cardBody {
-        padding: 34px 34px 54px;
-
-        @media (max-width:991px) {
-            padding: 40px 22px;
-        }
-    }
+   
 
     .img-container {
         // border-color: transparent !important;

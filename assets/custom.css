@@ -450,6 +450,7 @@ main {
   display: flex;
   margin-bottom: 25px;
   justify-content: flex-end;
+  background-color: var(--COLOR-WHITE);
 }
 @media (min-width: 992px) {
   .social-media-icons {
@@ -546,9 +547,15 @@ input::-moz-placeholder {
   }
 }
 .video-container {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .video-container {
+    margin-bottom: 0;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
 }
 
 .caption-with-letter-spacing {
@@ -575,6 +582,14 @@ input::-moz-placeholder {
   left: -24px;
 }
 
+.unclickble {
+  cursor: not-allowed !important;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -588,6 +603,7 @@ input::-moz-placeholder {
   .homeBanner {
     padding: 30px 0 60px;
     height: auto;
+    flex-direction: column;
   }
 }
 @media (min-width: 1680px) {
@@ -962,6 +978,9 @@ input::-moz-placeholder {
 .contact__button {
   margin-top: 72px !important;
 }
+.contact__button .btn {
+  width: 172px;
+}
 
 /* Marquee styles */
 .marquee {
@@ -1273,6 +1292,26 @@ input::-moz-placeholder {
   border-radius: 10px;
   border: 2px solid var(--COLOR-BLACK);
   box-shadow: 10px 10px 60px 0px rgb(187, 184, 184);
+}
+.work .ourWork__card:nth-child(odd) .ourWork__cardBody {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .work .ourWork__card:nth-child(odd) .ourWork__cardBody::after {
+    content: "";
+    position: absolute;
+    right: -0.4px;
+    bottom: 0;
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 70px;
+    background-size: 100%;
+    transform: translate(50%, 50%);
+  }
+}
+.work .ourWork__card:last-child .ourWork__cardBody::after, .work .ourWork__card:nth-last-child(2):nth-child(odd) .ourWork__cardBody::after {
+  display: none;
 }
 .work .img-wrp {
   border-radius: 10px 10px 0 0;
@@ -3332,7 +3371,7 @@ input::-moz-placeholder {
   .ourServices__cardItem:nth-child(odd)::after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -0.4px;
     bottom: 0;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
     background-repeat: no-repeat;
@@ -4288,11 +4327,16 @@ input::-moz-placeholder {
 .blog-list .ourWork__card {
   width: 49.89%;
 }
-.blog-list .ourWork__cardBody {
-  padding: 34px 34px 54px;
+@media (max-width: 767px) {
+  .blog-list .ourWork__card {
+    width: 100%;
+  }
+}
+.blog-list .ourWork__card:nth-child(odd) .ourWork__cardBody {
+  padding: 34px 34px 54px 80px;
 }
 @media (max-width: 991px) {
-  .blog-list .ourWork__cardBody {
+  .blog-list .ourWork__card:nth-child(odd) .ourWork__cardBody {
     padding: 40px 22px;
   }
 }

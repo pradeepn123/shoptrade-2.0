@@ -484,6 +484,8 @@ main {
 }
 .contact-btn {
     margin-top: auto;
+    
+
 }
 .social-media-icons {
     list-style: none;
@@ -491,6 +493,7 @@ main {
     display: flex;
     margin-bottom: 25px;
     justify-content: flex-end;
+    background-color: var(--COLOR-WHITE);
 
     @media (min-width:992px) {
         display: block;
@@ -615,9 +618,14 @@ input::-moz-placeholder {
 }
 
 .video-container {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+   
+    margin-bottom: 20px;
+    @media (min-width:992px) {
+        margin-bottom: 0;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
 }
 
 .caption-with-letter-spacing {
@@ -643,4 +651,12 @@ input::-moz-placeholder {
         transform: translateY(-50%);
         left: -24px;
     }
+}
+
+.unclickble {
+    cursor: not-allowed !important;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }

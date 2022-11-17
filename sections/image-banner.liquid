@@ -6,12 +6,10 @@
     <div class="video-container">
       {% comment %} <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
     
-        {%- if section.settings.vedioUrl.type == 'youtube' -%}
-          <iframe  width="100%" height="100%" src="https://www.youtube.com/embed/{{ section.settings.vedioUrl.id }}?enablejsapi=1&autoplay=1&mute=1&controls=0&rel=0&autohide=1&showinfo=0&wmode=transparent" class="js-youtube"  title="{{ section.settings.description | escape }}"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        {%- else -%}
-          <iframe width="100%" height="100%" src="https://player.vimeo.com/video/{{ section.settings.vedioUrl.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
-        {%- endif -%}
-  
+      {% comment %} <video autoplay muted loop playsinline preload="metadata">
+        <source src="{{ section.settings.vedioUrl.sources[0].url }}" type="video/mp4">
+      </video> {% endcomment %}
+      {{ section.settings.vedioUrl | video_tag: autoplay: true, loop: true, muted: true , width: '100%' }}
     </div>
     
   {% endif %}
@@ -92,11 +90,8 @@
       },{
         "id": "vedioUrl",
         "label": "Vedio link",
-        "type": "video_url",
-        "accept": [
-          "youtube",
-          "vimeo"
-        ]
+        "type": "video"
+        
       }
 
     ]

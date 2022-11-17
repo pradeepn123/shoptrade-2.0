@@ -45,41 +45,7 @@
                 {% render 'social-sharing', share_title: blog.title, share_permalink: blog.url, share_image: false %}
 
                 
-                {% comment %} <div class="social-media-icons">
-          
-                    
-                    <div class="social-media-item">
-                     
-                      <a href="{{ settings.social_facebook_link }}"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Facebook"
-                        aria-describedby="new-window-0">
-                      <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Facebook_1.svg?v=1668162476">
-                    </a>
-                  </div>
-                  <div class="social-media-item">
-                    <a href="{{ settings.social_instagram_link }}"
-                      target="_blank"
-                      rel="noopener"
-                      aria-label="Instagram"
-                      aria-describedby="new-window-0">
-                      <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Instagram_1.svg?v=1668162476">
-                      
-                    </a>
-                  </div>
-                  <div class="social-media-item">
-                    <a href="{{ settings.social_linkedIn_link }}"
-                      target="_blank"
-                      rel="noopener"
-                      aria-label="Twitter"
-                      aria-describedby="new-window-0">
-                      <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/LinkedIn.svg?v=1668162336">
-                      
-                    </a>
-                    </div>
                 
-                  </div>
                   <h1 class="article-template__title fnt-40" itemprop="headline">{{ article.title | escape }}</h1>
                   <div class="d-flex">
                     {%- if block.settings.blog_show_author -%}
@@ -93,7 +59,7 @@
                     
                   
                   </div>    
-                </div> {% endcomment %}
+                </div> 
             </header>
 
         {%- when 'content'-%}

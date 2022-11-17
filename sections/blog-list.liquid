@@ -1,35 +1,10 @@
 <section class="work blog-list"> 
+  
     <ul class="ourWork__cards ">
         {% for article in blog.articles %}
             <li class="ourWork__card ">
               <a href="{{ article.url }}" style="text-decoration:none">
-                <div class="ourWork__cardHead">
-                    {% comment %} <div class="marquee  enable-animation"> {% endcomment %}
-                      {% comment %} <div class="marquee__content">
-          
-                       {{ article.metafields.custom.aritcle_marquee.value }}
-                        
-                        
-                      </div> {% endcomment %}
-                      {% comment %} <div class="marquee__content" aria-hidden=" true">
-                   
-                        {% comment %} <div class="Marquee-tag">
-                            <p>
-                             <span class="clr-o">#</span>Development
-                            </p>
-                          </div>
-                          <div class="Marquee-tag">
-                            <p>
-                             <span class="clr-o">#</span>Headless
-                            </p>
-                          </div> {% endcomment %}
-                       {{ article.metafields.custom.aritcle_marquee.value }}
-
-                        
-          
-                      </div> {% endcomment %}
-                    {% comment %} </div> {% endcomment %}
-                  </div>
+                
                 <div class="ourWork__cardBody">
                     <div class="img-container">
                         <div class="img-wrp">
@@ -40,7 +15,7 @@
                     </div>
                     <div class="work-body">
 
-                          <h3>  {{ article.title }} </h3>
+                          <h3 class="mb-0">  {{ article.title }} </h3>
                            
                     </div>
                 </div>

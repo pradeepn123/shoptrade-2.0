@@ -158,14 +158,16 @@
             z-index: 1 !important;
             transform: translate(-15px, 15px);
 
-            
+
             @media (max-width:1680px) {
                 left: 48%;
 
             }
+
             @media (max-width:991px) {
                 right: -10px;
             }
+
             .brandLogo {
                 width: 100%;
                 height: 26px;
@@ -254,6 +256,40 @@
         border: 2px solid var(--COLOR-BLACK);
         box-shadow: 10px 10px 60px 0px rgba(187, 184, 184, 1);
 
+    }
+
+    .ourWork__card {
+        &:nth-child(odd) {
+            .ourWork__cardBody {
+
+
+                position: relative;
+
+                &::after {
+                    @media (min-width:992px) {
+                        content: "";
+                        position: absolute;
+                        right: -0.4px;
+                        bottom: 0;
+                        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+                        background-repeat: no-repeat;
+                        width: 40px;
+                        height: 70px;
+                        background-size: 100%;
+                        transform: translate(50%, 50%);
+
+                    }
+                }
+            }
+        }
+        &:last-child,
+        &:nth-last-child(2):nth-child(odd) {
+            .ourWork__cardBody {
+                &::after {
+                    display: none;
+                }
+            }
+        }
     }
 
     .img-wrp {
