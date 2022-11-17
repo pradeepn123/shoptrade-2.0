@@ -629,7 +629,7 @@ input::-moz-placeholder {
     bottom: -20%;
   }
 }
-@media (min-width: 1660px) {
+@media (min-width: 1336px) {
   .homeBanner__content {
     flex-basis: 60%;
   }
