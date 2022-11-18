@@ -768,6 +768,10 @@ input::-moz-placeholder {
   object-fit: cover;
 }
 
+.js-desktop-video video {
+  opacity: 0;
+}
+
 .btn {
   padding: 22px 30px;
   background: #FFFFFF;

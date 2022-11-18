@@ -148,3 +148,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+.js-desktop-video {
+    video {
+        opacity: 0;
+    }
+}
