@@ -1,5 +1,5 @@
 .vedio {
-    border-top: 1px solid var(--COLOR-BLACK);
+    // border-top: 1px solid var(--COLOR-BLACK);
     border-bottom: 1px solid var(--COLOR-BLACK);
     position: relative;
 
@@ -58,6 +58,11 @@
         @media (min-width:1600px) {
 
             width: calc((100% - 1530px)/2);
+
+        }
+        @media (min-width:1920px) {
+
+            width: calc((100% - 1790px)/2);
 
         }
     }

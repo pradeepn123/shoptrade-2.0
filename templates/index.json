@@ -9,7 +9,8 @@
         "bannerBtnlink": "shopify:\/\/pages\/work",
         "mediaType": "video",
         "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
-        "vedioUrl": "shopify:\/\/files\/videos\/Untitled design-2 (1).mp4"
+        "vedioUrl": "shopify:\/\/files\/videos\/Untitled design-2 (1).mp4",
+        "vedioUrlMobile": "shopify:\/\/files\/videos\/MOBILE HOMEPAGE VIDEO.mp4"
       }
     },
     "marquee": {
@@ -225,8 +226,8 @@
           "type": "services",
           "settings": {
             "position": "right",
-            "UIicons": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\" viewbox=\"0 0 50 50\" fill=\"none\"> <g clip-path=\"url(#clip0_536_5110)\"> <path d=\"M34.7083 9.41667L40.6042 15.3125L34.7083 21.2083L28.8125 15.3125L34.7083 9.41667ZM18.75 10.4167V18.75H10.4167V10.4167H18.75ZM39.5833 31.25V39.5833H31.25V31.25H39.5833ZM18.75 31.25V39.5833H10.4167V31.25H18.75ZM34.7083 3.52084L22.9167 15.2917L34.7083 27.0833L46.5 15.2917L34.7083 3.52084ZM22.9167 6.25H6.25V22.9167H22.9167V6.25ZM43.75 27.0833H27.0833V43.75H43.75V27.0833ZM22.9167 27.0833H6.25V43.75H22.9167V27.0833Z\" fill=\"black\"><\/path> <\/g> <defs> <clippath id=\"clip0_536_5110\"> <rect width=\"50\" height=\"50\" fill=\"white\"><\/rect> <\/clippath> <\/defs> <\/svg>",
-            "serviceText": "OFFLINE TO ONLINE"
+            "UIicons": "",
+            "serviceText": ""
           }
         },
         "44417285-9944-429b-acd3-2c8a89f9c0a6": {
@@ -326,7 +327,7 @@
       ],
       "settings": {
         "heading": "Our Works",
-        "link": ""
+        "link": "shopify:\/\/pages\/work"
       }
     },
     "vedio": {

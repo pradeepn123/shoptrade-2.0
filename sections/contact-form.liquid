@@ -101,19 +101,24 @@
             </div>
            
           </div>
+          {% assign aboutOptions = section.blocks | where: "type", "options" %}
+
           <div class="platform-type my-60 mt-0">
             <label for="platform-type">What’s your current platform ? *</label>
             <div class="">
               <select id="platform-type" class="select-input" name="contact[platform]">
-                <option value="none"> Choose </option>
-                <option>Returns</option>
-                <option>Shipping</option>
-                <option>Custom order</option>
-                <option>Other</option>
+                {% for block in aboutOptions %}
+                  {% if forloop.first %}
+                    <option value="none"> Choose </option>
+                    {% else %}
+                    <option value="{{ block.settings.option }}">{{ block.settings.option }}</option>
+                  {% endif %}
+              {% endfor %}
+
               </select>
             
             </div>
-          <div class="inquire my-60">
+          {% comment %} <div class="inquire my-60">
             <label for="inquire">Type of Inquiry * *</label>
             <div class="">
               <select id="inquire" class="select-input" name="contact[inquire]">
@@ -124,16 +129,24 @@
                 <option>Other</option>
               </select>
             
-            </div>
+            </div> {% endcomment %}
+
+            {% assign plateformOptions = section.blocks | where: "type", "plateform" %}
           <div class="about-us my-60">
             <label for="about-us">How did you hear about us ?</label>
             <div class="">
               <select id="about-us" class="select-input" name="contact[about-us]">
-                <option value="none"> Choose </option>
-                <option value="">Returns</option>
-                <option value="">Shipping</option>
-                <option value="">Custom order</option>
-                <option>Other</option>
+
+               
+
+
+              {% for block in plateformOptions %}
+                {% if forloop.first %}
+                  <option value="none"> Choose </option>
+                  {% else %}
+                  <option value="{{ block.settings.plateformoption }}">{{ block.settings.plateformoption }}</option>
+                {% endif %}
+            {% endfor %}
               </select>
               
             </div>
@@ -194,6 +207,36 @@
       "label":"Mail Id"
     }
   ],
+  "blocks":[
+    {
+      "name":"Plateform options",
+      "type":"options",
+      "settings":[
+        {
+          "id":"option",
+          "label":"option",
+          "type":"text"
+        
+        }
+      ]
+
+
+    },{
+      "name":"About options",
+      "type":"plateform",
+      "settings":[
+        {
+          "id":"plateformoption",
+          "label":"option",
+          "type":"text"
+        
+        }
+      ]
+
+
+    }
+  ],
+
   "presets": [
     {
       "name": "t:sections.contact-form.presets.name"

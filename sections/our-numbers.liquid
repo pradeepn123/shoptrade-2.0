@@ -14,7 +14,7 @@
     {% for block in section.blocks %}
       <li class="ourNumbers__cardItem">
         <div class="ourNumbers__cardbody">
-          <h3 class="ourNumbers__count count"  data-currrencySige="{{ block.settings.currrencySige }}"  data-converted='' data-charactor='' data-count="{{ block.settings.cardNumber }}">
+          <h3 class="ourNumbers__count count"  data-currrencySige="{{ block.settings.currrencySige }}"  data-converted='' data-charactor='+' data-count="{{ block.settings.cardNumber }}">
             {%- comment -%}
               {{ block.settings.cardNumber }}
             {%- endcomment -%}
