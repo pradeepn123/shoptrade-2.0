@@ -15,13 +15,13 @@
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               <div class="btn-wrp">
                 {% if block.settings.clickble %}
-                  <a href="{{ block.settings.cardLink }}" class="btn btn--arrow" >
+                  <a href="{{ block.settings.cardLink }}" class="btn btn--arrow" target="_blank" >
                     <div>
                       <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                     </div>
                   </a>
                 {% else %}
-                <a href="{{ block.settings.cardLink }}" class="btn btn--arrow unclickble" >
+                <a href="{{ block.settings.cardLink }}" target="_blank" class="btn btn--arrow unclickble" >
                   <div>
                     <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                   </div>

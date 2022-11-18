@@ -62,7 +62,7 @@
         margin-left: 28px;
 
         @media (max-width:991px) {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         &:last-child {
@@ -153,6 +153,9 @@
     &__menu-wrp {
         @media (max-width:991px) {
             margin-top: 160px;
+        }
+        @media (max-width:991px) {
+            margin-top: 95px;
         }
     }
 }

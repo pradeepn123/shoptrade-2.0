@@ -30,7 +30,7 @@
     
         <div class="contact-details">
           <h3 class="fnt-32 mb-24">{{ section.settings.heading }}</h3>
-          <p class="fnt-20 fnt-500 clr-b">{{ section.settings.subtext }} <a class="clr-o text-d-none"  href="mailto:{{ section.settings.mail }}">{{ section.settings.mail }}</a> </p>
+          <p class="fnt-20 fnt-500 clr-b">{{ section.settings.subtext }} <a class="clr-o text-d-none" target="_blank" href="mailto:{{ section.settings.mail }}">{{ section.settings.mail }}</a> </p>
         </div>
         {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
           {%- if form.posted_successfully? -%}

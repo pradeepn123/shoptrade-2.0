@@ -849,7 +849,7 @@ input::-moz-placeholder {
 }
 
 .btn-contact {
-  padding: 16px 8px 32px;
+  padding: 16px 10px 32px;
   margin-right: 5px;
   display: inline-block;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODUiIGhlaWdodD0iNTgiIHZpZXdCb3g9IjAgMCA4NSA1OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9InBhdGgtMS1pbnNpZGUtMV8xNDA5XzQxNTAiIGZpbGw9IndoaXRlIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02IDBDMi42ODYyOSAwIDAgMi42ODYyOSAwIDZWMzlDMCA0Mi4zMTM3IDIuNjg2MjkgNDUgNiA0NUg4LjAwMDAxTDguMDAwMjEgNThMMjIuMDY5IDQ1SDc5QzgyLjMxMzcgNDUgODUgNDIuMzEzNyA4NSAzOVY2Qzg1IDIuNjg2MjkgODIuMzEzNyAwIDc5IDBINloiLz4KPC9tYXNrPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTYgMEMyLjY4NjI5IDAgMCAyLjY4NjI5IDAgNlYzOUMwIDQyLjMxMzcgMi42ODYyOSA0NSA2IDQ1SDguMDAwMDFMOC4wMDAyMSA1OEwyMi4wNjkgNDVINzlDODIuMzEzNyA0NSA4NSA0Mi4zMTM3IDg1IDM5VjZDODUgMi42ODYyOSA4Mi4zMTM3IDAgNzkgMEg2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTguMDAwMDEgNDVMOS4wMDAwMSA0NUw4Ljk5OTk5IDQ0SDguMDAwMDFWNDVaTTguMDAwMjEgNThMNy4wMDAyMSA1OEw3LjAwMDI1IDYwLjI4NTVMOC42Nzg4NyA1OC43MzQ1TDguMDAwMjEgNThaTTIyLjA2OSA0NVY0NEgyMS42Nzc4TDIxLjM5MDQgNDQuMjY1NUwyMi4wNjkgNDVaTTEgNkMxIDMuMjM4NTggMy4yMzg1OCAxIDYgMVYtMUMyLjEzNDAxIC0xIC0xIDIuMTM0MDEgLTEgNkgxWk0xIDM5VjZILTFWMzlIMVpNNiA0NEMzLjIzODU4IDQ0IDEgNDEuNzYxNCAxIDM5SC0xQy0xIDQyLjg2NiAyLjEzNDAxIDQ2IDYgNDZWNDRaTTguMDAwMDEgNDRINlY0Nkg4LjAwMDAxVjQ0Wk05LjAwMDIxIDU4TDkuMDAwMDEgNDVMNy4wMDAwMSA0NUw3LjAwMDIxIDU4TDkuMDAwMjEgNThaTTIxLjM5MDQgNDQuMjY1NUw3LjMyMTU2IDU3LjI2NTVMOC42Nzg4NyA1OC43MzQ1TDIyLjc0NzcgNDUuNzM0NUwyMS4zOTA0IDQ0LjI2NTVaTTc5IDQ0SDIyLjA2OVY0Nkg3OVY0NFpNODQgMzlDODQgNDEuNzYxNCA4MS43NjE0IDQ0IDc5IDQ0VjQ2QzgyLjg2NiA0NiA4NiA0Mi44NjYgODYgMzlIODRaTTg0IDZWMzlIODZWNkg4NFpNNzkgMUM4MS43NjE0IDEgODQgMy4yMzg1OCA4NCA2SDg2Qzg2IDIuMTM0MDEgODIuODY2IC0xIDc5IC0xVjFaTTYgMUg3OVYtMUg2VjFaIiBmaWxsPSJibGFjayIgbWFzaz0idXJsKCNwYXRoLTEtaW5zaWRlLTFfMTQwOV80MTUwKSIvPgo8L3N2Zz4K");
@@ -2387,7 +2387,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .shoptrade .nav-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -2460,6 +2460,11 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .shoptrade__menu-wrp {
     margin-top: 160px;
+  }
+}
+@media (max-width: 991px) {
+  .shoptrade__menu-wrp {
+    margin-top: 95px;
   }
 }
 
@@ -4103,7 +4108,7 @@ input::-moz-placeholder {
 }
 .about-team__info p {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 32px;
   color: var(--COLOR-BLACK);
 }
 @media (max-width: 991px) {
