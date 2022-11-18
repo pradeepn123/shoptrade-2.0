@@ -4,6 +4,7 @@ $(document).ready(function () {
 
   setTimeout(function(){
     $(".js-video-thumbnail").hide()
+    alert(1)
     $('video').css("opacity","1")
   },200)
 
