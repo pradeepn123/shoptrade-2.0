@@ -3,18 +3,29 @@
 $(document).ready(function () {
 
     let aboutCulterTop = new Swiper('.js-top-image-slider', {
-        speed: 2000,
+        spaceBetween: 50,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView:1.2,
+    allowTouchMove: false,
+    // disableOnInteraction: true,
+    pauseOnMouseEnter:true,
+        // speed: 2000,
 
-        // slidesPerView: 3,
-        centerdSlides: "true",
-        loop: true,
-        freemode: true,
-        allowTouchMove: false,
-        disableOnInteraction: true,
-        autoplay: {
-            duration: 2000
-        },
-        spaceBetween: 40,
+        // // slidesPerView: 3,
+        // centerdSlides: "true",
+        // loop: true,
+        // freemode: true,
+        // allowTouchMove: false,
+        // disableOnInteraction: true,
+        // autoplay: {
+        //     duration: 2000
+        // },
+        // spaceBetween: 40,
         breakpoints: {
             1920: {
                 slidesPerView: 3,
@@ -31,17 +42,17 @@ $(document).ready(function () {
         }
     });
     let aboutCulterBottom = new Swiper('.js-bottom-image-slider', {
-        speed: 2000,
-        allowTouchMove: false,
-        disableOnInteraction: true,
-        centerdSlides: "true",
-        loop: true,
-        freemode: true,
-
+        spaceBetween: 50,
+        centeredSlides: true,
+        speed: 6000,
         autoplay: {
-            duration: 2000
+          delay: 1,
         },
-        spaceBetween: 40,
+        loop: true,
+        slidesPerView:1.2,
+        allowTouchMove: false,
+        // disableOnInteraction: true,
+        pauseOnMouseEnter:true,
 
         // direction :"ltr",
         breakpoints: {
