@@ -27,7 +27,7 @@
             {% for block in section.blocks %}
                 <div class="swiper-slide">
                 <div class="Marquee-tag">
-                    {{ block.settings.imagelogo }}
+                   <img src="{{ block.settings.imagelogoImage | image_url }}"> 
                     {% comment %} <img class="image01" src="{{ block.settings.imageDoller | image_url }}" alt="marguee one"/> {% endcomment %}
                     {% comment %} <img class="image02" src="{{ block.settings.imageLogo | image_url }}" alt="marguee two" /> {% endcomment %}
                 </div>
@@ -52,11 +52,17 @@
                     "type":"html",
                     "label":"logo",
                     "id":"imagelogo"
+                },
+                {
+                    "type":"image_picker",
+                    "label":"logo",
+                    "id":"imagelogoImage"
                 }
             ]
 
             
         }
+
        
     ]
 }

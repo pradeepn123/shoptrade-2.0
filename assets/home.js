@@ -31,7 +31,7 @@ $(document).ready(function () {
   let marquee = new Swiper('.js-marquee-slider', {
     spaceBetween: 50,
     centeredSlides: true,
-    speed: 6000,
+    speed: 50000,
     autoplay: {
       delay: 1,
     },
