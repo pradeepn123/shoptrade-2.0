@@ -160,7 +160,6 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 5,
-            "cardNumbersub": "years",
             "countNumText": "years",
             "countText": "We’re young, but with 5+ years' worth of domain experience, we’re here to help you get to the next stage.  "
           }
@@ -170,7 +169,6 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 100,
-            "cardNumbersub": "",
             "countNumText": "success rate",
             "countText": "It’s not always easy, but no matter what, we deliver. It’s our mission to go above and beyond for our clients."
           }
@@ -180,7 +178,6 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 200,
-            "cardNumbersub": "",
             "countNumText": "project",
             "countText": "Successfully delivered 200+ projects so far. Always on the lookout for the next one."
           }
@@ -190,7 +187,6 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 95,
-            "cardNumbersub": "",
             "countNumText": "retention",
             "countText": "We're treating every client as the first one. That's why most of them stick with us."
           }

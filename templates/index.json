@@ -9,7 +9,8 @@
         "bannerBtnlink": "shopify:\/\/pages\/work",
         "mediaType": "video",
         "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
-        "vedioUrl": "shopify:\/\/files\/videos\/Untitled design-2 (1).mp4"
+        "vedioUrl": "shopify:\/\/files\/videos\/Untitled design-2 (1).mp4",
+        "vedioUrlMobile": "shopify:\/\/files\/videos\/MOBILE HOMEPAGE VIDEO.mp4"
       }
     },
     "marquee": {
