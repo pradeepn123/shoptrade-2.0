@@ -222,7 +222,7 @@ body {
 .fnt-20 {
   font-weight: 400;
   font-size: 20px !important;
-  line-height: 130%;
+  line-height: 32px;
 }
 
 .fnt-24 {
@@ -600,6 +600,24 @@ input::-moz-placeholder {
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+*::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+/* This one works! */
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 .homeBanner {
