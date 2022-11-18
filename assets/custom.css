@@ -762,6 +762,12 @@ input::-moz-placeholder {
   width: 100%;
 }
 
+.js-video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .btn {
   padding: 22px 30px;
   background: #FFFFFF;

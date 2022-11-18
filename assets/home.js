@@ -1,4 +1,15 @@
+
+
 $(document).ready(function () {
+
+  setTimeout(function(){
+    $(".js-video-thumbnail").hide()
+    alert(1)
+  },200)
+
+ 
+  
+
 
   let testimonial = new Swiper('.js-testimonial-slider', {
     speed:1000,

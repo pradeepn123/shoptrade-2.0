@@ -9,7 +9,8 @@
       {% comment %} <video autoplay muted loop playsinline preload="metadata">
         <source src="{{ section.settings.vedioUrl.sources[0].url }}" type="video/mp4">
       </video> {% endcomment %}
-      <div class="only-desktop h-100">
+      <div class="only-desktop js-desktop-video h-100">
+        <img class="js-video-thumbnail" src="{{ section.settings.desktopImg | image_url }}">
       {{ section.settings.vedioUrl | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
       </div>
       <div class="only-mobile">
@@ -93,12 +94,25 @@
 
 // "default": "https://cdn.shopify.com/s/files/1/0662/5122/7356/files/banner.png?v=1665395460"
       },{
+
+        "id":"desktopImg",
+        "label":"Desktop thumnail Image",
+        "type":"image_picker"
+      },
+      
+      {
         "id": "vedioUrl",
         "label": "Vedio link",
         "type": "video"
         
-      }
-      ,{
+      },
+      {
+
+        "id":"mobileImg",
+        "label":"Mobile thumnail Image",
+        "type":"image_picker"
+      },
+      {
         "id": "vedioUrlMobile",
         "label": "Vedio link for mobile",
         "type": "video"
