@@ -562,6 +562,9 @@ input::-moz-placeholder {
     z-index: -1;
   }
 }
+.video-container video {
+  object-fit: cover;
+}
 
 .caption-with-letter-spacing {
   font-weight: 400;
@@ -730,6 +733,11 @@ input::-moz-placeholder {
   .homeMarque .marquee__content {
     gap: 3rem;
   }
+}
+
+.h-100 {
+  height: 100%;
+  width: 100%;
 }
 
 .btn {

@@ -630,6 +630,10 @@ input::-moz-placeholder {
         inset: 0;
         z-index: -1;
     }
+
+    video {
+        object-fit: cover;
+    }
 }
 
 .caption-with-letter-spacing {
