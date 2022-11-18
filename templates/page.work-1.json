@@ -9,7 +9,7 @@
             "cardImage": "shopify:\/\/shop_images\/adapthealth_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/adapthealth.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -19,7 +19,7 @@
             "cardImage": "shopify:\/\/shop_images\/angles90.png",
             "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/angles90.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -29,7 +29,7 @@
             "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/bumpboxx.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -39,7 +39,7 @@
             "cardImage": "shopify:\/\/shop_images\/buunni.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/www.buunnicoffee.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -49,7 +49,7 @@
             "cardImage": "shopify:\/\/shop_images\/chill.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/chill.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -69,7 +69,7 @@
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/www.elevatione.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -89,7 +89,7 @@
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/hathaspace.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -99,7 +99,7 @@
             "cardImage": "shopify:\/\/shop_images\/synchro.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/besynchro.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -109,7 +109,7 @@
             "cardImage": "shopify:\/\/shop_images\/lenze.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/lensadvizor.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -119,18 +119,7 @@
             "cardImage": "shopify:\/\/shop_images\/paymore.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
             "clickble": true,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "f7b4849a-480c-43ed-a25b-110eee80adc7": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/ortho.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-artho.png",
-            "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/paymore.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -140,7 +129,7 @@
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/luckyyougifts.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -172,7 +161,7 @@
             "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
             "clickble": true,
-            "cardLink": "",
+            "cardLink": "https:\/\/wildjunkieboutique.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         }
@@ -190,7 +179,6 @@
         "6c361f49-c740-4c88-a697-a07cc0978984",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
-        "f7b4849a-480c-43ed-a25b-110eee80adc7",
         "07f8cf6d-5332-43d0-ad62-4a812965a113",
         "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "4f536d0a-f989-4a1e-b706-e379ef217bca",
