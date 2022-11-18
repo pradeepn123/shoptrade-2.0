@@ -160,6 +160,7 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 5,
+            "cardNumbersub": "years",
             "countNumText": "years",
             "countText": "We’re young, but with 5+ years' worth of domain experience, we’re here to help you get to the next stage.  "
           }
@@ -169,6 +170,7 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 100,
+            "cardNumbersub": "",
             "countNumText": "success rate",
             "countText": "It’s not always easy, but no matter what, we deliver. It’s our mission to go above and beyond for our clients."
           }
@@ -178,6 +180,7 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 200,
+            "cardNumbersub": "",
             "countNumText": "project",
             "countText": "Successfully delivered 200+ projects so far. Always on the lookout for the next one."
           }
@@ -187,6 +190,7 @@
           "settings": {
             "currrencySige": "",
             "cardNumber": 95,
+            "cardNumbersub": "",
             "countNumText": "retention",
             "countText": "We're treating every client as the first one. That's why most of them stick with us."
           }
@@ -306,6 +310,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "opening",
+            "slider": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>",
             "memberImage": "shopify:\/\/shop_images\/career-profile.png",
             "memberName": "",
             "memberDesignation": "",
@@ -317,6 +322,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
             "memberName": "Mohammadu Mifras",
             "memberDesignation": "Founder & CEO",
@@ -328,6 +334,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Deekshith.jpg",
             "memberName": "Deekshith K Suvarna",
             "memberDesignation": "Director & Head of Design",
@@ -339,6 +346,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Mathew_13e8bb09-f60a-4cdc-b169-dbb2a5d43fea.jpg",
             "memberName": "Mathew Dadesky",
             "memberDesignation": "Growth Manager",
@@ -350,6 +358,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
             "memberName": "Amit Gupta",
             "memberDesignation": "Head of Engineering",
@@ -361,6 +370,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Akila_73a008e1-3d35-401c-bb5b-9307f23781ac.jpg",
             "memberName": "Akila Mohan",
             "memberDesignation": "Senior Manager - People Operation",
@@ -372,6 +382,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Sushanth.jpg",
             "memberName": "Sushanth Suvarna",
             "memberDesignation": "Admin & HR Associate",
@@ -383,6 +394,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Faizal.jpg",
             "memberName": "Faizel",
             "memberDesignation": "Design II -  (Product Design Specialist)",
@@ -394,6 +406,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Rosh.jpg",
             "memberName": "Rosh",
             "memberDesignation": "Design II -  (User Interface Design Specialist)",
@@ -405,6 +418,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Pradeep_431e0921-d376-42a5-86f9-cb5e6012ed3e.jpg",
             "memberName": "Pradeep Neginhal",
             "memberDesignation": "Senior Front-End Engineering Manager",
@@ -416,6 +430,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Keerthi1.jpg",
             "memberName": "Keerthi Sindhura",
             "memberDesignation": "Front-End Engineer",
@@ -427,6 +442,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Sahrudh.jpg",
             "memberName": "Sahrudh",
             "memberDesignation": "Front-End Engineer",
@@ -438,6 +454,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Darshika_70c19156-2db9-45ff-b68e-8f290eaea9b9.jpg",
             "memberName": "Darshika",
             "memberDesignation": "Front-End Engineer",
@@ -449,6 +466,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Vinod.jpg",
             "memberName": "Vinod",
             "memberDesignation": "Front-End Engineer",
@@ -460,6 +478,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Shivanshi.jpg",
             "memberName": "Shivanshi",
             "memberDesignation": "Front-End Engineer",
@@ -471,6 +490,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Nikil.jpg",
             "memberName": "Nikil",
             "memberDesignation": "Full-Stack Engineer",
@@ -482,6 +502,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Prince.jpg",
             "memberName": "Prince",
             "memberDesignation": "Full-Stack Engineer",
@@ -493,6 +514,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/shivanand.jpg",
             "memberName": "Shivanand",
             "memberDesignation": "Front-End Engineer (Intern)",
@@ -504,6 +526,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Ritu.jpg",
             "memberName": "Ritu",
             "memberDesignation": "Front-End Engineer (Intern)",
@@ -515,6 +538,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Sakshi.jpg",
             "memberName": "Sakshi",
             "memberDesignation": "Front-End Engineer (Intern)",
@@ -526,6 +550,7 @@
           "type": "cardType",
           "settings": {
             "profileType": "member",
+            "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Hussain.jpg",
             "memberName": "Hussain",
             "memberDesignation": "Office Assistant",

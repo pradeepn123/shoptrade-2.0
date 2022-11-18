@@ -132,6 +132,9 @@ body {
     }
 }
 
+.fnt-micro {
+    font-family: Minecraft;
+}
 .fnt-800 {
     font-weight: 800;
 }
@@ -577,7 +580,7 @@ input::-moz-placeholder {
     transform: translate(-50%, -50%);
     z-index: 99;
 
-    @media (min-width:767px) {
+    @media (max-width:767px) {
         left: 40%;
     }
 }

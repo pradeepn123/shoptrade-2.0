@@ -123,6 +123,8 @@
             height: 404px;
             object-position: top;
             object-fit: cover;
+            border: 1px solid var(--COLOR-BLACK);
+            border-radius: 10px;
         }
     }
 
@@ -683,6 +685,11 @@
             height: 373px;
         }
 
+        &.nopatch {
+            @media (max-width:1680px) {
+                height: 348px;
+            }
+        }
         &::after {
             content: '';
             position: absolute;
