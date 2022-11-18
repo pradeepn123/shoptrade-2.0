@@ -149,7 +149,7 @@
         "heading": "Are you the pro we're searching for?",
         "subheading": "We are constantly looking for talent across the board. Feel like you have what it takes To make a difference for our clients.",
         "button_text": "View Our Openings",
-        "btnlink": "shopify:\/\/pages\/contact"
+        "btnlink": "https:\/\/careers.shoptrade.co"
       }
     },
     "about-number": {
@@ -311,7 +311,7 @@
             "memberName": "",
             "memberDesignation": "",
             "careerbtn": "View Openings",
-            "careerLink": ""
+            "careerLink": "https:\/\/careers.shoptrade.co"
           }
         },
         "47d83363-f737-4021-9a78-dac7fdb6f6cc": {

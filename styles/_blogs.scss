@@ -207,6 +207,18 @@
     max-width: 985px;
     width: 100%;
     margin: auto;
+
+    li {
+        font-size: 20px;
+        line-height: 32px;
+        color: var(--COLOR-BLACK);
+    }
+    a {
+        color: var(--COLOR-PRIMARY);
+    }
+    h5 {
+        color: var(--COLOR-BLACK);
+    }
 }
 
 .article-template__link {

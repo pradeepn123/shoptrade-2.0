@@ -4512,6 +4512,17 @@ input::-moz-placeholder {
   width: 100%;
   margin: auto;
 }
+.article-container li {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--COLOR-BLACK);
+}
+.article-container a {
+  color: var(--COLOR-PRIMARY);
+}
+.article-container h5 {
+  color: var(--COLOR-BLACK);
+}
 
 .article-template__link {
   color: var(--COLOR-PRIMARY) !important;
