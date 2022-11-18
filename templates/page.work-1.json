@@ -58,7 +58,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/club-sulivan.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
-            "clickble": true,
+            "clickble": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
@@ -78,7 +78,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/swing.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
-            "clickble": true,
+            "clickble": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
@@ -125,6 +125,7 @@
         },
         "f7b4849a-480c-43ed-a25b-110eee80adc7": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/ortho.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-artho.png",

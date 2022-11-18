@@ -595,7 +595,7 @@ input::-moz-placeholder {
 }
 
 .mb-0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .homeBanner {
@@ -2171,6 +2171,9 @@ input::-moz-placeholder {
     width: 275px;
   }
 }
+.uiDesign__item.noInteraction.active {
+  background-color: var(--COLOR-WHITE) !important;
+}
 .uiDesign__list {
   padding: 0;
   margin: 0;
@@ -2329,6 +2332,7 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .shoptrade {
     padding: 20px 15px;
+    background-color: var(--COLOR-WHITE);
   }
 }
 @media (min-width: 991px) {

@@ -32,6 +32,10 @@
         @media (min-width:1920px) {
             width: 275px;
         }
+
+        &.noInteraction.active {
+            background-color: var(--COLOR-WHITE) !important;
+        }
     }
 
     &__list {

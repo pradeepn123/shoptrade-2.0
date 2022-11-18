@@ -51,12 +51,20 @@
         {% for block in section.blocks %}
      
           {% if block.settings.position == "left" %}
-            
-            <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
+            {% if block.settings.UIicons != blank %}
+              <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
+                <div>
+                  {{ block.settings.UIicons }}
+                </div>
+              </li>
+            {% else %}
+            <li class="uiDesign__item noInteraction" data-id="top-{{ forloop.index }}">
               <div>
                 {{ block.settings.UIicons }}
               </div>
             </li>
+            {% endif %}
+           
           {% endif %}
      
         {% endfor %}
@@ -92,12 +100,24 @@
         {% for block in section.blocks %}
      
           {% if block.settings.position == "right" %}
-            
-            <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
-              <div>
-                {{ block.settings.UIicons }}
-              </div>
-            </li>
+            {% if block.settings.UIicons != blank %}
+              <li class="uiDesign__item " data-id="top-{{ forloop.index }}">
+                <div>
+                  {{ block.settings.UIicons }}
+                </div>
+              </li>
+              {% else %}
+              
+              <li class="uiDesign__item noInteraction" data-id="top-{{ forloop.index }}">
+                <div>
+                  {{ block.settings.UIicons }}
+                </div>
+              </li>
+
+
+            {% endif %}
+
+           
           {% endif %}
      
         {% endfor %}
