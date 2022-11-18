@@ -166,7 +166,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/banner-showcase.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
-            "cardLink": "shopify:\/\/pages\/showcase"
+            "cardLink": "https:\/\/hathaspace.com\/"
           }
         },
         "e5d302cc-53f8-4cd1-9deb-aef1cb356e92": {
@@ -174,7 +174,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/chill.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
-            "cardLink": ""
+            "cardLink": "https:\/\/chill.com\/"
           }
         },
         "965d6888-7062-4c71-909f-2f2112b24df6": {
@@ -182,7 +182,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
-            "cardLink": ""
+            "cardLink": "https:\/\/www.elevatione.com\/"
           }
         }
       },
