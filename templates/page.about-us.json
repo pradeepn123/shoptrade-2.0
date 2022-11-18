@@ -4,8 +4,8 @@
       "type": "about-banner",
       "settings": {
         "heading": "Scale your business with a team of highly skilled professionals",
-        "btnlink": "",
-        "btntext": ""
+        "btnlink": "shopify:\/\/pages\/contact",
+        "btntext": "Contact us"
       }
     },
     "about-mision": {

@@ -520,6 +520,11 @@ input::-moz-placeholder {
   transform: translate(-50%, -50%);
   z-index: 99;
 }
+@media (min-width: 767px) {
+  .loader {
+    left: 40%;
+  }
+}
 
 /* Safari */
 @-webkit-keyframes spin {
@@ -1202,6 +1207,9 @@ input::-moz-placeholder {
 }
 .ourWork__cardBody .work-body p {
   flex: 1;
+}
+.ourWork__cardBody .work-body h3 {
+  line-height: 40px;
 }
 .ourWork__cardBody .btn-wrp {
   position: absolute;
@@ -2147,7 +2155,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 1660px) {
   .uiDesign__item {
-    width: 237px;
+    width: 241px;
   }
 }
 @media (min-width: 1920px) {
@@ -3280,8 +3288,8 @@ input::-moz-placeholder {
 .services::after {
   position: absolute;
   content: "";
-  width: 365px;
-  height: 340px;
+  width: 330px;
+  height: 202px;
   background: #FF7121;
   filter: blur(94.5px);
   right: -20%;
@@ -3883,6 +3891,11 @@ input::-moz-placeholder {
   position: relative;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .about-team__img {
+    padding: 40px 20px;
+  }
+}
 .about-team__img img {
   width: 370px;
   height: 437.31px;
@@ -3950,6 +3963,20 @@ input::-moz-placeholder {
     border-top: 1px solid var(--COLOR-BLACK);
     overflow: hidden;
   }
+}
+.about-team__contentWrp .js-arrow-right .overlay {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  inset: 0;
+  background: #FF985D;
+  filter: blur(14px);
+  border-radius: 37px;
+  display: none;
+  z-index: -1;
+}
+.about-team__contentWrp .js-arrow-right:hover .overlay {
+  display: block;
 }
 .about-team__contentWrp::before {
   content: "";
@@ -4696,19 +4723,26 @@ input::-moz-placeholder {
 }
 .product__listContent h2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.03em;
   margin-top: 0;
   margin-bottom: 0;
 }
+@media (min-width: 992px) {
+  .product__listContent h2 {
+    font-size: 36px;
+  }
+}
 .product__listContent .fnt-24 {
+  font-size: 16px;
   margin-top: 16px;
   margin-bottom: 34px;
 }
 @media (min-width: 768px) {
   .product__listContent .fnt-24 {
     margin-top: 24px;
+    font-size: 20px;
     margin-bottom: 48px;
   }
 }

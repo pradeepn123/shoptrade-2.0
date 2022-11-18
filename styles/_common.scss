@@ -576,6 +576,10 @@ input::-moz-placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
+
+    @media (min-width:767px) {
+        left: 40%;
+    }
 }
 
 /* Safari */

@@ -8,6 +8,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/adapthealth_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -17,6 +18,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/angles90.png",
             "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -26,6 +28,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -35,6 +38,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/buunni.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -44,6 +48,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/chill.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -53,6 +58,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/club-sulivan.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
@@ -62,6 +68,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -71,6 +78,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/swing.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
@@ -80,6 +88,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -89,6 +98,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/synchro.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -98,6 +108,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lenze.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -107,6 +118,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/paymore.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -116,6 +128,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/ortho.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-artho.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -125,24 +138,29 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
         "a154bb33-3944-473d-a900-8fe847a8cbd6": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/sendif_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/Sendif.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
         "4f536d0a-f989-4a1e-b706-e379ef217bca": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/tikshop.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-tikshop.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
@@ -152,6 +170,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
+            "clickble": true,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
