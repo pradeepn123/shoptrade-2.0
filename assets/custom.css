@@ -2334,7 +2334,7 @@ input::-moz-placeholder {
     font-size: 12px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 330px) {
   .UImainText h2 {
     font-size: 8px;
   }
