@@ -1222,7 +1222,7 @@ input::-moz-placeholder {
   flex: 1;
 }
 .ourWork__cardBody .work-body h3 {
-  line-height: 40px;
+  line-height: 44px;
 }
 .ourWork__cardBody .btn-wrp {
   position: absolute;
@@ -1300,6 +1300,9 @@ input::-moz-placeholder {
   border: 2px solid var(--COLOR-BLACK);
 }
 
+.work {
+  padding-bottom: 40px;
+}
 .work h1 {
   max-width: 800px;
   width: 100%;
@@ -1343,12 +1346,19 @@ input::-moz-placeholder {
   padding: 24px 16px 32px;
   border-top: 2px solid #000;
   height: 108PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 991px) {
   .work .work-logo-footer {
     padding: 24px 16px 32px;
     height: 94px;
   }
+}
+.work .work-logo-footer__imgWrp {
+  text-align: center;
+  display: flex;
 }
 .work .ourWork__cards {
   overflow: hidden;
@@ -1431,7 +1441,7 @@ input::-moz-placeholder {
   top: 50%;
   transform: translateY(-50%);
   width: calc((100% - 1320px) / 2);
-  border: 1px solid var(--COLOR-BLACK);
+  border: 0.5px solid var(--COLOR-BLACK);
 }
 .vedio::after {
   content: "";
@@ -1440,7 +1450,7 @@ input::-moz-placeholder {
   top: 50%;
   transform: translateY(-50%);
   width: calc((100% - 1320px) / 2);
-  border: 1px solid var(--COLOR-BLACK);
+  border: 0.5px solid var(--COLOR-BLACK);
 }
 @media (min-width: 768px) {
   .vedio::after, .vedio::before {
@@ -1959,7 +1969,7 @@ input::-moz-placeholder {
   letter-spacing: 0.03em;
 }
 .testimonials__footer .designation {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--COLOR-BLACK);
 }
 .testimonials__wrp {
@@ -2433,7 +2443,6 @@ input::-moz-placeholder {
     content: "";
     position: absolute;
     background: var(--COLOR-PRIMARY);
-    border: 1px solid var(--COLOR-BLACK);
     border-radius: 160px;
     bottom: -18px;
     width: 11px;
@@ -3370,6 +3379,16 @@ input::-moz-placeholder {
     padding: 40px 20px;
   }
 }
+@media (min-width: 992px) {
+  .ourServices__cardItem:nth-last-child(1) {
+    border-bottom: none;
+  }
+}
+@media (min-width: 992px) {
+  .ourServices__cardItem:nth-last-child(2) {
+    border-bottom: none;
+  }
+}
 @media (max-width: 767px) {
   .ourServices__cardItem:not(:last-child)::before {
     content: "";
@@ -3438,9 +3457,15 @@ input::-moz-placeholder {
 }
 .ourServices__cardText {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--COLOR-BLACK);
+}
+@media (min-width: 991px) {
+  .ourServices__cardText {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 .ourServices .service-marque-right {
   margin: 0 -15px;
@@ -3710,16 +3735,18 @@ input::-moz-placeholder {
 .mission__item h3 {
   margin-top: 0;
   margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
 }
 .mission__item p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 194%;
+  font-size: 20px;
+  line-height: 28px;
   color: var(--COLOR-BLACK);
+}
+@media (max-width: 991px) {
+  .mission__item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .workculter__head {
@@ -3738,7 +3765,6 @@ input::-moz-placeholder {
   object-position: top;
   object-fit: cover;
   border: 1px solid var(--COLOR-BLACK);
-  border-radius: 10px;
 }
 .workculter .sliderTop {
   margin-bottom: 40px;
@@ -3940,6 +3966,7 @@ input::-moz-placeholder {
 .about-team .js-arrow-right {
   display: inline-block;
   right: -100px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .about-team .js-arrow-right {
@@ -4100,7 +4127,14 @@ input::-moz-placeholder {
 }
 
 .about-team-members {
-  padding-bottom: 60px;
+  border-bottom: 1px solid var(--COLOR-BLACK);
+  margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .about-team-members__card:nth-child(3n+2) {
+    border-right: 0 !important;
+    border-left: 0 !important;
+  }
 }
 @media (max-width: 992px) {
   .about-team-members__head {
@@ -4111,7 +4145,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 992px) {
   .about-team-members {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 .about-team-members__imgMain {
@@ -4132,6 +4166,7 @@ input::-moz-placeholder {
 .about-team-members__container li {
   width: 33.3333333333%;
   border: 1px solid var(--COLOR-BLACK);
+  border-bottom: 0;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -4196,6 +4231,11 @@ input::-moz-placeholder {
 @media (max-width: 1680px) {
   .about-team-members__img.nopatch {
     height: 348px;
+  }
+}
+@media (min-width: 1680px) {
+  .about-team-members__img.nopatch {
+    height: 428px;
   }
 }
 .about-team-members__img::after {
@@ -4672,6 +4712,9 @@ input::-moz-placeholder {
   text-decoration: none;
 }
 
+.product {
+  border-top: 1px solid #000;
+}
 .product__list {
   list-style: none;
   padding: 0;

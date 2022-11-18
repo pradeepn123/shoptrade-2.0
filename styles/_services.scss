@@ -73,6 +73,21 @@
             padding: 40px 20px;
         }
 
+        &:nth-last-child(1) {
+            @media (min-width:992px) {
+
+                border-bottom: none;
+            }
+
+        }
+
+        &:nth-last-child(2) {
+            @media (min-width:992px) {
+                border-bottom: none;
+            }
+
+        }
+
         &:not(:last-child)::before {
             @media (max-width:767px) {
                 content: "";
@@ -89,7 +104,7 @@
             }
         }
 
-        &:last-child {            
+        &:last-child {
             @media (max-width:767px) {
 
                 border-bottom: 0 solid #000;
@@ -112,7 +127,7 @@
 
             }
         }
-        
+
         &:nth-child(odd) {
             @media (min-width:768px) {
                 border-right: 1px solid var(--COLOR-BLACK);
@@ -163,9 +178,14 @@
 
     &__cardText {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 24px;
         color: var(--COLOR-BLACK);
+        @media (min-width:991px) {
+            
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
 
     .service-marque-right {
@@ -257,7 +277,7 @@
         @media (max-width:991px) {
             padding-top: 40px;
             padding-bottom: 40px;
-            margin:  0 !important;
+            margin: 0 !important;
         }
 
     }
@@ -279,9 +299,10 @@
         border: 1px solid var(--COLOR-BLACK);
 
         @media (max-width:1335px) {
-            flex-basis:calc(100% / 3);
+            flex-basis: calc(100% / 3);
             padding: 30px;
         }
+
         @media (max-width:991px) {
             flex-basis: 50%;
             padding: 30px;
@@ -295,8 +316,9 @@
         }
 
 
-        &:nth-child(odd){
+        &:nth-child(odd) {
             position: relative;
+
             &::after {
                 @media (max-width:991px) {
 
@@ -315,11 +337,12 @@
 
         }
 
-        &:nth-last-child(2){
+        &:nth-last-child(2) {
             &::after {
                 @media (max-width:991px) {
                     display: none;
-                }}
+                }
+            }
         }
 
         &:nth-child(1),
@@ -344,6 +367,7 @@
                 }
             }
         }
+
         &:nth-child(-n+3) {
             position: relative;
 
@@ -369,9 +393,10 @@
 .service-showcase {
     h2 {
         margin: 0;
+
         @media (min-width:992px) {
             margin: 60px 0;
-            
+
         }
 
     }
@@ -382,17 +407,19 @@
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+
     p {
 
-        animation: textAnimation linear infinite  6s;
+        animation: textAnimation linear infinite 6s;
         white-space: nowrap;
     }
-   
+
 
     @keyframes textAnimation {
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-100%);
         }

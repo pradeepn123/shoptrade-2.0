@@ -85,17 +85,23 @@
         h3 {
             margin-top: 0;
             margin-bottom: 24px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 100%;
-            letter-spacing: -0.03em;
+            // font-weight: 700;
+            // font-size: 24px;
+            // line-height: 100%;
+            // letter-spacing: -0.03em;
         }
 
         p {
             font-weight: 400;
-            font-size: 16px;
-            line-height: 194%;
+            font-size: 20px;
+            line-height: 28px;
+            // line-height: 194%;
             color: var(--COLOR-BLACK);
+            @media (max-width:991px) {
+                font-size: 16px;
+                line-height: 24px;
+                
+            }
         }
     }
 }
@@ -124,7 +130,7 @@
             object-position: top;
             object-fit: cover;
             border: 1px solid var(--COLOR-BLACK);
-            border-radius: 10px;
+            // border-radius: 10px;
         }
     }
 
@@ -376,6 +382,7 @@
     .js-arrow-right {
         display: inline-block;
         right: -100px;
+        cursor: pointer;
 
         @media (max-width:767px) {
             right: -60px;
@@ -563,8 +570,15 @@
 }
 
 .about-team-members {
-    padding-bottom: 60px;
-
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    margin-bottom: 60px;
+    &__card {
+        &:nth-child(3n+2) {
+            @media (min-width:992px) {
+            border-right: 0 !important;
+            border-left: 0 !important;}
+        }
+    }
     &__head {
         @media (max-width:992px) {
             margin-bottom: 40px;
@@ -574,7 +588,7 @@
     }
 
     @media (max-width:992px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
 
     }
 
@@ -603,6 +617,7 @@
             width: calc(100%/3);
             // border-top: 1px solid var(--COLOR-BLACK);
             border: 1px solid var(--COLOR-BLACK);
+            border-bottom: 0;
 
             position: relative;
 
@@ -688,6 +703,9 @@
         &.nopatch {
             @media (max-width:1680px) {
                 height: 348px;
+            }
+            @media (min-width:1680px) {
+                height: 428px;
             }
         }
         &::after {
