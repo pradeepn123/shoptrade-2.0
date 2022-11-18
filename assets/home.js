@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(".js-video-thumbnail").hide()
  
     $('video').css("opacity","1")
-  },1000)
+  },2000)
 
  
   
