@@ -35,7 +35,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Shopify App Development",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nHave you got a super-specific functionality requirement or an app idea? So specific, there isn’t an existing app to cater for it? If not, we can help\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.<\/p>   \n<br><a href=\"https:\/\/shoptrade.co\/pages\/products\">Checkout our apps  <\/a>\n                             \n<\/li>       \n<\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nHave you got a super-specific functionality requirement or an app idea? So specific, there isn’t an existing app to cater for it? If not, we can help\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.<\/p>   \n<br><a href=\"https:\/\/shoptrade.co\/pages\/products\"><p>Checkout our apps<\/p>  <\/a>\n                             \n<\/li>       \n<\/ul>"
           }
         },
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
