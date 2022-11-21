@@ -28,7 +28,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "Headless Commerce",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Headless commerce is the decoupling of your website front-end (the “head”) from your back-end content and commerce systems. This brings extreme flexibility and crazy-fast site speed.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">But headless setups require huge expertise and higher ongoing costs, which is why we believe they’re only right for very specific business cases. If you’re interested in headless, we can talk you through the many options for this architecture, and have our team deliver a best-in-class result.     <\/p>                                <\/li>                             <\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nHeadless commerce is the decoupling of your website front-end (the “head”) from your back-end content and commerce systems. This brings extreme flexibility and outstandingly fast site speed.\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nHeadless setups require specific expertise and higher ongoing costs, which is why we believe they’re only right for very precise business cases. If you’re interested in headless commerce, we can talk you through the options for your business and have our team deliver a best-in-class result.\n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
         "7de9a382-de41-4034-9eb7-985a4001f0ab": {
