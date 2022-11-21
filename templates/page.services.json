@@ -31,11 +31,11 @@
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nHeadless commerce is the decoupling of your website front-end (the “head”) from your back-end content and commerce systems. This brings extreme flexibility and outstandingly fast site speed.\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nHeadless setups require specific expertise and higher ongoing costs, which is why we believe they’re only right for very precise business cases. If you’re interested in headless commerce, we can talk you through the options for your business and have our team deliver a best-in-class result.\n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
-        "7de9a382-de41-4034-9eb7-985a4001f0ab": {
+        "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "Development",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">We develop online stores that convert visitors to customers and are ready to scale, using the power of Shopify Plus. We’ll build your Shopify store compliant, accessible and extensible as well as optimized for SEO, performance, internationalization, and mobile.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\"> Our team has built custom themes for some of the most complex requirements out there, that don’t only push the boundaries of Shopify Plus, but e-commerce as a whole <\/p>                                <\/li>\n<\/ul>"
+            "cardHeading": "Shopify App Development",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Have you got a super-specific functionality requirement & an app idea? So niche, there isn’t an existing app to cater for it? Well, not yet... <\/p>\n<\/li>   \n\n<p class=\"ourServices__cardText\"> Our App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.\n<\/p>                                                             <\/ul>"
           }
         },
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
@@ -45,18 +45,11 @@
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Your e-commerce team should be focused on growth. Not bogged down by manually inputting data again and again into overly-complex spreadsheets.\n<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">Let us connect your online store to the back-end of your retail operations. We’ll integrate all your product, customer and order data between Shopify and your ERP, PIM and marketing systems. Then, watch your team get their time back to focus on what matters the most.   <\/p>\n<\/li>\n<\/ul>"
           }
         },
-        "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
+        "7de9a382-de41-4034-9eb7-985a4001f0ab": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "Shopify App Development",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Have you got a super-specific functionality requirement & an app idea? So niche, there isn’t an existing app to cater for it? Well, not yet... <\/p>\n<\/li>   \n\n<p class=\"ourServices__cardText\"> Our App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.\n<\/p>                                                             <\/ul>"
-          }
-        },
-        "659e6233-0209-4682-aead-afcbd918713a": {
-          "type": "serviceCard",
-          "settings": {
-            "cardHeading": "Offline to Online",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Does your brand use physical channels as well as a Shopify store? There are omnichannel technologies available to connect your online-to-offline touchpoints.<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">If you run permanent physical stores or temporary pop-ups, Shopify POS can unify your online and in-person sales. If you sell events’ tickets and want to streamline the check-in experience, then Event Ticketing could be for you.      <\/p>\n<\/li>\n<\/ul>"
+            "cardHeading": "Development",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">We develop online stores that convert visitors to customers and are ready to scale, using the power of Shopify Plus. We’ll build your Shopify store compliant, accessible and extensible as well as optimized for SEO, performance, internationalization, and mobile.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\"> Our team has built custom themes for some of the most complex requirements out there, that don’t only push the boundaries of Shopify Plus, but e-commerce as a whole <\/p>                                <\/li>\n<\/ul>"
           }
         },
         "652be96d-9e9c-4402-afa1-0df03979a209": {
@@ -64,6 +57,13 @@
           "settings": {
             "cardHeading": "Performance enhancement",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\"> When it comes to e-commerce, time really is money. A slow store can damage your bounce rate, hurt your conversions, and slash your search positions.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">We use a custom development framework and keep a stern focus when designing-to-convert, creating Shopify stores that are some of the fastest out there. Passionate about performance, we can keep tuning your website for speed as well, so that even as your business expands, your store remains lightning-fast.<\/p>                                <\/li>\n<\/ul>"
+          }
+        },
+        "659e6233-0209-4682-aead-afcbd918713a": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "Offline to Online",
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Does your brand use physical channels as well as a Shopify store? There are omnichannel technologies available to connect your online-to-offline touchpoints.<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">If you run permanent physical stores or temporary pop-ups, Shopify POS can unify your online and in-person sales. If you sell events’ tickets and want to streamline the check-in experience, then Event Ticketing could be for you.      <\/p>\n<\/li>\n<\/ul>"
           }
         },
         "57217090-2113-46e1-b790-eb3fc9b915ca": {
@@ -79,11 +79,11 @@
         "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088",
         "cd542eb9-0e6e-46c1-adde-a8f79d9581d6",
         "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20",
-        "7de9a382-de41-4034-9eb7-985a4001f0ab",
-        "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee",
         "1a756da3-7bd4-44b9-b318-a700d8e6c624",
-        "659e6233-0209-4682-aead-afcbd918713a",
+        "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee",
+        "7de9a382-de41-4034-9eb7-985a4001f0ab",
         "652be96d-9e9c-4402-afa1-0df03979a209",
+        "659e6233-0209-4682-aead-afcbd918713a",
         "57217090-2113-46e1-b790-eb3fc9b915ca"
       ],
       "settings": {
