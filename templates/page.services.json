@@ -20,7 +20,7 @@
         "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "Replatforming",
+            "cardHeading": "Replatforming\/Migration",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nMoving between platforms can be a daunting task. Me make this challenge look easy. Majority of our Shopify Plus projects involve migrating brands from Magento , CommerceCloud, and various platforms to Shopify. \n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nIf we’re handling your brand’s re-platforming project, you’ll be able to count on our experience to deliver. Your data will be transferred seamlessly and your integrations are connected flawlessly. Leaving you with all the benefits, and none of the risks of migration. \n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
