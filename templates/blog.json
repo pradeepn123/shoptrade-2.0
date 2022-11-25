@@ -3,7 +3,7 @@
     "blog-banner": {
       "type": "blog-banner",
       "settings": {
-        "heading": "Blogs"
+        "heading": "Insights"
       }
     },
     "list": {
