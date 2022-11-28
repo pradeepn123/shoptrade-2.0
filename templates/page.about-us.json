@@ -393,7 +393,7 @@
             "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Faizal1.jpg",
             "memberName": "Faizal Ahamed",
-            "memberDesignation": "Design I (Product Design Specialist)",
+            "memberDesignation": "Design I - (Product Design Specialist)",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -434,18 +434,6 @@
             "careerLink": ""
           }
         },
-        "21f45427-c113-4cd9-85de-b6801c87055a": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Sarudh.jpg",
-            "memberName": "Sahrudh Prathi",
-            "memberDesignation": "Front-End Engineer",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "60038901-e4a8-4923-8048-f3c74cc08420": {
           "type": "cardType",
           "settings": {
@@ -458,18 +446,6 @@
             "careerLink": ""
           }
         },
-        "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Vinod_30c4a7cf-fa58-43b7-941f-9b407a8cf4c7.jpg",
-            "memberName": "Vinod Kalyan",
-            "memberDesignation": "Front-End Engineer",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "3b11f28a-2ded-4057-9dfe-1740745bab46": {
           "type": "cardType",
           "settings": {
@@ -477,6 +453,30 @@
             "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Shivanshi.jpg",
             "memberName": "Shivanshi Gupta",
+            "memberDesignation": "Front-End Engineer",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "21f45427-c113-4cd9-85de-b6801c87055a": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Sarudh.jpg",
+            "memberName": "Sahrudh Prathi",
+            "memberDesignation": "Front-End Engineer",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Vinod_30c4a7cf-fa58-43b7-941f-9b407a8cf4c7.jpg",
+            "memberName": "Vinod Kalyan",
             "memberDesignation": "Front-End Engineer",
             "careerbtn": "",
             "careerLink": ""
@@ -567,10 +567,10 @@
         "96ec600a-46e6-4781-bf21-2a08ef282c77",
         "c82d69dd-0a55-4bee-9c38-88f027091d0b",
         "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
-        "21f45427-c113-4cd9-85de-b6801c87055a",
         "60038901-e4a8-4923-8048-f3c74cc08420",
-        "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
         "3b11f28a-2ded-4057-9dfe-1740745bab46",
+        "21f45427-c113-4cd9-85de-b6801c87055a",
+        "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
         "436484f0-034c-4e1e-8ef4-471b6aae546a",
         "b83a8738-e232-4799-a200-a99760854011",
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
