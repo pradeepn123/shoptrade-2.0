@@ -16,7 +16,7 @@
         padding: 30px;
         .form-content{
             margin: 2em auto;
-            width: 50%;
+            width: 58%;
             h1 {
                 font-family: 'Epilogue';
                 font-style: normal;
@@ -32,7 +32,7 @@
                 font-size: .6em;
                 line-height: 1.5em;
                 text-indent: .5em;
-                width: 380px;
+                width: 100%;
                 height: 9.25px;
                 border: 1px solid #EFEFEF;
                 background: #fff;
@@ -58,11 +58,133 @@
                 line-height: 27px;
                 letter-spacing: -0.03em;
                 text-align: left;
-                margin-top: 1em;
+                margin: 20px 0 25px;
+            }
+            .form-tab {
+                display: none;
+                .form-group {
+                    width: 100%;
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    input {
+                        border: 1px solid #A6A9AB;
+                        border-radius: 8px;
+                        padding: 12px 16px;
+                        width: 100%;
+                        font-size: 16px;
+                        line-height: 19px;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    .custom-checkbox-wrapper {
+                        position: relative;
+                        padding-left: 35px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.03em;
+                        color: #83898C;
+
+                        input[type=checkbox] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        } 
+                        .custom-checkbox {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 6px;
+                            background-color: #eee;
+                        }
+
+                        /* On mouse-over, add a grey background color */
+                        &:hover input[type=checkbox] ~ .custom-checkbox {
+                            background-color: #ccc;
+                        }
+                        
+                        /* When the checkbox is checked, add a blue background */
+                        input[type=checkbox]:checked ~ .custom-checkbox {
+                            background-color: #FF7121;;
+                        }
+                        
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .custom-checkbox:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        
+                        /* Show the checkmark when checked */
+                        input[type=checkbox]:checked ~ .custom-checkbox:after {
+                            display: block;
+                        }
+                        
+                        /* Style the checkmark/indicator */
+                        .custom-checkbox:after {
+                            left: 7px;
+                            top: 6px;
+                            width: 5.5px;
+                            height: 8px;
+                            border: solid white;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                    .invalid {
+                        border-color: red;
+                    }
+                }
+            }
+            .form-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+                .btn {
+                    padding: 11px 22px;
+                    border: 1px solid #000000;
+                    border-radius: 6px;
+                    margin-left: 10px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 100%;
+                    font-family: "Epilogue", sans-serif;
+                }
+                .btn--orange {
+                    &:after {
+                        background: #FF7121;
+                        border: 1px solid #000000;
+                        border-radius: 10px 6px 11px;
+                        width: 107%;
+                        height: 115%;
+                        z-index: -1;
+                    }
+                    &:hover {
+                        padding: 11px 33px;
+                        background-color: #fff;
+                        &:after {
+                            opacity: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border: none;
+                        }
+                    }
+                }
             }
         }
-        
-        
     }
     .testimonial-content {
         width: 50%;
@@ -112,3 +234,24 @@
     }
 }
 
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+.testimonial-card {
+    display: none;
+}

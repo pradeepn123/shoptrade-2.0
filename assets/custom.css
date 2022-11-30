@@ -4888,7 +4888,7 @@ input::-moz-placeholder {
 }
 #contact-popup .left-contact-content .form-content {
   margin: 2em auto;
-  width: 50%;
+  width: 58%;
 }
 #contact-popup .left-contact-content .form-content h1 {
   font-family: "Epilogue";
@@ -4905,7 +4905,7 @@ input::-moz-placeholder {
   font-size: 0.6em;
   line-height: 1.5em;
   text-indent: 0.5em;
-  width: 380px;
+  width: 100%;
   height: 9.25px;
   border: 1px solid #EFEFEF;
   background: #fff;
@@ -4931,7 +4931,123 @@ input::-moz-placeholder {
   line-height: 27px;
   letter-spacing: -0.03em;
   text-align: left;
-  margin-top: 1em;
+  margin: 20px 0 25px;
+}
+#contact-popup .left-contact-content .form-content .form-tab {
+  display: none;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group input {
+  border: 1px solid #A6A9AB;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  box-shadow: none;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #83898C;
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper:hover input[type=checkbox] ~ .custom-checkbox {
+  background-color: #ccc;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox {
+  background-color: #FF7121;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox:after {
+  display: block;
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
+  left: 7px;
+  top: 6px;
+  width: 5.5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#contact-popup .left-contact-content .form-content .form-tab .form-group .invalid {
+  border-color: red;
+}
+#contact-popup .left-contact-content .form-content .form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#contact-popup .left-contact-content .form-content .form-buttons .btn {
+  padding: 11px 22px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Epilogue", sans-serif;
+}
+#contact-popup .left-contact-content .form-content .form-buttons .btn--orange:after {
+  background: #FF7121;
+  border: 1px solid #000000;
+  border-radius: 10px 6px 11px;
+  width: 107%;
+  height: 115%;
+  z-index: -1;
+}
+#contact-popup .left-contact-content .form-content .form-buttons .btn--orange:hover {
+  padding: 11px 33px;
+  background-color: #fff;
+}
+#contact-popup .left-contact-content .form-content .form-buttons .btn--orange:hover:after {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: none;
 }
 #contact-popup .testimonial-content {
   width: 50%;
@@ -4978,4 +5094,26 @@ input::-moz-placeholder {
   line-height: 25.28px;
   margin-top: 0;
   color: #000000;
+}
+
+button {
+  background-color: #04AA6D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.testimonial-card {
+  display: none;
 }
