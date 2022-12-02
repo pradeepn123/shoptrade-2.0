@@ -1,245 +1,409 @@
 <div id="contact-popup">
-    <div class="contact-content">
-        <div class="left-contact-content">
-            <div class="logo-icon">
-                <svg width="49" height="66" viewBox="0 0 49 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M48.9998 33.8918C48.9998 31.7229 47.2455 29.9639 45.0815 29.9639H43.0582C40.8942 29.9639 39.1399 31.722 39.1399 33.8909C39.1399 36.0597 40.8942 37.8189 43.0582 37.8189H45.0815C47.2455 37.8189 48.9998 36.0606 48.9998 33.8918Z" fill="#FF7121"/>
-                    <path d="M37.2012 33.6C37.203 33.5813 37.203 33.5626 37.2012 33.5439C37.1977 33.4393 37.1866 33.3351 37.1678 33.2321C37.1661 33.2047 37.1661 33.1771 37.1678 33.1497C37.1489 33.0594 37.1344 32.9772 37.1119 32.8913L37.0668 32.7294L37.0334 32.6281C36.8356 32.005 36.483 31.4424 36.0086 30.9933C35.5344 30.5442 34.9539 30.2233 34.322 30.0607H34.2768L34.1046 30.0191L33.8574 29.9776H33.7528C33.6517 29.9776 33.5543 29.9586 33.4533 29.955H2.15329L0.947278 31.3472C0.276246 32.1234 -0.0610353 33.1342 0.00910351 34.1588C0.0792423 35.1834 0.551103 36.1385 1.32162 36.8155L1.39648 36.8834C1.7924 37.2277 2.25428 37.4876 2.75385 37.6469C3.25343 37.8062 3.78018 37.8617 4.30188 37.81H24.6695L5.97603 59.3365C5.29566 60.122 4.95314 61.1455 5.02328 62.1833C5.09342 63.2211 5.57052 64.189 6.35037 64.8754C7.13481 65.5578 8.15682 65.9013 9.19316 65.831C10.2295 65.7607 11.196 65.2823 11.8816 64.5003L36.2215 36.4621C36.4403 36.208 36.6252 35.9266 36.7718 35.6249C36.7718 35.6249 36.7908 35.5915 36.798 35.5761C36.8313 35.5012 36.8656 35.4297 36.8954 35.3547C36.9251 35.2797 36.9369 35.2463 36.9549 35.1892L37 35.0617C37.0262 34.9714 37.0524 34.881 37.0712 34.7905L37.0939 34.7083C37.104 34.6047 37.1215 34.502 37.1461 34.4009C37.1442 34.3811 37.1442 34.3611 37.1461 34.3412C37.1426 34.2332 37.1502 34.125 37.1687 34.0186V33.8875C37.1921 33.7934 37.203 33.6968 37.2012 33.6Z" fill="#FF7121"/>
-                    <path d="M32.6803 6.4892C33.3524 5.71281 33.6905 4.70123 33.6203 3.67574C33.5502 2.65026 33.0776 1.69436 32.306 1.01718L32.2311 0.949379C31.4566 0.27686 30.4481 -0.0611706 29.4257 0.00912367C28.4035 0.0794179 27.4504 0.552324 26.7748 1.32454L5.71899 25.7185H16.1103L32.6803 6.4892Z" fill="#FF7121"/>
-                </svg>
+  <div class="contact-content">
+    <div id="left-contact-content">
+      <div class="logo-icon">
+        <svg width="49" height="66" viewBox="0 0 49 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48.9998 33.8918C48.9998 31.7229 47.2455 29.9639 45.0815 29.9639H43.0582C40.8942 29.9639 39.1399 31.722 39.1399 33.8909C39.1399 36.0597 40.8942 37.8189 43.0582 37.8189H45.0815C47.2455 37.8189 48.9998 36.0606 48.9998 33.8918Z" fill="#FF7121"/>
+          <path d="M37.2012 33.6C37.203 33.5813 37.203 33.5626 37.2012 33.5439C37.1977 33.4393 37.1866 33.3351 37.1678 33.2321C37.1661 33.2047 37.1661 33.1771 37.1678 33.1497C37.1489 33.0594 37.1344 32.9772 37.1119 32.8913L37.0668 32.7294L37.0334 32.6281C36.8356 32.005 36.483 31.4424 36.0086 30.9933C35.5344 30.5442 34.9539 30.2233 34.322 30.0607H34.2768L34.1046 30.0191L33.8574 29.9776H33.7528C33.6517 29.9776 33.5543 29.9586 33.4533 29.955H2.15329L0.947278 31.3472C0.276246 32.1234 -0.0610353 33.1342 0.00910351 34.1588C0.0792423 35.1834 0.551103 36.1385 1.32162 36.8155L1.39648 36.8834C1.7924 37.2277 2.25428 37.4876 2.75385 37.6469C3.25343 37.8062 3.78018 37.8617 4.30188 37.81H24.6695L5.97603 59.3365C5.29566 60.122 4.95314 61.1455 5.02328 62.1833C5.09342 63.2211 5.57052 64.189 6.35037 64.8754C7.13481 65.5578 8.15682 65.9013 9.19316 65.831C10.2295 65.7607 11.196 65.2823 11.8816 64.5003L36.2215 36.4621C36.4403 36.208 36.6252 35.9266 36.7718 35.6249C36.7718 35.6249 36.7908 35.5915 36.798 35.5761C36.8313 35.5012 36.8656 35.4297 36.8954 35.3547C36.9251 35.2797 36.9369 35.2463 36.9549 35.1892L37 35.0617C37.0262 34.9714 37.0524 34.881 37.0712 34.7905L37.0939 34.7083C37.104 34.6047 37.1215 34.502 37.1461 34.4009C37.1442 34.3811 37.1442 34.3611 37.1461 34.3412C37.1426 34.2332 37.1502 34.125 37.1687 34.0186V33.8875C37.1921 33.7934 37.203 33.6968 37.2012 33.6Z" fill="#FF7121"/>
+          <path d="M32.6803 6.4892C33.3524 5.71281 33.6905 4.70123 33.6203 3.67574C33.5502 2.65026 33.0776 1.69436 32.306 1.01718L32.2311 0.949379C31.4566 0.27686 30.4481 -0.0611706 29.4257 0.00912367C28.4035 0.0794179 27.4504 0.552324 26.7748 1.32454L5.71899 25.7185H16.1103L32.6803 6.4892Z" fill="#FF7121"/>
+        </svg>
+      </div>
+      <div class="form-content">
+        <h1>
+          Contact Us
+        </h1>
+        <!-- <form method="POST" action="https://formspree.io/f/xgeqbpbl" enctype="multipart/form-data" multistep="true"> -->
+        <form method="POST" action="#" enctype="multipart/form-data" multistep="true">
+          <progress id="form-progress" value="25" max="100">
+            25%
+          </progress>
+          <!-- One "tab" for each step in the form: -->
+          <div class="form-tab">
+            <h2>
+              Fill in your details below and an expert from our side will get back to you within 48 hours.
+            </h2>
+            <div class="form-group">
+              <input type="text" placeholder="Name" oninput="this.className = ''" name="name">
             </div>
-            <div class="form-content">
-                <h1>
-                    Contact Us
-                </h1>
-                <!-- <form method="POST" action="https://formspree.io/f/xgeqbpbl" enctype="multipart/form-data" multistep="true"> -->
-                <form method="POST" action="#" enctype="multipart/form-data" multistep="true">
-                    <progress id="form-progress" value="25" max="100"> 25% </progress>
-                    <h2>
-                        Fill in your details below and an expert from our side will get back to you within 48 hours.
-                    </h2>
-                
-                    <!-- One "tab" for each step in the form: -->
-                    <div class="form-tab">
-                        <div class="form-group">
-                            <input type="text" placeholder="Name" oninput="this.className = ''" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email Id" oninput="this.className = ''" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone number" oninput="this.className = ''" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Company name" oninput="this.className = ''" name="company">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Website" oninput="this.className = ''" name="website">
-                        </div>
-                        <div class="form-group">
-                            <label class="custom-checkbox-wrapper">
-                                <input type="checkbox" name="subscribe">
-                                <span class="custom-checkbox"></span>
-                                I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form-tab">Contact Info:
-                        <input placeholder="E-mail..." oninput="this.className = ''" name="email">
-                        <input placeholder="Phone..." oninput="this.className = ''" name="phone">
-                    </div>
-                    <div class="form-tab">Birthday:
-                        <input placeholder="dd" oninput="this.className = ''" name="dd">
-                        <input placeholder="mm" oninput="this.className = ''" name="nn">
-                        <input placeholder="yyyy" oninput="this.className = ''" name="yyyy">
-                    </div>
-                    <div class="form-tab">Login Info:
-                        <input placeholder="Username..." oninput="this.className = ''" name="uname">
-                        <input placeholder="Password..." oninput="this.className = ''" name="pword" type="password">
-                    </div>
-                    <div class="form-buttons" style="overflow:auto;">
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
-                        <button type="button" id="nextBtn" class="btn btn--orange" onclick="nextPrev(1)">Next</button>
-                    </div>
-                </form>
+            <div class="form-group">
+              <input type="email" placeholder="Email Id" oninput="this.className = ''" name="email">
             </div>
-        </div>
-        <div class="testimonial-content">
-            <div class="close-icon" onclick="closePopup()">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
-                <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
-                <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
-                </svg>
+            <div class="form-group">
+              <input type="tel" placeholder="Phone number" oninput="this.className = ''" name="phone">
             </div>
-            <div class="testimonial-card">
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469" />
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015" />
-                    <p class="testimonial">
-                        “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
-                    </p>
-                    <p class="author">
-                        Harley Finkelstein
-                    </p>
-                    <p class="designation">
-                        President of Shopify
-                    </p>
-                </div>
+            <div class="form-group">
+              <input type="text" placeholder="Company name" oninput="this.className = ''" name="company">
             </div>
-            <div class="testimonial-card">
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469" />
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015" />
-                    <p class="testimonial">
-                        “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
-                    </p>
-                    <p class="author">
-                        hdsgf
-                    </p>
-                    <p class="designation">
-                        President of Shopify
-                    </p>
-                </div>
+            <div class="form-group">
+              <input type="url" placeholder="Website" oninput="this.className = ''" name="website">
             </div>
-            <div class="testimonial-card">
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469" />
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015" />
-                    <p class="testimonial">
-                        “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
-                    </p>
-                    <p class="author">
-                        ueri
-                    </p>
-                    <p class="designation">
-                        President of Shopify
-                    </p>
-                </div>
+            <div class="form-group">
+              <label class="custom-checkbox-wrapper">
+                <input type="checkbox" name="subscribe">
+                <span class="custom-checkbox"></span>
+                I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches
+              </label>
             </div>
-            <div class="testimonial-card">
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469" />
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015" />
-                    <p class="testimonial">
-                        “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
-                    </p>
-                    <p class="author">
-                        wyteo
-                    </p>
-                    <p class="designation">
-                        President of Shopify
-                    </p>
-                </div>
+          </div>
+          <div class="form-tab">
+            <h2 class="form-tab-sub-headings">Project details</h2>
+            <div class="project-select-label">
+              <p class="project-select-label-text">Choose type of service</p>
             </div>
-        </div>
+            <div class="project-select">
+              <div class="form-group">
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="migration">
+                  <span class="custom-checkbox"></span>
+                  Migration
+                </label>
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="customThemeBuild">
+                  <span class="custom-checkbox"></span>
+                  Custom theme build
+                </label>
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="themeSetupCustomization">
+                  <span class="custom-checkbox"></span>
+                  Theme setup & customization
+                </label>
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="headless">
+                  <span class="custom-checkbox"></span>
+                  Headless
+                </label>
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="ShopifyAppDevelopment">
+                  <span class="custom-checkbox"></span>
+                  Shopify app development
+                </label>
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" oninput="this.className = ''" name="NotListed" checked>
+                  <span class="custom-checkbox"></span>
+                  Not Listed
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-tab">
+            <h2 class="form-tab-sub-headings">Budget & Timeline</h2>
+            <div class="project-select-label">
+              <p class="project-select-label-text">Timeline</p>
+            </div>
+            <div class="project-select">
+              <div class="form-group1">
+                <label class="radio-wrapper" style="margin-right: 2em">
+                  <input type="radio" oninput="this.className = ''" name="timeline">
+                  <span class="custom-radio"></span>
+                  1-3 months
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" oninput="this.className = ''" name="timeline">
+                  <span class="custom-radio"></span>
+                  3-6 months
+                </label>
+              </div>
+              <div class="form-group1">
+                <label class="radio-wrapper" style="margin-right: 2.3em">
+                  <input type="radio" oninput="this.className = ''" name="timeline">
+                  <span class="custom-radio"></span>
+                  6+ months
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" oninput="this.className = ''" name="timeline">
+                  <span class="custom-radio"></span>
+                  Not sure
+                </label>
+              </div>
+            </div>
+
+            <div class="project-select-label">
+              <p class="project-select-label-text">Budget Range ( currency mentioned below are in USD )</p>
+            </div>
+            <div class="project-select">
+              <div class="form-group1">
+                <label class="radio-wrapper" style="margin-right: 2em">
+                  <input type="radio" oninput="this.className = ''" name="budget">
+                  <span class="custom-radio"></span>
+                  + $ 5000
+                </label>
+                <label class="radio-wrapper">
+                  <input type="radio" oninput="this.className = ''" name="budget">
+                  <span class="custom-radio"></span>
+                  + $ 10,000
+                </label>
+              </div>
+              <div class="form-group1">
+                <label class="radio-wrapper" style="margin-right: 1.1em">
+                  <input type="radio" oninput="this.className = ''" name="budget">
+                  <span class="custom-radio"></span>
+                  + $ 20,000
+                </label>
+                <label class="radio-wrapper" style="margin-right: 2em">
+                  <input type="radio" oninput="this.className = ''" name="budget">
+                  <span class="custom-radio"></span>
+                  Not sure
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-tab">
+            <h2 class="form-tab-sub-headings">Additional information</h2>
+            <div class="form-group">
+              <textarea id="additional-note" placeholder="Let us know..." oninput="this.className = ''" name="additionalNote"></textarea>
+            </div>
+
+            <div class="form-group block">
+              <label class="label-text">Attachments</label>
+              <input type="file" oninput="this.className = ''" name="attachfile">
+            </div>
+
+          </div>
+          <div class="form-buttons" style="overflow:auto;">
+            <button type="button" id="prevBtn" class="btn btn--back" onclick="nextPrev(-1)">
+              <svg class="back-svg" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle">
+                <path d="M16.1166 8.04547L2.05149 8.04543M9.07129 1L2.00024 8.07104L9.07129 15.1421" stroke="#FF7121" stroke-width="2"/>
+              </svg>
+              Back
+            </button>
+            <button type="button" id="nextBtn" class="btn btn--orange" onclick="nextPrev(1)">Next</button>
+            <button type="submit" id="submitBtn" class="btn btn--orange">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
+    <div id="testimonial-content">
+      <div class="close-icon" onclick="closePopup()">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
+          <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
+          <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="testimonial-card">
+        {% comment %}
+          1
+        {% endcomment %}
+        <div class="card-image">
+          <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469"/>
+        </div>
+        <div class="card-content">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+          <p class="testimonial">
+            “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
+          </p>
+          <p class="author">
+            Harley Finkelstein
+          </p>
+          <p class="designation">
+            President of Shopify
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        {% comment %}
+          2
+        {% endcomment %}
+        <div class="card-image">
+          {% comment %}
+            <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469" />
+          {% endcomment %}
+          <iframe width="382" height="200" src="https://www.youtube.com/embed/9Erlh1_oMxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+          <p class="testimonial">
+            “I am continually impressed by their expertise in Shopify & web development.”
+          </p>
+          <p class="author">
+            Eddie Rosado
+          </p>
+          <p class="designation">
+            VP of product developtment
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        {% comment %}
+          3
+        {% endcomment %}
+        <div class="card-image">
+          <iframe width="382" height="200" src="https://www.youtube.com/embed/PBrlQ2hrX98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/lensAdvisorLogo.png?v=1669874735"/>
+          <p class="testimonial">
+            “ShopTrade was experieced  in developing apps and set  realistic timelines.”
+          </p>
+          <p class="author">
+            Zenos Schmickrath
+          </p>
+          <p class="designation">
+            Co-Founder
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        {% comment %}
+          4
+        {% endcomment %}
+        <div class="card-image">
+          <img class="card-img" src="https://cdn.shopify.com/s/files/1/1951/9451/files/grahamRyan.png?v=1669895433"/>
+        </div>
+        <div class="card-content">
+          <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/synchroLogo.png?v=1669895532"/>
+          <p class="testimonial">
+            “Their communication and responsiveness are impressive in the workflow.”
+          </p>
+          <p class="author">
+            Graham Ryan
+          </p>
+          <p class="designation">
+            Founder & CEO
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-submit-content">
+      <div class="logo-icon">
+        <svg width="49" height="66" viewBox="0 0 49 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M48.9998 33.8918C48.9998 31.7229 47.2455 29.9639 45.0815 29.9639H43.0582C40.8942 29.9639 39.1399 31.722 39.1399 33.8909C39.1399 36.0597 40.8942 37.8189 43.0582 37.8189H45.0815C47.2455 37.8189 48.9998 36.0606 48.9998 33.8918Z" fill="#FF7121"/>
+          <path d="M37.2012 33.6C37.203 33.5813 37.203 33.5626 37.2012 33.5439C37.1977 33.4393 37.1866 33.3351 37.1678 33.2321C37.1661 33.2047 37.1661 33.1771 37.1678 33.1497C37.1489 33.0594 37.1344 32.9772 37.1119 32.8913L37.0668 32.7294L37.0334 32.6281C36.8356 32.005 36.483 31.4424 36.0086 30.9933C35.5344 30.5442 34.9539 30.2233 34.322 30.0607H34.2768L34.1046 30.0191L33.8574 29.9776H33.7528C33.6517 29.9776 33.5543 29.9586 33.4533 29.955H2.15329L0.947278 31.3472C0.276246 32.1234 -0.0610353 33.1342 0.00910351 34.1588C0.0792423 35.1834 0.551103 36.1385 1.32162 36.8155L1.39648 36.8834C1.7924 37.2277 2.25428 37.4876 2.75385 37.6469C3.25343 37.8062 3.78018 37.8617 4.30188 37.81H24.6695L5.97603 59.3365C5.29566 60.122 4.95314 61.1455 5.02328 62.1833C5.09342 63.2211 5.57052 64.189 6.35037 64.8754C7.13481 65.5578 8.15682 65.9013 9.19316 65.831C10.2295 65.7607 11.196 65.2823 11.8816 64.5003L36.2215 36.4621C36.4403 36.208 36.6252 35.9266 36.7718 35.6249C36.7718 35.6249 36.7908 35.5915 36.798 35.5761C36.8313 35.5012 36.8656 35.4297 36.8954 35.3547C36.9251 35.2797 36.9369 35.2463 36.9549 35.1892L37 35.0617C37.0262 34.9714 37.0524 34.881 37.0712 34.7905L37.0939 34.7083C37.104 34.6047 37.1215 34.502 37.1461 34.4009C37.1442 34.3811 37.1442 34.3611 37.1461 34.3412C37.1426 34.2332 37.1502 34.125 37.1687 34.0186V33.8875C37.1921 33.7934 37.203 33.6968 37.2012 33.6Z" fill="#FF7121"/>
+          <path d="M32.6803 6.4892C33.3524 5.71281 33.6905 4.70123 33.6203 3.67574C33.5502 2.65026 33.0776 1.69436 32.306 1.01718L32.2311 0.949379C31.4566 0.27686 30.4481 -0.0611706 29.4257 0.00912367C28.4035 0.0794179 27.4504 0.552324 26.7748 1.32454L5.71899 25.7185H16.1103L32.6803 6.4892Z" fill="#FF7121"/>
+        </svg>
+      </div>
+      <div id="thankyou-card">
+        <div class="progress-complete">
+          <progress id="form-progress" value="100" max="100">
+            100%
+          </progress>
+        </div>
+        <svg class="done-svg" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_1995_4840)">
+            <circle cx="40.5" cy="32.5" r="16.5" fill="white"/>
+          </g>
+          <path d="M33 32.7391L38.1765 38L49 27" stroke="#FF7121" stroke-width="3"/>
+          <defs>
+            <filter id="filter0_d_1995_4840" x="0" y="0" width="81" height="81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="8"/>
+              <feGaussianBlur stdDeviation="12"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1995_4840"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1995_4840" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
+        <div class="form-success-image">
+          <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/contactSuccessImage.png?v=1669898920" width="212px" height="242px"/>
+        </div>
+        <h2 class="success-title">
+          Thank you for contacting us!
+        </h2>
+        <p class="success-text">
+          We read every message and typically respond within 48 hours.
+        </p>
+      </div>
+      <div class="close-icon" onclick="closePopup()">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
+          <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
+          <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <script>
-    var currentTab = 0; // Current tab is set to be the first tab (0)
-    showTab(currentTab); // Display the current tab
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab(currentTab); // Display the current tab
 
-    function showTab(n) {
-        // This function will display the specified tab of the form...
-        var tabs = document.getElementsByClassName("form-tab");
-        var cards = document.getElementsByClassName("testimonial-card")
-        tabs[n].style.display = "block";
-        cards[n].style.display = "block";
-        //... and fix the Previous/Next buttons:
-        if (n == 0) {
-            document.getElementById("prevBtn").style.visibility = "hidden";
-        } else {
-            document.getElementById("prevBtn").style.visibility = "visible";
-        }
-        if (n == (tabs.length - 1)) {
-            document.getElementById("nextBtn").innerHTML = "Submit";
-        } else {
-            document.getElementById("nextBtn").innerHTML = "Next";
-        }
-        //... and run a function that will display the correct progress:
-        updateProgressBar(n)
+  function showTab(n) {
+
+// This function will display the specified tab of the form...
+    var tabs = document.getElementsByClassName("form-tab");
+    var cards = document.getElementsByClassName("testimonial-card")
+    tabs[n].style.display = "block";
+    cards[n].style.display = "block";
+
+// ... and fix the Previous/Next buttons:
+    if (n == 0) {
+      document.getElementById("prevBtn").style.visibility = "hidden";
+    } else {
+      document.getElementById("prevBtn").style.visibility = "visible";
+    }
+    if (n == (tabs.length - 1)) {
+      {% comment %}
+        document.getElementById("nextBtn").innerHTML = "Submit";{% endcomment %}document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("submitBtn").style.display = "block";
+    } else {
+      {% comment %}
+        document.getElementById("nextBtn").innerHTML = "Next";{% endcomment %}document.getElementById("nextBtn").style.display = "block";
+      document.getElementById("submitBtn").style.display = "none";
     }
 
-    function nextPrev(n) {
-        console.log("next func")
-        // This function will figure out which tab to display
-        var tabs = document.getElementsByClassName("form-tab");
-        var cards = document.getElementsByClassName("testimonial-card")
-        // Exit the function if any field in the current tab is invalid:
-        if (n == 1 && !validateForm()) return false;
-        // Hide the current tab:
-        tabs[currentTab].style.display = "none";
-        cards[currentTab].style.display = "none";
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-        // if you have reached the end of the form...
-        if (currentTab >= tabs.length) {
-            // ... the form gets submitted:
-            document.getElementById("regForm").submit();
-            return false;
-        }
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
+// ... and run a function that will display the correct progress:
+    updateProgressBar(n)
+  }
+
+  function nextPrev(n) {
+    console.log("next func")
+
+// This function will figure out which tab to display
+    var tabs = document.getElementsByClassName("form-tab");
+    var cards = document.getElementsByClassName("testimonial-card")
+
+// Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) 
+      return false;
+    
+
+
+// Hide the current tab:
+    tabs[currentTab].style.display = "none";
+    cards[currentTab].style.display = "none";
+
+// Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+
+// if you have reached the end of the form...
+    if (currentTab >= tabs.length) { // ... the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
     }
 
-    function validateForm() {
-        console.log("validate")
-        // This function deals with validation of the form fields
-        var i, valid = true;
-        var tabs = document.getElementsByClassName("form-tab");
-        var formInput = tabs[currentTab].getElementsByTagName("input");
-        // A loop that checks every input field in the current tab:
-        for (i = 0; i < formInput.length; i++) {
-            console.log("inside form")
-            // If a field is empty...
-            if (formInput[i].value == "") {
-            // add an "invalid" class to the field:
-            formInput[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-            }
-        }
-        // If the valid status is true, mark the step as finished and valid:
-        if (valid) {
-            console.log("valid form")
-            // document.getElementsByClassName("step")[currentTab].className += " finish";
-        }
-        return valid; // return the valid status
-    }
+// Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
 
-    function fixStepIndicator(n) {
-        // This function removes the "active" class of all steps...
-        var i, x = document.getElementsByClassName("step");
-        for (i = 0; i < x.length; i++) {
-            x[i].className = x[i].className.replace(" active", "");
-        }
-        //... and adds the "active" class on the current step:
-        x[n].className += " active";
-    }
+  function validateForm() {
+    console.log("validate")
 
-    function updateProgressBar(n) {
-        var progress = document.querySelector("#form-progress")
-        if (n == 0) {
-            progress.value = 25
-        } else {
-            progress.value += 25
-        }
-    }
+// This function deals with validation of the form fields
+    var i,
+      valid = true;
+    var tabs = document.getElementsByClassName("form-tab");{% comment %}var tabs = document.getElementsByClassName("form-tab");{% endcomment %}var formInput = tabs[currentTab].getElementsByTagName("input");
 
-    function closePopup() {
-        console.log("Close popup...")
-        document.getElementById("contact-popup").style.display = "none";
-        var url = window.location.href;
-        window.location.href = url.replace("/#contact-popup", "");
-        console.log("new url...", url)
-    }
-</script>
+// A loop that checks every input field in the current tab:
+    for (i = 0; i < formInput.length; i++) {
+      console.log("inside form")
+
+// If a field is empty...
+      if (formInput[i].value == "") { // add an "invalid" class to the field:
+        formInput[i].className += " invalid";
+
+// and set the current valid status to false
+        valid = false;
+      } else {
+        valid = true;
+
+}}}}
+// If the valid status is true, mark the step as finished and valid:if (valid) {console.log("valid form")
+// document.getElementsByClassName("step")[currentTab].className += " finish";}return valid; // return the valid status}function fixStepIndicator(n) {
+// This function removes the "active" class of all steps...var i,x = document.getElementsByClassName("step");for (i = 0; i < x.length; i++) {x[i].className = x[i].className.replace(" active", "");}
+// ... and adds the "active" class on the current step:x[n].className += " active";}function updateProgressBar(n) {var progress = document.querySelector("#form-progress")if (n == 0) {progress.value = 25} else {progress.value += 25}}function closePopup() {console.log("Close popup...")document.getElementById("contact-popup").style.display = "none";var url = window.location.href;window.location.href = url.replace("/#contact-popup", "");console.log("new url...", url)}function submit() {document.getElementById('left-contact-content').style.display = "none";document.getElementById('testimonial-content').style.display = "none";document.getElementById('form-submit-content').style.display = "block";}</script>
