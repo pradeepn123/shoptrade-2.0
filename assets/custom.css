@@ -5084,7 +5084,7 @@ input::-moz-placeholder {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox:after {
   left: 7px;
-  top: 6px;
+  top: 4px;
   width: 5.5px;
   height: 8px;
   border: solid white;
@@ -5092,63 +5092,6 @@ input::-moz-placeholder {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper {
-  position: relative;
-  padding-left: 44px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-size: 16px;
-  line-height: 19px;
-  color: #2B2F32;
-  display: block;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper input[type=radio] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper .custom-radio,
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper input[type=radio] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border-radius: 6px;
-  background-color: #fff;
-  border: 1px solid #83898C;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper input[type=radio]:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #fff;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group .radio-wrapper input[type=radio]:checked:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #FF7121;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid white;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note {
   width: 100%;
@@ -5169,16 +5112,22 @@ input::-moz-placeholder {
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
   position: relative;
   padding-left: 44px;
+  margin-bottom: 12px;
   cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 16px;
-  line-height: 19px;
   color: #2B2F32;
   display: flex;
   margin-bottom: 21px;
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper:last-of-type {
   margin-bottom: 0;
@@ -5187,33 +5136,38 @@ input::-moz-placeholder {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
 }
-#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio {
-  background-color: #FF7121;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio:after {
-  display: block;
-}
-#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio], #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio {
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
   background-color: #fff;
+  border-radius: 50%;
   border: 1px solid #83898C;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper:hover input[type=radio] ~ .custom-radio {
   background-color: #ccc;
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio {
+  background-color: #FF7121;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio:after {
-  left: 5px;
-  top: 5px;
-  border: 4px solid white;
+  content: "";
+  position: absolute;
+  display: none;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio:after {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio:after {
+  top: 6px;
+  left: 6px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
+  background: white;
 }
 #contact-popup #left-contact-content .form-content .form-tab .project-select {
   border: 1px solid #83898C;
@@ -5395,4 +5349,8 @@ input::-moz-placeholder {
   /* or 30px */
   letter-spacing: -0.03em;
   color: #000000;
+}
+#contact-popup .error {
+  color: red;
+  font-size: 12px;
 }

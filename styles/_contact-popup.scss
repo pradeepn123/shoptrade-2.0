@@ -214,7 +214,7 @@
                         /* Style the checkmark/indicator */
                         .custom-checkbox:after {
                             left: 7px;
-                            top: 6px;
+                            top: 4px;
                             width: 5.5px;
                             height: 8px;
                             border: solid white;
@@ -223,96 +223,6 @@
                             -ms-transform: rotate(45deg);
                             transform: rotate(45deg);
                         }
-                        // input[type='radio']:after {
-                        //     width: 15px;
-                        //     height: 15px;
-                        //     border-radius: 15px;
-                        //     top: -2px;
-                        //     left: -1px;
-                        //     position: relative;
-                        //     background-color: #fff;
-                        //     content: '';
-                        //     display: inline-block;
-                        //     visibility: visible;
-                        //     border: 2px solid white;
-                        // }
-                        // input[type='radio']:checked:after {
-                        //     width: 15px;
-                        //     height: 15px;
-                        //     border-radius: 15px;
-                        //     top: -2px;
-                        //     left: -1px;
-                        //     position: relative;
-                        //     background-color: #FF7121;
-                        //     content: '';
-                        //     display: inline-block;
-                        //     visibility: visible;
-                        //     border: 2px solid white;
-                        // }
-                    
-                    }
-                    .radio-wrapper {
-                        position: relative;
-                        padding-left: 44px;
-                        cursor: pointer;
-                        -webkit-user-select: none;
-                        -moz-user-select: none;
-                        -ms-user-select: none;
-                        user-select: none;
-                        font-size: 16px;
-                        line-height: 19px;
-                        // letter-spacing: -0.03em;
-                        color: #2B2F32;
-                        display: block;
-
-                        input[type=radio] {
-                            position: absolute;
-                            opacity: 0;
-                            cursor: pointer;
-                            height: 0;
-                            width: 0;
-                        } 
-                        .custom-radio,
-                        input[type='radio'] {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            height: 20px;
-                            width: 20px;
-                            border-radius: 6px;
-                            background-color: #fff;
-                            border: 1px solid #83898C;
-
-                        }
-                        input[type='radio'] {
-                            &:after {
-                                width: 15px;
-                                height: 15px;
-                                border-radius: 15px;
-                                top: -2px;
-                                left: -1px;
-                                position: relative;
-                                background-color: #fff;
-                                content: '';
-                                display: inline-block;
-                                visibility: visible;
-                                border: 2px solid white;
-                            }
-                            &:checked:after {
-                                width: 15px;
-                                height: 15px;
-                                border-radius: 15px;
-                                top: -2px;
-                                left: -1px;
-                                position: relative;
-                                background-color: #FF7121;
-                                content: '';
-                                display: inline-block;
-                                visibility: visible;
-                                border: 2px solid white;
-                            }
-                        }
-                        
                     }
                     #additional-note {
                         width: 100%;
@@ -333,56 +243,70 @@
                     .radio-wrapper {
                         position: relative;
                         padding-left: 44px;
+                        margin-bottom: 12px;
                         cursor: pointer;
+                        font-size: 16px;
+                        line-height: 19px;
                         -webkit-user-select: none;
                         -moz-user-select: none;
                         -ms-user-select: none;
                         user-select: none;
-                        font-size: 16px;
-                        line-height: 19px;
                         color: #2B2F32;
                         display: flex;
                         margin-bottom: 21px;
                         &:last-of-type {
                             margin-bottom: 0;
                         }
+
                         input[type=radio] {
                             position: absolute;
                             opacity: 0;
                             cursor: pointer;
-                            height: 0;
-                            width: 0;
-                            &:checked ~ .custom-radio {
-                                background-color: #FF7121;
-                                &:after {
-                                    display: block;
-                                }
-                            }
                         }
-                        input[type=radio], .custom-radio {
+
+                        .custom-radio {
                             position: absolute;
-                            top: 0;
+                            top: -2px;
                             left: 0;
                             height: 20px;
                             width: 20px;
-                            border-radius: 50%;
                             background-color: #fff;
+                            border-radius: 50%;
                             border: 1px solid #83898C;
-
                         }
+
+                        /* On mouse-over, add a grey background color */
                         &:hover input[type=radio] ~ .custom-radio {
                             background-color: #ccc;
                         }
-                        .custom-radio:after {
-                            left: 5px;
-                            top: 5px;
-                            border: 4px solid white;
-                            border-radius: 50%;
-                        }
-
-                    }
                     
-
+                        /* When the radio button is checked, add a blue background */
+                        input[type=radio]:checked ~ .custom-radio {
+                            background-color: #FF7121;
+                        }
+                    
+                        /* Create the indicator (the dot/circle - hidden when not checked) */
+                        .custom-radio:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    
+                        /* Show the indicator (dot/circle) when checked */
+                        input[type=radio]:checked ~ .custom-radio:after {
+                            display: block;
+                        }
+                    
+                        /* Style the indicator (dot/circle) */
+                        .custom-radio:after {
+                            top: 6px;
+                            left: 6px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: white;
+                        }
+                    }
                 }
                 .project-select {
                     border: 1px solid #83898C;
@@ -572,5 +496,8 @@
             }
         }
     }
-    
+    .error {
+        color: red;
+        font-size: 12px;
+    }
 }
