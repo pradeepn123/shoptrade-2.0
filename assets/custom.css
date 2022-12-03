@@ -4869,13 +4869,17 @@ input::-moz-placeholder {
   }
 }
 
+textarea {
+  resize: none;
+}
+
 #contact-popup {
   width: 100%;
   height: 100vh;
   background-color: #fff;
   position: fixed;
   z-index: 10;
-  display: block;
+  display: none;
 }
 #contact-popup progress {
   color: #FF7121;
@@ -4920,6 +4924,11 @@ input::-moz-placeholder {
   margin: 2em auto;
   width: 58%;
 }
+@media screen and (max-width: 768px) {
+  #contact-popup #left-contact-content .form-content {
+    width: 100%;
+  }
+}
 #contact-popup #left-contact-content .form-content h1 {
   font-family: "Epilogue";
   font-style: normal;
@@ -4963,12 +4972,22 @@ input::-moz-placeholder {
 #contact-popup #left-contact-content .form-content .form-tab .form-group input {
   border: 1px solid #A6A9AB;
   border-radius: 8px;
-  padding: 12px 16px;
+  padding: 18px 16px;
   width: 100%;
   font-size: 16px;
   line-height: 19px;
   outline: none;
   box-shadow: none;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b6b8ba;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper {
   position: relative;
@@ -5020,7 +5039,7 @@ input::-moz-placeholder {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
   left: 7px;
-  top: 6px;
+  top: 5px;
   width: 5.5px;
   height: 8px;
   border: solid white;
@@ -5031,7 +5050,6 @@ input::-moz-placeholder {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
   position: relative;
-  padding-left: 44px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5040,7 +5058,12 @@ input::-moz-placeholder {
   font-size: 16px;
   line-height: 19px;
   color: #2B2F32;
-  display: block;
+  display: grid;
+  grid-template-columns: 30px auto;
+  column-gap: 2rem;
+  margin-bottom: 21px;
+  width: 100%;
+  align-items: flex-start;
   margin-bottom: 21px;
   /* On mouse-over, add a grey background color */
   /* When the checkbox is checked, add a blue background */
@@ -5058,8 +5081,11 @@ input::-moz-placeholder {
   height: 0;
   width: 0;
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox-span {
+  display: block;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox {
-  position: absolute;
+  display: block;
   top: 0;
   left: 0;
   height: 20px;
@@ -5106,13 +5132,13 @@ input::-moz-placeholder {
   border-color: red;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 {
-  display: flex;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.4rem;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
   position: relative;
-  padding-left: 44px;
-  margin-bottom: 12px;
   cursor: pointer;
   font-size: 16px;
   line-height: 19px;
@@ -5121,8 +5147,11 @@ input::-moz-placeholder {
   -ms-user-select: none;
   user-select: none;
   color: #2B2F32;
-  display: flex;
-  margin-bottom: 21px;
+  align-items: flex-start;
+  display: grid;
+  grid-column-gap: 0.1rem;
+  grid-template-columns: 30px auto;
+  align-items: flex-start;
   /* On mouse-over, add a grey background color */
   /* When the radio button is checked, add a blue background */
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -5137,10 +5166,11 @@ input::-moz-placeholder {
   opacity: 0;
   cursor: pointer;
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-checkbox-span {
+  display: block;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio {
-  position: absolute;
-  top: -2px;
-  left: 0;
+  display: block;
   height: 20px;
   width: 20px;
   background-color: #fff;
@@ -5162,8 +5192,8 @@ input::-moz-placeholder {
   display: block;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio:after {
-  top: 6px;
-  left: 6px;
+  top: 7px;
+  left: 7px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -5171,21 +5201,31 @@ input::-moz-placeholder {
 }
 #contact-popup #left-contact-content .form-content .form-tab .project-select {
   border: 1px solid #83898C;
-  padding: 1.2em;
+  padding: 1em 1.2em;
   margin-bottom: 20px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 #contact-popup #left-contact-content .form-content .form-tab .project-select .form-group {
   display: block;
 }
+#contact-popup #left-contact-content .form-content .form-tab .project-select-label {
+  margin: 2rem 0 0.6rem 0;
+}
 #contact-popup #left-contact-content .form-content .form-tab .project-select-label .project-select-label-text {
   border: 1px solid #A6A9AB;
   border-radius: 8px;
-  padding: 12px 16px;
+  padding: 16px;
   width: 100%;
   font-size: 16px;
-  line-height: 19px;
   outline: none;
   box-shadow: none;
+  line-height: 1.3;
+  margin-bottom: unset;
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select-label .project-select-label-text .project-select-label-text-small {
+  font-size: 13px;
+  color: #878a8a;
 }
 #contact-popup #left-contact-content .form-content .form-tab .label-text {
   padding: 12px 16px 12px 0;
@@ -5220,6 +5260,13 @@ input::-moz-placeholder {
   font-family: "Epilogue", sans-serif;
   padding: 0px 0px 5px;
   margin: 0px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn--back span {
+  display: block;
+  margin-top: 3px;
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn--back svg.back-svg {
   vertical-align: middle !important;
@@ -5262,6 +5309,7 @@ input::-moz-placeholder {
 }
 #contact-popup #testimonial-content .close-icon {
   float: right;
+  cursor: pointer;
 }
 #contact-popup #testimonial-content .testimonial-card {
   width: 382px;

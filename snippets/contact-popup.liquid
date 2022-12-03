@@ -12,8 +12,7 @@
                 <h1>
                     Contact Us
                 </h1>
-                <form method="POST" action="https://formspree.io/f/xgeqbpbl" enctype="multipart/form-data" multistep="true">
-                <!-- <form method="POST" action="/" id="contact-form"> -->
+                <form method="POST" action="https://formspree.io/f/xgeqbpbl" enctype="multipart/form-data" multistep="true" id="contact-form">
                     <progress id="form-progress" value="25" max="100">
                         25%
                     </progress>
@@ -39,9 +38,9 @@
                         </div>
                         <div class="form-group">
                             <label class="custom-checkbox-wrapper">
-                            <input type="checkbox" name="subscribe">
-                            <span class="custom-checkbox"></span>
-                            I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches
+                                <input type="checkbox" name="subscribe">
+                                <span class="custom-checkbox"></span>
+                                <span>I agree for ShopTrade to contact me via email with e-commerce advice, events and Shopify launches</span>
                             </label>
                         </div>
                     </div>
@@ -55,32 +54,32 @@
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="migration" value="migration">
                                     <span class="custom-checkbox"></span>
-                                    Migration
+                                    <span class="custom-checkbox-span">Migration</span>
                                 </label>
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="customThemeBuild" value="customThemeBuild">
                                     <span class="custom-checkbox"></span>
-                                    Custom theme build
+                                    <span class="custom-checkbox-span">Custom theme build</span>
                                 </label>
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="themeSetupCustomization" value="customThemeBuild">
                                     <span class="custom-checkbox"></span>
-                                    Theme setup & customization
+                                    <span class="custom-checkbox-span">Theme setup & customization</span>
                                 </label>
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="headless" value="headless">
                                     <span class="custom-checkbox"></span>
-                                    Headless
+                                    <span class="custom-checkbox-span">Headless</span>
                                 </label>
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="ShopifyAppDevelopment" value="ShopifyAppDevelopment">
                                     <span class="custom-checkbox"></span>
-                                    Shopify app development
+                                    <span class="custom-checkbox-span">Shopify app development</span>
                                 </label>
                                 <label class="checkbox-wrapper">
                                     <input type="checkbox" oninput="this.className = ''" name="NotListed" value="NotListed" checked>
                                     <span class="custom-checkbox"></span>
-                                    Not Listed
+                                    <span class="custom-checkbox-span">Not Listed</span>
                                 </label>
                             </div>
                         </div>
@@ -92,57 +91,53 @@
                         </div>
                         <div class="project-select">
                             <div class="form-group1">
-                                <label class="radio-wrapper" style="margin-right: 2em">
+                                <label class="radio-wrapper">
                                     <input type="radio" oninput="this.className = ''" name="timeline" value="1-3 months">
                                     <span class="custom-radio"></span>
-                                    1-3 months
+                                    <span class="custom-checkbox-span">1-3 months</span>
                                 </label>
                                 <label class="radio-wrapper">
                                     <input type="radio" oninput="this.className = ''" name="timeline" value="3-6 months">
                                     <span class="custom-radio"></span>
-                                    3-6 months
+                                    <span class="custom-checkbox-span">3-6 months</span>
                                 </label>
-                            </div>
-                            <div class="form-group1">
-                                <label class="radio-wrapper" style="margin-right: 2.3em">
+                                <label class="radio-wrapper">
                                     <input type="radio" oninput="this.className = ''" name="timeline" value="6+ months">
                                     <span class="custom-radio"></span>
-                                    6+ months
+                                    <span class="custom-checkbox-span">6+ months</span>
                                 </label>
                                 <label class="radio-wrapper">
                                     <input type="radio" checked="checked" oninput="this.className = ''" name="timeline" value="Not sure">
                                     <span class="custom-radio"></span>
-                                    Not sure
+                                    <span class="custom-checkbox-span">Not sure</span>
                                 </label>
                             </div>
                         </div>
     
                         <div class="project-select-label">
-                            <p class="project-select-label-text">Budget Range ( currency mentioned below are in USD )</p>
+                            <p class="project-select-label-text">Budget Range <span class="project-select-label-text-small">( currency mentioned below are in USD )</span></p>
                         </div>
                         <div class="project-select">
                             <div class="form-group1">
-                                <label class="radio-wrapper" style="margin-right: 2em" value="+ $ 5000">
-                                    <input type="radio" oninput="this.className = ''" name="budget">
+                                <label class="radio-wrapper">
+                                    <input type="radio" oninput="this.className = ''" name="budget" value="+ $ 5000">
                                     <span class="custom-radio"></span>
-                                    + $ 5000
+                                    <span class="custom-checkbox-span">+ $ 5000</span>
                                 </label>
                                 <label class="radio-wrapper">
                                     <input type="radio" oninput="this.className = ''" name="budget" value="+ $ 10,000">
                                     <span class="custom-radio"></span>
-                                    + $ 10,000
+                                    <span class="custom-checkbox-span">+ $ 10,000</span>
                                 </label>
-                            </div>
-                            <div class="form-group1">
-                                <label class="radio-wrapper" style="margin-right: 1.1em">
+                                <label class="radio-wrapper">
                                     <input type="radio" oninput="this.className = ''" name="budget" value="+ $ 20,000">
                                     <span class="custom-radio"></span>
-                                    + $ 20,000
+                                    <span class="custom-checkbox-span">+ $ 20,000</span>
                                 </label>
-                                <label class="radio-wrapper" style="margin-right: 2em">
+                                <label class="radio-wrapper">
                                     <input type="radio" checked="checked" oninput="this.className = ''" name="budget" value="Not sure">
                                     <span class="custom-radio"></span>
-                                    Not sure
+                                    <span class="custom-checkbox-span">Not sure</span>
                                 </label>
                             </div>
                         </div>
@@ -160,20 +155,20 @@
                     </div>
                     <div class="error"></div>
                     <div class="form-buttons" style="overflow:auto;">
-                        <button type="button" id="prevBtn" class="btn btn--back" onclick="nextPrev(-1)">
+                        <button type="button" id="prevBtn" class="btn btn--back" onclick="ContactPopUp.nextPrev(-1)">
                             <svg class="back-svg" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle">
                                 <path d="M16.1166 8.04547L2.05149 8.04543M9.07129 1L2.00024 8.07104L9.07129 15.1421" stroke="#FF7121" stroke-width="2"/>
                             </svg>
-                            Back
+                            <span>Back</span>
                         </button>
-                        <button type="button" id="nextBtn" class="btn btn--orange" onclick="nextPrev(1)">Next</button>
+                        <button type="button" id="nextBtn" class="btn btn--orange" onclick="ContactPopUp.nextPrev(1)">Next</button>
                         <button type="submit" id="submitBtn" class="btn btn--orange">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
         <div id="testimonial-content">
-            <div class="close-icon" onclick="closePopup()">
+            <div class="close-icon" onclick="ContactPopUp.closePopup()">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
                     <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
@@ -304,7 +299,7 @@
                     We read every message and typically respond within 48 hours.
                 </p>
             </div>
-            <div class="close-icon" onclick="closePopup()">
+            <div class="close-icon" onclick="ContactPopUp.closePopup()">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
                     <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
@@ -315,212 +310,3 @@
 
     </div>
 </div>
-  
-<script>
-    var currentTab = 0; // Current tab is set to be the first tab (0)
-    showTab(currentTab); // Display the current tab
-  
-    function showTab(n) {
-        // This function will display the specified tab of the form...
-        var tabs = document.getElementsByClassName("form-tab");
-        var cards = document.getElementsByClassName("testimonial-card")
-        tabs[n].style.display = "block";
-        cards[n].style.display = "block";
-  
-        // ... and fix the Previous/Next buttons:
-        if (n == 0) {
-            document.getElementById("prevBtn").style.visibility = "hidden";
-        } else {
-            document.getElementById("prevBtn").style.visibility = "visible";
-        }
-
-        if (n == (tabs.length - 1)) {
-            document.getElementById("nextBtn").style.display = "none";
-            document.getElementById("submitBtn").style.display = "block";
-        } else {
-            document.getElementById("nextBtn").style.display = "block";
-            document.getElementById("submitBtn").style.display = "none";
-        }
-  
-        // ... and run a function that will display the correct progress:
-        updateProgressBar(n)
-    }
-  
-    function nextPrev(n) {
-  
-        // This function will figure out which tab to display
-        var tabs = document.getElementsByClassName("form-tab");
-        var cards = document.getElementsByClassName("testimonial-card")
-  
-        // Exit the function if any field in the current tab is invalid:
-        if (n == 1 && !validateForm()) {
-            return false;
-        }
-      
-        // Hide the current tab:
-        tabs[currentTab].style.display = "none";
-        cards[currentTab].style.display = "none";
-  
-        // Increase or decrease the current tab by 1:
-        currentTab = currentTab + n;
-  
-        // if you have reached the end of the form...
-        if (currentTab >= tabs.length) { 
-            // ... the form gets submitted:
-            document.getElementById("contact-form").submit();
-            return false;
-        }
-  
-        // Otherwise, display the correct tab:
-        showTab(currentTab);
-    }
-  
-    function validateForm() {
-  
-        // This function deals with validation of the form fields
-        var valid = true;
-        var tabs = document.getElementsByClassName("form-tab");
-        var formInput = tabs[currentTab].getElementsByTagName("input");
-        var error = document.querySelector(".error")
-
-        if (currentTab == 0){
-            if (formInput.name.value == "") {
-                formInput.name.focus() ;
-                formInput.name.className += " invalid"; //add invalid class
-                error.innerHTML = "Name field cannot be blank"
-                valid = false;
-                return false;
-            } else {
-                var regName = /^[A-Za-z]+((\s)?([A-Za-z])+)*$/;
-                if (!regName.test(formInput.name.value)) {
-                    formInput.name.className += " invalid"; //add invalid class
-                    valid = false;
-                    return false
-                }
-            }
-
-            if (formInput.email.value == "") {
-                formInput.email.focus() ;
-                formInput.email.className += " invalid";
-                error.innerHTML = "Email field cannot be blank";
-                valid = false;
-                return false
-            } else {
-                var regName = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                if (!regName.test(formInput.email.value)) {
-                    formInput.email.className += " invalid"; //add invalid class
-                    error.innerHTML = "Please enter correct email";
-                    valid = false;
-                    return false
-                }
-            }
-
-            if (formInput.phone.value != "") {
-                var regName = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
-                if (!regName.test(formInput.phone.value)) {
-                    formInput.phone.className += " invalid"; //add invalid class
-                    error.innerHTML = "Please enter correct phone number"
-                    valid = false;
-                    return false;
-                }
-            }
-  
-            if (formInput.website.value != "") {
-                var regName = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
-                if (!regName.test(formInput.website.value)) {
-                    formInput.website.className += " invalid"; //add invalid class
-                    error.innerHTML = "Please enter correct URL";
-                    valid = false;
-                    return false
-                }
-            }
-
-            if (formInput.website.value != "") {
-                var regName = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/;
-                if (!regName.test(formInput.website.value)) {
-                    formInput.website.className += " invalid"; //add invalid class
-                    error.innerHTML = "Please enter correct URL";
-                    valid = false;
-                    return false
-                }
-            }
-        }
-
-        if (currentTab == 1) {
-            // get all the checkbox present on the tab
-            let checkbox = document.querySelectorAll('input[type="checkbox"]');
-            let marked_checkboxes = [];
-
-            // use a for each loop to check the checked condition on each checkboxes
-            checkbox.forEach((check_box, index) => {
-                if (check_box.checked) { 
-                    // add the checked checkboxes to the marked_checkboxes array
-                    marked_checkboxes.push(check_box);
-                }
-            });
-    
-            // give a condition that a minimum of 1 option must be selected
-            if (marked_checkboxes.length >= 1) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        }
-
-        if (currentTab == 2) {
-            // valid = false
-            // get all the radio buttons present on the tab
-            let radioTimeline = document.querySelectorAll('input[name="timeline"]');
-            let radioBudget = document.querySelectorAll('input[name="budget"]');
-            let marked_checkboxes_timeline = [];
-            let marked_checkboxes_budget = [];
-
-            // use a for each loop to check the checked condition on each checkboxes
-            radioTimeline.forEach((check_box, index) => {
-                if (check_box.checked) { 
-                    // add the checked checkboxes to the marked_checkboxes array
-                    marked_checkboxes_timeline.push(check_box);
-                }
-            });
-
-            radioBudget.forEach((check_box, index) => {
-                if (check_box.checked) { 
-                    // add the checked checkboxes to the marked_checkboxes array
-                    marked_checkboxes_budget.push(check_box);
-                }
-            });
-    
-            // give a condition that a minimum of 1 option must be selected
-            if (marked_checkboxes_timeline.length == 1 && marked_checkboxes_budget.length == 1) {
-                valid = true;
-            } else {
-                valid = false;
-            }
-        }
-
-        if (valid) {
-            error.innerHTML = ""
-        }
-        return valid;
-    }
-  
-    function updateProgressBar(n) {
-        var progress = document.querySelector("#form-progress");
-        if (n == 0) {
-            progress.value = 25
-        } else {
-            progress.value += 25
-        }
-    }
-    
-    function closePopup() {
-        document.getElementById("contact-popup").style.display = "none";
-        var url = window.location.href;window.location.href = url.replace("/#contact-popup", "");
-    }
-    
-    function submit() {
-        document.getElementById('left-contact-content').style.display = "none";
-        document.getElementById('testimonial-content').style.display = "none";
-        document.getElementById('form-submit-content').style.display = "block";
-    }
-</script>

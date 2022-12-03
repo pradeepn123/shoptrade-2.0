@@ -1,11 +1,14 @@
+textarea {
+  resize: none;
+}
+
 #contact-popup {
     width: 100%;
     height: 100vh;
     background-color: #fff;
     position: fixed;
     z-index: 10;
-    // display: none;
-    display: block;
+    display: none;
     progress {
         color: #FF7121;
         font-size: .6em;
@@ -42,9 +45,14 @@
         @media screen and (max-width: 768px) {
             width: 100%;
         }
+
         .form-content{
             margin: 2em auto;
             width: 58%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
             h1 {
                 font-family: 'Epilogue';
                 font-style: normal;
@@ -78,21 +86,37 @@
                 .block {
                     display: block !important;
                 }
+
                 .form-group {
                     width: 100%;
                     margin: 15px 0;
                     display: flex;
                     align-items: center;
+
                     input {
                         border: 1px solid #A6A9AB;
                         border-radius: 8px;
-                        padding: 12px 16px;
+                        padding: 18px 16px;
                         width: 100%;
                         font-size: 16px;
                         line-height: 19px;
                         outline: none;
                         box-shadow: none;
+
+                        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: #b6b8ba;
+                            opacity: 1; /* Firefox */
+                        }
+
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: #b6b8ba;
+                        }
+
+                        ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: #b6b8ba;
+                        }
                     }
+
                     .custom-checkbox-wrapper {
                         position: relative;
                         padding-left: 35px;
@@ -149,7 +173,7 @@
                         /* Style the checkmark/indicator */
                         .custom-checkbox:after {
                             left: 7px;
-                            top: 6px;
+                            top: 5px;
                             width: 5.5px;
                             height: 8px;
                             border: solid white;
@@ -159,9 +183,9 @@
                             transform: rotate(45deg);
                         }
                     }
+
                     .checkbox-wrapper {
                         position: relative;
-                        padding-left: 44px;
                         cursor: pointer;
                         -webkit-user-select: none;
                         -moz-user-select: none;
@@ -171,20 +195,32 @@
                         line-height: 19px;
                         // letter-spacing: -0.03em;
                         color: #2B2F32;
-                        display: block;
+                        display: grid;
+                        grid-template-columns: 30px auto;
+                        column-gap: 2rem;
                         margin-bottom: 21px;
+                        width: 100%;
+                        align-items: flex-start;
+                        margin-bottom: 21px;
+
                         &:last-of-type {
                             margin-bottom: 0;
                         }
+
                         input[type=checkbox] {
                             position: absolute;
                             opacity: 0;
                             cursor: pointer;
                             height: 0;
                             width: 0;
-                        } 
-                        .custom-checkbox {
-                            position: absolute;
+                        }
+
+                        .custom-checkbox-span {
+                            display: block;
+                        }
+
+                        .custom-checkbox  {
+                            display: block;
                             top: 0;
                             left: 0;
                             height: 20px;
@@ -238,12 +274,13 @@
                     }
                 }
                 .form-group1 {
-                    display: flex;
-                    justify-content: start;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 1rem;
+                    grid-row-gap: 1.4rem;
+
                     .radio-wrapper {
                         position: relative;
-                        padding-left: 44px;
-                        margin-bottom: 12px;
                         cursor: pointer;
                         font-size: 16px;
                         line-height: 19px;
@@ -252,8 +289,12 @@
                         -ms-user-select: none;
                         user-select: none;
                         color: #2B2F32;
-                        display: flex;
-                        margin-bottom: 21px;
+                        align-items: flex-start;
+                        display: grid;
+                        grid-column-gap: 0.1rem;
+                        grid-template-columns: 30px auto;
+                        align-items: flex-start;
+
                         &:last-of-type {
                             margin-bottom: 0;
                         }
@@ -264,10 +305,12 @@
                             cursor: pointer;
                         }
 
+                        .custom-checkbox-span {
+                            display: block;
+                        }
+
                         .custom-radio {
-                            position: absolute;
-                            top: -2px;
-                            left: 0;
+                            display: block;
                             height: 20px;
                             width: 20px;
                             background-color: #fff;
@@ -299,8 +342,8 @@
                     
                         /* Style the indicator (dot/circle) */
                         .custom-radio:after {
-                            top: 6px;
-                            left: 6px;
+                            top: 7px;
+                            left: 7px;
                             width: 6px;
                             height: 6px;
                             border-radius: 50%;
@@ -308,27 +351,40 @@
                         }
                     }
                 }
+
                 .project-select {
                     border: 1px solid #83898C;
-                    padding: 1.2em;
+                    padding: 1em 1.2em;
                     margin-bottom: 20px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+
                     .form-group {
                         display: block;
-                        // margin: 0;
                     }
                 }
+
                 .project-select-label {
-                    .project-select-label-text{
+                    margin: 2rem 0 0.6rem 0;
+
+                    .project-select-label-text {
                         border: 1px solid #A6A9AB;
                         border-radius: 8px;
-                        padding: 12px 16px;
+                        padding: 16px;
                         width: 100%;
                         font-size: 16px;
-                        line-height: 19px;
                         outline: none;
                         box-shadow: none;
+                        line-height: 1.3;
+                        margin-bottom: unset;
+
+                        .project-select-label-text-small {
+                            font-size: 13px;
+                            color: #878a8a;
+                        }
                     }
                 }
+
                 .label-text {
                     padding: 12px 16px 12px 0;
                     width: 100%;
@@ -339,11 +395,13 @@
                     color: #ABAFB1;
                 }
             }
+
             .form-buttons {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 10px 0;
+
                 .btn {
                     padding: 11px 22px;
                     border: 1px solid #000000;
@@ -354,6 +412,7 @@
                     line-height: 100%;
                     font-family: "Epilogue", sans-serif;
                 }
+
                 .btn--back {
                     border: none;
                     font-weight: 600;
@@ -362,16 +421,28 @@
                     font-family: "Epilogue", sans-serif;
                     padding: 0px 0px 5px;
                     margin: 0px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 0.4rem;
+
+                    span {
+                        display: block;
+                        margin-top: 3px;
+                    }
+
                     svg.back-svg {
                         vertical-align: middle !important;
                     }
                 }
+
                 #nextBtn {
                     display: block;
                 }
+
                 #submitBtn {
                     display: none;
                 }
+
                 .btn--orange {
                     &:after {
                         background: #FF7121;
@@ -406,6 +477,7 @@
         padding: 30px;
         .close-icon {
             float: right;
+            cursor: pointer;
         }
         .testimonial-card {
             width: 382px;

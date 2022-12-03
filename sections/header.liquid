@@ -26,22 +26,16 @@
         </div>
       </div>
     </div>
-      <div class="contact-btn" onClick="openContactPopup()">
+      <div class="contact-btn" >
         {%- for link in section.settings.menu.links -%}
           {%- if forloop.last -%}
-            <a class="nav-link btn-contact" href="{{ link.url }}">{{ link.title }}
-            </a>
+            <a class="nav-link btn-contact" id="contact-btn-details" href="#">{{ link.title }}</a>
           {%- endif -%}
         {%- endfor -%}
       </div>
     </div>
   </div>
 </header>
-<script>
-  function openContactPopup() {
-    document.getElementById("contact-popup").style.display='block';
-  }
-</script>
 {% schema %}
 
   {
