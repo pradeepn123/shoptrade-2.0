@@ -16,7 +16,7 @@
           <ul class="navbar-nav shoptrade__nav-list d-flex  ">
             {%- for link in section.settings.menu.links -%}
               <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
-                <a class="nav-link" href="{{ link.url }}" >{{ link.title }}
+                <a class="nav-link contact-btn-details" href="#" >{{ link.title }}
                 </a>
               </li>
             {%- endfor -%}
@@ -29,7 +29,7 @@
       <div class="contact-btn" >
         {%- for link in section.settings.menu.links -%}
           {%- if forloop.last -%}
-            <a class="nav-link btn-contact" id="contact-btn-details" href="#">{{ link.title }}</a>
+            <a class="nav-link btn-contact contact-btn-details" id="contact-btn-details" href="#">{{ link.title }}</a>
           {%- endif -%}
         {%- endfor -%}
       </div>

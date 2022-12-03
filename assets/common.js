@@ -18,7 +18,9 @@ const ContactPopUp = {
     leftContactContent:'#left-contact-content',
     testimonialContent:'#testimonial-content',
     formSubmitContent:'#form-submit-content',
-    contactUs: "#contact-btn-details"
+    contactUs: ".contact-btn-details",
+    dropZoneThumb: ".drop-zone__thumb",
+    closeIconBtn: '#close-icon-btn'
   },
   currentTab: 0,
   showTab: function(stepIndex) {
@@ -35,11 +37,11 @@ const ContactPopUp = {
     }
 
     if (stepIndex == (tabs.length - 1)) {
-      $(this.selectors.nextBtn).fadeOut("fast")
-      $(this.selectors.submitBtn).fadeIn("fast")
+      $(this.selectors.nextBtn).hide()
+      $(this.selectors.submitBtn).show()
     } else {
-      $(this.selectors.nextBtn).fadeIn("fast")
-      $(this.selectors.submitBtn).fadeOut("fast")
+      $(this.selectors.submitBtn).hide()
+      $(this.selectors.nextBtn).show()
     }
     // ... and run a function that will display the correct progress:
     this.updateProgressBar(stepIndex)
@@ -48,6 +50,7 @@ const ContactPopUp = {
     // This function will figure out which tab to display
     var tabs = $(this.selectors.tabs);
     var cards = $(this.selectors.testimonial)
+
     // Exit the function if any field in the current tab is invalid:
     if (stepIndex == 1 && !this.validateForm()) {
       return false;
@@ -55,14 +58,17 @@ const ContactPopUp = {
     // Hide the current tab:
     tabs.hide()
     cards.hide()
+
     // Increase or decrease the current tab by 1:
     this.currentTab = this.currentTab + stepIndex;
+
     // if you have reached the end of the form...
     if (this.currentTab >= tabs.length) { 
       // ... the form gets submitted:
       document.querySelector(this.selectors.form).submit();
       return false;
     }
+
     // Otherwise, display the correct tab:
     this.showTab(this.currentTab);
   },
@@ -194,24 +200,28 @@ const ContactPopUp = {
     var progress = document.querySelector(this.selectors.formProgress);
     if (stepIndex == 0) {
       progress.value = 25
+    } else if (this.currentTab == 1) {
+      progress.value = 50
+    } else if (this.currentTab == 2) {
+      progress.value = 75
     } else {
-      progress.value += 25
+      progress.value = 100
     }
+    $('.contact-content').scrollTop(0)
   },
   closePopup: function() {
     $(this.selectors.contactPopUp).fadeOut("slow")
     $('body').removeClass("overflow-hidden")
   },
   openPopUp: function() {
-    this.resetValues()
     $(this.selectors.contactPopUp).fadeIn("fast")
     $('body').addClass("overflow-hidden")
+    this.resetValues()
   },
   resetValues: function() {
     this.currentTab = 0
     $(this.selectors.form).trigger("reset")
     this.nextPrev(0)
-
   },
   submit: function() {
     document.querySelector(this.selectors.leftContactContent).style.display = "none";
@@ -222,8 +232,99 @@ const ContactPopUp = {
     this.addEventListener()
   },
   addEventListener: function() {
-    this.openPopUp()
-    document.querySelector(this.selectors.contactUs).addEventListener("click", this.openPopUp.bind(this))
+    $(this.selectors.contactUs).on("click", this.openPopUp.bind(this))
+    setTimeout(this.addDropZoneEvents.bind(this), 500)
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    $('#contact-content').css('height', 'height', 'calc(var(--vh, 1vh) * 100)')
+    this.handleWindowResize()
+    $(window).resize(this.handleWindowResize.bind(this))
+  },
+  handleWindowResize: function() {
+    const clonedNode = $(this.selectors.closeIconBtn).clone(true)
+    $(this.selectors.closeIconBtn).remove()
+    let selector = '#left-contact-content'
+    if (window.innerWidth > 769) {
+      selector = '#testimonial-content'
+    }
+    $(selector).prepend(clonedNode)
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  },
+  addDropZoneEvents: function() {
+    document.querySelectorAll(".drop-zone__input").forEach(function(inputElement) {
+      const dropZoneElement = inputElement.closest(".drop-zone");
+
+      dropZoneElement.addEventListener("click", (e) => {
+        inputElement.click();
+      });
+
+      inputElement.addEventListener("change", function(e){
+        if (inputElement.files.length) {
+          this.updateThumbnail(dropZoneElement, inputElement.files[0]);
+        }
+      }.bind(this))
+
+      dropZoneElement.addEventListener("dragover", function(e){
+        e.preventDefault();
+        dropZoneElement.classList.add("drop-zone--over");
+      }.bind(this))
+
+      const events = ["dragleave", "dragend"]
+
+      events.forEach((eventType) => {
+        dropZoneElement.addEventListener(eventType, (e) => {
+          dropZoneElement.classList.remove("drop-zone--over");
+        });
+      });
+
+      dropZoneElement.addEventListener("drop", function(e){
+        e.preventDefault();
+
+        if (e.dataTransfer.files.length) {
+          inputElement.files = e.dataTransfer.files;
+          this.updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+        }
+        dropZoneElement.classList.remove("drop-zone--over");
+      }.bind(this));
+    }.bind(this));
+  },
+
+  /**
+  * Updates the thumbnail on a drop zone element.
+  *
+  * @param {HTMLElement} dropZoneElement
+  * @param {File} file
+  */
+  updateThumbnail: function(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(this.selectors.dropZoneThumb);
+
+    // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
+    }
+
+    // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+
+    thumbnailElement.dataset.label = file.name;
+
+    // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
+    } else {
+      thumbnailElement.style.backgroundImage = null;
+    }
   }
 }
 
