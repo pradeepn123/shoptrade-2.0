@@ -230,7 +230,7 @@ const ContactPopUp = {
     event.preventDefault()
     $(this.selectors.closeIconBtn).hide()
     $(".loader ").show("fast")
-    $(ContactPopUp.selectors.form).find("input, select, radio, checkbox", "button").attr("disabled", "disabled")
+    $(this.selectors.form).find("input, select, radio, checkbox", "button").attr("disabled", "disabled")
     var data = new FormData(event.target);
     fetch(event.target.action, {
       method: event.target.method,
@@ -247,7 +247,7 @@ const ContactPopUp = {
     document.querySelector(this.selectors.formSubmitContent).style.display = "block";
     $(this.selectors.form).trigger("reset")
     $(".loader ").hide("fast")
-    $(ContactPopUp.selectors.form).find("input, select, radio, checkbox", "button").removeAttribute("disabled")
+    $(this.selectors.form).find("input, select, radio, checkbox", "button").removeAttr("disabled")
     $(this.selectors.closeIconBtn).show()
   },
   init: function() {
