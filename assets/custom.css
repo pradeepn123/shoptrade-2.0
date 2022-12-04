@@ -5361,6 +5361,10 @@ textarea {
   width: 100%;
   padding: 30px;
 }
+#contact-popup #form-submit-content .close-icon {
+  float: right;
+  cursor: pointer;
+}
 #contact-popup #form-submit-content #thankyou-card {
   width: 382px;
   height: 600px;

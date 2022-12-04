@@ -531,9 +531,15 @@ textarea {
     }
     #form-submit-content {
         // display: flex;
+        .close-icon {
+            float: right;
+            cursor: pointer;
+        }
+
         display: none;
         width: 100%;
         padding: 30px;
+
         #thankyou-card {
             width: 382px;
             height: 600px;

@@ -219,14 +219,36 @@ const ContactPopUp = {
     this.resetValues()
   },
   resetValues: function() {
+    document.querySelector(this.selectors.formSubmitContent).style.display = "none";
+    document.querySelector(this.selectors.leftContactContent).style.display = "";
+    document.querySelector(this.selectors.testimonialContent).style.display = "";
     this.currentTab = 0
     $(this.selectors.form).trigger("reset")
     this.nextPrev(0)
   },
-  submit: function() {
+  submit: async function(event) {
+    event.preventDefault()
+    $(this.selectors.closeIconBtn).hide()
+    $(".loader ").show("fast")
+    $(ContactPopUp.selectors.form).find("input, select, radio, checkbox", "button").attr("disabled", "disabled")
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: event.target.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(this.success.bind(this))
+    return false
+  },
+  success: async function() {
     document.querySelector(this.selectors.leftContactContent).style.display = "none";
     document.querySelector(this.selectors.testimonialContent).style.display = "none";
     document.querySelector(this.selectors.formSubmitContent).style.display = "block";
+    $(this.selectors.form).trigger("reset")
+    $(".loader ").hide("fast")
+    $(ContactPopUp.selectors.form).find("input, select, radio, checkbox", "button").removeAttribute("disabled")
+    $(this.selectors.closeIconBtn).show()
   },
   init: function() {
     this.addEventListener()
@@ -238,7 +260,10 @@ const ContactPopUp = {
     // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     $('#contact-content').css('height', 'height', 'calc(var(--vh, 1vh) * 100)')
+
     this.handleWindowResize()
+    $(this.selectors.form).on("submit", this.submit.bind(this))
+
     $(window).resize(this.handleWindowResize.bind(this))
   },
   handleWindowResize: function() {
