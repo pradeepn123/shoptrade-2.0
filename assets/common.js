@@ -19,6 +19,7 @@ const ContactPopUp = {
     contactUs: ".contact-btn-details",
     dropZoneThumb: ".drop-zone__thumb",
     closeIconBtn: "#close-icon-btn",
+    dropZone: ".drop-zone",
   },
   currentTab: 0,
   showTab: function (stepIndex) {
@@ -144,34 +145,34 @@ const ContactPopUp = {
         }
       }
 
-       if (formInput.Subscribe.checked != true) {
-         error.innerHTML = "Please select the checkbox to continue";
-         valid = false;
-         return false;
-       }
+      if (formInput.Subscribe.checked != true) {
+        error.innerHTML = "Please select the checkbox to continue";
+        valid = false;
+        return false;
+      }
     }
 
-      if (this.currentTab == 1) {
-        // get all the checkbox present on the tab
-        let checkbox = document.querySelectorAll(this.selectors.checkboxes);
-        let marked_checkboxes = [];
+    if (this.currentTab == 1) {
+      // get all the checkbox present on the tab
+      let checkbox = document.querySelectorAll(this.selectors.checkboxes);
+      let marked_checkboxes = [];
 
-        // use a for each loop to check the checked condition on each checkboxes
-        checkbox.forEach((check_box, index) => {
-          if (check_box.checked) {
-            // add the checked checkboxes to the marked_checkboxes array
-            marked_checkboxes.push(check_box);
-          }
-        });
-
-        // give a condition that a minimum of 1 option must be selected
-        if (marked_checkboxes.length >= 1) {
-          valid = true;
-        } else {
-          valid = false;
-          error.innerHTML = "Check at least on one element";
+      // use a for each loop to check the checked condition on each checkboxes
+      checkbox.forEach((check_box, index) => {
+        if (check_box.checked) {
+          // add the checked checkboxes to the marked_checkboxes array
+          marked_checkboxes.push(check_box);
         }
+      });
+
+      // give a condition that a minimum of 1 option must be selected
+      if (marked_checkboxes.length >= 1) {
+        valid = true;
+      } else {
+        valid = false;
+        error.innerHTML = "Check at least on one element";
       }
+    }
 
     if (this.currentTab == 2) {
       // valid = false
@@ -243,6 +244,12 @@ const ContactPopUp = {
     this.currentTab = 0;
     $(this.selectors.form).trigger("reset");
     this.nextPrev(0);
+    document.querySelector(this.selectors.dropZoneThumb).remove()
+    document
+      .querySelector(this.selectors.dropZone).innerHTML += `<span class="drop-zone__prompt">
+      Drag & drop or 
+      <span style="color: #000; text-decoration: underline;">browse</span>
+    </span>`;
   },
   submit: async function (event) {
     event.preventDefault();
@@ -282,7 +289,7 @@ const ContactPopUp = {
     // Adds "https://" to the beginning when user starts typing
     $("#website_name_validation").on("focus", function (e) {
       const prevdata = e.target.value;
-      if(prevdata.length == 0){
+      if (prevdata.length == 0) {
         e.target.value = "https://" + e.target.value;
       }
 
@@ -385,6 +392,8 @@ const ContactPopUp = {
     let thumbnailElement = dropZoneElement.querySelector(
       this.selectors.dropZoneThumb
     );
+
+    debugger;
 
     // First time - remove the prompt
     if (dropZoneElement.querySelector(".drop-zone__prompt")) {
