@@ -4892,7 +4892,10 @@ textarea {
   border: 1px solid #EFEFEF;
   background: #fff;
   border-radius: 18.49px;
-  margin: 0.5em 0;
+  margin-top: 0px;
+  margin-top: 1%;
+  margin-right: -8%;
+  margin-bottom: 4.3%;
 }
 #contact-popup progress::-moz-progress-bar {
   background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
@@ -5157,7 +5160,7 @@ textarea {
   display: grid;
   grid-column-gap: 0.1rem;
   grid-template-columns: 30px auto;
-  align-items: flex-start;
+  align-items: flex-end;
   /* On mouse-over, add a grey background color */
   /* When the radio button is checked, add a blue background */
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -5373,13 +5376,15 @@ textarea {
   border-radius: 10px;
   padding: 10px 14px;
 }
-#contact-popup #form-submit-content #thankyou-card .progress-complete {
-  display: block;
+@media screen and (max-width: 480px) {
+  #contact-popup #form-submit-content #thankyou-card {
+    max-width: 100%;
+    height: fit-content;
+  }
 }
-#contact-popup #form-submit-content #thankyou-card .done-svg {
-  position: absolute;
-  top: 147px;
-  right: 632px;
+#contact-popup #form-submit-content #thankyou-card .progress-complete {
+  display: flex;
+  align-items: center;
 }
 #contact-popup #form-submit-content #thankyou-card .form-success-image {
   display: flex;
