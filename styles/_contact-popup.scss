@@ -1,0 +1,652 @@
+textarea {
+  resize: none;
+  font-family: 'Epilogue';
+}
+
+#contact-popup {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    progress {
+        color: #FF7121;
+        font-size: .6em;
+        line-height: 1.5em;
+        text-indent: .5em;
+        width: 100%;
+        height: 9.25px;
+        border: 1px solid #EFEFEF;
+        background: #fff;
+        border-radius: 18.49px;
+        margin-top: 0px;
+		margin-top: 1%;
+		margin-right: -8%;
+		margin-bottom: 4.3%;
+
+    }
+    progress::-moz-progress-bar {
+        background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
+        border-radius: 18.49px;
+    }
+    progress::-webkit-progress-bar {
+        background:#EFEFEF;
+        border-radius: 18.49px;
+    }
+    progress::-webkit-progress-value {
+        background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
+        border-radius: 18.49px;
+    }
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    #left-contact-content {
+        width: 50%;
+        padding: 30px;
+        display: block;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .close-icon {
+            float: right;
+            cursor: pointer;
+        }
+
+        .form-content{
+            margin: 2em auto;
+            width: 58%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            h1 {
+                font-family: 'Epilogue';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #000000;
+                margin-bottom: 0.5em;
+            }
+            h2 {
+                font-family: Epilogue;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 27px;
+                letter-spacing: -0.03em;
+                text-align: left;
+                margin: 20px 0 25px;
+            }
+            .form-tab {
+                display: none;
+                h2.form-tab-sub-headings {
+                    font-family: Epilogue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: -0.03em;
+                    text-align: left;
+                    margin: 40px 0 21px;
+                }
+                .block {
+                    display: block !important;
+                }
+
+                .form-group {
+                    width: 100%;
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+
+                    input:not([type="file"]) {
+                        border: 1px solid #A6A9AB;
+                        border-radius: 8px;
+                        padding: 18px 16px;
+                        width: 100%;
+                        font-size: 16px;
+                        line-height: 19px;
+                        outline: none;
+                        box-shadow: none;
+
+                        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: #b6b8ba;
+                            opacity: 1; /* Firefox */
+                        }
+
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: #b6b8ba;
+                        }
+
+                        ::-ms-input-placeholder { /* Microsoft Edge */
+                            color: #b6b8ba;
+                        }
+                    }
+
+                    .custom-checkbox-wrapper {
+                        position: relative;
+                        padding-left: 35px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: -0.03em;
+                        color: #83898C;
+                        // display: block;
+
+                        input[type=checkbox] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        } 
+                        .custom-checkbox {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 6px;
+                            background-color: #eee;
+                        }
+
+                        /* On mouse-over, add a grey background color */
+                        &:hover input[type=checkbox] ~ .custom-checkbox {
+                            background-color: #ccc;
+                        }
+                        
+                        /* When the checkbox is checked, add a blue background */
+                        input[type=checkbox]:checked ~ .custom-checkbox {
+                            background-color: #FF7121;;
+                        }
+                        
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .custom-checkbox:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        
+                        /* Show the checkmark when checked */
+                        input[type=checkbox]:checked ~ .custom-checkbox:after {
+                            display: block;
+                        }
+                        
+                        /* Style the checkmark/indicator */
+                        .custom-checkbox:after {
+                            left: 7px;
+                            top: 5px;
+                            width: 5.5px;
+                            height: 8px;
+                            border: solid white;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                    .checkbox-wrapper {
+                        position: relative;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        font-size: 16px;
+                        line-height: 19px;
+                        // letter-spacing: -0.03em;
+                        color: #2B2F32;
+                        display: grid;
+                        grid-template-columns: 30px auto;
+                        column-gap: 2rem;
+                        margin-bottom: 21px;
+                        width: 100%;
+                        align-items: flex-start;
+                        margin-bottom: 21px;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        input[type=checkbox] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+
+                        .custom-checkbox-span {
+                            display: block;
+                        }
+
+                        .custom-checkbox  {
+                            display: block;
+                            top: 0;
+                            left: 0;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 6px;
+                            background-color: #eee;
+                            border: 1px solid #83898C;
+                        }
+                        /* On mouse-over, add a grey background color */
+                        &:hover input[type=checkbox] ~ .custom-checkbox {
+                            background-color: #ccc;
+                        }
+                        /* When the checkbox is checked, add a blue background */
+                        input[type=checkbox]:checked ~ .custom-checkbox {
+                            background-color: #FF7121;;
+                        }
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        .custom-checkbox:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        /* Show the checkmark when checked */
+                        input[type=checkbox]:checked ~ .custom-checkbox:after {
+                            display: block;
+                        }
+                        /* Style the checkmark/indicator */
+                        .custom-checkbox:after {
+                            left: 7px;
+                            top: 4px;
+                            width: 5.5px;
+                            height: 8px;
+                            border: solid white;
+                            border-width: 0 2px 2px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                    #additional-note {
+                        width: 100%;
+                        border-radius: 7px;
+                        padding: 1em;
+                        min-height: 150px;
+                        outline: none;
+                        box-shadow: none;
+                        border: 1px solid #bbb3b3;
+                    }
+                    .invalid {
+                        border-color: red;
+                    }
+                }
+                .form-group1 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 1rem;
+                    grid-row-gap: 1.4rem;
+
+                    .radio-wrapper {
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 16px;
+                        line-height: 19px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        color: #2B2F32;
+                        align-items: flex-start;
+                        display: grid;
+                        grid-column-gap: 0.1rem;
+                        grid-template-columns: 30px auto;
+                        align-items: flex-end;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        input[type=radio] {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
+
+                        .custom-checkbox-span {
+                            display: block;
+                        }
+
+                        .custom-radio {
+                            display: block;
+                            height: 20px;
+                            width: 20px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            border: 1px solid #83898C;
+                        }
+
+                        /* On mouse-over, add a grey background color */
+                        &:hover input[type=radio] ~ .custom-radio {
+                            background-color: #ccc;
+                        }
+                    
+                        /* When the radio button is checked, add a blue background */
+                        input[type=radio]:checked ~ .custom-radio {
+                            background-color: #FF7121;
+                        }
+                    
+                        /* Create the indicator (the dot/circle - hidden when not checked) */
+                        .custom-radio:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                    
+                        /* Show the indicator (dot/circle) when checked */
+                        input[type=radio]:checked ~ .custom-radio:after {
+                            display: block;
+                        }
+                    
+                        /* Style the indicator (dot/circle) */
+                        .custom-radio:after {
+                            top: 7px;
+                            left: 7px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: white;
+                        }
+                    }
+                }
+
+                .project-select {
+                    border: 1px solid #83898C;
+                    padding: 1em 1.2em;
+                    margin-bottom: 20px;
+                    border-bottom-right-radius: 8px;
+                    border-bottom-left-radius: 8px;
+
+                    .form-group {
+                        display: block;
+                    }
+                }
+
+                .project-select-label {
+                    margin: 2rem 0 0.6rem 0;
+
+                    .project-select-label-text {
+                        border: 1px solid #A6A9AB;
+                        border-radius: 8px;
+                        padding: 16px;
+                        width: 100%;
+                        font-size: 16px;
+                        outline: none;
+                        box-shadow: none;
+                        line-height: 1.3;
+                        margin-bottom: unset;
+
+                        .project-select-label-text-small {
+                            font-size: 13px;
+                            color: #878a8a;
+                        }
+                    }
+                }
+
+                .label-text {
+                    padding: 12px 16px 12px 0;
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 19px;
+                    outline: none;
+                    box-shadow: none;
+                    color: #ABAFB1;
+                }
+            }
+
+            .form-buttons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+
+                .btn {
+                    padding: 11px 22px;
+                    border: 1px solid #000000;
+                    border-radius: 6px;
+                    margin-left: 10px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 100%;
+                    font-family: "Epilogue", sans-serif;
+                }
+
+                .btn--back {
+                    border: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 100%;
+                    font-family: "Epilogue", sans-serif;
+                    padding: 0px 0px 5px;
+                    margin: 0px;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 0.4rem;
+
+                    span {
+                        display: block;
+                        margin-top: 3px;
+                    }
+
+                    svg.back-svg {
+                        vertical-align: middle !important;
+                    }
+                }
+
+                #nextBtn {
+                    display: block;
+                }
+
+                #submitBtn {
+                    display: none;
+                }
+
+                .btn--orange {
+                    &:after {
+                        background: #FF7121;
+                        border: 1px solid #000000;
+                        border-radius: 10px 6px 11px;
+                        width: 107%;
+                        height: 115%;
+                        z-index: -1;
+                    }
+                    &:hover {
+                        padding: 11px 33px;
+                        background-color: #fff;
+                        &:after {
+                            opacity: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #testimonial-content {
+        display: block;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        width: 50%;
+        background-color: #F9F9F9;
+        padding: 30px;
+
+        .close-icon {
+            float: right;
+            cursor: pointer;
+        }
+
+        .testimonial-card {
+            width: 382px;
+            height: 600px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+            margin: 5em auto;
+            border-radius: 10px;
+            display: none;
+            .card-image, .card-img, iframe {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-content {
+                padding: 30px;
+                .testimonial {
+                    font-family: 'Epilogue', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 42px;
+                    color: #000000;
+                    letter-spacing: -0.03em;
+                }
+                .author {
+                    font-family: 'Epilogue', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 25.28px;
+                    margin-bottom: 0;
+                    color: #000000;
+                }
+                .designation {
+                    font-family: 'Epilogue', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25.28px;
+                    margin-top: 0;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    #form-submit-content {
+        // display: flex;
+        .close-icon {
+            float: right;
+            cursor: pointer;
+        }
+
+        display: none;
+        width: 100%;
+        padding: 30px;
+
+        #thankyou-card {
+            width: 382px;
+            height: 600px;
+            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+            margin: 5em auto;
+            border-radius: 10px;
+            padding: 10px 14px;
+            @media screen and (max-width: 480px){
+                &{
+                    max-width: 100%;
+                    height: fit-content;
+                }
+            }
+            .progress-complete {
+                display: flex;
+                align-items: center;
+            }
+            // .done-svg {
+            //     position: absolute;
+            //     top: 147px;
+            //     right: 632px;
+            // }
+            .form-success-image {
+                display: flex;
+                margin-top: 1.5em;
+                img {
+                    margin: auto;
+                }
+            }
+            .success-title {
+                font-family: 'Epilogue';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+                /* or 48px */
+                letter-spacing: -0.03em;
+                color: #FF7121;
+            }
+            .success-text {
+                font-family: 'Epilogue';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                /* or 30px */
+                letter-spacing: -0.03em;
+                color: #000000;
+            }
+        }
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+    }
+}
+
+.drop-zone {
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Epilogue';
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    color: #A6A9AB;
+    border: 1px dashed #A6A9AB;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #F8F8F8;
+}
+
+.drop-zone--over {
+    border-style: solid;
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+    height: 200px;
+    display: unset !important;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+}
