@@ -9,8 +9,8 @@ const ContactPopUp = {
     input: "input",
     error: ".error",
     checkboxes: '#checkboxes-form input[type="checkbox"]',
-    timelines: 'input[name="timeline"]',
-    budget: 'input[name="budget"]',
+    timelines: 'input[name="Timeline"]',
+    budget: 'input[name="Budget"]',
     formProgress: "#form-progress",
     contactPopUp: "#contact-popup",
     leftContactContent: "#left-contact-content",
@@ -144,7 +144,7 @@ const ContactPopUp = {
         }
       }
 
-       if (formInput.subscribe.checked != true) {
+       if (formInput.Subscribe.checked != true) {
          error.innerHTML = "Please select the checkbox to continue";
          valid = false;
          return false;
