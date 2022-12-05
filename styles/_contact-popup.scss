@@ -20,7 +20,11 @@ textarea {
         border: 1px solid #EFEFEF;
         background: #fff;
         border-radius: 18.49px;
-        margin: 0.5em 0;
+        margin-top: 0px;
+		margin-top: 1%;
+		margin-right: -8%;
+		margin-bottom: 4.3%;
+
     }
     progress::-moz-progress-bar {
         background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
@@ -301,7 +305,7 @@ textarea {
                         display: grid;
                         grid-column-gap: 0.1rem;
                         grid-template-columns: 30px auto;
-                        align-items: flex-start;
+                        align-items: flex-end;
 
                         &:last-of-type {
                             margin-bottom: 0;
@@ -547,14 +551,21 @@ textarea {
             margin: 5em auto;
             border-radius: 10px;
             padding: 10px 14px;
+            @media screen and (max-width: 480px){
+                &{
+                    max-width: 100%;
+                    height: fit-content;
+                }
+            }
             .progress-complete {
-                display: block;
+                display: flex;
+                align-items: center;
             }
-            .done-svg {
-                position: absolute;
-                top: 147px;
-                right: 632px;
-            }
+            // .done-svg {
+            //     position: absolute;
+            //     top: 147px;
+            //     right: 632px;
+            // }
             .form-success-image {
                 display: flex;
                 margin-top: 1.5em;
