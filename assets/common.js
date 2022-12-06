@@ -422,7 +422,7 @@ $(document).ready(function () {
       .previousSibling.remove();
     document.querySelector(
       "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
-    ).innerHTML = "Upload";
+    ).innerHTML = "Upload File";
   }
   $(".loader ").hide();
   ContactPopUp.init();
