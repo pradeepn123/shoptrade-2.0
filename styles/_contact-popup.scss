@@ -59,12 +59,16 @@ textarea {
         }
 
         .form-content{
-            margin: 2em auto;
+            margin: 0 auto 2em auto;
             width: 58%;
             @media screen and (max-width: 768px) {
                 width: 100%;
             }
-
+            @media screen and (max-width: 480px){
+                &{
+                    margin: 1.5em auto 2em auto;
+                }
+            }
             h1 {
                 font-family: 'Epilogue';
                 font-style: normal;
@@ -83,6 +87,11 @@ textarea {
                 letter-spacing: -0.03em;
                 text-align: left;
                 margin: 20px 0 25px;
+                @media screen and (max-width: 480px){
+                    &{
+                        margin: 0 0 25px;
+                    }
+                }
             }
             .form-tab {
                 display: none;
@@ -93,7 +102,12 @@ textarea {
                     line-height: 24px;
                     letter-spacing: -0.03em;
                     text-align: left;
-                    margin: 40px 0 21px;
+                    margin: 30px 0 21px;
+                    @media screen and (max-width: 480px){
+                        &{
+                            margin: 10px 0 21px;
+                        }
+                    }
                 }
                 .block {
                     display: block !important;
@@ -185,9 +199,9 @@ textarea {
                         /* Style the checkmark/indicator */
                         .custom-checkbox:after {
                             left: 7px;
-                            top: 5px;
+                            top: 3.6px;
                             width: 5.5px;
-                            height: 8px;
+                            height: 11px;
                             border: solid white;
                             border-width: 0 2px 2px 0;
                             -webkit-transform: rotate(45deg);
@@ -214,6 +228,16 @@ textarea {
                         width: 100%;
                         align-items: flex-start;
                         margin-bottom: 21px;
+                        @media screen and (min-width: 1341px) {
+                            &{
+                                column-gap: 0;
+                            }
+                        }
+                        @media screen and (max-width: 480px) {
+                            &{
+                                column-gap: 0;
+                            }
+                        }
 
                         &:last-of-type {
                             margin-bottom: 0;
@@ -259,12 +283,20 @@ textarea {
                         input[type=checkbox]:checked ~ .custom-checkbox:after {
                             display: block;
                         }
+
+                        input[type=checkbox]:not(:checked) ~ .custom-checkbox-span{
+                            color: #808080;
+                        }
+
+                        input[type=checkbox]:checked ~ .custom-checkbox-span{
+                            color: #2b2f32;
+                        }
                         /* Style the checkmark/indicator */
                         .custom-checkbox:after {
                             left: 7px;
-                            top: 4px;
                             width: 5.5px;
-                            height: 8px;
+                            top: 3.6px;
+                            height: 11px;
                             border: solid white;
                             border-width: 0 2px 2px 0;
                             -webkit-transform: rotate(45deg);
@@ -292,6 +324,11 @@ textarea {
                     grid-row-gap: 1.4rem;
 
                     .radio-wrapper {
+                        @media screen and (max-width: 480px){
+                            &{
+                                align-items: flex-start;
+                            }
+                        }
                         position: relative;
                         cursor: pointer;
                         font-size: 16px;
@@ -301,7 +338,6 @@ textarea {
                         -ms-user-select: none;
                         user-select: none;
                         color: #2B2F32;
-                        align-items: flex-start;
                         display: grid;
                         grid-column-gap: 0.1rem;
                         grid-template-columns: 30px auto;
@@ -409,6 +445,11 @@ textarea {
             }
 
             .form-buttons {
+                @media screen and (max-width: 480px){
+                    &{
+                        padding-bottom: 40px;
+                    }
+                }
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -497,7 +538,7 @@ textarea {
             width: 382px;
             height: 600px;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-            margin: 5em auto;
+            margin: 3em auto 5em auto;
             border-radius: 10px;
             display: none;
             .card-image, .card-img, iframe {
