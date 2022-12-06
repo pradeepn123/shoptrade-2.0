@@ -329,6 +329,11 @@ textarea {
                                 align-items: flex-start;
                             }
                         }
+                        @media screen and (max-width: 320px){
+                            &{
+                                grid-column-gap: 0;
+                            }
+                        }
                         position: relative;
                         cursor: pointer;
                         font-size: 16px;
@@ -355,6 +360,11 @@ textarea {
 
                         .custom-checkbox-span {
                             display: block;
+                            @media screen and (max-width: 320px){
+                                &{
+                                    font-size: 14px;
+                                }
+                            }
                         }
 
                         .custom-radio {
@@ -401,6 +411,11 @@ textarea {
                 }
 
                 .project-select {
+                    @media screen and (max-width: 320px){
+                        &{
+                            padding: 1em 0 1em 0.2em;
+                        }
+                    }
                     border: 1px solid #83898C;
                     padding: 1em 1.2em;
                     margin-bottom: 20px;
