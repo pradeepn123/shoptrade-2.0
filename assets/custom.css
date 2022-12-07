@@ -4930,12 +4930,17 @@ textarea {
   cursor: pointer;
 }
 #contact-popup #left-contact-content .form-content {
-  margin: 2em auto;
+  margin: 0 auto 2em auto;
   width: 58%;
 }
 @media screen and (max-width: 768px) {
   #contact-popup #left-contact-content .form-content {
     width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content {
+    margin: 1.5em auto 2em auto;
   }
 }
 #contact-popup #left-contact-content .form-content h1 {
@@ -4957,6 +4962,11 @@ textarea {
   text-align: left;
   margin: 20px 0 25px;
 }
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content h2 {
+    margin: 0 0 25px;
+  }
+}
 #contact-popup #left-contact-content .form-content .form-tab {
   display: none;
 }
@@ -4967,7 +4977,12 @@ textarea {
   line-height: 24px;
   letter-spacing: -0.03em;
   text-align: left;
-  margin: 40px 0 21px;
+  margin: 30px 0 21px;
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab h2.form-tab-sub-headings {
+    margin: 10px 0 21px;
+  }
 }
 #contact-popup #left-contact-content .form-content .form-tab .block {
   display: block !important;
@@ -5048,9 +5063,9 @@ textarea {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
   left: 7px;
-  top: 5px;
+  top: 3.6px;
   width: 5.5px;
-  height: 8px;
+  height: 11px;
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
@@ -5079,6 +5094,16 @@ textarea {
   /* Create the checkmark/indicator (hidden when not checked) */
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
+}
+@media screen and (min-width: 1341px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
+    column-gap: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
+    column-gap: 0;
+  }
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper:last-of-type {
   margin-bottom: 0;
@@ -5117,11 +5142,17 @@ textarea {
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox:after {
   display: block;
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:not(:checked) ~ .custom-checkbox-span {
+  color: #808080;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox-span {
+  color: #2b2f32;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox:after {
   left: 7px;
-  top: 4px;
   width: 5.5px;
-  height: 8px;
+  top: 3.6px;
+  height: 11px;
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
@@ -5156,7 +5187,6 @@ textarea {
   -ms-user-select: none;
   user-select: none;
   color: #2B2F32;
-  align-items: flex-start;
   display: grid;
   grid-column-gap: 0.1rem;
   grid-template-columns: 30px auto;
@@ -5166,6 +5196,16 @@ textarea {
   /* Create the indicator (the dot/circle - hidden when not checked) */
   /* Show the indicator (dot/circle) when checked */
   /* Style the indicator (dot/circle) */
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
+    grid-column-gap: 0;
+  }
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper:last-of-type {
   margin-bottom: 0;
@@ -5177,6 +5217,11 @@ textarea {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-checkbox-span {
   display: block;
+}
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-checkbox-span {
+    font-size: 14px;
+  }
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio {
   display: block;
@@ -5215,6 +5260,11 @@ textarea {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .project-select {
+    padding: 1em 0 1em 0.2em;
+  }
+}
 #contact-popup #left-contact-content .form-content .form-tab .project-select .form-group {
   display: block;
 }
@@ -5250,6 +5300,11 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-buttons {
+    padding-bottom: 40px;
+  }
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn {
   padding: 11px 22px;
@@ -5324,7 +5379,7 @@ textarea {
   width: 382px;
   height: 600px;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-  margin: 5em auto;
+  margin: 3em auto 5em auto;
   border-radius: 10px;
   display: none;
 }

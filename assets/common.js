@@ -275,6 +275,10 @@ const ContactPopUp = {
       "none";
     document.querySelector(this.selectors.formSubmitContent).style.display =
       "block";
+      // Redirect to Homepage after submission
+    setTimeout(() => {
+      window.location.href = "/";
+    } , 6000)
     $(this.selectors.form).trigger("reset");
     $(".loader ").hide("fast");
     $(this.selectors.form)
@@ -292,21 +296,6 @@ const ContactPopUp = {
       if (prevdata.length == 0) {
         e.target.value = "https://" + e.target.value;
       }
-
-      // if (prevdata.length == 1 && e.target.value == "h") {
-      //   e.target.value = "https://" ;
-      // }
-
-      // if (prevdata.length == 1 && prevdata[0] != 'h') {
-      //   e.target.value = "https://" + e.target.value;
-      // }
-
-      // if (
-      //   (prevdata.length == 4 || prevdata.length == 5) &&
-      //   (e.target.value == "https" || e.target.value == "http")
-      // ) {
-      //   e.target.value = "";
-      // }
     });
 
     $(this.selectors.contactUs).on("click", this.openPopUp.bind(this));
@@ -424,6 +413,17 @@ const ContactPopUp = {
 };
 
 $(document).ready(function () {
+  // Contact Form - Final Page , Change Name TO Upload instead of Drag and Drop or Browse
+  if ($(window).width() < 480) {
+    document
+      .querySelector(
+        "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
+      )
+      .previousSibling.remove();
+    document.querySelector(
+      "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
+    ).innerHTML = "Upload File";
+  }
   $(".loader ").hide();
   ContactPopUp.init();
 
