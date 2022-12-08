@@ -1,7 +1,7 @@
 <footer class="shopify-footer">
   <ul class="shopify-footer__Head">
     {%- for link in section.settings.footerLink.links -%}
-      <li class="shopify-footer__links">
+      <li class="shopify-footer__links" id="footer-id-{{forloop.index}}">
         <a class="shopify-footer__link" href="{{ link.url }}">
           {{ link.title }}
         </a>

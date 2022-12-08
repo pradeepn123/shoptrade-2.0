@@ -604,16 +604,27 @@ textarea {
             width: 382px;
             height: 600px;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
-            margin: 5em auto;
+            margin: 0.5em auto 5em auto;
             border-radius: 10px;
             padding: 10px 14px;
+            @media screen and (min-width: 481px) and (max-width: 1023px){
+                &{
+                    height: fit-content;
+                }
+            }
             @media screen and (max-width: 480px){
                 &{
                     max-width: 100%;
                     height: fit-content;
+                    margin: 1em auto 5em auto;
                 }
             }
             .progress-complete {
+                @media screen and (min-width: 481px) and (max-width: 1023px){
+                    &{
+                        max-height: 50px;
+                    }
+                }
                 display: flex;
                 align-items: center;
             }
@@ -623,6 +634,16 @@ textarea {
             //     right: 632px;
             // }
             .form-success-image {
+                @media screen and (min-width: 481px) and (max-width: 1023px){
+                    &{
+                        margin-top: 0;
+                    }
+                }
+                @media screen and (max-width: 480px){
+                    &{
+                        margin-top: 0;
+                    }
+                }
                 display: flex;
                 margin-top: 1.5em;
                 img {
@@ -630,6 +651,11 @@ textarea {
                 }
             }
             .success-title {
+                @media screen and (min-width: 481px) and (max-width: 1023px){
+                    &{
+                        margin : 0;
+                    }
+                }
                 font-family: 'Epilogue';
                 font-style: normal;
                 font-weight: 700;
