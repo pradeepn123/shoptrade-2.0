@@ -48,14 +48,14 @@
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "#5. System Integration",
+            "cardHeading": "#6. System Integration",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nYour e-commerce team should be focused on your growth. Not tied down by manually processes like inputting data into overly-complex spreadsheets.\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nLet us connect your online store to the back-end of your retail operations. We’ll integrate all your data between Shopify to your ERP, PIM and marketing systems. Then watch your team get their time back to focus on what matters the most.\n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
         "7de9a382-de41-4034-9eb7-985a4001f0ab": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "#6. Conversion Rate Optimization",
+            "cardHeading": "#7. Conversion Rate Optimization",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nYou might have a stunning new Shopify Plus store with a flashy tech stack that’s not struggling for web traffic at all. But can we push that conversion rate higher?\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur CRO services will help. With A\/B testing, analytics, UX best practices — and a much more. Those sky-high conversion rate targets don’t have only to be ambitions. We’ll get you the conversions your products deserve.\n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
@@ -63,8 +63,8 @@
           "type": "serviceCard",
           "disabled": true,
           "settings": {
-            "cardHeading": "Offline to Online",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">Does your brand use physical channels as well as a Shopify store? There are omnichannel technologies available to connect your online-to-offline touchpoints.<\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">If you run permanent physical stores or temporary pop-ups, Shopify POS can unify your online and in-person sales. If you sell events’ tickets and want to streamline the check-in experience, then Event Ticketing could be for you.      <\/p>\n<\/li>\n<\/ul>"
+            "cardHeading": "#8. Ongoing Support",
+            "cardList": ""
           }
         },
         "57217090-2113-46e1-b790-eb3fc9b915ca": {
