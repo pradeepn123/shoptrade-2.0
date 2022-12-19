@@ -28,7 +28,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "#3. Headless Commerce",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\n\nWe specialize in 360° headless commerce development services. Our team has extensive knowledge and experience in backend and frontend development, and we have the expertise to tackle headless commerce's complexity and architectural challenges.\n\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\n\nOur key tech stack: \n<br>Frontend technologies; Shopify Hydrogen, Next.js, Gatsby, and Contentful, but we have the expertise to work with any JavaScript framework.<br>\nBackend technologies; Python(Django) and Node.js \n<\/p>                                \n<\/li>       \n<\/ul>"
+            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\n\nWe specialize in 360° headless commerce development services. Our team has extensive knowledge and experience in backend and frontend development, and we have the expertise to tackle headless commerce's complexity and architectural challenges.\n\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\n\nOur key tech stack: Frontend technologies; Shopify Hydrogen, Next.js, Gatsby, and Contentful, but we have the expertise to work with any JavaScript framework.\nBackend technologies; Python(Django) and Node.js \n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
         "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
