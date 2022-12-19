@@ -17,8 +17,16 @@
             "cardList": "<p class=\"ourServices__cardText\"> There are two approaches to theme development, and the appropriate one can be chosen based on factors such as budget and the desired go-to-market speed. <\/p>\n\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\"> Custom Theme Development: This would be the best suitable option if you have an existing design done or require a fully custom theme.  Ideal for brands that want a unique user experience. \n <\/p>\n\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\"> Theme-Based Development: Work based on a selected theme as per your choice\/with our recommendation from the Shopify theme store; includes Limited design & development. Ideals for Merchants with a limited budget and who want to go to market fast. \n <\/p>"
           }
         },
+        "652be96d-9e9c-4402-afa1-0df03979a209": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "#2. Data Driven UX & UI Design",
+            "cardList": "<p class=\"ourServices__cardText\"> We are a design-focused development agency at heart if you're looking to redesign your existing store or product. We can provide UI\/UX design services.   <\/p>"
+          }
+        },
         "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
           "type": "serviceCard",
+          "disabled": true,
           "settings": {
             "cardHeading": "#2. Replatforming\/Migration",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nMoving between platforms can be a daunting task. Me make this challenge look easy. Majority of our Shopify Plus projects involve migrating brands from Magento , CommerceCloud, and various platforms to Shopify. \n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nIf we’re handling your brand’s re-platforming project, you’ll be able to count on our experience to deliver. Your data will be transferred seamlessly and your integrations are connected flawlessly. Leaving you with all the benefits, and none of the risks of migration. \n<\/p>                                \n<\/li>       \n<\/ul>"
@@ -52,14 +60,6 @@
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nYou might have a stunning new Shopify Plus store with a flashy tech stack that’s not struggling for web traffic at all. But can we push that conversion rate higher?\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur CRO services will help. With A\/B testing, analytics, UX best practices — and a much more. Those sky-high conversion rate targets don’t have only to be ambitions. We’ll get you the conversions your products deserve.\n<\/p>                                \n<\/li>       \n<\/ul>"
           }
         },
-        "652be96d-9e9c-4402-afa1-0df03979a209": {
-          "type": "serviceCard",
-          "disabled": true,
-          "settings": {
-            "cardHeading": "Performance enhancement",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\"> When it comes to e-commerce, time really is money. A slow store can damage your bounce rate, hurt your conversions, and slash your search positions.  <\/p>\n<\/li>   \n<li>  <p class=\"ourServices__cardText\">We use a custom development framework and keep a stern focus when designing-to-convert, creating Shopify stores that are some of the fastest out there. Passionate about performance, we can keep tuning your website for speed as well, so that even as your business expands, your store remains lightning-fast.<\/p>                                <\/li>\n<\/ul>"
-          }
-        },
         "659e6233-0209-4682-aead-afcbd918713a": {
           "type": "serviceCard",
           "disabled": true,
@@ -79,12 +79,12 @@
       },
       "block_order": [
         "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088",
+        "652be96d-9e9c-4402-afa1-0df03979a209",
         "cd542eb9-0e6e-46c1-adde-a8f79d9581d6",
         "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20",
         "1a756da3-7bd4-44b9-b318-a700d8e6c624",
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee",
         "7de9a382-de41-4034-9eb7-985a4001f0ab",
-        "652be96d-9e9c-4402-afa1-0df03979a209",
         "659e6233-0209-4682-aead-afcbd918713a",
         "57217090-2113-46e1-b790-eb3fc9b915ca"
       ],
