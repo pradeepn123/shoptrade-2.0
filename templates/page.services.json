@@ -54,6 +54,7 @@
         },
         "7de9a382-de41-4034-9eb7-985a4001f0ab": {
           "type": "serviceCard",
+          "disabled": true,
           "settings": {
             "cardHeading": "#7. Conversion Rate Optimization",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nYou might have a stunning new Shopify Plus store with a flashy tech stack that’s not struggling for web traffic at all. But can we push that conversion rate higher?\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur CRO services will help. With A\/B testing, analytics, UX best practices — and a much more. Those sky-high conversion rate targets don’t have only to be ambitions. We’ll get you the conversions your products deserve.\n<\/p>                                \n<\/li>       \n<\/ul>"
@@ -61,6 +62,7 @@
         },
         "659e6233-0209-4682-aead-afcbd918713a": {
           "type": "serviceCard",
+          "disabled": true,
           "settings": {
             "cardHeading": "#8. Ongoing Support",
             "cardList": ""
