@@ -49,7 +49,7 @@
           "type": "serviceCard",
           "settings": {
             "cardHeading": "#6. System Integration",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nYour e-commerce team should be focused on your growth. Not tied down by manually processes like inputting data into overly-complex spreadsheets.\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nLet us connect your online store to the back-end of your retail operations. We’ll integrate all your data between Shopify to your ERP, PIM and marketing systems. Then watch your team get their time back to focus on what matters the most.\n<\/p>                                \n<\/li>       \n<\/ul>"
+            "cardList": "<p class=\"ourServices__cardText\">\n<img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\"> We have partnerships with top SaaS companies, including Okendo, Klaviyo, Alavara, ReCharge, Gorgias, and Yopto, to provide a top-notch commerce experience. In addition, we can create custom integrations to connect your ERP, CRM, PIM, and other systems, allowing you to focus on growing your brand. <\/p>"
           }
         },
         "7de9a382-de41-4034-9eb7-985a4001f0ab": {
