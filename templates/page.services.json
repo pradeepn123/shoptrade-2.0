@@ -24,14 +24,6 @@
             "cardList": "<p class=\"ourServices__cardText\">As a design-focused development agency, our services prioritize design, taking a design-first approach to everything we do.<\/p>\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\">\nOur design services include comprehensive UX research, UX\/UI design, and design system development for theme and product development.\"\n<\/p>\n\n\n\n\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\">\nAs part of our data-driven approach, we will implement analytics to track user behavior and engagement with your product, and use this data to optimize the design and user experience. Additionally, we will conduct usability testing to identify any issues and make iterative changes based on user feedback.\n<\/p>"
           }
         },
-        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
-          "type": "serviceCard",
-          "disabled": true,
-          "settings": {
-            "cardHeading": "#2. Replatforming\/Migration",
-            "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nMoving between platforms can be a daunting task. Me make this challenge look easy. Majority of our Shopify Plus projects involve migrating brands from Magento , CommerceCloud, and various platforms to Shopify. \n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nIf we’re handling your brand’s re-platforming project, you’ll be able to count on our experience to deliver. Your data will be transferred seamlessly and your integrations are connected flawlessly. Leaving you with all the benefits, and none of the risks of migration. \n<\/p>                                \n<\/li>       \n<\/ul>"
-          }
-        },
         "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20": {
           "type": "serviceCard",
           "settings": {
@@ -44,6 +36,13 @@
           "settings": {
             "cardHeading": "#4. Product Development",
             "cardList": "<p class=\"ourServices__cardText\"> Our team specializes in developing Shopify apps, both for the Shopify app store and custom apps for Merchant's specific needs. We offer design and development services to help you transform your app idea into a reality. We will handle all aspects of the process, from research\/development to approval. <\/p>\n\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\"> Public app: We have experience building a wide range of apps, and can help bring your app idea to life through our design and development services. <a href=\"https:\/\/shoptrade.co\/pages\/products\">Checkout our apps<\/a>\n <\/p>\n\n<p class=\"ourServices__cardText\"><img width=\"2%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722\"> Custom app: If you have a unique requirement that cannot be met by existing apps in the app store, we can help you develop a custom application tailored to your specific needs. This service is perfect for merchants looking for solutions for their own store. \n <\/p>"
+          }
+        },
+        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6": {
+          "type": "serviceCard",
+          "settings": {
+            "cardHeading": "#5. Platform Migrations",
+            "cardList": "<p class=\"ourServices__cardText\">\nWe specialize in handling data migrations from eCommerce platforms such as Salesforce Commerce, Magento, BigCommerce, WooCommerce, and custom solutions. Our data migration process is safe and secure, with a focus on SEO and 301 redirects. We can migrate customer data, products, content, order history, and more.\n<\/p>                                \n       \n"
           }
         },
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee": {
@@ -80,9 +79,9 @@
       "block_order": [
         "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088",
         "652be96d-9e9c-4402-afa1-0df03979a209",
-        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6",
         "245b2bf8-1b70-4d0c-bbea-b8c8033c4b20",
         "1a756da3-7bd4-44b9-b318-a700d8e6c624",
+        "cd542eb9-0e6e-46c1-adde-a8f79d9581d6",
         "62a37e91-f436-4a87-8c84-8b6dbb6bb2ee",
         "7de9a382-de41-4034-9eb7-985a4001f0ab",
         "659e6233-0209-4682-aead-afcbd918713a",
