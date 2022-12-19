@@ -61,7 +61,6 @@
         },
         "659e6233-0209-4682-aead-afcbd918713a": {
           "type": "serviceCard",
-          "disabled": true,
           "settings": {
             "cardHeading": "#8. Ongoing Support",
             "cardList": ""
