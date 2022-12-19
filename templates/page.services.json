@@ -34,7 +34,7 @@
         "1a756da3-7bd4-44b9-b318-a700d8e6c624": {
           "type": "serviceCard",
           "settings": {
-            "cardHeading": "#4. Shopify App Development",
+            "cardHeading": "#4. Product Development",
             "cardList": "<ul class=\"ourServices__cardListItem\">   <li>  <p class=\"ourServices__cardText\">\nHave you got a super-specific functionality requirement or an app idea? So specific, there isn’t an existing app to cater for it? If not, we can help\n<\/p>                                \n<\/li>   \n<li>  \n<p class=\"ourServices__cardText\">\nOur App Development team brings extensive Shopify knowledge and development experience to create technologies tailored to your business. If there’s a way of building a solution, we’ll make it happen.   \n<a href=\"https:\/\/shoptrade.co\/pages\/products\">Checkout our apps<\/a><\/p>\n                             \n<\/li>       \n<\/ul>"
           }
         },
