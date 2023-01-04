@@ -386,6 +386,18 @@
             "careerLink": ""
           }
         },
+        "b3626433-b8cc-4897-bd48-13af63b7d7ad": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Chaman.jpg",
+            "memberName": "Chaman Madhu",
+            "memberDesignation": "Design II - (Product Design Specialist)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "016c8a11-e388-4b39-9134-63619cde6f81": {
           "type": "cardType",
           "settings": {
@@ -555,14 +567,14 @@
             "careerLink": ""
           }
         },
-        "b3626433-b8cc-4897-bd48-13af63b7d7ad": {
+        "162015ad-17ac-4419-83d4-1eba740b7372": {
           "type": "cardType",
           "settings": {
-            "profileType": "member",
+            "profileType": "opening",
             "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Chaman.jpg",
-            "memberName": "Chaman Madhu",
-            "memberDesignation": "Design II - (Product Design Specialist)",
+            "memberImage": "shopify:\/\/shop_images\/Sumayya.jpg",
+            "memberName": "Sumayya Ishaq",
+            "memberDesignation": "Front-End Engineer",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -576,6 +588,7 @@
         "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
         "64445639-0ce3-4892-9ce3-ac0a061592d3",
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
+        "b3626433-b8cc-4897-bd48-13af63b7d7ad",
         "016c8a11-e388-4b39-9134-63619cde6f81",
         "96ec600a-46e6-4781-bf21-2a08ef282c77",
         "c82d69dd-0a55-4bee-9c38-88f027091d0b",
@@ -590,7 +603,7 @@
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
         "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "b3626433-b8cc-4897-bd48-13af63b7d7ad"
+        "162015ad-17ac-4419-83d4-1eba740b7372"
       ],
       "settings": {
         "heading": "Meet our Team"
