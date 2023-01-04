@@ -362,6 +362,18 @@
             "careerLink": ""
           }
         },
+        "06a45bf8-45c0-4bb5-99c0-30429226531b": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Arjun.jpg",
+            "memberName": "Arjun GM",
+            "memberDesignation": "Business Analyst",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "64445639-0ce3-4892-9ce3-ac0a061592d3": {
           "type": "cardType",
           "settings": {
@@ -578,18 +590,6 @@
             "careerbtn": "",
             "careerLink": ""
           }
-        },
-        "06a45bf8-45c0-4bb5-99c0-30429226531b": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Arjun.jpg",
-            "memberName": "Arjun GM",
-            "memberDesignation": "Business Analyst",
-            "careerbtn": "",
-            "careerLink": ""
-          }
         }
       },
       "block_order": [
@@ -598,6 +598,7 @@
         "428fa980-e55f-4f3e-b895-9ec4f26f79b4",
         "ea4195cb-784f-4d5b-a273-edd40889edf6",
         "d8e3652f-9ea3-43c8-943a-8a1a127b912d",
+        "06a45bf8-45c0-4bb5-99c0-30429226531b",
         "64445639-0ce3-4892-9ce3-ac0a061592d3",
         "8affedcf-6ef6-495a-92aa-94e5cc62a68b",
         "b3626433-b8cc-4897-bd48-13af63b7d7ad",
@@ -615,8 +616,7 @@
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
-        "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "06a45bf8-45c0-4bb5-99c0-30429226531b"
+        "23fba3fc-0c8f-4369-99e0-f209920713bb"
       ],
       "settings": {
         "heading": "Meet our Team"
