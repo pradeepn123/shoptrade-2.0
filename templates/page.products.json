@@ -3,15 +3,15 @@
     "product": {
       "type": "products",
       "blocks": {
-        "7194a69d-10d7-4ea9-8a2e-6f0ed327aaa0": {
+        "1a6dfd7d-9e4c-45df-8297-652228e125be": {
           "type": "products",
           "settings": {
-            "productImg": "shopify:\/\/shop_images\/lenze.png",
-            "productLogo": "shopify:\/\/shop_images\/logotext.png",
-            "head": "LensAdvizor: Prescription Lens",
-            "sub": "With LensAdvizor, you can easily sell prescription lenses with your eyewear products. LensAdvizor lets your customers upload and enter their prescriptions and add lenses to your frames, just like how leading online brands do. Save time and sell more frames with a no-hassle setup and our dedicated support team.",
+            "productImg": "shopify:\/\/shop_images\/Sendif_x_Shoptrade.png",
+            "productLogo": "shopify:\/\/shop_images\/Sendif_logo_2.png",
+            "head": "Sendif: Order Status Updates",
+            "sub": "If you sell products with lead times, it's important to keep customers updated so that they don't have to ask you when their order will be ready. We wanted a way to do that, so we built Sendif: an easy way to automate personalised order status update emails to customers that build trust and loyalty while saving you time on customer support.",
             "btnContent": "View App",
-            "link": "https:\/\/apps.shopify.com\/lensadvizor"
+            "link": "https:\/\/apps.shopify.com\/sendif"
           }
         },
         "11bc05ff-af53-4466-984b-2a9943844bd6": {
@@ -24,11 +24,23 @@
             "btnContent": "View App",
             "link": "https:\/\/apps.shopify.com\/new-tikshop"
           }
+        },
+        "7194a69d-10d7-4ea9-8a2e-6f0ed327aaa0": {
+          "type": "products",
+          "settings": {
+            "productImg": "shopify:\/\/shop_images\/lenze.png",
+            "productLogo": "shopify:\/\/shop_images\/logotext.png",
+            "head": "LensAdvizor: Prescription Lens",
+            "sub": "With LensAdvizor, you can easily sell prescription lenses with your eyewear products. LensAdvizor lets your customers upload and enter their prescriptions and add lenses to your frames, just like how leading online brands do. Save time and sell more frames with a no-hassle setup and our dedicated support team.",
+            "btnContent": "View App",
+            "link": "https:\/\/apps.shopify.com\/lensadvizor"
+          }
         }
       },
       "block_order": [
-        "7194a69d-10d7-4ea9-8a2e-6f0ed327aaa0",
-        "11bc05ff-af53-4466-984b-2a9943844bd6"
+        "1a6dfd7d-9e4c-45df-8297-652228e125be",
+        "11bc05ff-af53-4466-984b-2a9943844bd6",
+        "7194a69d-10d7-4ea9-8a2e-6f0ed327aaa0"
       ],
       "settings": {
         "heading": "Products"
