@@ -34,15 +34,17 @@
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b"
       ],
       "settings": {
-        "heading": "Angles",
-        "subHeading": "Smart True HEPA Air Purifiers",
+        "heading": "Angles 90",
+        "subHeading": "Fitness equipment ",
         "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png",
-        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png"
+        "bannerImageLogo": "shopify:\/\/shop_images\/hataspace-logo-big.png",
+        "websiteLInk": ""
       }
     },
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
+        "slider": ""
       }
     },
     "showcase-role": {
