@@ -555,6 +555,18 @@
             "careerLink": ""
           }
         },
+        "1b73beda-f36e-48d1-b6cb-86c51c9cebfe": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Hadhil.jpg",
+            "memberName": "Mohamed Hadhil",
+            "memberDesignation": "Support Engineer",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc": {
           "type": "cardType",
           "settings": {
@@ -602,18 +614,6 @@
             "careerbtn": "",
             "careerLink": ""
           }
-        },
-        "1b73beda-f36e-48d1-b6cb-86c51c9cebfe": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Hadhil.jpg",
-            "memberName": "Mohamed Hadhil",
-            "memberDesignation": "Support Engineer",
-            "careerbtn": "",
-            "careerLink": ""
-          }
         }
       },
       "block_order": [
@@ -638,11 +638,11 @@
         "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
         "436484f0-034c-4e1e-8ef4-471b6aae546a",
         "b83a8738-e232-4799-a200-a99760854011",
+        "1b73beda-f36e-48d1-b6cb-86c51c9cebfe",
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
         "40841869-daac-4449-bf3c-6f3406395749",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
-        "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "1b73beda-f36e-48d1-b6cb-86c51c9cebfe"
+        "23fba3fc-0c8f-4369-99e0-f209920713bb"
       ],
       "settings": {
         "heading": "Meet our Team"
