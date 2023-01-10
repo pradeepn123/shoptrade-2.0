@@ -566,8 +566,15 @@ input::-moz-placeholder {
     z-index: -1;
   }
 }
+.video-container .js-desktop-video.only-mobile {
+  min-width: 360px;
+  width: 100%;
+}
 .video-container video {
   object-fit: cover;
+}
+.video-container .js-desktop-video.only-mobile video {
+  display: none;
 }
 
 .caption-with-letter-spacing {

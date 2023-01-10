@@ -4,9 +4,10 @@ $(document).ready(function () {
 
   setTimeout(function(){
     $(".js-video-thumbnail").hide()
+    $(".js-desktop-video video").show()
  
     $('video').css("opacity","1")
-  },2000)
+  },1000)
 
  
   
