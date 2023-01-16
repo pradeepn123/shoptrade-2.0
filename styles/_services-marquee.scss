@@ -1,0 +1,45 @@
+.services-marquee-wrap {
+    border-bottom: 1px solid #000;
+    background: #000;
+
+    .swiper-container {
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                border-right: 1px solid #000;
+                // border-left: 1px solid #000;
+                width: fit-content;
+                background: #fff;
+                border-top-right-radius: 40px;
+                max-width: 432px;
+                height: 135px;
+        
+                &:not(:first-child) {
+                    border-top-left-radius: 40px;
+                }
+        
+                .service-icon {
+                    padding: 50px;
+                }
+        
+                .service-name {
+                    padding: 40px 20px;
+                    border-left: 1px solid #000;
+        
+                    p{
+                        font-family: 'Minecraft';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        margin: 0;
+                        line-height: 30px;
+                    }
+                }
+            } 
+        }
+    }  
+}

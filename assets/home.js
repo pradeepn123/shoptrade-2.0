@@ -64,6 +64,30 @@ $(document).ready(function () {
  
     marquee.autoplay.start();
   })
+
+  let services = new Swiper('.js-services-slider', {
+    spaceBetween: 0,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false
+    },
+    loop: true,
+    slidesPerView:'auto',
+    allowTouchMove: false,
+    
+  });
+  
+
+  $('.js-services-slider').on('mouseenter', function(e){
+
+    marquee.autoplay.stop()
+  })
+  $('.js-services-slider').on('mouseleave', function(e){
+ 
+    marquee.autoplay.start();
+  })
   
 
 

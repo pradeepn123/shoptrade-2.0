@@ -1,3 +1,7 @@
+{% assign hashtag_blocks = section.blocks | where: 'type', 'hashtagBlock' %}
+
+{% assign credit_blocks = section.blocks | where: 'type', 'creditProfile' %}
+
 <section class="showcaseBanner"> 
 
     <div class="container">
@@ -5,7 +9,19 @@
         <div class="showcaseBanner__head">
         <div class="showcaseBanner__header">
             <h1 class="h1"> {{ section.settings.heading }} </h1>
-            <p class="fnt-48 clr-b"> {{ section.settings.subHeading }} </p>
+            {% if hashtag_blocks.size > 0 %}
+                <ul class="showcaseBanner__hashtagBlock">
+                    {%- for block in hashtag_blocks limit: 3 -%}
+                        <li class="showcaseBanner__hashtag">
+                            # {{ block.settings.hashtag }}
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            {% endif %}
+
+            {% if section.settings.subHeading != blank %}
+                <p class="fnt-48 clr-b"> {{ section.settings.subHeading }} </p>
+            {% endif %}
         </div>
         <div class="showcaseBanner__links">
             <div class="showcaseBanner__linksItem">
@@ -18,19 +34,19 @@
                 {% if page.metafields.custom.credit.value != blank %}
                 <ul class="showcaseBanner__credit">
                  
-                        {% for item in page.metafields.custom.credit.value.profile limit : 3 %}
-                     
-                            <li class="showcaseBanner__creditItem">
-                                <img src="{{ item.image  }}">
-                            </li>
-                        {% endfor %}
+                    {% comment %} {% for item in page.metafields.custom.credit.value.profile limit : 3 %}
+                    
+                        <li class="showcaseBanner__creditItem">
+                            <img src="{{ item.image  }}">
+                        </li>
+                    {% endfor %} {% endcomment %}
                  
                     
-                    {% comment %} {%- for block in section.blocks limit: 3 -%}
+                    {%- for block in credit_blocks limit: 3 -%}
                         <li class="showcaseBanner__creditItem">
                             <img src="{{ block.settings.profileImage | image_url }}">
                         </li>
-                    {%- endfor -%} {% endcomment %}
+                    {%- endfor -%}
                 
                 </ul>
                 <p class="link-text text-center">Credits</p>
@@ -60,7 +76,6 @@
         <div class="container">
             <div class="showcaseBanner__imgWrp">
                 <img class="showcaseBanner__img" src="{{ section.settings.bannerImage | image_url }}">
-                <img class="showcaseBanner__logo" src='{{ section.settings.bannerImageLogo | image_url }}'>
             </div>
         </div>
     </div>
@@ -75,8 +90,7 @@
             "label":"Heading",
             "type":"text"
         
-        },
-        {
+        },{
             "id":"subHeading",
             "label":"Sub Heading",
             "type":"text"
@@ -87,17 +101,23 @@
             "type":"image_picker"
         
         },{
-            "id":"bannerImageLogo",
-            "label":"Banner Logo Image",
-            "type":"image_picker"
-        
-        },{
             "label":"website link",
             "type":"url",
             "id":"websiteLInk"
         }
     ],
     "blocks": [
+        {
+            "type": "hashtagBlock",
+            "name": "Hashtag Block",
+            "settings": [
+                {
+                    "id":"hashtag",
+                    "label":"Hashtag",
+                    "type" : "text"
+                }
+            ]
+        },
         {
             "type": "creditProfile",
             "name": "credit profile",

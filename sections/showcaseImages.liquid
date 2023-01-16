@@ -2,18 +2,38 @@
 
     <div class="container">
         <div class="showcaseImages__imgWrp">
-            {%- assign smallImage = section.blocks | where : 'type','showcaseImageBLock' -%}
+            {%- assign smallImage2 = section.blocks | where : 'type','showcaseImageBLock2' -%}
     
-            {%- for block in smallImage -%}
+            {%- for block in smallImage2 -%}
                 <div class="showcaseImages__img">
-                    <img class="" src="{{ block.settings.image | image_url }}">
+                    <img class="" src="{{ block.settings.image2 | image_url }}">
                 </div>
             {%- endfor -%}
-            {%- assign largeImage = section.blocks | where : 'type','showcaselardImage' -%}
+            {%- assign largeImage = section.blocks | where : 'type','showcaseLargeImage' -%}
             
             {% for block in largeImage %}
                 <div class="showcaseImages__largeImage">
                     <img src="{{ block.settings.largeImage | image_url}}">
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="showcaseImages__imgWrp">
+            {%- assign smallImage3 = section.blocks | where : 'type','showcaseImageBLock3' -%}
+    
+            {%- for block in smallImage3 -%}
+                <div class="showcaseImages__img3block">
+                    <img class="" src="{{ block.settings.image3 | image_url }}">
+                </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="showcaseImages__imgWrp">
+            {%- assign largeImage1 = section.blocks | where : 'type','showcaseLargeImage1' -%}
+            
+            {% for block in largeImage1 %}
+                <div class="showcaseImages__largeImage">
+                    <img src="{{ block.settings.largeImage1 | image_url}}">
                 </div>
             {% endfor %}
            
@@ -29,22 +49,46 @@
         "name":"showcase Images",
         "blocks": [
             {
-                "type": "showcaseImageBLock",
-                "name": "Showcase Image block",
+                "type": "showcaseImageBLock2",
+                "name": "Showcase Image block2",
                 "settings": [
                     {
-                        "id":"image",
+                        "id":"image2",
                         "type":"image_picker",
                         "label":"Project image"
                     }
                 ]
             },
             {
-                "type":"showcaselardImage",
+                "type":"showcaseLargeImage",
                 "name":"Showcase Large Image",
                 "settings": [
                     {
                         "id":"largeImage",
+                        "type":"image_picker",
+                        "label":"Project Large image"
+                    
+                    }
+                ]
+            
+            },
+            {
+                "type": "showcaseImageBLock3",
+                "name": "Showcase Image block3",
+                "settings": [
+                    {
+                        "id":"image3",
+                        "type":"image_picker",
+                        "label":"Project image"
+                    }
+                ]
+            },
+            {
+                "type":"showcaseLargeImage1",
+                "name":"Showcase Large Image1",
+                "settings": [
+                    {
+                        "id":"largeImage1",
                         "type":"image_picker",
                         "label":"Project Large image"
                     

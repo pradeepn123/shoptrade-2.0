@@ -627,6 +627,10 @@ input::-moz-placeholder {
   -webkit-appearance: none;
 }
 
+.font-70 {
+  font-size: 70px;
+}
+
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -641,6 +645,11 @@ input::-moz-placeholder {
     padding: 30px 0 60px;
     height: auto;
     flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .homeBanner {
+    padding-top: 0;
   }
 }
 @media (min-width: 1680px) {
@@ -957,6 +966,11 @@ input::-moz-placeholder {
   .circle-link {
     width: 28px;
     height: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .circle-link {
+    margin: auto;
   }
 }
 @media (max-width: 991px) {
@@ -2376,6 +2390,7 @@ input::-moz-placeholder {
 }
 .shoptrade {
   padding: 8px 30px;
+  background-color: var(--COLOR-WHITE);
   position: fixed;
   left: 0;
   right: 0;
@@ -2839,7 +2854,7 @@ input::-moz-placeholder {
 
 .showcaseBanner h1 {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .showcaseBanner p {
   margin: 0;
@@ -2890,6 +2905,11 @@ input::-moz-placeholder {
   margin-right: -15px;
   position: relative;
 }
+@media (max-width: 999px) {
+  .showcaseBanner__creditItem:not(:last-child) {
+    margin-right: -5px;
+  }
+}
 .showcaseBanner__links {
   display: flex;
   align-items: center;
@@ -2901,6 +2921,11 @@ input::-moz-placeholder {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .showcaseBanner__links {
+    margin-top: 15px;
+  }
+}
 .showcaseBanner__links .link-text {
   font-weight: 500;
   font-size: 16px;
@@ -2908,6 +2933,11 @@ input::-moz-placeholder {
   letter-spacing: 0.06em;
   color: var(--COLOR-BLACK);
   margin-top: 6px;
+}
+@media (max-width: 767px) {
+  .showcaseBanner__links .link-text {
+    font-size: 12px;
+  }
 }
 .showcaseBanner .creditDrop {
   position: absolute;
@@ -2960,6 +2990,46 @@ input::-moz-placeholder {
 .showcaseBanner .creditDrop__itemBody p:first-child {
   margin-bottom: 4px;
 }
+.showcaseBanner .showcaseBanner__header {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .showcaseBanner .showcaseBanner__header {
+    flex-direction: column;
+  }
+}
+.showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock {
+    padding-left: 0;
+  }
+}
+.showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock li {
+  border: 1px solid #FF7121;
+  color: #FF7121;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Minecraft";
+  list-style: none;
+  width: fit-content;
+  padding: 12px 15px;
+  border-radius: 50px;
+}
+.showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock li:not(:first-child) {
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock li {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 10px;
+  }
+}
 
 .showcaseBanner__bannerrImage {
   border-top: 1px solid var(--COLOR-BLACK);
@@ -2967,16 +3037,9 @@ input::-moz-placeholder {
   position: relative;
   margin-top: 40px;
 }
-.showcaseBanner__logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 99;
-}
-@media (max-width: 991px) {
-  .showcaseBanner__logo {
-    width: 200px;
+@media (max-width: 767px) {
+  .showcaseBanner__bannerrImage {
+    margin-top: 25px;
   }
 }
 .showcaseBanner__imgWrp {
@@ -2984,25 +3047,14 @@ input::-moz-placeholder {
   border-right: 1px solid var(--COLOR-BLACK);
   border-left: 1px solid var(--COLOR-BLACK);
 }
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .showcaseBanner__imgWrp {
-    padding: 40px 20px;
+    padding: 20px;
   }
 }
 .showcaseBanner__img {
   width: 100%;
-  height: 562px;
   object-fit: cover;
-}
-@media (max-width: 991px) {
-  .showcaseBanner__img {
-    height: 288px;
-  }
-}
-@media (max-width: 767px) {
-  .showcaseBanner__img {
-    height: 188px;
-  }
 }
 
 .showcaseMarque .Marquee-tag p {
@@ -3010,6 +3062,7 @@ input::-moz-placeholder {
   line-height: 100%;
   letter-spacing: 0.06em;
   font-family: Minecraft;
+  color: #000;
 }
 @media (max-width: 767px) {
   .showcaseMarque .Marquee-tag p {
@@ -3023,6 +3076,7 @@ input::-moz-placeholder {
 }
 .role__card {
   display: flex;
+  background-color: #000;
 }
 @media (max-width: 991px) {
   .role__card {
@@ -3031,41 +3085,30 @@ input::-moz-placeholder {
   }
 }
 .role__cardItem {
-  flex-basis: 50%;
   padding: 90px 50px 90px 70px;
+  background-color: #fff;
 }
-@media (max-width: 991px) {
+@media (max-width: 1280px) {
+  .role__cardItem {
+    padding: 90px 40px 90px 60px;
+  }
+}
+@media (max-width: 999px) {
   .role__cardItem {
     padding: 40px 20px;
   }
 }
 .role__cardItem:first-child {
-  border-right: 1px solid var(--COLOR-BLACK);
-  position: relative;
+  padding-right: 130px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .role__cardItem:first-child {
-    border-bottom: 1px solid var(--COLOR-BLACK);
+    padding-right: 100px;
   }
 }
-.role__cardItem:first-child::after {
-  position: absolute;
-  content: "";
-  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-  height: 41px;
-  width: 37px;
-  bottom: -2px;
-  right: 2px;
-  transform: rotate(-270deg) translateY(-50%);
-}
-@media (max-width: 991px) {
-  .role__cardItem:first-child::after {
-    width: 15px;
-    height: 17px;
-    background-size: cover;
-    right: 0;
-    bottom: -18px;
-    transform: rotate(0) translateY(-50%);
+@media (max-width: 999px) {
+  .role__cardItem:first-child {
+    padding-right: 20px;
   }
 }
 .role__head {
@@ -3091,11 +3134,30 @@ input::-moz-placeholder {
   color: #000000;
   margin: 0;
 }
+.role__text ul {
+  padding-left: 0;
+}
+.role__text ul li {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.role__text ul li::marker {
+  color: #FF7121;
+}
 @media (max-width: 991px) {
   .role__text {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.role__home .role__head {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 84px;
+}
+.role__home .role__cardItem:first-child {
+  padding-right: 70px;
 }
 
 .showcaseImages__imgWrp {
@@ -3113,27 +3175,14 @@ input::-moz-placeholder {
 }
 .showcaseImages__img img {
   width: 100%;
-  height: 640px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 10px 10px 60px 0px rgb(187, 184, 184);
-}
-@media (max-width: 991px) {
-  .showcaseImages__img img {
-    height: 436px;
-  }
-}
-@media (max-width: 767px) {
-  .showcaseImages__img img {
-    height: 336px;
-  }
+  border: 0.5px solid #000;
 }
 .showcaseImages__img:nth-child(odd) {
   padding: 80px 32px 70px 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .showcaseImages__img:nth-child(odd) {
-    padding: 60px 20px 20px;
+    padding: 30px 0 15px;
   }
 }
 .showcaseImages__img:nth-child(even) {
@@ -3141,29 +3190,52 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .showcaseImages__img:nth-child(even) {
-    padding: 20px 20px 60px;
+    padding: 15px 0 30px;
+  }
+}
+.showcaseImages__img3block {
+  flex-basis: 33.33%;
+  padding: 60px 0;
+}
+@media (max-width: 991px) {
+  .showcaseImages__img3block {
+    flex-basis: 100%;
+  }
+}
+.showcaseImages__img3block img {
+  width: 100%;
+  border: 0.5px solid #000;
+}
+.showcaseImages__img3block:nth-child(odd) {
+  padding: 60px 30px 60px 0;
+}
+@media (max-width: 999px) {
+  .showcaseImages__img3block:nth-child(odd) {
+    padding: 30px 0 15px;
+  }
+}
+.showcaseImages__img3block:nth-child(even) {
+  padding: 60px 15px 60px 15px;
+}
+@media (max-width: 999px) {
+  .showcaseImages__img3block:nth-child(even) {
+    padding: 15px 0 30px;
+  }
+}
+.showcaseImages__img3block:last-child {
+  padding: 60px 0 60px 30px;
+}
+@media (max-width: 999px) {
+  .showcaseImages__img3block:last-child {
+    padding: 30px 0;
   }
 }
 .showcaseImages__largeImage {
   width: 100%;
-  height: 669.37px;
-}
-@media (max-width: 767px) {
-  .showcaseImages__largeImage {
-    height: 382px;
-  }
-}
-@media (max-width: 767px) {
-  .showcaseImages__largeImage {
-    height: 182px;
-  }
 }
 .showcaseImages__largeImage img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 10px -7px 10px 0px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid #000;
 }
 
 .showcaseClient {
@@ -3258,72 +3330,85 @@ input::-moz-placeholder {
   border-top: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
   margin-bottom: 80px;
+  margin-top: 80px;
 }
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .showcaseReview {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    border: none;
   }
 }
 .showcaseReview__wrp {
   border-right: 1px solid var(--COLOR-BLACK);
   border-left: 1px solid var(--COLOR-BLACK);
   display: flex;
+  align-items: center;
+  background-color: #000;
 }
-@media (max-width: 767px) {
+@media (max-width: 999px) {
   .showcaseReview__wrp {
     flex-direction: column;
   }
 }
-.showcaseReview__img {
-  padding: 40px;
-  flex-basis: 50%;
+.showcaseReview__rating {
+  padding-left: 90px;
+  flex-basis: 30%;
+  background-color: #fff;
   overflow: hidden;
   position: relative;
+  border-bottom-right-radius: 40px;
+  align-self: stretch;
 }
-@media (max-width: 767px) {
-  .showcaseReview__img {
-    padding: 10px 20px;
+.showcaseReview__rating .clutch-widget {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 999px) {
+  .showcaseReview__rating {
+    padding: 50px 25px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    flex-basis: 100%;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 }
-.showcaseReview__img .arrow-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.showcaseReview__img .thumbnail {
-  width: 100%;
-  height: 570px;
-  object-fit: cover;
-  border-radius: 22px;
-}
-@media (max-width: 991px) {
-  .showcaseReview__img .thumbnail {
-    height: 310px;
+@media (max-width: 767px) {
+  .showcaseReview__rating {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }
 .showcaseReview__infoWrp {
-  padding: 40px;
-  flex-basis: 50%;
+  padding: 120px 75px 95px 85px;
+  flex-basis: 70%;
   display: flex;
   align-items: center;
   position: relative;
   border-left: 1px solid var(--COLOR-BLACK);
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
 }
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .showcaseReview__infoWrp {
-    padding: 40px 20px;
+    padding: 70px 25px 20px;
+    border-bottom: 1px solid #000;
+    flex-basis: 100%;
+    width: 100%;
+    border-left: 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 30px;
   }
 }
-.showcaseReview__infoWrp::after {
-  position: absolute;
-  content: "";
-  background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-  height: 41px;
-  width: 37px;
-  bottom: -2px;
-  left: 2px;
-  transform: rotate(-270deg) translateY(50%);
+@media (max-width: 767px) {
+  .showcaseReview__infoWrp {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
 }
 .showcaseReview__infoWrp h3 {
   font-weight: 700;
@@ -3331,7 +3416,7 @@ input::-moz-placeholder {
   line-height: 165%;
   letter-spacing: -0.03em;
   color: var(--COLOR-BLACK);
-  margin-bottom: 16px;
+  margin-bottom: 60px;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -3344,12 +3429,20 @@ input::-moz-placeholder {
 .showcaseReview__infoWrp h3::after {
   position: absolute;
   content: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/backquote.png?v=1666152408);
-  left: 0;
-  top: -15px;
+  left: -15px;
+  top: -20px;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 999px) {
+  .showcaseReview__infoWrp h3::after {
+    left: 20px;
+  }
 }
 .showcaseReview__infoWrp p {
   margin-bottom: 4px;
+}
+.showcaseReview .clutch-widget iframe {
+  width: fit-content;
 }
 
 .services {
@@ -5554,4 +5647,40 @@ textarea {
   background: rgba(0, 0, 0, 0.75);
   font-size: 14px;
   text-align: center;
+}
+
+.services-marquee-wrap {
+  border-bottom: 1px solid #000;
+  background: #000;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #000;
+  width: fit-content;
+  background: #fff;
+  border-top-right-radius: 40px;
+  max-width: 432px;
+  height: 135px;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide:not(:first-child) {
+  border-top-left-radius: 40px;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-icon {
+  padding: 50px;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-name {
+  padding: 40px 20px;
+  border-left: 1px solid #000;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-name p {
+  font-family: "Minecraft";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+  line-height: 30px;
 }
