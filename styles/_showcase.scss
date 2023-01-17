@@ -333,7 +333,9 @@
     }
     .role__cardItem {
         &:first-child {
-            padding-right: 70px;
+            @media (min-width:1200px) {
+                padding-right: 70px;
+            }
         }
     }
 }

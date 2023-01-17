@@ -5,10 +5,10 @@
                 <h5 class="role__head">{{ item.settings.heading }}</h5>
                 <div class="role__text">
                     {{ item.settings.description }}
-                    {% if item.settings.linkText != blank %}
-                        <a class="btn btn--orange" href={{ item.settings.linkUrl }}>{{ item.settings.linkText }}</a>
-                    {% endif %}
                 </div>
+                {% if item.settings.linkText != blank %}
+                    <a class="btn btn--orange" href="{{ item.settings.linkUrl }}">{{ item.settings.linkText }}</a>
+                {% endif %}
             </div>
         {% endfor %}
       

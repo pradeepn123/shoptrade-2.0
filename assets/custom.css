@@ -1133,7 +1133,25 @@ input::-moz-placeholder {
 .homeMarque {
   background-color: var(--COLOR-BLACK);
 }
+.homeMarque .scrolling-text {
+  overflow: hidden;
+}
+.homeMarque .scrolling-text .scrolling-text__wrapper {
+  display: grid;
+  grid: auto/auto-flow max-content;
+}
+.homeMarque .scrolling-text--auto .scrolling-text__text {
+  animation: translateFull var(--marquee-animation-duration, 0s) linear infinite;
+}
 
+@keyframes translateFull {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .image01 {
   width: 34.28px;
   height: 59px;
@@ -3374,8 +3392,10 @@ input::-moz-placeholder {
     line-height: 84px;
   }
 }
-.role__home .role__cardItem:first-child {
-  padding-right: 70px;
+@media (min-width: 1200px) {
+  .role__home .role__cardItem:first-child {
+    padding-right: 70px;
+  }
 }
 
 .showcaseImages__imgWrp {
@@ -5911,4 +5931,23 @@ textarea {
   font-size: 24px;
   margin: 0;
   line-height: 30px;
+}
+.services-marquee-wrap .scrolling-text {
+  overflow: hidden;
+}
+.services-marquee-wrap .scrolling-text .scrolling-text__wrapper {
+  display: grid;
+  grid: auto/auto-flow max-content;
+}
+.services-marquee-wrap .scrolling-text--auto .scrolling-text__text {
+  animation: translateServiceFull var(--marquee-animation-duration, 0s) linear infinite;
+}
+
+@keyframes translateServiceFull {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400%);
+  }
 }

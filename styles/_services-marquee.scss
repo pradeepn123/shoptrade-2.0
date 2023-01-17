@@ -48,4 +48,23 @@
             } 
         }
     }  
+    .scrolling-text{
+        overflow: hidden;
+        .scrolling-text__wrapper {
+            display: grid;
+            grid: auto / auto-flow max-content;
+        }
+    }
+    .scrolling-text--auto .scrolling-text__text{
+        animation: translateServiceFull var(--marquee-animation-duration, 0s) linear infinite;
+    }
+}
+@keyframes translateServiceFull {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(calc(-100% * 4) );
+    }
 }
