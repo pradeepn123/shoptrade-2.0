@@ -647,21 +647,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "bac67c8d-1c7f-4d9c-b19e-82f1d970dafd": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h1",
-        "cover_image": "shopify:\/\/shop_images\/Mifras_b299959a-2257-4bfb-9857-5882461f74ff.jpg",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=6HOVX0wQOFY",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -675,7 +660,6 @@
     "ourNumbers",
     "testimonials",
     "4b2aa81a-47b9-4e64-a64c-cd584bdec59a",
-    "newsletter",
-    "bac67c8d-1c7f-4d9c-b19e-82f1d970dafd"
+    "newsletter"
   ]
 }
