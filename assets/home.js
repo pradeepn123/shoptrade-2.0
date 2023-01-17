@@ -17,6 +17,7 @@ $(document).ready(function () {
     speed:1000,
     autoHeight: false,
     slidesPerView: 1.2,
+    spaceBetween: 40,
     navigation: {
       nextEl: '.slider-arrow .js-arrow-right',
       prevEl: '.slider-arrow .js-arrow-left',

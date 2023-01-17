@@ -1,99 +1,87 @@
 <section class="testimonials">
-  <div class="container">
-    <div class="testimonials__header">
-      <h2 class="h1-main">{{ section.settings.heading }}
-      </h2>
-      <div class="slider-arrow only-desktop">
-        <div class="js-arrow-left arrow-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-left.png?v=1665638248"/>
-        </div>
-        <div class="js-arrow-right arrow-icon">
-          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/slide-arrow-right.png?v=1665638248"/>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="testimonials__wrp">
-    <div class="swiper-container js-testimonial-slider">
-
-      <ul class="swiper-wrapper testimonials__slider">
-        {% assign sliderType = section.blocks | where: 'type', 'sliderType' %}
-
-        {% for block in sliderType %}
-          {%- if block != blank -%}
-
-
-            <li class="testimonials__slide swiper-slide">
-              <div class="testimonials__head">
-                <div class="testimonials__logoWrp">
-                  <img class="testimonials__logo" src="{{ block.settings.sliderImage | image_url }} "/>
-
-                </div>
-              </div>
-              <div class="testimonials__body">
-                <p class="fnt-600 clr-b m-0">
-                  {{ block.settings.sliderText }}
-                </p>
-
-                <div class="testimonials__footer">
-                  <h5 class="m-0">
-                    {{ block.settings.name }}
-                  </h5>
-                  <p class="designation m-0">
-                    {{ block.settings.designation }}
-                  </p>
-                </div>
-              </div>
-            </li>
-
-          {%- endif -%}
-
-        {% endfor %}
-
-
-
-      </ul>
-      {% assign profileType = section.blocks | where: 'type', 'profileType' %}
-      {% for block in profileType %}
-        <div class="testimonials__profile">
-          <ul class="testimonials__profileList">
-            <li class="testimonials__profileItem">
-              <div class="testimonials__profileCard">
-                <img src="{{ block.settings.profileImage | image_url }}"/>
-                <div class="testimonials__details">
-                  <h5 class="testimonials__profileName">
-                    {{ block.settings.profileName }}
-                  </h5>
-                  <p class="testimonials__profileDesignation">
-                    {{ block.settings.profileDesignation }}
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="testimonials__profileDescription ">
-            <h3 class="h2">
-              {{ block.settings.ProfileDescription }}
-            </h3>
+  <div class="no__container">
+    <div class="testimonials__wrapper_section">
+      <div class="testimonials__header">
+        <div class="testimonials__header__info">
+          <h2 class="h1-main">{{ section.settings.heading }}</h2>
+          <div class="content_info">
+            {{ section.settings.content }}
           </div>
 
+          <div class="rating">
+            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+            <div
+              class="clutch-widget"
+              data-url="https://widget.clutch.co"
+              data-widget-type="2"
+              data-height="45"
+              data-nofollow="true"
+              data-expandifr="true"
+              data-scale="100"
+              data-clutchcompany-id="1012274"></div>
+          </div>
         </div>
-      {% endfor %}
+        <div class="testimonials__slider-arrow">
+          <div class="slider-arrow only-desktop">
+            <div class="js-arrow-left arrow-icon">
+              {% render 'icon-left-arrow' %}
+            </div>
+            <div class="js-arrow-right arrow-icon">
+              {% render 'icon-right-arrow' %}
+            </div>
+          </div>
+        </div>
 
+      </div>
+      <div class="testimonials__wrp">
+        <div class="swiper-container js-testimonial-slider">
+          <ul class="swiper-wrapper testimonials__slider">
+            {% assign sliderType = section.blocks | where: 'type', 'sliderType' %}
+            {% for block in sliderType %}
+              {%- if block != blank -%}
+                <li class="testimonials__slide swiper-slide">
+                  <div class="testimonials__head">
+                    <div class="testimonials__logoWrp">
+                      <img class="testimonials__logo" src="{{ block.settings.sliderImage | image_url: width: 1920  }} " />
+                    </div>
+                  </div>
+                  <div class="testimonials__body">
+                    <p class="fnt-600 clr-b m-0">
+                      {{ block.settings.sliderText }}
+                    </p>
+                    <div class="testimonials__footer">
+                      <h5 class="m-0">
+                        {{ block.settings.name }}
+                      </h5>
+                      <p class="designation m-0">
+                        {{ block.settings.designation }}
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              {%- endif -%}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
 {% schema %}
-{
+  {
     "name": "testimonials",
     "settings": [
       {
         "id": "heading",
         "label": "Heading",
         "type": "text"
+      }, {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
       }
     ],
     "blocks": [
@@ -143,7 +131,6 @@
         ]
       }
     ]
-
 
 
   }
