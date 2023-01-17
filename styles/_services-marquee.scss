@@ -14,12 +14,18 @@
                 // border-left: 1px solid #000;
                 width: fit-content;
                 background: #fff;
-                border-top-right-radius: 40px;
+                border-top-right-radius: 15px;
                 max-width: 432px;
                 height: 135px;
+                @media(min-width:1200px){
+                    border-top-right-radius: 40px;
+                }
         
                 &:not(:first-child) {
-                    border-top-left-radius: 40px;
+                    border-top-left-radius: 15px;
+                    @media(min-width:1200px){
+                        border-top-left-radius: 40px;
+                    }
                 }
         
                 .service-icon {

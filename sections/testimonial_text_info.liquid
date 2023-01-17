@@ -11,7 +11,7 @@
                                 <li class="testimonials__profileItem">
                                     <div class="testimonials__profileCard text-{{section.settings.text_alignment}}">
                                         {% if block.settings.profileImage != blank %}
-                                            <img src="{{ block.settings.profileImage | image_url }}"/>
+                                            <img src="{{ block.settings.profileImage | image_url: width: 165  }}"/>
                                         {% endif %}
                                         <div class="testimonials__profileDescription ">
                                             <h3 class="h2">{{ block.settings.ProfileDescription }}</h3>

@@ -189,12 +189,11 @@
         padding: 52px 80px 80px;
         text-align: center;
         @media (max-width:991px) {
-            padding: 40px 50px;
+            padding: 40px 15px;
         }
         img {
             object-fit: contain;
-            @media (max-width:991px) {
-                width: 253.54px;
+            @media (max-width:991px) {                
                 height: auto;
             }
         }
@@ -214,17 +213,23 @@
 
     &__profileName {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 158%;        
         letter-spacing: 0.03em;
         color: var(--COLOR-BLACK);
         margin: 0;
+        @media(min-width:1200px){
+            font-size: 24px;
+        }
     }
 
     &__profileDesignation {
-        font-size: 18px;
+        font-size: 16px;
         color: var(--COLOR-BLACK);        
         margin: 0;
+        @media(min-width:1200px){
+            font-size: 18px;
+        }
     }
 
     &__profileDescription {        
@@ -233,7 +238,7 @@
         overflow: hidden;
         position: relative;
         @media (max-width:991px) {
-            padding: 30px 40px
+            padding: 16px;
         }
         &::after {
             // content: "";
@@ -328,7 +333,7 @@
                 width: 37px;
                 bottom: -2px;
                 right: 2px;
-                transform: rotate(-270deg) translateY(-50%);
+                transform: rotate(-270deg) translateY(-50%);              
                 @media (max-width:767px) {
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -356,7 +361,7 @@
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
                     background-size: contain;
                     background-repeat: no-repeat;
-                    bottom: -5px;
+                    bottom: -3px;
                     left: -19.3px;
                     width: 15px;
                     height: 20px;

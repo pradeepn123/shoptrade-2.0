@@ -42,7 +42,9 @@
                 <li class="testimonials__slide swiper-slide">
                   <div class="testimonials__head">
                     <div class="testimonials__logoWrp">
-                      <img class="testimonials__logo" src="{{ block.settings.sliderImage | image_url: width: 1920  }} " />
+                      {% if block.settings.sliderImage != blank %}
+                        <img class="testimonials__logo" src="{{ block.settings.sliderImage | image_url: width: 1920  }} " />
+                      {% endif %}
                     </div>
                   </div>
                   <div class="testimonials__body">
@@ -107,31 +109,7 @@
             "type": "text"
           }
         ]
-      }, {
-        "name": "profile",
-        "type": "profileType",
-        "settings": [
-          {
-            "id": "profileImage",
-            "label": "profile image",
-            "type": "image_picker"
-          }, {
-            "id": "profileName",
-            "label": "Profile Name",
-            "type": "text"
-          }, {
-            "id": "profileDesignation",
-            "label": "Profile Designation",
-            "type": "text"
-          }, {
-            "id": "ProfileDescription",
-            "label": "profile info",
-            "type": "text"
-          }
-        ]
       }
     ]
-
-
   }
 {% endschema %}
