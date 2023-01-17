@@ -17,6 +17,7 @@
                 border-top-right-radius: 15px;
                 max-width: 432px;
                 height: 135px;
+                overflow: hidden;
                 @media(min-width:1200px){
                     border-top-right-radius: 40px;
                 }
@@ -34,15 +35,23 @@
         
                 .service-name {
                     padding: 40px 20px;
-                    border-left: 1px solid #000;
-        
+                    position: relative;
+                    &:before{
+                        content: '';
+                        border-left: 1px solid #000;
+                        position: absolute;
+                        height: 100vh;
+                        top: -15px;
+                        left: -1%;
+                    }
                     p{
                         font-family: 'Minecraft';
                         font-style: normal;
                         font-weight: 500;
-                        font-size: 24px;
+                        font-size: 22px;
                         margin: 0;
                         line-height: 30px;
+                        color: #000000;
                     }
                 }
             } 
