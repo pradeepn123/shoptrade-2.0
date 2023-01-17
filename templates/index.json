@@ -587,15 +587,6 @@
             "name": "Harley Finkelstein",
             "designation": "President of Shopify"
           }
-        },
-        "0a225a0e-6b27-4395-bce2-f5dddd5f43c4": {
-          "type": "profileType",
-          "settings": {
-            "profileImage": "shopify:\/\/shop_images\/testimonial-profile_5ef400f3-8454-40cd-86b2-3966de825aa6.png",
-            "profileName": "Harley Finkelstein",
-            "profileDesignation": "President of Shopify",
-            "ProfileDescription": "ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love."
-          }
         }
       },
       "block_order": [
@@ -603,8 +594,7 @@
         "5400a35e-a308-4e5f-8af3-d8d3c33a3fbe",
         "ee18843b-9af9-4d7a-912f-2e64c6eb37c8",
         "80408b5c-e690-402a-99ff-3a3b46fa6346",
-        "a9b7527a-9d31-42ae-9b94-f012e576032a",
-        "0a225a0e-6b27-4395-bce2-f5dddd5f43c4"
+        "a9b7527a-9d31-42ae-9b94-f012e576032a"
       ],
       "settings": {
         "heading": "Testimonial",
