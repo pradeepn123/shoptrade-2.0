@@ -17,6 +17,7 @@
     },
     "marquee": {
       "type": "marquee",
+      "disabled": true,
       "blocks": {
         "116094d0-983b-443e-aebf-1c58e6585a3f": {
           "type": "marqueeType",
