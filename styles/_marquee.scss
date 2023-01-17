@@ -93,6 +93,26 @@
 
 .homeMarque {
     background-color: var(--COLOR-BLACK);
+    .scrolling-text{
+        overflow: hidden;
+        .scrolling-text__wrapper {
+            display: grid;
+            grid: auto / auto-flow max-content;
+        }
+    }
+    .scrolling-text--auto .scrolling-text__text{
+        animation: translateFull var(--marquee-animation-duration, 0s) linear infinite;
+    }
+}
+
+@keyframes translateFull {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(calc(-100% * 1) );
+    }
 }
 
 .image01 {

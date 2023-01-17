@@ -634,8 +634,19 @@ input::-moz-placeholder {
         z-index: -1;
     }
 
+    .js-desktop-video.only-mobile {
+        min-width: 360px;
+        width: 100%;
+    }
+
     video {
         object-fit: cover;
+    }
+
+    .js-desktop-video.only-mobile {
+        video {
+            display: none;
+        }
     }
 }
 
@@ -692,6 +703,10 @@ input::-moz-placeholder {
   *::-webkit-media-controls-start-playback-button {
     display: none!important;
     -webkit-appearance: none;
+  }
+
+  .font-70 {
+      font-size: 70px;
   }
 
 

@@ -1,0 +1,110 @@
+<div class="testimonials testimonial__text_info_sec">
+    <div class="container">
+        <div class="testimonials__wrp testimonial__text_info_sec_wrp">
+            <div class="swiper-container js-testimonial-text-slider">
+                
+                {% for block in section.blocks %}
+                    {%- case block.type -%}
+                        {%- when 'profileType' -%}
+                        <div class="testimonials__profile">
+                            <ul class="testimonials__profileList">
+                                <li class="testimonials__profileItem">
+                                    <div class="testimonials__profileCard text-{{section.settings.text_alignment}}">
+                                        {% if block.settings.profileImage != blank %}
+                                            <img src="{{ block.settings.profileImage | image_url: width: 165  }}"/>
+                                        {% endif %}
+                                        <div class="testimonials__profileDescription ">
+                                            <h3 class="h2">{{ block.settings.ProfileDescription }}</h3>
+                                        </div>
+                                        <div class="testimonials__details">
+                                            <h5 class="testimonials__profileName">{{ block.settings.profileName }}</h5>
+                                            <p class="testimonials__profileDesignation">{{ block.settings.profileDesignation }}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    {%- endcase -%}
+                {% endfor %}
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+    {
+      "name": "Testimonials Text Info",
+      "settings": [
+        {
+          "id": "heading",
+          "label": "Heading",
+          "type": "text"
+        }, {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.label"
+        }
+      ],
+      "blocks": [
+        {
+            "name": "profile",
+            "type": "profileType",
+            "settings": [
+                {
+                    "id": "profileImage",
+                    "label": "profile image",
+                    "type": "image_picker"
+                }, {
+                    "id": "profileName",
+                    "label": "Profile Name",
+                    "type": "text"
+                }, {
+                    "id": "profileDesignation",
+                    "label": "Profile Designation",
+                    "type": "text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "ProfileDescription",
+                    "label": "profile info",
+                    "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+                }
+            ]
+        }
+      ],
+      "presets": [
+        {
+        "name": "Testimonials Text Info",
+        "blocks": [
+            {
+                "type": "profileType"
+            }            
+        ]
+        }
+    ]
+    }
+  {% endschema %}

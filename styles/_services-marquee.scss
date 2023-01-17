@@ -1,0 +1,70 @@
+.services-marquee-wrap {
+    border-bottom: 1px solid #000;
+    background: #000;
+
+    .swiper-container {
+
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                border-right: 1px solid #000;
+                // border-left: 1px solid #000;
+                width: fit-content;
+                background: #fff;
+                border-top-right-radius: 15px;
+                max-width: 432px;
+                height: 135px;
+                @media(min-width:1200px){
+                    border-top-right-radius: 40px;
+                }
+        
+                &:not(:first-child) {
+                    border-top-left-radius: 15px;
+                    @media(min-width:1200px){
+                        border-top-left-radius: 40px;
+                    }
+                }
+        
+                .service-icon {
+                    padding: 50px;
+                }
+        
+                .service-name {
+                    padding: 40px 20px;
+                    border-left: 1px solid #000;
+        
+                    p{
+                        font-family: 'Minecraft';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        margin: 0;
+                        line-height: 30px;
+                    }
+                }
+            } 
+        }
+    }  
+    .scrolling-text{
+        overflow: hidden;
+        .scrolling-text__wrapper {
+            display: grid;
+            grid: auto / auto-flow max-content;
+        }
+    }
+    .scrolling-text--auto .scrolling-text__text{
+        animation: translateServiceFull var(--marquee-animation-duration, 0s) linear infinite;
+    }
+}
+@keyframes translateServiceFull {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(calc(-100% * 4) );
+    }
+}

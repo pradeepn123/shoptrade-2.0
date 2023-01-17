@@ -220,6 +220,10 @@
         height: 28px;
     }
 
+    @media (max-width: 767px) {
+        margin: auto;
+    }
+
     img {
         @media (max-width:991px) {
             width: 10px;

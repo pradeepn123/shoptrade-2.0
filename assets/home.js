@@ -1,21 +1,17 @@
-
-
 $(document).ready(function () {
 
   setTimeout(function(){
     $(".js-video-thumbnail").hide()
+    $(".js-desktop-video video").show()
  
     $('video').css("opacity","1")
-  },2000)
-
- 
-  
-
+  },1000)
 
   let testimonial = new Swiper('.js-testimonial-slider', {
     speed:1000,
     autoHeight: false,
     slidesPerView: 1.2,
+    spaceBetween: 40,
     navigation: {
       nextEl: '.slider-arrow .js-arrow-right',
       prevEl: '.slider-arrow .js-arrow-left',
@@ -38,29 +34,49 @@ $(document).ready(function () {
     }
   });
 
- 
+  // let marquee = new Swiper('.js-marquee-slider', {
+  //   spaceBetween: 50,
+  //   centeredSlides: true,
+  //   speed: 50000,
+  //   autoplay: {
+  //     delay: 1,
+  //   },
+  //   loop: true,
+  //   slidesPerView:'auto',
+  //   allowTouchMove: false,
+  //   // disableOnInteraction: true,
+  //   pauseOnMouseEnter:true
+  // });
+  
 
-  let marquee = new Swiper('.js-marquee-slider', {
-    spaceBetween: 50,
+  // $('.js-marquee-slider').on('mouseenter', function(e){
+
+  //   marquee.autoplay.stop()
+  // })
+  // $('.js-marquee-slider').on('mouseleave', function(e){
+ 
+  //   marquee.autoplay.start();
+  // })
+
+  let services = new Swiper('.js-services-slider', {
+    spaceBetween: 0,
     centeredSlides: true,
-    speed: 50000,
+    speed: 6000,
     autoplay: {
       delay: 1,
+      disableOnInteraction: false
     },
     loop: true,
     slidesPerView:'auto',
     allowTouchMove: false,
-    // disableOnInteraction: true,
-    pauseOnMouseEnter:true
+    
   });
   
 
-  $('.js-marquee-slider').on('mouseenter', function(e){
-
+  $('.js-services-slider').on('mouseenter', function(e){
     marquee.autoplay.stop()
   })
-  $('.js-marquee-slider').on('mouseleave', function(e){
- 
+  $('.js-services-slider').on('mouseleave', function(e){
     marquee.autoplay.start();
   })
   
@@ -189,4 +205,22 @@ $(document).ready(function () {
     $(".UImainText ").removeClass("active")
     $("#" + id).addClass("active")
   })
+
+
+  // js/common/ui/marquee-text.js
+  var MarqueeText = class extends HTMLElement {
+    constructor() {
+      super();
+      if (window.ResizeObserver) {
+        new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+      }
+    }
+    _calculateDuration(entries) {
+      const scrollingSpeed = parseInt(this.getAttribute("scrolling-speed") || 5), contentWidth = entries[0].contentRect.width, slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
+      this.style.setProperty("--marquee-animation-duration", `${(scrollingSpeed * slowFactor * entries[0].target.querySelector("span").clientWidth / contentWidth).toFixed(3)}s`);
+    }
+  };
+  if (!window.customElements.get("marquee-text")) {
+    window.customElements.define("marquee-text", MarqueeText);
+  }
 });

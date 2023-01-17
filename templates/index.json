@@ -132,8 +132,153 @@
       "settings": {
       }
     },
+    "54b153cd-107d-47ab-86a0-2793af834b5d": {
+      "type": "showcase-role",
+      "blocks": {
+        "b930ccac-b86d-4559-8075-8191d76ad2fb": {
+          "type": "role",
+          "settings": {
+            "heading": "Transform your online store with Shopify and our expert services",
+            "description": "",
+            "width": 60,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        },
+        "629bbe23-c4bd-4e90-9d86-7283e87c0c51": {
+          "type": "role",
+          "settings": {
+            "heading": "",
+            "description": "<p>From customizable themes to powerful apps, Shopify has everything you need to succeed in e-commerce. Let us help you make the most of this platform and take your business to the next level.<\/p>",
+            "width": 40,
+            "linkText": "Learn More",
+            "linkUrl": ""
+          }
+        }
+      },
+      "block_order": [
+        "b930ccac-b86d-4559-8075-8191d76ad2fb",
+        "629bbe23-c4bd-4e90-9d86-7283e87c0c51"
+      ],
+      "settings": {
+      }
+    },
+    "cc25c849-94c4-4917-af30-a35f51fe99ea": {
+      "type": "services-marquee",
+      "blocks": {
+        "240130dd-aa97-4624-a825-75d6e0a29fcc": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Idea.png",
+            "title": "USER  EXPERIENCE  DESIGN"
+          }
+        },
+        "5e907a4f-88fe-49c5-8cf7-020fcacb237a": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Vector_1_ee64fd33-3cf4-49a2-81b3-192e98bf208e.png",
+            "title": "USER  INTERFACE DESIGN"
+          }
+        },
+        "3100443f-0f90-4083-ac67-4253bb1f9266": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Public.png",
+            "title": "INTERNATIONAL EXPANSION"
+          }
+        },
+        "75a14d29-aab9-400d-8e8c-ad277c2f43d0": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Poll.png",
+            "title": "PERFORMANCE ENHANCEMENT"
+          }
+        },
+        "a6db636f-ddb9-48be-8d83-8fb91b8f7c4c": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Widgets.png",
+            "title": "CUSTOM SHOPIFY APP DEVELOPMENT"
+          }
+        },
+        "cdcd1b4e-d5e0-4927-8d38-c19d06bcb551": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Alt_route.png",
+            "title": "DATA MIGRATION"
+          }
+        },
+        "7a25af83-fd9b-4845-8734-c762339fb1b3": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Laptop_mac.png",
+            "title": "SYSTEM INTEGRATIONS"
+          }
+        },
+        "d377f90a-f340-402a-8e9d-f961dc1ecc7f": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Trending_up.png",
+            "title": "CONVERSION RATE OPTIMIZATION"
+          }
+        },
+        "24c3a3b8-c826-4973-b4c5-3f9165588ce8": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Mark_email_read.png",
+            "title": "DIGITAL MARKETING"
+          }
+        },
+        "d9e0cb09-0cea-47a7-b842-5abbbfcd98ad": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Rss_feed.png",
+            "title": "OFFLINE TO ONLINE"
+          }
+        },
+        "c2e89264-9a9e-4bd3-8f18-1af158e243be": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Autorenew.png",
+            "title": "REPLATFORMING"
+          }
+        },
+        "d1b5f133-8d06-4d1c-ad54-d13251d72c04": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Payment.png",
+            "title": "PAYMENTS AND CHECKOUT"
+          }
+        },
+        "5eddabec-6e69-4c06-8baa-1b26676fce64": {
+          "type": "services",
+          "settings": {
+            "serviceIcon": "shopify:\/\/shop_images\/Vector_64143874-921f-49a7-805e-c3a2edbb16af.png",
+            "title": "HEADLESS COMMERCE"
+          }
+        }
+      },
+      "block_order": [
+        "240130dd-aa97-4624-a825-75d6e0a29fcc",
+        "5e907a4f-88fe-49c5-8cf7-020fcacb237a",
+        "3100443f-0f90-4083-ac67-4253bb1f9266",
+        "75a14d29-aab9-400d-8e8c-ad277c2f43d0",
+        "a6db636f-ddb9-48be-8d83-8fb91b8f7c4c",
+        "cdcd1b4e-d5e0-4927-8d38-c19d06bcb551",
+        "7a25af83-fd9b-4845-8734-c762339fb1b3",
+        "d377f90a-f340-402a-8e9d-f961dc1ecc7f",
+        "24c3a3b8-c826-4973-b4c5-3f9165588ce8",
+        "d9e0cb09-0cea-47a7-b842-5abbbfcd98ad",
+        "c2e89264-9a9e-4bd3-8f18-1af158e243be",
+        "d1b5f133-8d06-4d1c-ad54-d13251d72c04",
+        "5eddabec-6e69-4c06-8baa-1b26676fce64"
+      ],
+      "settings": {
+      }
+    },
     "uiDesign": {
       "type": "UI-Design",
+      "disabled": true,
       "blocks": {
         "3c86b867-83cc-47fa-aa39-dd0c0b5ab730": {
           "type": "services",
@@ -462,7 +607,30 @@
         "0a225a0e-6b27-4395-bce2-f5dddd5f43c4"
       ],
       "settings": {
-        "heading": "Testimonial"
+        "heading": "Testimonial",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+      }
+    },
+    "4b2aa81a-47b9-4e64-a64c-cd584bdec59a": {
+      "type": "testimonial_text_info",
+      "blocks": {
+        "template--16748439109852__4b2aa81a-47b9-4e64-a64c-cd584bdec59a-167386784206622b12-0": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/shopify_logo_bb3aee39-be90-4857-9435-283ece9eddcf.png",
+            "profileName": "Harley Finkelstein",
+            "profileDesignation": "President of Shopify",
+            "ProfileDescription": "<p>ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16748439109852__4b2aa81a-47b9-4e64-a64c-cd584bdec59a-167386784206622b12-0"
+      ],
+      "settings": {
+        "heading": "",
+        "content": "<p>ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.<br\/>            <\/p>",
+        "text_alignment": "center"
       }
     },
     "newsletter": {
@@ -505,11 +673,14 @@
   "order": [
     "image_banner",
     "marquee",
+    "54b153cd-107d-47ab-86a0-2793af834b5d",
+    "cc25c849-94c4-4917-af30-a35f51fe99ea",
     "uiDesign",
     "ourWork",
     "vedio",
     "ourNumbers",
     "testimonials",
+    "4b2aa81a-47b9-4e64-a64c-cd584bdec59a",
     "newsletter",
     "bac67c8d-1c7f-4d9c-b19e-82f1d970dafd"
   ]

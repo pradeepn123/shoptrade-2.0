@@ -1,85 +1,116 @@
 .newsletter {
-    padding: 120px 0;
+    // padding: 120px 0;
     position: relative;
     overflow: hidden;
 
-    @media (max-width:991px) {
+    @media (max-width:1199px) {
         padding: 60px 0;
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translate(-80%, -50%);
-        width: 394px;
-        height: 394px;
-        background: #FF7121;
-        filter: blur(94.5px);
-
-
-        @media (max-width:991px) {
+    &__wrapper{
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(-80%, -50%);
+            width: 394px;
+            height: 394px;
+            background: #FF7121;
+            filter: blur(94.5px);
             display: none;
+
+            @media (max-width:991px) {
+                display: none;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(48%, 0%);
+            width: 394px;
+            height: 394px;
+            background: #FF7121;
+            z-index: 2;
+            filter: blur(94.5px);
+
+            @media (max-width:991px) {
+                width: 175.69px;
+                height: 175.69px;
+            }
         }
     }
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(80%, -50%);
-        width: 394px;
-        height: 394px;
-        background: #FF7121;
-        z-index: 2;
-        filter: blur(94.5px);
-
-        @media (max-width:991px) {
-            width: 175.69px;
-            height: 175.69px;
-        }
-    }
-
     &__wrp {
-        max-width: 759px;
+        // max-width: 759px;
         width: 100%;
         margin: 0 auto;
         border: 1px solid #000000;
         border-radius: 10px;
+        @media(min-width:1200px){
+            display: flex;
+            border: 0;
+        }
     }
 
-    &__head {
-        border-bottom: 1px solid var(--COLOR-BLACK);
+    &__head {        
         position: relative;
-
+        display: flex;
+        align-items: center;
+        @media(max-width:1024px){
+            border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+        @media(min-width:1200px){
+            border-right: 1px solid var(--COLOR-BLACK);
+        }
+        @media(min-width:1440px){
+            width: calc(40% - 15px);
+        }
+        @media(min-width:1680px){
+            width: calc(40% - 18px);
+        }
         &::after {
             content: "";
             position: absolute;
             height: 41px;
-            width: 37px;
-            left: 0;
-
-            transform: rotate(180deg) translateY(50%);
+            width: 37px;             
+            transform: rotate(270deg) translateY(50%);
             background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-
+            right: 1px;
+            top: -3px;
+            @media (max-width:1024px) {
+                height: 41px;
+                width: 37px;
+                background-size: contain;
+                left: -1px;
+                bottom: -41.3px;
+                top: unset;
+                transform: rotate(180deg) translateY(50%);
+            }
             @media (max-width:991px) {
                 height: 14px;
                 width: 15px;
                 background-size: contain;
                 left: -4px;
+                bottom: -14px;
+                top: unset;
+                transform: rotate(180deg) translateY(50%);
             }
         }
 
         h3 {
-            color: var(--COLOR-BLACK);
-            padding: 40px 60px;
+            color: var(--COLOR-BLACK);            
             font-weight: 800;
             font-size: 40px;
             line-height: 124%;
             letter-spacing: 0.02em;
-            margin: 0;
-
+            margin: 0;            
+            @media(min-width:768px) and (max-width:1024px){
+                padding: 40px 60px;
+            }
+            @media(min-width:1200px){
+                width: 65%;
+            }
             @media (max-width:991px) {
                 font-size: 18px;
                 padding: 20px;
@@ -88,28 +119,94 @@
     }
 
     &__body {
-
+        padding: 0;
+        @media(min-width:1200px){
+            width: 60%;
+            padding: 80px 0;            
+        }
+        .newsletter-form{
+            display: flex;
+        }
+        button {
+            position: static;
+            background-color: transparent;
+            border: none;
+            overflow: visible;
+            @media(min-width:1200px){
+                position: relative;
+            }
+        }
+        button.btn-wrap{
+            .btn{
+                padding: 15px;
+                &:hover::after{
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s ease all;
+                }
+                &:after{
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: -1px;
+                    background: linear-gradient(180deg, #FF985D 0%, #FFFFFF 99.99%, rgba(255, 255, 255, 0) 100%);
+                    border: 2px solid var(--COLOR-BLACK);
+                    border-radius: 12px 24px;
+                    width: 110%;
+                    height: 120%;
+                    z-index: -1;
+                    transition: 0.5s ease all;
+                }
+            }            
+            &.mobile_only{
+                position: absolute;
+                display: block;
+                @media(min-width:1200px){
+                    display: none;
+                }
+            }
+            &.desktop_only{
+                display: none;
+                @media(min-width:1200px){
+                    display: block;
+                }
+            }            
+        }
         .form-group {
             position: relative;
-            max-width: 340px;
-
-            button {
-                position: absolute;
-                right: 0;
-                background-color: transparent;
-                top: 50%;
-                transform: translateY(-50%);
-                border: none;
+            width: 100%;
+            @media(min-width:1200px){
+                width: 100%;
+            }
+            .field{
+                .field__input{
+                    border: 1px solid #A6A9AB !important;
+                    border-radius: 15px;
+                    padding-top: 28px !important;
+                    padding-left: 24px !important;
+                    padding-bottom: 24px !important;
+                    &:focus label{
+                        top: 14px !important;
+                    }
+                }                
+            }
+            .field__input:focus ~ .field__label, .field__input:not(:placeholder-shown)~.field__label{
+                top: 14px !important;
+            }
+            .field__label{
+                left: 24px !important;
             }
         }
 
         input {
-            max-width: 340px;
+            max-width: 100%;
             width: 100%;
             padding: 18px 0;
             border: 0;
-            border-bottom: 1px solid var(--COLOR-BLACK);
-
+            // border-bottom: 1px solid var(--COLOR-BLACK);
+            @media(min-width:1200px){
+                max-width: calc(100% - 60px);
+            }
             &::placeholder {
                 font-weight: 400;
                 font-size: 16px;
@@ -121,22 +218,35 @@
     }
 
     &__bodyWrp {
-
         padding: 40px 60px;
-
+        @media(min-width:1200px){
+            padding: 0px 8rem;
+            padding-right: 0;
+            max-width: 760px;
+        }
         @media (max-width:991px) {
-
             padding: 20px;
+        }
+        .newsletter__body_wrapper{
+            display: flex;
+            justify-content: space-between;
+            .form__message{
+                font-size: 1rem;
+            }
         }
     }
 
     &__text {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 22.2px;
+        font-size: 14px;
+        line-height: 1.4;
         letter-spacing: 0.08em;
         color: #000000;
-        max-width: 495px;
         width: 100%;
+        @media(min-width:1200px){
+            max-width: calc(100% - 120px);
+            font-size: 16px;
+            line-height: 22.2px;
+        }
     }
 }
