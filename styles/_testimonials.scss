@@ -200,6 +200,10 @@
     }
     &__profileCard.text-center{
         @media(min-width:1200px){
+            width: 80%;
+            margin: 0 auto;
+        }
+        @media(min-width:1680px){
             width: 65%;
             margin: 0 auto;
         }

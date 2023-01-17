@@ -1718,6 +1718,7 @@ input::-moz-placeholder {
   margin-top: 60px;
   list-style: none;
   position: relative;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .ourNumbers__cards {
@@ -1952,7 +1953,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 1200px) {
   .newsletter__head h3 {
-    width: 65%;
+    width: 80%;
   }
 }
 @media (max-width: 991px) {
@@ -1967,7 +1968,7 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .newsletter__body {
     width: 60%;
-    padding: 80px 0;
+    margin: 80px 0;
   }
 }
 .newsletter__body .newsletter-form {
@@ -2072,7 +2073,7 @@ input::-moz-placeholder {
   .newsletter__bodyWrp {
     padding: 0px 8rem;
     padding-right: 0;
-    max-width: 760px;
+    max-width: 680px;
   }
 }
 @media (max-width: 991px) {
@@ -2092,13 +2093,12 @@ input::-moz-placeholder {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.08em;
-  color: #000000;
+  color: #83898C;
   width: 100%;
 }
 @media (min-width: 1200px) {
   .newsletter__text {
     max-width: calc(100% - 120px);
-    font-size: 16px;
     line-height: 22.2px;
   }
 }
@@ -2263,6 +2263,12 @@ input::-moz-placeholder {
   }
 }
 @media (min-width: 1200px) {
+  .testimonials__profileCard.text-center {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1680px) {
   .testimonials__profileCard.text-center {
     width: 65%;
     margin: 0 auto;
@@ -3388,8 +3394,13 @@ input::-moz-placeholder {
 }
 @media (min-width: 1200px) {
   .role__home .role__head {
-    font-size: 70px;
+    font-size: 60px;
     line-height: 84px;
+  }
+}
+@media (min-width: 1680px) {
+  .role__home .role__head {
+    font-size: 70px;
   }
 }
 @media (min-width: 1200px) {
@@ -5903,6 +5914,7 @@ textarea {
   border-top-right-radius: 15px;
   max-width: 432px;
   height: 135px;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide {
@@ -5922,15 +5934,24 @@ textarea {
 }
 .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-name {
   padding: 40px 20px;
+  position: relative;
+}
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-name:before {
+  content: "";
   border-left: 1px solid #000;
+  position: absolute;
+  height: 100vh;
+  top: -15px;
+  left: -1%;
 }
 .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-name p {
   font-family: "Minecraft";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0;
   line-height: 30px;
+  color: #000000;
 }
 .services-marquee-wrap .scrolling-text {
   overflow: hidden;
