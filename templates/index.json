@@ -607,7 +607,30 @@
         "0a225a0e-6b27-4395-bce2-f5dddd5f43c4"
       ],
       "settings": {
-        "heading": "Testimonial"
+        "heading": "Testimonial",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+      }
+    },
+    "4b2aa81a-47b9-4e64-a64c-cd584bdec59a": {
+      "type": "testimonial_text_info",
+      "blocks": {
+        "template--16748439109852__4b2aa81a-47b9-4e64-a64c-cd584bdec59a-167386784206622b12-0": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Shopify_logo.png",
+            "profileName": "Harley Finkelstein",
+            "profileDesignation": "President of Shopify",
+            "ProfileDescription": "<p>ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16748439109852__4b2aa81a-47b9-4e64-a64c-cd584bdec59a-167386784206622b12-0"
+      ],
+      "settings": {
+        "heading": "",
+        "content": "<p>ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they’ll love.<br\/>            <\/p>",
+        "text_alignment": "center"
       }
     },
     "newsletter": {
@@ -657,6 +680,7 @@
     "vedio",
     "ourNumbers",
     "testimonials",
+    "4b2aa81a-47b9-4e64-a64c-cd584bdec59a",
     "newsletter",
     "bac67c8d-1c7f-4d9c-b19e-82f1d970dafd"
   ]
