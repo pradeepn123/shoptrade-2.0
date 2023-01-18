@@ -56,7 +56,7 @@
           "type": "role",
           "settings": {
             "heading": "ABOUT",
-            "description": "",
+            "description": "<p>At Elevatione our mission is to improve health and wellness of our community with purified air. From the classroom, to the office environment, to the home, our team at Hathaspace will continue to pursue the best and most trusted technology to bring True HEPA air filtration to the masses.<\/p>",
             "width": 60,
             "linkText": "",
             "linkUrl": ""
@@ -65,9 +65,9 @@
         "a015cadd-5e92-405a-9294-b3b255dbfc4d": {
           "type": "role",
           "settings": {
-            "heading": "Our role",
+            "heading": "SERVICES",
             "description": "",
-            "width": 50,
+            "width": 40,
             "linkText": "",
             "linkUrl": ""
           }
