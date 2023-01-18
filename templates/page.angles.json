@@ -112,6 +112,12 @@
           "settings": {
             "image3": "shopify:\/\/shop_images\/asia.angles90_3.png"
           }
+        },
+        "95dacfa6-5780-46e6-b8a1-347a5b9e292b": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/Group_4623.png"
+          }
         }
       },
       "block_order": [
@@ -119,7 +125,8 @@
         "f4f37697-0a96-4b5c-a57b-dbbf864c641a",
         "06e91bdd-5e33-444e-823f-3ce8aae3eaf9",
         "1079b3f8-247a-477a-8e30-a431e37b4cc4",
-        "246009d6-e484-4c55-ae68-a648357ad51e"
+        "246009d6-e484-4c55-ae68-a648357ad51e",
+        "95dacfa6-5780-46e6-b8a1-347a5b9e292b"
       ],
       "settings": {
       }
