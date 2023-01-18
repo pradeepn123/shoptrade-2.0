@@ -82,11 +82,51 @@
     },
     "showcaseImage": {
       "type": "showcaseImages",
+      "blocks": {
+        "ac6a39b9-83b7-42b1-acaf-9ada97e226ba": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/image_241.png"
+          }
+        },
+        "ba315bcb-ba62-4ded-8432-e08322b68dce": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/image_242.png"
+          }
+        },
+        "3ee1fd72-261b-4774-bff5-ee06073b42e5": {
+          "type": "showcaseLargeImage",
+          "settings": {
+            "largeImage": "shopify:\/\/shop_images\/image_243.png"
+          }
+        },
+        "a2d30a1b-b065-4d8a-9375-c40eabe7d769": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/www.elevatione_2.png"
+          }
+        },
+        "e6985b5c-503b-4d06-bb38-d53946da5676": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/www.elevatione_3.png"
+          }
+        }
+      },
+      "block_order": [
+        "ac6a39b9-83b7-42b1-acaf-9ada97e226ba",
+        "ba315bcb-ba62-4ded-8432-e08322b68dce",
+        "3ee1fd72-261b-4774-bff5-ee06073b42e5",
+        "a2d30a1b-b065-4d8a-9375-c40eabe7d769",
+        "e6985b5c-503b-4d06-bb38-d53946da5676"
+      ],
       "settings": {
       }
     },
     "showcaseClient": {
       "type": "showcaseClient",
+      "disabled": true,
       "blocks": {
         "61296caa-3831-4c0f-9fc9-90d7037e2915": {
           "type": "resposiveImages",
