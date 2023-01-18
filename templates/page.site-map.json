@@ -40,7 +40,7 @@
           "settings": {
             "siteName": "Blogs",
             "siteUrl": "shopify:\/\/blogs\/insights",
-            "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n       <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n     <li class=\"site-list__item\">\n                        <a href=\"\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet mauris suspendisse.<\/a>\n                    <\/li>\n\n\n<\/ul>"
+            "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"https:\/\/shoptrade.co\/blogs\/insights\/comprehensive-guide-on-shopify-markets\">Shopify Markets: A Comprehensive Guide<\/a>\n                    <\/li>\n<\/ul>"
           }
         },
         "bb8e0b52-7fc0-45b9-99f1-85025ad93503": {
