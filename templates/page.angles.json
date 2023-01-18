@@ -66,7 +66,7 @@
           "type": "role",
           "settings": {
             "heading": "SERVICES",
-            "description": "",
+            "description": "<ul><li>UI \/ UX Design<\/li><li>E-commerce Development<\/li><li>Headless<\/li><li>Web Development<\/li><li>E-commerce Development<\/li><\/ul>",
             "width": 50,
             "linkText": "",
             "linkUrl": ""
