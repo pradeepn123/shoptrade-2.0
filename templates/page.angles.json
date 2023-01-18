@@ -5,6 +5,7 @@
       "blocks": {
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -13,6 +14,7 @@
         },
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -21,6 +23,7 @@
         },
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -52,17 +55,21 @@
         "e6f30b36-57ed-4b08-a7d6-785c65646838": {
           "type": "role",
           "settings": {
-            "heading": "Our role",
+            "heading": "ABOUT",
             "description": "",
-            "width": 50
+            "width": 70,
+            "linkText": "",
+            "linkUrl": ""
           }
         },
         "a015cadd-5e92-405a-9294-b3b255dbfc4d": {
           "type": "role",
           "settings": {
-            "heading": "Our role",
+            "heading": "SERVICES",
             "description": "",
-            "width": 50
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
           }
         }
       },
