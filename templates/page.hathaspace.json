@@ -51,7 +51,7 @@
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
-        "slider": "<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span> Design<\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>\n          <div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>Headless\n            <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Des\n  ign          <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>"
+        "slider": "<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span> Design<\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>\n          <div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>Headless\n            <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Design          <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>"
       }
     },
     "showcase-role": {
