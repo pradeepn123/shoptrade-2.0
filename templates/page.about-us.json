@@ -4,7 +4,6 @@
       "type": "about-banner",
       "settings": {
         "heading": "Scale your business with a team of highly skilled professionals",
-        "btnlink": "shopify:\/\/pages\/contact",
         "btntext": "Contact us"
       }
     },
@@ -149,7 +148,7 @@
         "heading": "Are you the pro we're searching for?",
         "subheading": "We are constantly looking for talent across the board. Feel like you have what it takes To make a difference for our clients.",
         "button_text": "View Our Openings",
-        "btnlink": "https:\/\/careers.shoptrade.co"
+        "btnlink": "https:\/\/www.instahyre.com\/jobs-at-shop-trade\/"
       }
     },
     "about-number": {
