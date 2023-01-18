@@ -56,7 +56,7 @@
           "type": "role",
           "settings": {
             "heading": "ABOUT",
-            "description": "",
+            "description": "<p>At Hathaspace our mission is to improve health and wellness of our community with purified air. From the classroom, to the office environment, to the home, our team at Hathaspace will continue to pursue the best and most trusted technology to bring True HEPA air filtration to the masses.<\/p>",
             "width": 70,
             "linkText": "",
             "linkUrl": ""
