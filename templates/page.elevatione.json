@@ -112,6 +112,12 @@
           "settings": {
             "image3": "shopify:\/\/shop_images\/www.elevatione_3.png"
           }
+        },
+        "e81893b1-9ed3-4bdc-b856-1d12f1c035e3": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/www.elevatione_4.png"
+          }
         }
       },
       "block_order": [
@@ -119,7 +125,8 @@
         "ba315bcb-ba62-4ded-8432-e08322b68dce",
         "3ee1fd72-261b-4774-bff5-ee06073b42e5",
         "a2d30a1b-b065-4d8a-9375-c40eabe7d769",
-        "e6985b5c-503b-4d06-bb38-d53946da5676"
+        "e6985b5c-503b-4d06-bb38-d53946da5676",
+        "e81893b1-9ed3-4bdc-b856-1d12f1c035e3"
       ],
       "settings": {
       }
