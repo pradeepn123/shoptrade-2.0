@@ -38,6 +38,7 @@
         },
         "cb384ac4-751c-45de-afd7-80333c78759e": {
           "type": "hashtagBlock",
+          "disabled": true,
           "settings": {
             "hashtag": "Product"
           }
@@ -80,7 +81,7 @@
           "type": "role",
           "settings": {
             "heading": "SERVICES",
-            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Headless<\/li><li>Integration<\/li><li>SEO<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
+            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>On going Support<\/li><\/ul>",
             "width": 35,
             "linkText": "",
             "linkUrl": ""
