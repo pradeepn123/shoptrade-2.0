@@ -5,6 +5,7 @@
       "blocks": {
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-18_at_4.38.51_PM.png",
             "profileName": "Amit Gupta",
@@ -13,6 +14,7 @@
         },
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.42.07_PM.png",
             "profileName": "Sumayya Isahq",
@@ -30,8 +32,9 @@
         },
         "cb384ac4-751c-45de-afd7-80333c78759e": {
           "type": "hashtagBlock",
+          "disabled": true,
           "settings": {
-            "hashtag": "HOME TECH"
+            "hashtag": ""
           }
         }
       },
