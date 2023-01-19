@@ -29,12 +29,19 @@
             "profileName": "Jermy",
             "profileDesignation": "Product designer"
           }
+        },
+        "bad92c73-c245-43d6-9a4e-c7d1a54b5634": {
+          "type": "hashtagBlock",
+          "settings": {
+            "hashtag": "HOME TECH"
+          }
         }
       },
       "block_order": [
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
-        "f11dbc34-f9a6-4f99-a03a-131966c03a5b"
+        "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
+        "bad92c73-c245-43d6-9a4e-c7d1a54b5634"
       ],
       "settings": {
         "heading": "ELEVATIONE",
