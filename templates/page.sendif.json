@@ -3,14 +3,6 @@
     "banner": {
       "type": "showcaseBanner",
       "blocks": {
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
-          "type": "creditProfile",
-          "settings": {
-            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.29.56_PM.png",
-            "profileName": "Shivanshi",
-            "profileDesignation": "Front-End Engineer"
-          }
-        },
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
           "settings": {
@@ -19,12 +11,20 @@
             "profileDesignation": "Head of Engineering"
           }
         },
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.29.56_PM.png",
+            "profileName": "Shivanshi",
+            "profileDesignation": "Front-End Engineer"
+          }
+        },
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
           "settings": {
-            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
-            "profileName": "Jermy",
-            "profileDesignation": "Product designer"
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.28.37_PM.png",
+            "profileName": "Chaman M",
+            "profileDesignation": "Product Design Specialist"
           }
         },
         "1b511a95-4159-4298-930f-3662336803de": {
@@ -42,8 +42,8 @@
         }
       },
       "block_order": [
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
         "1b511a95-4159-4298-930f-3662336803de",
         "cb384ac4-751c-45de-afd7-80333c78759e"
