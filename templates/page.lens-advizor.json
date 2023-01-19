@@ -31,7 +31,7 @@
         "cb384ac4-751c-45de-afd7-80333c78759e": {
           "type": "hashtagBlock",
           "settings": {
-            "hashtag": "﻿Home Tech"
+            "hashtag": "Product"
           }
         }
       },
@@ -42,10 +42,10 @@
         "cb384ac4-751c-45de-afd7-80333c78759e"
       ],
       "settings": {
-        "heading": "HATHASPACE",
+        "heading": "LENSADVIZOR",
         "subHeading": "",
-        "bannerImage": "shopify:\/\/shop_images\/Group_4716.jpg",
-        "websiteLInk": ""
+        "bannerImage": "shopify:\/\/shop_images\/Group_4635.png",
+        "websiteLInk": "https:\/\/apps.shopify.com\/lensadvizor"
       }
     },
     "marquee": {
