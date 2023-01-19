@@ -493,6 +493,29 @@
             "buttonLink": "https:\/\/bumpboxx.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>"
           }
+        },
+        "6c32fdc2-cd65-4a89-8b84-df3d5352c735": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Untitled-32323.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103_1e99d9e1-e905-4d44-a273-b10f47d5a15e.png",
+            "buttonLink": "",
+            "cardMarque": ""
+          }
+        },
+        "65ef3c07-6117-450b-8674-45cc59043ecf": {
+          "type": "cardType",
+          "settings": {
+            "buttonLink": "",
+            "cardMarque": ""
+          }
+        },
+        "47264a60-c3ad-49da-81b2-ce6993409052": {
+          "type": "cardType",
+          "settings": {
+            "buttonLink": "",
+            "cardMarque": ""
+          }
         }
       },
       "block_order": [
@@ -501,7 +524,10 @@
         "7dce5870-cbc5-4dd3-83fd-02b7132c5b83",
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2",
         "97481e62-2db3-4b14-b26a-f57b817e6d76",
-        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7"
+        "2b37814a-1e6d-4338-a477-da3bdfe3d2b7",
+        "6c32fdc2-cd65-4a89-8b84-df3d5352c735",
+        "65ef3c07-6117-450b-8674-45cc59043ecf",
+        "47264a60-c3ad-49da-81b2-ce6993409052"
       ],
       "settings": {
         "heading": "Our Works",
