@@ -32,6 +32,7 @@
         },
         "bad92c73-c245-43d6-9a4e-c7d1a54b5634": {
           "type": "hashtagBlock",
+          "disabled": true,
           "settings": {
             "hashtag": "HOME TECH"
           }
