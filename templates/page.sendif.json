@@ -6,8 +6,8 @@
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
           "type": "creditProfile",
           "settings": {
-            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-18_at_4.37.21_PM.png",
-            "profileName": "Darshika Pillai",
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.29.56_PM.png",
+            "profileName": "Shivanshi",
             "profileDesignation": "Front-End Engineer"
           }
         },
@@ -27,6 +27,13 @@
             "profileDesignation": "Product designer"
           }
         },
+        "1b511a95-4159-4298-930f-3662336803de": {
+          "type": "creditProfile",
+          "settings": {
+            "profileName": "",
+            "profileDesignation": ""
+          }
+        },
         "cb384ac4-751c-45de-afd7-80333c78759e": {
           "type": "hashtagBlock",
           "settings": {
@@ -38,6 +45,7 @@
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
+        "1b511a95-4159-4298-930f-3662336803de",
         "cb384ac4-751c-45de-afd7-80333c78759e"
       ],
       "settings": {
