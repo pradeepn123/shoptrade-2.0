@@ -3146,6 +3146,9 @@ input::-moz-placeholder {
     margin-right: -5px;
   }
 }
+.showcaseBanner__creditItem img {
+  width: 100%;
+}
 .showcaseBanner__links {
   display: flex;
   align-items: center;
@@ -3213,6 +3216,9 @@ input::-moz-placeholder {
     width: 28px;
     height: 28px;
   }
+}
+.showcaseBanner .creditDrop__itemImage img {
+  width: 100%;
 }
 .showcaseBanner .creditDrop__itemBody p {
   font-family: Minecraft !important;
@@ -3312,7 +3318,6 @@ input::-moz-placeholder {
 }
 .role__card {
   display: flex;
-  background-color: #000;
 }
 @media (max-width: 991px) {
   .role__card {
@@ -3322,7 +3327,7 @@ input::-moz-placeholder {
 }
 .role__cardItem {
   padding: 90px 50px 90px 70px;
-  background-color: #fff;
+  position: relative;
 }
 @media (max-width: 1280px) {
   .role__cardItem {
@@ -3345,6 +3350,27 @@ input::-moz-placeholder {
 @media (max-width: 999px) {
   .role__cardItem:first-child {
     padding-right: 20px;
+  }
+}
+.role__cardItem:first-child:after {
+  position: absolute;
+  content: "";
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934");
+  height: 41px;
+  width: 37px;
+  bottom: -3px;
+  right: 2px;
+  transform: rotate(-270deg) translateY(-50%);
+}
+@media (max-width: 991px) {
+  .role__cardItem:first-child:after {
+    bottom: -22.3px;
+    right: 0;
+    width: 15px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(1deg) translateY(-50%);
   }
 }
 .role__head {
@@ -4518,6 +4544,17 @@ input::-moz-placeholder {
     border-left: 0 !important;
   }
 }
+@media (min-width: 992px) {
+  .about-team-members__card:nth-child(odd) {
+    border-bottom: 1px solid var(--COLOR-BLACK) !important;
+    border-top: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .about-team-members__card:nth-child(even) {
+    border-top: 0 !important;
+  }
+}
 @media (max-width: 992px) {
   .about-team-members__head {
     margin-bottom: 40px;
@@ -4548,7 +4585,6 @@ input::-moz-placeholder {
 .about-team-members__container li {
   width: 33.3333333333%;
   border: 1px solid var(--COLOR-BLACK);
-  border-bottom: 0;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -5911,23 +5947,20 @@ textarea {
   border-right: 1px solid #000;
   width: fit-content;
   background: #fff;
-  border-top-right-radius: 15px;
+  position: relative;
   max-width: 432px;
   height: 135px;
-  overflow: hidden;
 }
-@media (min-width: 1200px) {
-  .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide {
-    border-top-right-radius: 40px;
-  }
-}
-.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide:not(:first-child) {
-  border-top-left-radius: 15px;
-}
-@media (min-width: 1200px) {
-  .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide:not(:first-child) {
-    border-top-left-radius: 40px;
-  }
+.services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide:not(:first-child):after {
+  position: absolute;
+  content: "";
+  top: -2px;
+  right: 2px;
+  height: 41px;
+  width: 37px;
+  z-index: 9;
+  transform: rotate(-90deg) translateY(50%);
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934");
 }
 .services-marquee-wrap .swiper-container .swiper-wrapper .swiper-slide .service-icon {
   padding: 50px;

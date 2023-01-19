@@ -19,7 +19,7 @@
           "bf493e11-c07c-47f5-99a0-9060a649d427": {
             "type": "work",
             "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/meeting-svg.svg?v=1668161802",
+              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/meeting_icon.svg",
               "workText": "Book a Meeting",
               "togetherlink": "https:\/\/meetings.hubspot.com\/mohammadu"
             }
@@ -27,7 +27,7 @@
           "db12f8d7-c1d9-40f1-ba95-87a17f614c3a": {
             "type": "work",
             "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/call-svg.svg?v=1668161749",
+              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/phone_icon.svg",
               "workText": "+1 844 583 0025",
               "togetherlink": "tel:+1 844 583 0025"
             }
@@ -35,7 +35,7 @@
           "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9": {
             "type": "work",
             "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/mail-1-svg.svg?v=1668162082",
+              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/mail_icon.svg",
               "workText": "hello@shoptrade.co",
               "togetherlink": "mailto:hello@shoptrade.co"
             }
@@ -43,19 +43,20 @@
           "541cd2b6-c97b-4993-a6a5-8321cb74334f": {
             "type": "office",
             "settings": {
-              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/hq-svg.svg?v=1668162170",
+              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/hq_footer_icon.svg",
               "officeText": "1228 E 7th Ave Suite 200, Tampa, FL 33605, United States"
             }
           },
           "033f647e-512b-4664-a49e-971590198d28": {
             "type": "office",
             "settings": {
-              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/br-svg.svg?v=1668162182",
+              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/br_icon.svg",
               "officeText": "508 1st Floor, Koramangala, Bengaluru, Karnataka, India - 560095"
             }
           },
           "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a": {
             "type": "social",
+            "disabled": true,
             "settings": {
               "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Facebook_1.svg?v=1668162476",
               "socailLink": ""
@@ -63,6 +64,7 @@
           },
           "add81eb4-0979-4e24-903d-4c12438da9ad": {
             "type": "social",
+            "disabled": true,
             "settings": {
               "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Instagram_1.svg?v=1668162476",
               "socailLink": ""
@@ -70,6 +72,7 @@
           },
           "e751e079-4ac3-49f4-932e-dae294a34145": {
             "type": "social",
+            "disabled": true,
             "settings": {
               "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/LinkedIn.svg?v=1668162336",
               "socailLink": ""

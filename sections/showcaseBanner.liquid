@@ -32,40 +32,32 @@
             </div>
             <div class="showcaseBanner__creditList ">
                 {% if page.metafields.custom.credit.value != blank %}
-                <ul class="showcaseBanner__credit">
-                 
-                    {% comment %} {% for item in page.metafields.custom.credit.value.profile limit : 3 %}
-                    
+                    <ul class="showcaseBanner__credit">                 
+                    {% comment %} {% for item in page.metafields.custom.credit.value.profile limit : 3 %}                    
                         <li class="showcaseBanner__creditItem">
                             <img src="{{ item.image  }}">
                         </li>
-                    {% endfor %} {% endcomment %}
-                 
-                    
+                    {% endfor %} {% endcomment %}                                     
                     {%- for block in credit_blocks limit: 3 -%}
                         <li class="showcaseBanner__creditItem">
                             <img src="{{ block.settings.profileImage | image_url }}">
                         </li>
-                    {%- endfor -%}
-                
-                </ul>
-                <p class="link-text text-center">Credits</p>
-            {% endif %}
+                    {%- endfor -%}                
+                    </ul>
+                    <p class="link-text text-center">Credits</p>
+                {% endif %}
                 <ul class="creditDrop">
-
                     {% for item in page.metafields.custom.credit.value.profile %}
-
-                    <li class="creditDrop__item">
-                        <div class="creditDrop__itemImage">
-                            <img src="{{ item.image  }}">
-                        </div>
-                        <div class="creditDrop__itemBody">
-                            <p>{{ item.name }}</p>
-                            <p>{{ item.designation }}</p>
-                        </div>
-                    </li>
-                {%- endfor -%}
-
+                        <li class="creditDrop__item">
+                            <div class="creditDrop__itemImage">
+                                <img src="{{ item.image  }}">
+                            </div>
+                            <div class="creditDrop__itemBody">
+                                <p>{{ item.name }}</p>
+                                <p>{{ item.designation }}</p>
+                            </div>
+                        </li>
+                    {%- endfor -%}
                 </ul>
             </div>
 

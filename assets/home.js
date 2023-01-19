@@ -74,10 +74,10 @@ $(document).ready(function () {
   
 
   $('.js-services-slider').on('mouseenter', function(e){
-    marquee.autoplay.stop()
+    services.autoplay.stop()
   })
   $('.js-services-slider').on('mouseleave', function(e){
-    marquee.autoplay.start();
+    services.autoplay.start();
   })
   
 
