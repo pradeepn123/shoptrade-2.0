@@ -16,26 +16,17 @@
 </section>
 
 <style>
-    {% if section.blocks.size > 1 %}
-        .role__cardItem:not(:last-child) {
-            border-bottom-right-radius: 40px;
-        }
-
-        .role__cardItem:not(:first-child) {
-            border-bottom-left-radius: 40px;
+    {% if section.blocks.size > 1 %}        
+        .role__cardItem:not(:first-child) {            
             border-left: 1px solid #000;
         }
-
         @media (max-width: 999px) {
             .role__cardItem:not(:last-child) {
-                border-bottom: 1px solid #000;
-                border-bottom-right-radius: 15px;
+                border-bottom: 1px solid #000;                
             }
-
             .role__cardItem:not(:first-child) {
                 border-bottom-left-radius: 0;
-                border-left: 0;
-                border-top-right-radius: 15px;
+                border-left: 0;            
             }
         }
     {% endif %}

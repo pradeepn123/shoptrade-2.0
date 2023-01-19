@@ -578,6 +578,17 @@
             border-right: 0 !important;
             border-left: 0 !important;}
         }
+        &:nth-child(odd) {
+            @media (min-width:992px) {
+                border-bottom: 1px solid var(--COLOR-BLACK) !important;
+                border-top: 0 !important;       
+            }
+        }
+        &:nth-child(even) {
+            @media (min-width:992px) {
+                border-top: 0 !important;
+            }
+        }
     }
     &__head {
         @media (max-width:992px) {
@@ -617,7 +628,7 @@
             width: calc(100%/3);
             // border-top: 1px solid var(--COLOR-BLACK);
             border: 1px solid var(--COLOR-BLACK);
-            border-bottom: 0;
+            // border-bottom: 0;
 
             position: relative;
 
