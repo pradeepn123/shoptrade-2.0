@@ -30,8 +30,9 @@
         "1b511a95-4159-4298-930f-3662336803de": {
           "type": "creditProfile",
           "settings": {
-            "profileName": "",
-            "profileDesignation": ""
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.28.29_PM.png",
+            "profileName": "Nikhil",
+            "profileDesignation": "Full-Stack Engineer"
           }
         },
         "cb384ac4-751c-45de-afd7-80333c78759e": {
