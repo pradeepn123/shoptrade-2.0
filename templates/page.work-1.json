@@ -155,7 +155,6 @@
         },
         "4f536d0a-f989-4a1e-b706-e379ef217bca": {
           "type": "cardType",
-          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Untitled-3.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103.png",
