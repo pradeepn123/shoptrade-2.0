@@ -15,13 +15,14 @@
                         {%- case block.type -%}
                             {%- when 'hashtagBlock' -%}
                             <li class="showcaseBanner__hashtag">
-                                # {{ block.settings.hashtag }}
+                                {{ block.settings.hashtag }}
                             </li>
                         {% endcase %}
                     {%- endfor -%}
                 </ul>
             {% endif %}
-
+        </div>
+        <div class="showcaseBanner__subheading">
             {% if section.settings.subHeading != blank %}
                 <p class="fnt-48 clr-b"> {{ section.settings.subHeading }} </p>
             {% endif %}

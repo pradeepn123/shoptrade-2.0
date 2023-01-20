@@ -32,13 +32,13 @@
           "type": "hashtagBlock",
           "disabled": true,
           "settings": {
-            "hashtag": "HOME TECH"
+            "hashtag": "# ﻿Home Tech"
           }
         },
         "0de0a6d8-f600-4780-aa66-224c0fc01f2c": {
           "type": "hashtagBlock",
           "settings": {
-            "hashtag": "Tech"
+            "hashtag": "# Tech"
           }
         }
       },
@@ -55,7 +55,7 @@
         "bannerImage": "shopify:\/\/shop_images\/Group_4716.jpg",
         "websiteLInk": "https:\/\/hathaspace.com\/",
         "visitsite_heading": "Visit Site",
-        "credit_heading": ""
+        "credit_heading": "Credits"
       }
     },
     "marquee": {
