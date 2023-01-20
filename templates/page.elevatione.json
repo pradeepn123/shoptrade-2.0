@@ -2,40 +2,6 @@
   "sections": {
     "banner": {
       "type": "showcaseBanner",
-      "blocks": {
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
-          "type": "creditProfile",
-          "disabled": true,
-          "settings": {
-            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
-            "profileName": "Jermy",
-            "profileDesignation": "Product designer"
-          }
-        },
-        "6825669d-a038-4816-a61a-3d341507478e": {
-          "type": "creditProfile",
-          "disabled": true,
-          "settings": {
-            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
-            "profileName": "Jermy",
-            "profileDesignation": "Product designer"
-          }
-        },
-        "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
-          "type": "creditProfile",
-          "disabled": true,
-          "settings": {
-            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
-            "profileName": "Jermy",
-            "profileDesignation": "Product designer"
-          }
-        }
-      },
-      "block_order": [
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
-        "6825669d-a038-4816-a61a-3d341507478e",
-        "f11dbc34-f9a6-4f99-a03a-131966c03a5b"
-      ],
       "settings": {
         "heading": "ELEVATIONE",
         "subHeading": "",

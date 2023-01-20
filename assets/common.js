@@ -541,4 +541,8 @@ $(document).ready(function () {
   $("#contact-btn-about").on('click', function(){
     $("#contact-btn-details").trigger('click');
   })
+  
+  $("#contact-btn-service").on('click', function(){
+    $("#contact-btn-details").trigger('click');
+  })
 });
