@@ -10,11 +10,14 @@
         <div class="showcaseBanner__header">
             <h1 class="h1"> {{ section.settings.heading }} </h1>
             {% if hashtag_blocks.size > 0 %}
-                <ul class="showcaseBanner__hashtagBlock">
-                    {%- for block in hashtag_blocks limit: 3 -%}
-                        <li class="showcaseBanner__hashtag">
-                            # {{ block.settings.hashtag }}
-                        </li>
+                <ul class="showcaseBanner__hashtagBlock">                    
+                    {% for block in section.blocks limit: 5 %}
+                        {%- case block.type -%}
+                            {%- when 'hashtagBlock' -%}
+                            <li class="showcaseBanner__hashtag">
+                                # {{ block.settings.hashtag }}
+                            </li>
+                        {% endcase %}
                     {%- endfor -%}
                 </ul>
             {% endif %}
@@ -25,49 +28,75 @@
         </div>
         <div class="showcaseBanner__links">
             <div class="showcaseBanner__linksItem">
-                <a href="{{ section.settings.websiteLInk}}" class="circle-link">
+                <a href="{{ section.settings.websiteLInk }}" class="circle-link">
                     <img src='https://cdn.shopify.com/s/files/1/0662/5122/7356/files/right-up-Arrow.svg?v=1666078351' />
                 </a>
-                <p class="link-text">Visit site</p>
-            </div>
-            <div class="showcaseBanner__creditList ">
-                {% if page.metafields.custom.credit.value != blank %}
-                    <ul class="showcaseBanner__credit">                 
-                    {% comment %} {% for item in page.metafields.custom.credit.value.profile limit : 3 %}                    
-                        <li class="showcaseBanner__creditItem">
-                            <img src="{{ item.image  }}">
-                        </li>
-                    {% endfor %} {% endcomment %}                                     
-                    {%- for block in credit_blocks limit: 3 -%}
-                        <li class="showcaseBanner__creditItem">
-                            <img src="{{ block.settings.profileImage | image_url }}">
-                        </li>
-                    {%- endfor -%}                
-                    </ul>
-                    <p class="link-text text-center">Credits</p>
+                {% if section.settings.visitsite_heading != blank %}
+                    <p class="link-text">{{ section.settings.visitsite_heading }}</p>
                 {% endif %}
-                <ul class="creditDrop">
-                    {% for item in page.metafields.custom.credit.value.profile %}
-                        <li class="creditDrop__item">
-                            <div class="creditDrop__itemImage">
-                                <img src="{{ item.image  }}">
-                            </div>
-                            <div class="creditDrop__itemBody">
-                                <p>{{ item.name }}</p>
-                                <p>{{ item.designation }}</p>
-                            </div>
-                        </li>
-                    {%- endfor -%}
-                </ul>
             </div>
-
+            {% if credit_blocks.size > 0 %}
+                <div class="showcaseBanner__creditList ">
+                    <ul class="showcaseBanner__credit">
+                        {% for block in section.blocks %}
+                            {%- case block.type -%}
+                                {%- when 'creditProfile' -%}
+                                {% if block.settings.profileImage != blank %}
+                                    <li class="showcaseBanner__creditItem">
+                                        {% comment %} <img src="{{ block.settings.profileImage | image_url }}"> {% endcomment %}
+                                        {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+                                        {{ block.settings.profileImage | image_url: width: 3840 | image_tag:
+                                            loading: 'lazy',
+                                            height: height,
+                                            sizes: "100vw",
+                                            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                                        }}
+                                    </li>
+                                {% endif %}
+                            {% endcase %}
+                        {% endfor %}
+                    </ul>
+                    {% if section.settings.credit_heading != blank %}
+                        <p class="link-text text-center">{{ section.settings.credit_heading }}</p>
+                    {% endif  %}
+                    <ul class="creditDrop">
+                        {% for block in section.blocks %}
+                            {%- case block.type -%}
+                                {%- when 'creditProfile' -%}
+                                <li class="creditDrop__item">
+                                    {% if block.settings.profileImage != blank %}
+                                        <div class="creditDrop__itemImage">
+                                            <img src="{{ block.settings.profileImage  | image_url }}">
+                                        </div>
+                                    {% endif %}
+                                    <div class="creditDrop__itemBody">
+                                        {% if block.settings.profileName != blank %}
+                                            <p>{{ block.settings.profileName }}</p>
+                                        {% endif %}
+                                        {% if block.settings.profileDesignation %}
+                                            <p>{{ block.settings.profileDesignation }}</p>
+                                        {% endif %}
+                                    </div>
+                                </li>
+                            {% endcase %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}            
         </div>
     </div>
     </div>
     <div class="showcaseBanner__bannerrImage"> 
         <div class="container">
             <div class="showcaseBanner__imgWrp">
-                <img class="showcaseBanner__img" src="{{ section.settings.bannerImage | image_url }}">
+                {% comment %} <img class="showcaseBanner__img" src="{{ section.settings.bannerImage | image_url }}"> {% endcomment %}
+                {{ section.settings.bannerImage | image_url: width: 1500 | image_tag:
+                    loading: 'lazy',
+                    height: height,
+                    sizes: "100vw",                    
+                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                    class: 'showcaseBanner__img'
+                }}
             </div>
         </div>
     </div>
@@ -93,9 +122,25 @@
             "type":"image_picker"
         
         },{
-            "label":"website link",
+            "label":"Website Link",
             "type":"url",
             "id":"websiteLInk"
+        },
+        {
+            "type": "header",
+            "content": "Add Visit Site and Credits Heading Here"
+        },        
+        {
+            "id":"visitsite_heading",
+            "label":" Visit Site Heading",
+            "type":"text",
+            "default": "Visit site"
+        },
+        {
+            "id":"credit_heading",
+            "label":"Credits Heading",
+            "type":"text",
+            "default": "Credits"
         }
     ],
     "blocks": [

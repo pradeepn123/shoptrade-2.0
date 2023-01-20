@@ -34,19 +34,28 @@
           "settings": {
             "hashtag": "HOME TECH"
           }
+        },
+        "0de0a6d8-f600-4780-aa66-224c0fc01f2c": {
+          "type": "hashtagBlock",
+          "settings": {
+            "hashtag": "Tech"
+          }
         }
       },
       "block_order": [
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
-        "cb384ac4-751c-45de-afd7-80333c78759e"
+        "cb384ac4-751c-45de-afd7-80333c78759e",
+        "0de0a6d8-f600-4780-aa66-224c0fc01f2c"
       ],
       "settings": {
         "heading": "HATHASPACE",
         "subHeading": "",
         "bannerImage": "shopify:\/\/shop_images\/Group_4716.jpg",
-        "websiteLInk": "https:\/\/hathaspace.com\/"
+        "websiteLInk": "https:\/\/hathaspace.com\/",
+        "visitsite_heading": "Visit Site",
+        "credit_heading": ""
       }
     },
     "marquee": {
