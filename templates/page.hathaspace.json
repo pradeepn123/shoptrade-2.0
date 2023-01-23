@@ -21,7 +21,6 @@
         },
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
-          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -40,6 +39,22 @@
           "settings": {
             "hashtag": "# Tech"
           }
+        },
+        "a2d38485-285e-4dfe-959a-2ce5a7d7ffc6": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.42.07_PM.png",
+            "profileName": "",
+            "profileDesignation": ""
+          }
+        },
+        "f6b9091a-7b30-475e-9679-6d52a183bd71": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.28.29_PM.png",
+            "profileName": "",
+            "profileDesignation": ""
+          }
         }
       },
       "block_order": [
@@ -47,7 +62,9 @@
         "6825669d-a038-4816-a61a-3d341507478e",
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
         "cb384ac4-751c-45de-afd7-80333c78759e",
-        "0de0a6d8-f600-4780-aa66-224c0fc01f2c"
+        "0de0a6d8-f600-4780-aa66-224c0fc01f2c",
+        "a2d38485-285e-4dfe-959a-2ce5a7d7ffc6",
+        "f6b9091a-7b30-475e-9679-6d52a183bd71"
       ],
       "settings": {
         "heading": "HATHASPACE",
