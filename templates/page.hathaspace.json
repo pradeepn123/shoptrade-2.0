@@ -42,6 +42,7 @@
         },
         "a2d38485-285e-4dfe-959a-2ce5a7d7ffc6": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.42.07_PM.png",
             "profileName": "",
@@ -50,6 +51,7 @@
         },
         "f6b9091a-7b30-475e-9679-6d52a183bd71": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.28.29_PM.png",
             "profileName": "",
