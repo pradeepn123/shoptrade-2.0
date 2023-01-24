@@ -44,7 +44,7 @@
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
-        "slider": "<div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div><div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div>"
+        "slider": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>"
       }
     },
     "showcase-role": {
