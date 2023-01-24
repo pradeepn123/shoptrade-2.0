@@ -55,7 +55,7 @@
           "settings": {
             "heading": "Our role",
             "description": "",
-            "width": 70,
+            "width": 60,
             "linkText": "",
             "linkUrl": ""
           }
@@ -65,7 +65,7 @@
           "settings": {
             "heading": "Our role",
             "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>SEO<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
-            "width": 30,
+            "width": 40,
             "linkText": "",
             "linkUrl": ""
           }
