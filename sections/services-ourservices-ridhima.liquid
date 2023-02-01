@@ -1,0 +1,144 @@
+<section class="ourServices ourServices__no_border">
+
+  <div class="container">
+    <h2 class="h1-main my-60">{{ section.settings.heading }}</h2>
+  </div>
+
+  <div class="ourServices__wrp">
+
+    <div class="container position-relative">
+
+      {% for block in section.blocks %}
+
+        <div class="services-cloumnLayout-outer {% if block.settings.image_right == 'right' %}flexDirectionRight {%endif%}">
+
+          <div class="services-columnLLayout1 {% if block.settings.image_right == 'right' %} service_right_layout RightbottomColorGradient {%endif%}">
+            <div
+              class="service_left_layout">
+              <div
+                class='services-section-number-outlineStroke
+                {% if block.settings.section_number_fill == 'stroke_fill' %}
+                  servicesSectionStrokeFill
+                {% endif %}'>
+                {{ block.settings.section_number }}
+              </div>
+              <p class="services-block-heading">
+                {{ block.settings.block_heading }}
+              </p>
+              {% if block.settings.block_icon != blank %}
+                <div class="services_block_icon">
+                  {{ block.settings.block_icon }}
+                </div>
+              {% elsif block.settings.block_images != blank %}
+                <div class="services-block-images">
+                  <img src="{{block.settings.block_images | img_url }}">
+                </div>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="services-columnLLayout2">
+            <div class="center-items">
+              <p class="services-sub-paragraph">
+                {{ block.settings.sub_paragraph }}
+              </p>
+              <div class="services-bullet-styling">
+                {{ block.settings.bullet_text }}
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Our Services-DevDemo",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "Our Services Block",
+        "type": "cardType",
+        "settings": [
+          {
+            "type": "select",
+            "id": "image_right",
+            "label": "Image Right",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left Image"
+              }, {
+                "value": "right",
+                "label": "Right Image"
+              }
+            ],
+            "default": "left"
+          },
+          {
+            "type": "text",
+            "id": "section_number",
+            "label": "Section Number"
+          },
+          {
+            "type": "select",
+            "id": "section_number_fill",
+            "label": "Section Number Fill",
+            "options": [
+              {
+                "value": "stroke_fill",
+                "label": "Stroke fill"
+
+              }, {
+                "value": "stroke_outline",
+                "label": "Stroke Outline"
+
+              }
+            ],
+            "default": "stroke_outline"
+          },
+          {
+            "type": "html",
+            "id": "block_icon",
+            "label": "Block Icon"
+          }, {
+            "type": "image_picker",
+            "id": "block_images",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "block_heading",
+            "label": "Block Heading"
+          }, {
+            "type": "text",
+            "id": "sub_paragraph",
+            "label": "Sub Paragraph"
+          }, {
+            "type": "richtext",
+            "id": "bullet_text",
+            "label": "BulletText"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Our Services-DevDemo"
+      }
+    ]
+  }
+{% endschema %}
