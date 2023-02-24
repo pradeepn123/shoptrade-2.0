@@ -47,21 +47,21 @@
     border-bottom: 0;
     width: 100%;
 
-    @media(min-width:768px) and (max-width:991px) {
-        border-right: 0px;
-    }
+    // @media(min-width:768px) and (max-width:991px) {
+    //     border-right: 0px;
+    // }
 
     @media(max-width:767px) {
         border-right: 0;
     }
 
-    @media(min-width:1024px) {
+    @media(min-width: 769px) {
         width: 50%;
     }
 
 
     &:after {
-        @media(min-width:1024px) {
+        @media(min-width:769px) {
             content: "";
             position: absolute;
             right: -0.4px;
@@ -81,12 +81,7 @@
         height: 100%;
         border-bottom: 1px solid #000;
 
-        @media(min-width:768px) and (max-width:991px) {
-            height: calc(100vh - 50vh);
-            border-bottom: 1px solid #000;
-        }
-
-        @media(min-width:1024px) {
+        @media(min-width: 769px) {
             border-bottom: 0;
         }
 
@@ -144,7 +139,7 @@
 
         }
 
-        @media(min-width:1024px) {
+        @media(min-width:769px) {
             border-bottom: 0;
             border-left: 1px solid black;
         }
@@ -199,7 +194,7 @@
     }
 
     &:after {
-        @media(min-width:1024px) {
+        @media(min-width: 769px) {
             content: "";
             position: absolute;
             left: -2.5rem;
@@ -312,13 +307,19 @@
         transform: translate(-62%, -6%);
     }
 
-    @media(min-width: 425px) and (max-width:767px) {
+    @media screen and (max-width:768px) {
         position: relative;
-        margin: auto;
-        transform: translate(-65%, 22%);
+        transform: translate(0, 0);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        svg{
+            width: 100%;
+        }
     }
 
-    @media(min-width:768px) {
+    @media(min-width:769px) {
         margin: unset;
         transform: translate(-26%, -9%);
     }
@@ -333,6 +334,13 @@
 
     @media(min-width:1440px) {
         transform: translate(-5%, -12%);
+    }
+
+    svg{
+        @media screen and (max-width: 768px){
+            display: inline-block;
+            width: 100% !important;
+        }
     }
 
     svg,
@@ -379,7 +387,7 @@
         border-right: 0;
     }
 
-    @media(min-width:1024px) {
+    @media(min-width: 769px) {
         width: 50%;
     }
 

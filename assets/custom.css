@@ -6017,6 +6017,9 @@ textarea {
   border-right: 1px solid #000;
   flex-direction: row;
 }
+.services-cloumnLayout-outer:last-child {
+  border-bottom: 0;
+}
 .services-cloumnLayout-outer.flexDirectionRight {
   flex-direction: row-reverse;
 }
@@ -6041,22 +6044,17 @@ textarea {
   border-bottom: 0;
   width: 100%;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .services-columnLLayout1 {
-    border-right: 0px;
-  }
-}
 @media (max-width: 767px) {
   .services-columnLLayout1 {
     border-right: 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .services-columnLLayout1 {
     width: 50%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .services-columnLLayout1:after {
     content: "";
     position: absolute;
@@ -6076,13 +6074,7 @@ textarea {
   height: 100%;
   border-bottom: 1px solid #000;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .services-columnLLayout1 .service_left_layout {
-    height: 50vh;
-    border-bottom: 1px solid #000;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .services-columnLLayout1 .service_left_layout {
     border-bottom: 0;
   }
@@ -6141,7 +6133,7 @@ textarea {
     border-bottom: 1px solid #000;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .RightbottomColorGradient .service_left_layout {
     border-bottom: 0;
     border-left: 1px solid black;
@@ -6199,7 +6191,7 @@ textarea {
     transform: translateX(-125%);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .RightbottomColorGradient:after {
     content: "";
     position: absolute;
@@ -6318,14 +6310,20 @@ textarea {
     transform: translate(-62%, -6%);
   }
 }
-@media (min-width: 425px) and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .services_block_icon {
     position: relative;
-    margin: auto;
-    transform: translate(-65%, 22%);
+    transform: translate(0, 0);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .services_block_icon svg {
+    width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .services_block_icon {
     margin: unset;
     transform: translate(-26%, -9%);
@@ -6344,6 +6342,12 @@ textarea {
 @media (min-width: 1440px) {
   .services_block_icon {
     transform: translate(-5%, -12%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .services_block_icon svg {
+    display: inline-block;
+    width: 100% !important;
   }
 }
 .services_block_icon svg,
@@ -6394,7 +6398,7 @@ textarea {
     border-right: 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
   .services-columnLLayout2 {
     width: 50%;
   }
