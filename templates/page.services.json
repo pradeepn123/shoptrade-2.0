@@ -198,139 +198,27 @@
         "link": ""
       }
     },
-    "273a6b95-6f35-4eaf-bc2d-a09c81608f2a": {
+    "29b8d15b-5b13-4448-a24b-f175106cb999": {
       "type": "services-ourservices-ridhima",
       "blocks": {
-        "366cde1c-ebff-49a3-b452-0bd864f4b91e": {
+        "b7efe97e-c436-4447-a5c4-1825a6fce875": {
           "type": "cardType",
           "settings": {
             "image_right": "left",
             "section_number": "1",
             "section_number_fill": "stroke_outline",
-            "block_icon": "<svg width=\"216\" height=\"189\" viewbox=\"0 0 216 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M59.9997 186.64L181.269 186.64C199.494 186.64 214.269 171.865 214.269 153.64L214.269 51.9997C214.269 23.8333 191.435 0.999949 163.269 0.999941L33.9998 0.999909C15.7745 0.999904 1.00001 15.7744 1 33.9997L1 127.64C1 160.225 27.4151 186.64 59.9997 186.64Z\" fill=\"url(#paint0_linear_445_402)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"19.5209\" y=\"18.0735\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M105.628 133.209L105.537 132.63L104.987 132.427C103.578 131.908 102.081 131.198 100.496 130.291C98.911 129.384 97.5263 128.446 96.3373 127.479L95.855 127.087L95.2899 127.346L82.4323 133.236L72.5321 115.76L84.3458 107.11L84.8728 106.724L84.7312 106.087C84.5918 105.459 84.5007 104.725 84.464 103.879C84.4258 102.999 84.4069 102.221 84.4069 101.541C84.4069 100.862 84.4258 100.084 84.464 99.2039C84.5007 98.3581 84.5918 97.6241 84.7312 96.9962L84.8728 96.3585L84.3458 95.9726L72.5321 87.3227L82.4323 69.8471L95.2899 75.7369L95.855 75.9958L96.3373 75.6035C97.5263 74.6366 98.911 73.6987 100.496 72.7921C102.071 71.891 103.553 71.2261 104.942 70.7869L105.532 70.6003L105.629 69.9888L107.816 56.0828H127.458L129.644 69.8739L129.736 70.4527L130.286 70.6555C131.705 71.1787 133.229 71.8746 134.859 72.7476C136.46 73.6045 137.798 74.5435 138.884 75.5584L139.374 76.016L139.983 75.7369L152.841 69.8471L162.735 87.3131L150.937 95.7332L150.411 96.1089L150.537 96.7431C150.681 97.4612 150.772 98.2421 150.809 99.0877C150.847 99.9658 150.866 100.784 150.866 101.541C150.866 102.299 150.847 103.097 150.809 103.935C150.772 104.74 150.681 105.503 150.537 106.224L150.411 106.854L150.932 107.23L162.738 115.765L152.841 133.236L139.983 127.346L139.418 127.087L138.936 127.479C137.738 128.454 136.364 129.415 134.81 130.363C133.287 131.293 131.798 131.971 130.344 132.408L129.743 132.589L129.644 133.209L127.457 147H107.815L105.628 133.209ZM117.636 117.641C122.078 117.641 125.891 116.065 129.019 112.934C132.147 109.803 133.721 105.986 133.721 101.541C133.721 97.0968 132.147 93.2802 129.019 90.1492C125.891 87.0182 122.078 85.4424 117.636 85.4424C113.195 85.4424 109.382 87.0182 106.254 90.1492C103.126 93.2802 101.552 97.0968 101.552 101.541C101.552 105.986 103.126 109.803 106.254 112.934C109.382 116.065 113.195 117.641 117.636 117.641Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_445_402\" x1=\"107.634\" y1=\"185.64\" x2=\"107.634\" y2=\"1.99993\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
-            "block_heading": "Theme <br> Development",
-            "sub_paragraph": "There are two approaches to theme development, and the appropriate one can be chosen based on factors such as budget and the desired go-to-market speed.",
-            "bullet_text": "<ul><li>Custom Theme Development: This would be the best suitable option if you have an existing design done or require a fully custom theme.  Ideal for brands that want a unique user experience.<\/li><li>Theme-Based Development: Work based on a selected theme as per your choice\/with our recommendation from the Shopify theme store; includes Limited design & development. Ideals for Merchants with a limited budget and who want to go to market fast.<\/li><\/ul>"
-          }
-        },
-        "2d2452e8-e419-4ce4-98bc-2e01422cb7a0": {
-          "type": "cardType",
-          "settings": {
-            "image_right": "right",
-            "section_number": "2",
-            "section_number_fill": "stroke_fill",
-            "block_icon": "<svg width=\"217\" height=\"189\" viewbox=\"0 0 217 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.27 186.64C199.495 186.64 214.27 171.865 214.27 153.64L214.27 51.9997C214.27 23.8333 191.436 0.999949 163.27 0.999941L34.0006 0.999909C15.7754 0.999904 1.00083 15.7744 1.00083 33.9997L1.00083 127.64C1.00082 160.225 27.4159 186.64 60.0005 186.64L181.27 186.64Z\" fill=\"url(#paint0_linear_210_2624)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"20\" y=\"18\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<g clip-path=\"url(#clip0_210_2624)\">\n<path d=\"M122.667 153V131.012V130.304L123.335 130.069L127.107 128.742L122.667 153ZM122.667 153H113.333V131.012V130.304L112.665 130.069L108.893 128.742L122.667 153ZM145.333 103C145.333 87.8348 133.165 75.6667 118 75.6667C102.835 75.6667 90.6667 87.8348 90.6667 103C90.6667 114.937 98.2863 124.988 108.891 128.741L145.333 103ZM145.333 103C145.333 114.937 137.714 124.988 127.109 128.741L145.333 103ZM112.333 34H111.333V35V52V53H112.333H123.667H124.667V52V35V34H123.667H112.333ZM74.6355 50.2083L73.9284 49.5012L73.2213 50.2083L65.2083 58.2213L64.5012 58.9284L65.2083 59.6355L77.2278 71.655L77.9349 72.3621L78.642 71.655L86.655 63.642L87.3621 62.9349L86.655 62.2278L74.6355 50.2083ZM162.779 50.2083L162.072 49.5012L161.365 50.2083L149.345 62.2278L148.638 62.9349L149.345 63.642L157.358 71.655L158.065 72.3621L158.772 71.655L170.792 59.6355L171.499 58.9284L170.792 58.2213L162.779 50.2083ZM50 96.3333H49V97.3333V108.667V109.667H50H67H68V108.667V97.3333V96.3333H67H50ZM169 96.3333H168V97.3333V108.667V109.667H169H186H187V108.667V97.3333V96.3333H186H169ZM78.642 134.345L77.9349 133.638L77.2278 134.345L65.2083 146.365L64.5012 147.072L65.2083 147.779L73.2213 155.792L73.9284 156.499L74.6355 155.792L86.655 143.772L87.3621 143.065L86.655 142.358L78.642 134.345ZM158.772 134.345L158.065 133.638L157.358 134.345L149.345 142.358L148.638 143.065L149.345 143.772L161.365 155.792L162.072 156.499L162.779 155.792L170.792 147.779L171.499 147.072L170.792 146.365L158.772 134.345ZM118 62.3333C95.6065 62.3333 77.3333 80.6065 77.3333 103C77.3333 118.879 86.7045 132.285 100 138.95V154C100 160.746 105.587 166.333 112.333 166.333H123.667C130.413 166.333 136 160.746 136 154V138.95C149.296 132.285 158.667 118.879 158.667 103C158.667 80.6065 140.394 62.3333 118 62.3333Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<\/g>\n<defs>\n<lineargradient id=\"paint0_linear_210_2624\" x1=\"107.635\" y1=\"185.64\" x2=\"107.635\" y2=\"1.99993\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<clippath id=\"clip0_210_2624\">\n<rect width=\"136\" height=\"136\" fill=\"white\" transform=\"translate(50 35)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
-            "block_heading": "Data Driven <br> UX & UI Design",
-            "sub_paragraph": "As a design-focused development agency, our services prioritize design, taking a design-first approach to everything we do.",
-            "bullet_text": "<ul><li>Our design services include comprehensive UX research, UX\/UI design, and design system development for theme and product development.\"<\/li><li>As part of our data-driven approach, we will implement analytics to track user behavior and engagement with your product, and use this data to optimize the design and user experience. Additionally, we will conduct usability testing to identify any issues and make iterative changes based on user feedback<\/li><\/ul>"
-          }
-        },
-        "a40fdc5d-bfbc-4f9f-9625-2de5b17652a1": {
-          "type": "cardType",
-          "settings": {
-            "image_right": "left",
-            "section_number": "3",
-            "section_number_fill": "stroke_outline",
-            "block_icon": "<svg width=\"217\" height=\"189\" viewbox=\"0 0 217 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.27 186.64C199.495 186.64 214.27 171.866 214.27 153.64L214.27 51.9998C214.27 23.8334 191.436 1.00007 163.27 1.00006L34.0006 1.00003C15.7754 1.00003 1.00083 15.7745 1.00083 33.9998L1.00083 127.64C1.00082 160.225 27.4159 186.64 60.0005 186.64L181.27 186.64Z\" fill=\"url(#paint0_linear_210_2666)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"20\" y=\"18\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M144.802 97.4H144.8L167.802 97.446L167.8 97.446L144.802 97.4ZM71.2 131.6H102.4V138.8H94.2H93.2V139.8V149V150H94.2H131H132V149V139.8V138.8H131H122.8V131.6H131H132V130.6V121.4V120.4H131H72.2V67.2H153V89.2V90.2H154H163.2H164.2V89.2V66.2C164.2 60.5385 159.609 56 154 56H71.2C65.5417 56 61 60.5417 61 66.2V121.4C61 127.009 65.5385 131.6 71.2 131.6ZM93.6197 90.0144L104.385 97.6855L100.286 110.375L99.3408 113.302L101.827 111.49L112.6 103.639L123.373 111.49L125.859 113.302L124.914 110.375L120.815 97.6855L131.58 90.0144L134.127 88.2H131H117.79L113.551 75.0923L112.6 72.1496L111.648 75.0923L107.41 88.2H94.2H91.0734L93.6197 90.0144ZM166.8 138.8H145.8V108.6H166.8V138.8Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_210_2666\" x1=\"107.635\" y1=\"185.64\" x2=\"107.635\" y2=\"2.00005\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
-            "block_heading": "Headless <br> Commerce",
-            "sub_paragraph": "",
-            "bullet_text": "<ul><li>We specialize in 360° headless commerce development services. Our team has extensive knowledge and experience in backend and frontend development, and we have the expertise to tackle headless commerce's complexity and architectural challenges.<\/li><li> Our key tech stack:<br\/><br\/>Frontend technologies; Shopify Hydrogen, Next.js, Gatsby, React, JAMStack and Contentful, but we have the expertise to work with any JavaScript framework.<br\/><br\/>Backend technologies; Python(Django)\/Node.js<\/li><\/ul>"
-          }
-        },
-        "7fee7f8e-7ade-4d89-ad0b-5e6fec84f143": {
-          "type": "cardType",
-          "settings": {
-            "image_right": "right",
-            "section_number": "4",
-            "section_number_fill": "stroke_outline",
-            "block_icon": "<svg width=\"217\" height=\"189\" viewbox=\"0 0 217 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.27 186.64C199.495 186.64 214.27 171.866 214.27 153.64L214.27 51.9998C214.27 23.8334 191.436 1.00007 163.27 1.00006L34.0006 1.00003C15.7754 1.00003 1.00083 15.7745 1.00083 33.9998L1.00083 127.64C1.00082 160.225 27.4159 186.64 60.0005 186.64L181.27 186.64Z\" fill=\"url(#paint0_linear_210_2633)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"20\" y=\"18\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M106.747 124.467L107.454 123.76L106.747 123.053L86.2942 102.6L106.747 82.1471L107.454 81.44L106.747 80.7329L100.307 74.2929L99.6 73.5858L98.8929 74.2929L71.2929 101.893L70.5858 102.6L71.2929 103.307L98.8929 130.907L99.6 131.614L100.307 130.907L106.747 124.467ZM129.253 123.053L128.546 123.76L129.253 124.467L135.693 130.907L136.4 131.614L137.107 130.907L164.707 103.307L165.414 102.6L164.707 101.893L137.107 74.2929L136.4 73.5858L135.693 74.2929L129.253 80.7329L128.546 81.44L129.253 82.1471L149.706 102.6L129.253 123.053Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_210_2633\" x1=\"107.635\" y1=\"185.64\" x2=\"107.635\" y2=\"2.00005\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
-            "block_heading": "Product <br> Development",
-            "sub_paragraph": "Our team specializes in developing Shopify apps, both for the Shopify app store and custom apps for Merchant's specific needs. We offer design and development services to help you transform your app idea into a reality. We will handle all aspects of the process, from research\/development to approval.",
-            "bullet_text": "<ul><li> Public app: We have experience building a wide range of apps, and can help bring your app idea to life through our design and development services. <a href=\"https:\/\/shoptrade.co\/pages\/products\">Checkout our apps<\/a><\/li><li> Custom app: If you have a unique requirement that cannot be met by existing apps in the app store, we can help you develop a custom application tailored to your specific needs. This service is perfect for merchants looking for solutions for their own store.<\/li><\/ul>"
-          }
-        },
-        "869c9266-3e87-4c6d-9b24-1830a22cb2b2": {
-          "type": "cardType",
-          "settings": {
-            "image_right": "left",
-            "section_number": "5",
-            "section_number_fill": "stroke_outline",
-            "block_icon": "<svg width=\"217\" height=\"189\" viewbox=\"0 0 217 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.27 186.64C199.495 186.64 214.27 171.866 214.27 153.64L214.27 51.9998C214.27 23.8334 191.436 1.00007 163.27 1.00006L34.0006 1.00003C15.7754 1.00003 1.00083 15.7745 1.00083 33.9998L1.00083 127.64C1.00082 160.225 27.4159 186.64 60.0005 186.64L181.27 186.64Z\" fill=\"url(#paint0_linear_210_2674)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"20\" y=\"18\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M107.36 99.5249L108.061 98.8247L107.367 98.1177C104.892 95.5928 102.681 92.5943 101.103 88.2061L100.796 87.3528L99.9173 87.5749L90.0018 90.0793L88.9596 90.3426L89.2973 91.363C91.6539 98.4851 95.1203 103.162 98.6833 106.777L99.3904 107.495L100.103 106.783L107.36 99.5249ZM112.889 73.4444H115.303L113.596 71.7373L93.1516 51.2929L92.4444 50.5858L91.7373 51.2929L71.2929 71.7373L69.5858 73.4444H72H86.464C86.5891 77.2311 86.8932 80.6814 87.4216 83.7076L87.6069 84.769L88.6516 84.5051L98.5671 82.0007L99.442 81.7797L99.3118 80.8868C98.9981 78.7363 98.7636 76.2192 98.6808 73.4444H112.889ZM164 73.4444H166.414L164.707 71.7373L144.263 51.2929L143.556 50.5858L142.848 51.2929L122.404 71.7373L120.697 73.4444H123.111H137.36C137.019 82.1576 135.441 87.7826 133.244 91.8867C130.961 96.1526 127.97 98.8594 124.747 101.75C122.475 103.749 120.118 105.948 118 108.725C116.407 106.647 114.655 104.924 112.893 103.339L112.188 102.704L111.517 103.375L104.311 110.582L103.571 111.321L104.343 112.027C106.712 114.192 108.564 116.06 109.851 118.507C111.129 120.939 111.889 124.026 111.889 128.667V154.222V155.222H112.889H123.111H124.111V154.222V128.667C124.111 123.628 124.995 120.417 126.479 117.883C127.983 115.313 130.145 113.357 132.928 110.857L132.928 110.857C136.457 107.686 140.509 104.036 143.729 98.1816C146.863 92.4829 149.175 84.7648 149.585 73.4444H164Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_210_2674\" x1=\"107.635\" y1=\"185.64\" x2=\"107.635\" y2=\"2.00005\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
-            "block_heading": "Platform <br> Migrations",
-            "sub_paragraph": "",
-            "bullet_text": "<ul><li>We specialize in handling data migrations from eCommerce platforms such as Salesforce Commerce, Magento, BigCommerce, WooCommerce, and custom solutions. Our data migration process is safe and secure, with a focus on SEO and 301 redirects. We can migrate customer data, products, content, order history, and more.<\/li><\/ul>"
-          }
-        },
-        "afc47e24-2539-49ed-be49-9154d09d71ae": {
-          "type": "cardType",
-          "settings": {
-            "image_right": "right",
-            "section_number": "6",
-            "section_number_fill": "stroke_outline",
-            "block_icon": "<svg width=\"217\" height=\"189\" viewbox=\"0 0 217 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.27 186.64C199.495 186.64 214.27 171.866 214.27 153.64L214.27 51.9998C214.27 23.8334 191.436 1.00007 163.27 1.00006L34.0006 1.00003C15.7754 1.00003 1.00083 15.7745 1.00083 33.9998L1.00083 127.64C1.00082 160.225 27.4159 186.64 60.0005 186.64L181.27 186.64Z\" fill=\"url(#paint0_linear_210_2641)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"20\" y=\"18\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M68.0855 137.176C64.9178 135.05 62.8235 131.435 62.8235 127.353V67.8235C62.8235 61.3183 68.1418 56 74.6471 56H161.235C167.741 56 173.059 61.3183 173.059 67.8235V67.8244L173.005 127.353L68.0855 137.176ZM68.0855 137.176H53H52V138.176C52 144.682 57.3183 150 63.8235 150H172.059C178.564 150 183.882 144.682 183.882 138.176V137.176H182.882H167.78C170.933 135.049 173.004 131.433 173.005 127.354L68.0855 137.176ZM75.6471 68.8235H160.235V126.353H75.6471V68.8235ZM117.941 142.588C115.517 142.588 113.529 140.601 113.529 138.176C113.529 135.752 115.517 133.765 117.941 133.765C120.365 133.765 122.353 135.752 122.353 138.176C122.353 140.601 120.365 142.588 117.941 142.588Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_210_2641\" x1=\"107.635\" y1=\"185.64\" x2=\"107.635\" y2=\"2.00005\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
-            "block_heading": "System <br> Integration",
-            "sub_paragraph": "",
-            "bullet_text": "<ul><li>We have partnerships with top SaaS companies, including Okendo, Klaviyo, Alavara, ReCharge, Gorgias, and Yopto, to provide a top-notch commerce experience. In addition, we can create custom integrations to connect your ERP, CRM, PIM, and other systems, allowing you to focus on growing your brand.<\/li><\/ul>"
+            "block_icon": "<svg width=\"216\" height=\"189\" viewbox=\"0 0 216 189\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M181.269 186.64C199.494 186.64 214.269 171.865 214.269 153.64L214.269 51.9997C214.269 23.8333 191.435 0.999949 163.269 0.999941L33.9998 0.999909C15.7745 0.999904 1.00001 15.7744 1 33.9997L1 127.64C1 160.225 27.4151 186.64 59.9997 186.64L181.269 186.64Z\" fill=\"url(#paint0_linear_732_409)\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<rect x=\"19.5209\" y=\"18.0735\" width=\"195.358\" height=\"169.306\" rx=\"26.9998\" fill=\"#FF7121\" stroke=\"black\" stroke-width=\"2\"><\/rect>\n<path d=\"M105.628 133.209L105.537 132.63L104.987 132.427C103.578 131.908 102.081 131.198 100.496 130.291C98.911 129.384 97.5263 128.446 96.3373 127.479L95.855 127.087L95.2899 127.346L82.4323 133.236L72.5321 115.76L84.3458 107.11L84.8728 106.724L84.7312 106.087C84.5918 105.459 84.5007 104.725 84.464 103.879C84.4258 102.999 84.4069 102.221 84.4069 101.541C84.4069 100.862 84.4258 100.084 84.464 99.2039C84.5007 98.3581 84.5918 97.6241 84.7312 96.9962L84.8728 96.3585L84.3458 95.9726L72.5321 87.3227L82.4323 69.8471L95.2899 75.7369L95.855 75.9958L96.3373 75.6035C97.5263 74.6366 98.911 73.6987 100.496 72.7921C102.071 71.891 103.553 71.2261 104.942 70.7869L105.532 70.6003L105.629 69.9888L107.816 56.0828H127.458L129.644 69.8739L129.736 70.4527L130.286 70.6555C131.705 71.1787 133.229 71.8746 134.859 72.7476C136.46 73.6045 137.797 74.5435 138.884 75.5584L139.374 76.016L139.983 75.7369L152.841 69.8471L162.735 87.3131L150.937 95.7332L150.411 96.1089L150.537 96.7431C150.681 97.4612 150.772 98.2421 150.809 99.0877C150.847 99.9658 150.866 100.784 150.866 101.541C150.866 102.299 150.847 103.097 150.809 103.935C150.772 104.74 150.681 105.503 150.537 106.224L150.411 106.854L150.932 107.23L162.738 115.765L152.841 133.236L139.983 127.346L139.418 127.087L138.936 127.479C137.738 128.454 136.364 129.415 134.81 130.363C133.287 131.293 131.798 131.971 130.344 132.408L129.743 132.589L129.644 133.209L127.458 147H107.815L105.628 133.209ZM117.636 117.641C122.078 117.641 125.891 116.065 129.019 112.934C132.147 109.803 133.721 105.986 133.721 101.541C133.721 97.0968 132.147 93.2802 129.019 90.1492C125.891 87.0182 122.078 85.4424 117.636 85.4424C113.195 85.4424 109.382 87.0182 106.254 90.1492C103.126 93.2802 101.552 97.0968 101.552 101.541C101.552 105.986 103.126 109.803 106.254 112.934C109.382 116.065 113.195 117.641 117.636 117.641Z\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"><\/path>\n<defs>\n<lineargradient id=\"paint0_linear_732_409\" x1=\"107.634\" y1=\"185.64\" x2=\"107.634\" y2=\"1.99993\" gradientunits=\"userSpaceOnUse\">\n<stop offset=\"0.104167\" stop-color=\"white\"><\/stop>\n<stop offset=\"0.697917\" stop-color=\"#FF985D\"><\/stop>\n<\/lineargradient>\n<\/defs>\n<\/svg>",
+            "block_heading": "Theme Development",
+            "sub_paragraph": "Add a sub text here giving a brief about the service which you provide . This will give a easy read through for the users who are just glancing through this section . Try to fill up atleast 3 lines for better visual appeal .",
+            "bullet_text": "<ul><li>Add body copy here provide details about the service . Split your content in points for better grasp of the content <\/li><li>Add body copy here provide details about the service . Split your content in points for better grasp of the content <\/li><li>Add body copy here provide details about the service . Split your content in points for better grasp of the content Add body copy here provide details about the service . Split your content in points for better grasp of the content <\/li><\/ul>"
           }
         }
       },
       "block_order": [
-        "366cde1c-ebff-49a3-b452-0bd864f4b91e",
-        "2d2452e8-e419-4ce4-98bc-2e01422cb7a0",
-        "a40fdc5d-bfbc-4f9f-9625-2de5b17652a1",
-        "7fee7f8e-7ade-4d89-ad0b-5e6fec84f143",
-        "869c9266-3e87-4c6d-9b24-1830a22cb2b2",
-        "afc47e24-2539-49ed-be49-9154d09d71ae"
+        "b7efe97e-c436-4447-a5c4-1825a6fce875"
       ],
       "settings": {
         "heading": "Our Services"
-      }
-    },
-    "bae6e883-4f6d-45fa-a3a9-4b023421740e": {
-      "type": "services-techstack",
-      "settings": {
-        "heading": "Tech Stack"
-      }
-    },
-    "f47dbd29-91c7-41b9-81d1-35d2343c9224": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--16749543194844__f47dbd29-91c7-41b9-81d1-35d2343c9224-16751676280c47fd76-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ENGINEERING",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "a7d34110-90b4-499d-9619-6f9d174282ab": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "DESIGN",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16749543194844__f47dbd29-91c7-41b9-81d1-35d2343c9224-16751676280c47fd76-0",
-        "a7d34110-90b4-499d-9619-6f9d174282ab"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 0,
-        "padding_bottom": 8
       }
     }
   },
@@ -339,8 +227,6 @@
     "ourservices",
     "ourPartners",
     "serviceShowcase",
-    "273a6b95-6f35-4eaf-bc2d-a09c81608f2a",
-    "bae6e883-4f6d-45fa-a3a9-4b023421740e",
-    "f47dbd29-91c7-41b9-81d1-35d2343c9224"
+    "29b8d15b-5b13-4448-a24b-f175106cb999"
   ]
 }
