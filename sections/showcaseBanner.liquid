@@ -11,7 +11,7 @@
             <h1 class="h1"> {{ section.settings.heading }} </h1>
             {% if hashtag_blocks.size > 0 %}
                 <ul class="showcaseBanner__hashtagBlock">                    
-                    {% for block in section.blocks limit: 5 %}
+                    {% for block in section.blocks limit: 10 %}
                         {%- case block.type -%}
                             {%- when 'hashtagBlock' -%}
                             <li class="showcaseBanner__hashtag">
@@ -64,21 +64,23 @@
                         {% for block in section.blocks %}
                             {%- case block.type -%}
                                 {%- when 'creditProfile' -%}
-                                <li class="creditDrop__item">
-                                    {% if block.settings.profileImage != blank %}
-                                        <div class="creditDrop__itemImage">
-                                            <img src="{{ block.settings.profileImage  | image_url }}">
+                                {% if block.settings.profileImage != blank %}
+                                    <li class="creditDrop__item">
+                                        {% if block.settings.profileImage != blank %}
+                                            <div class="creditDrop__itemImage">
+                                                <img src="{{ block.settings.profileImage  | image_url }}">
+                                            </div>
+                                        {% endif %}
+                                        <div class="creditDrop__itemBody">
+                                            {% if block.settings.profileName != blank %}
+                                                <p>{{ block.settings.profileName }}</p>
+                                            {% endif %}
+                                            {% if block.settings.profileDesignation %}
+                                                <p>{{ block.settings.profileDesignation }}</p>
+                                            {% endif %}
                                         </div>
-                                    {% endif %}
-                                    <div class="creditDrop__itemBody">
-                                        {% if block.settings.profileName != blank %}
-                                            <p>{{ block.settings.profileName }}</p>
-                                        {% endif %}
-                                        {% if block.settings.profileDesignation %}
-                                            <p>{{ block.settings.profileDesignation }}</p>
-                                        {% endif %}
-                                    </div>
-                                </li>
+                                    </li>
+                                {% endif %}
                             {% endcase %}
                         {% endfor %}
                     </ul>
