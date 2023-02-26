@@ -6042,10 +6042,31 @@ textarea {
   font-family: "Minecraft";
   color: #FF7121;
 }
+.accordion_image_container .accordion_image_content .accordion_image_heading .plus_icon {
+  transition: all 0.5s;
+  transform-origin: center;
+}
+.accordion_image_container .accordion_image_content .accordion_image_heading .plus_icon.rotate_plus_icon {
+  transform: rotate(45deg);
+}
 .accordion_image_container .accordion_image_content .accordion_image_blocks {
   display: grid;
   grid-template-columns: repeat(5, 20%);
   border-top: 1px solid #000;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.accordion_image_container .accordion_image_content .accordion_image_blocks.hide_height_on_click {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.accordion_image_container .accordion_image_content .accordion_image_blocks.hide_height_on_click .accordion_image_block_inner {
+  height: 0;
+}
+.accordion_image_container .accordion_image_content .accordion_image_blocks.hide_height_on_click .accordion_image_block_inner img {
+  height: 0;
 }
 @media screen and (max-width: 767px) {
   .accordion_image_container .accordion_image_content .accordion_image_blocks {

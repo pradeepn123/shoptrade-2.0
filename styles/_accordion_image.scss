@@ -38,16 +38,34 @@
                     color: #FF7121;
                 }
             }
+            .plus_icon{
+                transition: all .5s;
+                transform-origin: center;
+                &.rotate_plus_icon{
+                    transform: rotate(45deg);
+                }
+            }
         }
         .accordion_image_blocks{
             display: grid;
             grid-template-columns: repeat(5, 20%);
             border-top: 1px solid #000;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
+            &.hide_height_on_click{
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+                .accordion_image_block_inner{
+                    height: 0;
+                    img{
+                        height: 0;
+                    }
+                }
+            }
             @media screen and (max-width: 767px){
                 grid-template-columns: repeat(3, 33.33%);
-            }
-            @media screen and (min-width: 768px){
-                
             }
             .hide_in_mobile_layout{
                 @media screen and (max-width: 767px){

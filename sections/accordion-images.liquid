@@ -25,14 +25,14 @@
     {% endif %}
 {% endstyle %}
 
-<div class="accordion_image_container {{ section.id }} {% if section.settings.no_border_bottom_blocks %}no_border_bottom_for_blocks{%endif%}">
+<div class="accordion_image_container {{ section.id }} {% if section.settings.no_border_bottom_blocks %}no_border_bottom_for_blocks{%endif%}" id="accordion_image_container">
     <div class="container">
         <div class="accordion_image_content">
             <div class="accordion_image_heading">
-                <span>{% render 'plus-icon' %}</span>
+                <span class="plus_icon">{% render 'plus-icon' %}</span>
                 <span>{{ section.settings.heading }}</span>
             </div>
-            <div class="accordion_image_blocks">
+            <div class="accordion_image_blocks hide_height_on_click" style="{% if section.settings.no_top_border %}border-top: 0 !important;{% endif %}">
                 {% for block in section.blocks %}
                     <div class="accordion_image_block_inner {% if block.settings.image == null %}hide_in_mobile_layout{% endif %}">
                         {% if block.settings.image != null %}
@@ -88,8 +88,13 @@
         },
         {
             "type": "checkbox",
+            "id": "no_top_border",
+            "label": "Check this if there are more than one row of Images in Desktop"
+        },
+        {
+            "type": "checkbox",
             "id": "no_border_bottom_blocks",
-            "label": "Have no Border Bottom if Blocks are only 1 row"
+            "label": "Check if there is only one row of Images in Desktop"
         }
     ],
     "blocks": [

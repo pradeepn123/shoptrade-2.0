@@ -182,7 +182,8 @@
         "bottom_full_width_border": false,
         "heading": "ENGINEERING",
         "border_top": false,
-        "border_bottom": false,
+        "border_bottom": true,
+        "no_top_border": true,
         "no_border_bottom_blocks": false
       }
     },
@@ -233,6 +234,7 @@
         "heading": "DESIGN",
         "border_top": false,
         "border_bottom": false,
+        "no_top_border": false,
         "no_border_bottom_blocks": true
       }
     },
