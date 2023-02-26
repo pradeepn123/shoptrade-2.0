@@ -243,7 +243,10 @@
       "settings": {
         "vedioHeading": "Our Values",
         "vedioThumbnailImage": "shopify:\/\/shop_images\/5K8A6537.jpg",
-        "vedioUrl": "https:\/\/player.vimeo.com\/video\/794041269"
+        "vedioUrl": "https:\/\/player.vimeo.com\/video\/794041269",
+        "autoplay": true,
+        "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
+        "video_url": ""
       }
     },
     "about-team": {
