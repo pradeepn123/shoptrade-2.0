@@ -234,6 +234,10 @@
         padding: 1rem;
     }
 
+    @media screen and (min-width: 1441px){
+        padding: 1.2rem 1rem 2rem 2rem;
+        font-size: 4rem;
+    }
 }
 
 .servicesSectionStrokeFill {
@@ -349,6 +353,7 @@
             display: inline-block;
             width: 100% !important;
             height: 120px !important;
+            margin-bottom: 30px;
         }
     }
 
@@ -397,12 +402,38 @@
     width: 100%;
 
     @media screen and (max-width: 768px){
-        .services-columnLLayout2{
-            height: 120px !important;
+        min-height: fit-content;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -1rem;
+            bottom: 0;
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 27px;
+            background-size: 100%;
+            transform: translate(50%, 50%);
         }
+         &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 27px;
+            background-size: 100%;
+            transform: translate(50%, 50%);
+        }
+    }
+    @media screen and (max-width: 480px){
+        padding: 2rem;
     }
     @media(max-width:767px) {
         border-right: 0;
+        padding: 3rem 2rem;
     }
 
     @media(min-width: 769px) {
@@ -435,6 +466,9 @@
     letter-spacing: 0em;
     color: #000000;
     text-align: left;
+    @media screen and (max-width: 768px){
+        font-size: 16px;
+    }
 }
 
 .services-bullet-styling {
@@ -452,6 +486,9 @@
 
 
         li {
+            @media screen and (max-width: 768px){
+                font-size: 14px;
+            }
             list-style: none;
             margin-bottom: 24px;
 
@@ -468,9 +505,11 @@
             margin-right: 10px;
             height: 16px;
             width: 9px;
-            background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722");
+            background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/new_icon_076a7f97-1220-4348-ab88-0bf16fdfc281.svg?v=1677496938");
             background-size: 100%;
+            background-repeat: no-repeat;
+            top: 2px;
+            position: relative;
         }
-
     }
 }

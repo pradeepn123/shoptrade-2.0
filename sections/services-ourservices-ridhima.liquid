@@ -19,7 +19,13 @@
                 {% if block.settings.section_number_fill == 'stroke_fill' %}
                   servicesSectionStrokeFill
                 {% endif %}'>
-                {{ block.settings.section_number }}
+                  {% if block.settings.section_number == '4' %}
+                    {% render 'number-4' %}
+                  {% elsif block.settings.section_number == '6' %}
+                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/number_-_6.png?v=1677498782">
+                  {% else %}
+                    {{ block.settings.section_number }}
+                  {% endif %}
               </div>
               <p class="services-block-heading">
                 {{ block.settings.block_heading }}

@@ -6234,6 +6234,12 @@ textarea {
     padding: 1rem;
   }
 }
+@media screen and (min-width: 1441px) {
+  .services-section-number-outlineStroke {
+    padding: 1.2rem 1rem 2rem 2rem;
+    font-size: 4rem;
+  }
+}
 
 .servicesSectionStrokeFill {
   align-items: flex-start;
@@ -6361,6 +6367,7 @@ textarea {
     display: inline-block;
     width: 100% !important;
     height: 120px !important;
+    margin-bottom: 30px;
   }
 }
 .services_block_icon svg,
@@ -6413,13 +6420,43 @@ textarea {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .services-columnLLayout2 .services-columnLLayout2 {
-    height: 120px !important;
+  .services-columnLLayout2 {
+    min-height: fit-content;
+  }
+  .services-columnLLayout2::before {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    bottom: 0;
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 27px;
+    background-size: 100%;
+    transform: translate(50%, 50%);
+  }
+  .services-columnLLayout2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 27px;
+    background-size: 100%;
+    transform: translate(50%, 50%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .services-columnLLayout2 {
+    padding: 2rem;
   }
 }
 @media (max-width: 767px) {
   .services-columnLLayout2 {
     border-right: 0;
+    padding: 3rem 2rem;
   }
 }
 @media (min-width: 769px) {
@@ -6456,6 +6493,11 @@ textarea {
   color: #000000;
   text-align: left;
 }
+@media screen and (max-width: 768px) {
+  .services-sub-paragraph {
+    font-size: 16px;
+  }
+}
 
 .services-bullet-styling ul {
   display: inline;
@@ -6472,6 +6514,11 @@ textarea {
   list-style: none;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 768px) {
+  .services-bullet-styling ul li {
+    font-size: 14px;
+  }
+}
 .services-bullet-styling ul li:last-child {
   margin-bottom: 0px;
 }
@@ -6481,6 +6528,9 @@ textarea {
   margin-right: 10px;
   height: 16px;
   width: 9px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Union_59f830d2-7125-4d72-ac60-8aa721df4f8c.png?v=1671482722");
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/new_icon_076a7f97-1220-4348-ab88-0bf16fdfc281.svg?v=1677496938");
   background-size: 100%;
+  background-repeat: no-repeat;
+  top: 2px;
+  position: relative;
 }
