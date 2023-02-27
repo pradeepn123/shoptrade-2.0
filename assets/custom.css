@@ -6023,6 +6023,7 @@ textarea {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
+  align-items: center;
   padding: 34px 26px;
 }
 .accordion_image_container .accordion_image_content .accordion_image_heading:hover {
@@ -6030,7 +6031,7 @@ textarea {
 }
 @media screen and (max-width: 767px) {
   .accordion_image_container .accordion_image_content .accordion_image_heading {
-    padding: 18 13;
+    padding: 18px 13px;
   }
 }
 .accordion_image_container .accordion_image_content .accordion_image_heading span:first-child {
@@ -6095,6 +6096,11 @@ textarea {
     border-right: 1px solid #000 !important;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .accordion_image_container .accordion_image_content .accordion_image_blocks .accordion_image_block_inner {
+    height: 100px;
+  }
+}
 @media screen and (max-width: 767px) {
   .accordion_image_container .accordion_image_content .accordion_image_blocks .accordion_image_block_inner {
     height: 84px;
@@ -6105,6 +6111,11 @@ textarea {
   padding: 20px;
   width: 100%;
   object-fit: contain;
+}
+@media screen and (max-width: 767px) {
+  .accordion_image_container .accordion_image_content .accordion_image_blocks .accordion_image_block_inner img {
+    padding: 13px 10px;
+  }
 }
 
 .heading_only_wrapper {
