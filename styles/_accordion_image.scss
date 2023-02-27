@@ -23,6 +23,9 @@
             align-items: flex-start;
             flex-direction: row;
             padding: 34px 26px;
+            &:hover{
+                cursor: pointer;
+            }
             @media screen and (max-width: 767px){
                 padding: 18 13;
             }

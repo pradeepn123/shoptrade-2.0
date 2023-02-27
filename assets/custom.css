@@ -6025,6 +6025,9 @@ textarea {
   flex-direction: row;
   padding: 34px 26px;
 }
+.accordion_image_container .accordion_image_content .accordion_image_heading:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   .accordion_image_container .accordion_image_content .accordion_image_heading {
     padding: 18 13;
