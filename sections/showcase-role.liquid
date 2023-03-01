@@ -1,17 +1,18 @@
 <section class="role{% if template.name == "index" %} role__home{% endif %}">
-    <div class="role__card">
-        {% for item in section.blocks limit: 2 %}
-            <div class="role__cardItem" style="flex-basis: {{ item.settings.width }}%;">
-                <h5 class="role__head">{{ item.settings.heading }}</h5>
-                <div class="role__text">
-                    {{ item.settings.description }}
+    <div class="container">
+        <div class="role__card">
+            {% for item in section.blocks limit: 2 %}
+                <div class="role__cardItem" style="flex-basis: {{ item.settings.width }}%;">
+                    <h5 class="role__head">{{ item.settings.heading }}</h5>
+                    <div class="role__text">
+                        {{ item.settings.description }}
+                    </div>
+                    {% if item.settings.linkText != blank %}
+                        <a class="btn btn--orange" href="{{ item.settings.linkUrl }}">{{ item.settings.linkText }}</a>
+                    {% endif %}
                 </div>
-                {% if item.settings.linkText != blank %}
-                    <a class="btn btn--orange" href="{{ item.settings.linkUrl }}">{{ item.settings.linkText }}</a>
-                {% endif %}
-            </div>
-        {% endfor %}
-      
+            {% endfor %}
+        </div>
     </div>
 </section>
 
