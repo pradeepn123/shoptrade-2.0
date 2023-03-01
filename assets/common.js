@@ -543,6 +543,12 @@ $(document).ready(function () {
   })
 });
 
+  
+  $("#contact-btn-service").on('click', function(){
+    $("#contact-btn-details").trigger('click');
+  })
+
+
 // Tech Stack - Our Services Page
 document.addEventListener('DOMContentLoaded', function(){
   const accordionImagePlusIcon = document.querySelectorAll(".accordion_image_container .plus_icon");
@@ -557,3 +563,5 @@ document.addEventListener('DOMContentLoaded', function(){
     }
   }
 })
+
+
