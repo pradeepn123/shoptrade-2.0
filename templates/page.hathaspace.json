@@ -21,7 +21,6 @@
         },
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
-          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -32,7 +31,31 @@
           "type": "hashtagBlock",
           "disabled": true,
           "settings": {
-            "hashtag": "HOME TECH"
+            "hashtag": "# ﻿Home Tech"
+          }
+        },
+        "0de0a6d8-f600-4780-aa66-224c0fc01f2c": {
+          "type": "hashtagBlock",
+          "settings": {
+            "hashtag": "# Tech"
+          }
+        },
+        "a2d38485-285e-4dfe-959a-2ce5a7d7ffc6": {
+          "type": "creditProfile",
+          "disabled": true,
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.42.07_PM.png",
+            "profileName": "",
+            "profileDesignation": ""
+          }
+        },
+        "f6b9091a-7b30-475e-9679-6d52a183bd71": {
+          "type": "creditProfile",
+          "disabled": true,
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.28.29_PM.png",
+            "profileName": "",
+            "profileDesignation": ""
           }
         }
       },
@@ -40,13 +63,18 @@
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
-        "cb384ac4-751c-45de-afd7-80333c78759e"
+        "cb384ac4-751c-45de-afd7-80333c78759e",
+        "0de0a6d8-f600-4780-aa66-224c0fc01f2c",
+        "a2d38485-285e-4dfe-959a-2ce5a7d7ffc6",
+        "f6b9091a-7b30-475e-9679-6d52a183bd71"
       ],
       "settings": {
         "heading": "HATHASPACE",
         "subHeading": "",
         "bannerImage": "shopify:\/\/shop_images\/Group_4716.jpg",
-        "websiteLInk": "https:\/\/hathaspace.com\/"
+        "websiteLInk": "https:\/\/hathaspace.com\/",
+        "visitsite_heading": "Visit Site",
+        "credit_heading": "Credits"
       }
     },
     "marquee": {
@@ -130,6 +158,12 @@
           "settings": {
             "largeImage1": "shopify:\/\/shop_images\/Group_4639.png"
           }
+        },
+        "7f5c4365-0285-46b9-aaac-aff03198b1dd": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+            "largeImage1": "shopify:\/\/shop_images\/Group_4638.png"
+          }
         }
       },
       "block_order": [
@@ -139,7 +173,8 @@
         "9f4cc9a1-807b-4da3-a12b-4e636e5a2123",
         "66704b75-2473-49c0-9932-80fabf6ecc82",
         "c6d49d2b-49de-4880-b1f5-cb539b1f230f",
-        "8ab11769-14a7-48c6-a2e5-8b4d557211c7"
+        "8ab11769-14a7-48c6-a2e5-8b4d557211c7",
+        "7f5c4365-0285-46b9-aaac-aff03198b1dd"
       ],
       "settings": {
       }

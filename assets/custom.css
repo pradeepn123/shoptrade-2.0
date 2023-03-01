@@ -3167,6 +3167,9 @@ input::-moz-placeholder {
     margin-top: 15px;
   }
 }
+.showcaseBanner__links .circle-link {
+  margin: 0 auto;
+}
 .showcaseBanner__links .link-text {
   font-weight: 500;
   font-size: 16px;
@@ -3234,8 +3237,31 @@ input::-moz-placeholder {
 .showcaseBanner .creditDrop__itemBody p:first-child {
   margin-bottom: 4px;
 }
+.showcaseBanner .showcaseBanner__head .showcaseBanner__subheading {
+  padding: 1rem 0;
+}
+@media (min-width: 1440px) {
+  .showcaseBanner .showcaseBanner__head .showcaseBanner__subheading {
+    width: 40%;
+    padding: 0;
+  }
+}
+@media (min-width: 1680px) {
+  .showcaseBanner .showcaseBanner__head .showcaseBanner__subheading {
+    width: 50%;
+  }
+}
+.showcaseBanner .showcaseBanner__head .showcaseBanner__subheading p {
+  line-height: 1.4;
+}
+@media (min-width: 1440px) {
+  .showcaseBanner .showcaseBanner__head .showcaseBanner__subheading p {
+    line-height: 1.2;
+  }
+}
 .showcaseBanner .showcaseBanner__header {
   display: flex;
+  flex-direction: column;
 }
 @media (max-width: 767px) {
   .showcaseBanner .showcaseBanner__header {
@@ -3246,7 +3272,7 @@ input::-moz-placeholder {
   margin: 0;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 0;
 }
 @media (max-width: 767px) {
   .showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock {
@@ -3257,11 +3283,11 @@ input::-moz-placeholder {
   border: 1px solid #FF7121;
   color: #FF7121;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   font-family: "Minecraft";
   list-style: none;
   width: fit-content;
-  padding: 12px 15px;
+  padding: 12px 15px 8px 15px;
   border-radius: 50px;
 }
 .showcaseBanner .showcaseBanner__header .showcaseBanner__hashtagBlock li:not(:first-child) {
@@ -3343,6 +3369,7 @@ input::-moz-placeholder {
 }
 .role__cardItem:first-child {
   padding-right: 130px;
+  padding-left: 0;
 }
 @media (max-width: 1024px) {
   .role__cardItem:first-child {
