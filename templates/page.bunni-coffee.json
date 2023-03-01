@@ -5,7 +5,6 @@
       "blocks": {
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
           "type": "creditProfile",
-          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -14,7 +13,6 @@
         },
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
-          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -39,14 +37,14 @@
       "settings": {
         "heading": "BUUNNI COFFEE",
         "subHeading": "",
-        "bannerImage": "shopify:\/\/shop_images\/banner-showcase.png",
+        "bannerImage": "shopify:\/\/shop_images\/Main-Banner_1bf95801-097f-4d05-a171-c1d0278726c4.jpg",
         "websiteLInk": "https:\/\/www.buunnicoffee.com\/"
       }
     },
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
-        "slider": "<div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div><div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Development\n                            <\/p>\n                          <\/div> <div class=\"Marquee-tag\">\n                            <p>\n                             <span class=\"clr-o\">#<\/span>Headless\n                            <\/p>\n                          <\/div>"
+        "slider": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>"
       }
     },
     "showcase-role": {
@@ -57,7 +55,7 @@
           "settings": {
             "heading": "Our role",
             "description": "",
-            "width": 50,
+            "width": 60,
             "linkText": "",
             "linkUrl": ""
           }
@@ -66,8 +64,8 @@
           "type": "role",
           "settings": {
             "heading": "Our role",
-            "description": "",
-            "width": 50,
+            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>SEO<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
+            "width": 40,
             "linkText": "",
             "linkUrl": ""
           }
@@ -82,11 +80,65 @@
     },
     "showcaseImage": {
       "type": "showcaseImages",
+      "blocks": {
+        "26ed8de7-55a9-468e-8040-f5097d22d1a0": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/1.jpg"
+          }
+        },
+        "ed6d6f05-22be-4fba-b0ec-9864505980d0": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/2.jpg"
+          }
+        },
+        "1f5cf73b-cc82-42b2-b6ef-5cb8047e0d26": {
+          "type": "showcaseLargeImage",
+          "settings": {
+            "largeImage": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "3e562216-e065-4eff-86b4-0c1064d3986d": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/4.jpg"
+          }
+        },
+        "9472784a-6316-49c3-ac0c-c26278b4adfa": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/6.jpg"
+          }
+        },
+        "4862a872-3889-46e9-aa77-349cd3038a7a": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/5.jpg"
+          }
+        },
+        "7e0e85e2-0503-4da7-bdef-ef32ddff4294": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+            "largeImage1": "shopify:\/\/shop_images\/9.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "26ed8de7-55a9-468e-8040-f5097d22d1a0",
+        "ed6d6f05-22be-4fba-b0ec-9864505980d0",
+        "1f5cf73b-cc82-42b2-b6ef-5cb8047e0d26",
+        "3e562216-e065-4eff-86b4-0c1064d3986d",
+        "9472784a-6316-49c3-ac0c-c26278b4adfa",
+        "4862a872-3889-46e9-aa77-349cd3038a7a",
+        "7e0e85e2-0503-4da7-bdef-ef32ddff4294"
+      ],
       "settings": {
       }
     },
     "showcaseClient": {
       "type": "showcaseClient",
+      "disabled": true,
       "blocks": {
         "61296caa-3831-4c0f-9fc9-90d7037e2915": {
           "type": "resposiveImages",
