@@ -51,8 +51,8 @@
     //     border-right: 0px;
     // }
 
-    @media(max-width:767px) {
-        border-right: 0;
+    @media screen and (max-width:767px) {
+        border: 0 !important;
     }
 
     @media(min-width: 769px) {
@@ -90,7 +90,7 @@
             border-bottom: 0;
         }
 
-        @media screen and (min-width: 1024px){
+        @media screen and (min-width: 1024px) {
             min-height: 40vh;
         }
 
@@ -226,7 +226,7 @@
 
     @media(max-width:768px) {
         padding: 0.9rem;
-        font-size: 5.1rem;
+        font-size: 3.7rem !important;
     }
 
     @media(max-width:1024px) {
@@ -234,10 +234,34 @@
         padding: 1rem;
     }
 
-    @media screen and (min-width: 1441px){
+    @media screen and (min-width: 1441px) {
         padding: 1.2rem 1rem 2rem 2rem;
         font-size: 4rem;
     }
+
+    img,
+    svg {
+        @media screen and (min-width:1441px) {
+            display: block;
+            height: 52px;
+        }
+    }
+    img,
+    svg {
+        @media screen and (max-width:1023px) {
+            display: block;
+            height: 68px;
+        }
+    }
+
+    img,
+    svg {
+        @media screen and (max-width:890px) {
+            display: block;
+            height: 56px;
+        }
+    }
+
 }
 
 .servicesSectionStrokeFill {
@@ -302,11 +326,12 @@
     transform: translate(-4%, -3%);
     text-align: center;
 
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 769px) {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) !important;
     }
+
     @media(min-width: 320px) and (max-width:375px) {
         position: relative;
         margin: auto;
@@ -326,7 +351,8 @@
         top: 0;
         right: 0;
         bottom: 0;
-        svg{
+
+        svg {
             width: 100%;
         }
     }
@@ -348,8 +374,8 @@
         transform: translate(-5%, -12%);
     }
 
-    svg{
-        @media screen and (max-width: 768px){
+    svg {
+        @media screen and (max-width: 768px) {
             display: inline-block;
             width: 100% !important;
             height: 120px !important;
@@ -359,8 +385,8 @@
 
     svg,
     img {
-        @media screen and (min-width: 1200px){
-            width: 120px !important;
+        @media screen and (min-width: 1200px) {
+            width: 211px !important;
         }
 
         width: 120px;
@@ -400,10 +426,20 @@
     position: relative;
     display: flex;
     width: 100%;
+    height: 598px;
 
-    @media screen and (max-width: 768px){
+    // border-right: 1px solid black;
+    @media screen and (max-width:980px) {
+        height: 450px;
+        padding: 1.7rem;
+    }
+
+    @media screen and (max-width: 768px) {
         min-height: fit-content;
-        &::before{
+        height: 398px;
+        padding: 3rem;
+
+        &::before {
             content: "";
             position: absolute;
             left: -1rem;
@@ -415,7 +451,8 @@
             background-size: 100%;
             transform: translate(50%, 50%);
         }
-         &::after{
+
+        &::after {
             content: "";
             position: absolute;
             right: 0;
@@ -426,11 +463,14 @@
             height: 27px;
             background-size: 100%;
             transform: translate(50%, 50%);
+            z-index: 9;
         }
     }
-    @media screen and (max-width: 480px){
-        padding: 2rem;
+
+    @media screen and (max-width: 480px) {
+        padding: 29px 20px !important;
     }
+
     @media(max-width:767px) {
         border-right: 0;
         padding: 3rem 2rem;
@@ -443,18 +483,48 @@
     @media(min-width:1440px) {
         min-height: 35rem;
     }
-    @media screen and (min-width: 769px){
+
+    @media screen and (min-width: 769px) {
         min-height: auto !important;
+    }
+    .center-items {
+        overflow-y: scroll;
     }
 }
 
-.center-items {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.container.position-relative {
+    .services-cloumnLayout-outer:last-child {
+        .services-columnLLayout2 {
+            &::after,
+            &::before {
+                display: block;
+            }
+        }
+    }
 
+    @media (max-width: 767px) {
+        .services-cloumnLayout-outer:last-child {
+            .services-columnLLayout2 {
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
 }
+
+
+// .container.position-relative {
+//     .services-columnLLayout2 {
+//       &:nth-child(even) {
+//         border-right: 10px solid rgb(223, 6, 6);
+//       }
+//     }
+// }
+
+
 
 .services-sub-paragraph {
     margin-bottom: 0px;
@@ -466,7 +536,8 @@
     letter-spacing: 0em;
     color: #000000;
     text-align: left;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         font-size: 16px;
     }
 }
@@ -486,9 +557,10 @@
 
 
         li {
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
                 font-size: 14px;
             }
+
             list-style: none;
             margin-bottom: 24px;
 
@@ -512,4 +584,42 @@
             position: relative;
         }
     }
+}
+
+.services-columnLLayout1:after {
+    z-index: 1;
+}
+
+.services-columnLLayout2 :nth-child(2) {
+    // border: 2px solid red;
+}
+
+// .container.position-relative .services-cloumnLayout-outer:not(:last-child) .services-columnLLayout2::after {
+//     display: none;
+// }
+
+// .container.position-relative .services-cloumnLayout-outer:last-child .services-columnLLayout2::after {
+//     display: none;
+// }
+// .container.position-relative .services-cloumnLayout-outer:last-child .services-columnLLayout2::before {
+//     display: none;
+// }
+
+// .services-columnLLayout2::after:last-child{
+//     display: none !important;
+
+// }
+
+.flexDirectionRight{
+    .services-columnLLayout2{
+        border-right: 1px solid #000;
+        @media screen and (max-width:767px) {
+            border-right: 0px;
+            
+        }
+    }
+    .service_left_layout{
+        border-left:0;
+    }
+   
 }
