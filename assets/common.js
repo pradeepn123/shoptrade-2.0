@@ -807,3 +807,4 @@ for (let { length: i } = players; i > 0; i -= 1) {
   const player = players[i - 1];
   new VideoPlayer(player);
 }
+
