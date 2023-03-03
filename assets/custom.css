@@ -1649,7 +1649,9 @@ input::-moz-placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.video-player .preview .play-icon.arrow-btn{
+  cursor: pointer;
+} 
 .model-popup {
   position: fixed;
   inset: 0;

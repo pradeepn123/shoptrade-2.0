@@ -736,7 +736,7 @@ class VideoPlayerVimeo {
 }
 
 class VideoPlayer {
-  constructor(element, config) {
+  constructor(element, config) { 
     this.element = element;
     this.previewContainer = element.querySelector('[data-js="preview"]');
     this.videoContainer = element.querySelector('[data-js="video"]');
@@ -768,7 +768,7 @@ class VideoPlayer {
   }
   
   show(element) {
-    element.setAttribute('data-hidden', 'false');
+    element.setAttribute('data-hidden', 'false'); 
   }
 
   hide(element) {
