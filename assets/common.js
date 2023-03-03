@@ -808,10 +808,5 @@ for (let { length: i } = players; i > 0; i -= 1) {
   new VideoPlayer(player);
 }
 
-// =======
-  
-//   $("#contact-btn-service").on('click', function(){
-//     $("#contact-btn-details").trigger('click');
-//   })
-// });
-// >>>>>>> b12a4b3b3423c1f9fa03b315e48f3e807297b914
+
+
