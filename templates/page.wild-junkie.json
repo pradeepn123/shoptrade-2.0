@@ -3,6 +3,14 @@
     "banner": {
       "type": "showcaseBanner",
       "blocks": {
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
+          "type": "creditProfile",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-18_at_4.37.21_PM.png",
+            "profileName": "Darshika Pillai",
+            "profileDesignation": "Front-End Engineer"
+          }
+        },
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
           "settings": {
@@ -11,30 +19,40 @@
             "profileDesignation": "Head of Engineering"
           }
         },
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
+        "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
-            "profileImage": "shopify:\/\/shop_images\/Screenshot_2023-01-19_at_6.42.07_PM.png",
-            "profileName": "Sumayya Ishaq",
-            "profileDesignation": "Front-End Engineer"
+            "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
+            "profileName": "Jermy",
+            "profileDesignation": "Product designer"
+          }
+        },
+        "cb384ac4-751c-45de-afd7-80333c78759e": {
+          "type": "hashtagBlock",
+          "disabled": true,
+          "settings": {
+            "hashtag": "HOME TECH"
           }
         }
       },
       "block_order": [
+        "447653be-0815-4d4b-a1ae-8641c6b2f3d7",
         "6825669d-a038-4816-a61a-3d341507478e",
-        "447653be-0815-4d4b-a1ae-8641c6b2f3d7"
+        "f11dbc34-f9a6-4f99-a03a-131966c03a5b",
+        "cb384ac4-751c-45de-afd7-80333c78759e"
       ],
       "settings": {
-        "heading": "CHECKIT",
+        "heading": "WILD JUNKIE",
         "subHeading": "",
-        "bannerImage": "shopify:\/\/shop_images\/Group_4632.png",
-        "websiteLInk": "https:\/\/apps.shopify.com\/checkit"
+        "bannerImage": "shopify:\/\/shop_images\/Wild-Junkie-Banner.jpg",
+        "websiteLInk": "https:\/\/hathaspace.com\/"
       }
     },
     "marquee": {
       "type": "showcaseMarque",
       "settings": {
-        "slider": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Product\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Shopify App\n                <\/p>\n              <\/div>"
+        "slider": "<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span> Design<\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>\n          <div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>Headless\n            <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Design          <\/p>\n          <\/div>\n<div class=\"Marquee-tag\">\n            <p>\n             <span class=\"clr-o\">#<\/span>  Development\n            <\/p>\n          <\/div>"
       }
     },
     "showcase-role": {
@@ -44,8 +62,8 @@
           "type": "role",
           "settings": {
             "heading": "ABOUT",
-            "description": "<p>ShopTrade helped to design and develop Check It, a Shopify app, by providing expert product design and development services. From concept to launch, our team worked closely with the client to create a visually appealing design and ensure seamless app functionality, resulting in a successful launch of the product on the Shopify app store.<\/p>",
-            "width": 70,
+            "description": "<p>At Hathaspace our mission is to improve health and wellness of our community with purified air. From the classroom, to the office environment, to the home, our team at Hathaspace will continue to pursue the best and most trusted technology to bring True HEPA air filtration to the masses.<\/p>",
+            "width": 65,
             "linkText": "",
             "linkUrl": ""
           }
@@ -54,8 +72,8 @@
           "type": "role",
           "settings": {
             "heading": "SERVICES",
-            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
-            "width": 40,
+            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>SEO<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
+            "width": 35,
             "linkText": "",
             "linkUrl": ""
           }
@@ -74,43 +92,55 @@
         "688f57a5-702a-4667-81f1-c28ed5b2aa3a": {
           "type": "showcaseImageBLock2",
           "settings": {
-            "image2": "shopify:\/\/shop_images\/Group_4631.png"
+            "image2": "shopify:\/\/shop_images\/Wild_1.jpg"
           }
         },
         "aadaad26-3491-4e1e-ace8-582ab9517148": {
           "type": "showcaseImageBLock2",
           "settings": {
-            "image2": "shopify:\/\/shop_images\/Feed_Display_56.png"
+            "image2": "shopify:\/\/shop_images\/Wild_2.jpg"
           }
         },
         "a997a747-ef7c-4adc-a24a-a9dcfdb9964a": {
           "type": "showcaseLargeImage",
           "settings": {
-            "largeImage": "shopify:\/\/shop_images\/Feed_Display_57.png"
-          }
-        },
-        "9f4cc9a1-807b-4da3-a12b-4e636e5a2123": {
-          "type": "showcaseImageBLock3",
-          "settings": {
-            "image3": "shopify:\/\/shop_images\/iPhone_6_7_8_Plus_56.png"
+            "largeImage": "shopify:\/\/shop_images\/Wild_3.jpg"
           }
         },
         "66704b75-2473-49c0-9932-80fabf6ecc82": {
           "type": "showcaseImageBLock3",
           "settings": {
-            "image3": "shopify:\/\/shop_images\/iPhone_6_7_8_Plus_58.png"
+            "image3": "shopify:\/\/shop_images\/Wild_4.jpg"
+          }
+        },
+        "9f4cc9a1-807b-4da3-a12b-4e636e5a2123": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/Wild_5.jpg"
           }
         },
         "c6d49d2b-49de-4880-b1f5-cb539b1f230f": {
           "type": "showcaseImageBLock3",
           "settings": {
-            "image3": "shopify:\/\/shop_images\/iPhone_6_7_8_Plus_57.png"
+            "image3": "shopify:\/\/shop_images\/Wild_6.jpg"
           }
         },
         "8ab11769-14a7-48c6-a2e5-8b4d557211c7": {
           "type": "showcaseLargeImage1",
           "settings": {
-            "largeImage1": "shopify:\/\/shop_images\/Group_4628.png"
+            "largeImage1": "shopify:\/\/shop_images\/Wild_7.jpg"
+          }
+        },
+        "48706680-d99b-4277-a83c-482e52cd1d9a": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+            "largeImage1": "shopify:\/\/shop_images\/Wild_8.jpg"
+          }
+        },
+        "6b29b576-4231-4712-96bb-75264428b5bd": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+            "largeImage1": "shopify:\/\/shop_images\/Wild_9.jpg"
           }
         }
       },
@@ -118,10 +148,12 @@
         "688f57a5-702a-4667-81f1-c28ed5b2aa3a",
         "aadaad26-3491-4e1e-ace8-582ab9517148",
         "a997a747-ef7c-4adc-a24a-a9dcfdb9964a",
-        "9f4cc9a1-807b-4da3-a12b-4e636e5a2123",
         "66704b75-2473-49c0-9932-80fabf6ecc82",
+        "9f4cc9a1-807b-4da3-a12b-4e636e5a2123",
         "c6d49d2b-49de-4880-b1f5-cb539b1f230f",
-        "8ab11769-14a7-48c6-a2e5-8b4d557211c7"
+        "8ab11769-14a7-48c6-a2e5-8b4d557211c7",
+        "48706680-d99b-4277-a83c-482e52cd1d9a",
+        "6b29b576-4231-4712-96bb-75264428b5bd"
       ],
       "settings": {
       }
@@ -169,9 +201,9 @@
     "showcaseReview": {
       "type": "showcaseReview",
       "settings": {
-        "reviewText": "ShopTrade was hyper-responsive, knowledgeable, and efficient.",
-        "name": "Zeke Berg",
-        "company": "Founder at Society Merch, CheckIt"
+        "reviewText": "They delivered on what they said they would, and they were quick.",
+        "name": "Marcus lara",
+        "company": "Co-Founder at Hathaspace"
       }
     }
   },

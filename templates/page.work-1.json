@@ -9,7 +9,7 @@
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
             "clickble": true,
-            "cardLink": "https:\/\/www.elevatione.com\/",
+            "cardLink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -19,7 +19,7 @@
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
             "clickble": true,
-            "cardLink": "https:\/\/hathaspace.com\/",
+            "cardLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -29,7 +29,37 @@
             "cardImage": "shopify:\/\/shop_images\/angles90.png",
             "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
             "clickble": true,
-            "cardLink": "https:\/\/angles90.com\/",
+            "cardLink": "https:\/\/shoptrade.co\/pages\/angles",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "a042d646-89ce-4d16-8b64-aea734310f47": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
+            "clickble": true,
+            "cardLink": "https:\/\/chill.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "cfb0d6fc-905c-4d22-aafe-b59a90cc9551": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
+            "clickble": true,
+            "cardLink": "https:\/\/wildjunkieboutique.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "6c361f49-c740-4c88-a697-a07cc0978984": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/synchro.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
+            "clickble": true,
+            "cardLink": "https:\/\/besynchro.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -53,36 +83,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
-        "a042d646-89ce-4d16-8b64-aea734310f47": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/chill.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
-            "clickble": true,
-            "cardLink": "https:\/\/chill.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "6c361f49-c740-4c88-a697-a07cc0978984": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/synchro.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
-            "clickble": true,
-            "cardLink": "https:\/\/besynchro.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "cfb0d6fc-905c-4d22-aafe-b59a90cc9551": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/wild-junkies.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
-            "clickble": true,
-            "cardLink": "https:\/\/wildjunkieboutique.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "07f8cf6d-5332-43d0-ad62-4a812965a113": {
           "type": "cardType",
           "settings": {
@@ -103,13 +103,33 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
+        "4f536d0a-f989-4a1e-b706-e379ef217bca": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Untitled-3.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103_1e99d9e1-e905-4d44-a273-b10f47d5a15e.png",
+            "clickble": true,
+            "cardLink": "https:\/\/shoptrade.co\/pages\/checkit",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "a154bb33-3944-473d-a900-8fe847a8cbd6": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/image_199.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/image_200.png",
+            "clickble": true,
+            "cardLink": "https:\/\/shoptrade.co\/pages\/sendif",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
         "e3f17897-720d-45a7-86d5-d1b23ee326fa": {
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lenze.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
             "clickble": true,
-            "cardLink": "https:\/\/lensadvizor.com\/",
+            "cardLink": "https:\/\/shoptrade.co\/pages\/lens-advizor",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -142,46 +162,25 @@
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
-        },
-        "a154bb33-3944-473d-a900-8fe847a8cbd6": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/image_199.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/image_200.png",
-            "clickble": true,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "4f536d0a-f989-4a1e-b706-e379ef217bca": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/tikshop.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-tikshop.png",
-            "clickble": true,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
         }
       },
       "block_order": [
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
+        "a042d646-89ce-4d16-8b64-aea734310f47",
+        "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
+        "6c361f49-c740-4c88-a697-a07cc0978984",
         "d0aaf961-3564-47c1-b2c5-cc9da6674890",
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
-        "a042d646-89ce-4d16-8b64-aea734310f47",
-        "6c361f49-c740-4c88-a697-a07cc0978984",
-        "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
         "07f8cf6d-5332-43d0-ad62-4a812965a113",
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55",
+        "4f536d0a-f989-4a1e-b706-e379ef217bca",
+        "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
-        "2c3a4b9b-d183-4461-94ea-8ba213835dca",
-        "a154bb33-3944-473d-a900-8fe847a8cbd6",
-        "4f536d0a-f989-4a1e-b706-e379ef217bca"
+        "2c3a4b9b-d183-4461-94ea-8ba213835dca"
       ],
       "settings": {
         "heading": "Transform your brand with the power of a global audience"
