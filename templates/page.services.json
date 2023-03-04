@@ -97,6 +97,7 @@
     },
     "ourservices": {
       "type": "serivecesOurServices",
+      "disabled": true,
       "blocks": {
         "3725e8d5-d160-4ae4-b1b7-b4f46cfbb088": {
           "type": "serviceCard",

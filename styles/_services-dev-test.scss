@@ -51,7 +51,7 @@
     //     border-right: 0px;
     // }
 
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:768px) {
         border: 0 !important;
     }
 
@@ -502,7 +502,7 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         .services-cloumnLayout-outer:last-child {
             .services-columnLLayout2 {
 
@@ -613,7 +613,7 @@
 .flexDirectionRight{
     .services-columnLLayout2{
         border-right: 1px solid #000;
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:768px) {
             border-right: 0px;
             
         }
