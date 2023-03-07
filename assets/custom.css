@@ -6480,8 +6480,8 @@ textarea {
 @media screen and (max-width: 768px) {
   .services-columnLLayout2 {
     min-height: fit-content;
-    height: 398px;
-    padding: 3rem;
+    height: 300px;
+    padding: 3rem 2rem;
   }
   .services-columnLLayout2::before {
     content: "";
@@ -6517,7 +6517,6 @@ textarea {
 @media (max-width: 767px) {
   .services-columnLLayout2 {
     border-right: 0;
-    padding: 3rem 2rem;
   }
 }
 @media (min-width: 769px) {
@@ -6537,6 +6536,9 @@ textarea {
 }
 .services-columnLLayout2 .center-items {
   overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container.position-relative .services-cloumnLayout-outer:last-child .services-columnLLayout2::after, .container.position-relative .services-cloumnLayout-outer:last-child .services-columnLLayout2::before {
