@@ -157,7 +157,7 @@
             height: 41px;
             width: 37px;
             bottom: -2px;
-            right: 2px;
+            right: 1px;
             transform: rotate(-270deg) translateY(-50%);
 
             @media (max-width:991px) {
@@ -183,8 +183,8 @@
 .aboutCount {
     .ourNumbers__cards {
         @media (max-width:991px) {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
         }
     }
@@ -438,6 +438,7 @@
         @media (max-width:767px) {
             max-width: 100%;
             border-top: 1px solid var(--COLOR-BLACK);
+             border-right: none;
             overflow: hidden;
         }
 
