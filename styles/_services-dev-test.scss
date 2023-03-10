@@ -436,8 +436,8 @@
 
     @media screen and (max-width: 768px) {
         min-height: fit-content;
-        height: 398px;
-        padding: 3rem;
+        height: 300px;
+        padding: 3rem 2rem;
 
         &::before {
             content: "";
@@ -473,7 +473,7 @@
 
     @media(max-width:767px) {
         border-right: 0;
-        padding: 3rem 2rem;
+        
     }
 
     @media(min-width: 769px) {
@@ -489,6 +489,9 @@
     }
     .center-items {
         overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
