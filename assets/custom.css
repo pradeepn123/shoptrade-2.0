@@ -1600,7 +1600,6 @@ input::-moz-placeholder {
   border: 2px solid #000000;
   border-radius: 15px;
   width: 100%;
-  height: 593px;
   overflow: hidden;
   position: relative;
 }
@@ -4762,6 +4761,39 @@ input::-moz-placeholder {
   right: 0;
   transform: translateY(-50%);
   z-index: 2;
+}
+
+.video-player {
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-player .image-wrapper,
+.video-player .play {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-player .image-wrapper,
+.video-player .image {
+  width: 100%;
+}
+
+.video-player .preview,
+.video-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-player [data-hidden=true] {
+  display: none;
 }
 
 .blogBanner {
