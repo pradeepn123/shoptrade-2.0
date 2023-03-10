@@ -508,7 +508,6 @@
         },
         "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
           "type": "cardType",
-          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",
@@ -593,6 +592,7 @@
         },
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",

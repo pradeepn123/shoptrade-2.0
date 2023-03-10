@@ -1604,6 +1604,16 @@ input::-moz-placeholder {
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 767px) {
+  .vedio__container {
+    height: 362px;
+  }
+}
+@media (max-width: 767px) {
+  .vedio__container {
+    height: 162px;
+  }
+}
 .vedio__info {
   position: absolute;
   bottom: 43px;
@@ -1752,9 +1762,9 @@ input::-moz-placeholder {
     position: absolute;
     content: "";
     top: -2px;
-    left: -2px;
+    left: -3px;
     height: 20px;
-    width: 15px;
+    width: 17px;
     background-size: cover;
     transform: rotate(-90deg) translateY(50%);
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
@@ -1764,10 +1774,10 @@ input::-moz-placeholder {
   .ourNumbers__cardItem::after {
     position: absolute;
     content: "";
-    top: -2px;
+    top: -3px;
     right: 17px;
     height: 20px;
-    width: 15px;
+    width: 17px;
     background-size: cover;
     transform: rotate(-90deg) translateY(50%);
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
@@ -2866,6 +2876,11 @@ input::-moz-placeholder {
 .shopify-footer__links:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
 }
+@media screen and (max-width: 991px) {
+  .shopify-footer__links:nth-child(3) {
+    border-right: none;
+  }
+}
 .shopify-footer__links a {
   color: var(--COLOR-BLACK) !important;
   cursor: pointer;
@@ -2873,7 +2888,6 @@ input::-moz-placeholder {
 }
 .shopify-footer__Content {
   display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
 }
 @media (max-width: 767px) {
@@ -2884,11 +2898,16 @@ input::-moz-placeholder {
 .shopify-footer__Content > div:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
 }
+@media screen and (max-width: 767px) {
+  .shopify-footer__Content > div:not(:last-child) {
+    border-right: none;
+  }
+}
 .shopify-footer__block {
   padding: 35px 55px 55px 80px;
   position: relative;
 }
-@media (max-width: 991px) {
+@media (max-width: 1029px) {
   .shopify-footer__block {
     padding: 40px 20px;
   }
@@ -2914,7 +2933,7 @@ input::-moz-placeholder {
     right: 0;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .shopify-footer__block:first-child {
     border-bottom: 1px solid var(--COLOR-BLACK);
   }
@@ -2940,7 +2959,7 @@ input::-moz-placeholder {
     bottom: 0;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .shopify-footer__block:nth-child(2) {
     border-bottom: 1px solid var(--COLOR-BLACK);
   }
@@ -4141,9 +4160,10 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .mission__item:last-child::after {
-    right: -4px;
-    width: 17px;
-    height: 15px;
+    top: -1px;
+    right: 0;
+    width: 20px;
+    height: 22px;
     background-size: contain;
   }
 }
@@ -4152,10 +4172,10 @@ input::-moz-placeholder {
     content: "";
     position: absolute;
     transform: translateY(-50%) rotate(180deg);
-    top: 0;
-    left: -4px;
-    width: 15px;
-    height: 13px;
+    top: -1px;
+    left: 0;
+    width: 20px;
+    height: 22px;
     background-size: contain;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
   }
@@ -4216,7 +4236,7 @@ input::-moz-placeholder {
   height: 41px;
   width: 37px;
   bottom: -2px;
-  right: 2px;
+  right: 1px;
   transform: rotate(-270deg) translateY(-50%);
 }
 @media (max-width: 991px) {
@@ -4238,8 +4258,8 @@ input::-moz-placeholder {
 
 @media (max-width: 991px) {
   .aboutCount .ourNumbers__cards {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
   }
 }
@@ -4345,10 +4365,10 @@ input::-moz-placeholder {
     content: "";
     position: absolute;
     transform: translateY(-50%) rotate(180deg);
-    top: 0;
-    left: -4px;
-    width: 15px;
-    height: 13px;
+    top: -1px;
+    left: 0px;
+    width: 20px;
+    height: 22px;
     background-size: contain;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
   }
@@ -4359,9 +4379,9 @@ input::-moz-placeholder {
     position: absolute;
     transform: translateY(-50%);
     top: 0;
-    right: -4px;
-    width: 15px;
-    height: 13px;
+    right: 0px;
+    width: 19px;
+    height: 22px;
     background-size: contain;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
   }
@@ -4446,6 +4466,7 @@ input::-moz-placeholder {
   .about-team__contentWrp {
     max-width: 100%;
     border-top: 1px solid var(--COLOR-BLACK);
+    border-right: none;
     overflow: hidden;
   }
 }
