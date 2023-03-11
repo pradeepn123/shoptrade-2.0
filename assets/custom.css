@@ -6555,7 +6555,6 @@ textarea {
     height: 27px;
     background-size: 100%;
     transform: translate(50%, 50%);
-    z-index: 9;
   }
 }
 @media screen and (max-width: 480px) {
@@ -6585,7 +6584,7 @@ textarea {
 }
 .services-columnLLayout2 .center-items {
   overflow-y: scroll;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
