@@ -1603,16 +1603,6 @@ input::-moz-placeholder {
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 767px) {
-  .vedio__container {
-    height: 362px;
-  }
-}
-@media (max-width: 767px) {
-  .vedio__container {
-    height: 162px;
-  }
-}
 .vedio__info {
   position: absolute;
   bottom: 43px;
