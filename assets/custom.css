@@ -1603,16 +1603,6 @@ input::-moz-placeholder {
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 767px) {
-  .vedio__container {
-    height: 362px;
-  }
-}
-@media (max-width: 767px) {
-  .vedio__container {
-    height: 162px;
-  }
-}
 .vedio__info {
   position: absolute;
   bottom: 43px;
@@ -6565,7 +6555,6 @@ textarea {
     height: 27px;
     background-size: 100%;
     transform: translate(50%, 50%);
-    z-index: 9;
   }
 }
 @media screen and (max-width: 480px) {
@@ -6595,7 +6584,7 @@ textarea {
 }
 .services-columnLLayout2 .center-items {
   overflow-y: scroll;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
