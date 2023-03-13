@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
+    overflow: hidden;
 }
 
 .h1 {
@@ -578,7 +579,8 @@ input::-moz-placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 99;
+    z-index: 999;
+    opacity: 1;
 
     @media (max-width:767px) {
         left: 40%;
@@ -710,5 +712,14 @@ input::-moz-placeholder {
   }
 
 
-
- 
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 192, 192, 0.5); 
+    z-index: 97; 
+    pointer-events: none;
+  }
+//   

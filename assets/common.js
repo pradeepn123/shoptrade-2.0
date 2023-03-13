@@ -807,3 +807,16 @@ for (let { length: i } = players; i > 0; i -= 1) {
   const player = players[i - 1];
   new VideoPlayer(player);
 }
+// The backdrop loader 
+$(document).ready(function() {
+  $(".backdrop").show();
+  $("body").css("overflow", "hidden");
+
+  setTimeout(function() {
+    $(".backdrop").hide();  
+    $("body").css("overflow", "auto");
+  }, 1); 
+}); 
+// 
+
+
