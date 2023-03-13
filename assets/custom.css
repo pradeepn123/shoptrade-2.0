@@ -508,6 +508,10 @@ input::-moz-placeholder {
   line-height: 34px;
   color: var(--COLOR-BLACK);
 }
+.terms-condition p a {
+  color: #000000;
+  text-decoration: none;
+}
 
 .loader {
   border: 10px solid #f3f3f3;
