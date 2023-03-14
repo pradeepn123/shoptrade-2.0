@@ -3998,24 +3998,52 @@ input::-moz-placeholder {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  border: 1px solid #000;
+}
+@media screen and (min-width: 1418px) {
+  .ourPartners__list :not(:nth-child(4n)) {
+    border-right: 1px solid black;
+  }
+  .ourPartners__list :nth-child(-n+4) {
+    border-bottom: 1px solid black;
+  }
+}
+@media screen and (max-width: 1417px) {
+  .ourPartners__list :nth-child(3n) {
+    border-right: none !important;
+  }
+  .ourPartners__list :nth-last-child(1),
+  .ourPartners__list :nth-last-child(2) {
+    border-bottom: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .ourPartners__list :nth-child(even) {
+    border-left: 1px solid var(--COLOR-BLACK) !important;
+  }
 }
 .ourPartners__listItem {
   flex-basis: 25%;
   text-align: center;
   padding: 80px 60px;
-  border: 1px solid var(--COLOR-BLACK);
 }
-@media (max-width: 1335px) {
+@media (max-width: 1417px) {
   .ourPartners__listItem {
     flex-basis: 33.3333333333%;
     padding: 30px;
+    border-right: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
   }
 }
 @media (max-width: 991px) {
   .ourPartners__listItem {
     flex-basis: 50%;
     padding: 30px;
+    border-right: none;
   }
+}
+.ourPartners__listItem img {
+  border: none !important;
 }
 @media (max-width: 767px) {
   .ourPartners__listItem img {
@@ -4048,11 +4076,11 @@ input::-moz-placeholder {
 .ourPartners__listItem:nth-child(1), .ourPartners__listItem:nth-child(2), .ourPartners__listItem:nth-child(4), .ourPartners__listItem:nth-child(5) {
   position: relative;
 }
-@media (min-width: 992px) and (max-width: 1335px) {
+@media (min-width: 992px) and (max-width: 1417px) {
   .ourPartners__listItem:nth-child(1)::after, .ourPartners__listItem:nth-child(2)::after, .ourPartners__listItem:nth-child(4)::after, .ourPartners__listItem:nth-child(5)::after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -1px;
     bottom: 0;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
     background-repeat: no-repeat;
@@ -4065,11 +4093,11 @@ input::-moz-placeholder {
 .ourPartners__listItem:nth-child(-n+3) {
   position: relative;
 }
-@media (min-width: 1336px) {
+@media (min-width: 1418px) {
   .ourPartners__listItem:nth-child(-n+3)::after {
     content: "";
     position: absolute;
-    right: -0.4px;
+    right: -1px;
     bottom: 0;
     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
     background-repeat: no-repeat;
