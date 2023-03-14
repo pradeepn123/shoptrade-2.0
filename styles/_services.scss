@@ -269,7 +269,7 @@
 
 
 .ourPartners {
-    border-top: 1px solid #000;
+    
     &__head {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -425,4 +425,8 @@
             transform: translateX(-100%);
         }
     }
+}
+
+.heading_only_parent{
+    border-top:1px solid #000;
 }

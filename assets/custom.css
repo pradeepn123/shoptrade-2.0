@@ -3980,9 +3980,6 @@ input::-moz-placeholder {
   }
 }
 
-.ourPartners {
-  border-top: 1px solid #000;
-}
 .ourPartners__head {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -4108,6 +4105,10 @@ input::-moz-placeholder {
   to {
     transform: translateX(-100%);
   }
+}
+
+.heading_only_parent {
+  border-top: 1px solid #000;
 }
 
 .mission {
