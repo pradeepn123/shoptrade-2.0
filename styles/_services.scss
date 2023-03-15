@@ -269,7 +269,7 @@
 
 
 .ourPartners {
-    border-top: 1px solid #000;
+    
     &__head {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -289,34 +289,63 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        border: 1px solid #000;
+        @media screen and (min-width:1418px) {
+            :not(:nth-child(4n)) {
+                border-right: 1px solid black;
+              }
+            :nth-child(-n+4) {
+                border-bottom: 1px solid black;
+              }
+        }
+        @media screen and (max-width:1417px) {
+          :nth-child(3n) {
+                border-right: none !important;
+              }
+              :nth-last-child(1),
+              :nth-last-child(2) {
+                border-bottom: none;
+                }
+        }
+        @media screen and (max-width:991px) {
+            :nth-child(even){
+                border-left: 1px solid var(--COLOR-BLACK) !important;
+            }     
+        }
 
-
+       
     }
-
+ 
     &__listItem {
         flex-basis: calc(100% / 4);
         text-align: center;
         padding: 80px 60px;
-        border: 1px solid var(--COLOR-BLACK);
-
-        @media (max-width:1335px) {
+      
+       
+        @media (max-width:1417px) {
             flex-basis: calc(100% / 3);
             padding: 30px;
+            border-right: 1px solid var(--COLOR-BLACK);
+            border-bottom: 1px solid var(--COLOR-BLACK); 
         }
 
         @media (max-width:991px) {
             flex-basis: 50%;
             padding: 30px;
+            border-right: none;
         }
-
+       
         img {
+            border: none !important;
             @media (max-width:767px) {
                 width: 100%;
                 object-fit: contain;
+               
             }
         }
 
-
+         
+        //  
         &:nth-child(odd) {
             position: relative;
 
@@ -353,10 +382,10 @@
             position: relative;
 
             &::after {
-                @media (min-width:992px) and (max-width:1335px) {
+                @media (min-width:992px) and (max-width:1417px) {
                     content: "";
                     position: absolute;
-                    right: 0;
+                    right: -1px;
                     bottom: 0;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                     background-repeat: no-repeat;
@@ -373,10 +402,10 @@
             position: relative;
 
             &::after {
-                @media (min-width:1336px) {
+                @media (min-width:1418px) {
                     content: "";
                     position: absolute;
-                    right: -.4px;
+                    right: -1px;
                     bottom: 0;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                     background-repeat: no-repeat;
@@ -425,4 +454,8 @@
             transform: translateX(-100%);
         }
     }
+}
+
+.heading_only_parent{
+    border-top:1px solid #000;
 }

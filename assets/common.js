@@ -546,6 +546,7 @@ $(document).ready(function () {
 
 
 
+
 // Extract Youtube video ID from Youtube video URL
 const extractYoutubeId = function (url) {
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
@@ -818,5 +819,27 @@ $(document).ready(function() {
   }, 1); 
 }); 
 // 
+
+  
+  $("#contact-btn-service").on('click', function(){
+    $("#contact-btn-details").trigger('click');
+  })
+
+
+// Tech Stack - Our Services Page
+document.addEventListener('DOMContentLoaded', function(){
+  const accordionImagePlusIcon = document.querySelectorAll(".accordion_image_container .plus_icon");
+  if(accordionImagePlusIcon != null){
+    const plusIconEle = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_heading');
+    const accordionImageBlocksContainer = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_blocks');
+    for (let i =0 ; i<plusIconEle.length ; i++){
+      plusIconEle[i].addEventListener('click', function(){
+        accordionImagePlusIcon[i].classList.toggle("rotate_plus_icon");
+        accordionImageBlocksContainer[i].classList.toggle("hide_height_on_click");
+      })
+    }
+  }
+})
+
 
 
