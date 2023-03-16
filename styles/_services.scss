@@ -310,7 +310,9 @@
         @media screen and (max-width:991px) {
             :nth-child(even){
                 border-left: 1px solid var(--COLOR-BLACK) !important;
-            }     
+            }
+            border-right: none;     
+            border-left: none;     
         }
 
        

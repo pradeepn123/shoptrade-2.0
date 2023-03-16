@@ -4030,6 +4030,10 @@ input::-moz-placeholder {
   }
 }
 @media screen and (max-width: 991px) {
+  .ourPartners__list {
+    border-right: none;
+    border-left: none;
+  }
   .ourPartners__list :nth-child(even) {
     border-left: 1px solid var(--COLOR-BLACK) !important;
   }
@@ -6904,6 +6908,11 @@ textarea {
   font-size: 70px;
   font-weight: 700;
   color: #000;
+}
+@media screen and (max-width: 991px) {
+  .heading_only_wrapper p {
+    font-size: 52px;
+  }
 }
 @media screen and (max-width: 767px) {
   .heading_only_wrapper p {
