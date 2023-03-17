@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Epilogue', sans-serif;
+    overflow: hidden;
 }
 
 .h1 {
@@ -230,7 +231,15 @@ body {
     line-height: 32px;
 
 }
-
+.font-20{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    @media screen and (max-width:520px) {
+        font-size: 16px; 
+        line-height: 27px;
+    }
+}
 .fnt-24 {
     font-weight: 500;
     font-size: 24px;
@@ -562,6 +571,10 @@ input::-moz-placeholder {
         font-size: 24px;
         line-height: 34px;
         color: var(--COLOR-BLACK);
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
     }
 }
 
@@ -578,7 +591,8 @@ input::-moz-placeholder {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 99;
+    z-index: 999;
+    opacity: 1;
 
     @media (max-width:767px) {
         left: 40%;
@@ -695,6 +709,7 @@ input::-moz-placeholder {
     display: none!important;
     -webkit-appearance: none;
   }
+
   
   /* New shadow dom for play button */
   
@@ -710,5 +725,14 @@ input::-moz-placeholder {
   }
 
 
-
- 
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 192, 192, 0.5); 
+    z-index: 97; 
+    pointer-events: none;
+  }
+//   

@@ -1,17 +1,17 @@
-@use  'root';
+@use 'root';
 @use 'common';
-@use  'home';
-@use  'buttons';
-@use  'marquee';
-@use  'ourWork';
-@use  'vedio';
+@use 'home';
+@use 'buttons';
+@use 'marquee';
+@use 'ourWork';
+@use 'vedio';
 @use 'ourNumber';
-@use  'newsletter';
-@use  'testimonials';
-@use  "uidesign";
-@use  "header";
+@use 'newsletter';
+@use 'testimonials';
+@use "uidesign";
+@use "header";
 @use "footer";
-@use 'showcase' ;
+@use 'showcase';
 @use 'services';
 @use "about";
 @use "blogs";
@@ -19,3 +19,7 @@
 @use "product";
 @use "contact-popup";
 @use "services-marquee";
+@use "services-dev-test";
+@use 'accordion_image';
+@use 'heading-only';
+

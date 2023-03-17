@@ -51,16 +51,17 @@
                 content: "";
                 position: absolute;
                 transform: translateY(-50%);
-                top: 0;
+                top: -1px;
                 right: 0;
                 height: 41px;
                 width: 37px;
                 background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
 
                 @media (max-width:991px) {
-                    right: -4px;
-                    width: 17px;
-                    height: 15px;
+                    top:-1px;
+                    right: 0;
+                    width: 20px;
+                    height: 22px;
                     background-size: contain;
                 }
             }
@@ -71,10 +72,10 @@
                     content: "";
                     position: absolute;
                     transform: translateY(-50%) rotate(180deg);
-                    top: 0;
-                    left: -4px;
-                    width: 15px;
-                    height: 13px;
+                    top: -1px;
+                    left: 0;
+                    width: 20px;
+                    height: 22px;
                     background-size: contain;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
                 }
@@ -149,6 +150,13 @@
         border-left: 1px solid var(--COLOR-BLACK);
         border-right: 1px solid var(--COLOR-BLACK);
         position: relative;
+        @media screen  and (max-width:520px){
+            padding: 20px;     
+        }
+        h3{
+            padding: 0;
+            margin: 0;
+        }
 
         &::after {
             position: absolute;
@@ -164,6 +172,7 @@
                 width: 15px;
                 height: 17px;
                 background-size: contain;
+                right: 1px;
             }
         }
 
@@ -183,8 +192,8 @@
 .aboutCount {
     .ourNumbers__cards {
         @media (max-width:991px) {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
         }
     }
@@ -258,10 +267,17 @@
         flex-basis: 50%;
         padding: 47px 90px 47px 42px;
 
+        @media screen and (max-width:991px) {
+            padding: 47px 42px;
+        }
+
         @media (max-width:767px) {
             flex-basis: 100%;
             padding: 30px 20px;
             position: relative;
+            &:last-child{
+                border-bottom: 0; 
+            }
         }
 
         &:first-child {
@@ -272,11 +288,11 @@
 
                     content: "";
                     position: absolute;
-                    right: 0;
-                    bottom: 0;
+                    right: -1px;
+                    bottom: 2px;
                     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                     background-repeat: no-repeat;
-                    width: 40px;
+                    width: 42px;
                     height: 70px;
                     background-size: 100%;
                     transform: translate(50%, 50%);
@@ -314,10 +330,10 @@
                 content: "";
                 position: absolute;
                 transform: translateY(-50%) rotate(180deg);
-                top: 0;
-                left: -4px;
-                width: 15px;
-                height: 13px;
+                top: -1px;
+                left: 0px;
+                width: 20px;
+                height: 22px;
                 background-size: contain;
                 background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             }
@@ -330,9 +346,9 @@
                 position: absolute;
                 transform: translateY(-50%);
                 top: 0;
-                right: -4px;
-                width: 15px;
-                height: 13px;
+                right: 0px;
+                width: 19px;
+                height: 22px;
                 background-size: contain;
                 background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
             }
@@ -343,6 +359,7 @@
     .vedio__container {
         border-radius: 0;
         border: none;
+        // height: auto;
     }
 }
 
@@ -413,10 +430,10 @@
             position: absolute;
             content: "";
             background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-            height: 41px;
-            width: 37px;
-            bottom: -2px;
-            right: 2px;
+            height: 40px;
+            width: 39px;
+            bottom: -3px;
+            right: 0px;
             transform: rotate(-270deg) translateY(-50%);
 
             @media (max-width:767px) {
@@ -424,6 +441,7 @@
                 height: 24px;
                 background-size: contain;
                 background-repeat: no-repeat;
+                right: 3px;
 
             }
         }
@@ -438,6 +456,7 @@
         @media (max-width:767px) {
             max-width: 100%;
             border-top: 1px solid var(--COLOR-BLACK);
+             border-right: none;
             overflow: hidden;
         }
 
@@ -525,10 +544,11 @@
         }
 
         h4 {
-            margin-bottom: 8px !important;
+            margin-bottom: 15px;
 
             @media (max-width:991px) {
                 font-size: 24px;
+                margin-bottom: 10px;
             }
         }
 
@@ -536,6 +556,10 @@
             font-size: 20px;
             line-height: 32px;
             color: var(--COLOR-BLACK);
+            @media screen and (max-width:520px) {
+                font-size: 16px;
+                line-height: 27px;
+            }
         }
 
         p.m-0.clr-b.mb-40 {
@@ -555,6 +579,7 @@
     .mb-40 {
         @media (max-width:991px) {
             margin-bottom: 20px;
+            font-size: 20px;
         }
     }
 
@@ -593,7 +618,6 @@
     &__head {
         @media (max-width:992px) {
             margin-bottom: 40px;
-            border-top: 1px solid var(--COLOR-BLACK);
             border-bottom: 1px solid var(--COLOR-BLACK);
         }
     }
@@ -621,8 +645,10 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
-        // border-right: 1px solid var(--COLOR-BLACK);
-        // border-left: 1px solid var(--COLOR-BLACK);
+        @media screen and (max-width:991px){
+             border-right: 1px solid var(--COLOR-BLACK);
+             border-left: 1px solid var(--COLOR-BLACK);
+            }
 
         li {
             width: calc(100%/3);
@@ -633,7 +659,9 @@
             position: relative;
 
             @media (max-width:991px) {
-                width: calc(100%/2)
+                width: calc(100%/2);
+                border: 0;
+                border-bottom:1px solid var(--COLOR-BLACK);
             }
 
             @media (max-width:767px) {
@@ -647,26 +675,26 @@
             //     }
             // }
 
-            &:nth-child(2n) {
+            &:nth-child(odd) { 
                 @media (min-width:768px) and (max-width:992px) {
-                    border-right: none;
-
-
-                }
+                    border-right: 1px solid var(--COLOR-BLACK) ;
+                } 
             }
-
-
+            
+            &:last-child{
+                border-bottom: none !important;
+            }
             &:not(:nth-child(3n)) {
                 &::after {
                     @media (min-width:992px) {
 
                         content: "";
                         position: absolute;
-                        right: 0;
-                        bottom: 0;
+                        right: -1px;
+                        bottom: -2px;
                         background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
                         background-repeat: no-repeat;
-                        width: 40px;
+                        width: 38px;
                         height: 70px;
                         background-size: 100%;
                         transform: translate(50%, 50%);
@@ -688,9 +716,16 @@
     &__footer {
         border-top: 1px solid var(--COLOR-BLACK);
         padding: 20px 40px;
+        @media screen and (max-width:520px) {
+            padding: 16px 13px;
+        }
 
         h5 {
-            margin-bottom: 8px;
+            margin-bottom: 8px; 
+            @media screen and (max-width:520px) {
+               font-size:20px;
+               margin-bottom: 6px;
+            }
         }
     }
 
@@ -703,7 +738,7 @@
         align-items: flex-end;
         justify-content: center;
 
-        @media (max-width:1680px) {
+        @media (max-width:1681px) {
             height: 420px;
         }
 
@@ -712,10 +747,13 @@
         }
 
         &.nopatch {
-            @media (max-width:1680px) {
-                height: 348px;
+            @media (max-width:1689px) {
+                height: 347px;
             }
-            @media (min-width:1680px) {
+            @media (max-width:991px) {
+                height: 359px;
+            }
+            @media (min-width:1682px) {
                 height: 428px;
             }
         }
@@ -780,3 +818,34 @@
     z-index: 2;
 
 }
+
+
+
+.video-player { 
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+  }
+  .video-player .image-wrapper,
+  .video-player .play {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-player .image-wrapper,
+  .video-player .image {
+    width: 100%;
+  }
+  .video-player .preview,
+  .video-player iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-player [data-hidden=true] {
+    display: none; 
+  }

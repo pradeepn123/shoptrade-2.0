@@ -243,7 +243,8 @@
       "settings": {
         "vedioHeading": "Our Values",
         "vedioThumbnailImage": "shopify:\/\/shop_images\/5K8A6537.jpg",
-        "vedioUrl": "https:\/\/player.vimeo.com\/video\/794041269"
+        "vedioUrl": "https:\/\/player.vimeo.com\/video\/794041269",
+        "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
       }
     },
     "about-team": {
@@ -507,7 +508,6 @@
         },
         "5103955d-0d53-4f5b-b678-cf87f3e02bb3": {
           "type": "cardType",
-          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",
@@ -592,6 +592,7 @@
         },
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",
