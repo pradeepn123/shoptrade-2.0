@@ -231,7 +231,15 @@ body {
     line-height: 32px;
 
 }
-
+.font-20{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    @media screen and (max-width:520px) {
+        font-size: 16px; 
+        line-height: 27px;
+    }
+}
 .fnt-24 {
     font-weight: 500;
     font-size: 24px;
