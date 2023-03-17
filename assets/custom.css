@@ -1499,6 +1499,11 @@ input::-moz-placeholder {
     padding: 40px 62px 66px 40px;
   }
 }
+@media (max-width: 520px) {
+  .work .ourWork__cardBody {
+    padding: 40px 40px 66px 20px;
+  }
+}
 .work .brandLogo {
   object-fit: contain;
 }
@@ -4776,7 +4781,7 @@ input::-moz-placeholder {
   align-items: flex-end;
   justify-content: center;
 }
-@media (max-width: 1680px) {
+@media (max-width: 1681px) {
   .about-team-members__img {
     height: 420px;
   }
@@ -4796,7 +4801,7 @@ input::-moz-placeholder {
     height: 359px;
   }
 }
-@media (min-width: 1680px) {
+@media (min-width: 1682px) {
   .about-team-members__img.nopatch {
     height: 428px;
   }
