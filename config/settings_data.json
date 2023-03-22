@@ -77,6 +77,13 @@
               "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/LinkedIn.svg?v=1668162336",
               "socailLink": ""
             }
+          },
+          "76ef51ca-0dfb-48ab-88b6-aa546f6dc7eb": {
+            "type": "office",
+            "settings": {
+              "officeImage-svg": "",
+              "officeText": "160 ROBINSON ROAD, #14-04, SINGAPORE 068914"
+            }
           }
         },
         "block_order": [
@@ -87,7 +94,8 @@
           "033f647e-512b-4664-a49e-971590198d28",
           "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a",
           "add81eb4-0979-4e24-903d-4c12438da9ad",
-          "e751e079-4ac3-49f4-932e-dae294a34145"
+          "e751e079-4ac3-49f4-932e-dae294a34145",
+          "76ef51ca-0dfb-48ab-88b6-aa546f6dc7eb"
         ],
         "settings": {
           "footerLink": "footer",
