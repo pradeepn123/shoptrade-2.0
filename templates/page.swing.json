@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "f7be043f-be30-4bc8-acde-e0754544c3eb": {
+      "type": "showcaseBanner",
+      "settings": {
+        "heading": "",
+        "subHeading": "",
+        "websiteLInk": "",
+        "visitsite_heading": "Visit site",
+        "credit_heading": "Credits"
+      }
+    },
+    "620cef67-a92f-46fe-9fa3-6bce65599e6e": {
+      "type": "showcaseMarque",
+      "settings": {
+        "slider": ""
+      }
+    },
+    "cfac45f0-e7d9-44ea-b860-70deef6f892b": {
+      "type": "showcase-role",
+      "blocks": {
+        "6dbe27cb-352a-488f-a8c2-f1d76516d2a4": {
+          "type": "role",
+          "settings": {
+            "heading": "About",
+            "description": "",
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        },
+        "1c2fd929-a0f4-4f2c-9f40-58a1e109977d": {
+          "type": "role",
+          "settings": {
+            "heading": "Services",
+            "description": "",
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        }
+      },
+      "block_order": [
+        "6dbe27cb-352a-488f-a8c2-f1d76516d2a4",
+        "1c2fd929-a0f4-4f2c-9f40-58a1e109977d"
+      ],
+      "settings": {
+      }
+    },
+    "e5f143ac-7940-4770-93f7-b5f74b879400": {
+      "type": "showcaseImages",
+      "blocks": {
+        "6c1b64c5-4bf2-4bf6-ab1c-bb4ebe6f1c8e": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+          }
+        },
+        "46d3c74e-f9df-4772-a0d6-ddf1a9480aad": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+          }
+        },
+        "4b16fe0c-a6f4-4a98-bc9f-63ae548aa247": {
+          "type": "showcaseLargeImage",
+          "settings": {
+          }
+        },
+        "57d11b6b-5142-4788-9384-39943466d6f5": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+          }
+        },
+        "acd5480c-5bfe-4639-91a2-5b212c948dc8": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+          }
+        },
+        "55d1e2a7-b8a9-4bb9-a4bc-62d5f076c6c6": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+          }
+        },
+        "43701a74-8c8d-4ab9-8dbc-15c96e026c68": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "6c1b64c5-4bf2-4bf6-ab1c-bb4ebe6f1c8e",
+        "46d3c74e-f9df-4772-a0d6-ddf1a9480aad",
+        "4b16fe0c-a6f4-4a98-bc9f-63ae548aa247",
+        "57d11b6b-5142-4788-9384-39943466d6f5",
+        "acd5480c-5bfe-4639-91a2-5b212c948dc8",
+        "55d1e2a7-b8a9-4bb9-a4bc-62d5f076c6c6",
+        "43701a74-8c8d-4ab9-8dbc-15c96e026c68"
+      ],
+      "settings": {
+      }
+    },
+    "1b283310-ebf4-4682-b130-b05778cc4693": {
+      "type": "showcaseReview",
+      "settings": {
+        "reviewText": "",
+        "name": "",
+        "company": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f7be043f-be30-4bc8-acde-e0754544c3eb",
+    "620cef67-a92f-46fe-9fa3-6bce65599e6e",
+    "cfac45f0-e7d9-44ea-b860-70deef6f892b",
+    "e5f143ac-7940-4770-93f7-b5f74b879400",
+    "1b283310-ebf4-4682-b130-b05778cc4693"
+  ]
+}

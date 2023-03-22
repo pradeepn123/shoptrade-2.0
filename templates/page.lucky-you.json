@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "a33f1a30-74a4-4180-9f70-c5c437341df4": {
+      "type": "showcaseBanner",
+      "settings": {
+        "heading": "",
+        "subHeading": "",
+        "websiteLInk": "",
+        "visitsite_heading": "Visit site",
+        "credit_heading": "Credits"
+      }
+    },
+    "5bf90d27-76fd-40bc-9d41-25e2ce2480f6": {
+      "type": "showcaseMarque",
+      "settings": {
+        "slider": ""
+      }
+    },
+    "6ecdab00-a289-45ff-b529-e1d680e753bd": {
+      "type": "showcase-role",
+      "blocks": {
+        "359898b3-e4d4-443a-859e-ea23ccbc49cf": {
+          "type": "role",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        },
+        "dd16761d-e604-46eb-8ec4-a9ff9c255ab9": {
+          "type": "role",
+          "settings": {
+            "heading": "",
+            "description": "",
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        }
+      },
+      "block_order": [
+        "359898b3-e4d4-443a-859e-ea23ccbc49cf",
+        "dd16761d-e604-46eb-8ec4-a9ff9c255ab9"
+      ],
+      "settings": {
+      }
+    },
+    "15ef11a0-be39-4bd7-bcc2-6ae406ccfbe4": {
+      "type": "showcaseImages",
+      "blocks": {
+        "13b13784-50c6-4586-af72-1946e60570e1": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+          }
+        },
+        "2509a975-7801-4672-af7b-06ef582eebc6": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+          }
+        },
+        "39300f7d-1141-49d2-a4a1-adbfeeb27d64": {
+          "type": "showcaseLargeImage",
+          "settings": {
+          }
+        },
+        "dbf97622-936b-4d50-8cbe-0134892facb2": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+          }
+        },
+        "05853c3b-f347-4274-83ac-63716c4c0961": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+          }
+        },
+        "8aee6355-ebbe-483f-8f74-4612cebec661": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "13b13784-50c6-4586-af72-1946e60570e1",
+        "2509a975-7801-4672-af7b-06ef582eebc6",
+        "39300f7d-1141-49d2-a4a1-adbfeeb27d64",
+        "dbf97622-936b-4d50-8cbe-0134892facb2",
+        "05853c3b-f347-4274-83ac-63716c4c0961",
+        "8aee6355-ebbe-483f-8f74-4612cebec661"
+      ],
+      "settings": {
+      }
+    },
+    "e2a43a41-5065-4f33-9779-c09e8a747d0a": {
+      "type": "showcaseReview",
+      "settings": {
+        "reviewText": "",
+        "name": "",
+        "company": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a33f1a30-74a4-4180-9f70-c5c437341df4",
+    "5bf90d27-76fd-40bc-9d41-25e2ce2480f6",
+    "6ecdab00-a289-45ff-b529-e1d680e753bd",
+    "15ef11a0-be39-4bd7-bcc2-6ae406ccfbe4",
+    "e2a43a41-5065-4f33-9779-c09e8a747d0a"
+  ]
+}
