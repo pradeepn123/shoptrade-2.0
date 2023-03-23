@@ -2,13 +2,133 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "b934b219-7e38-4ddd-8ee0-eb0ef7cbef15": {
+      "type": "showcaseBanner",
+      "settings": {
+        "heading": "Synchro",
+        "subHeading": "",
+        "bannerImage": "shopify:\/\/shop_images\/3.jpg",
+        "websiteLInk": "https:\/\/besynchro.com\/",
+        "visitsite_heading": "Visit site",
+        "credit_heading": "Credits"
+      }
+    },
+    "1465daf4-f1e3-4401-8c87-4ba7eeecfe1a": {
+      "type": "showcaseMarque",
+      "settings": {
+        "slider": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>"
+      }
+    },
+    "a895dc52-14c3-4f93-8201-11f41e6a89d5": {
+      "type": "showcase-role",
+      "blocks": {
+        "2632bf5f-85c4-4982-ba41-2f8936a62cce": {
+          "type": "role",
+          "settings": {
+            "heading": "ABOUT",
+            "description": "<p>Our team provided design and development services for the Angles 90 Brand using Shopify Plus, creating a visually stunning design and a fully-featured e-commerce website with seamless user experience. Shopify Plus allowed us to integrate various apps and plugins to enhance the functionality of the website and we provided ongoing support and maintenance.<\/p>",
+            "width": 70,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        },
+        "d2ea19d1-2322-4eef-8563-895f22e1d8fa": {
+          "type": "role",
+          "settings": {
+            "heading": "SERVICES",
+            "description": "<ul><li>Design (UX, UI)<\/li><li>Development<\/li><li>Integration<\/li><li>SEO<\/li><li>Optimisation<\/li><li>On going Support<\/li><\/ul>",
+            "width": 50,
+            "linkText": "",
+            "linkUrl": ""
+          }
+        }
+      },
+      "block_order": [
+        "2632bf5f-85c4-4982-ba41-2f8936a62cce",
+        "d2ea19d1-2322-4eef-8563-895f22e1d8fa"
+      ],
+      "settings": {
+      }
+    },
+    "cb0db32f-7c2b-4a55-9f7e-9bd6c767e212": {
+      "type": "showcaseImages",
+      "blocks": {
+        "95bef038-7766-4042-99b2-314c3b34dacc": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/Main-banner_5caa2f10-46b7-45e9-ac92-c280eddc5449.jpg"
+          }
+        },
+        "8e76dbf5-48fb-40a7-b95e-20475162b66a": {
+          "type": "showcaseImageBLock2",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/9.jpg"
+          }
+        },
+        "d7f6e310-cfd5-4cba-b2ec-5eabcb10c12c": {
+          "type": "showcaseLargeImage",
+          "settings": {
+            "largeImage": "shopify:\/\/shop_images\/Wild_6.jpg"
+          }
+        },
+        "ce385a0f-193d-463b-98a2-8c020abba615": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "2688d75e-1a04-45e0-9b8a-0edb6b57e547": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/6.jpg"
+          }
+        },
+        "53a5a637-aee7-4e2f-b688-ff2961ee0a92": {
+          "type": "showcaseImageBLock3",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "8181f55f-353c-462b-a07d-fa39a73dea91": {
+          "type": "showcaseLargeImage1",
+          "settings": {
+            "largeImage1": "shopify:\/\/shop_images\/4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "95bef038-7766-4042-99b2-314c3b34dacc",
+        "8e76dbf5-48fb-40a7-b95e-20475162b66a",
+        "d7f6e310-cfd5-4cba-b2ec-5eabcb10c12c",
+        "ce385a0f-193d-463b-98a2-8c020abba615",
+        "2688d75e-1a04-45e0-9b8a-0edb6b57e547",
+        "53a5a637-aee7-4e2f-b688-ff2961ee0a92",
+        "8181f55f-353c-462b-a07d-fa39a73dea91"
+      ],
+      "settings": {
+      }
+    },
+    "8cfb9a2f-c095-466a-acd2-51c22bf614fb": {
+      "type": "showcaseReview",
+      "settings": {
+        "reviewText": "ShopTrade was hyper-responsive, knowledgeable, and efficient.",
+        "name": "Leander Dissinger",
+        "company": "Co-Founder at Angles 90"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b934b219-7e38-4ddd-8ee0-eb0ef7cbef15",
+    "1465daf4-f1e3-4401-8c87-4ba7eeecfe1a",
+    "a895dc52-14c3-4f93-8201-11f41e6a89d5",
+    "cb0db32f-7c2b-4a55-9f7e-9bd6c767e212",
+    "8cfb9a2f-c095-466a-acd2-51c22bf614fb"
   ]
 }
