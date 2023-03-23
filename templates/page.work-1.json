@@ -158,9 +158,9 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Swing.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
-            "clickble": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+            "clickble": true,
+            "cardLink": "https:\/\/swingfans.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         }
       },
