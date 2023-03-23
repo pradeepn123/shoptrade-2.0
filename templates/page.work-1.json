@@ -146,7 +146,7 @@
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/club-sulivan.png",
+            "cardImage": "shopify:\/\/shop_images\/Club-Sulivana.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
             "clickble": false,
             "cardLink": "",
@@ -156,7 +156,7 @@
         "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/swing.png",
+            "cardImage": "shopify:\/\/shop_images\/Swing.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
             "clickble": false,
             "cardLink": "",
