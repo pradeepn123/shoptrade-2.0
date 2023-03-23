@@ -15,20 +15,23 @@
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               <div class="btn-wrp">
                 {% if block.settings.clickble %}
-                  <a href="{{ block.settings.cardLink }}" class="btn btn--arrow" target="_blank" >
+                  <a href="{{ block.settings.cardLink }}" 
+                    {% if block.settings.open_new_tab %}target="_blank"{% endif%}
+                    class="btn btn--arrow">
                     <div>
                       <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                     </div>
                   </a>
                 {% else %}
-                <a href="{{ block.settings.cardLink }}" target="_blank" class="btn btn--arrow unclickble" >
-                  <div>
-                    <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
-                  </div>
-                </a>
+                  <a class="btn btn--arrow unclickble">
+                    <div>
+                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
+                    </div>
+                  </a>
                 {% endif %}
                
               </div>
+              
             </div>
             <div class="work-logo-footer">
               <div class="work-logo-footer__imgWrp">
@@ -78,7 +81,12 @@
             "type":"checkbox",
             "label":"Clickable Button",
             "default":true
-
+          },
+          {
+            "id":"open_new_tab",
+            "type":"checkbox",
+            "label":"Open in new tab",
+            "default":false
           },
           
           {
