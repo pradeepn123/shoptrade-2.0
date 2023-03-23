@@ -3,6 +3,26 @@
     "work": {
       "type": "work",
       "blocks": {
+        "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Swing.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
+            "clickble": true,
+            "cardLink": "https:\/\/swingfans.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Club-Sulivana.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "clickble": true,
+            "cardLink": "https:\/\/www.clubsullivan.tv\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
         "56726384-63dc-401c-b4a2-0b9dd92a3610": {
           "type": "cardType",
           "settings": {
@@ -142,6 +162,7 @@
             "cardLink": "https:\/\/shoptrade.co\/pages\/paymore",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+<<<<<<< HEAD
         },
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
           "type": "cardType",
@@ -162,9 +183,13 @@
             "cardLink": "https:\/\/shoptrade.co\/pages\/swing",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+=======
+>>>>>>> dfc21ba21657f344cbb280b5707e408d9a6d4baf
         }
       },
       "block_order": [
+        "2c3a4b9b-d183-4461-94ea-8ba213835dca",
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
@@ -178,9 +203,7 @@
         "4f536d0a-f989-4a1e-b706-e379ef217bca",
         "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
-        "e278c52b-1936-43f5-8431-6b3e5b982a8b",
-        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
-        "2c3a4b9b-d183-4461-94ea-8ba213835dca"
+        "e278c52b-1936-43f5-8431-6b3e5b982a8b"
       ],
       "settings": {
         "heading": "Transform your brand with the power of a global audience"

@@ -38,7 +38,7 @@
             <div class="img-wrp">
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               <div class="btn-wrp">
-                <a class="btn " target="_blank" href="{{ block.settings.buttonLink }}">
+                <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
                   <div class="d-flex">
                     <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
                   </div>
@@ -101,6 +101,11 @@
             "id":"cardMarque",
             "label":"Tag slider",
             "type":"html"
+          },{
+            "id":"open_new_tabs",
+            "type":"checkbox",
+            "label":"Open in new tab",
+            "default":false
           }
         ]
       }
