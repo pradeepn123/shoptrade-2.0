@@ -1,29 +1,28 @@
 <section class="showcaseMarque">
-    <div class="marquee marquee--hover-pause enable-animation p-0">
-        <div class="marquee__content">
-
-
-          {{ section.settings.slider }}
-          
-        </div>
-        <div class="marquee__content" aria-hidden=" true">
-          
-          {{ section.settings.slider }}
-          
-
-        </div>
-      </div>
+  <div class="marquee marquee--hover-pause enable-animation p-0">
+    <div class="marquee__content">
+      {{ section.settings.slider }}
+    </div>
+    <div class="marquee__content" aria-hidden=" true">
+      {{ section.settings.slider }}
+    </div>
+  </div>
 </section>
 
 {% schema %}
-  {
-    "name":"Marquee",
-    "settings":[
-      {
-        "type": "html",
-        "label":"Text slider",
-        "id":"slider"
-      }
-    ]
-  }
+{
+  "name": "Marquee",
+  "settings": [
+    {
+      "type": "html",
+      "label": "Text slider",
+      "id": "slider"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Marquee"
+    }
+  ]
+}
 {% endschema %}

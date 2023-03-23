@@ -21,6 +21,7 @@
         },
         "f11dbc34-f9a6-4f99-a03a-131966c03a5b": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -73,7 +74,7 @@
         "subHeading": "",
         "bannerImage": "shopify:\/\/shop_images\/Group_4716.jpg",
         "websiteLInk": "https:\/\/hathaspace.com\/",
-        "visitsite_heading": "Visit Site",
+        "visitsite_heading": "Visit site",
         "credit_heading": "Credits"
       }
     },

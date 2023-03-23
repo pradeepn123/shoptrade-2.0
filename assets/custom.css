@@ -1221,11 +1221,6 @@ input::-moz-placeholder {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 992px) {
-  .ourWork__card {
-    width: 33.23%;
-  }
-}
 @media (min-width: 1024px) {
   .ourWork__card {
     width: 49.89%;
