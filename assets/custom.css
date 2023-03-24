@@ -1969,7 +1969,7 @@ input::-moz-placeholder {
   letter-spacing: 0.02em;
   margin: 0;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .newsletter__head h3 {
     padding: 40px 60px;
   }
