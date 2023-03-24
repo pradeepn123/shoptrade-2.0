@@ -2930,7 +2930,7 @@ input::-moz-placeholder {
   padding: 35px 55px 55px 80px;
   position: relative;
 }
-@media (max-width: 1029px) {
+@media (max-width: 1200px) {
   .shopify-footer__block {
     padding: 40px 20px;
   }
