@@ -1671,6 +1671,7 @@ input::-moz-placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .model-popup {
@@ -4370,6 +4371,7 @@ input::-moz-placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .about-value__cards {
   display: flex;
