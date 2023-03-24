@@ -1226,7 +1226,7 @@ input::-moz-placeholder {
     width: 49.89%;
   }
 }
-@media (min-width: 1336px) {
+@media (min-width: 1350px) {
   .ourWork__card {
     width: 33.26%;
   }
@@ -1321,6 +1321,11 @@ input::-moz-placeholder {
   left: 48%;
   z-index: 1 !important;
   transform: translate(-15px, 15px);
+}
+@media screen and (min-width: 1100px) and (max-width: 1349px) {
+  .ourWork__cardBody .btn-wrp {
+    left: 60%;
+  }
 }
 @media (min-width: 520px) and (max-width: 991px) {
   .ourWork__cardBody .btn-wrp {

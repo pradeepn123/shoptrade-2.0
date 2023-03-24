@@ -42,7 +42,7 @@
             width: 49.89%;
         }
 
-        @media (min-width:1336px) {
+        @media (min-width:1350px) {
             width: 33.26%;
         }
 
@@ -161,7 +161,9 @@
             z-index: 1 !important;
             transform: translate(-15px, 15px);
 
-            
+           @media screen and  (min-width:1100px) and (max-width:1349px){
+            left: 60%;
+           }
            
             @media (min-width:520px) and (max-width:991px) {
                 left: 70%;
