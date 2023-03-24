@@ -2057,8 +2057,8 @@ input::-moz-placeholder {
   padding-left: 24px !important;
   padding-bottom: 24px !important;
 }
-.newsletter__body .form-group .field .field__input:focus label {
-  top: 14px !important;
+.newsletter__body .form-group .field .field__input:focus {
+  border: 1px solid var(--COLOR-BLACK) !important;
 }
 .newsletter__body .form-group .field__input:focus ~ .field__label, .newsletter__body .form-group .field__input:not(:placeholder-shown) ~ .field__label {
   top: 14px !important;
