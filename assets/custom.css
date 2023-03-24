@@ -1918,6 +1918,7 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .newsletter__head {
     border-right: 1px solid var(--COLOR-BLACK);
+    width: 50%;
   }
 }
 @media (min-width: 1440px) {
@@ -2010,7 +2011,11 @@ input::-moz-placeholder {
   }
 }
 .newsletter__body button.btn-wrap .btn {
-  padding: 15px;
+  padding: 20px 30px 20px 20px;
+  transition: 0.5s ease all;
+}
+.newsletter__body button.btn-wrap .btn:hover {
+  padding-right: 35px;
 }
 .newsletter__body button.btn-wrap .btn:hover::after {
   width: 100%;
@@ -2093,7 +2098,7 @@ input::-moz-placeholder {
 .newsletter__bodyWrp {
   padding: 40px 60px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
   .newsletter__bodyWrp {
     padding: 0px 8rem;
     padding-right: 0;
