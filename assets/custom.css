@@ -1909,7 +1909,7 @@ input::-moz-placeholder {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .newsletter__head {
     border-bottom: 1px solid var(--COLOR-BLACK);
   }

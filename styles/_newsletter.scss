@@ -57,7 +57,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        @media(max-width:1024px){
+        @media(max-width:1200px){
             border-bottom: 1px solid var(--COLOR-BLACK);
         }
         @media(min-width:1200px){
