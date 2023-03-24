@@ -1209,7 +1209,7 @@ input::-moz-placeholder {
   margin: 0;
   border-top: 1px solid var(--COLOR-BLACK);
 }
-@media (min-width: 992px) {
+@media (min-width: 920px) {
   .ourWork__cards .swiper-wrapper {
     flex-wrap: wrap;
   }
@@ -1221,7 +1221,7 @@ input::-moz-placeholder {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
+@media (min-width: 919px) {
   .ourWork__card {
     width: 49.89%;
   }
@@ -1318,18 +1318,18 @@ input::-moz-placeholder {
 .ourWork__cardBody .btn-wrp {
   position: absolute;
   bottom: 0;
-  left: 60%;
+  left: 48%;
   z-index: 1 !important;
   transform: translate(-15px, 15px);
 }
-@media (max-width: 1680px) {
+@media (min-width: 520px) and (max-width: 991px) {
   .ourWork__cardBody .btn-wrp {
-    left: 48%;
+    left: 70%;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 721px) and (max-width: 888px) {
   .ourWork__cardBody .btn-wrp {
-    right: -10px;
+    left: 60%;
   }
 }
 .ourWork__cardBody .btn-wrp .brandLogo {
@@ -1583,7 +1583,6 @@ input::-moz-placeholder {
   border-right: 1px solid var(--COLOR-BLACK);
   border-left: 1px solid var(--COLOR-BLACK);
   position: relative;
-  border-top: 1px solid var(--COLOR-BLACK);
 }
 @media (max-width: 991px) {
   .vedio__wrp {
