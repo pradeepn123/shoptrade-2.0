@@ -72,7 +72,6 @@
         border-right: 1px solid var(--COLOR-BLACK);
         border-left: 1px solid var(--COLOR-BLACK);
         position: relative;
-
         @media (max-width:991px) {
             padding: 30px;
         }
@@ -166,6 +165,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        cursor: pointer;
     }
 }
 
