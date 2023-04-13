@@ -6207,6 +6207,17 @@ textarea {
   border-right: 1px solid #000;
   flex-direction: row;
 }
+.services-cloumnLayout-outer:hover .flip-icon svg {
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
 .services-cloumnLayout-outer:last-child {
   border-bottom: 0;
 }
@@ -6487,12 +6498,13 @@ textarea {
   text-align: left;
   margin-top: 2.2rem;
   color: #000000;
+  width: 50%;
 }
 @media (max-width: 768px) {
   .services-block-heading {
     margin-top: 1.2rem;
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
   }
 }
 @media (min-width: 768px) {
