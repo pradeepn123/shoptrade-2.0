@@ -660,6 +660,10 @@ input::-moz-placeholder {
   pointer-events: none;
 }
 
+#disqus_thread {
+  padding: 20px;
+}
+
 .homeBanner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -6519,6 +6523,14 @@ textarea {
     margin-top: 2rem;
     font-size: 2.3rem;
     line-height: 2.7rem;
+  }
+}
+@media (min-width: 1441px) {
+  .services-block-heading {
+    margin-top: 1.2rem;
+    font-size: 1.5em;
+    line-height: 2.2rem;
+    width: 40%;
   }
 }
 
