@@ -540,6 +540,7 @@
     },
     "vedio": {
       "type": "vedio",
+      "disabled": true,
       "settings": {
         "videoHeading": "The Start",
         "vedioSubHeading": "UNITE: Mobilizing Entrepreneurship",
