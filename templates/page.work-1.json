@@ -85,6 +85,7 @@
         },
         "07f8cf6d-5332-43d0-ad62-4a812965a113": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
