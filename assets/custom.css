@@ -1209,7 +1209,7 @@ input::-moz-placeholder {
   margin: 0;
   border-top: 1px solid var(--COLOR-BLACK);
 }
-@media (min-width: 992px) {
+@media (min-width: 920px) {
   .ourWork__cards .swiper-wrapper {
     flex-wrap: wrap;
   }
@@ -1221,17 +1221,12 @@ input::-moz-placeholder {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 992px) {
-  .ourWork__card {
-    width: 33.23%;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 919px) {
   .ourWork__card {
     width: 49.89%;
   }
 }
-@media (min-width: 1336px) {
+@media (min-width: 1350px) {
   .ourWork__card {
     width: 33.26%;
   }
@@ -1323,18 +1318,23 @@ input::-moz-placeholder {
 .ourWork__cardBody .btn-wrp {
   position: absolute;
   bottom: 0;
-  left: 60%;
+  left: 48%;
   z-index: 1 !important;
   transform: translate(-15px, 15px);
 }
-@media (max-width: 1680px) {
+@media screen and (min-width: 1100px) and (max-width: 1349px) {
   .ourWork__cardBody .btn-wrp {
-    left: 48%;
+    left: 60%;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 520px) and (max-width: 991px) {
   .ourWork__cardBody .btn-wrp {
-    right: -10px;
+    left: 70%;
+  }
+}
+@media (min-width: 721px) and (max-width: 888px) {
+  .ourWork__cardBody .btn-wrp {
+    left: 60%;
   }
 }
 .ourWork__cardBody .btn-wrp .brandLogo {
@@ -1671,6 +1671,7 @@ input::-moz-placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .model-popup {
@@ -1909,7 +1910,7 @@ input::-moz-placeholder {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .newsletter__head {
     border-bottom: 1px solid var(--COLOR-BLACK);
   }
@@ -1917,6 +1918,7 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .newsletter__head {
     border-right: 1px solid var(--COLOR-BLACK);
+    width: 50%;
   }
 }
 @media (min-width: 1440px) {
@@ -1969,7 +1971,7 @@ input::-moz-placeholder {
   letter-spacing: 0.02em;
   margin: 0;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .newsletter__head h3 {
     padding: 40px 60px;
   }
@@ -2009,7 +2011,11 @@ input::-moz-placeholder {
   }
 }
 .newsletter__body button.btn-wrap .btn {
-  padding: 15px;
+  padding: 20px 30px 20px 20px;
+  transition: 0.5s ease all;
+}
+.newsletter__body button.btn-wrap .btn:hover {
+  padding-right: 35px;
 }
 .newsletter__body button.btn-wrap .btn:hover::after {
   width: 100%;
@@ -2062,8 +2068,8 @@ input::-moz-placeholder {
   padding-left: 24px !important;
   padding-bottom: 24px !important;
 }
-.newsletter__body .form-group .field .field__input:focus label {
-  top: 14px !important;
+.newsletter__body .form-group .field .field__input:focus {
+  border: 1px solid var(--COLOR-BLACK) !important;
 }
 .newsletter__body .form-group .field__input:focus ~ .field__label, .newsletter__body .form-group .field__input:not(:placeholder-shown) ~ .field__label {
   top: 14px !important;
@@ -2092,7 +2098,7 @@ input::-moz-placeholder {
 .newsletter__bodyWrp {
   padding: 40px 60px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
   .newsletter__bodyWrp {
     padding: 0px 8rem;
     padding-right: 0;
@@ -2930,7 +2936,7 @@ input::-moz-placeholder {
   padding: 35px 55px 55px 80px;
   position: relative;
 }
-@media (max-width: 1029px) {
+@media (max-width: 1200px) {
   .shopify-footer__block {
     padding: 40px 20px;
   }
@@ -4370,6 +4376,7 @@ input::-moz-placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .about-value__cards {
   display: flex;
@@ -6200,6 +6207,17 @@ textarea {
   border-right: 1px solid #000;
   flex-direction: row;
 }
+.services-cloumnLayout-outer:hover .flip-icon svg {
+  animation: rotate 3s infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
 .services-cloumnLayout-outer:last-child {
   border-bottom: 0;
 }
@@ -6480,12 +6498,13 @@ textarea {
   text-align: left;
   margin-top: 2.2rem;
   color: #000000;
+  width: 50%;
 }
 @media (max-width: 768px) {
   .services-block-heading {
     margin-top: 1.2rem;
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
   }
 }
 @media (min-width: 768px) {

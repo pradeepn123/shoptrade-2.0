@@ -427,13 +427,13 @@ $(document).ready(function () {
   $(".loader ").hide();
   ContactPopUp.init();
 
-  $(".play-icon").click(function (e) {
-    // $("body").addClass("hide-scroll");
-    e.preventDefault();
-    $(".model-popup").fadeIn();
-    let source = $(".iframe-vedio").attr("src");
-    $(".iframe-vedio").attr("src", source + "?autoplay=1");
-  });
+  // $(".play-icon").click(function (e) {
+  //   // $("body").addClass("hide-scroll");
+  //   e.preventDefault();
+  //   $(".model-popup").fadeIn();
+  //   let source = $(".iframe-vedio").attr("src");
+  //   $(".iframe-vedio").attr("src", source + "?autoplay=1");
+  // });
 
   $(".close-model").click(function () {
     // $('.yt_player_iframe').contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -841,5 +841,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 })
 
-
-
+$(".play-icon").click(function (e) {
+  $(".vedio__info").hide();
+});

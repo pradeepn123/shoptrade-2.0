@@ -3,37 +3,28 @@
     <div class="vedio__wrp">
       <div class="vedio__container">
 
-        <img class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/>
-        <a href="" class="play-icon arrow-btn ">
-          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"/>
-        </a>
-        <div class="vedio__info">
-          <h2 class="h1-main clr-w m-0">{{ section.settings.videoHeading }}
-          </h2>
-          <P class="clr-w fnt-20 m-0 desktop-only">{{ section.settings.vedioSubHeading }}
-          </P>
+        <div class="video-player" data-player-type="{% if section.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}" data-player-url="{{section.settings.external_video_url}}">
+          <div class="preview" data-js="preview">
+            <img id="image2" class="vedio__thumbnail" src="{{ section.settings.vedioThumbnailImage | image_url }}"/>
+            {% if section.settings.external_video_url != null %}
+              <span class="play-icon arrow-btn ">
+                <img id="image1" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322" />
+              </span>
+            {% endif %}
+          </div>
+          <div class="aboutUsVideo" data-js="video" data-hidden="true"><div data-js="video-root"></div></div>
+          <div class="vedio__info">
+            <h2 class="h1-main clr-w m-0">{{ section.settings.videoHeading }}
+            </h2>
+            <P class="clr-w fnt-20 m-0 desktop-only">{{ section.settings.vedioSubHeading }}
+            </P>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="model-popup">
-    <div class="model-popup__wrp">
-      <div class="model-popup__vedio">
-        <span class="close-model"></span>
-
-        {%- if section.settings.vedioUrl.type == 'youtube' -%}
-          <iframe  width="100%" height="100%"  class="iframe-vedio yt_player_iframe" src="https://www.youtube.com/embed/{{ section.settings.vedioUrl.id }}?enablejsapi=1&rel=0" class="js-youtube"  title="{{ section.settings.description | escape }}"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        {%- else -%}
-          <iframe width="100%" height="100%"  class="iframe-vedio" src="https://player.vimeo.com/video/{{ section.settings.vedioUrl.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
-        {%- endif -%}
   
-        {% comment %} <iframe width="100%" height="100%" class="iframe-vedio" src="{{ section.settings.vedioUrl }}" frameborder="0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> {% endcomment %}
-     
-      </div>
-
-    </div>
-  </div>
 </section>
 
 {% schema %}
@@ -52,14 +43,12 @@
         "id": "vedioThumbnailImage",
         "label": " Thumbnail Image",
         "type": "image_picker"
-      }, {
-        "id": "vedioUrl",
-        "label": "Vedio link",
-        "type": "video_url",
-        "accept": [
-          "youtube",
-          "vimeo"
-        ]
+      }, { 
+        "type": "video_url", 
+        "id": "external_video_url", 
+        "accept": ["vimeo", "youtube"], 
+        "label": "Video URL", 
+        "default": "https://player.vimeo.com/video/794041269" 
       }
     ]
   }
