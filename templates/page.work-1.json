@@ -85,13 +85,12 @@
         },
         "07f8cf6d-5332-43d0-ad62-4a812965a113": {
           "type": "cardType",
-          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
             "clickble": true,
             "cardLink": "https:\/\/shoptrade.co\/pages\/lucky-you",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55": {
@@ -100,8 +99,8 @@
             "cardImage": "shopify:\/\/shop_images\/adapthealth_1.png",
             "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
             "clickble": true,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/adapthealth",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
         "4f536d0a-f989-4a1e-b706-e379ef217bca": {
@@ -140,7 +139,7 @@
             "cardImage": "shopify:\/\/shop_images\/paymore.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
             "clickble": true,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/paymore",
+            "cardLink": "#",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -150,8 +149,8 @@
             "cardImage": "shopify:\/\/shop_images\/club-sulivan.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
             "clickble": true,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/club-sullivan",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "#",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
         "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
@@ -160,8 +159,8 @@
             "cardImage": "shopify:\/\/shop_images\/swing.png",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
             "clickble": true,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/swing",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         }
       },
