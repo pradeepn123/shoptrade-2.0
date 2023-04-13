@@ -463,7 +463,7 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/chill.png",
             "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
-            "buttonLink": "https:\/\/shoptrade.co\/pages\/chill",
+            "buttonLink": "https:\/\/chill.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>"
           }
         },
