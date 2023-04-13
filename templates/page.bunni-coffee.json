@@ -38,7 +38,9 @@
         "heading": "BUUNNI COFFEE",
         "subHeading": "",
         "bannerImage": "shopify:\/\/shop_images\/Main-Banner_1bf95801-097f-4d05-a171-c1d0278726c4.jpg",
-        "websiteLInk": "https:\/\/www.buunnicoffee.com\/"
+        "websiteLInk": "https:\/\/www.buunnicoffee.com\/",
+        "visitsite_heading": "Visit site",
+        "credit_heading": "Credits"
       }
     },
     "marquee": {
@@ -49,6 +51,7 @@
     },
     "showcase-role": {
       "type": "showcase-role",
+      "disabled": true,
       "blocks": {
         "e6f30b36-57ed-4b08-a7d6-785c65646838": {
           "type": "role",
