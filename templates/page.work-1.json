@@ -39,7 +39,7 @@
         "a042d646-89ce-4d16-8b64-aea734310f47": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/chill.png",
+            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
             "clickble": true,
             "open_new_tab": false,
