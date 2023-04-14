@@ -532,10 +532,10 @@ $(document).ready(function () {
   });
 
   // Clicking on Contact Button in Footer Must bring up the new Contact popup instead of Contact Form
-  $("#footer-id-4 a").attr('href', "javascript:;");
-  $("#footer-id-4 a").on('click', function(){
-    $("#contact-btn-details").trigger('click');
-  })
+  // $("#footer-id-4 a").attr('href', "javascript:;");
+  // $("#footer-id-4 a").on('click', function(){
+  //   $("#contact-btn-details").trigger('click');
+  // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
   $("#contact-btn-about").on('click', function(){
