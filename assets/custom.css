@@ -5244,6 +5244,10 @@ input::-moz-placeholder {
     background-repeat: no-repeat;
   }
 }
+.article__contentWrp .article-container .article-template__content .c-link {
+  word-wrap: break-word;
+  font-size: 20px;
+}
 
 .comment-formwrp {
   border-right: 1px solid var(--COLOR-BLACK);
