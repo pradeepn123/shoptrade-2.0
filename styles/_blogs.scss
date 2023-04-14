@@ -369,6 +369,15 @@
 
         }
     }
+    .article-container {
+        .article-template__content {
+            .c-link{
+                word-wrap: break-word;
+                font-size: 20px;
+                
+            }
+        }
+    }
 }
 
 .comment-formwrp {
