@@ -189,6 +189,17 @@
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
+        },
+        "49c0539d-b33c-4081-9f94-817f171e22c3": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/melissani.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Layer.svg",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/melissaniwater.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -208,7 +219,8 @@
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "2c3a4b9b-d183-4461-94ea-8ba213835dca",
-        "8c6a1681-b421-447c-aaae-4d00a33dfb3d"
+        "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "49c0539d-b33c-4081-9f94-817f171e22c3"
       ],
       "settings": {
         "heading": "Transform your brand with the power of a global audience"
