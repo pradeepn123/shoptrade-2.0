@@ -160,7 +160,7 @@
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/club-sulivan.png",
+            "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
             "clickble": true,
             "open_new_tab": false,
