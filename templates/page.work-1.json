@@ -170,6 +170,7 @@
         },
         "49c0539d-b33c-4081-9f94-817f171e22c3": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/melissani.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Layer.svg",
