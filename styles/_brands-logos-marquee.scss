@@ -1,0 +1,36 @@
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.brands-logo-marquee-main {
+    animation: scroll 10s linear infinite;
+    overflow: hidden;
+
+    .logo-brands {
+        width: fit-content;
+        .brands-logo-marquee {
+            overflow: hidden;
+            display: flex;
+
+            .brands-logo-image {
+                height: auto;
+                width: fit-content;
+                padding-right: 83px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// .brands-logo-image{
+//     animation: scroll 10s linear infinite;
+// }

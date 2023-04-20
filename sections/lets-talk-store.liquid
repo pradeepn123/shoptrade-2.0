@@ -1,0 +1,76 @@
+{% style %}
+  .lets-talk-store-section {
+      flex-direction: {{ section.settings.adj-img-txt }};
+  }
+{% endstyle %}
+<div class="container">
+  <div class="lets-talk-store-section">
+    {% if section.settings['online-store-img'] %}
+      <div class="lets-talk-store-img">
+        <img src="{{ section.settings.online-store-img | img_url }}">
+      </div>
+    {% endif %}
+    <div class="lets-talk-store-text">
+      <h2 class="lets-talk-store-heading">{{ section.settings['talk-store-heading'] }}</h2>
+      <p class="lets-talk-store-para">{{ section.settings['talk-store-para'] }}</p>
+      <div class="lets-talk-btn">
+        <a href="{{ section.settings.talk-btn-src }}"> {{ section.settings['lets-talk-btn'] }} </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "lets-talk-store",
+  "settings": [
+    {
+      "type": "select",
+      "id": "adj-img-txt",
+      "label": "Img and Text alignment",
+      "options": [
+        {
+          "value": "row",
+          "label": "Img first"
+        },
+        {
+          "value": "row-reverse",
+          "label": "Text First"
+        }
+      ],
+      "default": "row"
+    },
+    {
+      "type": "image_picker",
+      "id": "online-store-img",
+      "label": "Add a image"
+    },
+    {
+      "type": "text",
+      "id": "talk-store-heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "talk-store-para",
+      "label": "Para"
+    },
+    {
+      "type": "text",
+      "id": "lets-talk-btn",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "talk-btn-src",
+      "label": "Button link"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "lets-talk-store"
+    }
+  ]
+}
+{% endschema %}

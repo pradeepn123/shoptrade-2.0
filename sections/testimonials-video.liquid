@@ -1,0 +1,141 @@
+{% style %}
+  .testimonial-video_heading{
+      font-size: {{ section.settings.testi-heading-size }}px;
+  }
+  @media(max-width:768px){
+      .testimonial-video_heading{
+      font-size: {{ section.settings.testi-heading-size-mob }}px;
+  }
+  }
+{% endstyle %}
+<section class="about-value">
+  <div class="testimonial-video-header">
+    <div class="container">
+      <h2 class="testimonial-video_heading">{{ section.settings.vedioHeading }}</h2>
+    </div>
+  </div>
+  <div class="testimonial-video__container">
+    <div class="container">
+      <div class="testimonial-video__container_main">
+        {% for block in section.blocks %}
+          <div class="testimonial-video__wrp_info">
+            <div class="testimonial-video__wrp">
+              <div class="testimonial-video__vedioWrp">
+                <div class="vedio__container testimonial-vid__container">
+                  <div
+                    class="video-player"
+                    data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
+                    data-player-url="{{block.settings.external_video_url}}"
+                  >
+                    <div class="preview" data-js="preview">
+                      <img
+                        id="image2"
+                        class="vedio__thumbnail"
+                        src="{{ block.settings.vedioThumbnailImage | image_url }}"
+                      >
+                      {% if block.settings.external_video_url != null %}
+                        <span class="play-icon arrow-btn ">
+                          <img
+                            id="image1"
+                            src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"
+                          >
+                        </span>
+                      {% endif %}
+                    </div>
+                    <div class="aboutUsVideo" data-js="video" data-hidden="true"><div data-js="video-root"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-video_info">
+              <div class="Logo-text-testimonial">
+                <div class="Logo-text-testimonial-imgae">
+                  <img src="{{ block.settings.testimonial-logo | img_url }}">
+                </div>
+              </div>
+              <div class="about-value__cards">
+                <div class="testimonial-video__card">
+                  <h3 class="testimonial-video__card_heading">{{ block.settings.vedioHead }}</h3>
+                  <p class="testimonial-video__card_text">{{ block.settings.vedioSubtext }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonial video",
+  "settings": [
+    {
+      "id": "vedioHeading",
+      "label": "Headding text",
+      "type": "text"
+    },
+    {
+      "type": "range",
+      "id": "testi-heading-size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "testi-heading-size-mob",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 42
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Add testimonial video",
+      "type": "vedioCard",
+      "settings": [
+        {
+          "id": "vedioThumbnailImage",
+          "label": " Thumbnail Image",
+          "type": "image_picker"
+        },
+        {
+          "type": "video_url",
+          "id": "external_video_url",
+          "accept": ["vimeo", "youtube"],
+          "label": "Video URL",
+          "default": "https://player.vimeo.com/video/794041269"
+        },
+        {
+          "type": "image_picker",
+          "id": "testimonial-logo",
+          "label": "logo"
+        },
+        {
+          "id": "vedioHead",
+          "label": "card head",
+          "type": "text"
+        },
+        {
+          "id": "vedioSubtext",
+          "label": "card sub text",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial video"
+    }
+  ]
+}
+{% endschema %}

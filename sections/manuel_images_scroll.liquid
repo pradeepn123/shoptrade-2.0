@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="manuel-slide-img-wrapper-parent">
+    <div class="manuel-slide-img-wrapper">
+      {%- for block in section.blocks -%}
+        <div class="manuel-slide-img">
+          <img src="{{ block.settings.slide_img_manuel | img_url:'master' }}">
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Manuel Imgies Scroll",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "sliderMauel",
+      "type": "sliderMauel",
+      "settings": [
+        {
+          "id": "slide_img_manuel",
+          "label": "slide Image Right",
+          "type": "image_picker"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Manuel Imgies Scroll"
+    }
+  ]
+}
+{% endschema %}
