@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "56fea38c-c4fe-4150-941f-2f1f70a81e22": {
+      "type": "shopify-plus-banner",
+      "settings": {
+        "plusheading": "Shopify Plus Agency",
+        "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
+        "logoImage": "shopify:\/\/shop_images\/image_118.png",
+        "plusBtn": "Let's Talk",
+        "plusBtnlink": "#contact-us",
+        "loclogo": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"24\" viewbox=\"0 0 20 24\" fill=\"none\">\n<path d=\"M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+        "locheading": "Location",
+        "locsubheading": "Florida, USA"
+      }
+    },
+    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c": {
+      "type": "shopify-plus-clients",
+      "blocks": {
+        "ec045fce-24a3-4e5e-abae-99f12f5a88d1": {
+          "type": "cardType",
+          "settings": {
+            "image_right": "left",
+            "cimage": "shopify:\/\/shop_images\/image_19.png",
+            "clogo": "shopify:\/\/shop_images\/image_55.png",
+            "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
+            "cBtn": "View Project",
+            "cBtnlink": "https:\/\/hathaspace.com",
+            "ctestimonial": "\"They delivered on what they said they would,   and they were quick.\"",
+            "cname": "~ Marcus Lara, Co-Founder"
+          }
+        },
+        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595": {
+          "type": "cardType",
+          "settings": {
+            "image_right": "right",
+            "cimage": "shopify:\/\/shop_images\/image_24.png",
+            "clogo": "shopify:\/\/shop_images\/image_157.png",
+            "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
+            "cBtn": "View project",
+            "cBtnlink": "#besynchro.com",
+            "ctestimonial": "\"Their communication and responsiveness   are impressive in the workflow.\"",
+            "cname": "~ Graham Ryan, Founder\/CEO"
+          }
+        },
+        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f": {
+          "type": "cardType",
+          "settings": {
+            "image_right": "left",
+            "cimage": "shopify:\/\/shop_images\/image_160.png",
+            "clogo": "shopify:\/\/shop_images\/image_24_2.png",
+            "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
+            "cBtn": "View Project",
+            "cBtnlink": "#elevatione.com",
+            "ctestimonial": "“They’ve done a really good job. They were on top   of things from the get-go.”",
+            "cname": "~ Marc Heuberger, CMO"
+          }
+        }
+      },
+      "block_order": [
+        "ec045fce-24a3-4e5e-abae-99f12f5a88d1",
+        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595",
+        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f"
+      ],
+      "settings": {
+        "heading": "Our Clients"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "56fea38c-c4fe-4150-941f-2f1f70a81e22",
+    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c"
+  ]
+}

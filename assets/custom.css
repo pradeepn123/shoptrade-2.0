@@ -6959,3 +6959,172 @@ textarea {
     font-size: 36px;
   }
 }
+
+.main-page-title {
+  display: none;
+}
+
+.plus-banner .container {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .plus-banner .container {
+    display: block;
+  }
+}
+.plus-banner .shopify-banner {
+  display: flex;
+  flex-basis: 60%;
+}
+.plus-banner .sbanner-text .sbanner-heading {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 32px;
+}
+@media (max-width: 520px) {
+  .plus-banner .sbanner-text .sbanner-heading {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+}
+.plus-banner .sbanner-text .sbanner-paragraph {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 60px;
+}
+@media (max-width: 520px) {
+  .plus-banner .sbanner-text .sbanner-paragraph {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.plus-banner .sbanner-text .plus-logo {
+  margin-bottom: 50px;
+}
+@media (max-width: 520px) {
+  .plus-banner .sbanner-text .plus-logo {
+    margin-bottom: 40px;
+  }
+}
+.plus-banner .sbanner-text .plus-btn {
+  background: #FF7121;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  font-family: "Epilogue";
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+@media (max-width: 520px) {
+  .plus-banner .sbanner-text .plus-btn {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+}
+.plus-banner .slocation {
+  display: flex;
+  margin-top: 40px;
+  border-top: 1px solid #DEDEDE;
+  padding-top: 20px;
+}
+.plus-banner .slocation .loctext {
+  padding-left: 10px;
+}
+.plus-banner .slocation .loctext .locmain {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+@media (max-width: 520px) {
+  .plus-banner .slocation .loctext .locmain {
+    font-size: 16px;
+  }
+}
+.plus-banner .slocation .loctext .locsubtext {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-top: 0;
+}
+@media (max-width: 520px) {
+  .plus-banner .slocation .loctext .locsubtext {
+    font-size: 14px;
+  }
+}
+
+.clients {
+  margin: 80px 0;
+}
+.clients .plus-client {
+  margin: 40px 0;
+  display: flex;
+  column-gap: 80px;
+  padding: 40px 70px;
+}
+.clients .plus-client:nth-child(even) {
+  background: #F4F4F4;
+}
+.clients .plus-client:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.clients .client-text .cpara {
+  font-family: "Epilogue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  padding-bottom: 24px;
+}
+.clients .client-text .client-btn {
+  background: #FF7121;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  font-family: "Epilogue";
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 40px;
+}
+@media (max-width: 520px) {
+  .clients .client-text .client-btn {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+}
+.clients .client-text .ctestimonial {
+  font-family: "Epilogue";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  padding-top: 60px;
+  width: 75%;
+}
+.clients .client-text .client-name {
+  font-family: "Epilogue";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: 5px 0;
+}

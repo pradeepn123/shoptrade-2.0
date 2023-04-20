@@ -1,0 +1,101 @@
+.main-page-title{
+    display:none;
+}
+
+.plus-banner{
+    .container{
+        display: flex;
+        @media (max-width:1200px){
+            display: block;
+        }
+    }
+     .shopify-banner{
+        display: flex;
+        flex-basis: 60%;
+    }
+      .sbanner-text{
+        .sbanner-heading{
+            font-family: 'Epilogue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            color: #000000;
+            margin-bottom: 32px;
+            @media (max-width:520px){
+                font-size: 42px;
+                margin-bottom: 16px;
+            }
+        }
+          .sbanner-paragraph{
+            font-family: 'Epilogue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+            margin-bottom: 60px;
+            @media (max-width:520px){
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+        .plus-logo{
+            margin-bottom:50px;
+            @media (max-width:520px){
+                margin-bottom: 40px;
+            }
+        }
+        .plus-btn{
+            background: #FF7121;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            font-family: 'Epilogue';
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            padding:20px 40px;
+            @media (max-width:520px){
+                font-size: 15px;
+                padding:12px 15px;
+            }
+        }
+    }
+    .slocation{
+        display: flex;
+        margin-top:40px;
+        border-top: 1px solid #DEDEDE;
+        padding-top:20px;
+        .loctext{
+               padding-left: 10px;
+            .locmain{
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #000000;
+                margin-bottom: 8px;
+                margin-top: 0;
+                @media (max-width:520px){
+                    font-size: 16px;
+                }
+            }
+            .locsubtext{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #000000;
+                margin-top: 0;
+                @media (max-width:520px){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
