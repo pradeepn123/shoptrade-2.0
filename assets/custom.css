@@ -8340,7 +8340,7 @@ textarea {
   }
 }
 .lets-talk-store-section .lets-talk-store .lets-talk-store-img {
-  height: auto;
+  height: 343px;
   width: 100%;
   margin-left: auto;
 }
@@ -8384,9 +8384,15 @@ textarea {
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-btn {
   border: 1px solid #000;
+  font-weight: 700;
   border-radius: 12px;
   max-width: fit-content;
-  padding: 3% 5%;
+  padding: 20px 40px;
+}
+@media (max-width: 768px) {
+  .lets-talk-store-section .lets-talk-store-text .lets-talk-btn {
+    padding: 15px 30px;
+  }
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-btn a {
   text-decoration: none;
