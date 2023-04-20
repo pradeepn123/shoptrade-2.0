@@ -104,41 +104,33 @@
     "b1a74954-2e63-4d11-8fa1-ae5322486e96": {
       "type": "manuel_images_scroll",
       "blocks": {
-        "31d7b392-ed44-4186-a8b6-4b6d28d25e07": {
-          "type": "sliderMauel",
-          "disabled": true,
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5": {
+          "type": "blocks",
           "settings": {
-            "slide_img_manuel": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1_1a219ccc-933b-47f5-8604-919df48462dc.png"
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0419.svg"
           }
         },
-        "93d31157-1357-41b5-977e-e15f248252ed": {
-          "type": "sliderMauel",
+        "f50d7f2c-8059-4af7-892a-3e4e242859aa": {
+          "type": "blocks",
           "settings": {
-            "slide_img_manuel": "shopify:\/\/shop_images\/Pro-Capture-One-0454.png"
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0454.svg"
           }
         },
-        "775e8db5-4794-4d61-a987-b15b69e8e67f": {
-          "type": "sliderMauel",
+        "fbc7f174-4e30-4f15-b58a-297c474fc8e7": {
+          "type": "blocks",
           "settings": {
-            "slide_img_manuel": "shopify:\/\/shop_images\/5K8A6607.png"
-          }
-        },
-        "1846ecad-e619-4133-b683-396530cb7ec5": {
-          "type": "sliderMauel",
-          "settings": {
-            "slide_img_manuel": "shopify:\/\/shop_images\/Pro-Capture-One-0419.png"
+            "manuel-img-scroll": "shopify:\/\/shop_images\/5K8A6607_1.svg"
           }
         }
       },
       "block_order": [
-        "31d7b392-ed44-4186-a8b6-4b6d28d25e07",
-        "93d31157-1357-41b5-977e-e15f248252ed",
-        "775e8db5-4794-4d61-a987-b15b69e8e67f",
-        "1846ecad-e619-4133-b683-396530cb7ec5"
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5",
+        "f50d7f2c-8059-4af7-892a-3e4e242859aa",
+        "fbc7f174-4e30-4f15-b58a-297c474fc8e7"
       ],
       "settings": {
-        "slide-margin-btm": 1,
-        "slide-margin-btm-mob": 1
+        "img-scroll-margin-btm": 79,
+        "img-scroll-margin-btm-mob": 51
       }
     },
     "cc3e4c18-c797-46e7-8653-5e90bd32e731": {
@@ -157,7 +149,9 @@
         "lets-talk-btn": "Let’s Talk",
         "btn-font-size": 20,
         "btn-font-size-mob": 15,
-        "talk-btn-src": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?node-id=1057-4541&t=c1c6MhOAuPHOVfH0-0"
+        "talk-btn-src": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?node-id=1057-4541&t=c1c6MhOAuPHOVfH0-0",
+        "btn-txt-color": "#ffffff",
+        "btn-bg-color": "#ff7121"
       }
     }
   },
