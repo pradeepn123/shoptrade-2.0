@@ -2,14 +2,44 @@
   .lets-talk-store-section {
       flex-direction: {{ section.settings.adj-img-txt }};
   }
+  .lets-talk-store-heading{
+    font-size: {{ section.settings.heading-font-size }}px;
+  }
+  .lets-talk-store-para{
+    font-size: {{ section.settings.para-font-size }}px;
+  }
+  .lets-talk-btn{
+    font-size: {{ section.settings.btn-font-size }}px;
+  }
+  .lets-talk-store-section{
+  margin-bottom:{{ section.settings.slides-margin-btm }}px;
+}
+@media(max-width:1024px){
+  .lets-talk-store-heading{
+       font-size: {{ section.settings.heading-font-size-mob }}px;
+    }
+    .lets-talk-store-para{
+       font-size: {{ section.settings.para-font-size-mob }}px;
+    }
+    .lets-talk-btn{
+       font-size: {{ section.settings.btn-font-size-mob }}px;
+    }
+}
+  @media(max-width:768px){
+    .lets-talk-store-section{
+       margin-bottom:{{ section.settings.slides-margin-btm-mob }}px;
+    }
+  }
 {% endstyle %}
 <div class="container">
   <div class="lets-talk-store-section">
-    {% if section.settings['online-store-img'] %}
-      <div class="lets-talk-store-img">
-        <img src="{{ section.settings.online-store-img | img_url }}">
-      </div>
-    {% endif %}
+    <div class="lets-talk-store">
+      {% if section.settings['online-store-img'] %}
+        <div class="lets-talk-store-img">
+          <img src="{{ section.settings.online-store-img | img_url }}">
+        </div>
+      {% endif %}
+    </div>
     <div class="lets-talk-store-text">
       <h2 class="lets-talk-store-heading">{{ section.settings['talk-store-heading'] }}</h2>
       <p class="lets-talk-store-para">{{ section.settings['talk-store-para'] }}</p>
@@ -24,6 +54,26 @@
 {
   "name": "lets-talk-store",
   "settings": [
+    {
+      "type": "range",
+      "id": "slides-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding Bottom",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "slides-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding btm Mob",
+      "default": 1
+    },
     {
       "type": "select",
       "id": "adj-img-txt",
@@ -51,14 +101,74 @@
       "label": "Heading"
     },
     {
+      "type": "range",
+      "id": "heading-font-size",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "heading-font-size-mob",
+      "min": 12,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size Mobile",
+      "default": 42
+    },
+    {
       "type": "text",
       "id": "talk-store-para",
       "label": "Para"
     },
     {
+      "type": "range",
+      "id": "para-font-size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "para-font-size-mob",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size Mobile",
+      "default": 16
+    },
+    {
       "type": "text",
       "id": "lets-talk-btn",
       "label": "Button Text"
+    },
+    {
+      "type": "range",
+      "id": "btn-font-size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "btn-font-size-mob",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 15
     },
     {
       "type": "url",

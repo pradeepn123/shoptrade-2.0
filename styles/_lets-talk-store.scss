@@ -1,27 +1,75 @@
 .lets-talk-store-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
-    .lets-talk-store-img {
-        width: 50%;
+    @media(max-width:768px) {
+        flex-direction: column !important;
+    }
+
+    .lets-talk-store {
+        width: 30%;
 
         @media(max-width:768px) {
-            width: 100%;
+          display: none;
         }
-        img{
+
+        .lets-talk-store-img {
+            height: auto;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            margin-left: auto;
+
+            @media (max-width:768px){
+                height: 343px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
     }
 
     .lets-talk-store-text {
-        width: 50%;
+        width: 70%;
+
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
 
         @media(max-width:768px) {
             width: 100%;
+        }
+
+        .lets-talk-store-heading {
+            font-weight: 700;
+            padding-bottom: 9px;
+        }
+
+        .lets-talk-store-para {
+            font-weight: 400;
+            line-height: 30px;
+            color: #000000;
+            padding-bottom: 30px;
+            @media (max-width:768px){
+                padding-bottom: 20px;
+            }
+        }
+
+        .lets-talk-btn {
+            border: 1px solid #000;
+            border-radius: 12px;
+            max-width: fit-content;
+            padding: 3% 5%;
+
+            a {
+                text-decoration: none;
+
+            }
         }
     }
 }

@@ -1,67 +1,77 @@
 {% style %}
-  .testimonial-video_heading{
-      font-size: {{ section.settings.testi-heading-size }}px;
+  .testimonial-video-section{
+    margin-bottom:{{ section.settings.parent-margin-btm }}px;
   }
-  @media(max-width:768px){
-      .testimonial-video_heading{
-      font-size: {{ section.settings.testi-heading-size-mob }}px;
-  }
-  }
+    .testimonial-video_heading{
+        font-size: {{ section.settings.testi-heading-size }}px;
+    }
+    @media(max-width:768px){
+        .testimonial-video_heading{
+        font-size: {{ section.settings.testi-heading-size-mob }}px;
+    }
+    .testimonial-video-section{
+      margin-bottom:{{ section.settings.parent-margin-btm-mob }}px;
+   }
+    }
 {% endstyle %}
 <section class="about-value">
-  <div class="testimonial-video-header">
-    <div class="container">
-      <h2 class="testimonial-video_heading">{{ section.settings.vedioHeading }}</h2>
+  <div class="testimonial-video-section">
+    <div class="testimonial-video-header">
+      <div class="container">
+        <h2 class="testimonial-video_heading">{{ section.settings.vedioHeading }}</h2>
+      </div>
     </div>
-  </div>
-  <div class="testimonial-video__container">
-    <div class="container">
-      <div class="testimonial-video__container_main">
-        {% for block in section.blocks %}
-          <div class="testimonial-video__wrp_info">
-            <div class="testimonial-video__wrp">
-              <div class="testimonial-video__vedioWrp">
-                <div class="vedio__container testimonial-vid__container">
-                  <div
-                    class="video-player"
-                    data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
-                    data-player-url="{{block.settings.external_video_url}}"
-                  >
-                    <div class="preview" data-js="preview">
-                      <img
-                        id="image2"
-                        class="vedio__thumbnail"
-                        src="{{ block.settings.vedioThumbnailImage | image_url }}"
-                      >
-                      {% if block.settings.external_video_url != null %}
-                        <span class="play-icon arrow-btn ">
-                          <img
-                            id="image1"
-                            src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"
-                          >
-                        </span>
-                      {% endif %}
+    <div class="testimonial-video__container">
+      <div class="container">
+        <div class="testimonial-video__container_main">
+          {% for block in section.blocks %}
+            <div class="testimonial-video__wrp_info">
+              <div class="testimonial-video__wrp">
+                <div class="testimonial-video__vedioWrp">
+                  <div class="vedio__container testimonial-vid__container">
+                    <div
+                      class="video-player"
+                      data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
+                      data-player-url="{{block.settings.external_video_url}}"
+                    >
+                      <div class="preview" data-js="preview">
+                        <img
+                          id="image2"
+                          class="vedio__thumbnail"
+                          src="{{ block.settings.vedioThumbnailImage | image_url }}"
+                        >
+                        {% if block.settings.external_video_url != null %}
+                          <span class="play-icon arrow-btn ">
+                            <img
+                              id="image1"
+                              src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"
+                            >
+                          </span>
+                        {% endif %}
+                      </div>
+                      <div class="aboutUsVideo" data-js="video" data-hidden="true">
+                        <div data-js="video-root"></div>
+                      </div>
                     </div>
-                    <div class="aboutUsVideo" data-js="video" data-hidden="true"><div data-js="video-root"></div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-video_info">
+                <div class="Logo-text-testimonial">
+                  <div class="Logo-text-testimonial-imgae">
+                    <img src="{{ block.settings.testimonial-logo | img_url }}">
+                  </div>
+                </div>
+                <div class="about-value__cards">
+                  <div class="testimonial-video__card">
+                    <h3 class="testimonial-video__card_heading">{{ block.settings.vedioHead }}</h3>
+                    <p class="testimonial-video__card_text">{{ block.settings.vedioSubtext }}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="testimonial-video_info">
-              <div class="Logo-text-testimonial">
-                <div class="Logo-text-testimonial-imgae">
-                  <img src="{{ block.settings.testimonial-logo | img_url }}">
-                </div>
-              </div>
-              <div class="about-value__cards">
-                <div class="testimonial-video__card">
-                  <h3 class="testimonial-video__card_heading">{{ block.settings.vedioHead }}</h3>
-                  <p class="testimonial-video__card_text">{{ block.settings.vedioSubtext }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -71,6 +81,26 @@
 {
   "name": "Testimonial video",
   "settings": [
+    {
+      "type": "range",
+      "id": "parent-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding Bottom",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "parent-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding btm Mob",
+      "default": 1
+    },
     {
       "id": "vedioHeading",
       "label": "Headding text",
@@ -93,7 +123,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Font size",
+      "label": "Font size Mobile",
       "default": 42
     }
   ],

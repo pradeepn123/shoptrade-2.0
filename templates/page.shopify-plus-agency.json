@@ -71,9 +71,8 @@
           "type": "vedioCard",
           "settings": {
             "vedioThumbnailImage": "shopify:\/\/shop_images\/image_147_0b4fcef8-23dd-4d2e-89f5-cc1b3c85b1a7.png",
-            "vedioUrl": "https:\/\/youtu.be\/9Erlh1_oMxk",
             "external_video_url": "https:\/\/youtu.be\/9Erlh1_oMxk",
-            "testimonial-logo": "shopify:\/\/shop_images\/image_149_1.png",
+            "testimonial-logo": "shopify:\/\/shop_images\/image_149.svg",
             "vedioHead": "\"I am continually impressed by their expertise in   Shopify and web development.\"",
             "vedioSubtext": "~ Edwin Rosado, VP - Product Development"
           }
@@ -82,9 +81,8 @@
           "type": "vedioCard",
           "settings": {
             "vedioThumbnailImage": "shopify:\/\/shop_images\/image_149_f212f268-0bc5-4769-a82b-da266b0227ad.png",
-            "vedioUrl": "https:\/\/youtu.be\/PBrlQ2hrX98",
             "external_video_url": "https:\/\/youtu.be\/PBrlQ2hrX98",
-            "testimonial-logo": "shopify:\/\/shop_images\/image_153.png",
+            "testimonial-logo": "shopify:\/\/shop_images\/image_153.svg",
             "vedioHead": "\"ShopTrade was experienced in developing apps and   set realistic timelines and price to get the job done.\"",
             "vedioSubtext": "~ Zenos Scmickrath, Co-FounderLensAdvizor"
           }
@@ -96,7 +94,9 @@
         "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f"
       ],
       "settings": {
-        "vedioHeading": "",
+        "parent-margin-btm": 1,
+        "parent-margin-btm-mob": 1,
+        "vedioHeading": "Client Testimonials",
         "testi-heading-size": 64,
         "testi-heading-size-mob": 42
       }
@@ -137,16 +137,27 @@
         "1846ecad-e619-4133-b683-396530cb7ec5"
       ],
       "settings": {
+        "slide-margin-btm": 1,
+        "slide-margin-btm-mob": 1
       }
     },
     "cc3e4c18-c797-46e7-8653-5e90bd32e731": {
       "type": "lets-talk-store",
       "settings": {
-        "adj-img-txt": "row",
-        "talk-store-heading": "",
-        "talk-store-para": "",
-        "lets-talk-btn": "",
-        "talk-btn-src": ""
+        "slides-margin-btm": 73,
+        "slides-margin-btm-mob": 27,
+        "adj-img-txt": "row-reverse",
+        "online-store-img": "shopify:\/\/shop_images\/Group_1885.png",
+        "talk-store-heading": "Ready to take your online store to the next level?",
+        "heading-font-size": 64,
+        "heading-font-size-mob": 42,
+        "talk-store-para": "Our team of Shopify experts are here to help make your vision a reality. Don't miss out on the opportunity to increase your sales and stand out from the competition. Contact us today and let's get started!",
+        "para-font-size": 20,
+        "para-font-size-mob": 16,
+        "lets-talk-btn": "Let’s Talk",
+        "btn-font-size": 20,
+        "btn-font-size-mob": 15,
+        "talk-btn-src": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?node-id=1057-4541&t=c1c6MhOAuPHOVfH0-0"
       }
     }
   },

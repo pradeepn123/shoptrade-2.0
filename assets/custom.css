@@ -8318,33 +8318,76 @@ textarea {
 .manuel-slide-img-wrapper-parent .manuel-slide-img-wrapper .manuel-slide-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .lets-talk-store-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-}
-.lets-talk-store-section .lets-talk-store-img {
-  width: 50%;
 }
 @media (max-width: 768px) {
-  .lets-talk-store-section .lets-talk-store-img {
-    width: 100%;
+  .lets-talk-store-section {
+    flex-direction: column !important;
   }
 }
-.lets-talk-store-section .lets-talk-store-img img {
+.lets-talk-store-section .lets-talk-store {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .lets-talk-store-section .lets-talk-store {
+    display: none;
+  }
+}
+.lets-talk-store-section .lets-talk-store .lets-talk-store-img {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .lets-talk-store-section .lets-talk-store .lets-talk-store-img {
+    height: 343px;
+  }
+}
+.lets-talk-store-section .lets-talk-store .lets-talk-store-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .lets-talk-store-section .lets-talk-store-text {
-  width: 50%;
+  width: 70%;
+}
+.lets-talk-store-section .lets-talk-store-text h2,
+.lets-talk-store-section .lets-talk-store-text p {
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 768px) {
   .lets-talk-store-section .lets-talk-store-text {
     width: 100%;
   }
+}
+.lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
+  font-weight: 700;
+  padding-bottom: 9px;
+}
+.lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
+    padding-bottom: 20px;
+  }
+}
+.lets-talk-store-section .lets-talk-store-text .lets-talk-btn {
+  border: 1px solid #000;
+  border-radius: 12px;
+  max-width: fit-content;
+  padding: 3% 5%;
+}
+.lets-talk-store-section .lets-talk-store-text .lets-talk-btn a {
+  text-decoration: none;
 }
