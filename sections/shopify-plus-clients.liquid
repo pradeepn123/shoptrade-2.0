@@ -1,0 +1,98 @@
+<section class="clients">
+    <div class="container">
+        <h1 class="cheading">{{ section.settings.heading }}</h1>
+    </div>
+
+        {% for block in section.blocks %}
+        <div class="plus-client"> 
+            <div class="client-image">
+                <img class="featimg" src="{{block.settings.cimage | image_url}}" alt="client image"/>
+            </div>
+            <div class="client-text">
+                <img class="logo" src="{{block.settings.clogo | image_url}}" alt="client logo"/>
+                <p class="cpara">{{ block.settings.cpara}}</p>
+                <a href="{{ block.settings.cBtnlink}}" class="client-btn"> {{ block.settings.cBtn}} </a>
+                <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
+                <p class="client-name">{{ block.settings.cname }}</p>
+            </div>
+        </div>
+        {% endfor %}
+</section>
+
+
+{% schema %}
+  {
+    "name": "Our clients block",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text"
+      }
+
+    ],
+    "blocks": [
+      {
+        "name": "clients Block",
+        "type": "cardType",
+        "settings": [
+          {
+            "type": "select",
+            "id": "image_right",
+            "label": "Image Right",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left Image"
+              }, {
+                "value": "right",
+                "label": "Right Image"
+              }
+            ],
+            "default": "left"
+          },
+          {
+            "type": "image_picker",
+            "id": "cimage",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "clogo",
+            "label": "Logo"
+          },
+          {
+            "type": "text",
+            "id": "cpara",
+            "label": "Description"
+          },
+          {
+            "type":"text",
+            "id":"cBtn",
+            "label":"Button text"
+          },
+          {
+            "type":"url",
+            "id":"cBtnlink",
+            "label":"link"
+          },
+          {
+            "type": "text",
+            "id": "ctestimonial",
+            "label": "Testimonial"
+          }, 
+          {
+            "type": "text",
+            "id": "cname",
+            "label": "Client name"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Our clients block"
+      }
+    ]
+  }
+{% endschema %}
