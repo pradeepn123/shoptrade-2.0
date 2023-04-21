@@ -22,14 +22,14 @@
     .lets-talk-store-heading{
          font-size: {{ section.settings.heading-font-size-mob }}px;
       }
-      .lets-talk-store-para{
+      .lets-talk-store-paras{
          font-size: {{ section.settings.para-font-size-mob }}px;
       }
       .lets-talk-btn{
          font-size: {{ section.settings.btn-font-size-mob }}px;
-         
+
       }
-     
+
   }
     @media(max-width:768px){
       .lets-talk-store-section{
@@ -49,9 +49,12 @@
     <div class="lets-talk-store-text">
       <h2 class="lets-talk-store-heading">{{ section.settings['talk-store-heading'] }}</h2>
       <p class="lets-talk-store-para">{{ section.settings['talk-store-para'] }}</p>
-      <div class="lets-talk-btn">
-        <a href="{{ section.settings.talk-btn-src }}"> {{ section.settings['lets-talk-btn'] }} </a>
-      </div>
+      <p class="lets-talk-store-paras">{{ section.settings['talk-store-para-mob'] }}</p>
+      {% if section.settings['talk-btn-src'] %}
+        <div class="lets-talk-btn">
+          <a href="{{ section.settings.talk-btn-src }}"> {{ section.settings['lets-talk-btn'] }} </a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -129,7 +132,12 @@
     {
       "type": "text",
       "id": "talk-store-para",
-      "label": "Para"
+      "label": "Para Desktop"
+    },
+    {
+      "type": "text",
+      "id": "talk-store-para-mob",
+      "label": "Para Mobile"
     },
     {
       "type": "range",
@@ -193,7 +201,6 @@
       "label": "Body text",
       "default": "#FF7121"
     }
-    
   ],
 
   "presets": [

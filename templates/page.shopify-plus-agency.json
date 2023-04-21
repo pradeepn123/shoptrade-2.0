@@ -2,54 +2,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "56fea38c-c4fe-4150-941f-2f1f70a81e22": {
+    "31cdad78-ce9a-482b-8ea1-447ec0d8957e": {
       "type": "shopify-plus-banner",
+      "disabled": true,
       "settings": {
         "plusheading": "Shopify Plus Agency",
         "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
-        "logoImage": "shopify:\/\/shop_images\/image_118.png",
-        "plusBtn": "Let's Talk",
-        "plusBtnlink": "#contact-us",
+        "logoImage": "shopify:\/\/shop_images\/image_118.svg",
+        "plusBtn": "Let’s Talk",
+        "plusBtnlink": "https:\/\/kenwheeler.github.io\/slick\/",
         "loclogo": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"24\" viewbox=\"0 0 20 24\" fill=\"none\">\n<path d=\"M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
         "locheading": "Location",
-        "locsubheading": "Florida, USA"
+        "locsubheading": "Florida , USA"
       }
     },
-    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c": {
+    "0e611b99-0958-4b25-beb7-4ebf30e7060f": {
       "type": "shopify-plus-clients",
+      "disabled": true,
       "blocks": {
-        "ec045fce-24a3-4e5e-abae-99f12f5a88d1": {
+        "5f30afa5-a1aa-4e77-beb0-6be872ec04d3": {
           "type": "cardType",
           "settings": {
             "image_right": "left",
             "cimage": "shopify:\/\/shop_images\/image_19.png",
-            "clogo": "shopify:\/\/shop_images\/image_55.png",
+            "clogo": "shopify:\/\/shop_images\/image_55_538b9b73-0b40-4e4b-923e-65055a26f03b.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "https:\/\/hathaspace.com",
+            "cBtnlink": "https:\/\/www.google.com\/",
             "ctestimonial": "\"They delivered on what they said they would,   and they were quick.\"",
             "cname": "~ Marcus Lara, Co-Founder"
           }
         },
-        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595": {
+        "8659acc1-a56c-494a-82b1-7b5c4c0ecd61": {
           "type": "cardType",
           "settings": {
-            "image_right": "right",
+            "image_right": "left",
             "cimage": "shopify:\/\/shop_images\/image_24.png",
             "clogo": "shopify:\/\/shop_images\/image_157.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
-            "cBtn": "View project",
-            "cBtnlink": "#besynchro.com",
+            "cBtn": "View Project",
+            "cBtnlink": "https:\/\/www.google.com\/",
             "ctestimonial": "\"Their communication and responsiveness   are impressive in the workflow.\"",
             "cname": "~ Graham Ryan, Founder\/CEO"
           }
         },
-        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f": {
+        "142ce6d8-e2c4-48c0-9ca5-6ce42026d569": {
           "type": "cardType",
           "settings": {
             "image_right": "left",
@@ -57,11 +60,19 @@
             "clogo": "shopify:\/\/shop_images\/image_24_2.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "#elevatione.com",
+            "cBtnlink": "https:\/\/www.google.com\/",
             "ctestimonial": "“They’ve done a really good job. They were on top   of things from the get-go.”",
             "cname": "~ Marc Heuberger, CMO"
           }
         }
+      },
+      "block_order": [
+        "5f30afa5-a1aa-4e77-beb0-6be872ec04d3",
+        "8659acc1-a56c-494a-82b1-7b5c4c0ecd61",
+        "142ce6d8-e2c4-48c0-9ca5-6ce42026d569"
+      ],
+      "settings": {
+        "heading": "Our Clients"
       }
     },
     "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa": {
@@ -89,9 +100,8 @@
         }
       },
       "block_order": [
-        "ec045fce-24a3-4e5e-abae-99f12f5a88d1",
-        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595",
-        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f"
+        "aa0763bd-f37a-4a26-aa38-4fdf0a90d291",
+        "a9a473ab-6789-4465-9edf-7ceec02acce9"
       ],
       "settings": {
         "parent-margin-btm": 1,
@@ -139,11 +149,12 @@
         "slides-margin-btm": 73,
         "slides-margin-btm-mob": 27,
         "adj-img-txt": "row-reverse",
-        "online-store-img": "shopify:\/\/shop_images\/Group_1885.png",
+        "online-store-img": "shopify:\/\/shop_images\/Vector_10.png",
         "talk-store-heading": "Ready to take your online store to the next level?",
         "heading-font-size": 64,
         "heading-font-size-mob": 42,
         "talk-store-para": "Our team of Shopify experts are here to help make your vision a reality. Don't miss out on the opportunity to increase your sales and stand out from the competition. Contact us today and let's get started!",
+        "talk-store-para-mob": "Boost sales and stand out with our Shopify experts. Contact us to start.",
         "para-font-size": 20,
         "para-font-size-mob": 16,
         "lets-talk-btn": "Let’s Talk",
@@ -157,8 +168,8 @@
   },
   "order": [
     "main",
-    "56fea38c-c4fe-4150-941f-2f1f70a81e22",
-    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c",
+    "31cdad78-ce9a-482b-8ea1-447ec0d8957e",
+    "0e611b99-0958-4b25-beb7-4ebf30e7060f",
     "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa",
     "b1a74954-2e63-4d11-8fa1-ae5322486e96",
     "cc3e4c18-c797-46e7-8653-5e90bd32e731"

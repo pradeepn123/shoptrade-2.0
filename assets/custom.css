@@ -8386,13 +8386,23 @@ textarea {
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
   font-weight: 400;
-  line-height: 30px;
   color: #000000;
   line-height: 30px;
   padding-bottom: 30px;
 }
 @media (max-width: 768px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
+    display: none;
+  }
+}
+.lets-talk-store-section .lets-talk-store-text .lets-talk-store-paras {
+  color: #000000;
+  font-weight: 400;
+  display: none;
+}
+@media (max-width: 768px) {
+  .lets-talk-store-section .lets-talk-store-text .lets-talk-store-paras {
+    display: block;
     padding-bottom: 20px;
     line-height: 24px;
   }
