@@ -11,15 +11,15 @@
     "31cdad78-ce9a-482b-8ea1-447ec0d8957e": {
       "type": "shopify-plus-banner",
       "settings": {
-        "plusheading": "Shopify Plus Agency",
         "heading-font": 64,
         "heading-font-mob": 42,
+        "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.svg",
+        "plusheading": "Shopify Plus Agency",
         "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
-        "para-font": 20,
-        "para-font-mob": 16,
         "logoImage": "shopify:\/\/shop_images\/image_118.svg",
         "plusBtn": "Let’s Talk",
-        "btn-color": "#FFFFFF",
+        "btn-color": "#ffffff",
         "btn-bg-color": "#ff7121",
         "plusBtnlink": "https:\/\/kenwheeler.github.io\/slick\/",
         "loclogo": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"24\" viewbox=\"0 0 20 24\" fill=\"none\">\n<path d=\"M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
@@ -29,6 +29,7 @@
     },
     "0e611b99-0958-4b25-beb7-4ebf30e7060f": {
       "type": "shopify-plus-clients",
+      "disabled": true,
       "blocks": {
         "5f30afa5-a1aa-4e77-beb0-6be872ec04d3": {
           "type": "cardType",
