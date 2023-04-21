@@ -6960,88 +6960,94 @@ textarea {
   }
 }
 
-.main-page-title {
-  display: none;
-}
-
-.plus-banner .container {
-  display: flex;
-}
-@media (max-width: 1200px) {
-  .plus-banner .container {
-    display: block;
-  }
-}
 .plus-banner .shopify-banner {
   display: flex;
-  flex-basis: 60%;
+  width: 100%;
 }
-.plus-banner .sbanner-text .sbanner-heading {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 700;
+@media (max-width: 768px) {
+  .plus-banner .shopify-banner {
+    flex-direction: column-reverse !important;
+  }
+}
+.plus-banner .shopify-banner .sbanner-text {
+  width: 50%;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .plus-banner .shopify-banner .sbanner-text {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-text .sbanner-heading {
   font-size: 64px;
+  font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.03em;
   color: #000000;
   margin-bottom: 32px;
 }
+@media (max-width: 1024px) {
+  .plus-banner .shopify-banner .sbanner-text .sbanner-heading {
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 520px) {
-  .plus-banner .sbanner-text .sbanner-heading {
+  .plus-banner .shopify-banner .sbanner-text .sbanner-heading {
     font-size: 42px;
     margin-bottom: 16px;
   }
 }
-.plus-banner .sbanner-text .sbanner-paragraph {
-  font-family: "Epilogue";
-  font-style: normal;
-  font-weight: 400;
+.plus-banner .shopify-banner .sbanner-text .sbanner-paragraph {
   font-size: 20px;
+  font-weight: 400;
   line-height: 150%;
   color: #000000;
   margin-bottom: 60px;
 }
-@media (max-width: 520px) {
-  .plus-banner .sbanner-text .sbanner-paragraph {
-    font-size: 16px;
+@media (max-width: 1024px) {
+  .plus-banner .shopify-banner .sbanner-text .sbanner-paragraph {
     margin-bottom: 30px;
   }
 }
-.plus-banner .sbanner-text .plus-logo {
+@media (max-width: 520px) {
+  .plus-banner .shopify-banner .sbanner-text .sbanner-paragraph {
+    font-size: 16px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-text .plus-logo {
   margin-bottom: 50px;
 }
 @media (max-width: 520px) {
-  .plus-banner .sbanner-text .plus-logo {
+  .plus-banner .shopify-banner .sbanner-text .plus-logo {
     margin-bottom: 40px;
   }
 }
-.plus-banner .sbanner-text .plus-btn {
-  background: #FF7121;
+.plus-banner .shopify-banner .sbanner-text .plus-btn {
   border: 2px solid #000000;
   border-radius: 12px;
-  font-family: "Epilogue";
   font-weight: 600;
   font-size: 20px;
-  color: #fff;
   text-decoration: none;
   padding: 20px 40px;
 }
 @media (max-width: 520px) {
-  .plus-banner .sbanner-text .plus-btn {
+  .plus-banner .shopify-banner .sbanner-text .plus-btn {
     font-size: 15px;
     padding: 12px 15px;
   }
 }
-.plus-banner .slocation {
+.plus-banner .shopify-banner .sbanner-text .slocation {
   display: flex;
   margin-top: 40px;
   border-top: 1px solid #DEDEDE;
   padding-top: 20px;
 }
-.plus-banner .slocation .loctext {
+.plus-banner .shopify-banner .sbanner-text .slocation .loctext {
   padding-left: 10px;
 }
-.plus-banner .slocation .loctext .locmain {
+.plus-banner .shopify-banner .sbanner-text .slocation .loctext .locmain {
   font-family: "Inter";
   font-weight: 500;
   font-size: 20px;
@@ -7052,11 +7058,11 @@ textarea {
   margin-top: 0;
 }
 @media (max-width: 520px) {
-  .plus-banner .slocation .loctext .locmain {
+  .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locmain {
     font-size: 16px;
   }
 }
-.plus-banner .slocation .loctext .locsubtext {
+.plus-banner .shopify-banner .sbanner-text .slocation .loctext .locsubtext {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
@@ -7066,8 +7072,46 @@ textarea {
   margin-top: 0;
 }
 @media (max-width: 520px) {
-  .plus-banner .slocation .loctext .locsubtext {
+  .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locsubtext {
     font-size: 14px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-video {
+  width: 50%;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .plus-banner .shopify-banner .sbanner-video {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
+  border: 0;
+}
+@media (max-width: 1300px) and (min-width: 1023px) {
+  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
+    height: 80%;
+  }
+}
+.plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player {
+  height: 100%;
+}
+.plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
+  position: absolute !important;
+  top: 35% !important;
+  left: 40% !important;
+  cursor: pointer !important;
+}
+@media (max-width: 768px) {
+  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
+    top: 40% !important;
+    left: 45% !important;
+  }
+}
+@media (max-width: 520px) {
+  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
+    top: 35% !important;
   }
 }
 
@@ -8286,7 +8330,6 @@ textarea {
 
 .manuel-img-scroll-container-main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr auto;
 }
 .manuel-img-scroll-container-main .manuel-img-scroll-container {
