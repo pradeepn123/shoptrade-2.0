@@ -8379,7 +8379,7 @@ textarea {
   padding-bottom: 9px;
   line-height: 64px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
     line-height: 42px;
   }
