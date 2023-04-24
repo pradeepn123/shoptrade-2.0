@@ -921,3 +921,32 @@ slider.addEventListener('mousemove', (e) => {
     slider.scrollLeft = scrollLeft - walk;
     console.log(walk);
 });
+      
+
+const gridItem = document.querySelector('.shoptrade-plus-info-content-scroll');
+let mouseDown = false;
+let startXPosition;
+let scrollStartPosition;
+gridItem.addEventListener('mousedown', (e) => {
+  mouseDown = true;
+  gridItem.classList.add('active');
+  startXPosition = e.pageX - gridItem.offsetLeft;
+  scrollStartPosition = gridItem.scrollLeft;
+});
+gridItem.addEventListener('mouseleave', () => {
+  mouseDown = false;
+  gridItem.classList.remove('active');
+});
+gridItem.addEventListener('mouseup', () => {
+  mouseDown = false;
+  gridItem.classList.remove('active');
+});
+gridItem.addEventListener('mousemove', (e) => {
+  if (!mouseDown) return;
+  e.preventDefault();
+  const currentPosition = e.pageX - gridItem.offsetLeft;
+  const scrollDelta = (currentPosition - startXPosition) * 2; // scroll-fast
+  gridItem.scrollLeft = scrollStartPosition - scrollDelta;
+  console.log(scrollDelta);
+}); 
+

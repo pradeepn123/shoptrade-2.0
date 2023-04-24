@@ -1,34 +1,75 @@
-<section class="clients">
+{% style %}
+  .clients-shopify{
+     margin-bottom:{{ section.settings.parent-margin-btm }}px;
+   }
+   @media(max-width:768px){
+     .clients-shopify{
+       margin-bottom:{{ section.settings.parent-margin-btm-mob }}px;
+    }
+   }
+{% endstyle %}
+<section class="clients-shopify">
   <div class="container">
     <h1 class="cheading">{{ section.settings.heading }}</h1>
   </div>
+  <div class="shopify-plus-clients">
     {% for block in section.blocks %}
-      <div class="plus-client">
-        {% if block.settings.cimage %}
-          <div class="client-image">
-            <img class="featimg" src="{{ block.settings.cimage | image_url}}" alt="client image">
+      <div class="plus-client-main{% if block.settings.color-change %} chnage-bg-section{% endif %}">
+        <div class="container">
+          <div class="plus-client" style="flex-direction: {{ block.settings.vertical_alignment }};">
+            <div class="client-image-main">
+              {% if block.settings.cimage %}
+                <div class="client-image">
+                  <img class="featimg" src="{{ block.settings.cimage | image_url}}" alt="client image">
+                </div>
+              {% endif %}
+            </div>
+            <div class="client-text">
+              <div class="client-text-logo">
+                {% if block.settings.clogo %}
+                  <img class="logo" src="{{block.settings.clogo | image_url}}" alt="client logo">
+                {% endif %}
+              </div>
+              <p class="cpara">{{ block.settings.cpara }}</p>
+              <div class="client-text-btn">
+                {% if block.settings.cBtnlink %}
+                  <a href="{{ block.settings.cBtnlink}}" class="client-btn"> {{ block.settings.cBtn }} </a>
+                {% endif %}
+              </div>
+              <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
+              <p class="client-name">{{ block.settings.cname }}</p>
+            </div>
           </div>
-        {% endif %}
-        <div class="client-text">
-          {% if block.settings.clogo %}
-            <img class="logo" src="{{block.settings.clogo | image_url}}" alt="client logo">
-          {% endif %}
-          <p class="cpara">{{ block.settings.cpara }}</p>
-          {% if block.settings.cBtnlink %}
-            <a href="{{ block.settings.cBtnlink}}" class="client-btn"> {{ block.settings.cBtn }} </a>
-          {% endif %}
-          <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
-          <p class="client-name">{{ block.settings.cname }}</p>
         </div>
       </div>
     {% endfor %}
- 
+  </div>
 </section>
 
 {% schema %}
 {
   "name": "Our clients block",
   "settings": [
+    {
+      "type": "range",
+      "id": "parent-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding Bottom",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "parent-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding btm Mob",
+      "default": 1
+    },
     {
       "id": "heading",
       "label": "Heading",
@@ -41,20 +82,26 @@
       "type": "cardType",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "color-change",
+          "label": "Use alternate color",
+          "default": true
+        },
+        {
           "type": "select",
-          "id": "image_right",
-          "label": "Image Right",
+          "id": "vertical_alignment",
+          "label": "Vertical alignment",
           "options": [
             {
-              "value": "left",
-              "label": "Left Image"
+              "value": "row",
+              "label": "Image first"
             },
             {
-              "value": "right",
-              "label": "Right Image"
+              "value": "row-reverse",
+              "label": "Text First"
             }
           ],
-          "default": "left"
+          "default": "row"
         },
         {
           "type": "image_picker",

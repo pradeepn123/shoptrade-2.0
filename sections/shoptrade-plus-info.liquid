@@ -1,0 +1,95 @@
+{% style %}
+  .shoptrade-plus-info{
+     margin-bottom:{{ section.settings.stp-margin-btm }}px;
+   }
+   @media(max-width:768px){
+     .shoptrade-plus-info{
+       margin-bottom:{{ section.settings.stp-margin-btm-mob }}px;
+    }
+   }
+{% endstyle %}
+<section class="shoptrade-plus-info">
+  <div class="container">
+    <div class="shoptrade-plus-info-main">
+      <div class="shoptrade-plus-info-heading">
+        <h3>{{ section.settings['st-pg-heading'] }}</h3>
+      </div>
+      <div class="shoptrade-plus-info-para">
+        {{ section.settings['st-pg-para'] }}
+      </div>
+    </div>
+    <div class="shoptrade-plus-info-content-scroll">
+      {% for block in section.blocks %}
+        <div class="shoptrade-plus-info-content">
+          <div class="shoptrade-pf-content-heading">
+            <h4>{{ block.settings['st-info-heading'] }}</h4>
+          </div>
+          <div class="shoptrade-pf-content-content">
+            {{ block.settings['st-info-para'] }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "shoptrade plus info block",
+  "settings": [
+    {
+      "type": "range",
+      "id": "stp-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding Bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "stp-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding btm Mob",
+      "default": 20
+    },
+    {
+      "id": "st-pg-heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "id": "st-pg-para",
+      "label": "para",
+      "type": "richtext"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Testimonial Block",
+      "type": "cardType",
+      "settings": [
+        {
+          "type": "text",
+          "id": "st-info-heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "st-info-para",
+          "label": "Para"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "shoptrade plus info block"
+    }
+  ]
+}
+{% endschema %}

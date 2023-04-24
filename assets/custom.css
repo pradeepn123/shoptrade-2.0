@@ -7089,7 +7089,7 @@ textarea {
 .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
   border: 0;
 }
-@media (max-width: 1300px) and (min-width: 1023px) {
+@media (max-width: 1400px) and (min-width: 1023px) {
   .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
     height: 80%;
   }
@@ -7115,48 +7115,109 @@ textarea {
   }
 }
 
-.clients {
-  margin: 80px 0;
+.clients-shopify .shopify-plus-clients p {
+  padding: 0;
+  margin: 0;
 }
-.clients .plus-client {
-  margin: 40px 0;
+@media screen and (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients {
+    display: flex;
+    overflow-x: auto;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
   display: flex;
   column-gap: 80px;
-  padding: 40px 70px;
 }
-.clients .plus-client:nth-child(even) {
-  background: #F4F4F4;
+@media (max-width: 1320px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
+    column-gap: 50px;
+  }
 }
-.clients .plus-client:nth-child(odd) {
-  flex-direction: row-reverse;
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
+    display: unset;
+    margin-right: 15px;
+  }
 }
-.clients .client-text .cpara {
-  font-family: "Epilogue";
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
+    width: 100%;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image {
+  height: 400px;
+  width: 400px;
+}
+@media (max-width: 1200px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image {
+    height: 250px;
+    width: 300px;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
+    width: 100%;
+    margin-top: 17%;
+  }
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-logo {
+    height: auto;
+    width: 208px;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: #000000;
-  padding-bottom: 24px;
+  margin: 24px 0;
+  padding-bottom: 20px;
 }
-.clients .client-text .client-btn {
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn {
+    margin: 24px 0;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
   background: #FF7121;
   border: 2px solid #000000;
   border-radius: 12px;
-  font-family: "Epilogue";
   font-weight: 600;
   font-size: 20px;
   color: #fff;
   text-decoration: none;
   padding: 20px 40px;
 }
-@media (max-width: 520px) {
-  .clients .client-text .client-btn {
-    font-size: 15px;
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
     padding: 12px 15px;
+    font-size: 18px;
   }
 }
-.clients .client-text .ctestimonial {
-  font-family: "Epilogue";
+@media (max-width: 520px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
+    font-size: 15px;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -7164,13 +7225,39 @@ textarea {
   padding-top: 60px;
   width: 75%;
 }
-.clients .client-text .client-name {
-  font-family: "Epilogue";
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+    padding: 6px 0;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #000000;
   margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-name {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+.clients-shopify .shopify-plus-clients .chnage-bg-section {
+  background: #F4F4F4;
+}
+.clients-shopify .shopify-plus-clients .chnage-bg-section .plus-client {
+  width: 100%;
+  padding: 40px 0;
+  margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .chnage-bg-section .plus-client {
+    margin: 0;
+    padding: 20px 0;
+  }
 }
 
 .audit-banner {
@@ -8464,4 +8551,102 @@ textarea {
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-btn a {
   text-decoration: none;
+}
+
+.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading {
+  padding-bottom: 24px;
+}
+.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
+    font-size: 52px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 520px) {
+  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
+    font-size: 42px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para {
+  padding-bottom: 32px;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para {
+    padding-bottom: 22px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll {
+  display: flex;
+  column-gap: 21px;
+  width: 100%;
+  overflow-y: hidden;
+  cursor: grab;
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll::-webkit-scrollbar {
+  width: 1px;
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
+  display: inline-block;
+  border: 1px solid #000;
+  min-width: 413px;
+  padding: 55px 21px 50px 22px;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
+    padding: 41px 16px 40px 16px;
+  }
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
+    min-width: 317px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading {
+  padding-bottom: 24px;
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading h4 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
