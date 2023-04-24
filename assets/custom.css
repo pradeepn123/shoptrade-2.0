@@ -7017,14 +7017,47 @@ textarea {
   }
 }
 .plus-banner .shopify-banner .sbanner-text .plus-logo {
+  display: flex;
   margin-bottom: 50px;
+  width: 100%;
+  column-gap: 36px;
 }
 @media (max-width: 520px) {
   .plus-banner .shopify-banner .sbanner-text .plus-logo {
     margin-bottom: 40px;
+    column-gap: 25px;
   }
 }
-.plus-banner .shopify-banner .sbanner-text .plus-btn {
+@media (max-width: 374px) {
+  .plus-banner .shopify-banner .sbanner-text .plus-logo {
+    display: unset;
+  }
+}
+@media (max-width: 375px) {
+  .plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo {
+    margin-bottom: 20px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo img {
+  width: 198px;
+  object-fit: cover;
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo img {
+    width: 100px;
+  }
+}
+@media (max-width: 520px) {
+  .plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo img {
+    width: 120px;
+  }
+}
+@media (max-width: 375px) {
+  .plus-banner .shopify-banner .sbanner-text .plus-btn-main {
+    margin-top: 40px;
+  }
+}
+.plus-banner .shopify-banner .sbanner-text .plus-btn-main .plus-btn {
   border: 2px solid #000000;
   border-radius: 12px;
   font-weight: 600;
@@ -7033,7 +7066,7 @@ textarea {
   padding: 20px 40px;
 }
 @media (max-width: 520px) {
-  .plus-banner .shopify-banner .sbanner-text .plus-btn {
+  .plus-banner .shopify-banner .sbanner-text .plus-btn-main .plus-btn {
     font-size: 15px;
     padding: 12px 15px;
   }
@@ -7115,14 +7148,25 @@ textarea {
   }
 }
 
+@media (max-width: 768px) {
+  .clients-shopify {
+    background: #F4F4F4;
+    padding-top: 29px;
+  }
+}
 .clients-shopify .shopify-plus-clients p {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients {
     display: flex;
     overflow-x: auto;
+  }
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main {
+    min-width: 312px;
   }
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
@@ -7141,50 +7185,56 @@ textarea {
   }
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
-  width: 40%;
+  width: 50%;
+  position: relative;
 }
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
     width: 100%;
-  }
-}
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image {
-  height: 400px;
-  width: 400px;
-}
-@media (max-width: 1200px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image {
-    height: 250px;
-    width: 300px;
+    padding-bottom: 100%;
   }
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+  grid-area: none;
+  flex: none;
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
-  width: 60%;
+  width: 50%;
 }
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
     width: 100%;
-    margin-top: 17%;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-logo {
-    height: auto;
-    width: 208px;
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
   }
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 150%;
   color: #000000;
   margin: 24px 0;
   padding-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
+    font-size: 16px;
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
@@ -7197,16 +7247,14 @@ textarea {
   }
 }
 .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
-  background: #FF7121;
   border: 2px solid #000000;
   border-radius: 12px;
   font-weight: 600;
   font-size: 20px;
-  color: #fff;
   text-decoration: none;
   padding: 20px 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
     padding: 12px 15px;
     font-size: 18px;
@@ -7225,10 +7273,20 @@ textarea {
   padding-top: 60px;
   width: 75%;
 }
+@media (max-width: 1320px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+    padding-top: 40px;
+  }
+}
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
     padding: 6px 0;
-    width: 100%;
     font-size: 15px;
   }
 }
@@ -8608,6 +8666,7 @@ textarea {
 .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
   display: inline-block;
   border: 1px solid #000;
+  border-radius: 10px;
   min-width: 413px;
   padding: 55px 21px 50px 22px;
 }

@@ -18,10 +18,11 @@
         "plusheading": "Shopify Plus Agency",
         "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
         "logoImage": "shopify:\/\/shop_images\/image_118.svg",
+        "img_link": "https:\/\/www.shopify.com\/in\/plus\/partners\/shoptrade",
         "plusBtn": "Let’s Talk",
         "btn-color": "#ffffff",
         "btn-bg-color": "#ff7121",
-        "plusBtnlink": "https:\/\/kenwheeler.github.io\/slick\/",
+        "plusBtnlink": "https:\/\/shoptrade.co\/pages\/contact",
         "loclogo": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"24\" viewbox=\"0 0 20 24\" fill=\"none\">\n<path d=\"M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
         "locheading": "Location",
         "locsubheading": "Florida , USA"
@@ -34,12 +35,14 @@
           "type": "cardType",
           "settings": {
             "color-change": true,
-            "vertical_alignment": "row-reverse",
+            "vertical_alignment": "row",
             "cimage": "shopify:\/\/shop_images\/image_19.png",
-            "clogo": "shopify:\/\/shop_images\/image_55_538b9b73-0b40-4e4b-923e-65055a26f03b.png",
+            "clogo": "shopify:\/\/shop_images\/logo-hata_200abf19-53e1-4b97-9985-8fe2ed315802.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "https:\/\/www.google.com\/",
+            "btn_color": "#FFFFFF",
+            "btn_bg": "#FF7121",
+            "cBtnlink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "ctestimonial": "\"They delivered on what they said they would,   and they were quick.\"",
             "cname": "~ Marcus Lara, Co-Founder"
           }
@@ -50,10 +53,12 @@
             "color-change": false,
             "vertical_alignment": "row-reverse",
             "cimage": "shopify:\/\/shop_images\/image_24.png",
-            "clogo": "shopify:\/\/shop_images\/image_157.png",
+            "clogo": "shopify:\/\/shop_images\/logo-synchro_81552f61-48ab-44ba-b2cc-e37f3f6eb26c.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "https:\/\/www.google.com\/",
+            "btn_color": "#fff",
+            "btn_bg": "#FF7121",
+            "cBtnlink": "https:\/\/besynchro.com\/",
             "ctestimonial": "\"Their communication and responsiveness   are impressive in the workflow.\"",
             "cname": "~ Graham Ryan, Founder\/CEO"
           }
@@ -67,7 +72,9 @@
             "clogo": "shopify:\/\/shop_images\/image_24_2.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "https:\/\/www.google.com\/",
+            "btn_color": "#fff",
+            "btn_bg": "#FF7121",
+            "cBtnlink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "ctestimonial": "“They’ve done a really good job. They were on top   of things from the get-go.”",
             "cname": "~ Marc Heuberger, CMO"
           }
@@ -79,8 +86,8 @@
         "142ce6d8-e2c4-48c0-9ca5-6ce42026d569"
       ],
       "settings": {
-        "parent-margin-btm": 40,
-        "parent-margin-btm-mob": 1,
+        "parent-margin-btm": 80,
+        "parent-margin-btm-mob": 48,
         "heading": "Our Clients"
       }
     },
@@ -195,7 +202,7 @@
         "slides-margin-btm": 73,
         "slides-margin-btm-mob": 27,
         "adj-img-txt": "row-reverse",
-        "online-store-img": "shopify:\/\/shop_images\/Vector_10.png",
+        "online-store-img": "shopify:\/\/shop_images\/Group_1885.svg",
         "talk-store-heading": "Ready to take your online store to the next level?",
         "heading-font-size": 64,
         "heading-font-size-mob": 42,
@@ -206,7 +213,7 @@
         "lets-talk-btn": "Let’s Talk",
         "btn-font-size": 20,
         "btn-font-size-mob": 15,
-        "talk-btn-src": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?node-id=1057-4541&t=c1c6MhOAuPHOVfH0-0",
+        "talk-btn-src": "https:\/\/shoptrade.co\/pages\/contact",
         "btn-txt-color": "#ffffff",
         "btn-bg-color": "#ff7121"
       }

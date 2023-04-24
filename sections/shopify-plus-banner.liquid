@@ -22,11 +22,28 @@
         <p class="sbanner-paragraph">{{ section.settings.plusparagraph }}</p>
         {% if section.settings.logoImage %}
           <div class="plus-logo">
-            <img class="sbanner-logo" src="{{section.settings.logoImage | image_url }}" alt="shopify plus logo">
+            <div class="sbanner-logo">
+            <a href="{{ section.settings.img_link }}"> <img src="{{section.settings.logoImage | image_url }}" alt="shopify plus logo"> </a>
+            </div>
+            <div class="rating sbanner-logo-rating">
+              <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+              <div
+                class="clutch-widget"
+                data-url="https://widget.clutch.co"
+                data-widget-type="2"
+                data-height="45"
+                data-nofollow="true"
+                data-expandifr="true"
+                data-scale="100"
+                data-clutchcompany-id="1012274"
+              ></div>
+            </div>
           </div>
         {% endif %}
         {% if section.settings.plusBtnlink %}
-          <a href="{{ section.settings.plusBtnlink }}" class="plus-btn"> {{ section.settings.plusBtn }} </a>
+          <div class="plus-btn-main">
+           <a href="{{ section.settings.plusBtnlink }}" class="plus-btn"> {{ section.settings.plusBtn }} </a>
+          </div>
         {% endif %}
         <div class="slocation">
           {% if section.settings.loclogo %}
@@ -121,6 +138,11 @@
       "id": "logoImage",
       "type": "image_picker",
       "label": "logo"
+    },
+    {
+      "type":"url",
+      "id":"img_link",
+      "label":"Add a link to logo"
     },
     {
       "type": "text",

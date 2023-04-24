@@ -2,6 +2,8 @@
   .clients-shopify{
      margin-bottom:{{ section.settings.parent-margin-btm }}px;
    }
+  
+   
    @media(max-width:768px){
      .clients-shopify{
        margin-bottom:{{ section.settings.parent-margin-btm-mob }}px;
@@ -33,7 +35,7 @@
               <p class="cpara">{{ block.settings.cpara }}</p>
               <div class="client-text-btn">
                 {% if block.settings.cBtnlink %}
-                  <a href="{{ block.settings.cBtnlink}}" class="client-btn"> {{ block.settings.cBtn }} </a>
+                  <a href="{{ block.settings.cBtnlink}}" class="client-btn" style="color:{{ block.settings.btn_color }}; background:{{ block.settings.btn_bg }}"> {{ block.settings.cBtn }} </a>
                 {% endif %}
               </div>
               <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
@@ -41,7 +43,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     {% endfor %}
   </div>
 </section>
@@ -123,6 +125,18 @@
           "id": "cBtn",
           "label": "Button text"
         },
+        {
+          "type": "color",
+          "id": "btn_color",
+          "label": "Button color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "btn_bg",
+          "label": "Button background",
+          "default": "#FF7121"
+        },      
         {
           "type": "url",
           "id": "cBtnlink",
