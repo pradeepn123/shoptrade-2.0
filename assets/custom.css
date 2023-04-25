@@ -7160,41 +7160,49 @@ textarea {
 }
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients {
-    display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 769px) {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper {
+    /* swiper is disabled at this breakpoint */
+    /* wrap slides  */
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main {
     min-width: 312px;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client {
   display: flex;
   column-gap: 80px;
+  margin: 40px 0;
 }
 @media (max-width: 1320px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client {
     column-gap: 50px;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client {
     display: unset;
     margin-right: 15px;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-image-main {
   width: 50%;
   position: relative;
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-image-main {
     width: 100%;
     padding-bottom: 100%;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-image-main .client-image img {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-image-main .client-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -7207,22 +7215,31 @@ textarea {
   grid-area: none;
   flex: none;
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text {
   width: 50%;
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text {
     width: 100%;
   }
 }
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-logo {
+  max-width: fit-content;
+}
+@media (min-width: 769px) {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-logo {
+    width: 197px;
+    height: 30px;
+  }
+}
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-logo img {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-logo img {
     width: 100%;
     height: 100%;
     object-fit: none;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .cpara {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
@@ -7231,22 +7248,22 @@ textarea {
   padding-bottom: 20px;
 }
 @media (max-width: 1024px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .cpara {
     font-size: 16px;
     padding-bottom: 0;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .cpara {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .cpara {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-btn {
     margin: 24px 0;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
   border: 2px solid #000000;
   border-radius: 12px;
   font-weight: 600;
@@ -7255,17 +7272,17 @@ textarea {
   padding: 20px 40px;
 }
 @media (max-width: 1024px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
     padding: 12px 15px;
     font-size: 18px;
   }
 }
 @media (max-width: 520px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-btn .client-btn {
     font-size: 15px;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .ctestimonial {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -7274,23 +7291,23 @@ textarea {
   width: 75%;
 }
 @media (max-width: 1320px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .ctestimonial {
     width: 100%;
     font-size: 18px;
   }
 }
 @media (max-width: 1024px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .ctestimonial {
     padding-top: 40px;
   }
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .ctestimonial {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .ctestimonial {
     padding: 6px 0;
     font-size: 15px;
   }
 }
-.clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-name {
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-name {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -7298,7 +7315,7 @@ textarea {
   margin: 5px 0;
 }
 @media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .plus-client-main .plus-client .client-text .client-name {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-name {
     font-size: 12px;
     margin: 0;
   }
@@ -7309,7 +7326,7 @@ textarea {
 .clients-shopify .shopify-plus-clients .chnage-bg-section .plus-client {
   width: 100%;
   padding: 40px 0;
-  margin: 40px 0;
+  margin: 0 !important;
 }
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .chnage-bg-section .plus-client {
@@ -8539,11 +8556,6 @@ textarea {
   width: 100%;
   margin-left: auto;
 }
-@media (max-width: 768px) {
-  .lets-talk-store-section .lets-talk-store .lets-talk-store-img {
-    height: 343px;
-  }
-}
 .lets-talk-store-section .lets-talk-store .lets-talk-store-img img {
   width: 100%;
   height: 100%;
@@ -8557,9 +8569,15 @@ textarea {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 1024px) {
+  .lets-talk-store-section .lets-talk-store-text {
+    padding-right: 40px;
+  }
+}
 @media (max-width: 768px) {
   .lets-talk-store-section .lets-talk-store-text {
     width: 100%;
+    padding-right: 0;
   }
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
@@ -8613,6 +8631,7 @@ textarea {
 
 .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading {
   padding-bottom: 24px;
+  max-width: fit-content;
 }
 .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
   margin: 0;
@@ -8620,16 +8639,19 @@ textarea {
   font-size: 64px;
   line-height: 64px;
   font-weight: 700;
+  width: 457px;
 }
 @media (max-width: 768px) {
   .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
     font-size: 52px;
-    line-height: 42px;
+    line-height: 52px;
   }
 }
 @media (max-width: 520px) {
   .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
     font-size: 42px;
+    line-height: 42px;
+    width: unset;
   }
 }
 .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para {
@@ -8708,4 +8730,88 @@ textarea {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.static_brands_logos .brands_logos_contianer .brands_logos_heading h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+@media (max-width: 520px) {
+  .static_brands_logos .brands_logos_contianer .brands_logos_heading h4 {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 30px;
+  }
+}
+.static_brands_logos .brands_logos_contianer .brands_logos_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  row-gap: 60px;
+  column-gap: 80px;
+}
+@media (max-width: 520px) {
+  .static_brands_logos .brands_logos_contianer .brands_logos_main {
+    row-gap: 30px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+.static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos {
+  height: 35px;
+  width: 165px;
+}
+@media (max-width: 520px) {
+  .static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos {
+    width: 101px;
+  }
+}
+.static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos img {
+  height: 100%;
+  width: 100%;
+}
+
+.brands_logo_marquee_main .brands_logo_marquee_head {
+  border: none;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .brands_logo_marquee_main .brands_logo_marquee_head {
+    margin-bottom: 30px;
+  }
+}
+.brands_logo_marquee_main .brands_logo_marquee_head .brands_logo_marquee_heading {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 520px) {
+  .brands_logo_marquee_main .brands_logo_marquee_head .brands_logo_marquee_heading {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+.brands_logo_marquee_main .brands_logo_marquee_wrapper {
+  column-gap: 50px;
+}
+@media (max-width: 1024px) {
+  .brands_logo_marquee_main .brands_logo_marquee_wrapper {
+    column-gap: 30px;
+  }
+}
+.brands_logo_marquee_main .brands_logo_marquee_wrapper .brands-logos-slider {
+  height: auto !important;
+  width: fit-content !important;
+}
+.brands_logo_marquee_main .brands_logo_marquee_wrapper .brands-logos-slider img {
+  height: auto;
+  width: fit-content;
+  object-position: unset;
+  object-fit: scale-down;
+  border: 0;
 }

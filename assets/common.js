@@ -950,3 +950,81 @@ gridItem.addEventListener('mousemove', (e) => {
   console.log(scrollDelta);
 }); 
 
+
+ 
+// the image sliding logos
+$(document).ready(function () {
+
+  let aboutCulterTop = new Swiper('.js-top-image-sliders', {
+  speed: 12000,
+  autoplay: true,
+  loop: true,
+  slidesPerView: 5,
+  allowTouchMove: false,
+ 
+  pauseOnMouseEnter:false,
+      
+      breakpoints: {
+          1920: {
+              slidesPerView: 3,
+              spaceBetween: 30
+          },
+          1028: {
+              slidesPerView: 2,
+              spaceBetween: 30
+          },
+          480: {
+              slidesPerView: 1.3,
+              spaceBetween: 10
+          }
+      }
+  });
+});
+
+
+// swiper our clients  brakpoint 
+const breakpoint = window.matchMedia( '(min-width:769px)' );
+
+  let mySwiper;
+  const breakpointChecker = function() {
+    console.log(breakpoint)
+    if ( breakpoint.matches === true ) {
+
+	  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+
+	
+	  return;
+
+      } else if ( breakpoint.matches === false ) {
+
+        return enableSwiper();
+
+      }
+
+  };
+  
+
+  const enableSwiper = function() {
+
+    mySwiper = new Swiper ('.js-top-image-sliders-mobile', {
+      speed: 12000,
+      autoplay: true,
+      loop: true,
+      slidesPerView: 2,
+      allowTouchMove: false,
+     
+      pauseOnMouseEnter:false,
+      breakpoints: {
+        520: {
+            slidesPerView: 1,
+        },
+      }
+
+    });
+
+  };
+
+  breakpoint.addListener(breakpointChecker);
+
+  breakpointChecker();
+/* IIFE end */

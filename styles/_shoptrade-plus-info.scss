@@ -2,6 +2,7 @@
     .shoptrade-plus-info-main {
             .shoptrade-plus-info-heading {
                 padding-bottom: 24px;
+                max-width: fit-content;
 
                 h3 {
                     margin: 0;
@@ -9,16 +10,17 @@
                     font-size: 64px;
                     line-height: 64px;
                     font-weight: 700;
+                    width: 457px;
 
                     @media(max-width:768px) {
-                        font-size: 52px;
-                        line-height: 42px;
-
+                        font-size: 52px;  
+                        line-height: 52px;  
                     }
 
                     @media(max-width:520px) {
                         font-size: 42px;
-
+                        line-height: 42px;
+                        width: unset;
                     }
 
                 }

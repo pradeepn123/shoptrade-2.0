@@ -1,0 +1,79 @@
+{% style %}
+  .static_brands_logos{
+     margin-bottom:{{ section.settings.parent-margin-btm }}px;
+   }
+
+
+   @media(max-width:768px){
+     .static_brands_logos{
+       margin-bottom:{{ section.settings.parent-margin-btm-mob }}px;
+    }
+   }
+{% endstyle %}
+<section class="static_brands_logos">
+  <div class="container">
+    <div class="brands_logos_contianer">
+        <div class="brands_logos_heading">
+            <h4> {{ section.settings.brands_logos_heading }} </h4>
+        </div>
+    <div class="brands_logos_main">
+      {% for block in section.blocks %}
+        <div class="brands_logos">
+          <img src="{{ block.settings.brands_logos | img_url:'master' }}">
+        </div>
+      {% endfor %}
+    </div>
+</div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "brands Logos",
+  "settings": [
+    {
+      "type": "range",
+      "id": "parent-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding Bottom",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "parent-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Paadding btm Mob",
+      "default": 1
+    },
+    {
+        "type":"text",
+        "id":"brands_logos_heading",
+        "label":"Heading"
+    }
+  ],
+  "blocks":[
+    {
+        "name":"brand logo",
+        "type":"brand_logo",
+        "settings":[
+            {
+                "id":"brands_logos",
+                "label":"Add a logo",
+                "type":"image_picker"
+            }
+        ]
+    
+    }
+],
+  "presets": [
+    {
+      "name": "brands logos"
+    }
+  ]
+}
+{% endschema %}

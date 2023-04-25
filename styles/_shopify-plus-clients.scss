@@ -1,166 +1,189 @@
 .clients-shopify {
-    @media(max-width:768px){
-        background:#F4F4F4;
+    @media(max-width:768px) {
+        background: #F4F4F4;
         padding-top: 29px;
     }
+
     .shopify-plus-clients {
+        
         p {
             padding: 0;
             margin: 0;
         }
 
         @media(max-width:768px) {
-            display: flex;
-            overflow-x: auto;
+            // display: flex;
+            overflow-x: hidden;
         }
 
-        .plus-client-main {
-            @media(max-width:768px) {
-                min-width: 312px;
+        .swiper-wrapper {
+            @media (min-width: 769px) {
+
+                /* swiper is disabled at this breakpoint */
+                /* wrap slides  */
+                flex-wrap: wrap;
+
+                width: 100%;
             }
 
-            .plus-client {
 
-                display: flex;
-                column-gap: 80px;
-
-                @media(max-width:1320px) {
-                    column-gap: 50px;
-                }
-
+            .plus-client-main {
                 @media(max-width:768px) {
-                    display: unset;
-                    margin-right: 15px;
+                    min-width: 312px;
                 }
 
-                .client-image-main {
-                    width: 50%;
-                    position: relative;
+                .plus-client {
 
-                    @media (max-width:768px) {
-                        width: 100%;
-                        padding-bottom: 100%;
+                    display: flex;
+                    column-gap: 80px;
+                    margin: 40px 0;
+
+                    @media(max-width:1320px) {
+                        column-gap: 50px;
                     }
-
-                    .client-image {
-                        img {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
-                            object-position: top;
-                            grid-area: none;
-                            flex: none;
-                        }
-                    }
-                }
-
-                .client-text {
-                    width: 50%;
 
                     @media(max-width:768px) {
-                        width: 100%;
+                        display: unset;
+                        margin-right: 15px;
                     }
 
-                    .client-text-logo {
-                        // @media(min-width:767px) {
-                        //     width: 197px;
-                        //     height: 30px;
-                        // }
+                    .client-image-main {
+                        width: 50%;
+                        position: relative;
 
-                        img {
-                            @media(max-width:768px) {
+                        @media (max-width:768px) {
+                            width: 100%;
+                            padding-bottom: 100%;
+                        }
+
+                        .client-image {
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
                                 width: 100%;
                                 height: 100%;
-                                object-fit: none;
+                                object-fit: contain;
+                                object-position: top;
+                                grid-area: none;
+                                flex: none;
+                                // @media(min-width:768px){
+                                //     width: 100%;
+                                // }
                             }
                         }
                     }
 
-                    .cpara {
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 150%;
-                        color: #000000;
-                        margin: 24px 0;
-                        padding-bottom: 20px;
-
-                        @media(max-width:1024px) {
-                            font-size: 16px;
-                            padding-bottom: 0;
-                        }
+                    .client-text {
+                        width: 50%;
 
                         @media(max-width:768px) {
-                            display: none;
+                            width: 100%;
                         }
 
-                    }
+                        .client-text-logo {
+                            max-width: fit-content;
+                            @media(min-width:769px) {
+                                width: 197px;
+                                height: 30px;
+                                
+                            }
 
-                    .client-text-btn {
-                        @media(max-width:768px) {
-                            margin: 24px 0;
+                            img {
+                                @media(max-width:768px) {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: none;
+                                }
+                            }
                         }
 
-                        .client-btn {
-                            border: 2px solid #000000;
-                            border-radius: 12px;
-                            font-weight: 600;
+                        .cpara {
+                            font-weight: 400;
                             font-size: 20px;
-                            text-decoration: none; 
-                            padding: 20px 40px;
+                            line-height: 150%;
+                            color: #000000;
+                            margin: 24px 0;
+                            padding-bottom: 20px;
 
                             @media(max-width:1024px) {
-                                padding: 12px 15px;
+                                font-size: 16px;
+                                padding-bottom: 0;
+                            }
+
+                            @media(max-width:768px) {
+                                display: none;
+                            }
+
+                        }
+
+                        .client-text-btn {
+                            @media(max-width:768px) {
+                                margin:24px 0;
+                            }
+
+                            .client-btn {
+                                border: 2px solid #000000;
+                                border-radius: 12px;
+                                font-weight: 600;
+                                font-size: 20px;
+                                text-decoration: none;
+                                padding: 20px 40px;
+
+                                @media(max-width:1024px) {
+                                    padding: 12px 15px;
+                                    font-size: 18px;
+                                }
+
+                                @media (max-width:520px) {
+                                    font-size: 15px;
+
+                                }
+                            }
+                        }
+
+                        .ctestimonial {
+
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 150%;
+                            color: #000000;
+                            padding-top: 60px;
+                            width: 75%;
+
+                            @media(max-width:1320px) {
+                                width: 100%;
                                 font-size: 18px;
                             }
 
-                            @media (max-width:520px) {
-                                font-size: 15px;
+                            @media(max-width:1024px) {
+                                padding-top: 40px;
+                            }
 
+                            @media(max-width:768px) {
+                                padding: 6px 0;
+                                font-size: 15px;
+                            }
+                        }
+
+                        .client-name {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #000000;
+                            margin: 5px 0;
+
+                            @media(max-width:768px) {
+                                font-size: 12px;
+                                margin: 0;
                             }
                         }
                     }
-
-                    .ctestimonial {
-
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 150%;
-                        color: #000000;
-                        padding-top: 60px;
-                        width: 75%;
-                        @media(max-width:1320px){
-                            width: 100%;
-                            font-size: 18px;
-                        }
-                        @media(max-width:1024px){
-                            padding-top: 40px;
-                        }
-                        @media(max-width:768px) {
-                            padding: 6px 0;
-                            font-size: 15px;
-                        }
-                    }
-
-                    .client-name {
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 150%;
-                        color: #000000;
-                        margin: 5px 0;
-
-                        @media(max-width:768px) {
-                            font-size: 12px;
-                            margin: 0;
-                        }
-                    }
                 }
-            }
 
+            }
         }
 
         .chnage-bg-section {
@@ -169,7 +192,7 @@
             .plus-client {
                 width: 100%;
                 padding: 40px 0;
-                margin: 40px 0;
+                margin: 0 !important;
 
                 @media (max-width:768px) {
                     margin: 0;

@@ -40,8 +40,8 @@
             "clogo": "shopify:\/\/shop_images\/logo-hata_200abf19-53e1-4b97-9985-8fe2ed315802.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "btn_color": "#FFFFFF",
-            "btn_bg": "#FF7121",
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "ctestimonial": "\"They delivered on what they said they would,   and they were quick.\"",
             "cname": "~ Marcus Lara, Co-Founder"
@@ -56,8 +56,8 @@
             "clogo": "shopify:\/\/shop_images\/logo-synchro_81552f61-48ab-44ba-b2cc-e37f3f6eb26c.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "btn_color": "#fff",
-            "btn_bg": "#FF7121",
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/besynchro.com\/",
             "ctestimonial": "\"Their communication and responsiveness   are impressive in the workflow.\"",
             "cname": "~ Graham Ryan, Founder\/CEO"
@@ -72,8 +72,8 @@
             "clogo": "shopify:\/\/shop_images\/image_24_2.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "btn_color": "#fff",
-            "btn_bg": "#FF7121",
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "ctestimonial": "“They’ve done a really good job. They were on top   of things from the get-go.”",
             "cname": "~ Marc Heuberger, CMO"
@@ -128,6 +128,60 @@
         "st-pg-para": "<p>Shopify Plus is the only cost-effective enterprise platform that’s built for change. Start selling online now.<\/p>"
       }
     },
+    "fee4059c-fed9-469a-b828-742ee68b89f1": {
+      "type": "brands_logos",
+      "blocks": {
+        "e18da0d6-1952-472c-a8a4-4c3f12ac005c": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_13.svg"
+          }
+        },
+        "aec88d7a-38f5-41b7-8c54-4baeeb01a0b0": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_12.svg"
+          }
+        },
+        "37c937ec-fbd2-41d1-b321-7d789174e769": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_11.svg"
+          }
+        },
+        "1f33f0a7-70d3-4fe6-8dbe-ecc5990e6320": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_10.svg"
+          }
+        },
+        "24a0be28-cc7c-4744-85c8-0e0b6eb58e8e": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_9.svg"
+          }
+        },
+        "3c71a690-3ad7-4780-a922-166a7c24cabf": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Frame.svg"
+          }
+        }
+      },
+      "block_order": [
+        "e18da0d6-1952-472c-a8a4-4c3f12ac005c",
+        "aec88d7a-38f5-41b7-8c54-4baeeb01a0b0",
+        "37c937ec-fbd2-41d1-b321-7d789174e769",
+        "1f33f0a7-70d3-4fe6-8dbe-ecc5990e6320",
+        "24a0be28-cc7c-4744-85c8-0e0b6eb58e8e",
+        "3c71a690-3ad7-4780-a922-166a7c24cabf"
+      ],
+      "settings": {
+        "parent-margin-btm": 82,
+        "parent-margin-btm-mob": 63,
+        "brands_logos_heading": "Brands that use Shopify plus"
+      }
+    },
     "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa": {
       "type": "testimonials-video",
       "blocks": {
@@ -162,6 +216,53 @@
         "vedioHeading": "Client Testimonials",
         "testi-heading-size": 64,
         "testi-heading-size-mob": 42
+      }
+    },
+    "27460630-fad5-498b-9162-c52858e29a98": {
+      "type": "brands_logos_marquee",
+      "blocks": {
+        "f171525d-b3a8-4cd8-9c1c-0baa77a7b825": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_8.png"
+          }
+        },
+        "094ecda4-97c4-4ddd-820f-3f08ad317fa8": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_7_6cadbe38-15f8-499e-9de6-f7c4128379b5.png"
+          }
+        },
+        "7e438334-52e4-440a-abdd-9ce0463187d6": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_6_9f56ed3f-2f8f-48e4-adad-e3ed2ddfa80a.png"
+          }
+        },
+        "6813a752-b8b7-4d92-a442-b86441a5af49": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_5_433644ab-0d8e-4a09-a77f-091709dc7889.png"
+          }
+        },
+        "d466672f-0ee2-4e0e-a1bb-a2ecbaa7733e": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Frame.png"
+          }
+        }
+      },
+      "block_order": [
+        "f171525d-b3a8-4cd8-9c1c-0baa77a7b825",
+        "094ecda4-97c4-4ddd-820f-3f08ad317fa8",
+        "7e438334-52e4-440a-abdd-9ce0463187d6",
+        "6813a752-b8b7-4d92-a442-b86441a5af49",
+        "d466672f-0ee2-4e0e-a1bb-a2ecbaa7733e"
+      ],
+      "settings": {
+        "parent-margin-btm": 79,
+        "parent-margin-btm-mob": 53,
+        "heading": "Our Partners"
       }
     },
     "b1a74954-2e63-4d11-8fa1-ae5322486e96": {
@@ -224,7 +325,9 @@
     "31cdad78-ce9a-482b-8ea1-447ec0d8957e",
     "0e611b99-0958-4b25-beb7-4ebf30e7060f",
     "22806222-a9ec-435d-bc96-c9bf30a6d988",
+    "fee4059c-fed9-469a-b828-742ee68b89f1",
     "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa",
+    "27460630-fad5-498b-9162-c52858e29a98",
     "b1a74954-2e63-4d11-8fa1-ae5322486e96",
     "cc3e4c18-c797-46e7-8653-5e90bd32e731"
   ]
