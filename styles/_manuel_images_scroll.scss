@@ -18,6 +18,10 @@
       white-space: nowrap;
       cursor: grab;
 
+      &:active{
+        cursor: grabbing;
+      }
+
       &::-webkit-scrollbar {
         width: 1px;
       }
@@ -26,14 +30,15 @@
       .manuel-img-scroll {
         display: inline-block;
         height: auto;
-        width: 386px;
-        margin-right: 12px;
+        width: fit-content;
+        margin-right: 13px;
 
-        @media(max-width:768px) {
-          width: 240px;
-        }
-        @media(max-width:520px) {
-          width: 200px;
+        // @media(max-width:768px) {
+        //   width: 240px;
+        // }
+        @media(max-width:520px) { 
+          // width: 200px;
+          margin-right: 8px;
         }
 
         img {

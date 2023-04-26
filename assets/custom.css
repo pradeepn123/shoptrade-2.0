@@ -6973,6 +6973,11 @@ textarea {
   width: 50%;
   margin-right: 20px;
 }
+@media (max-width: 1320px) {
+  .plus-banner .shopify-banner .sbanner-text {
+    margin-right: 20px;
+  }
+}
 @media (max-width: 768px) {
   .plus-banner .shopify-banner .sbanner-text {
     width: 100%;
@@ -6986,6 +6991,12 @@ textarea {
   letter-spacing: -0.03em;
   color: #000000;
   margin-bottom: 32px;
+  max-width: 650px;
+}
+@media (max-width: 1320px) {
+  .plus-banner .shopify-banner .sbanner-text .sbanner-heading {
+    max-width: unset;
+  }
 }
 @media (max-width: 1024px) {
   .plus-banner .shopify-banner .sbanner-text .sbanner-heading {
@@ -7005,10 +7016,12 @@ textarea {
   line-height: 150%;
   color: #000000;
   margin-bottom: 60px;
+  max-width: 569px;
 }
 @media (max-width: 1024px) {
   .plus-banner .shopify-banner .sbanner-text .sbanner-paragraph {
     margin-bottom: 30px;
+    width: unset;
   }
 }
 @media (max-width: 520px) {
@@ -7028,12 +7041,12 @@ textarea {
     column-gap: 25px;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 425px) {
   .plus-banner .shopify-banner .sbanner-text .plus-logo {
     display: unset;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo {
     margin-bottom: 20px;
   }
@@ -7049,10 +7062,10 @@ textarea {
 }
 @media (max-width: 520px) {
   .plus-banner .shopify-banner .sbanner-text .plus-logo .sbanner-logo img {
-    width: 120px;
+    width: 148px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .plus-banner .shopify-banner .sbanner-text .plus-btn-main {
     margin-top: 40px;
   }
@@ -7060,7 +7073,7 @@ textarea {
 .plus-banner .shopify-banner .sbanner-text .plus-btn-main .plus-btn {
   border: 2px solid #000000;
   border-radius: 12px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
   text-decoration: none;
   padding: 20px 40px;
@@ -7068,17 +7081,24 @@ textarea {
 @media (max-width: 520px) {
   .plus-banner .shopify-banner .sbanner-text .plus-btn-main .plus-btn {
     font-size: 15px;
-    padding: 12px 15px;
+    padding: 17px 31px 16px 31px;
+    border: 1.5px solid #000;
+    border-radius: 9px;
   }
 }
 .plus-banner .shopify-banner .sbanner-text .slocation {
   display: flex;
-  margin-top: 40px;
+  margin-top: 58px;
   border-top: 1px solid #DEDEDE;
   padding-top: 20px;
 }
 .plus-banner .shopify-banner .sbanner-text .slocation .loctext {
   padding-left: 10px;
+}
+@media (max-width: 520px) {
+  .plus-banner .shopify-banner .sbanner-text .slocation .loctext {
+    padding-left: 17px;
+  }
 }
 .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locmain {
   font-family: "Inter";
@@ -7093,6 +7113,7 @@ textarea {
 @media (max-width: 520px) {
   .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locmain {
     font-size: 16px;
+    margin-bottom: 12px;
   }
 }
 .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locsubtext {
@@ -7112,6 +7133,12 @@ textarea {
 .plus-banner .shopify-banner .sbanner-video {
   width: 50%;
   margin-left: auto;
+  padding-left: 12px;
+}
+@media (max-width: 1320px) {
+  .plus-banner .shopify-banner .sbanner-video {
+    padding-left: unset;
+  }
 }
 @media (max-width: 768px) {
   .plus-banner .shopify-banner .sbanner-video {
@@ -7122,9 +7149,14 @@ textarea {
 .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
   border: 0;
 }
-@media (max-width: 1400px) and (min-width: 1023px) {
+@media (min-width: 767px) {
   .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
-    height: 80%;
+    height: 60%;
+  }
+}
+@media (min-width: 1023px) {
+  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container {
+    height: 95%;
   }
 }
 .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player {
@@ -7132,14 +7164,14 @@ textarea {
 }
 .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
   position: absolute !important;
-  top: 35% !important;
-  left: 40% !important;
+  top: 40% !important;
+  left: 46% !important;
   cursor: pointer !important;
 }
 @media (max-width: 768px) {
   .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
-    top: 40% !important;
-    left: 45% !important;
+    top: 42% !important;
+    left: 48% !important;
   }
 }
 @media (max-width: 520px) {
@@ -7320,6 +7352,9 @@ textarea {
     font-size: 12px;
     margin: 0;
   }
+}
+.clients-shopify .shopify-plus-clients .swiper-wrapper .swiper-slide {
+  transition: transform 0.3s ease-out;
 }
 .clients-shopify .shopify-plus-clients .chnage-bg-section {
   background: #F4F4F4;
@@ -8424,8 +8459,8 @@ textarea {
   object-position: top;
 }
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .Logo-text-testimonial-imgae {
-  height: 40px;
-  width: 243px;
+  height: auto;
+  width: fit-content;
   margin: 30px 0 16px 0;
 }
 @media (max-width: 768px) {
@@ -8436,6 +8471,7 @@ textarea {
 }
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .Logo-text-testimonial-imgae img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .about-value__cards .testimonial-video__card h3,
@@ -8480,23 +8516,21 @@ textarea {
   white-space: nowrap;
   cursor: grab;
 }
+.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll:active {
+  cursor: grabbing;
+}
 .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll::-webkit-scrollbar {
   width: 1px;
 }
 .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll {
   display: inline-block;
   height: auto;
-  width: 386px;
-  margin-right: 12px;
-}
-@media (max-width: 768px) {
-  .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll {
-    width: 240px;
-  }
+  width: fit-content;
+  margin-right: 13px;
 }
 @media (max-width: 520px) {
   .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll {
-    width: 200px;
+    margin-right: 8px;
   }
 }
 .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll img {
@@ -8525,14 +8559,14 @@ textarea {
   }
 }
 .lets-talk-store-section .lets-talk-store .lets-talk-store-img {
-  height: 343px;
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
   margin-left: auto;
 }
 .lets-talk-store-section .lets-talk-store .lets-talk-store-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .lets-talk-store-section .lets-talk-store-text {
   width: 70%;
@@ -8556,18 +8590,22 @@ textarea {
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
   font-weight: 700;
   padding-bottom: 9px;
+  width: 795px;
+  height: 128px;
   line-height: 64px;
 }
 @media (max-width: 1024px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
     line-height: 42px;
+    height: unset;
+    width: unset;
   }
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
   font-weight: 400;
   color: #000000;
   line-height: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 @media (max-width: 768px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
@@ -8754,6 +8792,11 @@ textarea {
   margin: 0 10px;
   background-color: #ccc;
   cursor: pointer;
+}
+@media (min-width: 1400px) {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet {
+    display: none;
+  }
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF7121;

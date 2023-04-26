@@ -982,7 +982,7 @@ $(document).ready(function () {
 });
 
 
-// swiper our clients  brakpoint 
+// swiper our clients section and  destroying swipper @ more than 769px
 const breakpoint = window.matchMedia( '(min-width:769px)' );
 
   let mySwiper;
@@ -1028,21 +1028,6 @@ const breakpoint = window.matchMedia( '(min-width:769px)' );
   breakpointChecker();
 
   // active slides shoptrade-info
-//   const breakpointa = window.matchMedia('(min-width: 769px)');
-// let mySwipera;
-
-// const breakpointCheckera = function() {
-//   if (breakpointa.matches === true) {
-//     if (mySwipera !== undefined) {
-//       mySwipera.destroy(true, true);
-//     }
-//     return;
-//   } else if (breakpointa.matches === false) {
-//     enableSwipera();
-//   }
-// };
-
-// const enableSwipera = function() {
  var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -1067,10 +1052,7 @@ const breakpoint = window.matchMedia( '(min-width:769px)' );
 
     }
   });
-// };
 
-// breakpointa.addListener(breakpointCheckera);
-// breakpointCheckera();
 
 
 

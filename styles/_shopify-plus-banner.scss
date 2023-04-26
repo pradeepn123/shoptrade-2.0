@@ -11,6 +11,10 @@
         .sbanner-text {
             width: 50%;
             margin-right: 20px;
+            @media (max-width:1320px){
+                margin-right: 20px;
+                // width: 50%;
+            }
 
             @media(max-width:768px) {
                 width: 100%;
@@ -24,6 +28,12 @@
                 letter-spacing: -0.03em;
                 color: #000000;
                 margin-bottom: 32px;
+                max-width: 650px;
+                // margin-right: 33.5px;
+                @media (max-width:1320px){
+                    max-width: unset;
+                    // margin-right: 20px;
+                }
 
                 @media(max-width:1024px) {
                     font-size: 52px;
@@ -42,9 +52,11 @@
                 line-height: 150%;
                 color: #000000;
                 margin-bottom: 60px;
+                max-width: 569px;
 
                 @media(max-width:1024px) {
                     margin-bottom: 30px;
+                    width: unset;
                 }
 
                 @media (max-width:520px) {
@@ -63,12 +75,12 @@
                     column-gap: 25px;
                 }
 
-                @media(max-width:374px) {
+                @media(max-width:425px) {
                     display: unset;
                 }
 
                 .sbanner-logo {
-                    @media(max-width:375px){
+                    @media(max-width:425px){
                         margin-bottom: 20px;
                     }
                     img {
@@ -80,7 +92,7 @@
                         }
 
                         @media(max-width:520px) {
-                            width: 120px;
+                            width: 148px;
                         }
                     }
                 }
@@ -88,20 +100,22 @@
             }
 
             .plus-btn-main {
-                @media(max-width:375px){
+                @media(max-width:425px){
                     margin-top: 40px;
                 }
                 .plus-btn {
                     border: 2px solid #000000;
                     border-radius: 12px;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-size: 20px;
                     text-decoration: none;
                     padding: 20px 40px;
 
                     @media (max-width:520px) {
                         font-size: 15px;
-                        padding: 12px 15px;
+                        padding: 17px 31px 16px 31px;
+                        border: 1.5px solid #000;
+                        border-radius: 9px;
                     }
                 }
             }
@@ -109,12 +123,15 @@
 
             .slocation {
                 display: flex;
-                margin-top: 40px;
+                margin-top: 58px;
                 border-top: 1px solid #DEDEDE;
                 padding-top: 20px;
 
                 .loctext {
-                    padding-left: 10px;
+                    padding-left: 10px; 
+                    @media(max-width:520px){
+                        padding-left: 17px;
+                    }
 
                     .locmain {
                         font-family: 'Inter';
@@ -128,6 +145,7 @@
 
                         @media (max-width:520px) {
                             font-size: 16px;
+                            margin-bottom: 12px;
                         }
                     }
 
@@ -151,6 +169,12 @@
         .sbanner-video {
             width: 50%;
             margin-left: auto;
+            padding-left: 12px;
+           @media(max-width:1320px){
+            padding-left: unset;
+           }
+       
+        
 
             @media(max-width:768px) {
                 width: 100%;
@@ -159,23 +183,26 @@
 
             .vedio__container.testimonial-vid__container {
                 border: 0;
-
-                @media (max-width:1400px) and (min-width:1023px) {
-                    height: 80%;
-                }
+                
+                @media (min-width:767px) {
+                    height: 60%; 
+                } 
+                @media (min-width:1023px) {
+                    height: 95%; 
+                } 
 
                 .video-player {
                     height: 100%;
 
                     .arrow-btn-sbanner-video {
                         position: absolute !important;
-                        top: 35% !important;
-                        left: 40% !important;
+                        top: 40% !important;
+                        left: 46% !important;
                         cursor: pointer !important;
 
                         @media(max-width:768px) {
-                            top: 40% !important;
-                            left: 45% !important;
+                            top: 42% !important;
+                            left: 48% !important;
                         }
 
                         @media(max-width:520px) {
