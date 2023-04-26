@@ -8662,10 +8662,12 @@ textarea {
 }
 .shoptrade-plus-info .shoptrade-plus-info-para {
   padding-bottom: 32px;
+  max-width: 611px;
 }
 @media (max-width: 768px) {
   .shoptrade-plus-info .shoptrade-plus-info-para {
     padding-bottom: 22px;
+    max-width: unset;
   }
 }
 .shoptrade-plus-info .shoptrade-plus-info-para p {
@@ -8691,20 +8693,41 @@ textarea {
   flex-wrap: nowrap;
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
-  padding: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
-  border: 1px solid #000;
-  border-radius: 10px;
   padding: 55px 21px;
-  max-width: fit-content !important;
   width: fit-content;
   height: fit-content;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 22.313rem;
+  cursor: grab;
 }
-@media (max-width: 768px) {
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child:active {
+  cursor: grabbing;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
   .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
+    height: 17.5rem;
+  }
+}
+@media (min-width: 519px) and (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
+    height: 14.375rem;
     padding: 45px 16px;
+  }
+}
+@media (max-width: 520px) {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
+    height: 16.75rem;
+    padding: 35px 16px;
+  }
+}
+@media (max-width: 375px) {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
+    height: 20rem;
   }
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading {
@@ -8750,6 +8773,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet {
   width: 8px;

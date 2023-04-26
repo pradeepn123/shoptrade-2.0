@@ -1052,15 +1052,19 @@ const breakpoint = window.matchMedia( '(min-width:769px)' );
       draggable: true,
     },
     breakpoints: {
-      991: {
+      1023: {
           slidesPerView: 1,
       },
-      1320: {
+      1400: {
           slidesPerView: 2,
       },
       1440: {
           slidesPerView: 3,
       },
+      2560: {
+          slidesPerView: 3,
+      },
+
     }
   });
 // };
