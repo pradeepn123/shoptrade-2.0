@@ -413,6 +413,36 @@ const ContactPopUp = {
 };
 
 $(document).ready(function () {
+  // Audit page - before after section//
+  var swiper = new Swiper('.js-bfr-afr', {
+    speed:1000,
+      slidesPerView: 1.8,
+      spaceBetween: 25,
+      slidesPerGroup: 2,
+      navigation: {
+        nextEl: '.audit__slider-arrow .slider-arrow .js-arrow-right',
+        prevEl: '.audit__slider-arrow .slider-arrow .js-arrow-left',
+      },
+      breakpoints: {
+          1920: {
+              // slidesPerView: 3,
+              // spaceBetween: 30
+              slidesPerView: 2,
+              spaceBetween: 25,
+              slidesPerGroup: 2
+
+          },
+          1028: {
+              slidesPerView: 1.8,
+              // spaceBetween: 30
+          },
+          767: {
+              slidesPerView: 1.2,
+              slidesPerGroup: 1,
+              // spaceBetween: 10
+          }
+      }
+  });
   // Contact Form - Final Page , Change Name TO Upload instead of Drag and Drop or Browse
   if ($(window).width() < 480) {
     document
@@ -894,7 +924,7 @@ $('.accordion__header').click(function(e) {
 $(document).ready(function () {
 
   let slidingLogos = new Swiper('.js-top-image-sliders', {
-    speed: 12000,
+    speed: 24000,
     autoplay: true,
     loop: true,
     // slidesPerView: 5,

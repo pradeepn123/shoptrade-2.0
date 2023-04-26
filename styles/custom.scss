@@ -24,11 +24,7 @@
 @use 'heading-only';
 @use 'shopify-plus-banner';
 @use 'shopify-plus-clients';
-@use 'audit-banner';
-@use 'audit-analysis';
-@use 'audit-core';
 @use 'audit-imageswiper';
-@use 'audit-marquee';
 @use 'audit-timeline';
 @use 'audit-faq';
 @use 'audit-product';
@@ -38,3 +34,7 @@
 @use 'shoptrade-plus-info';
 @use 'brands_logos';
 @use 'brands_logos_marquee';
+@use 'audit-banner';
+@use 'audit-analysis';
+@use 'audit-core';
+@use 'audit-marquee';
