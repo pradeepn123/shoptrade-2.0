@@ -844,3 +844,35 @@ document.addEventListener('DOMContentLoaded', function(){
 $(".play-icon").click(function (e) {
   $(".vedio__info").hide();
 });
+
+
+// Audit page - before after section//
+var swiper = new Swiper('.js-bfr-afr', {
+  speed:1000,
+    slidesPerView: 1.8,
+    spaceBetween: 25,
+    slidesPerGroup: 2,
+    navigation: {
+      nextEl: '.audit__slider-arrow .slider-arrow .js-arrow-right',
+      prevEl: '.audit__slider-arrow .slider-arrow .js-arrow-left',
+    },
+    breakpoints: {
+        1920: {
+            // slidesPerView: 3,
+            // spaceBetween: 30
+            slidesPerView: 2,
+            spaceBetween: 25,
+            slidesPerGroup: 2
+
+        },
+        1028: {
+            slidesPerView: 1.8,
+            // spaceBetween: 30
+        },
+        767: {
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+            // spaceBetween: 10
+        }
+    }
+});

@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "7c197c6c-759f-4b28-91b8-9e07ba29726e": {
+      "type": "audit-banner",
+      "settings": {
+        "heading": "Boost conversions with exceptional UX analysis",
+        "subtext": "Discover the key to unlocking your website's potential with our personalized roadmap to drive conversions, increase customer retention, and establish long-lasting brand credibility.",
+        "bannerBtn": "View Plan",
+        "bannerBtnlink": "#"
+      }
+    },
+    "1e395575-fd0d-4794-9bb2-c7b3bc2127c5": {
+      "type": "audit-analysis",
+      "blocks": {
+        "96d1b3fc-3553-40c6-9b0d-c010678b44d4": {
+          "type": "cardType",
+          "settings": {
+            "aimage": "shopify:\/\/shop_images\/IMAGE_1.jpg",
+            "aimage_mob": "shopify:\/\/shop_images\/Group_8241.jpg",
+            "aheading": "Improve Website Performance with Our Analysis",
+            "apara": "Our team conducts a comprehensive analysis of your website's pages, identifying areas for improvement and providing rationale for our design decisions in a detailed report. With our analysis, you'll see the impact of improved user experience on your website's performance. ."
+          }
+        },
+        "6db1aa72-8ec9-491c-aa6c-68869d4e40f4": {
+          "type": "cardType",
+          "settings": {
+            "aimage": "shopify:\/\/shop_images\/Group_8267_2.jpg",
+            "aimage_mob": "shopify:\/\/shop_images\/Group_8242.jpg",
+            "aheading": "Transform Your Site with Our Complete Redesign",
+            "apara": "Our website analysis goes beyond simple redesigns. We consider user experience and business objectives to create pages that convert. Plus, we'll identify any gaps in your website and design new sections to fill them."
+          }
+        }
+      },
+      "block_order": [
+        "96d1b3fc-3553-40c6-9b0d-c010678b44d4",
+        "6db1aa72-8ec9-491c-aa6c-68869d4e40f4"
+      ],
+      "settings": {
+      }
+    },
+    "a7480ca1-4e76-46f9-9023-bec4b287cdc0": {
+      "type": "audit-core",
+      "blocks": {
+        "03b95dfa-fbf3-457f-9d02-c7b5c06d8f7a": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226.png",
+            "page_name": "HOME PAGE"
+          }
+        },
+        "3ff32a2f-910a-419f-8951-5b569cd9bd5b": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_1.png",
+            "page_name": "PRODUCT PAGE"
+          }
+        },
+        "a814d2d7-674e-46be-ac7f-996703b3b063": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_2.png",
+            "page_name": "COLLECTION PAGE"
+          }
+        },
+        "82c875a0-0f0c-4238-a709-fa493674f6a2": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_3.png",
+            "page_name": "CART PAGE"
+          }
+        }
+      },
+      "block_order": [
+        "03b95dfa-fbf3-457f-9d02-c7b5c06d8f7a",
+        "3ff32a2f-910a-419f-8951-5b569cd9bd5b",
+        "a814d2d7-674e-46be-ac7f-996703b3b063",
+        "82c875a0-0f0c-4238-a709-fa493674f6a2"
+      ],
+      "settings": {
+        "heading": "We Focus On Core Converting Pages"
+      }
+    },
+    "022afbff-bc63-4664-90ed-3be349823d42": {
+      "type": "audit-imageswiper",
+      "blocks": {
+        "71f3666e-5c62-4858-84ae-cabac8475bc7": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Frame_82.png",
+            "aft_image": "shopify:\/\/shop_images\/Frame_83.png"
+          }
+        },
+        "4834c0e0-f2a4-464d-832e-c5ad25b5666d": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Frame_82.png",
+            "aft_image": "shopify:\/\/shop_images\/Frame_83.png"
+          }
+        }
+      },
+      "block_order": [
+        "71f3666e-5c62-4858-84ae-cabac8475bc7",
+        "4834c0e0-f2a4-464d-832e-c5ad25b5666d"
+      ],
+      "settings": {
+      }
+    },
+    "45abf2da-6082-4e59-b7c1-51995b3acbf9": {
+      "type": "audit-marquee",
+      "blocks": {
+        "9f80796f-d59a-4c7d-8c9c-cd2caf64b0ba": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Group_1861.png"
+          }
+        },
+        "0b469264-abd7-4221-86e4-cecf769b3461": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Layer_1_1.png"
+          }
+        },
+        "5e54189a-759a-4790-92be-722e1b9a3bf9": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Mask_group_98a08bae-7212-422b-810b-bf62503617da.png"
+          }
+        },
+        "6f9545c0-5894-4c6a-a135-d668c5b672e6": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Vector_96ad0fd9-b14f-4ab6-aafa-ccea669406a3.png"
+          }
+        },
+        "84f58ed7-95f8-4e6b-9d47-5a96c60685f7": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Mask_group_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "9f80796f-d59a-4c7d-8c9c-cd2caf64b0ba",
+        "0b469264-abd7-4221-86e4-cecf769b3461",
+        "5e54189a-759a-4790-92be-722e1b9a3bf9",
+        "6f9545c0-5894-4c6a-a135-d668c5b672e6",
+        "84f58ed7-95f8-4e6b-9d47-5a96c60685f7"
+      ],
+      "settings": {
+        "mheading": "Brands we've worked with"
+      }
+    },
+    "0ead592e-ff87-4279-86e8-ee7bcdac54cd": {
+      "type": "testimonial_text_info",
+      "blocks": {
+        "template--16808880505052__0ead592e-ff87-4279-86e8-ee7bcdac54cd-1682500430eea78a53-0": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Vector_96ad0fd9-b14f-4ab6-aafa-ccea669406a3.png",
+            "profileName": "Harley Finkelstein",
+            "profileDesignation": "President of Shopify",
+            "ProfileDescription": "<p>“ ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would “ <\/p>"
+          }
+        },
+        "03ae6726-9c48-4c7f-a713-974d73553703": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/image_153.png",
+            "profileName": "Zenos Schmickrath",
+            "profileDesignation": "Co-Founder",
+            "ProfileDescription": "<p>“ShopTrade was experienced in developing apps and set realistic timelines.“<br\/>                    <\/p>"
+          }
+        },
+        "b7b930d2-7b4a-4365-9724-5e2dab194dc0": {
+          "type": "profileType",
+          "settings": {
+            "profileImage": "shopify:\/\/shop_images\/Mask_group_98a08bae-7212-422b-810b-bf62503617da.png",
+            "profileName": "marc Heuberger",
+            "profileDesignation": "CMO",
+            "ProfileDescription": "<p>“They’ve done a really good job. They were on top of things from the get-go.“<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16808880505052__0ead592e-ff87-4279-86e8-ee7bcdac54cd-1682500430eea78a53-0",
+        "03ae6726-9c48-4c7f-a713-974d73553703",
+        "b7b930d2-7b4a-4365-9724-5e2dab194dc0"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "content": "<p>Get to know about the value we provide from our customers .<\/p>",
+        "text_alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7c197c6c-759f-4b28-91b8-9e07ba29726e",
+    "1e395575-fd0d-4794-9bb2-c7b3bc2127c5",
+    "a7480ca1-4e76-46f9-9023-bec4b287cdc0",
+    "022afbff-bc63-4664-90ed-3be349823d42",
+    "45abf2da-6082-4e59-b7c1-51995b3acbf9",
+    "0ead592e-ff87-4279-86e8-ee7bcdac54cd"
+  ]
+}
