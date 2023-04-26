@@ -1007,12 +1007,11 @@ const breakpoint = window.matchMedia( '(min-width:769px)' );
   const enableSwiper = function() {
 
     mySwiper = new Swiper ('.js-top-image-sliders-mobile', {
-      speed: 12000,
+      speed: 4000,
       autoplay: true,
       loop: true,
       slidesPerView: 2,
       allowTouchMove: false,
-     
       pauseOnMouseEnter:false,
       breakpoints: {
         520: {
@@ -1027,4 +1026,48 @@ const breakpoint = window.matchMedia( '(min-width:769px)' );
   breakpoint.addListener(breakpointChecker);
 
   breakpointChecker();
-/* IIFE end */
+
+  // active slides shoptrade-info
+//   const breakpointa = window.matchMedia('(min-width: 769px)');
+// let mySwipera;
+
+// const breakpointCheckera = function() {
+//   if (breakpointa.matches === true) {
+//     if (mySwipera !== undefined) {
+//       mySwipera.destroy(true, true);
+//     }
+//     return;
+//   } else if (breakpointa.matches === false) {
+//     enableSwipera();
+//   }
+// };
+
+// const enableSwipera = function() {
+ var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      hide: false,
+      draggable: true,
+    },
+    breakpoints: {
+      991: {
+          slidesPerView: 1,
+      },
+      1320: {
+          slidesPerView: 2,
+      },
+      1440: {
+          slidesPerView: 3,
+      },
+    }
+  });
+// };
+
+// breakpointa.addListener(breakpointCheckera);
+// breakpointCheckera();
+
+
+
+  

@@ -65,13 +65,10 @@
                                 bottom: 0;
                                 width: 100%;
                                 height: 100%;
-                                object-fit: contain;
-                                object-position: top;
+                                object-fit: cover;
                                 grid-area: none;
                                 flex: none;
-                                // @media(min-width:768px){
-                                //     width: 100%;
-                                // }
+                                border-radius: 10px;
                             }
                         }
                     }
@@ -81,6 +78,7 @@
 
                         @media(max-width:768px) {
                             width: 100%;
+                            margin-top: 24px;
                         }
 
                         .client-text-logo {

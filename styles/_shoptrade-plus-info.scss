@@ -1,110 +1,290 @@
+// .shoptrade-plus-info {
+//     .shoptrade-plus-info-main {
+//         .shoptrade-plus-info-heading {
+//             padding-bottom: 24px;
+//             max-width: fit-content;
+
+//             h3 {
+//                 margin: 0;
+//                 padding: 0;
+//                 font-size: 64px;
+//                 line-height: 64px;
+//                 font-weight: 700;
+//                 width: 457px;
+
+//                 @media(max-width:768px) {
+//                     font-size: 52px;
+//                     line-height: 52px;
+//                 }
+
+//                 @media(max-width:520px) {
+//                     font-size: 42px;
+//                     line-height: 42px;
+//                     width: unset;
+//                 }
+
+//             }
+//         }
+
+//         .shoptrade-plus-info-para {
+//             padding-bottom: 32px;
+
+//             @media (max-width:768px) {
+//                 padding-bottom: 22px;
+//             }
+
+//             p {
+//                 font-size: 20px;
+//                 line-height: 30px;
+//                 font-weight: 400;
+//                 margin: 0;
+//                 padding: 0;
+
+//                 @media(max-width:768px) {
+//                     font-size: 16px;
+//                     line-height: 24px;
+//                 }
+
+//             }
+//         }
+
+//     }
+
+//     .shoptrade-plus-info-content-scroll {
+//         display: flex;
+//         column-gap: 21px;
+//         width: 100%;
+//         overflow-y: hidden;
+
+//         cursor: grab;
+
+//         &::-webkit-scrollbar {
+//             width: 1px;
+//         }
+
+//         .shoptrade-plus-info-content {
+//             display: inline-block;
+//             border: 1px solid #000;
+//             border-radius: 10px;
+//             min-width: 413px;
+//             padding: 55px 21px 50px 22px;
+
+//             @media(max-width:768px) {
+//                 padding: 41px 16px 40px 16px;
+//             }
+
+//             @media(max-width:768px) {
+//                 min-width: 317px;
+//             }
+
+//             .shoptrade-pf-content-heading {
+//                 padding-bottom: 24px;
+
+//                 h4 {
+//                     margin: 0;
+//                     padding: 0;
+//                     font-size: 36px;
+//                     line-height: 36px;
+//                     font-weight: 700;
+
+//                     @media(max-width:768px) {
+//                         font-size: 24px;
+//                         line-height: 24px;
+//                     }
+//                 }
+//             }
+
+//             .shoptrade-pf-content-content {
+//                 p {
+//                     font-size: 20px;
+//                     font-weight: 400;
+//                     line-height: 30px;
+//                     margin: 0;
+//                     padding: 0;
+
+//                     @media(max-width:768px) {
+//                         font-size: 16px;
+//                         line-height: 24px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+/* Swiper Slider */
 .shoptrade-plus-info {
-    .shoptrade-plus-info-main {
-            .shoptrade-plus-info-heading {
-                padding-bottom: 24px;
-                max-width: fit-content;
+    .shoptrade-plus-info-heading {
+        padding-bottom: 24px;
+        max-width: fit-content;
+        width: 457px;
 
-                h3 {
-                    margin: 0;
-                    padding: 0;
-                    font-size: 64px;
-                    line-height: 64px;
-                    font-weight: 700;
-                    width: 457px;
+        @media(max-width:520px) {
+            width: unset;
+        }
 
-                    @media(max-width:768px) {
-                        font-size: 52px;  
-                        line-height: 52px;  
-                    }
+        h3 {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 64px;
+            margin: 0;
+            padding: 0;
 
-                    @media(max-width:520px) {
-                        font-size: 42px;
-                        line-height: 42px;
-                        width: unset;
-                    }
-
-                }
+            @media(max-width:768px) {
+                font-size: 54px;
+                line-height: 54px;
             }
 
-            .shoptrade-plus-info-para {
-                padding-bottom: 32px;
+            @media(max-width:768px) {
+                font-size: 42px;
+                line-height: 42px;
+            }
+        }
+    }
 
-                @media (max-width:768px) {
-                    padding-bottom: 22px;
-                }
+    .shoptrade-plus-info-para {
+        padding-bottom: 32px;
 
-                p {
-                    font-size: 20px;
-                    line-height: 30px;
-                    font-weight: 400;
-                    margin: 0;
-                    padding: 0;
+        @media (max-width:768px) {
+            padding-bottom: 22px;
+        }
 
-                    @media(max-width:768px) {
-                        font-size: 16px;
-                        line-height: 24px;
-                    }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
 
-                }
+            @media(max-width:768px) {
+                font-size: 16px;
+                line-height: 24px;
             }
 
         }
 
+    }
+
+    // slider by google
+    .shoptrade-plus-info-slider {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 20px;
+
+        // @media(min-width:769px) {
+        //     display: flex;
+        // }
+
+
         .shoptrade-plus-info-content-scroll {
             display: flex;
-            column-gap: 21px;
-            width: 100%;
-            overflow-y: hidden;
+            flex-wrap: nowrap;
 
-            cursor: grab;
-
-            &::-webkit-scrollbar {
-                width: 1px;
-            }
 
             .shoptrade-plus-info-content {
-                display: inline-block;
-                border: 1px solid #000;
-                border-radius: 10px;
-                min-width: 413px;
-               padding: 55px 21px 50px 22px;
-               @media(max-width:768px){
-                padding: 41px 16px 40px 16px;
-               }
+                padding: 20px;
+                box-sizing: border-box;
 
-                @media(max-width:768px) {
-                    min-width: 317px;
-                }
+                .shoptrade-plus-info-content-child {
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    padding: 55px 21px;
+                    max-width: fit-content !important;
+                    width: fit-content;
+                    // max-height: 357px;
+                    height: fit-content;
 
-                .shoptrade-pf-content-heading {
-                    padding-bottom: 24px;
+                    @media(max-width:768px) {
+                        padding: 45px 16px;
 
-                    h4 {
-                        margin: 0;
-                        padding: 0;
-                        font-size: 36px;
-                        line-height: 36px;
-                        font-weight: 700;
-                        @media(max-width:768px) {
-                            font-size: 24px;
-                            line-height: 24px;
+                    }
+
+                    @media(max-width:520px) {
+                        // max-height: 286px;
+                    }
+
+                    // @media(max-width:768px) {
+                    //     width: fit-content;
+                    //     height: fit-content;
+                    // }
+
+                    .shoptrade-pf-content-heading {
+                        padding-bottom: 24px;
+
+                        h4 {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 36px;
+                            line-height: 36px;
+                            font-weight: 700;
+
+                            @media(max-width:768px) {
+                                font-size: 24px;
+                                line-height: 24px;
+                            }
+                        }
+
+                        .shoptrade-plus-info-content {
+                            p {
+                                font-size: 16px;
+                                line-height: 1.5;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .shoptrade-pf-content-content {
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            margin: 0;
+                            padding: 0;
+
+                            @media(max-width:768px) {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
                         }
                     }
                 }
+            }
 
-                .shoptrade-pf-content-content {
-                    p {
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 30px;
-                        margin: 0;
-                        padding: 0;
-                        @media(max-width:768px) {
-                            font-size: 16px;
-                            line-height: 24px;
-                        }
-                    }
+            // .st-plus-main {
+
+            //     width: unset !important;
+            //     height: unset !important;
+
+            //     @media(max-width:768px) {
+            //         width: unset !important;
+            //         height: unset !important;
+            //     }
+
+            // }
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin: 0 10px;
+                background-color: #ccc;
+                cursor: pointer;
+
+                &.swiper-pagination-bullet-active {
+                    background-color: #FF7121;
                 }
             }
         }
     }
+}

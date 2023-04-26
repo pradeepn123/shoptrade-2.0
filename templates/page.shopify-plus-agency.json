@@ -11,8 +11,8 @@
     "31cdad78-ce9a-482b-8ea1-447ec0d8957e": {
       "type": "shopify-plus-banner",
       "settings": {
-        "pad-btm": 80,
-        "pad-btm-mob": 20,
+        "pad-btm": 53,
+        "pad-btm-mob": 1,
         "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
         "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.svg",
         "plusheading": "Shopify Plus Agency",
@@ -177,8 +177,8 @@
         "3c71a690-3ad7-4780-a922-166a7c24cabf"
       ],
       "settings": {
-        "parent-margin-btm": 82,
-        "parent-margin-btm-mob": 63,
+        "parent-margin-btm": 109,
+        "parent-margin-btm-mob": 84,
         "brands_logos_heading": "Brands that use Shopify plus"
       }
     },
@@ -211,8 +211,8 @@
         "a9a473ab-6789-4465-9edf-7ceec02acce9"
       ],
       "settings": {
-        "parent-margin-btm": 1,
-        "parent-margin-btm-mob": 1,
+        "parent-margin-btm": 90,
+        "parent-margin-btm-mob": 80,
         "vedioHeading": "Client Testimonials",
         "testi-heading-size": 64,
         "testi-heading-size-mob": 42
@@ -260,8 +260,8 @@
         "d466672f-0ee2-4e0e-a1bb-a2ecbaa7733e"
       ],
       "settings": {
-        "parent-margin-btm": 79,
-        "parent-margin-btm-mob": 53,
+        "parent-margin-btm": 87,
+        "parent-margin-btm-mob": 74,
         "heading": "Our Partners"
       }
     },
@@ -293,15 +293,15 @@
         "fbc7f174-4e30-4f15-b58a-297c474fc8e7"
       ],
       "settings": {
-        "img-scroll-margin-btm": 79,
-        "img-scroll-margin-btm-mob": 51
+        "img-scroll-margin-btm": 136,
+        "img-scroll-margin-btm-mob": 4
       }
     },
     "cc3e4c18-c797-46e7-8653-5e90bd32e731": {
       "type": "lets-talk-store",
       "settings": {
-        "slides-margin-btm": 73,
-        "slides-margin-btm-mob": 27,
+        "slides-margin-btm": 100,
+        "slides-margin-btm-mob": 90,
         "adj-img-txt": "row-reverse",
         "online-store-img": "shopify:\/\/shop_images\/Group_1885.svg",
         "talk-store-heading": "Ready to take your online store to the next level?",

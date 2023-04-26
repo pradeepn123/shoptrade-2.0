@@ -7210,10 +7210,10 @@ textarea {
   bottom: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: top;
+  object-fit: cover;
   grid-area: none;
   flex: none;
+  border-radius: 10px;
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text {
   width: 50%;
@@ -7221,6 +7221,7 @@ textarea {
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text {
     width: 100%;
+    margin-top: 24px;
   }
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client .client-text .client-text-logo {
@@ -8629,40 +8630,45 @@ textarea {
   text-decoration: none;
 }
 
-.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading {
+/* Swiper Slider */
+.shoptrade-plus-info .shoptrade-plus-info-heading {
   padding-bottom: 24px;
   max-width: fit-content;
-}
-.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 64px;
-  line-height: 64px;
-  font-weight: 700;
   width: 457px;
 }
-@media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
-    font-size: 52px;
-    line-height: 52px;
-  }
-}
 @media (max-width: 520px) {
-  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-heading h3 {
-    font-size: 42px;
-    line-height: 42px;
+  .shoptrade-plus-info .shoptrade-plus-info-heading {
     width: unset;
   }
 }
-.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para {
+.shoptrade-plus-info .shoptrade-plus-info-heading h3 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-heading h3 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 768px) {
+  .shoptrade-plus-info .shoptrade-plus-info-heading h3 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+.shoptrade-plus-info .shoptrade-plus-info-para {
   padding-bottom: 32px;
 }
 @media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para {
+  .shoptrade-plus-info .shoptrade-plus-info-para {
     padding-bottom: 22px;
   }
 }
-.shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para p {
+.shoptrade-plus-info .shoptrade-plus-info-para p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -8670,42 +8676,41 @@ textarea {
   padding: 0;
 }
 @media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-main .shoptrade-plus-info-para p {
+  .shoptrade-plus-info .shoptrade-plus-info-para p {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll {
+.shoptrade-plus-info .shoptrade-plus-info-slider {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll {
   display: flex;
-  column-gap: 21px;
-  width: 100%;
-  overflow-y: hidden;
-  cursor: grab;
+  flex-wrap: nowrap;
 }
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll::-webkit-scrollbar {
-  width: 1px;
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
+  padding: 20px;
+  box-sizing: border-box;
 }
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
-  display: inline-block;
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
   border: 1px solid #000;
   border-radius: 10px;
-  min-width: 413px;
-  padding: 55px 21px 50px 22px;
+  padding: 55px 21px;
+  max-width: fit-content !important;
+  width: fit-content;
+  height: fit-content;
 }
 @media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
-    padding: 41px 16px 40px 16px;
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child {
+    padding: 45px 16px;
   }
 }
-@media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content {
-    min-width: 317px;
-  }
-}
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading {
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading {
   padding-bottom: 24px;
 }
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading h4 {
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading h4 {
   margin: 0;
   padding: 0;
   font-size: 36px;
@@ -8713,12 +8718,17 @@ textarea {
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-heading h4 {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading h4 {
     font-size: 24px;
     line-height: 24px;
   }
 }
-.shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-content p {
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading .shoptrade-plus-info-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+.shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-content p {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -8726,10 +8736,31 @@ textarea {
   padding: 0;
 }
 @media (max-width: 768px) {
-  .shoptrade-plus-info .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-pf-content-content p {
+  .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-content p {
     font-size: 16px;
     line-height: 24px;
   }
+}
+.shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FF7121;
 }
 
 .static_brands_logos .brands_logos_contianer .brands_logos_heading h4 {
@@ -8751,7 +8782,7 @@ textarea {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
   row-gap: 60px;
-  column-gap: 80px;
+  column-gap: 60px;
 }
 @media (max-width: 520px) {
   .static_brands_logos .brands_logos_contianer .brands_logos_main {

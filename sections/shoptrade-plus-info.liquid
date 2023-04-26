@@ -18,20 +18,26 @@
         {{ section.settings['st-pg-para'] }}
       </div>
     </div>
-    <div class="shoptrade-plus-info-content-scroll">
-      {% for block in section.blocks %}
-        <div class="shoptrade-plus-info-content">
-          <div class="shoptrade-pf-content-heading">
-            <h4>{{ block.settings['st-info-heading'] }}</h4>
+    <div class="swiper-container shoptrade-plus-info-slider">
+      <div class="swiper-wrapper shoptrade-plus-info-content-scroll">
+        {% for block in section.blocks %}
+          <div class="swiper-slide shoptrade-plus-info-content st-plus-main">
+            <div class="shoptrade-plus-info-content-child">
+              <div class="shoptrade-pf-content-heading">
+                <h4>{{ block.settings['st-info-heading'] }}</h4>
+              </div>
+              <div class="shoptrade-pf-content-content">
+                {{ block.settings['st-info-para'] }}
+              </div>
+            </div>
           </div>
-          <div class="shoptrade-pf-content-content">
-            {{ block.settings['st-info-para'] }}
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
+
 {% schema %}
 {
   "name": "shoptrade plus info block",
@@ -43,7 +49,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Paadding Bottom",
+      "label": "Section Paadding Bottom",
       "default": 40
     },
     {
@@ -53,7 +59,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Paadding btm Mob",
+      "label": "Section Paadding btm Mob",
       "default": 20
     },
     {
