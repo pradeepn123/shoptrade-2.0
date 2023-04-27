@@ -14,7 +14,7 @@
         "pad-btm": 53,
         "pad-btm-mob": 1,
         "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
-        "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.svg",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.png",
         "plusheading": "Shopify Plus Agency",
         "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
         "logoImage": "shopify:\/\/shop_images\/image_118.svg",
@@ -268,29 +268,29 @@
     "b1a74954-2e63-4d11-8fa1-ae5322486e96": {
       "type": "manuel_images_scroll",
       "blocks": {
-        "846f83c7-0c40-4745-827d-dbf0dfad25c5": {
-          "type": "blocks",
-          "settings": {
-            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0419.svg"
-          }
-        },
         "f50d7f2c-8059-4af7-892a-3e4e242859aa": {
           "type": "blocks",
           "settings": {
-            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0454.svg"
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0454_01aa939a-fb82-4c2a-aaf7-0c328d6dc089.jpg"
           }
         },
         "fbc7f174-4e30-4f15-b58a-297c474fc8e7": {
           "type": "blocks",
           "settings": {
-            "manuel-img-scroll": "shopify:\/\/shop_images\/5K8A6607_1.svg"
+            "manuel-img-scroll": "shopify:\/\/shop_images\/5K8A6607_2fb1d491-8e79-41c3-a1ca-60369d019316.jpg"
+          }
+        },
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5": {
+          "type": "blocks",
+          "settings": {
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0419_137f5b98-9091-4805-b719-9d00c538dff8.jpg"
           }
         }
       },
       "block_order": [
-        "846f83c7-0c40-4745-827d-dbf0dfad25c5",
         "f50d7f2c-8059-4af7-892a-3e4e242859aa",
-        "fbc7f174-4e30-4f15-b58a-297c474fc8e7"
+        "fbc7f174-4e30-4f15-b58a-297c474fc8e7",
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5"
       ],
       "settings": {
         "img-scroll-margin-btm": 136,
@@ -303,7 +303,7 @@
         "slides-margin-btm": 100,
         "slides-margin-btm-mob": 90,
         "adj-img-txt": "row-reverse",
-        "online-store-img": "shopify:\/\/shop_images\/Group_1885.svg",
+        "online-store-img": "shopify:\/\/shop_images\/Group_1885_1.png",
         "talk-store-heading": "Ready to take your online store to the next level?",
         "heading-font-size": 64,
         "heading-font-size-mob": 42,

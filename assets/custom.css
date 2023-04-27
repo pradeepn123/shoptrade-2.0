@@ -8499,44 +8499,18 @@ textarea {
   }
 }
 
-.manuel-img-scroll-container-main {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container {
-  color: #959595;
-  background-color: white;
-  grid-area: main;
-  padding: 0;
-  overflow-y: hidden;
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll {
-  width: 100%;
-  overflow-y: hidden;
-  white-space: nowrap;
-  cursor: grab;
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll:active {
-  cursor: grabbing;
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll::-webkit-scrollbar {
-  width: 1px;
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll {
-  display: inline-block;
-  height: auto;
-  width: fit-content;
-  margin-right: 13px;
-}
-@media (max-width: 520px) {
-  .manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll {
-    margin-right: 8px;
-  }
-}
-.manuel-img-scroll-container-main .manuel-img-scroll-container .grid-item-main-scroll .manuel-img-scroll img {
+.grid-item-main-scroll {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+}
+.grid-item-main-scroll .manuel-img-scroll {
+  width: 100%;
+  height: 100%;
+}
+.grid-item-main-scroll .manuel-img-scroll img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .lets-talk-store-section {
@@ -8591,14 +8565,18 @@ textarea {
   font-weight: 700;
   padding-bottom: 9px;
   width: 795px;
-  height: 128px;
+  height: fit-content;
   line-height: 64px;
+}
+@media (max-width: 1320px) {
+  .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
+    height: unset;
+    width: unset;
+  }
 }
 @media (max-width: 1024px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
     line-height: 42px;
-    height: unset;
-    width: unset;
   }
 }
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
@@ -8867,11 +8845,11 @@ textarea {
   }
 }
 .brands_logo_marquee_main .brands_logo_marquee_wrapper {
-  column-gap: 50px;
+  column-gap: 73px;
 }
 @media (max-width: 1024px) {
   .brands_logo_marquee_main .brands_logo_marquee_wrapper {
-    column-gap: 30px;
+    column-gap: 63px;
   }
 }
 .brands_logo_marquee_main .brands_logo_marquee_wrapper .brands-logos-slider {

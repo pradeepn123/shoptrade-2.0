@@ -52,12 +52,14 @@
             font-weight: 700;
             padding-bottom: 9px;
             width: 795px;
-            height: 128px;
+            height: fit-content;
             line-height: 64px;
-            @media(max-width:1024px){
-                line-height: 42px;
+            @media(max-width:1320px){
                 height: unset;
                 width: unset;
+            }
+            @media(max-width:1024px){
+                line-height: 42px;
             }
         }
 

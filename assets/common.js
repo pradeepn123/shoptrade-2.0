@@ -275,10 +275,10 @@ const ContactPopUp = {
       "none";
     document.querySelector(this.selectors.formSubmitContent).style.display =
       "block";
-      // Redirect to Homepage after submission
+    // Redirect to Homepage after submission
     setTimeout(() => {
       window.location.href = "/";
-    } , 6000)
+    }, 6000)
     $(this.selectors.form).trigger("reset");
     $(".loader ").hide("fast");
     $(this.selectors.form)
@@ -476,11 +476,11 @@ $(document).ready(function () {
       ? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(0) + "B"
       : // Six Zeroes for Millions
       Math.abs(Number(labelValue)) >= 1.0e6
-      ? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(0) + "M"
-      : // Three Zeroes for Thousands
-      Math.abs(Number(labelValue)) >= 1.0e3
-      ? (Math.abs(Number(labelValue)) / 1.0e3).toFixed(0) + "K"
-      : Math.abs(Number(labelValue)) + "N";
+        ? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(0) + "M"
+        : // Three Zeroes for Thousands
+        Math.abs(Number(labelValue)) >= 1.0e3
+          ? (Math.abs(Number(labelValue)) / 1.0e3).toFixed(0) + "K"
+          : Math.abs(Number(labelValue)) + "N";
   }
 
   $(".count").each(function () {
@@ -520,8 +520,8 @@ $(document).ready(function () {
             complete: function () {
               $this.text(
                 $this.attr("data-currrencySige") +
-                  $this.attr("data-converted") +
-                  $this.attr("data-charactor")
+                $this.attr("data-converted") +
+                $this.attr("data-charactor")
               );
             },
           }
@@ -538,7 +538,7 @@ $(document).ready(function () {
   // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
-  $("#contact-btn-about").on('click', function(){
+  $("#contact-btn-about").on('click', function () {
     $("#contact-btn-details").trigger('click');
   })
 });
@@ -551,7 +551,7 @@ $(document).ready(function () {
 const extractYoutubeId = function (url) {
   const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
   const match = url.match(regExp);
-  return (match && match[7].length==11) ? match[7] : false;
+  return (match && match[7].length == 11) ? match[7] : false;
 };
 
 // Inject script into page asynchronously
@@ -559,7 +559,7 @@ const injectScript = function ({
   id,
   src,
 }) {
-  const existingScript = document.querySelector(`#${id}`);    
+  const existingScript = document.querySelector(`#${id}`);
   if (existingScript) return;
 
   const tag = document.createElement('script');
@@ -578,7 +578,7 @@ class VideoPlayerYoutube {
     this.events = {
       onEnd: [],
     };
-    
+
     // Public methods
     return {
       // NOTE: Make sure that VideoPlayerYoutube has an API consistent with VideoPlayerVimeo
@@ -587,7 +587,7 @@ class VideoPlayerYoutube {
       play: this.play.bind(this),
     };
   }
-  
+
   addEventListener(eventName, callback) {
     if (this.events[eventName]) {
       this.events[eventName].push(callback);
@@ -595,7 +595,7 @@ class VideoPlayerYoutube {
       this.events[eventName] = [callback];
     }
   }
-  
+
   injectIframe() {
     this.player = new YT.Player(this.config.root, {
       height: '390',
@@ -613,27 +613,27 @@ class VideoPlayerYoutube {
       },
     });
   }
-  
+
   // See: https://developers.google.com/youtube/iframe_api_reference#Playback_status
   onPlayerStateChange(event) {
     const hasEnded = event.data === 0;
-    
+
     if (hasEnded) {
       this.events.onEnd.forEach((callback) => {
         callback();
       });
     }
   }
-  
+
   init() {
     if (this.isScriptInjected) return;
-    
+
     injectScript({
       id: 'video-player-iframe-youtube',
       src: 'https://www.youtube.com/iframe_api',
     });
     this.isScriptInjected = true;
-    
+
     const intervalFunc = () => {
       // Only load iframe once YT script is ready to be used
       if (window.YT && window.YT.Player) {
@@ -642,16 +642,16 @@ class VideoPlayerYoutube {
         this.injectIframe();
       }
     };
-    
+
     const interval = window.setInterval(intervalFunc, 100);
   }
-  
+
   play() {
     if (!this.player.playVideo) {
       // Return false if player and its playVideo method isn't ready yet to be called
       return false;
     }
-    
+
     // See: https://developers.google.com/youtube/iframe_api_reference#Playback_controls
     this.player.playVideo();
     return true;
@@ -666,7 +666,7 @@ class VideoPlayerVimeo {
     this.events = {
       onEnd: [],
     };
-    
+
     // Public methods
     return {
       addEventListener: this.addEventListener.bind(this),
@@ -674,7 +674,7 @@ class VideoPlayerVimeo {
       play: this.play.bind(this),
     };
   }
-  
+
   addEventListener(eventName, callback) {
     if (this.events[eventName]) {
       this.events[eventName].push(callback);
@@ -682,40 +682,40 @@ class VideoPlayerVimeo {
       this.events[eventName] = [callback];
     }
   }
-  
+
   injectIframe() {
     // See: https://github.com/vimeo/player.js#create-a-player
     this.player = new Vimeo.Player(this.config.root, {
       url: this.config.url,
       width: 640
     });
-    
+
     // See: https://github.com/vimeo/player.js#events
     this.player.on('ended', this.onPlayerEvent.bind(this, 'ended'));
   }
-  
+
   onPlayerEvent(eventName) {
     if (eventName === 'ended') {
       this.events.onEnd.forEach((callback) => {
         callback();
       });
-      
+
       // Reset video to beginning
       // NOTE: As of this writing, `this.player.unload()` doesn't work as expected if Vimeo loads staff picks at the end of the video which is why we do what do here
       this.player.destroy();
       this.injectIframe();
     }
   }
-  
+
   init() {
     if (this.isScriptInjected) return;
-    
+
     injectScript({
       id: 'video-player-iframe-vimeo',
       src: 'https://player.vimeo.com/api/player.js',
     });
     this.isScriptInjected = true;
-    
+
     const intervalFunc = () => {
       // Only load iframe once Vimeo script is ready to be used
       if (window.Vimeo && window.Vimeo.Player) {
@@ -724,10 +724,10 @@ class VideoPlayerVimeo {
         this.injectIframe();
       }
     };
-    
+
     const interval = window.setInterval(intervalFunc, 100);
   }
-  
+
   play() {
     // NOTE: There doesn't seem to be a reliable/non-hacky way to determine if the play method is fully ready.
     // If the play of this video is triggered immediately after pageload, the user will have to manually click on the play button in the iframe.
@@ -741,12 +741,12 @@ class VideoPlayer {
     this.element = element;
     this.previewContainer = element.querySelector('[data-js="preview"]');
     this.videoContainer = element.querySelector('[data-js="video"]');
-    
+
     // This element is going to be used/modified by our video platform-specific libraries
     const videoRoot = element.querySelector('[data-js="video-root"]');
     const type = element.getAttribute('data-player-type');
     const url = element.getAttribute('data-player-url');
-    
+
     if (type === 'youtube') {
       this.Player = new VideoPlayerYoutube({
         root: videoRoot,
@@ -761,13 +761,13 @@ class VideoPlayer {
       console.error('Invalid video type. Things aren\'t going to work.');
       return;
     }
-    
+
     this.Player.init();
     this.Player.addEventListener('onEnd', this.reset.bind(this));
-    
+
     this.addEventlisteners();
   }
-  
+
   show(element) {
     element.setAttribute('data-hidden', 'false');
   }
@@ -775,10 +775,10 @@ class VideoPlayer {
   hide(element) {
     element.setAttribute('data-hidden', 'true');
   }
-  
+
   play() {
     const success = this.Player.play();
-    
+
     if (success) {
       this.hide(this.previewContainer);
       this.show(this.videoContainer);
@@ -786,16 +786,16 @@ class VideoPlayer {
       this.handleNotReady();
     }
   }
-  
+
   reset() {
     this.show(this.previewContainer);
     this.hide(this.videoContainer);//
   }
-  
+
   handleNotReady() {
     console.log('Video isn\'t ready yet to be viewed. Try again in a few seconds.');
   }
-  
+
   addEventlisteners() {
     this.previewContainer.addEventListener('click', this.play.bind(this));
   }
@@ -809,31 +809,31 @@ for (let { length: i } = players; i > 0; i -= 1) {
   new VideoPlayer(player);
 }
 // The backdrop loader 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".backdrop").show();
   $("body").css("overflow", "hidden");
 
-  setTimeout(function() {
-    $(".backdrop").hide();  
+  setTimeout(function () {
+    $(".backdrop").hide();
     $("body").css("overflow", "auto");
-  }, 1); 
-}); 
+  }, 1);
+});
 // 
 
-  
-  $("#contact-btn-service").on('click', function(){
-    $("#contact-btn-details").trigger('click');
-  })
+
+$("#contact-btn-service").on('click', function () {
+  $("#contact-btn-details").trigger('click');
+})
 
 
 // Tech Stack - Our Services Page
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
   const accordionImagePlusIcon = document.querySelectorAll(".accordion_image_container .plus_icon");
-  if(accordionImagePlusIcon != null){
+  if (accordionImagePlusIcon != null) {
     const plusIconEle = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_heading');
     const accordionImageBlocksContainer = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_blocks');
-    for (let i =0 ; i<plusIconEle.length ; i++){
-      plusIconEle[i].addEventListener('click', function(){
+    for (let i = 0; i < plusIconEle.length; i++) {
+      plusIconEle[i].addEventListener('click', function () {
         accordionImagePlusIcon[i].classList.toggle("rotate_plus_icon");
         accordionImageBlocksContainer[i].classList.toggle("hide_height_on_click");
       })
@@ -844,7 +844,6 @@ document.addEventListener('DOMContentLoaded', function(){
 $(".play-icon").click(function (e) {
   $(".vedio__info").hide();
 });
-
 
 // Audit page - before after section//
 var swiper = new Swiper('.js-bfr-afr', {
@@ -891,169 +890,125 @@ $('.accordion__header').click(function(e) {
 	}
 });
 
-
-
-
-// Imagies scroll manuel
-const slider = document.querySelector('.grid-item-main-scroll');
-let isDown = false;
-let startX;
-let scrollLeft;
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
-});
-      
-
-const gridItem = document.querySelector('.shoptrade-plus-info-content-scroll');
-let mouseDown = false;
-let startXPosition;
-let scrollStartPosition;
-gridItem.addEventListener('mousedown', (e) => {
-  mouseDown = true;
-  gridItem.classList.add('active');
-  startXPosition = e.pageX - gridItem.offsetLeft;
-  scrollStartPosition = gridItem.scrollLeft;
-});
-gridItem.addEventListener('mouseleave', () => {
-  mouseDown = false;
-  gridItem.classList.remove('active');
-});
-gridItem.addEventListener('mouseup', () => {
-  mouseDown = false;
-  gridItem.classList.remove('active');
-});
-gridItem.addEventListener('mousemove', (e) => {
-  if (!mouseDown) return;
-  e.preventDefault();
-  const currentPosition = e.pageX - gridItem.offsetLeft;
-  const scrollDelta = (currentPosition - startXPosition) * 2; // scroll-fast
-  gridItem.scrollLeft = scrollStartPosition - scrollDelta;
-  console.log(scrollDelta);
-}); 
-
-
- 
 // the image sliding logos
 $(document).ready(function () {
 
   let aboutCulterTop = new Swiper('.js-top-image-sliders', {
-  speed: 12000,
-  autoplay: true,
-  loop: true,
-  slidesPerView: 5,
-  allowTouchMove: false,
- 
-  pauseOnMouseEnter:false,
-      
-      breakpoints: {
-          1920: {
-              slidesPerView: 3,
-              spaceBetween: 30
-          },
-          1028: {
-              slidesPerView: 2,
-              spaceBetween: 30
-          },
-          480: {
-              slidesPerView: 1.3,
-              spaceBetween: 10
-          }
+    speed: 12000,
+    autoplay: true,
+    loop: true,
+    slidesPerView: 5,
+    allowTouchMove: false,
+
+    pauseOnMouseEnter: false,
+
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1028: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      480: {
+        slidesPerView: 1.3,
+        spaceBetween: 10
       }
+    }
   });
 });
 
 
 // swiper our clients section and  destroying swipper @ more than 769px
-const breakpoint = window.matchMedia( '(min-width:769px)' );
+const breakpoint = window.matchMedia('(min-width:769px)');
 
-  let mySwiper;
-  const breakpointChecker = function() {
-    console.log(breakpoint)
-    if ( breakpoint.matches === true ) {
+let mySwiper;
+const breakpointChecker = function () {
+  console.log(breakpoint)
+  if (breakpoint.matches === true) {
 
-	  if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+    if (mySwiper !== undefined) mySwiper.destroy(true, true);
 
-	
-	  return;
 
-      } else if ( breakpoint.matches === false ) {
+    return;
 
-        return enableSwiper();
+  } else if (breakpoint.matches === false) {
 
-      }
+    return enableSwiper();
 
-  };
-  
+  }
 
-  const enableSwiper = function() {
+};
 
-    mySwiper = new Swiper ('.js-top-image-sliders-mobile', {
-      speed: 4000,
-      autoplay: true,
-      loop: true,
-      slidesPerView: 2,
-      allowTouchMove: false,
-      pauseOnMouseEnter:false,
-      breakpoints: {
-        520: {
-            slidesPerView: 1,
-        },
-      }
 
-    });
+const enableSwiper = function () {
 
-  };
-
-  breakpoint.addListener(breakpointChecker);
-
-  breakpointChecker();
-
-  // active slides shoptrade-info
- var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      hide: false,
-      draggable: true,
-    },
+  mySwiper = new Swiper('.js-top-image-sliders-mobile', {
+    speed: 4000,
+    autoplay: true,
+    loop: true,
+    slidesPerView: 2,
+    allowTouchMove: false,
+    pauseOnMouseEnter: false,
     breakpoints: {
-      1023: {
-          slidesPerView: 1,
+      520: {
+        slidesPerView: 1,
       },
-      1400: {
-          slidesPerView: 2,
-      },
-      1440: {
-          slidesPerView: 3,
-      },
-      2560: {
-          slidesPerView: 3,
-      },
-
     }
+
   });
 
+};
+
+breakpoint.addListener(breakpointChecker);
+
+breakpointChecker();
+
+// active slides shoptrade-info
+var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    hide: false,
+    draggable: true,
+  },
+  breakpoints: {
+    1023: {
+      slidesPerView: 1,
+    },
+    1400: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+    2560: {
+      slidesPerView: 3,
+    },
+
+  }
+});
+
+
+// manuel images scroll .manuel-img-scroll-main
+var swiper_manual = new Swiper('.grid-item-main-scroll', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  // loop: true,
+  grabCursor: true,
+  freeMode: true,
+  breakpoints: {
+    520: {
+      slidesPerView: 1,
+    },
+    991: {
+      slidesPerView: 2,
+    },
+  }
+});
 
 
 
-  
+

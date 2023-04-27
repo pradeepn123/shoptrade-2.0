@@ -9,17 +9,20 @@
   }
 {% endstyle %}
 
-<div class="container">
-  <div class="manuel-img-scroll-container-main">
+<div class="manuel-img-scroll-container-main">
+  <div class="container">
     <div class="manuel-img-scroll-container">
-      <div class="grid-item-main-scroll">
-        {% for block in section.blocks %}
-          <div class="manuel-img-scroll">
-            {% if block.settings['manuel-img-scroll'] %}
-              <img src="{{ block.settings.manuel-img-scroll | img_url }}">
-            {% endif %}
-          </div>
-        {% endfor %}
+      <div class="grid-item-main-scroll swiper-container">
+        <div class="manuel-img-scroll-main swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide manuel-img-scroll">
+              {% if block.settings['manuel-img-scroll'] %}
+                <img src="{{ block.settings.manuel-img-scroll | img_url: 'master' }}">
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
