@@ -2,6 +2,9 @@
   .plus-banner{
         margin-bottom: {{ section.settings.pad-btm }}px;
   }
+  .shopify-banner{
+    flex-direction: {{ section.settings.flex_direction_banner }};
+  }
 
    .plus-btn{
        color:{{ section.settings.btn-color }};
@@ -111,6 +114,22 @@
       "label": "Padding bottom mobile",
       "default": 20
     },
+    {
+      "type": "select",
+      "id": "flex_direction_banner",
+      "label": "Video and Text alignment",
+      "options": [
+        {
+          "value": "row",
+          "label": "Text first"
+        },
+        {
+          "value": "row-reverse",
+          "label": "Video first"
+        }
+      ],
+      "default": "row"
+    },    
     {
       "type": "video_url",
       "id": "external_video_url",

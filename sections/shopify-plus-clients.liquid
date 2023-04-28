@@ -16,44 +16,44 @@
   </div>
   <div class="shopify-plus-clients swiper-container js-top-image-sliders-mobile">
     <div class="swiper-wrapper">
-      {% for block in section.blocks %}
-        <div class="plus-client-main{% if block.settings.color-change %} chnage-bg-section{% endif %} swiper-slide">
-          <div class="container">
-            <div style="plus-client-container"> 
-              <div class="plus-client" style="flex-direction: {{ block.settings.vertical_alignment }};">
-                <div class="client-image-main">
-                  {% if block.settings.cimage %}
-                    <div class="client-image">
-                      <img class="featimg" src="{{ block.settings.cimage | image_url}}" alt="client image">
+        {% for block in section.blocks %}
+          <div class="plus-client-main{% if block.settings.color-change %} chnage-bg-section{% endif %} swiper-slide">
+            <div class="container">
+              <div class="plus-client-container"> 
+                <div class="plus-client" style="flex-direction: {{ block.settings.vertical_alignment }};">
+                  <div class="client-image-main">
+                    {% if block.settings.cimage %}
+                      <div class="client-image">
+                        <img class="featimg" src="{{ block.settings.cimage | image_url}}" alt="client image">
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="client-text">
+                    <div class="client-text-logo">
+                      {% if block.settings.clogo %}
+                        <img class="logo" src="{{ block.settings.clogo | img_url :'master' }}" alt="client logo">
+                      {% endif %}
                     </div>
-                  {% endif %}
-                </div>
-                <div class="client-text">
-                  <div class="client-text-logo">
-                    {% if block.settings.clogo %}
-                      <img class="logo" src="{{block.settings.clogo | image_url}}" alt="client logo">
-                    {% endif %}
+                    <p class="cpara">{{ block.settings.cpara }}</p>
+                    <div class="client-text-btn">
+                      {% if block.settings.cBtnlink %}
+                        <a
+                          href="{{ block.settings.cBtnlink}}"
+                          class="client-btn"
+                          style="color:{{ block.settings.btn_color }}; background:{{ block.settings.btn_bg }}"
+                        >
+                          {{ block.settings.cBtn }}
+                        </a>
+                      {% endif %}
+                    </div>
+                    <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
+                    <p class="client-name">{{ block.settings.cname }}</p>
                   </div>
-                  <p class="cpara">{{ block.settings.cpara }}</p>
-                  <div class="client-text-btn">
-                    {% if block.settings.cBtnlink %}
-                      <a
-                        href="{{ block.settings.cBtnlink}}"
-                        class="client-btn"
-                        style="color:{{ block.settings.btn_color }}; background:{{ block.settings.btn_bg }}"
-                      >
-                        {{ block.settings.cBtn }}
-                      </a>
-                    {% endif %}
-                  </div>
-                  <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
-                  <p class="client-name">{{ block.settings.cname }}</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
     </div>
   </div>
 </section>

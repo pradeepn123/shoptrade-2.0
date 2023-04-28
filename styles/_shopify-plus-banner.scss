@@ -2,19 +2,15 @@
     .shopify-banner {
         display: flex;
         width: 100%;
+        column-gap: 33px;
 
         @media(max-width:768px) {
             flex-direction: column-reverse !important;
-
+            column-gap: unset;
         }
 
         .sbanner-text {
             width: 50%;
-            margin-right: 20px;
-            @media (max-width:1320px){
-                margin-right: 20px;
-                // width: 50%;
-            }
 
             @media(max-width:768px) {
                 width: 100%;
@@ -29,11 +25,6 @@
                 color: #000000;
                 margin-bottom: 32px;
                 max-width: 650px;
-                // margin-right: 33.5px;
-                @media (max-width:1320px){
-                    max-width: unset;
-                    // margin-right: 20px;
-                }
 
                 @media(max-width:1024px) {
                     font-size: 52px;
@@ -80,9 +71,10 @@
                 }
 
                 .sbanner-logo {
-                    @media(max-width:425px){
+                    @media(max-width:425px) {
                         margin-bottom: 20px;
                     }
+
                     img {
                         width: 198px;
                         object-fit: cover;
@@ -100,9 +92,10 @@
             }
 
             .plus-btn-main {
-                @media(max-width:425px){
+                @media(max-width:425px) {
                     margin-top: 40px;
                 }
+
                 .plus-btn {
                     border: 2px solid #000000;
                     border-radius: 12px;
@@ -128,8 +121,9 @@
                 padding-top: 20px;
 
                 .loctext {
-                    padding-left: 10px; 
-                    @media(max-width:520px){
+                    padding-left: 10px;
+
+                    @media(max-width:520px) {
                         padding-left: 17px;
                     }
 
@@ -169,12 +163,6 @@
         .sbanner-video {
             width: 50%;
             margin-left: auto;
-            padding-left: 12px;
-           @media(max-width:1320px){
-            padding-left: unset;
-           }
-       
-        
 
             @media(max-width:768px) {
                 width: 100%;
@@ -183,13 +171,14 @@
 
             .vedio__container.testimonial-vid__container {
                 border: 0;
-                
+
                 @media (min-width:767px) {
-                    height: 60%; 
-                } 
+                    height: 60%;
+                }
+
                 @media (min-width:1023px) {
-                    height: 95%; 
-                } 
+                    height: 95%;
+                }
 
                 .video-player {
                     height: 100%;

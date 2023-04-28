@@ -1007,10 +1007,10 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
   freeMode: true,
   breakpoints: {
     520: {
-      slidesPerView: 1,
+      slidesPerView: 1.3,
     },
     991: {
-      slidesPerView: 2,
+      slidesPerView: 2.3,
     },
   }
 });
