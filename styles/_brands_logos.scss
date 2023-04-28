@@ -22,13 +22,17 @@
             column-gap: 60px;
             @media(max-width:520px){
                 row-gap: 30px;
-                column-gap: 10px;
+                // column-gap: 10px;
                 grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
             }
+            @media(max-width:375px){
+                column-gap: 10px;
+            }
             .brands_logos{
-                height: 35px;
-                width: 165px;
-                @media(max-width:520px){
+                height: fit-content;
+                width: fit-content;
+                @media(max-width:375px){
+                    // height: inherit;
                     width: 101px;
                 }
                 img{

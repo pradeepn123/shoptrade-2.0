@@ -893,29 +893,35 @@ $('.accordion__header').click(function(e) {
 // the image sliding logos
 $(document).ready(function () {
 
-  let aboutCulterTop = new Swiper('.js-top-image-sliders', {
+  let slidingLogos = new Swiper('.js-top-image-sliders', {
     speed: 12000,
     autoplay: true,
-    loop: true,
-    slidesPerView: 5,
+    // loop: true,
+    // slidesPerView: 5,
     allowTouchMove: false,
 
     pauseOnMouseEnter: false,
 
-    breakpoints: {
-      1920: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      },
-      1028: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
-      480: {
-        slidesPerView: 1.3,
-        spaceBetween: 10
-      }
-    }
+    // breakpoints: {
+    //   1920: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30
+    //   },
+    //   1028: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 30
+    //   },
+    //   480: {
+    //     slidesPerView: 1.3,
+    //     spaceBetween: 10
+    //   }
+    // }
+    autoplay: {
+      delay: 0,
+    },
+    loop: true,
+    allowTouchMove: false,
+    pauseOnMouseEnter: false,
   });
 });
 

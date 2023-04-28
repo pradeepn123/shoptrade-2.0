@@ -134,37 +134,37 @@
         "e18da0d6-1952-472c-a8a4-4c3f12ac005c": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Vector_13.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector.jpg"
           }
         },
         "aec88d7a-38f5-41b7-8c54-4baeeb01a0b0": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Vector_12.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector_1.jpg"
           }
         },
         "37c937ec-fbd2-41d1-b321-7d789174e769": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Vector_11.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector_2.jpg"
           }
         },
         "1f33f0a7-70d3-4fe6-8dbe-ecc5990e6320": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Vector_10.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector_3.jpg"
           }
         },
         "24a0be28-cc7c-4744-85c8-0e0b6eb58e8e": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Vector_9.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector_4.jpg"
           }
         },
         "3c71a690-3ad7-4780-a922-166a7c24cabf": {
           "type": "brand_logo",
           "settings": {
-            "brands_logos": "shopify:\/\/shop_images\/Frame.svg"
+            "brands_logos": "shopify:\/\/shop_images\/Vector_5.jpg"
           }
         }
       },
@@ -294,7 +294,7 @@
       ],
       "settings": {
         "img-scroll-margin-btm": 136,
-        "img-scroll-margin-btm-mob": 4
+        "img-scroll-margin-btm-mob": 32
       }
     },
     "cc3e4c18-c797-46e7-8653-5e90bd32e731": {

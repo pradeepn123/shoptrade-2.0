@@ -38,7 +38,7 @@
                         <img
                           id="image2"
                           class="vedio__thumbnail"
-                          src="{{ block.settings.vedioThumbnailImage | image_url }}"
+                          src="{{ block.settings.vedioThumbnailImage | img_url :'master' }}"
                         >
                         {% if block.settings.external_video_url != null %}
                           <span class="play-icon arrow-btn ">

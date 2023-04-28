@@ -4,6 +4,14 @@
         padding-top: 29px;
     }
 
+     .clients-heading{
+        margin-bottom: 32px;
+        font-weight: 700;
+        @media(max-width:520px){
+            margin-bottom: 49px;
+        }
+     }
+
     .shopify-plus-clients {
         
         p {
@@ -35,7 +43,7 @@
                 .plus-client {
 
                     display: flex;
-                    column-gap: 80px;
+                    column-gap: 108px;
                     margin: 40px 0;
                    
 

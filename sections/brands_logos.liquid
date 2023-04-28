@@ -13,17 +13,17 @@
 <section class="static_brands_logos">
   <div class="container">
     <div class="brands_logos_contianer">
-        <div class="brands_logos_heading">
-            <h4> {{ section.settings.brands_logos_heading }} </h4>
-        </div>
-    <div class="brands_logos_main">
-      {% for block in section.blocks %}
-        <div class="brands_logos">
-          <img src="{{ block.settings.brands_logos | img_url:'master' }}">
-        </div>
-      {% endfor %}
+      <div class="brands_logos_heading">
+        <h4>{{ section.settings.brands_logos_heading }}</h4>
+      </div>
+      <div class="brands_logos_main">
+        {% for block in section.blocks %}
+          <div class="brands_logos">
+            <img src="{{ block.settings.brands_logos | img_url:'master' }}">
+          </div>
+        {% endfor %}
+      </div>
     </div>
-</div>
   </div>
 </section>
 {% schema %}
@@ -44,32 +44,31 @@
       "type": "range",
       "id": "parent-margin-btm-mob",
       "min": 20,
-      "max": 120, 
+      "max": 120,
       "step": 1,
       "unit": "px",
       "label": "Section Paadding btm Mob",
       "default": 84
     },
     {
-        "type":"text",
-        "id":"brands_logos_heading",
-        "label":"Heading"
+      "type": "text",
+      "id": "brands_logos_heading",
+      "label": "Heading"
     }
   ],
-  "blocks":[
+  "blocks": [
     {
-        "name":"brand logo",
-        "type":"brand_logo",
-        "settings":[
-            {
-                "id":"brands_logos",
-                "label":"Add a logo",
-                "type":"image_picker"
-            }
-        ]
-    
+      "name": "brand logo",
+      "type": "brand_logo",
+      "settings": [
+        {
+          "id": "brands_logos",
+          "label": "Add a logo",
+          "type": "image_picker"
+        }
+      ]
     }
-],
+  ],
   "presets": [
     {
       "name": "brands logos"

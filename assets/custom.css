@@ -7186,6 +7186,15 @@ textarea {
     padding-top: 29px;
   }
 }
+.clients-shopify .clients-heading {
+  margin-bottom: 32px;
+  font-weight: 700;
+}
+@media (max-width: 520px) {
+  .clients-shopify .clients-heading {
+    margin-bottom: 49px;
+  }
+}
 .clients-shopify .shopify-plus-clients p {
   padding: 0;
   margin: 0;
@@ -7210,7 +7219,7 @@ textarea {
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .plus-client {
   display: flex;
-  column-gap: 80px;
+  column-gap: 108px;
   margin: 40px 0;
 }
 @media (max-width: 1320px) {
@@ -8804,15 +8813,19 @@ textarea {
 @media (max-width: 520px) {
   .static_brands_logos .brands_logos_contianer .brands_logos_main {
     row-gap: 30px;
-    column-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
   }
 }
-.static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos {
-  height: 35px;
-  width: 165px;
+@media (max-width: 375px) {
+  .static_brands_logos .brands_logos_contianer .brands_logos_main {
+    column-gap: 10px;
+  }
 }
-@media (max-width: 520px) {
+.static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos {
+  height: fit-content;
+  width: fit-content;
+}
+@media (max-width: 375px) {
   .static_brands_logos .brands_logos_contianer .brands_logos_main .brands_logos {
     width: 101px;
   }

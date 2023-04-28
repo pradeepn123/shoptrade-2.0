@@ -10,79 +10,74 @@
     }
    }
 {% endstyle %}
-<section class="container workculter brands_logo_marquee_main">
-    <div class='workculter__head brands_logo_marquee_head'>
-        <div class="container">
-            <h2 class="brands_logo_marquee_heading"> {{ section.settings.heading }} </h2>
+<div class="container">
+  <section class="workculter brands_logo_marquee_main">
+    <div class="workculter__head brands_logo_marquee_head">
+      <h2 class="brands_logo_marquee_heading">{{ section.settings.heading }}</h2>
+    </div>
+    <div class="sliderTop">
+      <div class="swiper-container js-top-image-sliders">
+        <div class="swiper-wrapper brands_logo_marquee_wrapper">
+          {% for i in (1..50) %}
+            {%- for block in section.blocks -%}
+              <div class="swiper-slide brands-logos-slider">
+                <img src="{{ block.settings.slideImgRight | img_url :'master' }}">
+              </div>
+            {%- endfor -%}
+          {% endfor %}
         </div>
+      </div>
     </div>
-    <div class="sliderTop"> 
-        <div class="swiper-container js-top-image-sliders"> 
-            <div class="swiper-wrapper brands_logo_marquee_wrapper">
-                {%- assign topslider = section.blocks | where : 'type' , 'slideTop' -%}
-                {% for i in (1..5) %}
-                    {%- for block in topslider -%}
-                        <div class="swiper-slide brands-logos-slider"> 
-                            <img src="{{ block.settings.slideImgRight | image_url }}">
-                        </div>
-                    {%- endfor -%}
-                {% endfor %}
-              
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
+  </section>
+</div>
 
 {% schema %}
+{
+  "name": "Logos sliding",
+  "settings": [
     {
-        "name":"Logos sliding",
-        "settings":[
-            {
-                "type": "range",
-                "id": "parent-margin-btm",
-                "min": 1,
-                "max": 100,
-                "step": 1,
-                "unit": "px",
-                "label": "Section Paadding Bottom",
-                "default": 1
-              },
-              {
-                "type": "range",
-                "id": "parent-margin-btm-mob",
-                "min": 1,
-                "max": 100,
-                "step": 1,
-                "unit": "px",
-                "label": "Section Paadding btm Mob",
-                "default": 1
-              },
-              {
-                "id":"heading",
-                "label":"Heading",
-                "type":"text"
-            }
-        ],
-        "blocks":[
-            {
-                "name":"slider top",
-                "type":"slideTop",
-                "settings":[
-                    {
-                        "id":"slideImgRight",
-                        "label":"slide Image Right",
-                        "type":"image_picker"
-                    }
-                ]
-            
-            }
-        ],
-        "presets": [
-            {
-              "name": "Logos sliding"
-            }
-          ]
+      "type": "range",
+      "id": "parent-margin-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Paadding Bottom",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "parent-margin-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Section Paadding btm Mob",
+      "default": 1
+    },
+    {
+      "id": "heading",
+      "label": "Heading",
+      "type": "text"
     }
+  ],
+  "blocks": [
+    {
+      "name": "slider top",
+      "type": "slideTop",
+      "settings": [
+        {
+          "id": "slideImgRight",
+          "label": "slide Image Right",
+          "type": "image_picker"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logos sliding"
+    }
+  ]
+}
 {% endschema %}
