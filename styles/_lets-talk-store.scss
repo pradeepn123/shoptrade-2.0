@@ -23,6 +23,10 @@
             width: fit-content;
             height: fit-content;
             margin-left: auto;
+            padding-left: 85px;
+            @media(max-width:1320px){
+                padding-left: 20px;
+            }
 
             img {
                 width: 100%;
@@ -51,13 +55,7 @@
         .lets-talk-store-heading {
             font-weight: 700;
             padding-bottom: 9px;
-            width: 795px;
-            height: fit-content;
             line-height: 64px;
-            @media(max-width:1320px){
-                height: unset;
-                width: unset;
-            }
             @media(max-width:1024px){
                 line-height: 42px;
             }

@@ -1001,13 +1001,14 @@ var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
 // manuel images scroll .manuel-img-scroll-main
 var swiper_manual = new Swiper('.grid-item-main-scroll', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   // loop: true,
   grabCursor: true,
   freeMode: true,
   breakpoints: {
     520: {
       slidesPerView: 1.3,
+      spaceBetween: 15,
     },
     991: {
       slidesPerView: 2.3,

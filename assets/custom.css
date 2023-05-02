@@ -8526,6 +8526,12 @@ textarea {
   width: fit-content;
   height: fit-content;
   margin-left: auto;
+  padding-left: 85px;
+}
+@media (max-width: 1320px) {
+  .lets-talk-store-section .lets-talk-store .lets-talk-store-img {
+    padding-left: 20px;
+  }
 }
 .lets-talk-store-section .lets-talk-store .lets-talk-store-img img {
   width: 100%;
@@ -8554,15 +8560,7 @@ textarea {
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
   font-weight: 700;
   padding-bottom: 9px;
-  width: 795px;
-  height: fit-content;
   line-height: 64px;
-}
-@media (max-width: 1320px) {
-  .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
-    height: unset;
-    width: unset;
-  }
 }
 @media (max-width: 1024px) {
   .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
