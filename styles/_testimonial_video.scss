@@ -47,11 +47,12 @@
             .Logo-text-testimonial-imgae {
                 height: auto;
                 width: fit-content;
-                margin: 30px 0 16px 0;
+                margin: 31px 0 10px 0;
 
                 @media(max-width:768px) {
                     height: 32px;
                     width: 189px;
+                    margin: 36px 0 13px 0;
                 }
 
                 img {

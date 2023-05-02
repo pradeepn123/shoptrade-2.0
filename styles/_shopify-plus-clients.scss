@@ -44,9 +44,6 @@
                 }
 
                 .container {
-                    @media(max-width:768px) {
-                        padding-left: 0;
-                    }
 
                     .plus-client-container {
                         padding: 0 15px;
@@ -145,8 +142,9 @@
                                 }
 
                                 .client-text-btn {
+                                    margin-bottom: 52px;
                                     @media(max-width:768px) {
-                                        margin: 24px 0;
+                                        margin: 24px 0 39px 0;
                                     }
 
                                     .client-btn {
@@ -177,16 +175,16 @@
                                     font-size: 20px;
                                     line-height: 30px;
                                     color: #000000;
-                                    padding-top: 60px;
+                                    // padding-top: 18px;
 
                                     @media(max-width:1320px) {
                                         width: 100%;
                                         font-size: 18px;
                                     }
 
-                                    @media(max-width:1024px) {
-                                        padding-top: 40px;
-                                    }
+                                    // @media(max-width:1024px) {
+                                    //     padding-top: 40px;
+                                    // }
 
                                     @media(max-width:768px) {
                                         padding: 6px 0;

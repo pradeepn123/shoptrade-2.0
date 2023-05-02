@@ -57,11 +57,11 @@
 
             .plus-logo {
                 display: flex;
-                margin-bottom: 50px;
+                margin-bottom: 66px;
                 width: 100%;
                 column-gap: 36px;
 
-                @media (max-width:520px) {
+                @media (max-width:1024px) {
                     margin-bottom: 40px;
                     column-gap: 25px;
                 }
@@ -185,20 +185,10 @@
 
                     .arrow-btn-sbanner-video {
                         position: absolute !important;
-                        top: 40% !important;
-                        left: 46% !important;
+                        top: 50% !important;
+                        left: 50% !important;
+                        transform: translate(-50%,-50%) !important;
                         cursor: pointer !important;
-
-                        @media(max-width:768px) {
-                            top: 42% !important;
-                            left: 48% !important;
-                        }
-
-                        @media(max-width:520px) {
-                            top: 35% !important;
-
-                        }
-
                     }
                 }
             }

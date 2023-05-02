@@ -7022,11 +7022,11 @@ textarea {
 }
 .plus-banner .shopify-banner .sbanner-text .plus-logo {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 66px;
   width: 100%;
   column-gap: 36px;
 }
-@media (max-width: 520px) {
+@media (max-width: 1024px) {
   .plus-banner .shopify-banner .sbanner-text .plus-logo {
     margin-bottom: 40px;
     column-gap: 25px;
@@ -7149,20 +7149,10 @@ textarea {
 }
 .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
   position: absolute !important;
-  top: 40% !important;
-  left: 46% !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   cursor: pointer !important;
-}
-@media (max-width: 768px) {
-  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
-    top: 42% !important;
-    left: 48% !important;
-  }
-}
-@media (max-width: 520px) {
-  .plus-banner .shopify-banner .sbanner-video .vedio__container.testimonial-vid__container .video-player .arrow-btn-sbanner-video {
-    top: 35% !important;
-  }
 }
 
 @media (max-width: 768px) {
@@ -7202,11 +7192,6 @@ textarea {
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main {
     min-width: 312px;
-  }
-}
-@media (max-width: 768px) {
-  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container {
-    padding-left: 0;
   }
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container {
@@ -7295,9 +7280,12 @@ textarea {
     display: none;
   }
 }
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .client-text-btn {
+  margin-bottom: 52px;
+}
 @media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .client-text-btn {
-    margin: 24px 0;
+    margin: 24px 0 39px 0;
   }
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .client-text-btn .client-btn {
@@ -7327,17 +7315,11 @@ textarea {
   font-size: 20px;
   line-height: 30px;
   color: #000000;
-  padding-top: 60px;
 }
 @media (max-width: 1320px) {
   .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .ctestimonial {
     width: 100%;
     font-size: 18px;
-  }
-}
-@media (max-width: 1024px) {
-  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .ctestimonial {
-    padding-top: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -8468,12 +8450,13 @@ textarea {
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .Logo-text-testimonial-imgae {
   height: auto;
   width: fit-content;
-  margin: 30px 0 16px 0;
+  margin: 31px 0 10px 0;
 }
 @media (max-width: 768px) {
   .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .Logo-text-testimonial-imgae {
     height: 32px;
     width: 189px;
+    margin: 36px 0 13px 0;
   }
 }
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .Logo-text-testimonial-imgae img {
@@ -8838,11 +8821,11 @@ textarea {
 
 .brands_logo_marquee_main .brands_logo_marquee_head {
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .brands_logo_marquee_main .brands_logo_marquee_head {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 }
 .brands_logo_marquee_main .brands_logo_marquee_head .brands_logo_marquee_heading {
