@@ -13,6 +13,7 @@
       "settings": {
         "pad-btm": 53,
         "pad-btm-mob": 1,
+        "flex_direction_banner": "row",
         "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
         "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.png",
         "plusheading": "Shopify Plus Agency",
@@ -40,6 +41,7 @@
             "clogo": "shopify:\/\/shop_images\/logo-hata_200abf19-53e1-4b97-9985-8fe2ed315802.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
+            "project-ratings": 5,
             "btn_color": "#ffffff",
             "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/shoptrade.co\/pages\/hathaspace",
@@ -56,6 +58,7 @@
             "clogo": "shopify:\/\/shop_images\/logo-synchro_81552f61-48ab-44ba-b2cc-e37f3f6eb26c.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
+            "project-ratings": 4.5,
             "btn_color": "#ffffff",
             "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/besynchro.com\/",
@@ -72,6 +75,7 @@
             "clogo": "shopify:\/\/shop_images\/image_24_2.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
+            "project-ratings": 4.5,
             "btn_color": "#ffffff",
             "btn_bg": "#ff7121",
             "cBtnlink": "https:\/\/shoptrade.co\/pages\/elevatione",
@@ -191,6 +195,7 @@
             "vedioThumbnailImage": "shopify:\/\/shop_images\/image_147_0b4fcef8-23dd-4d2e-89f5-cc1b3c85b1a7.png",
             "external_video_url": "https:\/\/youtu.be\/9Erlh1_oMxk",
             "testimonial-logo": "shopify:\/\/shop_images\/image_149.svg",
+            "project-rating": 5,
             "vedioHead": "\"I am continually impressed by their expertise in   Shopify and web development.\"",
             "vedioSubtext": "~ Edwin Rosado, VP - Product Development"
           }
@@ -201,6 +206,7 @@
             "vedioThumbnailImage": "shopify:\/\/shop_images\/image_149_f212f268-0bc5-4769-a82b-da266b0227ad.png",
             "external_video_url": "https:\/\/youtu.be\/PBrlQ2hrX98",
             "testimonial-logo": "shopify:\/\/shop_images\/image_153.svg",
+            "project-rating": 5,
             "vedioHead": "\"ShopTrade was experienced in developing apps and   set realistic timelines and price to get the job done.\"",
             "vedioSubtext": "~ Zenos Scmickrath, Co-FounderLensAdvizor"
           }

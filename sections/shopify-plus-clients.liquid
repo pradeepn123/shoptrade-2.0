@@ -46,6 +46,21 @@
                         </a>
                       {% endif %}
                     </div>
+                    <div class="clients-shopify_project_rating">  
+                      {% assign filled_stars = block.settings.project-ratings | floor %}
+                      {% assign half_star = block.settings.project-ratings | minus: filled_stars %}
+                      {% assign empty_stars = 5 | minus: block.settings.project-ratings | minus: half_star | ceil %}
+                        {{ block.settings.project-ratings }}
+                          {% for i in (1..filled_stars) %}
+                            {% render 'filled_star' %}
+                          {% endfor %}
+                          {% if half_star > 0 %}
+                            {% render 'half_star_rating' %}
+                          {% endif %}
+                          {% for i in (1..empty_stars) %}
+                            {% render 'un-filled_star' %}
+                          {% endfor %}
+                    </div>
                     <p class="ctestimonial">{{ block.settings.ctestimonial }}</p>
                     <p class="client-name">{{ block.settings.cname }}</p>
                   </div>
@@ -134,6 +149,16 @@
           "type": "text",
           "id": "cBtn",
           "label": "Button text"
+        },
+        {
+          "type": "range",
+          "id": "project-ratings",
+          "min": 1.0,
+          "max": 5.0,
+          "step": 0.5,
+          "unit": "STR",
+          "label": "Project ratings",
+          "default": 5.0
         },
         {
           "type": "color",

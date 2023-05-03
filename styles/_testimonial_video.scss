@@ -61,6 +61,12 @@
                     object-fit: cover;
                 }
             }
+            .testimonial_project_rating{
+                margin-bottom: 8px;
+                @media(max-width:768px){
+                    margin-bottom: 6px;
+                }
+            }
 
             .about-value__cards {
                 .testimonial-video__card {

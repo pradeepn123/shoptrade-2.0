@@ -38,7 +38,7 @@
                         <img
                           id="image2"
                           class="vedio__thumbnail"
-                          src="{{ block.settings.vedioThumbnailImage | img_url :'master' }}"
+                          src="{{ block.settings.vedioThumbnailImage | img_url :'master' }}" loading="lazy"
                         >
                         {% if block.settings.external_video_url != null %}
                           <span class="play-icon arrow-btn ">
@@ -59,8 +59,23 @@
               <div class="testimonial-video_info">
                 <div class="Logo-text-testimonial">
                   <div class="Logo-text-testimonial-imgae">
-                    <img src="{{ block.settings.testimonial-logo | img_url : 'master' }}">
+                    <img src="{{ block.settings.testimonial-logo | img_url : 'master' }}" loading="lazy">
                   </div>
+                </div>
+                <div class="testimonial_project_rating">
+                  {% assign filled_stars = block.settings.project-rating | floor %}
+                  {% assign half_star = block.settings.project-rating | minus: filled_stars %}
+                  {% assign empty_stars = 5 | minus: block.settings.project-rating | minus: half_star | ceil %}
+                  {{ block.settings.project-rating }}
+                  {% for i in (1..filled_stars) %}
+                    {% render 'filled_star' %}
+                  {% endfor %}
+                  {% if half_star > 0 %}
+                    {% render 'half_star_rating' %}
+                  {% endif %}
+                  {% for i in (1..empty_stars) %}
+                    {% render 'un-filled_star' %}
+                  {% endfor %}
                 </div>
                 <div class="about-value__cards">
                   <div class="testimonial-video__card">
@@ -148,6 +163,16 @@
           "type": "image_picker",
           "id": "testimonial-logo",
           "label": "logo"
+        },
+        {
+          "type": "range",
+          "id": "project-rating",
+          "min": 1.0,
+          "max": 5.0,
+          "step": 0.5,
+          "unit": "STR",
+          "label": "Project ratings",
+          "default": 5.0
         },
         {
           "id": "vedioHead",

@@ -896,7 +896,7 @@ $(document).ready(function () {
   let slidingLogos = new Swiper('.js-top-image-sliders', {
     speed: 12000,
     autoplay: true,
-    // loop: true,
+    loop: true,
     // slidesPerView: 5,
     allowTouchMove: false,
 
@@ -971,8 +971,8 @@ breakpoint.addListener(breakpointChecker);
 
 breakpointChecker();
 
-// active slides shoptrade-info
-var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
+// active slides shoptrade-info starts here
+var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
@@ -986,6 +986,11 @@ var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
     },
     1400: {
       slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        hide: false,
+        draggable: true,
+      },
     },
     1440: {
       slidesPerView: 3,
@@ -993,9 +998,20 @@ var mySwipera = new Swiper('.shoptrade-plus-info-slider', {
     2560: {
       slidesPerView: 3,
     },
-
-  }
+  },
 });
+function togglePagination() {
+  if (mySwiper_new.isEnd && mySwiper_new.slides.length <= mySwiper_new.params.slidesPerView) {
+    mySwiper_new.pagination.el.style.display = 'none';
+  } else {
+    mySwiper_new.pagination.el.style.display = 'block';
+  }
+}
+
+togglePagination();
+window.addEventListener('resize', togglePagination);
+
+// active slides shoptrade-info ends here
 
 
 // manuel images scroll .manuel-img-scroll-main

@@ -7197,7 +7197,7 @@ textarea {
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container {
   padding: 0 15px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container {
     padding: 0;
   }
@@ -7308,6 +7308,14 @@ textarea {
     font-size: 15px;
     border-radius: 9px;
     border: 1.5px solid #000000;
+  }
+}
+.clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .clients-shopify_project_rating {
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .clients-shopify_project_rating {
+    margin-bottom: 6px;
   }
 }
 .clients-shopify .shopify-plus-clients .swiper-wrapper .plus-client-main .container .plus-client-container .plus-client .client-text .ctestimonial {
@@ -8464,6 +8472,14 @@ textarea {
   height: auto;
   object-fit: cover;
 }
+.testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .testimonial_project_rating {
+  margin-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .testimonial_project_rating {
+    margin-bottom: 6px;
+  }
+}
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .about-value__cards .testimonial-video__card h3,
 .testimonial-video__container_main .testimonial-video__wrp_info .testimonial-video_info .about-value__cards .testimonial-video__card p {
   margin: 0;
@@ -8761,11 +8777,6 @@ textarea {
   margin: 0 10px;
   background-color: #ccc;
   cursor: pointer;
-}
-@media (min-width: 1400px) {
-  .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet {
-    display: none;
-  }
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF7121;
