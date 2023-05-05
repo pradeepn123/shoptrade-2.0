@@ -14,10 +14,9 @@
     }
     .swiper-container{
         .swiper-wrapper{
-            height: 39rem;
+            height: fit-content;
             width:39rem;
             @media(max-width:520px){
-                height: 20rem;
                 width: 100%;
             }
         }
@@ -32,6 +31,7 @@
                     height: 99%;
                     border: 1px solid #000000;
                     border-radius: 8px;
+                    object-fit: contain;
                 }
         }
     }

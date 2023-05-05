@@ -29,7 +29,8 @@
     }
         .page_container{  
             @media(max-width:767px){
-                width: 51vw;
+                // width: 51vw;
+                // margin-right: 0;
             }  
             @media(min-width:768px) and (max-width:1400px){
                 width: 30vw;
@@ -43,6 +44,13 @@
                     list-style: none;
                     margin-right: 10px;
                     max-width: 200px;
+
+                    @media(max-width:520px){
+                        margin-right: 0;
+                        width:173px;
+                        padding-right: 40px;
+                    }
+                    
                     @media(min-width:1680px){
                         max-width: 250px; 
                     }

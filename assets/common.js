@@ -876,3 +876,21 @@ var swiper = new Swiper('.js-bfr-afr', {
         }
     }
 });
+
+//Audit page - FAQ Accordion//
+
+$('.accordion__header').click(function(e) {
+	e.preventDefault();
+	var currentIsActive = $(this).hasClass('is-active');
+	$(this).parent('.accordion').find('> *').removeClass('is-active');
+  $('.accordion__toggle svg').removeClass('rotate_svg');
+	if(currentIsActive != 1) {
+		$(this).addClass('is-active');
+		$(this).next('.accordion__body').addClass('is-active');
+    $(this).find('.accordion__toggle svg').addClass('rotate_svg');
+	}
+});
+
+
+
+
