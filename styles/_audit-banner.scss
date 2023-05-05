@@ -1,7 +1,7 @@
 .audit-banner{
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
     position: relative; 
     @media(max-width:520px){
         margin:0;
@@ -10,13 +10,15 @@
     &::after{
         position: absolute;
         content: "";
-        width: 200px;
-        height: 160px;
+        width: 394px;
+        height: 394px;
+        border-radius: 50%;
         background: #FF7121;
-        filter: blur(36.5px);
-        left: -18px;
-        bottom: 3%;
+        filter: blur(94.5px);
+        left: -142px;
+        bottom: -142px;
         z-index: -1;
+       
         @media(max-width:1024px){
            display: none;
         }

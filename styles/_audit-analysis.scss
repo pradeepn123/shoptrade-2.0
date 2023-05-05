@@ -15,7 +15,10 @@
 
 
 .audit-analysis{
-    margin:80px 0;
+    z-index: 12;
+    position: relative;
+    background: #fff;
+    padding:60px 0;
     @media(max-width:520px){
        margin:0;
     }

@@ -23,7 +23,7 @@
 
                 </div>
             </div>
-            <p class="price"> Price <span>$1399</span>/ One-time purchase</p>
+            <p class="price"> Price <span>{{ section.settings.prodprice }}</span>/ One-time purchase</p>
             <button class="prod-btn">{{ section.settings.prodbtn }}</button>
             <p class="prod_report">Get your report by <span id="date-output"></span> </span></p> 
         </div>
@@ -282,6 +282,11 @@ document.addEventListener('DOMContentLoaded', function() {
 "type":"text",
 "label":"Button text",
 "id":"prodbtn"
+},
+{
+"type":"text",
+"label":"Product price",
+"id":"prodprice"
 },
 {
 "type":"product",
