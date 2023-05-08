@@ -7493,11 +7493,11 @@ textarea {
 }
 .container .bfr-aft-wrapper .swiper-bfr-slide img,
 .container .bfr-aft-wrapper .swiper-aft-slide img {
-  width: 100%;
+  width: 99%;
   height: 99%;
-  border: 1px solid #000000;
   border-radius: 8px;
   object-fit: contain;
+  border: 1px solid #000000;
 }
 
 .audit__slider-arrow .slider-arrow {

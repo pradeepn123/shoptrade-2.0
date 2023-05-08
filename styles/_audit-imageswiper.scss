@@ -26,12 +26,15 @@
        
             .swiper-bfr-slide,
             .swiper-aft-slide {
+                
+                
                 img {
-                    width: 100%;
+                    width: 99%;
                     height: 99%;
-                    border: 1px solid #000000;
                     border-radius: 8px;
                     object-fit: contain;
+                    border: 1px solid #000000;
+                    
                 }
         }
     }
