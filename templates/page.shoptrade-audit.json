@@ -1,0 +1,408 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "7c197c6c-759f-4b28-91b8-9e07ba29726e": {
+      "type": "audit-banner",
+      "settings": {
+        "heading": "Boost conversions with exceptional UX analysis",
+        "subtext": "Discover the key to unlocking your website's potential with our personalized roadmap to drive conversions, increase customer retention, and establish long-lasting brand credibility.",
+        "bannerBtn": "View Plan",
+        "bannerBtnlink": "#audit-report"
+      }
+    },
+    "1e395575-fd0d-4794-9bb2-c7b3bc2127c5": {
+      "type": "audit-analysis",
+      "blocks": {
+        "96d1b3fc-3553-40c6-9b0d-c010678b44d4": {
+          "type": "cardType",
+          "settings": {
+            "aimage": "shopify:\/\/shop_images\/IMAGE_1.jpg",
+            "aimage_mob": "shopify:\/\/shop_images\/Group_8241.jpg",
+            "aheading": "Improve Website Performance with Our Analysis",
+            "apara": "Our team conducts a comprehensive analysis of your website's pages, identifying areas for improvement and providing rationale for our design decisions in a detailed report. With our analysis, you'll see the impact of improved user experience on your website's performance. ."
+          }
+        },
+        "6db1aa72-8ec9-491c-aa6c-68869d4e40f4": {
+          "type": "cardType",
+          "settings": {
+            "aimage": "shopify:\/\/shop_images\/Group_8267_2.jpg",
+            "aimage_mob": "shopify:\/\/shop_images\/Group_8242.jpg",
+            "aheading": "Transform Your Site with Our Complete Redesign",
+            "apara": "Our website analysis goes beyond simple redesigns. We consider user experience and business objectives to create pages that convert. Plus, we'll identify any gaps in your website and design new sections to fill them."
+          }
+        }
+      },
+      "block_order": [
+        "96d1b3fc-3553-40c6-9b0d-c010678b44d4",
+        "6db1aa72-8ec9-491c-aa6c-68869d4e40f4"
+      ],
+      "settings": {
+      }
+    },
+    "a7480ca1-4e76-46f9-9023-bec4b287cdc0": {
+      "type": "audit-core",
+      "blocks": {
+        "03b95dfa-fbf3-457f-9d02-c7b5c06d8f7a": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226.png",
+            "page_name": "HOME PAGE"
+          }
+        },
+        "3ff32a2f-910a-419f-8951-5b569cd9bd5b": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_1.png",
+            "page_name": "PRODUCT PAGE"
+          }
+        },
+        "a814d2d7-674e-46be-ac7f-996703b3b063": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_2.png",
+            "page_name": "COLLECTION PAGE"
+          }
+        },
+        "82c875a0-0f0c-4238-a709-fa493674f6a2": {
+          "type": "cardType",
+          "settings": {
+            "page_image": "shopify:\/\/shop_images\/Group_8226_3.png",
+            "page_name": "CART PAGE"
+          }
+        }
+      },
+      "block_order": [
+        "03b95dfa-fbf3-457f-9d02-c7b5c06d8f7a",
+        "3ff32a2f-910a-419f-8951-5b569cd9bd5b",
+        "a814d2d7-674e-46be-ac7f-996703b3b063",
+        "82c875a0-0f0c-4238-a709-fa493674f6a2"
+      ],
+      "settings": {
+        "heading": "We Focus On Core Converting Pages"
+      }
+    },
+    "022afbff-bc63-4664-90ed-3be349823d42": {
+      "type": "audit-imageswiper",
+      "blocks": {
+        "71f3666e-5c62-4858-84ae-cabac8475bc7": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Frame_82.png",
+            "aft_image": "shopify:\/\/shop_images\/Frame_83.png"
+          }
+        },
+        "4834c0e0-f2a4-464d-832e-c5ad25b5666d": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Frame_82.png",
+            "aft_image": "shopify:\/\/shop_images\/Frame_83.png"
+          }
+        }
+      },
+      "block_order": [
+        "71f3666e-5c62-4858-84ae-cabac8475bc7",
+        "4834c0e0-f2a4-464d-832e-c5ad25b5666d"
+      ],
+      "settings": {
+      }
+    },
+    "45abf2da-6082-4e59-b7c1-51995b3acbf9": {
+      "type": "audit-marquee",
+      "blocks": {
+        "9f80796f-d59a-4c7d-8c9c-cd2caf64b0ba": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Group_1861.png"
+          }
+        },
+        "0b469264-abd7-4221-86e4-cecf769b3461": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Layer_1_1.png"
+          }
+        },
+        "5e54189a-759a-4790-92be-722e1b9a3bf9": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Mask_group_98a08bae-7212-422b-810b-bf62503617da.png"
+          }
+        },
+        "6f9545c0-5894-4c6a-a135-d668c5b672e6": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Vector_96ad0fd9-b14f-4ab6-aafa-ccea669406a3.png"
+          }
+        },
+        "84f58ed7-95f8-4e6b-9d47-5a96c60685f7": {
+          "type": "cardType",
+          "settings": {
+            "mar_image": "shopify:\/\/shop_images\/Mask_group_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "9f80796f-d59a-4c7d-8c9c-cd2caf64b0ba",
+        "0b469264-abd7-4221-86e4-cecf769b3461",
+        "5e54189a-759a-4790-92be-722e1b9a3bf9",
+        "6f9545c0-5894-4c6a-a135-d668c5b672e6",
+        "84f58ed7-95f8-4e6b-9d47-5a96c60685f7"
+      ],
+      "settings": {
+        "mheading": "Brands we've worked with"
+      }
+    },
+    "454be5a3-e657-4663-a95b-237657a33be6": {
+      "type": "audit-product",
+      "blocks": {
+        "d6f214c5-5afe-4866-9b6d-2ef5183a6acb": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "Full Page Analysis"
+          }
+        },
+        "d0f74558-9794-4197-913b-6c105d922899": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "Design Recommendations"
+          }
+        },
+        "46d81c60-d033-4410-bb5f-7f3d2b4b9d28": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "Redesign"
+          }
+        },
+        "3da33d8b-73f2-408e-8056-9aa253338ed4": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "PDF Analysis Report"
+          }
+        },
+        "9ba922d9-40c1-4031-b02e-c50bab2ce8c3": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "Mobile & Desktop Screens"
+          }
+        },
+        "bd5ae1db-2147-4221-94e6-d6a6d3a5d2e2": {
+          "type": "prod-feat",
+          "settings": {
+            "prod-feat": "Figma Design File"
+          }
+        },
+        "abf9fd95-800b-4129-8637-527bdfc63966": {
+          "type": "popup",
+          "settings": {
+            "pop-title": "Screens",
+            "pop-sub": "Mobile, Desktop"
+          }
+        },
+        "0a315529-42df-42d1-a3e6-dcec8acec83b": {
+          "type": "popup",
+          "settings": {
+            "pop-title": "Pages",
+            "pop-sub": "Homepage, Collection page, Product page & Cart"
+          }
+        },
+        "07f7ed53-9fa7-4f77-a451-89deb3b2df21": {
+          "type": "popup",
+          "settings": {
+            "pop-title": "Timeline",
+            "pop-sub": "1 month"
+          }
+        },
+        "da005c48-b7ff-400b-9114-0ac98878e871": {
+          "type": "popup",
+          "settings": {
+            "pop-title": "Deliverables",
+            "pop-sub": "Analysis report, Figma Design file"
+          }
+        }
+      },
+      "block_order": [
+        "d6f214c5-5afe-4866-9b6d-2ef5183a6acb",
+        "d0f74558-9794-4197-913b-6c105d922899",
+        "46d81c60-d033-4410-bb5f-7f3d2b4b9d28",
+        "3da33d8b-73f2-408e-8056-9aa253338ed4",
+        "9ba922d9-40c1-4031-b02e-c50bab2ce8c3",
+        "bd5ae1db-2147-4221-94e6-d6a6d3a5d2e2",
+        "abf9fd95-800b-4129-8637-527bdfc63966",
+        "0a315529-42df-42d1-a3e6-dcec8acec83b",
+        "07f7ed53-9fa7-4f77-a451-89deb3b2df21",
+        "da005c48-b7ff-400b-9114-0ac98878e871"
+      ],
+      "settings": {
+        "heading": "Audit Report",
+        "subtext": "by ShopTrade",
+        "prodbtn": "Get your Report",
+        "prodprice": "$1399",
+        "pop-up-product": "shoptrade-audit",
+        "popheading": "Audit Report",
+        "popsubtext": "by ShopTrade",
+        "popdesc": "<p>Thank you for choosing ShopTrade for your website audit needs. We are excited to partner with you in enhancing your website's performance and user experience. By clicking checkout, you agree to comply with our <a href=\"\/pages\/terms-and-condition\" target=\"_blank\" title=\"Terms & Conditions\">terms and conditions<\/a><\/p>",
+        "popbtn": "$1399 - Checkout"
+      }
+    },
+    "00bdd982-76ae-4864-b771-c47f3e61c644": {
+      "type": "audit-timeline",
+      "blocks": {
+        "14dfb098-481c-4dd3-bf71-a33ee6198d0f": {
+          "type": "cardType-right",
+          "settings": {
+            "time_icon_right": "shopify:\/\/shop_images\/Group_8197.png",
+            "title": "Provide Details",
+            "desc": "Answer few questions to share information about your website, and its business goals."
+          }
+        },
+        "6b253fc6-7338-4732-8224-97ed9721187b": {
+          "type": "cardType-left",
+          "settings": {
+            "time_icon_left": "shopify:\/\/shop_images\/Group_8198.png",
+            "title": "Audit Execution",
+            "desc": "Analyze and redesign the pages for conversion optimization, brand trust, and a clearer customer journey."
+          }
+        },
+        "34c3740c-676b-42cf-8776-e5ae809ee958": {
+          "type": "cardType-right",
+          "settings": {
+            "time_icon_right": "shopify:\/\/shop_images\/Group_8201.png",
+            "title": "Audit Report Delivery",
+            "desc": "Provide PDF report with before\/after design & rationale, and design file access (Figma) for you to implement the changes."
+          }
+        }
+      },
+      "block_order": [
+        "14dfb098-481c-4dd3-bf71-a33ee6198d0f",
+        "6b253fc6-7338-4732-8224-97ed9721187b",
+        "34c3740c-676b-42cf-8776-e5ae809ee958"
+      ],
+      "settings": {
+        "theading": "How it works?"
+      }
+    },
+    "96eee045-a6c9-4681-a4c2-ae97390c4146": {
+      "type": "testimonials",
+      "blocks": {
+        "19d004a4-6c34-4020-b269-19ca44d0da31": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/image_153.svg",
+            "sliderText": "“ShopTrade was experienced in developing apps and set realistic timelines.“",
+            "name": "Zenos Schmickrath",
+            "designation": "Co-Founder"
+          }
+        },
+        "454927ea-167f-48e0-9a5a-f8afe79f0c10": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/Mask_group_98a08bae-7212-422b-810b-bf62503617da.png",
+            "sliderText": "“They’ve done a really good job. They were on top of things from the get-go.“",
+            "name": "Marc Heuberger",
+            "designation": "CMO"
+          }
+        },
+        "055fb115-9175-403b-9c94-13bb26508775": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/SYNCHRO_LOGO.svg",
+            "sliderText": "“Their communication and responsiveness are impressive in the workflow.“",
+            "name": "Graham Ryan",
+            "designation": "Founder & CEO"
+          }
+        },
+        "27d3d391-023c-4356-97de-764ae26f40a1": {
+          "type": "sliderType",
+          "settings": {
+            "sliderImage": "shopify:\/\/shop_images\/image_149.svg",
+            "sliderText": "“I am continually impressed by their expertise in Shopify and web development.“",
+            "name": "Eddie Rosado",
+            "designation": "VP of Product Development"
+          }
+        }
+      },
+      "block_order": [
+        "19d004a4-6c34-4020-b269-19ca44d0da31",
+        "454927ea-167f-48e0-9a5a-f8afe79f0c10",
+        "055fb115-9175-403b-9c94-13bb26508775",
+        "27d3d391-023c-4356-97de-764ae26f40a1"
+      ],
+      "settings": {
+        "heading": "Testimonial",
+        "content": "<p>Get to know about the value we provide from our customers .<\/p>"
+      }
+    },
+    "3d2199f9-54c6-4b05-a1c9-be5e0ea08996": {
+      "type": "audit-faq",
+      "blocks": {
+        "a5ca865e-a8fb-4844-bac3-42b2ecc5cd03": {
+          "type": "cardType",
+          "settings": {
+            "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
+            "question": "What is a design audit?",
+            "answer": "A design audit is an in-depth analysis of your website's design to identify areas of improvement and provide recommendations for a better user experience."
+          }
+        },
+        "fe8074bb-4b48-4ab2-9782-af33adc05455": {
+          "type": "cardType",
+          "settings": {
+            "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
+            "question": "Why do I need a design audit?",
+            "answer": "answer"
+          }
+        },
+        "72348fb9-cdd3-4f8e-872b-a4482f9dead5": {
+          "type": "cardType",
+          "settings": {
+            "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
+            "question": "How long does a design audit take?",
+            "answer": ""
+          }
+        },
+        "4ab406be-84fb-45d3-a4c9-1c685cdedc9c": {
+          "type": "cardType",
+          "settings": {
+            "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
+            "question": "What kind of recommendations will I receive?",
+            "answer": ""
+          }
+        },
+        "aab00711-42ac-4389-af17-a1933b61bd4c": {
+          "type": "cardType",
+          "settings": {
+            "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
+            "question": "What happens after I receive the design audit report?",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "a5ca865e-a8fb-4844-bac3-42b2ecc5cd03",
+        "fe8074bb-4b48-4ab2-9782-af33adc05455",
+        "72348fb9-cdd3-4f8e-872b-a4482f9dead5",
+        "4ab406be-84fb-45d3-a4c9-1c685cdedc9c",
+        "aab00711-42ac-4389-af17-a1933b61bd4c"
+      ],
+      "settings": {
+        "heading": "FAQ's"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7c197c6c-759f-4b28-91b8-9e07ba29726e",
+    "1e395575-fd0d-4794-9bb2-c7b3bc2127c5",
+    "a7480ca1-4e76-46f9-9023-bec4b287cdc0",
+    "022afbff-bc63-4664-90ed-3be349823d42",
+    "45abf2da-6082-4e59-b7c1-51995b3acbf9",
+    "454be5a3-e657-4663-a95b-237657a33be6",
+    "00bdd982-76ae-4864-b771-c47f3e61c644",
+    "96eee045-a6c9-4681-a4c2-ae97390c4146",
+    "3d2199f9-54c6-4b05-a1c9-be5e0ea08996"
+  ]
+}

@@ -1,0 +1,56 @@
+<section class="audit-core">
+    <div class="container">
+        <div class="core_wrp">
+            <h1 class="core-heading">{{ section.settings.heading }}</h1>
+            <div class="main_page">
+                {% for block in section.blocks %}
+                {% if block.settings.page_image != blank %}
+                <div class="page_container">
+                    <div class="page">
+                        <img class="page-img" src="{{block.settings.page_image | image_url}}" alt="page image" />
+                        <p class="page-name">{{block.settings.page_name}}</p>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Core Page Block",
+"settings": [
+{
+"id": "heading",
+"label": "Heading",
+"type": "text"
+}
+
+],
+"blocks": [
+{
+"name": "Core Page Block",
+"type": "cardType",
+"settings": [
+{
+"type": "image_picker",
+"id": "page_image",
+"label": "Image"
+},
+{
+"type": "text",
+"id": "page_name",
+"label": "Page name"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Core Page Block"
+}
+]
+}
+{% endschema %}

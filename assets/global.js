@@ -945,3 +945,29 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+let testimonial = new Swiper('.js-testimonial-slider', {
+  speed:1000,
+  autoHeight: false,
+  slidesPerView: 1.2,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.slider-arrow .js-arrow-right',
+    prevEl: '.slider-arrow .js-arrow-left',
+  },
+  breakpoints: {
+      1920: {
+          // slidesPerView: 3,
+          // spaceBetween: 30
+          slidesPerView: "auto",
+
+      },
+      1028: {
+          slidesPerView: 1.8,
+          // spaceBetween: 30
+      },
+      767: {
+          slidesPerView: 1.2,
+          // spaceBetween: 10
+      }
+  }
+});

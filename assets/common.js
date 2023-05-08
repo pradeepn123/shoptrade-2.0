@@ -844,3 +844,53 @@ document.addEventListener('DOMContentLoaded', function(){
 $(".play-icon").click(function (e) {
   $(".vedio__info").hide();
 });
+
+
+// Audit page - before after section//
+var swiper = new Swiper('.js-bfr-afr', {
+  speed:1000,
+    slidesPerView: 1.8,
+    spaceBetween: 25,
+    slidesPerGroup: 2,
+    navigation: {
+      nextEl: '.audit__slider-arrow .slider-arrow .js-arrow-right',
+      prevEl: '.audit__slider-arrow .slider-arrow .js-arrow-left',
+    },
+    breakpoints: {
+        1920: {
+            // slidesPerView: 3,
+            // spaceBetween: 30
+            slidesPerView: 2,
+            spaceBetween: 25,
+            slidesPerGroup: 2
+
+        },
+        1028: {
+            slidesPerView: 1.8,
+            // spaceBetween: 30
+        },
+        767: {
+            slidesPerView: 1.2,
+            slidesPerGroup: 1,
+            // spaceBetween: 10
+        }
+    }
+});
+
+//Audit page - FAQ Accordion//
+
+$('.accordion__header').click(function(e) {
+	e.preventDefault();
+	var currentIsActive = $(this).hasClass('is-active');
+	$(this).parent('.accordion').find('> *').removeClass('is-active');
+  $('.accordion__toggle svg').removeClass('rotate_svg');
+	if(currentIsActive != 1) {
+		$(this).addClass('is-active');
+		$(this).next('.accordion__body').addClass('is-active');
+    $(this).find('.accordion__toggle svg').addClass('rotate_svg');
+	}
+});
+
+
+
+
