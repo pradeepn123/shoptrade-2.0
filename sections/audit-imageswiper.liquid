@@ -1,0 +1,62 @@
+<section class="core-slider-images">
+    <div class="container">
+        <div class="swiper_wrap">
+            <div class="swiper-container js-bfr-afr">
+                <div class="swiper-wrapper  bfr-aft-wrapper">
+                    
+                    {% for block in section.blocks %}
+                    {% if block.settings.bfr_image != blank %}
+                    <div class="swiper-bfr-slide swiper-slide">
+                        <img class="bfr_image" src="{{block.settings.bfr_image | image_url}}" alt="before image" />
+                    </div>
+                    {% endif %}
+                    {% if block.settings.aft_image != blank %}
+                    <div class="swiper-aft-slide swiper-slide">
+                        <img class="aft_image" src="{{block.settings.aft_image | image_url}}" alt="after image" />
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="audit__slider-arrow">
+          <div class="slider-arrow arrow-icon">
+            <div class="js-arrow-left arrow-icon">
+              {% render 'icon-left-arrow' %}
+            </div>
+            <div class="js-arrow-right arrow-icon">
+              {% render 'icon-right-arrow' %}
+            </div>
+          </div>
+        </div>
+</section>
+
+{% schema %}
+{
+"name": "Before After Image Block",
+
+"blocks": [
+{
+"name": "Before After Image Block",
+"type": "cardType",
+"settings": [
+{
+"type": "image_picker",
+"id": "bfr_image",
+"label": "Before Image"
+},
+{
+"type": "image_picker",
+"id": "aft_image",
+"label": "After Image"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Before After Image Block"
+}
+]
+}
+{% endschema %}

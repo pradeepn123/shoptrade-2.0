@@ -1,0 +1,354 @@
+<section class="audit-product" id="audit-report">
+    <div class="container">
+        <div class="main-product">
+            <div class="product_wrp">
+                <h1 class="heading">{{ section.settings.heading }}</h1>
+                <p class="subtext">{{ section.settings.subtext }}</p>
+                <div class="feat_wrp">
+                    {% for block in section.blocks %}
+                    {% case block.type %}
+                    {% when 'prod-feat' %}
+                    <div class="features">
+                        <div class="feat_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"
+                                fill="none">
+                                <circle cx="15.5" cy="15.5" r="14.5" stroke="#FF7121" stroke-width="2" />
+                                <path d="M9 16L13 20L22 11" stroke="#FF7121" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <p class="prod_features">{{ block.settings.prod-feat }}</p>
+                    </div>
+                    {% endcase %}
+                    {% endfor %}
+
+                </div>
+            </div>
+            <p class="price"> Price <span>{{ section.settings.prodprice }}</span>/ One-time purchase</p>
+            <button class="prod-btn">{{ section.settings.prodbtn }}</button>
+            <p class="prod_report">Get your report by <span id="date-output"></span> </span></p> 
+        </div>
+    </div>
+
+    <div class="container" id="myPopup">
+        <div class="main-product-pop">
+            <div class="pop_wrp">
+                <div class="heading-close">
+                <h1 class="popheading">{{ section.settings.popheading }}</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M28 2L2 28" stroke="#9D9D9D" stroke-width="3"/>
+                    <path d="M2 2L28 28" stroke="#9D9D9D" stroke-width="3"/>
+                    </svg>
+                </div>
+                <p class="popsubtext">{{ section.settings.popsubtext }}</p>
+                <span class="popdesc">{{ section.settings.popdesc }}</span>
+                <div class="pop_feat_wrp">
+                    {% for block in section.blocks %}
+                    {% case block.type %}
+                    {% when 'popup' %}
+                    <div class="pop-feat-flex">
+                        <div class="pop-features">
+                            <p class="pop-title">{{ block.settings.pop-title }}</p>
+                            <p class="pop-sub">{{ block.settings.pop-sub }}</p>
+                        </div>
+                    </div>
+                    {% endcase %}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="product-component-1683098161648"></div>
+            <p class="pop-onetime">*One-time purchase</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // When the user clicks on div, open the popup
+    var popup = document.getElementById("myPopup");
+    var prodBtn = document.querySelector('.main-product .prod-btn')
+    var closePopupBtn = document.querySelector("#myPopup .heading-close svg");
+    prodBtn.addEventListener('click', () => {
+        popup.classList.add('show');
+    })
+    
+    closePopupBtn.addEventListener('click', () => {
+        popup.classList.remove('show');
+    })
+
+
+    function future(days) {
+  var dayMs = 86400000;
+  var ts = dayMs * days;
+  var now = +new Date();
+  var fts = now + ts;
+  return new Date(fts);
+}
+
+//To redirect to chckout page//
+function ShopifyBuyInit() {
+        const elementWrapper = document.getElementById('product-component-1683098161648')
+        var client = ShopifyBuy.buildClient({
+          domain: 'shoptrade-new.myshopify.com',
+          storefrontAccessToken: 'c9441bca05a32aece0990b5005817c05',
+        });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          elementWrapper.innerHTML = ''
+          ui.createComponent('product', {
+            id: '8030379114716',
+            node: elementWrapper,
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+              "product": {
+                  "styles": {
+                  "product": {
+                      "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px"
+                      }
+                  },
+                  "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      ":hover": {
+                      "background-color": "#ff7121"
+                      },
+                      "background-color": "#ff7121",
+                      ":focus": {
+                      "background-color": "#e6661e"
+                      },
+                     "border":"1px solid #000000",
+                     "width": "100%",
+                      "border-radius": "6px"
+                  },
+                  "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                  }
+                  },
+                  "buttonDestination": "checkout",
+                  "contents": {
+                  "img": false,
+                  "title": false,
+                  "price": false
+                  },
+                  "text": {
+                  "button": "$1399 - Checkout"
+                  }
+              },
+              "productSet": {
+                  "styles": {
+                  "products": {
+                      "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                      }
+                  }
+                  }
+              },
+              "modalProduct": {
+                  "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                  },
+                  "styles": {
+                  "product": {
+                      "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                      }
+                  },
+                  "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      ":hover": {
+                      "background-color": "#e6661e"
+                      },
+                      "background-color": "#ff7121",
+                      ":focus": {
+                      "background-color": "#e6661e"
+                      },
+                      "border-radius": "6px"
+                  },
+                  "quantityInput": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px"
+                  }
+                  },
+                  "text": {
+                  "button": "Add to cart"
+                  }
+              },
+              "option": {},
+              "cart": {
+                  "styles": {
+                  "button": {
+                      "font-size": "18px",
+                      "padding-top": "17px",
+                      "padding-bottom": "17px",
+                      ":hover": {
+                      "background-color": "#e6661e"
+                      },
+                      "background-color": "#ff7121",
+                      ":focus": {
+                      "background-color": "#e6661e"
+                      },
+                      "border-radius": "6px"
+                  }
+                  },
+                  "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                  },
+                  "popup": false
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "background-color": "#ff7121",
+                    ":hover": {
+                      "background-color": "#e6661e"
+                    },
+                    ":focus": {
+                      "background-color": "#e6661e"
+                    }
+                  },
+                  "count": {
+                    "font-size": "18px"
+                  }
+                }
+              }
+            },
+          });
+        });
+      }
+//To redirect to chckout page//
+
+document.addEventListener('DOMContentLoaded', function() {
+    var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
+    var futDate = future(30);
+    var newDate = futDate.getDate();
+    
+    var newMonth = monthNames[futDate.getMonth()];
+    if(newDate == 1 || newDate == 21 || newDate == 31){
+        document.querySelector('#date-output').innerHTML = `${newDate}st ${newMonth}`;
+    }
+    else if(newDate == 2 || newDate == 22){
+        document.querySelector('#date-output').innerHTML = `${newDate}nd ${newMonth}`;
+    }
+    else if(newDate == 3 || newDate == 23){
+        document.querySelector('#date-output').innerHTML = `${newDate}rd ${newMonth}`;
+    }
+    else{
+        document.querySelector('#date-output').innerHTML = `${newDate}th ${newMonth}`;
+    }
+});
+    ShopifyBuyInit()
+
+    //To close the popup //
+    // const element = document.querySelector(".main-product-pop .pop_wrp .heading-close svg");
+    // element.addEventListener("click", closePopup());
+
+    // function closePopup() {
+    //     console.log('....')
+    //     document.getElementById("#myPopup").classList.remove("show");         
+    // }
+    //To close the popup//
+    </script>
+
+{% schema %}
+{
+"name": "Product Block",
+"tag": "section",
+"class": "section",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "subtext",
+"label": "Sub text"
+},
+{
+"type":"text",
+"label":"Button text",
+"id":"prodbtn"
+},
+{
+"type":"text",
+"label":"Product price",
+"id":"prodprice"
+},
+{
+"type":"product",
+"label":"choose product",
+"id":"pop-up-product"
+},
+
+{
+"type": "text",
+"id": "popheading",
+"label": "Pop Up Heading"
+},
+{
+"type": "text",
+"id": "popsubtext",
+"label": "Pop Up Sub text"
+},
+{
+"type": "richtext",
+"id": "popdesc",
+"label": "PopUp Description"
+},
+{
+"type":"text",
+"label":"Button text",
+"id":"popbtn"
+}  
+
+],
+"blocks": [
+{
+"name": " Product Features Block",
+"type": "prod-feat",
+"settings": [
+{
+"type": "text",
+"id": "prod-feat",
+"label": "Product Features"
+}
+]
+},
+{
+"name": " Pop Up Features Block",
+"type": "popup",
+"settings": [
+{
+"type": "text",
+"id": "pop-title",
+"label": "Pop Up Title"
+},
+{
+"type": "text",
+"id": "pop-sub",
+"label": "Pop Up Sub Text"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Product Block"
+}
+]
+}
+{% endschema %}

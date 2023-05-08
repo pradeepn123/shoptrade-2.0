@@ -1,0 +1,67 @@
+.clients{
+    margin:80px 0;
+
+    .plus-client{
+        margin: 40px 0;
+        display: flex;
+        column-gap:80px;
+        padding:40px 70px;
+
+        &:nth-child(even) {
+            background: #F4F4F4;
+          }
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+       }
+      
+    
+
+
+      
+    .client-text{
+        .cpara{
+            font-family: 'Epilogue';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #000000;
+            padding-bottom: 24px;
+        }
+
+        .client-btn{
+            background: #FF7121;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            font-family: 'Epilogue';
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            padding:20px 40px;
+            @media (max-width:520px){
+                font-size: 15px;
+                padding:12px 15px;
+            }
+        }
+
+        .ctestimonial{
+            font-family: 'Epilogue';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+            padding-top: 60px;
+            width: 75%;
+        }
+
+        .client-name{
+            font-family: 'Epilogue';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+            margin: 5px 0;
+        }
+    }
+}

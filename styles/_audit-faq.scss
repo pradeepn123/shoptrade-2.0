@@ -1,0 +1,129 @@
+
+.audit-faq {
+    
+
+    .container {
+        .faq-heading {
+
+        }
+
+        .accordion {
+            border: 1px solid black;
+            margin-bottom: 60px;
+            border-bottom: none;
+
+            .accordion__header {
+                padding: 1em;
+                border-bottom: 1px solid black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                &:nth-last-child{
+                    border:none;
+                    border-bottom: none;
+                }
+                
+                .fques{
+                    font-family: 'Epilogue';
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 20px;
+                    color: #000000;
+                    margin-top: 0;
+                    margin-bottom: 0;
+
+                    @media(max-width:520px){
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+
+                    @media(min-width:700px) and (max-width:1300px){
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                }
+                
+
+                .accordion__header > * {
+                    margin-top: 0;
+                    margin-bottom: 0;                   
+                }
+
+                .accordion__header.is-active {
+                    background-color: #000;
+                    color: #fff;
+                }
+
+                .is-active .accordion__toggle {
+                    background-color: #fff;
+                    
+                }
+                .is-active .accordion__toggle::before {
+                    display: none;
+                }
+
+                .accordion__toggle  {
+                    margin-left: 10px;
+
+                    
+                        .rotate_svg{
+                            transform: rotate(180deg) !important;
+                            transition: transform 350ms ease-in-out;
+                            // &::first-child{
+                            //     transform: rotate(180deg);
+                            // }
+                        }
+                                        
+
+
+                    &::before {
+                        content: "";
+                        width: 3px;
+                        height: 13px;
+                        display: block;
+                        background-color: red;
+                        position: absolute;
+                        top: -5px;
+                        left: 5px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+
+            .accordion__body {
+                display: none;
+                padding: 10px 700px 10px 20px;
+                border: 1px solid #000;
+                border-top: 0;
+                border-left: none;
+                border-right:none;
+
+                @media(max-width:1600px){
+                  padding:1em;
+                }
+                
+                .fans{
+                    font-family: 'Epilogue';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: #000000;
+                    margin: 0;
+
+                    @media(max-width:520px){
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+           
+            .accordion__body.is-active {
+                display: block;
+            }
+        }
+    }
+}

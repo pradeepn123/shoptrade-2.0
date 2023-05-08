@@ -1,0 +1,68 @@
+<section class="audit-analysis">
+    <div class="container">
+        {% for block in section.blocks %}
+        <div class="analysis_wrp">
+            
+                {% if block.settings.aimage != null %}
+                <div class="analysis-image desktop">
+                <img class="aimg" src="{{block.settings.aimage | image_url}}" alt="client image" />
+                </div>
+                {%endif%}
+
+            
+                {% if block.settings.aimage_mob != null %}
+                <div class="analysis-image mobile">
+                <img class="aimg_mob" src="{{block.settings.aimage_mob | image_url}}" alt="client image" />
+                </div>
+                {%endif%}
+            
+            <div class="analysis-text">
+                <h1 class="aheading">{{ block.settings.aheading }}</h1>
+                <p class="apara">{{ block.settings.apara }}</p>
+            </div>
+        </div>
+        {% endfor %}
+</section>
+
+
+{% schema %}
+{
+"name": "Analysis Block",
+"settings": [
+
+            ],
+            "blocks": [
+            {
+            "name": "clients Block",
+            "type": "cardType",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "aimage",
+                "label": "Desktop Image"
+                },
+                {
+                "type": "image_picker",
+                "id": "aimage_mob",
+                "label": "Mobile Image"
+                },
+                {
+                "type":"text",
+                "id":"aheading",
+                "label":"Heading"
+                },
+                {
+                 "type":"text",
+                 "id":"apara",
+                 "label":"Paragraph"
+                }
+            ]
+        }
+],
+"presets": [
+{
+"name": "Analysis Block"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,82 @@
+<section class="plus-banner">
+    <div class="container">
+        <div class="shopify-banner">
+            <div class="sbanner-text">
+                <h1 class="sbanner-heading">{{ section.settings.plusheading }}</h1>
+                <p class="sbanner-paragraph">{{ section.settings.plusparagraph}}</p>
+                <div class="plus-logo">
+                <img class="sbanner-logo" src="{{section.settings.logoImage | image_url}}" alt="shopify plus logo"/>
+                </div>
+                <a href="{{ section.settings.plusBtnlink}}" class="plus-btn"> {{ section.settings.plusBtn}} </a>
+                <div class="slocation">
+                    <div class="locimg">
+                    <img class="locicon">{{ section.settings.loclogo}}
+                    </div>
+                    <div class="loctext">
+                    <h4 class="locmain">{{ section.settings.locheading}}</h4>
+                    <h6 class="locsubtext">{{ section.settings.locsubheading}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="sbanner-video">
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "plus-banner",
+"settings": [
+{
+"type":"text",
+"id":"plusheading",
+"label":"Heading"
+},
+{
+"type": "text",
+"id": "plusparagraph",
+"label": "Banner paragraph"
+},
+{
+    "id": "logoImage",
+    "type": "image_picker",
+    "label": "logo"
+},
+{
+"type":"text",
+"id":"plusBtn",
+"label":"Button text"
+},{
+"type":"url",
+"id":"plusBtnlink",
+"label":"link"
+},
+{
+"type": "html",
+"id": "loclogo",
+"label": "location logo"
+},
+{
+"type": "text",
+"id": "locheading",
+"label": "location heading"
+},
+{
+"type": "text",
+"id": "locsubheading",
+"label": "location sub-heading"
+}
+
+],
+
+"presets": [
+{
+"name": "plus-banner"
+}]
+}
+{% endschema %}
+
+
+
