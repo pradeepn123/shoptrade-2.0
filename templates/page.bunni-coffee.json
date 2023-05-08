@@ -5,6 +5,7 @@
       "blocks": {
         "447653be-0815-4d4b-a1ae-8641c6b2f3d7": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -13,6 +14,7 @@
         },
         "6825669d-a038-4816-a61a-3d341507478e": {
           "type": "creditProfile",
+          "disabled": true,
           "settings": {
             "profileImage": "shopify:\/\/shop_images\/creditProfile.png",
             "profileName": "Jermy",
@@ -38,7 +40,9 @@
         "heading": "BUUNNI COFFEE",
         "subHeading": "",
         "bannerImage": "shopify:\/\/shop_images\/Main-Banner_1bf95801-097f-4d05-a171-c1d0278726c4.jpg",
-        "websiteLInk": "https:\/\/www.buunnicoffee.com\/"
+        "websiteLInk": "https:\/\/www.buunnicoffee.com\/",
+        "visitsite_heading": "Visit site",
+        "credit_heading": "Credits"
       }
     },
     "marquee": {
@@ -49,6 +53,7 @@
     },
     "showcase-role": {
       "type": "showcase-role",
+      "disabled": true,
       "blocks": {
         "e6f30b36-57ed-4b08-a7d6-785c65646838": {
           "type": "role",
