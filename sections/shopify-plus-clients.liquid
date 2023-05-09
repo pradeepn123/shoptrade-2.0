@@ -24,7 +24,7 @@
                   <div class="client-image-main">
                     {% if block.settings.cimage %}
                       <div class="client-image">
-                        <img class="featimg" src="{{ block.settings.cimage | image_url}}" alt="client image">
+                        <img class="featimg" src="{{ block.settings.cimage | img_url : 'master' }}" alt="client image">
                       </div>
                     {% endif %}
                   </div>
