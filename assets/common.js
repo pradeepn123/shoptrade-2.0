@@ -906,19 +906,6 @@ var swiper = new Swiper('.js-bfr-afr', {
     }
 });
 
-//Audit page - FAQ Accordion//
-
-$('.accordion__header').click(function(e) {
-	e.preventDefault();
-	var currentIsActive = $(this).hasClass('is-active');
-	$(this).parent('.accordion').find('> *').removeClass('is-active');
-  $('.accordion__toggle svg').removeClass('rotate_svg');
-	if(currentIsActive != 1) {
-		$(this).addClass('is-active');
-		$(this).next('.accordion__body').addClass('is-active');
-    $(this).find('.accordion__toggle svg').addClass('rotate_svg');
-	}
-});
 
 // the image sliding logos
 $(document).ready(function () {
@@ -942,23 +929,7 @@ $(document).ready(function () {
     loop: true,
     // slidesPerView: 5,
     allowTouchMove: false,
-
     pauseOnMouseEnter: false,
-
-    // breakpoints: {
-    //   1920: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 30
-    //   },
-    //   1028: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 30
-    //   },
-    //   480: {
-    //     slidesPerView: 1.3,
-    //     spaceBetween: 10
-    //   }
-    // }
     autoplay: {
       delay: 0,
     },
