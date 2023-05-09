@@ -1,0 +1,46 @@
+.static_brands_logos{
+    .brands_logos_contianer{
+        .brands_logos_heading{
+            h4{
+                margin: 0;
+                padding: 0;
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+                padding-bottom: 40px;
+                @media(max-width:520px){
+                    font-size: 18px;
+                    line-height: 18px;
+                    padding-bottom: 36px;
+                }
+            }
+        }
+        .brands_logos_main{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+            row-gap: 60px;
+            column-gap: 60px;
+            @media(max-width:520px){
+                row-gap: 30px;
+                // column-gap: 10px;
+                grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+            }
+            @media(max-width:375px){
+                column-gap: 10px;
+            }
+            .brands_logos{
+                height: fit-content;
+                width: fit-content;
+                @media(max-width:375px){
+                    // height: inherit;
+                    width: 101px;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

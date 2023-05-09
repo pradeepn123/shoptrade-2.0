@@ -1,0 +1,42 @@
+.brands_logo_marquee_main {
+    .brands_logo_marquee_head {
+        border: none;
+        margin-bottom: 46px;
+        @media(max-width:1024px){
+            margin-bottom: 24px;
+        }
+
+        .brands_logo_marquee_heading {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+
+            @media(max-width:520px) {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .brands_logo_marquee_wrapper {
+        column-gap: 73px;
+    @media(max-width:1024px){
+        column-gap: 63px;
+    }
+  
+        .brands-logos-slider {
+            height: auto !important;
+            width: fit-content !important;
+
+            img {
+                height: auto;
+                width: fit-content;
+                object-position: unset;
+                object-fit: scale-down;
+                border: 0;
+            }
+        }
+    }
+}

@@ -1,67 +1,240 @@
-.clients{
-    margin:80px 0;
+.clients-shopify {
+    @media(max-width:768px) {
+        background: #F4F4F4;
+        padding-top: 29px;
+    }
 
-    .plus-client{
-        margin: 40px 0;
-        display: flex;
-        column-gap:80px;
-        padding:40px 70px;
+    .clients-heading {
+        margin-bottom: 32px;
+        font-weight: 700;
 
-        &:nth-child(even) {
-            background: #F4F4F4;
-          }
-        &:nth-child(odd){
-            flex-direction: row-reverse;
+        @media(max-width:520px) {
+            margin-bottom: 49px;
+            font-size: 42px;
+            line-height: 42px;
         }
-       }
-      
-    
+    }
 
+    .shopify-plus-clients {
 
-      
-    .client-text{
-        .cpara{
-            font-family: 'Epilogue';
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 150%;
-            color: #000000;
-            padding-bottom: 24px;
+        p {
+            padding: 0;
+            margin: 0;
         }
 
-        .client-btn{
-            background: #FF7121;
-            border: 2px solid #000000;
-            border-radius: 12px;
-            font-family: 'Epilogue';
-            font-weight: 600;
-            font-size: 20px;
-            color: #fff;
-            text-decoration: none;
-            padding:20px 40px;
-            @media (max-width:520px){
-                font-size: 15px;
-                padding:12px 15px;
+        @media(max-width:768px) {
+            // display: flex;
+            overflow-x: hidden;
+        }
+
+        .swiper-wrapper {
+            @media (min-width: 769px) {
+
+                /* swiper is disabled at this breakpoint */
+                /* wrap slides  */
+                flex-wrap: wrap;
+
+                width: 100%;
+            }
+
+
+            .plus-client-main {
+                @media(max-width:768px) {
+                    min-width: 312px;
+                }
+
+                .container {
+
+                    .plus-client-container {
+                        padding: 0 15px;
+
+                        @media(max-width:768px) {
+                            padding: 0;
+                        }
+
+                        .plus-client {
+
+                            display: flex;
+                            column-gap: 108px;
+                            margin: 48px 0;
+
+
+                            @media(max-width:1320px) {
+                                column-gap: 50px;
+
+                            }
+
+                            @media(max-width:768px) {
+                                display: unset;
+                                margin-right: 15px;
+                            }
+
+                            .client-image-main {
+                                width: 50%;
+                                position: relative;
+
+                                @media (max-width:768px) {
+                                    width: 100%;
+                                    padding-bottom: 88%;
+                                }
+
+                                .client-image {
+                                    img {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        grid-area: none;
+                                        flex: none;
+                                        border-radius: 10px;
+                                    }
+                                }
+                            }
+
+                            .client-text {
+                                width: 50%;
+
+                                @media(max-width:768px) {
+                                    width: 100%;
+                                    margin-top: 24px;
+                                }
+
+                                .client-text-logo {
+                                    max-width: fit-content;
+
+                                    @media(min-width:769px) {
+                                        // width: 197px;
+                                        // height: 30px;
+
+                                    }
+
+                                    img {
+                                        @media(max-width:768px) {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: none;
+                                        }
+                                    }
+                                }
+
+                                .cpara {
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    line-height: 150%;
+                                    color: #000000;
+                                    margin-top: 18px;
+                                    margin-bottom: 24px;
+                                    padding-bottom: 24px;
+
+                                    @media(max-width:1024px) {
+                                        font-size: 16px;
+                                        padding-bottom: 0;
+                                    }
+
+                                    @media(max-width:768px) {
+                                        display: none;
+                                    }
+
+                                }
+
+                                .client-text-btn {
+                                    margin-bottom: 52px;
+                                    @media(max-width:768px) {
+                                        margin: 24px 0 39px 0;
+                                    }
+
+                                    .client-btn {
+                                        border: 2px solid #000000;
+                                        border-radius: 12px;
+                                        font-weight: 700;
+                                        font-size: 20px;
+                                        text-decoration: none;
+                                        padding: 20px 16px;
+
+                                        @media(max-width:1024px) {
+                                            padding: 15px 16px;
+                                            font-size: 18px;
+                                        }
+
+                                        @media (max-width:520px) {
+                                            padding: 15px 10px;
+                                            font-size: 15px;
+                                            border-radius: 9px;
+                                            border: 1.5px solid #000000;
+                                        }
+                                    }
+                                }
+
+                                .clients-shopify_project_rating{
+                                   margin-bottom: 8px;
+                                   @media(max-width:768px){
+                                    margin-bottom: 6px;
+                                   }
+                                }
+                                .ctestimonial {
+
+                                    font-weight: 700;
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                    color: #000000;
+                                    
+
+                                    @media(max-width:1320px) {
+                                        width: 100%;
+                                        font-size: 18px;
+                                    }
+
+
+                                    @media(max-width:768px) {
+                                        padding: 6px 0;
+                                        font-size: 15px;
+                                        line-height: 22.5px;
+                                    }
+                                }
+
+                                .client-name {
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    color: #000000;
+                                    margin: 5px 0;
+
+                                    @media(max-width:768px) {
+                                        font-size: 12px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .swiper-slide {
+                transition: transform 0.3s ease-out;
             }
         }
 
-        .ctestimonial{
-            font-family: 'Epilogue';
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 150%;
-            color: #000000;
-            padding-top: 60px;
-            width: 75%;
-        }
+        .chnage-bg-section {
+            background: #F4F4F4;
 
-        .client-name{
-            font-family: 'Epilogue';
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 150%;
-            color: #000000;
-            margin: 5px 0;
+            .plus-client {
+                width: 100%;
+                padding: 48px 0;
+                margin: 0 !important;
+
+
+                @media (max-width:768px) {
+                    margin: 0;
+                    padding: 20px 0;
+                }
+            }
+
         }
     }
 }
