@@ -7092,7 +7092,7 @@ textarea {
   }
 }
 .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locmain {
-  font-family: "Inter";
+  font-family: "Epilogue", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
@@ -7108,7 +7108,7 @@ textarea {
   }
 }
 .plus-banner .shopify-banner .sbanner-text .slocation .loctext .locsubtext {
-  font-family: "Inter";
+  font-family: "Epilogue", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -7373,24 +7373,24 @@ textarea {
   max-width: 100%;
 }
 
-.container .swiper_wrap {
+.core-slider-images .container .swiper_wrap {
   height: 100%;
   width: 100%;
   position: relative;
   display: block;
   text-align: center;
 }
-.container .swiper-container .swiper-wrapper {
+.core-slider-images .container .swiper-container .swiper-wrapper {
   height: fit-content;
   width: 39rem;
 }
 @media (max-width: 520px) {
-  .container .swiper-container .swiper-wrapper {
+  .core-slider-images .container .swiper-container .swiper-wrapper {
     width: 100%;
   }
 }
-.container .bfr-aft-wrapper .swiper-bfr-slide img,
-.container .bfr-aft-wrapper .swiper-aft-slide img {
+.core-slider-images .container .bfr-aft-wrapper .swiper-bfr-slide img,
+.core-slider-images .container .bfr-aft-wrapper .swiper-aft-slide img {
   width: 99%;
   height: 99%;
   border-radius: 8px;
@@ -8201,6 +8201,12 @@ textarea {
     line-height: 42px;
   }
 }
+@media (max-width: 375px) {
+  .lets-talk-store-section .lets-talk-store-text .lets-talk-store-heading {
+    font-size: 32px;
+    line-height: 1;
+  }
+}
 .lets-talk-store-section .lets-talk-store-text .lets-talk-store-para {
   font-weight: 400;
   color: #000000;
@@ -8286,6 +8292,7 @@ textarea {
   font-weight: 400;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 @media (max-width: 768px) {
   .shoptrade-plus-info .shoptrade-plus-info-para p {
@@ -8348,7 +8355,7 @@ textarea {
 .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-heading h4 {
   margin: 0;
   padding: 0;
-  font-family: "Inter";
+  font-family: "Epilogue", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -8370,6 +8377,7 @@ textarea {
   line-height: 30px;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 @media (max-width: 768px) {
   .shoptrade-plus-info .shoptrade-plus-info-slider .shoptrade-plus-info-content-scroll .shoptrade-plus-info-content .shoptrade-plus-info-content-child .shoptrade-pf-content-content p {
@@ -8389,12 +8397,13 @@ textarea {
   margin-top: 20px;
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   margin: 0 10px;
   background-color: #ccc;
   cursor: pointer;
+  border: 1px solid #000;
 }
 .shoptrade-plus-info .shoptrade-plus-info-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF7121;
@@ -8486,6 +8495,10 @@ textarea {
   object-position: unset;
   object-fit: scale-down;
   border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .audit-banner {
@@ -8705,7 +8718,7 @@ textarea {
 .audit-analysis .analysis_wrp .analysis-text .aheading {
   font-family: "Epilogue";
   font-weight: 700;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 100%;
   color: #000000;
   padding-top: 19%;

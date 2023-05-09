@@ -1,41 +1,40 @@
 {% style %}
-    .lets-talk-store-section {
-        flex-direction: {{ section.settings.adj-img-txt }};
+  .lets-talk-store-section {
+      flex-direction: {{ section.settings.adj-img-txt }};
+  }
+  .lets-talk-store-heading{
+    font-size: {{ section.settings.heading-font-size }}px;
+  }
+  .lets-talk-store-para{
+    font-size: {{ section.settings.para-font-size }}px;
+  }
+  .lets-talk-btn{
+    font-size: {{ section.settings.btn-font-size }}px;
+    background-color: {{ section.settings.btn-bg-color }};
+  }
+  .lets-talk-btn a{
+      color:{{ section.settings.btn-txt-color }};
     }
-    .lets-talk-store-heading{
-      font-size: {{ section.settings.heading-font-size }}px;
-    }
-    .lets-talk-store-para{
-      font-size: {{ section.settings.para-font-size }}px;
-    }
-    .lets-talk-btn{
-      font-size: {{ section.settings.btn-font-size }}px;
-      background-color: {{ section.settings.btn-bg-color }};
-    }
-    .lets-talk-btn a{
-        color:{{ section.settings.btn-txt-color }};
-      }
-    .lets-talk-store-section{
+  .lets-talk-store-section{
     margin-bottom:{{ section.settings.slides-margin-btm }}px;
   }
   @media(max-width:1024px){
     .lets-talk-store-heading{
-         font-size: {{ section.settings.heading-font-size-mob }}px;
-      }
-      .lets-talk-store-paras{
-         font-size: {{ section.settings.para-font-size-mob }}px;
-      }
-      .lets-talk-btn{
-         font-size: {{ section.settings.btn-font-size-mob }}px;
-
-      }
-
-  }
-    @media(max-width:768px){
-      .lets-talk-store-section{
-         margin-bottom:{{ section.settings.slides-margin-btm-mob }}px;
-      }
+        font-size: {{ section.settings.heading-font-size-mob }}px;
     }
+    .lets-talk-store-paras{
+        font-size: {{ section.settings.para-font-size-mob }}px;
+    }
+    .lets-talk-btn{
+        font-size: {{ section.settings.btn-font-size-mob }}px;
+
+    }
+  }
+  @media(max-width:768px){
+    .lets-talk-store-section{
+        margin-bottom:{{ section.settings.slides-margin-btm-mob }}px;
+    }
+  }
 {% endstyle %}
 <div class="container">
   <div class="lets-talk-store-section">

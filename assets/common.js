@@ -568,7 +568,7 @@ $(document).ready(function () {
   // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
-  $("#contact-btn-about").on('click', function () {
+  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn").on('click', function () {
     $("#contact-btn-details").trigger('click');
   })
 });
@@ -923,6 +923,19 @@ $('.accordion__header').click(function(e) {
 // the image sliding logos
 $(document).ready(function () {
 
+  //Audit page - FAQ Accordion//
+  $('.accordion__header').click(function(e) {
+    e.preventDefault();
+    var currentIsActive = $(this).hasClass('is-active');
+    $(this).parent('.accordion').find('> *').removeClass('is-active');
+    $('.accordion__toggle svg').removeClass('rotate_svg');
+    if(currentIsActive != 1) {
+      $(this).addClass('is-active');
+      $(this).next('.accordion__body').addClass('is-active');
+      $(this).find('.accordion__toggle svg').addClass('rotate_svg');
+    }
+  });
+
   let slidingLogos = new Swiper('.js-top-image-sliders', {
     speed: 24000,
     autoplay: true,
@@ -1062,18 +1075,6 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
   }
 });
 
-//Audit page - FAQ Accordion//
-$('.accordion__header').click(function(e) {
-	e.preventDefault();
-	var currentIsActive = $(this).hasClass('is-active');
-	$(this).parent('.accordion').find('> *').removeClass('is-active');
-  $('.accordion__toggle svg').removeClass('rotate_svg');
-	if(currentIsActive != 1) {
-		$(this).addClass('is-active');
-		$(this).next('.accordion__body').addClass('is-active');
-    $(this).find('.accordion__toggle svg').addClass('rotate_svg');
-	}
-});
 
 
 

@@ -59,6 +59,10 @@
             @media(max-width:1024px){
                 line-height: 42px;
             }
+            @media(max-width:375px){
+                font-size: 32px;
+                line-height: 1;
+            }
         }
 
         .lets-talk-store-para {
