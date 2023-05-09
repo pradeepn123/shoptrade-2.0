@@ -1213,9 +1213,19 @@ input::-moz-placeholder {
   margin: 0;
   border-top: 1px solid var(--COLOR-BLACK);
 }
+@media screen and (min-width: 920px) {
+  .ourWork__cards {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
+}
 @media (min-width: 920px) {
   .ourWork__cards .swiper-wrapper {
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1349px) {
+  .ourWork__cards .swiper-wrapper li:nth-last-child(-n+3):not(:first-child) {
+    border-bottom: none;
   }
 }
 .ourWork__card {
@@ -1224,6 +1234,11 @@ input::-moz-placeholder {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 920px) {
+  .ourWork__card:last-child {
+    border-bottom: none;
+  }
 }
 @media (min-width: 919px) {
   .ourWork__card {
