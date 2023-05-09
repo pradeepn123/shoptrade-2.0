@@ -2,80 +2,339 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "56fea38c-c4fe-4150-941f-2f1f70a81e22": {
+    "31cdad78-ce9a-482b-8ea1-447ec0d8957e": {
       "type": "shopify-plus-banner",
       "settings": {
+        "pad-btm": 53,
+        "pad-btm-mob": 1,
+        "flex_direction_banner": "row",
+        "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269",
+        "vedioThumbnailImage": "shopify:\/\/shop_images\/Pro-Capture-One-0433_1.png",
         "plusheading": "Shopify Plus Agency",
         "plusparagraph": "Work with a Shopify Plus agency that has won awards and is known for its work in Tampa and Miami.",
-        "logoImage": "shopify:\/\/shop_images\/image_118.png",
-        "plusBtn": "Let's Talk",
+        "logoImage": "shopify:\/\/shop_images\/image_118.svg",
+        "img_link": "https:\/\/www.shopify.com\/in\/plus\/partners\/shoptrade",
+        "plusBtn": "Let’s Talk",
+        "btn-color": "#ffffff",
+        "btn-bg-color": "#ff7121",
         "plusBtnlink": "#contact-us",
         "loclogo": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" height=\"24\" viewbox=\"0 0 20 24\" fill=\"none\">\n<path d=\"M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path d=\"M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z\" stroke=\"#FF7121\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
         "locheading": "Location",
-        "locsubheading": "Florida, USA"
+        "locsubheading": "Florida , USA"
       }
     },
-    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c": {
+    "0e611b99-0958-4b25-beb7-4ebf30e7060f": {
       "type": "shopify-plus-clients",
       "blocks": {
-        "ec045fce-24a3-4e5e-abae-99f12f5a88d1": {
+        "5f30afa5-a1aa-4e77-beb0-6be872ec04d3": {
           "type": "cardType",
           "settings": {
-            "image_right": "left",
+            "color-change": true,
+            "vertical_alignment": "row",
             "cimage": "shopify:\/\/shop_images\/image_19.png",
-            "clogo": "shopify:\/\/shop_images\/image_55.png",
+            "clogo": "shopify:\/\/shop_images\/logo-hata_200abf19-53e1-4b97-9985-8fe2ed315802.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "https:\/\/hathaspace.com",
+            "project-ratings": 5,
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
+            "cBtnlink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "ctestimonial": "\"They delivered on what they said they would,   and they were quick.\"",
             "cname": "~ Marcus Lara, Co-Founder"
           }
         },
-        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595": {
+        "8659acc1-a56c-494a-82b1-7b5c4c0ecd61": {
           "type": "cardType",
           "settings": {
-            "image_right": "right",
+            "color-change": false,
+            "vertical_alignment": "row-reverse",
             "cimage": "shopify:\/\/shop_images\/image_24.png",
-            "clogo": "shopify:\/\/shop_images\/image_157.png",
+            "clogo": "shopify:\/\/shop_images\/logo-synchro_81552f61-48ab-44ba-b2cc-e37f3f6eb26c.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
-            "cBtn": "View project",
-            "cBtnlink": "#besynchro.com",
+            "cBtn": "View Project",
+            "project-ratings": 4.5,
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
+            "cBtnlink": "https:\/\/besynchro.com\/",
             "ctestimonial": "\"Their communication and responsiveness   are impressive in the workflow.\"",
             "cname": "~ Graham Ryan, Founder\/CEO"
           }
         },
-        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f": {
+        "142ce6d8-e2c4-48c0-9ca5-6ce42026d569": {
           "type": "cardType",
           "settings": {
-            "image_right": "left",
+            "color-change": true,
+            "vertical_alignment": "row",
             "cimage": "shopify:\/\/shop_images\/image_160.png",
             "clogo": "shopify:\/\/shop_images\/image_24_2.png",
             "cpara": "The main goal of the project was to redesign BHFO’s outdated website to have a better shopping experience overall, especially on mobile devices. We also implemented a powerful search engine as BHFO’s product catalog often goes over 1 million SKUs.",
             "cBtn": "View Project",
-            "cBtnlink": "#elevatione.com",
+            "project-ratings": 4.5,
+            "btn_color": "#ffffff",
+            "btn_bg": "#ff7121",
+            "cBtnlink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "ctestimonial": "“They’ve done a really good job. They were on top   of things from the get-go.”",
             "cname": "~ Marc Heuberger, CMO"
           }
         }
       },
       "block_order": [
-        "ec045fce-24a3-4e5e-abae-99f12f5a88d1",
-        "0e7b2aa0-9cfb-418e-a8d0-9fecd1869595",
-        "a36b2e18-7249-4b4e-80a1-7f4e41fb9d4f"
+        "5f30afa5-a1aa-4e77-beb0-6be872ec04d3",
+        "8659acc1-a56c-494a-82b1-7b5c4c0ecd61",
+        "142ce6d8-e2c4-48c0-9ca5-6ce42026d569"
       ],
       "settings": {
+        "parent-margin-btm": 80,
+        "parent-margin-btm-mob": 48,
         "heading": "Our Clients"
+      }
+    },
+    "22806222-a9ec-435d-bc96-c9bf30a6d988": {
+      "type": "shoptrade-plus-info",
+      "blocks": {
+        "b677bf28-9588-44cb-a0ab-60a4947ad1f7": {
+          "type": "cardType",
+          "settings": {
+            "st-info-heading": "Sell everywhere",
+            "st-info-para": "<p>Your customers don’t see the line between online and offline. Neither should your platform. Create cutting-edge shopping experiences with built-in augmented reality, 3D, and product videos.<\/p>"
+          }
+        },
+        "baef7bb3-b3f4-41a0-a50d-d2925b231c1f": {
+          "type": "cardType",
+          "settings": {
+            "st-info-heading": "Manage complexity",
+            "st-info-para": "<p>Easily create the custom capabilities and automated workflows your business needs to run smoothly—so you and your team can focus on your brand, not your tech stack.<\/p>"
+          }
+        },
+        "05a1fb93-4fbb-4ea6-83e1-a331584f181b": {
+          "type": "cardType",
+          "settings": {
+            "st-info-heading": "Integrate systems",
+            "st-info-para": "<p>Connect the systems and tools your business relies on through flexible Shopify APIs and Shopify Plus Partners. Or use a headless architecture to create completely custom storefronts on any smart screen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b677bf28-9588-44cb-a0ab-60a4947ad1f7",
+        "baef7bb3-b3f4-41a0-a50d-d2925b231c1f",
+        "05a1fb93-4fbb-4ea6-83e1-a331584f181b"
+      ],
+      "settings": {
+        "stp-margin-btm": 49,
+        "stp-margin-btm-mob": 82,
+        "st-pg-heading": "Flexible & Fast to launch",
+        "st-pg-para": "<p>Shopify Plus is the only cost-effective enterprise platform that’s built for change. Start selling online now.<\/p>"
+      }
+    },
+    "fee4059c-fed9-469a-b828-742ee68b89f1": {
+      "type": "brands_logos",
+      "blocks": {
+        "e18da0d6-1952-472c-a8a4-4c3f12ac005c": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector.jpg"
+          }
+        },
+        "aec88d7a-38f5-41b7-8c54-4baeeb01a0b0": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_1.jpg"
+          }
+        },
+        "37c937ec-fbd2-41d1-b321-7d789174e769": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_2.jpg"
+          }
+        },
+        "1f33f0a7-70d3-4fe6-8dbe-ecc5990e6320": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_3.jpg"
+          }
+        },
+        "24a0be28-cc7c-4744-85c8-0e0b6eb58e8e": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_4.jpg"
+          }
+        },
+        "3c71a690-3ad7-4780-a922-166a7c24cabf": {
+          "type": "brand_logo",
+          "settings": {
+            "brands_logos": "shopify:\/\/shop_images\/Vector_5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "e18da0d6-1952-472c-a8a4-4c3f12ac005c",
+        "aec88d7a-38f5-41b7-8c54-4baeeb01a0b0",
+        "37c937ec-fbd2-41d1-b321-7d789174e769",
+        "1f33f0a7-70d3-4fe6-8dbe-ecc5990e6320",
+        "24a0be28-cc7c-4744-85c8-0e0b6eb58e8e",
+        "3c71a690-3ad7-4780-a922-166a7c24cabf"
+      ],
+      "settings": {
+        "parent-margin-btm": 109,
+        "parent-margin-btm-mob": 84,
+        "brands_logos_heading": "Brands that use Shopify plus"
+      }
+    },
+    "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa": {
+      "type": "testimonials-video",
+      "blocks": {
+        "aa0763bd-f37a-4a26-aa38-4fdf0a90d291": {
+          "type": "vedioCard",
+          "settings": {
+            "vedioThumbnailImage": "shopify:\/\/shop_images\/image_147_0b4fcef8-23dd-4d2e-89f5-cc1b3c85b1a7.png",
+            "external_video_url": "https:\/\/youtu.be\/9Erlh1_oMxk",
+            "testimonial-logo": "shopify:\/\/shop_images\/image_149.svg",
+            "project-rating": 5,
+            "vedioHead": "\"I am continually impressed by their expertise in   Shopify and web development.\"",
+            "vedioSubtext": "~ Edwin Rosado, VP - Product Development"
+          }
+        },
+        "a9a473ab-6789-4465-9edf-7ceec02acce9": {
+          "type": "vedioCard",
+          "settings": {
+            "vedioThumbnailImage": "shopify:\/\/shop_images\/image_149_f212f268-0bc5-4769-a82b-da266b0227ad.png",
+            "external_video_url": "https:\/\/youtu.be\/PBrlQ2hrX98",
+            "testimonial-logo": "shopify:\/\/shop_images\/image_153.svg",
+            "project-rating": 5,
+            "vedioHead": "\"ShopTrade was experienced in developing apps and   set realistic timelines and price to get the job done.\"",
+            "vedioSubtext": "~ Zenos Scmickrath, Co-FounderLensAdvizor"
+          }
+        }
+      },
+      "block_order": [
+        "aa0763bd-f37a-4a26-aa38-4fdf0a90d291",
+        "a9a473ab-6789-4465-9edf-7ceec02acce9"
+      ],
+      "settings": {
+        "parent-margin-btm": 90,
+        "parent-margin-btm-mob": 80,
+        "vedioHeading": "Client Testimonials",
+        "testi-heading-size": 64,
+        "testi-heading-size-mob": 42
+      }
+    },
+    "27460630-fad5-498b-9162-c52858e29a98": {
+      "type": "brands_logos_marquee",
+      "blocks": {
+        "f171525d-b3a8-4cd8-9c1c-0baa77a7b825": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_8.png"
+          }
+        },
+        "094ecda4-97c4-4ddd-820f-3f08ad317fa8": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_7_6cadbe38-15f8-499e-9de6-f7c4128379b5.png"
+          }
+        },
+        "7e438334-52e4-440a-abdd-9ce0463187d6": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_6_9f56ed3f-2f8f-48e4-adad-e3ed2ddfa80a.png"
+          }
+        },
+        "6813a752-b8b7-4d92-a442-b86441a5af49": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Vector_5_433644ab-0d8e-4a09-a77f-091709dc7889.png"
+          }
+        },
+        "d466672f-0ee2-4e0e-a1bb-a2ecbaa7733e": {
+          "type": "slideTop",
+          "settings": {
+            "slideImgRight": "shopify:\/\/shop_images\/Frame.png"
+          }
+        }
+      },
+      "block_order": [
+        "f171525d-b3a8-4cd8-9c1c-0baa77a7b825",
+        "094ecda4-97c4-4ddd-820f-3f08ad317fa8",
+        "7e438334-52e4-440a-abdd-9ce0463187d6",
+        "6813a752-b8b7-4d92-a442-b86441a5af49",
+        "d466672f-0ee2-4e0e-a1bb-a2ecbaa7733e"
+      ],
+      "settings": {
+        "parent-margin-btm": 87,
+        "parent-margin-btm-mob": 74,
+        "heading": "Our Partners"
+      }
+    },
+    "b1a74954-2e63-4d11-8fa1-ae5322486e96": {
+      "type": "manuel_images_scroll",
+      "blocks": {
+        "f50d7f2c-8059-4af7-892a-3e4e242859aa": {
+          "type": "blocks",
+          "settings": {
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0454_01aa939a-fb82-4c2a-aaf7-0c328d6dc089.jpg"
+          }
+        },
+        "fbc7f174-4e30-4f15-b58a-297c474fc8e7": {
+          "type": "blocks",
+          "settings": {
+            "manuel-img-scroll": "shopify:\/\/shop_images\/5K8A6607_2fb1d491-8e79-41c3-a1ca-60369d019316.jpg"
+          }
+        },
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5": {
+          "type": "blocks",
+          "settings": {
+            "manuel-img-scroll": "shopify:\/\/shop_images\/Pro-Capture-One-0419_137f5b98-9091-4805-b719-9d00c538dff8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "f50d7f2c-8059-4af7-892a-3e4e242859aa",
+        "fbc7f174-4e30-4f15-b58a-297c474fc8e7",
+        "846f83c7-0c40-4745-827d-dbf0dfad25c5"
+      ],
+      "settings": {
+        "img-scroll-margin-btm": 136,
+        "img-scroll-margin-btm-mob": 32
+      }
+    },
+    "cc3e4c18-c797-46e7-8653-5e90bd32e731": {
+      "type": "lets-talk-store",
+      "settings": {
+        "slides-margin-btm": 100,
+        "slides-margin-btm-mob": 90,
+        "adj-img-txt": "row-reverse",
+        "online-store-img": "shopify:\/\/shop_images\/Group_1885_1.png",
+        "talk-store-heading": "Ready to take your online store to the next level?",
+        "heading-font-size": 64,
+        "heading-font-size-mob": 42,
+        "talk-store-para": "Our team of Shopify experts are here to help make your vision a reality. Don't miss out on the opportunity to increase your sales and stand out from the competition. Contact us today and let's get started!",
+        "talk-store-para-mob": "Boost sales and stand out with our Shopify experts. Contact us to start.",
+        "para-font-size": 20,
+        "para-font-size-mob": 16,
+        "lets-talk-btn": "Let’s Talk",
+        "btn-font-size": 20,
+        "btn-font-size-mob": 15,
+        "talk-btn-src": "#",
+        "btn-txt-color": "#ffffff",
+        "btn-bg-color": "#ff7121"
       }
     }
   },
   "order": [
     "main",
-    "56fea38c-c4fe-4150-941f-2f1f70a81e22",
-    "ef7a60dd-0c95-4d9c-8fec-7c261d08b53c"
+    "31cdad78-ce9a-482b-8ea1-447ec0d8957e",
+    "0e611b99-0958-4b25-beb7-4ebf30e7060f",
+    "22806222-a9ec-435d-bc96-c9bf30a6d988",
+    "fee4059c-fed9-469a-b828-742ee68b89f1",
+    "55c2c23d-3dd3-43a3-bfbe-a783fe928cfa",
+    "27460630-fad5-498b-9162-c52858e29a98",
+    "b1a74954-2e63-4d11-8fa1-ae5322486e96",
+    "cc3e4c18-c797-46e7-8653-5e90bd32e731"
   ]
 }

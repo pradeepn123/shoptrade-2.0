@@ -9,7 +9,7 @@
       {% comment %} <video autoplay muted loop playsinline preload="metadata">
         <source src="{{ section.settings.vedioUrl.sources[0].url }}" type="video/mp4">
       </video> {% endcomment %}
-      <div class="only-desktop js-desktop-video">
+      <div class="only-desktop js-desktop-video h-100">
         <img class="js-video-thumbnail" src="{{ section.settings.desktopImg | image_url }}">
       {{ section.settings.vedioUrl | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
       </div>

@@ -1,82 +1,209 @@
+{% style %}
+  .plus-banner{
+        margin-bottom: {{ section.settings.pad-btm }}px;
+  }
+  .shopify-banner{
+    flex-direction: {{ section.settings.flex_direction_banner }};
+  }
+
+   .plus-btn{
+       color:{{ section.settings.btn-color }};
+     background: {{ section.settings.btn-bg-color }};
+   }
+   @media(max-width:768px){
+        .plus-banner{
+         margin-bottom: {{ section.settings.pad-btm-mob }}px;
+       }
+
+   }
+{% endstyle %}
 <section class="plus-banner">
-    <div class="container">
-        <div class="shopify-banner">
-            <div class="sbanner-text">
-                <h1 class="sbanner-heading">{{ section.settings.plusheading }}</h1>
-                <p class="sbanner-paragraph">{{ section.settings.plusparagraph}}</p>
-                <div class="plus-logo">
-                <img class="sbanner-logo" src="{{section.settings.logoImage | image_url}}" alt="shopify plus logo"/>
-                </div>
-                <a href="{{ section.settings.plusBtnlink}}" class="plus-btn"> {{ section.settings.plusBtn}} </a>
-                <div class="slocation">
-                    <div class="locimg">
-                    <img class="locicon">{{ section.settings.loclogo}}
-                    </div>
-                    <div class="loctext">
-                    <h4 class="locmain">{{ section.settings.locheading}}</h4>
-                    <h6 class="locsubtext">{{ section.settings.locsubheading}}</h6>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="shopify-banner">
+      <div class="sbanner-text">
+        <h1 class="sbanner-heading">{{ section.settings.plusheading }}</h1>
+        <p class="sbanner-paragraph">{{ section.settings.plusparagraph }}</p>
+        {% if section.settings.logoImage %}
+          <div class="plus-logo">
+            <div class="sbanner-logo">
+            <a href="{{ section.settings.img_link }}"> <img src="{{section.settings.logoImage | image_url }}" alt="shopify plus logo"> </a>
             </div>
-            <div class="sbanner-video">
-              
+            <div class="rating sbanner-logo-rating">
+              <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+              <div
+                class="clutch-widget"
+                data-url="https://widget.clutch.co"
+                data-widget-type="2"
+                data-height="45"
+                data-nofollow="true"
+                data-expandifr="true"
+                data-scale="100"
+                data-clutchcompany-id="1012274"
+              ></div>
             </div>
+          </div>
+        {% endif %}
+        {% if section.settings.plusBtnlink %}
+          <div class="plus-btn-main">
+           <a href="{{ section.settings.plusBtnlink }}" class="plus-btn"> {{ section.settings.plusBtn }} </a>
+          </div>
+        {% endif %}
+        <div class="slocation">
+          {% if section.settings.loclogo %}
+            <div class="locimg"><img class="locicon">{{ section.settings.loclogo }}</div>
+          {% endif %}
+          <div class="loctext">
+            <h4 class="locmain">{{ section.settings.locheading }}</h4>
+            <h6 class="locsubtext">{{ section.settings.locsubheading }}</h6>
+          </div>
         </div>
+      </div>
+      <div class="sbanner-video">
+        <div class="vedio__container testimonial-vid__container">
+          <div
+            class="video-player"
+            data-player-type="{% if section.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
+            data-player-url="{{section.settings.external_video_url}}"
+          >
+            <div class="preview" data-js="preview">
+              <img
+                id="image2"
+                class="vedio__thumbnail"
+                src="{{ section.settings.vedioThumbnailImage | image_url }}"
+              >
+              {% if section.settings.external_video_url != null %}
+                <span class="play-icon arrow-btn arrow-btn-sbanner-video">
+                  <img
+                    id="image1"
+                    src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/play-icns-arrrow.png?v=1665747322"
+                  >
+                </span>
+              {% endif %}
+            </div>
+            <div class="aboutUsVideo" data-js="video" data-hidden="true">
+              <div data-js="video-root"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 {% schema %}
 {
-"name": "plus-banner",
-"settings": [
-{
-"type":"text",
-"id":"plusheading",
-"label":"Heading"
-},
-{
-"type": "text",
-"id": "plusparagraph",
-"label": "Banner paragraph"
-},
-{
-    "id": "logoImage",
-    "type": "image_picker",
-    "label": "logo"
-},
-{
-"type":"text",
-"id":"plusBtn",
-"label":"Button text"
-},{
-"type":"url",
-"id":"plusBtnlink",
-"label":"link"
-},
-{
-"type": "html",
-"id": "loclogo",
-"label": "location logo"
-},
-{
-"type": "text",
-"id": "locheading",
-"label": "location heading"
-},
-{
-"type": "text",
-"id": "locsubheading",
-"label": "location sub-heading"
-}
+  "name": "plus-banner",
+  "settings": [
+    {
+      "type": "range",
+      "id": "pad-btm",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "pad-btm-mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "flex_direction_banner",
+      "label": "Video and Text alignment",
+      "options": [
+        {
+          "value": "row",
+          "label": "Text first"
+        },
+        {
+          "value": "row-reverse",
+          "label": "Video first"
+        }
+      ],
+      "default": "row"
+    },    
+    {
+      "type": "video_url",
+      "id": "external_video_url",
+      "accept": ["vimeo", "youtube"],
+      "label": "Video URL",
+      "default": "https://player.vimeo.com/video/794041269"
+    },
+    {
+      "type": "image_picker",
+      "id": "vedioThumbnailImage",
+      "label": " Thumbnail Image"
+    },
+    {
+      "type": "text",
+      "id": "plusheading",
+      "label": "Heading"
+    },
 
-],
+    {
+      "type": "text",
+      "id": "plusparagraph",
+      "label": "Banner paragraph"
+    },
+    {
+      "id": "logoImage",
+      "type": "image_picker",
+      "label": "logo"
+    },
+    {
+      "type":"url",
+      "id":"img_link",
+      "label":"Add a link to logo"
+    },
+    {
+      "type": "text",
+      "id": "plusBtn",
+      "label": "Button text"
+    },
+    {
+      "type": "color",
+      "id": "btn-color",
+      "label": "Button color"
+    },
+    {
+      "type": "color",
+      "id": "btn-bg-color",
+      "label": "Button Background"
+    },
+    {
+      "type": "url",
+      "id": "plusBtnlink",
+      "label": "link"
+    },
+    {
+      "type": "html",
+      "id": "loclogo",
+      "label": "location logo"
+    },
+    {
+      "type": "text",
+      "id": "locheading",
+      "label": "location heading"
+    },
+    {
+      "type": "text",
+      "id": "locsubheading",
+      "label": "location sub-heading"
+    }
+  ],
 
-"presets": [
-{
-"name": "plus-banner"
-}]
+  "presets": [
+    {
+      "name": "plus-banner"
+    }
+  ]
 }
 {% endschema %}
-
-
-
