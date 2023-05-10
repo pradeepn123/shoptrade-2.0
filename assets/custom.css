@@ -1213,9 +1213,19 @@ input::-moz-placeholder {
   margin: 0;
   border-top: 1px solid var(--COLOR-BLACK);
 }
+@media screen and (min-width: 920px) {
+  .ourWork__cards {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
+}
 @media (min-width: 920px) {
   .ourWork__cards .swiper-wrapper {
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1349px) {
+  .ourWork__cards .swiper-wrapper li:nth-last-child(-n+3):not(:first-child) {
+    border-bottom: none;
   }
 }
 .ourWork__card {
@@ -1224,6 +1234,11 @@ input::-moz-placeholder {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 920px) {
+  .ourWork__card:last-child {
+    border-bottom: none;
+  }
 }
 @media (min-width: 919px) {
   .ourWork__card {
@@ -7402,9 +7417,6 @@ textarea {
   display: flex;
   align-items: center;
 }
-.audit__slider-arrow .slider-arrow .arrow-icon svg {
-  cursor: pointer;
-}
 @media (max-width: 520px) {
   .audit__slider-arrow .slider-arrow .arrow-icon svg {
     height: 50px;
@@ -7418,7 +7430,6 @@ textarea {
   width: 67.06px;
   height: 66.96px;
   object-fit: contain;
-  cursor: pointer;
 }
 .audit__slider-arrow .slider-arrow .js-arrow-right {
   margin-top: 40px;
@@ -7429,6 +7440,7 @@ textarea {
   width: 45px;
   height: 45px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 @media (max-width: 520px) {
   .audit__slider-arrow .slider-arrow .js-arrow-right {
@@ -7444,6 +7456,11 @@ textarea {
   transform: translateY(-50%);
   margin-top: 40px;
   margin-bottom: 100px;
+  cursor: pointer;
+}
+.audit__slider-arrow .slider-arrow .swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 @media (max-width: 1023px) {
@@ -7714,6 +7731,20 @@ textarea {
   display: block;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  cursor: pointer;
+}
+
 .page-width {
   display: none;
 }
@@ -7803,6 +7834,7 @@ textarea {
   font-size: 20px;
   line-height: 100%;
   color: #000000;
+  padding-top: 10px;
 }
 @media (max-width: 1100px) {
   .audit-product .container .main-product .price {
@@ -7875,6 +7907,7 @@ textarea {
   transform: translateY(0px);
   transition: transform 500ms;
   visibility: visible;
+  z-index: 10001;
 }
 
 .main-product-pop .pop_wrp .heading-close {
@@ -8651,6 +8684,7 @@ html {
 @media (max-width: 520px) {
   .audit-analysis {
     margin: 0;
+    padding: 0;
   }
 }
 @media (max-width: 520px) {
@@ -8669,36 +8703,47 @@ html {
     border: none;
   }
 }
-.audit-analysis .analysis_wrp:nth-child(even) {
-  flex-direction: row-reverse;
-}
-@media (max-width: 520px) {
-  .audit-analysis .analysis_wrp:nth-child(even) {
-    flex-direction: column;
-  }
-}
 .audit-analysis .analysis_wrp .analysis-image {
-  border-right: 1px solid #000;
+  border: none !important;
   width: 50%;
 }
 @media (max-width: 520px) {
   .audit-analysis .analysis_wrp .analysis-image {
     width: 100%;
-    border-bottom: 1px solid #000;
-    border-right: none;
+    border-bottom: 1px solid #000 !important;
+    border-right: none !important;
   }
 }
-.audit-analysis .analysis_wrp .analysis-image .aimg {
-  width: 100%;
+.audit-analysis .analysis_wrp .analysis-image .an-image {
   height: 100%;
 }
-.audit-analysis .analysis_wrp .analysis-image:nth-child(odd) {
-  border-left: 1px solid #000;
+.audit-analysis .analysis_wrp .analysis-image .an-image .aimg {
+  width: 100%;
+  height: 100%;
 }
 .audit-analysis .analysis_wrp .analysis-image .aimg_mob {
   max-width: 100%;
   height: auto;
   padding: 0 15px;
+}
+.audit-analysis .analysis_wrp:nth-child(odd) .analysis-image {
+  border-right: 1px solid #000 !important;
+}
+@media (max-width: 520px) {
+  .audit-analysis .analysis_wrp:nth-child(odd) .analysis-image {
+    border-right: none !important;
+  }
+}
+.audit-analysis .analysis_wrp:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.audit-analysis .analysis_wrp:nth-child(even) .analysis-image {
+  border-left: 1px solid #000 !important;
+}
+@media (max-width: 520px) {
+  .audit-analysis .analysis_wrp:nth-child(even) {
+    flex-direction: column;
+  }
 }
 .audit-analysis .analysis_wrp .analysis-text {
   padding: 0 5%;
@@ -8729,6 +8774,7 @@ html {
     font-size: 32px;
     line-height: 36px;
     width: 100%;
+    padding-top: 12%;
   }
 }
 @media (max-width: 320px) {
