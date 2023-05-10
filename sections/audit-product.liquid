@@ -1,4 +1,5 @@
 <section class="audit-product" id="audit-report">
+    <div id="overlay" onclick="off()"></div>
     <div class="container">
         <div class="main-product">
             <div class="product_wrp">
@@ -24,42 +25,43 @@
                 </div>
             </div>
             <p class="price"> Price <span>{{ section.settings.prodprice }}</span>/ One-time purchase</p>
-            <button class="prod-btn">{{ section.settings.prodbtn }}</button>
-            <p class="prod_report">Get your report by <span id="date-output"></span> </span></p> 
+            <button class="prod-btn" onclick="on()" id="reportbtn">{{ section.settings.prodbtn }}</button>
+            <p class="prod_report">Get your report by <span id="date-output"></span> </span></p>
         </div>
     </div>
 
-    <div class="container" id="myPopup">
-        <div class="main-product-pop">
-            <div class="pop_wrp">
-                <div class="heading-close">
-                <h1 class="popheading">{{ section.settings.popheading }}</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <path d="M28 2L2 28" stroke="#9D9D9D" stroke-width="3"/>
-                    <path d="M2 2L28 28" stroke="#9D9D9D" stroke-width="3"/>
-                    </svg>
-                </div>
-                <p class="popsubtext">{{ section.settings.popsubtext }}</p>
-                <span class="popdesc">{{ section.settings.popdesc }}</span>
-                <div class="pop_feat_wrp">
-                    {% for block in section.blocks %}
-                    {% case block.type %}
-                    {% when 'popup' %}
-                    <div class="pop-feat-flex">
-                        <div class="pop-features">
-                            <p class="pop-title">{{ block.settings.pop-title }}</p>
-                            <p class="pop-sub">{{ block.settings.pop-sub }}</p>
-                        </div>
+    
+        <div class="container" id="myPopup">
+            <div class="main-product-pop">
+                <div class="pop_wrp">
+                    <div class="heading-close">
+                        <h1 class="popheading">{{ section.settings.popheading }}</h1>
+                        <svg onclick="off()"  xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path d="M28 2L2 28" stroke="#9D9D9D" stroke-width="3" />
+                            <path d="M2 2L28 28" stroke="#9D9D9D" stroke-width="3" />
+                        </svg>
                     </div>
-                    {% endcase %}
-                    {% endfor %}
+                    <p class="popsubtext">{{ section.settings.popsubtext }}</p>
+                    <span class="popdesc">{{ section.settings.popdesc }}</span>
+                    <div class="pop_feat_wrp">
+                        {% for block in section.blocks %}
+                        {% case block.type %}
+                        {% when 'popup' %}
+                        <div class="pop-feat-flex">
+                            <div class="pop-features">
+                                <p class="pop-title">{{ block.settings.pop-title }}</p>
+                                <p class="pop-sub">{{ block.settings.pop-sub }}</p>
+                            </div>
+                        </div>
+                        {% endcase %}
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
 
-            <div id="product-component-1683098161648"></div>
-            <p class="pop-onetime">*One-time purchase</p>
+                <div id="product-component-1683098161648"></div>
+                <p class="pop-onetime">*One-time purchase</p>
+            </div>
         </div>
-    </div>
 </section>
 
 <script>
@@ -70,197 +72,201 @@
     prodBtn.addEventListener('click', () => {
         popup.classList.add('show');
     })
-    
+
     closePopupBtn.addEventListener('click', () => {
         popup.classList.remove('show');
     })
 
 
     function future(days) {
-  var dayMs = 86400000;
-  var ts = dayMs * days;
-  var now = +new Date();
-  var fts = now + ts;
-  return new Date(fts);
-}
+        var dayMs = 86400000;
+        var ts = dayMs * days;
+        var now = +new Date();
+        var fts = now + ts;
+        return new Date(fts);
+    }
 
-//To redirect to chckout page//
-function ShopifyBuyInit() {
+    //To redirect to chckout page//
+    function ShopifyBuyInit() {
         const elementWrapper = document.getElementById('product-component-1683098161648')
         var client = ShopifyBuy.buildClient({
-          domain: 'shoptrade-new.myshopify.com',
-          storefrontAccessToken: 'c9441bca05a32aece0990b5005817c05',
+            domain: 'shoptrade-new.myshopify.com',
+            storefrontAccessToken: 'c9441bca05a32aece0990b5005817c05',
         });
         ShopifyBuy.UI.onReady(client).then(function (ui) {
-          elementWrapper.innerHTML = ''
-          ui.createComponent('product', {
-            id: '8030379114716',
-            node: elementWrapper,
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-              "product": {
-                  "styles": {
-                  "product": {
-                      "@media (min-width: 601px)": {
-                      "max-width": "calc(25% - 20px)",
-                      "margin-left": "20px",
-                      "margin-bottom": "50px"
-                      }
-                  },
-                  "button": {
-                      "font-size": "18px",
-                      "padding-top": "17px",
-                      "padding-bottom": "17px",
-                      ":hover": {
-                      "background-color": "#ff7121"
-                      },
-                      "background-color": "#ff7121",
-                      ":focus": {
-                      "background-color": "#e6661e"
-                      },
-                     "border":"1px solid #000000",
-                     "width": "100%",
-                      "border-radius": "6px"
-                  },
-                  "quantityInput": {
-                      "font-size": "18px",
-                      "padding-top": "17px",
-                      "padding-bottom": "17px"
-                  }
-                  },
-                  "buttonDestination": "checkout",
-                  "contents": {
-                  "img": false,
-                  "title": false,
-                  "price": false
-                  },
-                  "text": {
-                  "button": "$1399 - Checkout"
-                  }
-              },
-              "productSet": {
-                  "styles": {
-                  "products": {
-                      "@media (min-width: 601px)": {
-                      "margin-left": "-20px"
-                      }
-                  }
-                  }
-              },
-              "modalProduct": {
-                  "contents": {
-                  "img": false,
-                  "imgWithCarousel": true,
-                  "button": false,
-                  "buttonWithQuantity": true
-                  },
-                  "styles": {
-                  "product": {
-                      "@media (min-width: 601px)": {
-                      "max-width": "100%",
-                      "margin-left": "0px",
-                      "margin-bottom": "0px"
-                      }
-                  },
-                  "button": {
-                      "font-size": "18px",
-                      "padding-top": "17px",
-                      "padding-bottom": "17px",
-                      ":hover": {
-                      "background-color": "#e6661e"
-                      },
-                      "background-color": "#ff7121",
-                      ":focus": {
-                      "background-color": "#e6661e"
-                      },
-                      "border-radius": "6px"
-                  },
-                  "quantityInput": {
-                      "font-size": "18px",
-                      "padding-top": "17px",
-                      "padding-bottom": "17px"
-                  }
-                  },
-                  "text": {
-                  "button": "Add to cart"
-                  }
-              },
-              "option": {},
-              "cart": {
-                  "styles": {
-                  "button": {
-                      "font-size": "18px",
-                      "padding-top": "17px",
-                      "padding-bottom": "17px",
-                      ":hover": {
-                      "background-color": "#e6661e"
-                      },
-                      "background-color": "#ff7121",
-                      ":focus": {
-                      "background-color": "#e6661e"
-                      },
-                      "border-radius": "6px"
-                  }
-                  },
-                  "text": {
-                  "total": "Subtotal",
-                  "button": "Checkout"
-                  },
-                  "popup": false
-              },
-              "toggle": {
-                "styles": {
-                  "toggle": {
-                    "background-color": "#ff7121",
-                    ":hover": {
-                      "background-color": "#e6661e"
+            elementWrapper.innerHTML = ''
+            ui.createComponent('product', {
+                id: '8030379114716',
+                node: elementWrapper,
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+                    "product": {
+                        "styles": {
+                            "product": {
+                                "@media (min-width: 601px)": {
+                                    "max-width": "calc(25% - 20px)",
+                                    "margin-left": "20px",
+                                    "margin-bottom": "50px"
+                                }
+                            },
+                            "button": {
+                                "font-size": "18px",
+                                "padding-top": "17px",
+                                "padding-bottom": "17px",
+                                ":hover": {
+                                    "background-color": "#ff7121"
+                                },
+                                "background-color": "#ff7121",
+                                ":focus": {
+                                    "background-color": "#e6661e"
+                                },
+                                "border": "1px solid #000000",
+                                "width": "100%",
+                                "border-radius": "6px"
+                            },
+                            "quantityInput": {
+                                "font-size": "18px",
+                                "padding-top": "17px",
+                                "padding-bottom": "17px"
+                            }
+                        },
+                        "buttonDestination": "checkout",
+                        "contents": {
+                            "img": false,
+                            "title": false,
+                            "price": false
+                        },
+                        "text": {
+                            "button": "$1399 - Checkout"
+                        }
                     },
-                    ":focus": {
-                      "background-color": "#e6661e"
+                    "productSet": {
+                        "styles": {
+                            "products": {
+                                "@media (min-width: 601px)": {
+                                    "margin-left": "-20px"
+                                }
+                            }
+                        }
+                    },
+                    "modalProduct": {
+                        "contents": {
+                            "img": false,
+                            "imgWithCarousel": true,
+                            "button": false,
+                            "buttonWithQuantity": true
+                        },
+                        "styles": {
+                            "product": {
+                                "@media (min-width: 601px)": {
+                                    "max-width": "100%",
+                                    "margin-left": "0px",
+                                    "margin-bottom": "0px"
+                                }
+                            },
+                            "button": {
+                                "font-size": "18px",
+                                "padding-top": "17px",
+                                "padding-bottom": "17px",
+                                ":hover": {
+                                    "background-color": "#e6661e"
+                                },
+                                "background-color": "#ff7121",
+                                ":focus": {
+                                    "background-color": "#e6661e"
+                                },
+                                "border-radius": "6px"
+                            },
+                            "quantityInput": {
+                                "font-size": "18px",
+                                "padding-top": "17px",
+                                "padding-bottom": "17px"
+                            }
+                        },
+                        "text": {
+                            "button": "Add to cart"
+                        }
+                    },
+                    "option": {},
+                    "cart": {
+                        "styles": {
+                            "button": {
+                                "font-size": "18px",
+                                "padding-top": "17px",
+                                "padding-bottom": "17px",
+                                ":hover": {
+                                    "background-color": "#e6661e"
+                                },
+                                "background-color": "#ff7121",
+                                ":focus": {
+                                    "background-color": "#e6661e"
+                                },
+                                "border-radius": "6px"
+                            }
+                        },
+                        "text": {
+                            "total": "Subtotal",
+                            "button": "Checkout"
+                        },
+                        "popup": false
+                    },
+                    "toggle": {
+                        "styles": {
+                            "toggle": {
+                                "background-color": "#ff7121",
+                                ":hover": {
+                                    "background-color": "#e6661e"
+                                },
+                                ":focus": {
+                                    "background-color": "#e6661e"
+                                }
+                            },
+                            "count": {
+                                "font-size": "18px"
+                            }
+                        }
                     }
-                  },
-                  "count": {
-                    "font-size": "18px"
-                  }
-                }
-              }
-            },
-          });
+                },
+            });
         });
-      }
-//To redirect to chckout page//
+    }
+    //To redirect to chckout page//
 
-document.addEventListener('DOMContentLoaded', function() {
-    var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
-    var futDate = future(30);
-    var newDate = futDate.getDate();
-    
-    var newMonth = monthNames[futDate.getMonth()];
-    if(newDate == 1 || newDate == 21 || newDate == 31){
-        document.querySelector('#date-output').innerHTML = `${newDate}st ${newMonth}`;
-    }
-    else if(newDate == 2 || newDate == 22){
-        document.querySelector('#date-output').innerHTML = `${newDate}nd ${newMonth}`;
-    }
-    else if(newDate == 3 || newDate == 23){
-        document.querySelector('#date-output').innerHTML = `${newDate}rd ${newMonth}`;
-    }
-    else{
-        document.querySelector('#date-output').innerHTML = `${newDate}th ${newMonth}`;
-    }
-});
+    document.addEventListener('DOMContentLoaded', function () {
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var futDate = future(30);
+        var newDate = futDate.getDate();
+
+        var newMonth = monthNames[futDate.getMonth()];
+        if (newDate == 1 || newDate == 21 || newDate == 31) {
+            document.querySelector('#date-output').innerHTML = `${newDate}st ${newMonth}`;
+        }
+        else if (newDate == 2 || newDate == 22) {
+            document.querySelector('#date-output').innerHTML = `${newDate}nd ${newMonth}`;
+        }
+        else if (newDate == 3 || newDate == 23) {
+            document.querySelector('#date-output').innerHTML = `${newDate}rd ${newMonth}`;
+        }
+        else {
+            document.querySelector('#date-output').innerHTML = `${newDate}th ${newMonth}`;
+        }
+    });
     ShopifyBuyInit()
 
-    //To close the popup //
-    // const element = document.querySelector(".main-product-pop .pop_wrp .heading-close svg");
-    // element.addEventListener("click", closePopup());
+    //To add overlay when popup is open and to stop background scroll and to close popup when clicked outside//
+    function on() {
+        document.getElementById("overlay").style.display = "block";
+        document.body.style.overflow="hidden";
+    }
 
-    // function closePopup() {
-    //     console.log('....')
-    //     document.getElementById("#myPopup").classList.remove("show");         
-    // }
-    //To close the popup//
-    </script>
+    function off() {
+        document.getElementById("overlay").style.display = "none";
+        popup.classList.remove('show');
+        document.body.style.overflow="auto" ;
+    }
+    //To add overlay when popup is open and to stop background scroll and to close popup when clicked outside//
+
+</script>
 
 {% schema %}
 {
@@ -313,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
 "type":"text",
 "label":"Button text",
 "id":"popbtn"
-}  
+}
 
 ],
 "blocks": [

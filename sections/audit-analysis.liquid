@@ -5,7 +5,9 @@
             
                 {% if block.settings.aimage != null %}
                 <div class="analysis-image desktop">
-                <img class="aimg" src="{{block.settings.aimage | image_url}}" alt="client image" />
+                    <div class="an-image">
+                        <img class="aimg" src="{{block.settings.aimage | image_url}}" alt="client image" />
+                    </div>
                 </div>
                 {%endif%}
 
