@@ -8714,6 +8714,7 @@ html {
     width: 100%;
     border-bottom: 1px solid #000 !important;
     border-right: none !important;
+    border-left: none !important;
   }
 }
 .audit-analysis .analysis_wrp .analysis-image .an-image {
@@ -8739,12 +8740,17 @@ html {
 .audit-analysis .analysis_wrp:nth-child(even) {
   flex-direction: row-reverse;
 }
+@media (max-width: 520px) {
+  .audit-analysis .analysis_wrp:nth-child(even) {
+    flex-direction: column;
+  }
+}
 .audit-analysis .analysis_wrp:nth-child(even) .analysis-image {
   border-left: 1px solid #000 !important;
 }
 @media (max-width: 520px) {
-  .audit-analysis .analysis_wrp:nth-child(even) {
-    flex-direction: column;
+  .audit-analysis .analysis_wrp:nth-child(even) .analysis-image {
+    border-left: none !important;
   }
 }
 .audit-analysis .analysis_wrp .analysis-text {
