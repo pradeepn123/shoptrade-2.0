@@ -257,15 +257,21 @@
     function on() {
         document.getElementById("overlay").style.display = "block";
         document.body.style.overflow="hidden";
+        document.body.classList.add("body-overflow-hidden");//To hide chat iocn when pop up is open//
     }
 
     function off() {
         document.getElementById("overlay").style.display = "none";
         popup.classList.remove('show');
         document.body.style.overflow="auto" ;
+        document.body.classList.remove("body-overflow-hidden");//to view chat icon when pop up is open//
     }
     //To add overlay when popup is open and to stop background scroll and to close popup when clicked outside//
 
+
+    
+    
+    
 </script>
 
 {% schema %}
