@@ -293,7 +293,7 @@
         "19d004a4-6c34-4020-b269-19ca44d0da31": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_153.svg",
+            "sliderImage": "shopify:\/\/shop_images\/Group_4651.webp",
             "sliderText": "“ShopTrade was experienced in developing apps and set realistic timelines.“",
             "name": "Zenos Schmickrath",
             "designation": "Co-Founder"
@@ -302,7 +302,7 @@
         "454927ea-167f-48e0-9a5a-f8afe79f0c10": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/Mask_group_98a08bae-7212-422b-810b-bf62503617da.png",
+            "sliderImage": "shopify:\/\/shop_images\/Group_4652.webp",
             "sliderText": "“They’ve done a really good job. They were on top of things from the get-go.“",
             "name": "Marc Heuberger",
             "designation": "CMO"
@@ -311,7 +311,7 @@
         "055fb115-9175-403b-9c94-13bb26508775": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/SYNCHRO_LOGO.svg",
+            "sliderImage": "shopify:\/\/shop_images\/Group_4648.webp",
             "sliderText": "“Their communication and responsiveness are impressive in the workflow.“",
             "name": "Graham Ryan",
             "designation": "Founder & CEO"
@@ -320,7 +320,7 @@
         "27d3d391-023c-4356-97de-764ae26f40a1": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/image_149.svg",
+            "sliderImage": "shopify:\/\/shop_images\/Group_4650.webp",
             "sliderText": "“I am continually impressed by their expertise in Shopify and web development.“",
             "name": "Eddie Rosado",
             "designation": "VP of Product Development"
@@ -345,7 +345,7 @@
           "type": "cardType",
           "settings": {
             "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
-            "question": "What is a design audit?",
+            "question": "1.What is a design audit?",
             "answer": "A design audit is an in-depth analysis of your website's design to identify areas of improvement and provide recommendations for a better user experience."
           }
         },
@@ -353,7 +353,7 @@
           "type": "cardType",
           "settings": {
             "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
-            "question": "Why do I need a design audit?",
+            "question": "2.Why do I need a design audit?",
             "answer": "answer"
           }
         },
@@ -361,7 +361,7 @@
           "type": "cardType",
           "settings": {
             "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
-            "question": "How long does a design audit take?",
+            "question": "3.How long does a design audit take?",
             "answer": ""
           }
         },
@@ -369,7 +369,7 @@
           "type": "cardType",
           "settings": {
             "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
-            "question": "What kind of recommendations will I receive?",
+            "question": "4.What kind of recommendations will I receive?",
             "answer": ""
           }
         },
@@ -377,7 +377,7 @@
           "type": "cardType",
           "settings": {
             "arrow_image": "shopify:\/\/shop_images\/Group_8248.png",
-            "question": "What happens after I receive the design audit report?",
+            "question": "5.What happens after I receive the design audit report?",
             "answer": ""
           }
         }

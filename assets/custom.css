@@ -7802,6 +7802,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #000;
+  padding-bottom: 20px;
 }
 @media (max-width: 1100px) {
   .audit-product .container .main-product .product_wrp .feat_wrp {
@@ -7811,6 +7812,7 @@ textarea {
 .audit-product .container .main-product .product_wrp .feat_wrp .features {
   display: flex;
   align-items: center;
+  padding-bottom: 20px;
 }
 .audit-product .container .main-product .product_wrp .feat_wrp .features .feat_icon {
   margin-right: 10px;
