@@ -45,6 +45,7 @@
                     width:100%;
                     border-bottom: 1px solid #000 !important;
                     border-right: none !important;
+                    border-left:none !important;
                     }
                     .an-image{
                                 height: 100%;
@@ -73,11 +74,15 @@
         }
         &:nth-child(even){
             flex-direction: row-reverse;
-            .analysis-image{
-                border-left:1px solid #000 !important;
-            }
             @media(max-width:520px){
                 flex-direction: column;
+            }
+            .analysis-image{
+                border-left:1px solid #000 !important;
+            
+                    @media(max-width:520px){
+                        border-left: none !important;
+                        } 
             }
         }
       
