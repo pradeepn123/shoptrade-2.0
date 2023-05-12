@@ -2,7 +2,7 @@
     position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 200px;
+  height: 130px;
   overflow-x: hidden;
 
    .heading{
@@ -23,7 +23,6 @@
     will-change: transform;
     animation: marquee 20s linear infinite;
     border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
     min-width:27%;
 
     img{

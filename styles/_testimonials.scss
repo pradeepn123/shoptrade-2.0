@@ -298,13 +298,17 @@
     .slider-arrow {
         display: flex;
         align-items: center;
-
+        cursor: pointer;
+        .swiper-button-disabled{
+            opacity: 0.4;
+            cursor:not-allowed;
+        }
         .arrow-icon {
             &:first-child {
                 margin-right: 40px;
             }
             svg{
-                cursor: pointer;
+                // cursor: pointer;
                 path{
                     fill: #ffffff;
                 }
