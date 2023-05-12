@@ -7433,7 +7433,7 @@ textarea {
 }
 .audit__slider-arrow .slider-arrow .js-arrow-right {
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   position: relative;
   top: 50%;
   right: -50px;
@@ -7455,7 +7455,7 @@ textarea {
   height: 45px;
   transform: translateY(-50%);
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   cursor: pointer;
 }
 .audit__slider-arrow .slider-arrow .swiper-button-disabled {
@@ -7485,6 +7485,7 @@ textarea {
   .audit-timeline .container .wrapper .theading {
     font-size: 36px;
     line-height: 100%;
+    text-align: left;
   }
 }
 .audit-timeline .container .wrapper .timeline-container {
@@ -7765,9 +7766,9 @@ textarea {
 @media (max-width: 1100px) {
   .audit-product .container .main-product {
     margin: 0;
-    padding: 1em;
+    padding: 35px 20px 20px;
     width: 100%;
-    margin: 20px 0;
+    margin: 40px 0;
     border-radius: 8px;
   }
 }
@@ -8899,7 +8900,7 @@ html {
   position: relative;
   width: 100vw;
   max-width: 100%;
-  height: 200px;
+  height: 130px;
   overflow-x: hidden;
 }
 .audit-marquee .heading {
@@ -8921,7 +8922,6 @@ html {
   will-change: transform;
   animation: marquee 20s linear infinite;
   border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
   min-width: 27%;
 }
 .audit-marquee .Marquee-content img {
