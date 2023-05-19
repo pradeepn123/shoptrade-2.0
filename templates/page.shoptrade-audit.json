@@ -132,6 +132,13 @@
             "bfr_image": "shopify:\/\/shop_images\/Angles_before.png",
             "aft_image": "shopify:\/\/shop_images\/Angles_after.png"
           }
+        },
+        "04a790d5-f267-4cc1-b408-797ec459571f": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Bumpboxx_before.png",
+            "aft_image": "shopify:\/\/shop_images\/Bumppbox_after.png"
+          }
         }
       },
       "block_order": [
@@ -140,7 +147,8 @@
         "ec98667c-32b4-47c9-b047-1a5c71e78cec",
         "25347288-7914-4a7c-ada9-63b3d82551e4",
         "39a986ff-e50e-4d92-ae66-57cf113e19ef",
-        "46fe6788-83d5-4b9a-b98b-daaadf91b44e"
+        "46fe6788-83d5-4b9a-b98b-daaadf91b44e",
+        "04a790d5-f267-4cc1-b408-797ec459571f"
       ],
       "settings": {
       }
