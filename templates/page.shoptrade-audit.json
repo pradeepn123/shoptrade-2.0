@@ -118,13 +118,21 @@
             "bfr_image": "shopify:\/\/shop_images\/Elevatione_before.png",
             "aft_image": "shopify:\/\/shop_images\/elevatione_after.png"
           }
+        },
+        "39a986ff-e50e-4d92-ae66-57cf113e19ef": {
+          "type": "cardType",
+          "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Ortho_before.png",
+            "aft_image": "shopify:\/\/shop_images\/Ortho_after.png"
+          }
         }
       },
       "block_order": [
         "71f3666e-5c62-4858-84ae-cabac8475bc7",
         "4834c0e0-f2a4-464d-832e-c5ad25b5666d",
         "ec98667c-32b4-47c9-b047-1a5c71e78cec",
-        "25347288-7914-4a7c-ada9-63b3d82551e4"
+        "25347288-7914-4a7c-ada9-63b3d82551e4",
+        "39a986ff-e50e-4d92-ae66-57cf113e19ef"
       ],
       "settings": {
       }
