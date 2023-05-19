@@ -108,6 +108,8 @@
         "ec98667c-32b4-47c9-b047-1a5c71e78cec": {
           "type": "cardType",
           "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/Hatha_before.png",
+            "aft_image": "shopify:\/\/shop_images\/Hatha_after.png"
           }
         }
       },
