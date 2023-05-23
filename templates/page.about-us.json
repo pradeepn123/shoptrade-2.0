@@ -640,18 +640,6 @@
             "careerLink": ""
           }
         },
-        "23fba3fc-0c8f-4369-99e0-f209920713bb": {
-          "type": "cardType",
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Hussain.jpg",
-            "memberName": "Saddam Husen",
-            "memberDesignation": "Office Assistant",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "6c901cf3-fceb-4bbd-b5a6-dc210ab52de2": {
           "type": "cardType",
           "settings": {
@@ -660,6 +648,18 @@
             "memberImage": "shopify:\/\/shop_images\/brijesh.png",
             "memberName": "Brijesh M Patil",
             "memberDesignation": "Front-End Engineer (Intern)",
+            "careerbtn": "",
+            "careerLink": ""
+          }
+        },
+        "23fba3fc-0c8f-4369-99e0-f209920713bb": {
+          "type": "cardType",
+          "settings": {
+            "profileType": "member",
+            "slider": "",
+            "memberImage": "shopify:\/\/shop_images\/Hussain.jpg",
+            "memberName": "Saddam Husen",
+            "memberDesignation": "Office Assistant",
             "careerbtn": "",
             "careerLink": ""
           }
@@ -694,8 +694,8 @@
         "40841869-daac-4449-bf3c-6f3406395749",
         "2d2d1644-07f5-420e-ae57-14af05720f17",
         "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
-        "23fba3fc-0c8f-4369-99e0-f209920713bb",
-        "6c901cf3-fceb-4bbd-b5a6-dc210ab52de2"
+        "6c901cf3-fceb-4bbd-b5a6-dc210ab52de2",
+        "23fba3fc-0c8f-4369-99e0-f209920713bb"
       ],
       "settings": {
         "heading": "Meet our Team"
