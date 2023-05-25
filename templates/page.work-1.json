@@ -14,6 +14,17 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
+        "ecb392bc-5524-4421-8bbc-5656faa04c09": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Heal-_-Co.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
         "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
           "type": "cardType",
           "settings": {
@@ -227,6 +238,7 @@
       },
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
