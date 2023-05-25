@@ -201,6 +201,17 @@
             "cardLink": "https:\/\/melissaniwater.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Pole-Junkie.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "",
+            "btn-icon": "https:\/\/www.polejunkie.com\/"
+          }
         }
       },
       "block_order": [
@@ -221,7 +232,8 @@
         "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
-        "49c0539d-b33c-4081-9f94-817f171e22c3"
+        "49c0539d-b33c-4081-9f94-817f171e22c3",
+        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
