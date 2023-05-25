@@ -209,8 +209,8 @@
             "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
             "clickble": true,
             "open_new_tab": true,
-            "cardLink": "",
-            "btn-icon": "https:\/\/www.polejunkie.com\/"
+            "cardLink": "https:\/\/www.polejunkie.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         }
       },
