@@ -80,6 +80,17 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/www.clubsullivan.tv\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551": {
           "type": "cardType",
           "settings": {
@@ -179,17 +190,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
-        "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/www.clubsullivan.tv\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "49c0539d-b33c-4081-9f94-817f171e22c3": {
           "type": "cardType",
           "disabled": true,
@@ -211,6 +211,7 @@
         "a042d646-89ce-4d16-8b64-aea734310f47",
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
         "6c361f49-c740-4c88-a697-a07cc0978984",
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
         "d0aaf961-3564-47c1-b2c5-cc9da6674890",
@@ -220,7 +221,6 @@
         "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
-        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "49c0539d-b33c-4081-9f94-817f171e22c3"
       ],
       "settings": {
