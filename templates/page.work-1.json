@@ -58,17 +58,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
-        "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/5_-Nutr.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/5_175b60fc-f173-456f-822d-0d067ef906bc.jpg",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/5percentnutrition.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e": {
           "type": "cardType",
           "settings": {
@@ -132,6 +121,17 @@
             "clickble": true,
             "open_new_tab": false,
             "cardLink": "https:\/\/besynchro.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/5_-Nutr.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/5_175b60fc-f173-456f-822d-0d067ef906bc.jpg",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/5percentnutrition.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -264,13 +264,13 @@
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
-        "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3",
         "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
         "2c3a4b9b-d183-4461-94ea-8ba213835dca",
         "a042d646-89ce-4d16-8b64-aea734310f47",
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
         "6c361f49-c740-4c88-a697-a07cc0978984",
+        "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3",
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
