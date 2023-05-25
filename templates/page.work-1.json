@@ -3,6 +3,17 @@
     "work": {
       "type": "work",
       "blocks": {
+        "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/US-polo-assn.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Layer_1.svg",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
         "56726384-63dc-401c-b4a2-0b9dd92a3610": {
           "type": "cardType",
           "settings": {
@@ -23,6 +34,17 @@
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Swing-fans.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/swingfans.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
         "a042d646-89ce-4d16-8b64-aea734310f47": {
@@ -69,17 +91,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
-        "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/bumpboxx.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa": {
           "type": "cardType",
           "settings": {
@@ -88,6 +99,17 @@
             "clickble": true,
             "open_new_tab": false,
             "cardLink": "https:\/\/www.buunnicoffee.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/bumpboxx.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -179,39 +201,19 @@
             "cardLink": "https:\/\/melissaniwater.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
-        },
-        "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Swing-fans.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/swingfans.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
-        "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/US-polo-assn.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Layer_1.svg",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
         }
       },
       "block_order": [
+        "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
+        "2c3a4b9b-d183-4461-94ea-8ba213835dca",
         "a042d646-89ce-4d16-8b64-aea734310f47",
         "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
         "6c361f49-c740-4c88-a697-a07cc0978984",
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
-        "d0aaf961-3564-47c1-b2c5-cc9da6674890",
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890",
         "07f8cf6d-5332-43d0-ad62-4a812965a113",
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55",
         "4f536d0a-f989-4a1e-b706-e379ef217bca",
@@ -219,9 +221,7 @@
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
-        "49c0539d-b33c-4081-9f94-817f171e22c3",
-        "2c3a4b9b-d183-4461-94ea-8ba213835dca",
-        "8c6a1681-b421-447c-aaae-4d00a33dfb3d"
+        "49c0539d-b33c-4081-9f94-817f171e22c3"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
