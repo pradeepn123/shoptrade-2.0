@@ -85,8 +85,8 @@
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Swing-fans.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
-            "clickble": false,
-            "open_new_tab": false,
+            "clickble": true,
+            "open_new_tab": true,
             "cardLink": "https:\/\/swingfans.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
