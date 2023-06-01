@@ -94,29 +94,23 @@
         "71f3666e-5c62-4858-84ae-cabac8475bc7": {
           "type": "cardType",
           "settings": {
-            "bfr_image": "shopify:\/\/shop_images\/Chill_before_6ac9be3a-256e-457c-8b58-f7e6f8ab452a.png",
-            "aft_image": "shopify:\/\/shop_images\/Chill_After_79ee7035-d8fc-466c-88aa-5765b15b0416.png"
+            "bfr_image": "shopify:\/\/shop_images\/CHILL_BEFORE_8e8bd47e-1f42-460d-84fb-be93dffd1f64.png",
+            "aft_image": "shopify:\/\/shop_images\/CHILL_AFTER_c80d57c4-aa5b-4316-ab93-4ab9a4fc4d32.png"
           }
         },
         "4834c0e0-f2a4-464d-832e-c5ad25b5666d": {
           "type": "cardType",
           "settings": {
-            "bfr_image": "shopify:\/\/shop_images\/BUNNI_BEFORE_53bc8554-b218-4e67-99af-202fbb67fef6.png",
-            "aft_image": "shopify:\/\/shop_images\/BUNNI_AFTER_9fb4f53b-cf2a-452a-a35e-7d470de2b5bf.png"
           }
         },
         "ec98667c-32b4-47c9-b047-1a5c71e78cec": {
           "type": "cardType",
           "settings": {
-            "bfr_image": "shopify:\/\/shop_images\/HATHA_BEFORE_26bc64b4-4ac9-49d8-8dd0-760226886888.png",
-            "aft_image": "shopify:\/\/shop_images\/HATHA_AFTER_dc3b819b-e7fe-45ca-8e3d-417617820ca0.png"
           }
         },
         "25347288-7914-4a7c-ada9-63b3d82551e4": {
           "type": "cardType",
           "settings": {
-            "bfr_image": "shopify:\/\/shop_images\/Elevatione_before_2a809e4f-c002-4bf3-baea-255705ccf347.png",
-            "aft_image": "shopify:\/\/shop_images\/elevatione_after_b141f2e5-062a-4263-950d-daeae0937044.png"
           }
         },
         "39a986ff-e50e-4d92-ae66-57cf113e19ef": {
