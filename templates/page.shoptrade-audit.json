@@ -108,6 +108,8 @@
         "ec98667c-32b4-47c9-b047-1a5c71e78cec": {
           "type": "cardType",
           "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/ELEVATIONE_BEFORE_4b69fdb7-dbce-4085-87fd-a97e3204f62c.png",
+            "aft_image": "shopify:\/\/shop_images\/ELEVATIONE_AFTER_2acd0978-5fe3-4263-8080-91e500e8a090.png"
           }
         },
         "25347288-7914-4a7c-ada9-63b3d82551e4": {
