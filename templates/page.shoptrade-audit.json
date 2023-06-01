@@ -115,6 +115,8 @@
         "25347288-7914-4a7c-ada9-63b3d82551e4": {
           "type": "cardType",
           "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/ANGLES_BEFORE_7a5c1fe4-cd81-4449-a106-4fdd82645f29.png",
+            "aft_image": "shopify:\/\/shop_images\/ANGLES_AFTER_484120e8-2e33-4f09-958d-1cc22c0aea52.png"
           }
         },
         "39a986ff-e50e-4d92-ae66-57cf113e19ef": {
