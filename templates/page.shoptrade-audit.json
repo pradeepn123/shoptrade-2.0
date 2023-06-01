@@ -101,6 +101,8 @@
         "4834c0e0-f2a4-464d-832e-c5ad25b5666d": {
           "type": "cardType",
           "settings": {
+            "bfr_image": "shopify:\/\/shop_images\/HATHASPACE_BEFORE.png",
+            "aft_image": "shopify:\/\/shop_images\/HATHASPACE_AFTER.png"
           }
         },
         "ec98667c-32b4-47c9-b047-1a5c71e78cec": {
