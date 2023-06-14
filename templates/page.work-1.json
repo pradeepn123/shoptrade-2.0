@@ -39,8 +39,8 @@
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/US-polo-assn.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Layer_1.svg",
+            "cardImage": "shopify:\/\/shop_images\/US.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
             "clickble": true,
             "open_new_tab": true,
             "cardLink": "https:\/\/www.uspoloassn.co.uk\/",
