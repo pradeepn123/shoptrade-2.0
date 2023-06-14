@@ -36,6 +36,17 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
+        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Kimi.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/KIMIA.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
@@ -262,6 +273,7 @@
         "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",
+        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
