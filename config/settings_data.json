@@ -105,6 +105,41 @@
           "footerLink": "footer",
           "footerBottomLink": "footer-bottom"
         }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Check out our new project Heal & Co",
+              "text_alignment": "center",
+              "link": ""
+            }
+          },
+          "ca0b996b-f28a-4499-8c3d-e092cda863b8": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "text_alignment": "center",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0",
+          "ca0b996b-f28a-4499-8c3d-e092cda863b8"
+        ],
+        "settings": {
+          "enable_announcement": false,
+          "enable_sticky": false,
+          "text_size": "text-xs",
+          "navigation_mode": "scrolling",
+          "scrolling_speed": 15,
+          "background": "#121212",
+          "background_gradient": "",
+          "text_color": "#ffffff"
+        }
       }
     },
     "content_for_index": [

@@ -480,10 +480,10 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    var sticky = $("header"),
+    var sticky = $("#shopify-section-header"),
       scroll = $(window).scrollTop();
 
-    if (scroll >= 100) sticky.addClass("fixed-header");
+    if (scroll >= 50) sticky.addClass("fixed-header");
     else sticky.removeClass("fixed-header");
   });
 
@@ -1046,7 +1046,22 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
   }
 });
 
-
+// js/common/ui/marquee-text.js
+var MarqueeText = class extends HTMLElement {
+  constructor() {
+    super();
+    if (window.ResizeObserver) {
+      new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+    }
+  }
+  _calculateDuration(entries) {
+    const scrollingSpeed = parseInt(this.getAttribute("scrolling-speed") || 5), contentWidth = entries[0].contentRect.width, slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
+    this.style.setProperty("--marquee-animation-duration", `${(scrollingSpeed * slowFactor * entries[0].target.querySelector("span").clientWidth / contentWidth).toFixed(3)}s`);
+  }
+};
+if (!window.customElements.get("marquee-text")) {
+  window.customElements.define("marquee-text", MarqueeText);
+}
 
 
 
