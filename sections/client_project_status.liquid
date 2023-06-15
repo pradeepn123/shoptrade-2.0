@@ -1,4 +1,5 @@
 {% style %}
+
   .client_project_status {
     font-family: 'Epilogue';
     margin: 0px 70px;
@@ -66,22 +67,27 @@
 
   .client_project_status #projectTable tbody tr {
     background: #ffffff;
-    border: 0.5px solid #000000;
-    border-radius: 8px;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 20% 16% 16% 16% 16% 16%;
     margin-bottom: 14px;
   }
 
-  .client_project_status #projectTable tbody td {
+  .client_project_status #projectTable tbody tr td {
     font-style: normal;
     font-weight: 400;
     font-size: {{ section.settings.tbody_td_font_size }}px;
     line-height: 30px;
     color: #000000;
-    border: 0.5px solid #000000;
     width: 100%;
+    border: 1px solid #000000;
+  }
+
+  .client_project_status #projectTable tbody tr td:first-child {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .client_project_status #projectTable tbody tr td:last-child {
+    border-radius: 0px 8px 8px 0px;
   }
 
   .client_project_status #projectTable tbody td span * {
@@ -115,6 +121,17 @@
   .client_project_status #projectTable tbody td .heading a {
     font-size: {{ section.settings.tbody_heading_a_font_size }}px;
     letter-spacing: -0.03em;
+  }
+
+  .client_project_status #projectTable tbody td .heading a:hover img {
+      visibility : visible;
+  }
+
+  .client_project_status #projectTable tbody td .heading a img{
+    visibility : hidden;
+    height: 11px;
+    transform: rotate(315deg);
+    margin: 0 0 5px 5px;
   }
 
   .client_project_status #projectTable thead tr {
@@ -244,10 +261,10 @@
  @media screen and (max-width:560px){
 
   .client_project_status #projectTable tbody tr {
-    grid-template-columns: 20% 15% 15% 15% 16% auto;
+    grid-template-columns: 20% 15% 15% 15% 16% 19%;
   }
   .client_project_status #projectTable thead tr {
-    grid-template-columns: 20% 15% 15% 15% 16% auto;
+    grid-template-columns: 20% 15% 15% 15% 16% 19%;
   }
 .client_project_status .table_filter {
 }
@@ -317,34 +334,7 @@
         </thead>
         <tbody id="Tablebody">
           {% for item in section.blocks %}
-            <tr>
-              {% if item.settings.STATUS == 'Yet to start' %}
-                {% assign Status_class = 'Yet_to_start' %}
-              {% elsif item.settings.STATUS == 'In Progress' %}
-                {% assign Status_class = 'In_Progress' %}
-              {% else %}
-                {% assign Status_class = 'Completed' %}
-              {% endif %}
-              <td>
-                <span class="heading hide">
-                  <p>{{ item.settings.PROJECT_NAME | truncate: 27 }}</p>
-                  <a href="{{ item.settings.More_Detail }}">More Detail</a>
-                </span>
-              </td>
-              <td>
-                {% if item.settings.TEAM != blank %}
-                  <abbr title="{{ item.settings.TEAM }}"><span class="hide">{{ item.settings.TEAM | truncate: 23 }}ⓘ</span></abbr>
-                {% else %}
-                  <span>team not assigned</span>
-                {% endif %}
-              </td>
-              <td>
-                <span>{{ item.settings.PHASE }}</span>
-              </td>
-              <td class="STATUS">Loading...</td>
-              <td class="STATUS">{{ item.settings.PROJECT_DEADLINE }}</td>
-              <td class="{{ Status_class }} STATUS">{{ item.settings.STATUS }}</td>
-            </tr>
+            {% render 'client_project_status_snip', item: item %}
           {% endfor %}
         </tbody>
       </table>
