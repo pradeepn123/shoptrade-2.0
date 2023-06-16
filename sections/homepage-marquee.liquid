@@ -1,0 +1,68 @@
+
+{% liquid 
+ assign sliderClass = 'js-marque-slider' 
+
+ if section.settings.reverse 
+  assign sliderClass = 'js-marque-slider--reverse'
+ endif
+%} 
+
+{% if section.blocks.size  %}
+<div class="brand-marquee" id="brand-marquee--{{ section.id }}">
+    <div class="swiper-container {{ sliderClass }}">
+        <div class="swiper-wrapper">
+            {% for item in section.blocks %}
+                <div class="swiper-slide brand-marquee__block">
+                    <div class="brand-marquee__icon">
+                        <img src="{{ item.settings.icon | image_url }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% style %}
+  #brand-marquee--{{ section.id }} {
+    background: {{ section.settings.background_color }}
+  }
+{% endstyle %}
+
+{% schema %}
+{
+    "name": "Marquee Custom",
+    "settings": [
+        {
+            "id": "reverse", 
+            "label": "Reverse flow ?" ,
+            "type": "checkbox",
+            "default": false
+        },
+        {
+            "id": "background_color", 
+            "label": "Background color" ,
+            "type": "color",
+            "default": "transparent"
+        }
+    ],
+    "blocks": [
+        {
+            "name":"Brands",
+            "type":"brands",
+            "settings": [
+                {
+                    "id":"icon",
+                    "label":"icon",
+                    "type":"image_picker"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Marquee Custom"
+        }
+    ]
+}
+{% endschema %}

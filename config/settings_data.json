@@ -10,7 +10,11 @@
         "settings": {
           "logo-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo.svg?v=1668161224",
           "logombile-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo-mbl.svg?v=1668161454",
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "button_1_text": "CRO Audit",
+          "button_1_url": "#",
+          "button_2_text": "Contact Us",
+          "button_2_url": "#contact-us"
         }
       },
       "footer": {

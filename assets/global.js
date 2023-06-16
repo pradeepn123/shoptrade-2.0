@@ -971,3 +971,146 @@ let testimonial = new Swiper('.js-testimonial-slider', {
       }
   }
 });
+
+
+//Homepage quick services module
+let quickServices = new Swiper('.js-quickServices-slider', {
+  speed:1000,
+  autoHeight: false,
+  slidesPerView: 1.02,
+  spaceBetween: 16,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+      1440: {
+          slidesPerView: 3,
+          spaceBetween: 33,
+          pagination: false
+      },
+      1028: {
+          slidesPerView: 2.1,
+          spaceBetween: 16
+      },
+      767: {
+          slidesPerView: 1.1,
+          spaceBetween: 10
+      }
+  }
+});
+
+
+// //marquee normal flow 
+// let marquee = new Swiper('.js-marque-slider', {
+//   spaceBetween: 76,
+//   centeredSlides: true,
+//   speed: 6000,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//   },
+//   loop: true,
+//   slidesPerView: 'auto',
+//   allowTouchMove: false,
+//   breakpoints: {
+//     1440: {
+//         spaceBetween: 76
+//     },
+
+//     767: {
+//         spaceBetween: 57
+//     }
+// }
+// });
+
+
+// //marquee reverse flow 
+// let marqueeReverse = new Swiper('.js-marque-slider--reverse', {
+//   spaceBetween: 76,
+//   centeredSlides: true,
+//   speed: 6000,
+//   autoplay: {
+//     delay: 0,
+//     disableOnInteraction: true,
+//   },
+//   loop: true,
+//   slidesPerView: 'auto',
+//   allowTouchMove: false,
+//   breakpoints: {
+//     1440: {
+//         spaceBetween: 76
+//     },
+
+//     767: {
+//         spaceBetween: 57
+//     }
+// }
+// });
+
+
+const initSlider = () => {
+  //marquee normal flow 
+let marquee = new Swiper('.js-marque-slider', {
+  spaceBetween: 76,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  breakpoints: {
+    1440: {
+        spaceBetween: 76
+    },
+
+    767: {
+        spaceBetween: 57
+    }
+}
+});
+
+
+//marquee reverse flow 
+let marqueeReverse = new Swiper('.js-marque-slider--reverse', {
+  spaceBetween: 76,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  breakpoints: {
+    1440: {
+        spaceBetween: 76
+    },
+
+    767: {
+        spaceBetween: 57
+    }
+}
+});
+}
+
+const expandVideoToFullWidth = (ev) => {
+  const videoContainer = ev.target.closest('.video-container');
+  if(!videoContainer) return;
+  videoContainer.classList?.toggle('video-container--expanded');
+}
+
+window.addEventListener('DOMContentLoaded' , () => {
+  initSlider();
+  const videoExpandTriggerElements = document.querySelectorAll('.js-video-expand');
+  if(!videoExpandTriggerElements.length) return;
+  videoExpandTriggerElements?.forEach(videoExpandTriggerElement => videoExpandTriggerElement.addEventListener('click', expandVideoToFullWidth));
+})
+
+window.addEventListener("resize", () => {
+  initSlider();
+});

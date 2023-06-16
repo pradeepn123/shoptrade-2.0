@@ -1,27 +1,7 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 <section class="homeBanner">
-
-  {% if section.settings.mediaType == "video" %}
-    <div class="video-container">
-      {% comment %} <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
-    
-      {% comment %} <video autoplay muted loop playsinline preload="metadata">
-        <source src="{{ section.settings.vedioUrl.sources[0].url }}" type="video/mp4">
-      </video> {% endcomment %}
-      <div class="only-desktop js-desktop-video h-100">
-        <img class="js-video-thumbnail" src="{{ section.settings.desktopImg | image_url }}">
-      {{ section.settings.vedioUrl | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
-      </div>
-      <div class="only-mobile js-desktop-video">
-        <img class="js-video-thumbnail" src="{{ section.settings.mobileImg | image_url }}">
-
-      {{ section.settings.vedioUrlMobile | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
-      </div>
-    </div>
-    
-  {% endif %}
-  <div class="container ">
+  <div class="">
     <div class="homeBanner__wrp">
       <div class="v-center">
         <div class="homeBanner__content">
@@ -29,23 +9,38 @@
          
             {{ section.settings.bannerSubText }}
           </p>
-          <h1 class="h1">
+          <h1 class="homeBanner__heading">
             {{ section.settings.bannerHead }}
           </h1>
-          <a href="{{ section.settings.bannerBtnlink }}" class="btn btn--orange"> {{ section.settings.bannerBtn }} </a>
+          <a href="{{ section.settings.bannerBtnlink }}" class="button homeBanner__cta"> {{ section.settings.bannerBtn }} </a>
         </div>
       </div>
       {% if section.settings.mediaType == "image" %}
       <div class="homeBanner__imgWrp">
         <div class="v-center">
           <div class="homeBanner__imgContainer">
-           
               <img class="homeBanner__img" src="{{section.settings.imagebanner | image_url}}" alt="banner image"/>
-              
           </div>
         </div>
       </div>
-            
+      {% else %} 
+      <div class="video-container">
+        {% comment %} <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
+      
+        {% comment %} <video autoplay muted loop playsinline preload="metadata">
+          <source src="{{ section.settings.vedioUrl.sources[0].url }}" type="video/mp4">
+        </video> {% endcomment %}
+        <div class="only-desktop js-desktop-video h-100">
+          <img class="js-video-thumbnail" src="{{ section.settings.desktopImg | image_url }}">
+        {{ section.settings.vedioUrl | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
+        </div>
+        <div class="only-mobile js-desktop-video">
+          <img class="js-video-thumbnail" src="{{ section.settings.mobileImg | image_url }}">
+  
+        {{ section.settings.vedioUrlMobile | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
+        </div>
+        <div class="button-rounded button-rounded--secondary js-video-expand">{% render 'arrow-left'%}</div>
+      </div>     
     {% endif %}
     </div>
   </div>

@@ -3,4 +3,17 @@
     --COLOR-WHITE: #FFFFFF;
     --COLOR-PRIMARY: #FF7121;
     --font-body-family: 'Epilogue', sans-serif;
+    --base-margin: 20px;
+
+    @media  (min-width: 768px) {
+        --base-margin: 32px;
+    }
+    
+    @media (min-width: 1024px) {
+        --base-margin: 48px;
+    }
+
+    @media (min-width: 1440px) {
+        --base-margin: 80px;
+    }
 }
