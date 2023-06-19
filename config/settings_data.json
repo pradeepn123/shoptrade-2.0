@@ -112,7 +112,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Check out our new project Heal & Co",
+              "text": "<p>Check out our new project <a href=\"https:\/\/shoptrade.co\/\" title=\"https:\/\/shoptrade.co\/\">Heal & Co<\/a><\/p>",
               "text_alignment": "center",
               "link": ""
             }
@@ -120,7 +120,7 @@
           "ca0b996b-f28a-4499-8c3d-e092cda863b8": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "<p>Welcome to our store<\/p>",
               "text_alignment": "center",
               "link": ""
             }
@@ -131,7 +131,7 @@
           "ca0b996b-f28a-4499-8c3d-e092cda863b8"
         ],
         "settings": {
-          "enable_announcement": false,
+          "enable_announcement": true,
           "enable_sticky": false,
           "text_size": "text-xs",
           "navigation_mode": "scrolling",

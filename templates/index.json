@@ -8,10 +8,10 @@
         "bannerBtn": "Our Work",
         "bannerBtnlink": "shopify:\/\/pages\/work",
         "mediaType": "video",
-        "imagebanner": "shopify:\/\/shop_images\/banner-image.png",
-        "desktopImg": "shopify:\/\/shop_images\/desktop-vedio-frame.png",
+        "imagebanner": "shopify:\/\/shop_images\/main_banner.jpg",
+        "desktopImg": "shopify:\/\/shop_images\/main_banner.jpg",
         "vedioUrl": "shopify:\/\/files\/videos\/obys agency showreel (online-video-cutter.com).mp4",
-        "mobileImg": "shopify:\/\/shop_images\/mobile-vedio-frame.png",
+        "mobileImg": "shopify:\/\/shop_images\/Rectangle_401.jpg",
         "vedioUrlMobile": "shopify:\/\/files\/videos\/obys agency showreel (online-video-cutter.com).mp4"
       }
     },
@@ -30,18 +30,18 @@
         "854bfd37-3081-4625-a785-428487d0c0fa": {
           "type": "block",
           "settings": {
-            "icon": "<svg width=\"73\" height=\"73\" viewbox=\"0 0 73 73\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n                <rect x=\"2\" y=\"2\" width=\"69\" height=\"69\" rx=\"34.5\" stroke=\"#FF7121\" stroke-width=\"3\"><\/rect>\n                <path d=\"M22.5 40.5003V43.2C22.5 44.8802 22.5 45.7197 22.827 46.3614C23.1146 46.9259 23.5732 47.3857 24.1377 47.6733C24.7788 48 25.6185 48 27.2954 48H49.5003M22.5 40.5003V25.5M22.5 40.5003L28.2801 35.6836L28.2849 35.6798C29.3305 34.8084 29.8543 34.3719 30.4223 34.1946C31.0933 33.9851 31.8161 34.0183 32.4653 34.2876C33.0157 34.5159 33.4984 34.9986 34.4636 35.9638L34.4733 35.9735C35.4536 36.9538 35.945 37.4452 36.5042 37.673C37.166 37.9426 37.9028 37.9658 38.5811 37.7409C39.1561 37.5501 39.6813 37.0913 40.7314 36.1724L49.5 28.5\" stroke=\"#FF7121\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n              <\/svg>",
-            "content": "Boost Your Conversion Power with Our Expert-led Audits",
-            "cta_text": "Get CRO Audit",
+            "icon": "<svg width=\"73\" height=\"73\" viewbox=\"0 0 73 73\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"2\" y=\"2\" width=\"69\" height=\"69\" rx=\"34.5\" stroke=\"#FF7121\" stroke-width=\"3\"><\/rect>\n<path d=\"M26.3994 47.8805L28.6854 46.0518L28.7022 46.0389C29.1787 45.6576 29.4192 45.4652 29.6875 45.3281C29.9282 45.2051 30.1849 45.1156 30.4497 45.0613C30.7482 45 31.0591 45 31.6831 45H44.7046C46.3815 45 47.2209 45 47.862 44.6733C48.4265 44.3857 48.8857 43.9263 49.1733 43.3618C49.5 42.7207 49.5 41.8822 49.5 40.2054V28.7954C49.5 27.1185 49.5 26.2788 49.1733 25.6377C48.8857 25.0732 48.4256 24.6146 47.8611 24.327C47.2194 24 46.3805 24 44.7003 24H27.3003C25.6201 24 24.7794 24 24.1377 24.327C23.5732 24.6146 23.1146 25.0732 22.827 25.6377C22.5 26.2794 22.5 27.1201 22.5 28.8003V46.0068C22.5 47.6053 22.5 48.4045 22.8277 48.815C23.1127 49.172 23.5447 49.3797 24.0015 49.3792C24.5267 49.3786 25.1512 48.8791 26.3994 47.8805Z\" stroke=\"#FF7121\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "content": "Ready to Accelerate Your Online Business Growth?",
+            "cta_text": "Connect Now",
             "cta_url": ""
           }
         },
         "ea2620ed-5a92-461c-a495-5240778f1a45": {
           "type": "block",
           "settings": {
-            "icon": "<svg width=\"73\" height=\"73\" viewbox=\"0 0 73 73\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n                <rect x=\"2\" y=\"2\" width=\"69\" height=\"69\" rx=\"34.5\" stroke=\"#FF7121\" stroke-width=\"3\"><\/rect>\n                <path d=\"M22.5 40.5003V43.2C22.5 44.8802 22.5 45.7197 22.827 46.3614C23.1146 46.9259 23.5732 47.3857 24.1377 47.6733C24.7788 48 25.6185 48 27.2954 48H49.5003M22.5 40.5003V25.5M22.5 40.5003L28.2801 35.6836L28.2849 35.6798C29.3305 34.8084 29.8543 34.3719 30.4223 34.1946C31.0933 33.9851 31.8161 34.0183 32.4653 34.2876C33.0157 34.5159 33.4984 34.9986 34.4636 35.9638L34.4733 35.9735C35.4536 36.9538 35.945 37.4452 36.5042 37.673C37.166 37.9426 37.9028 37.9658 38.5811 37.7409C39.1561 37.5501 39.6813 37.0913 40.7314 36.1724L49.5 28.5\" stroke=\"#FF7121\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n              <\/svg>",
-            "content": "Boost Your Conversion Power with Our Expert-led Audits",
-            "cta_text": "Get CRO Audit",
+            "icon": "<svg width=\"73\" height=\"72\" viewbox=\"0 0 73 72\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"2\" y=\"1.5\" width=\"69\" height=\"69\" rx=\"34.5\" stroke=\"#FF7121\" stroke-width=\"3\"><\/rect>\n<path d=\"M40.5 31.5L34.5 37.5L31.5 34.5M48 33.2476C48 43.1 40.5479 47.5171 37.3887 48.9471L37.3847 48.9488C37.0524 49.0992 36.8859 49.1746 36.5083 49.2394C36.2692 49.2805 35.7323 49.2805 35.4932 49.2394C35.1141 49.1744 34.9458 49.0987 34.6109 48.9471C31.4517 47.5171 24 43.0999 24 33.2476V27.3003C24 25.6201 24 24.7794 24.327 24.1377C24.6146 23.5732 25.0732 23.1146 25.6377 22.827C26.2794 22.5 27.1201 22.5 28.8003 22.5H43.2003C44.8805 22.5 45.7194 22.5 46.3611 22.827C46.9256 23.1146 47.3857 23.5732 47.6733 24.1377C48 24.7788 48 25.6185 48 27.2954V33.2476Z\" stroke=\"#FF7121\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "content": "Industry-Leading Excellence, Proven by Results.",
+            "cta_text": "Case Studies",
             "cta_url": ""
           }
         }
@@ -98,31 +98,31 @@
         "2b0cb695-cb43-4dd5-8b84-9a7865d94c9e": {
           "type": "block",
           "settings": {
-            "service_text": "UX\/UI Design"
+            "service_text": "Shopify Development"
           }
         },
         "f7eb2980-dca2-442c-9188-e7c03bfd1dce": {
           "type": "block",
           "settings": {
-            "service_text": "UX\/UI Design"
+            "service_text": "Data Migration"
           }
         },
         "7a52d429-54d2-46d8-af69-400cd499c0b3": {
           "type": "block",
           "settings": {
-            "service_text": "UX\/UI Design"
+            "service_text": "Strategy & CRO Insights"
           }
         },
         "ef4895be-2895-444b-8d03-80b92214ac22": {
           "type": "block",
           "settings": {
-            "service_text": "UX\/UI Design"
+            "service_text": "Internationalization"
           }
         },
         "509dedb2-e02e-43ac-a61c-6b1e89196d26": {
           "type": "block",
           "settings": {
-            "service_text": "UX\/UI Design"
+            "service_text": "Headless Commerce"
           }
         }
       },
@@ -135,10 +135,10 @@
         "509dedb2-e02e-43ac-a61c-6b1e89196d26"
       ],
       "settings": {
-        "heading": "We design, develop and       grow e‑commerce stores       for some of the best in       the business",
+        "heading": "We design, develop and grow e‑commerce stores for some of the best in the business.",
         "services-block_heading": "Capabilities",
         "button_text": "View all services",
-        "button_url": "#"
+        "button_url": "shopify:\/\/pages\/services"
       }
     },
     "marquee": {
@@ -276,6 +276,7 @@
     },
     "54b153cd-107d-47ab-86a0-2793af834b5d": {
       "type": "showcase-role",
+      "disabled": true,
       "blocks": {
         "b930ccac-b86d-4559-8075-8191d76ad2fb": {
           "type": "role",

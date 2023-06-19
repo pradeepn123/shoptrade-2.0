@@ -10,7 +10,9 @@
                 {%- assign topslider = section.blocks | where : 'type' , 'slideTop' -%}
                 {%- for block in  topslider -%}
                     <div class="swiper-slide"> 
-                        <img src="{{ block.settings.slideImgRight | image_url }}">
+                        <div class="swiper-slide__wrapper">
+                            <img src="{{ block.settings.slideImgRight | image_url }}">
+                        </div>
                     </div>
                 {%- endfor -%}
               
@@ -23,7 +25,9 @@
             {%- assign bottomslider = section.blocks | where : 'type' , 'slideBottom' -%}
             {%- for block in  bottomslider -%}
                 <div class="swiper-slide"> 
-                    <img src="{{ block.settings.slideImgLeft | image_url }}">
+                    <div class="swiper-slide__wrapper">
+                        <img src="{{ block.settings.slideImgLeft | image_url }}">
+                    </div>
                 </div>
             {%- endfor -%}
           

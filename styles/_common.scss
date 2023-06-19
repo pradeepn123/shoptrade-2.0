@@ -296,13 +296,13 @@ body {
     overflow: hidden;
 }
 
-main {
-    padding-top: 118px;
+// main {
+//     padding-top: 118px;
 
-    @media (max-width:991px) {
-        padding-top: 84px;
-    }
-}
+//     @media (max-width:991px) {
+//         padding-top: 84px;
+//     }
+// }
 
 .border-topBottom {
     border-top: 1px solid var(--COLOR-BLACK);
@@ -646,18 +646,14 @@ input::-moz-placeholder {
 }
 
 .video-container {
-
     margin-bottom: 20px;
     transition: width 0.2s linear;
-
-
-
     @media (min-width:992px) {
         margin-bottom: 0;
-        z-index: 1;
+        z-index: 2;
         width: 50%;
         right: 0;
-        height: 100%;
+        height: calc(100vh - 20vh);
         position: relative;
         margin-left: auto;
     }
@@ -705,13 +701,19 @@ input::-moz-placeholder {
         left: 44px;
         display:  none;
         cursor: pointer;
-
+        z-index: 2;
         svg {
             transform: rotate(180deg);
         }
 
         @media(min-width: 1200px) {
-          display: initial;
+            width: 87px;
+            height: 87px;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
     }
@@ -720,8 +722,8 @@ input::-moz-placeholder {
         width: 100%;
 
         .button-rounded {
-            bottom: 100px;
-            left: 100px;
+            bottom: 34px;
+            left: 74px;
             svg {
                 transform: rotate(360deg);
             }

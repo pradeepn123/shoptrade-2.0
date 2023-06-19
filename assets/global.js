@@ -977,25 +977,20 @@ let testimonial = new Swiper('.js-testimonial-slider', {
 let quickServices = new Swiper('.js-quickServices-slider', {
   speed:1000,
   autoHeight: false,
-  slidesPerView: 1.02,
-  spaceBetween: 16,
+  slidesPerView: 3,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  },
-  breakpoints: {
-      1440: {
-          slidesPerView: 3,
-          spaceBetween: 33,
-          pagination: false
-      },
+  }, 
+  breakpoints: {      
       1028: {
-          slidesPerView: 2.1,
-          spaceBetween: 16
+        slidesPerView: 2.1,
+        spaceBetween: 16
       },
       767: {
-          slidesPerView: 1.1,
-          spaceBetween: 10
+        slidesPerView: 1.1,
+        spaceBetween: 10        
       }
   }
 });
@@ -1102,6 +1097,9 @@ const expandVideoToFullWidth = (ev) => {
   const videoContainer = ev.target.closest('.video-container');
   if(!videoContainer) return;
   videoContainer.classList?.toggle('video-container--expanded');
+  const videoContainerText = document.querySelector('.rounded-text');
+  if(!videoContainerText) return;
+  videoContainerText.classList?.toggle('rounded-text--expanded');
 }
 
 window.addEventListener('DOMContentLoaded' , () => {
@@ -1114,3 +1112,21 @@ window.addEventListener('DOMContentLoaded' , () => {
 window.addEventListener("resize", () => {
   initSlider();
 });
+
+
+// js/common/ui/marquee-text.js
+var MarqueeText = class extends HTMLElement {
+  constructor() {
+    super();
+    if (window.ResizeObserver) {
+      new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+    }
+  }
+  _calculateDuration(entries) {
+    const scrollingSpeed = parseInt(this.getAttribute("scrolling-speed") || 5), contentWidth = entries[0].contentRect.width, slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
+    this.style.setProperty("--marquee-animation-duration", `${(scrollingSpeed * slowFactor * entries[0].target.querySelector("span").clientWidth / contentWidth).toFixed(3)}s`);
+  }
+};
+if (!window.customElements.get("marquee-text")) {
+  window.customElements.define("marquee-text", MarqueeText);
+}

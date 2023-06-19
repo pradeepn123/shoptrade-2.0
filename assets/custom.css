@@ -308,15 +308,6 @@ body {
   overflow: hidden;
 }
 
-main {
-  padding-top: 118px;
-}
-@media (max-width: 991px) {
-  main {
-    padding-top: 84px;
-  }
-}
-
 .border-topBottom {
   border-top: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
@@ -596,10 +587,10 @@ input::-moz-placeholder {
 @media (min-width: 992px) {
   .video-container {
     margin-bottom: 0;
-    z-index: 1;
+    z-index: 2;
     width: 50%;
     right: 0;
-    height: 100%;
+    height: 80vh;
     position: relative;
     margin-left: auto;
   }
@@ -640,21 +631,28 @@ input::-moz-placeholder {
   left: 44px;
   display: none;
   cursor: pointer;
+  z-index: 2;
 }
 .video-container .button-rounded svg {
   transform: rotate(180deg);
 }
 @media (min-width: 1200px) {
   .video-container .button-rounded {
-    display: initial;
+    width: 87px;
+    height: 87px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .video-container--expanded {
   width: 100%;
 }
 .video-container--expanded .button-rounded {
-  bottom: 100px;
-  left: 100px;
+  bottom: 34px;
+  left: 74px;
 }
 .video-container--expanded .button-rounded svg {
   transform: rotate(360deg);
@@ -746,7 +744,7 @@ input::-moz-placeholder {
   }
 }
 @media (min-width: 1200px) {
-  .homeBanner::after {
+  .homeBanner .v-center::after {
     position: absolute;
     content: "";
     width: 382px;
@@ -755,7 +753,7 @@ input::-moz-placeholder {
     filter: blur(79.5px);
     left: -80px;
     bottom: -173px;
-    z-index: -1;
+    z-index: 1;
     border-radius: 56px;
   }
 }
@@ -768,6 +766,7 @@ input::-moz-placeholder {
     max-width: calc(56% - 20px);
     position: absolute;
     padding-left: var(--base-margin);
+    z-index: 2;
   }
 }
 .homeBanner__wrp {
@@ -777,6 +776,11 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .homeBanner__wrp {
     flex-direction: column-reverse;
+  }
+}
+@media (min-width: 1200px) {
+  .homeBanner__wrp {
+    background: #FFF9F5;
   }
 }
 .homeBanner__subText {
@@ -902,6 +906,73 @@ input::-moz-placeholder {
 
 .js-desktop-video video {
   opacity: 0;
+}
+
+.rounded-text {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .rounded-text {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    text-transform: uppercase;
+    transform: rotate(-103deg);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Epilogue";
+    position: absolute;
+    bottom: 22px;
+    left: 62px;
+    z-index: 0;
+  }
+}
+.rounded-text.rounded-text--expanded {
+  display: none;
+}
+
+.white {
+  fill: #fff;
+}
+
+.yellow {
+  fill: #ffda2a;
+}
+
+.green {
+  fill: #00d3b9;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+
+@keyframes coloring {
+  0% {
+    fill: #FFFFFF;
+  }
+  35% {
+    fill: #FF7121;
+  }
+  75% {
+    fill: #FF7121;
+  }
+  100% {
+    fill: #FFFFFF;
+  }
+}
+.coloring {
+  animation: coloring 12s linear infinite;
+  font-size: 24px;
 }
 
 .btn {
@@ -2820,6 +2891,16 @@ input::-moz-placeholder {
   margin-top: 82px;
   border-top: 1px solid #DCDCDC;
 }
+@media (max-width: 767px) {
+  .shoptrade .shoptrade__menu-wrp {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shoptrade .shoptrade__menu-wrp {
+    margin-top: 120px;
+  }
+}
 @media (min-width: 1024px) {
   .shoptrade .shoptrade__menu-wrp {
     border-top: 0;
@@ -2872,7 +2953,12 @@ input::-moz-placeholder {
   background: linear-gradient(97.09deg, #E07527 -9.68%, #FF7121 49.02%, rgba(255, 113, 33, 0.913098) 65.42%, rgba(255, 255, 255, 0.67) 135.89%);
   border-radius: 49.1007px;
   color: var(--COLOR-WHITE);
-  border-color: transparent;
+  border-color: unset;
+  transition: 0.5s ease all;
+}
+.shoptrade .header__button--primary:hover {
+  background: linear-gradient(270deg, #E07527 -9.68%, #FF7121 49.02%, rgba(255, 113, 33, 0.913098) 65.42%, rgba(255, 255, 255, 0.67) 135.89%);
+  transition: 0.5s ease all;
 }
 @media (min-width: 1024px) {
   .shoptrade .header__button {
@@ -3071,6 +3157,10 @@ input::-moz-placeholder {
   grid: auto/auto-flow auto 5rem;
   place-items: center;
   display: grid;
+}
+
+.announcement-bar__item p {
+  margin: 0.6em;
 }
 
 .announcement-bar__item {
@@ -4537,15 +4627,48 @@ input::-moz-placeholder {
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
-.workculter .swiper-slide img {
-  width: 100%;
-  height: 404px;
-  object-position: top;
-  object-fit: cover;
+.workculter .swiper-slide .swiper-slide__wrapper {
+  position: relative;
+  padding-bottom: 53.35%;
+  overflow: hidden;
   border: 1px solid var(--COLOR-BLACK);
+  padding-bottom: 80%;
+}
+.workculter .swiper-slide .swiper-slide__wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 25%;
+  object-fit: cover;
+}
+@media (min-width: 1440px) {
+  .workculter .swiper-slide .swiper-slide__wrapper img {
+    object-position: 50% 25%;
+  }
 }
 .workculter .sliderTop {
   margin-bottom: 40px;
+}
+.workculter .sliderTop .swiper-slide__wrapper {
+  position: relative;
+  padding-bottom: 53.35%;
+  overflow: hidden;
+  border: 1px solid var(--COLOR-BLACK);
+  padding-bottom: 80%;
+}
+@media (min-width: 1440px) {
+  .workculter .sliderTop .swiper-slide__wrapper {
+    padding-bottom: 80%;
+  }
+}
+.workculter .sliderTop .swiper-slide__wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 25%;
+  object-fit: cover;
 }
 
 .joinUs {
@@ -6398,6 +6521,7 @@ textarea {
 
 .services-marquee-wrap {
   border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
   background: #000;
 }
 .services-marquee-wrap .swiper-container .swiper-wrapper {
@@ -9206,6 +9330,7 @@ html {
   font-size: 20px;
   line-height: 26px;
   margin-top: 18px;
+  color: #000000;
 }
 @media (min-width: 1440px) {
   .quick-services__block-content {
@@ -9256,6 +9381,11 @@ html {
 }
 .quick-services__pagination .swiper-pagination-bullet:last-child {
   margin-right: 0;
+}
+@media (min-width: 1200px) {
+  .quick-services__pagination .swiper-pagination-bullet {
+    display: none;
+  }
 }
 @media (min-width: 1440px) {
   .quick-services {
@@ -9344,6 +9474,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 48px;
+  color: #000000;
 }
 @media (min-width: 1440px) {
   .services-block__item {

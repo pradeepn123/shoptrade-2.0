@@ -1,6 +1,6 @@
 {% style %}
   :root{
-    --text-xs: 14px;
+    --text-xs: 12px;
     --text-sm: 16px;
     --text-base: 18px;
     --text-lg: 22px;
@@ -18,85 +18,90 @@
     }
   {% endif %}
   .section-{{ section.id }} .announcement-bar .announcement-bar__message,
-  .section-{{ section.id }} .announcement-bar__item{
+  .section-{{ section.id }} .announcement-bar__item,
+  .section-{{ section.id }} .announcement-bar__item p,
+  .section-{{ section.id }} .announcement-bar__item p a{
     color: {{section.settings.text_color}};
     font-weight: 400;
     letter-spacing: 1px;
   } 
   {% if section.settings.text_size == 'text-xs' %}
-    .section-{{ section.id }} .announcement-bar .announcement-bar__message{
+    .section-{{ section.id }} .announcement-bar__item, 
+    .section-{{ section.id }} .announcement-bar__item p{
       font-size: var(--text-xs);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-sm' %}
-    .section-{{ section.id }} .announcement-bar .announcement-bar__message{
+    .section-{{ section.id }} .announcement-bar__item,
+    .section-{{ section.id }} .announcement-bar__item p{
       font-size: var(--text-sm);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-base' %}
-    .section-{{ section.id }} .announcement-bar .announcement-bar__message{
+    .section-{{ section.id }} .announcement-bar__item, 
+    .section-{{ section.id }} .announcement-bar__item p{
       font-size: var(--text-base);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-lg' %}
-    .section-{{ section.id }} .announcement-bar .announcement-bar__message{
+    .section-{{ section.id }} .announcement-bar__item,
+    .section-{{ section.id }} .announcement-bar__item p{
       font-size: var(--text-lg);
     }
   {% endif %}
 {% endstyle %}
-<div class="section-{{ section.id }}">  
-  {%- if section.settings.navigation_mode == 'scrolling' -%}
-    <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" class="announcement-bar__scrolling-list">
-      {%- capture content -%}
-        {%- for block in section.blocks -%}
-          <p class="bold {{ section.settings.text_size }}" {{ block.shopify_attributes }}>
-            {%- if block.settings.url != blank -%}
-              <a href="{{ block.settings.url }}">{{ block.settings.text | escape }}</a>
-            {%- else -%}
-              {{ block.settings.text | escape }}
-            {%- endif -%}
-          </p>
 
-          <span class="shape-circle shape--sm"></span>
+{% if section.settings.enable_announcement == true %}
+  <div class="section-{{ section.id }}">  
+    {%- if section.settings.navigation_mode == 'scrolling' -%}
+      <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" class="announcement-bar__scrolling-list">
+        {%- capture content -%}
+          {%- for block in section.blocks -%}
+            <p class="bold {{ section.settings.text_size }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.url != blank -%}
+                <a href="{{ block.settings.url }}">{{ block.settings.text }}</a>
+              {%- else -%}
+                {{ block.settings.text }}
+              {%- endif -%}
+            </p>
+
+            <span class="shape-circle shape--sm"></span>
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- for i in (1..10) -%}
+          <span class="announcement-bar__item bold {{ section.settings.text_size }}" {% unless forloop.first %}aria-hidden="true"{% endunless %}>
+            {{- content -}}
+          </span>
         {%- endfor -%}
-      {%- endcapture -%}
-
-      {%- for i in (1..10) -%}
-        <span class="announcement-bar__item" {% unless forloop.first %}aria-hidden="true"{% endunless %}>
-          {{- content -}}
-        </span>
+      </marquee-text>
+    {% else %}  
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'announcement' -%}
+            <div class="announcement-bar gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.text != blank -%}
+                {%- if block.settings.link != blank -%}
+                  <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+                {%- endif -%}
+                    <div class="page_width">
+                      <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
+                        {{ block.settings.text }}
+                        {%- if block.settings.link != blank -%}
+                          {% render 'icon-arrow' %}
+                        {%- endif -%}
+                      </p>
+                    </div>
+                {%- if block.settings.link != blank -%}
+                  </a>
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
       {%- endfor -%}
-    </marquee-text>
-  {% else %}  
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'announcement' -%}
-          <div class="announcement-bar gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-            {%- if block.settings.text != blank -%}
-              {%- if block.settings.link != blank -%}
-                <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-              {%- endif -%}
-                  <div class="page_width">
-                    <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                      {{ block.settings.text | escape }}
-                      {%- if block.settings.link != blank -%}
-                        {% render 'icon-arrow' %}
-                      {%- endif -%}
-                    </p>
-                  </div>
-              {%- if block.settings.link != blank -%}
-                </a>
-              {%- endif -%}
-            {%- endif -%}
-          </div>
-      {%- endcase -%}
-    {%- endfor -%}
-  {% endif %}
-</div>
-
-<script>
-  
-</script>
+    {% endif %}
+  </div>
+{% endif %}
 
 {% schema %}
 {
@@ -191,9 +196,9 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
-          "default": "Welcome to our store",
+          "default": "<p>Welcome to our store</p>",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
