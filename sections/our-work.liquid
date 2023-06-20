@@ -9,54 +9,52 @@
           <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
         </a>
       </div>
-
     </div>
-
   </div>
-  <ul class="ourWork__cards swiper-container js-work-slider">
-    <div class="swiper-wrapper">
-    {% for block in section.blocks %}
-      <li class="ourWork__card swiper-slide">
-        <div class="ourWork__cardHead">
-          <div class="marquee  enable-animation">
-            <div class="marquee__content">
-
-              {{ block.settings.cardMarque }}
-              
-              
-            </div>
-            <div class="marquee__content" aria-hidden=" true">
-              {{ block.settings.cardMarque }}
-
-              
-
-            </div>
-          </div>
-        </div>
-        <div class="ourWork__cardBody">
-          <div  class="img-container">
-            <div class="img-wrp">
-              <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-              <div class="btn-wrp">
-                <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
-                  <div class="d-flex">
-                    <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
-                  </div>
-                  <div class="">
-                    <img class="btn-arrow" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/btn-arrow.svg?v=1665478404" alt="arrow"/>
-
+  <div class="ourWork__card_border">
+    <div class="container">
+      <ul class="ourWork__cards swiper-container js-work-slider">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+          <li class="ourWork__card swiper-slide">
+            {% comment %} <div class="ourWork__cardHead">
+              <div class="marquee  enable-animation">
+                <div class="marquee__content">
+                  {{ block.settings.cardMarque }}
+                </div>
+                <div class="marquee__content" aria-hidden=" true">
+                  {{ block.settings.cardMarque }}
+                </div>
+              </div>
+            </div> {% endcomment %}
+            <div class="ourWork__cardBody">
+              <div  class="img-container">
+                <div class="img-wrp">
+                  <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
+                  {% comment %} <div class="btn-wrp">
+                    <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
+                      <div class="d-flex">
+                        <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
+                      </div>
+                      <div class="">
+                        <img class="btn-arrow" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/btn-arrow.svg?v=1665478404" alt="arrow"/>
+                      </div>
+                    </a>
+                  </div> {% endcomment %}
+                </div>
+                <a href="{{ block.settings.cardtext_url}}">                
+                  <div class="brand_text_wrap">
+                    {{ block.settings.cardtext }}
                   </div>
                 </a>
               </div>
             </div>
-
-          </div>
+          </li>
+          {% endfor %}
         </div>
-      </li>
-    {% endfor %}
+      </ul>
+    </div>
   </div>
-
-  </ul>
 </section>
 
 
@@ -84,24 +82,36 @@
         "type": "cardType",
         "settings": [
           {
+            "id": "cardtext",
+            "type": "richtext",
+            "label": "Brand Name"
+          },
+          {
+            "id": "cardtext_url",
+            "type": "url",
+            "label": "Brand Link"
+          },
+          {
             "id": "cardImage",
             "type": "image_picker",
             "label": "Image"
-
-          }, {
+          }, 
+          {
             "id": "cardImageBrand",
             "type": "image_picker",
             "label": "Logo"
-
-          },{
+          },
+          {
             "id":"buttonLink",
             "label":"Button link",
             "type":"url"
-          },{
+          },
+          {
             "id":"cardMarque",
             "label":"Tag slider",
             "type":"html"
-          },{
+          },
+          {
             "id":"open_new_tabs",
             "type":"checkbox",
             "label":"Open in new tab",

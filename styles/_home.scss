@@ -124,12 +124,12 @@
     }
 
     &__cta {
-        min-width: 167px;
+        min-width: 146px;
         background: var(--COLOR-WHITE);
         color: var(--COLOR-BLACK);
 
         @media(min-width: 1200px) {
-            min-width: 250px;
+            min-width: 200px;
         }
     }
 }

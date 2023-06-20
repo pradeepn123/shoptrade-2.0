@@ -14,19 +14,19 @@
                 position: relative;                
                 max-width: 432px;
                 height: 135px;
-                &:not(:first-child) {
-                    &:after{
-                        position: absolute;
-                        content: "";
-                        top: -2px;
-                        right: 2px;
-                        height: 41px;
-                        width: 37px;
-                        z-index: 9;
-                        transform: rotate(-90deg) translateY(50%);
-                        background-image: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934');
-                    }
-                }
+                // &:not(:first-child) {
+                //     &:after{
+                //         position: absolute;
+                //         content: "";
+                //         top: -2px;
+                //         right: 2px;
+                //         height: 41px;
+                //         width: 37px;
+                //         z-index: 9;
+                //         transform: rotate(-90deg) translateY(50%);
+                //         background-image: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934');
+                //     }
+                // }
                 
                 .service-icon {
                     padding: 50px;

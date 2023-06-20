@@ -70,34 +70,34 @@
         @media(min-width:1680px){
             width: calc(40% - 18px);
         }
-        &::after {
-            content: "";
-            position: absolute;
-            height: 41px;
-            width: 37px;             
-            transform: rotate(270deg) translateY(50%);
-            background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-            right: 1px;
-            top: -3px;
-            @media (max-width:1024px) {
-                height: 41px;
-                width: 37px;
-                background-size: contain;
-                left: -1px;
-                bottom: -41.3px;
-                top: unset;
-                transform: rotate(180deg) translateY(50%);
-            }
-            @media (max-width:991px) {
-                height: 14px;
-                width: 15px;
-                background-size: contain;
-                left: -4px;
-                bottom: -14px;
-                top: unset;
-                transform: rotate(180deg) translateY(50%);
-            }
-        }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     height: 41px;
+        //     width: 37px;             
+        //     transform: rotate(270deg) translateY(50%);
+        //     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
+        //     right: 1px;
+        //     top: -3px;
+        //     @media (max-width:1024px) {
+        //         height: 41px;
+        //         width: 37px;
+        //         background-size: contain;
+        //         left: -1px;
+        //         bottom: -41.3px;
+        //         top: unset;
+        //         transform: rotate(180deg) translateY(50%);
+        //     }
+        //     @media (max-width:991px) {
+        //         height: 14px;
+        //         width: 15px;
+        //         background-size: contain;
+        //         left: -4px;
+        //         bottom: -14px;
+        //         top: unset;
+        //         transform: rotate(180deg) translateY(50%);
+        //     }
+        // }
 
         h3 {
             color: var(--COLOR-BLACK);            

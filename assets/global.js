@@ -979,6 +979,7 @@ let quickServices = new Swiper('.js-quickServices-slider', {
   autoHeight: false,
   slidesPerView: 3,
   spaceBetween: 30,
+  allowTouchMove: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true
@@ -986,86 +987,63 @@ let quickServices = new Swiper('.js-quickServices-slider', {
   breakpoints: {      
       1028: {
         slidesPerView: 2.1,
-        spaceBetween: 16
+        spaceBetween: 26
       },
       767: {
         slidesPerView: 1.1,
-        spaceBetween: 10        
+        spaceBetween: 20,
+        allowTouchMove: true
+      }
+  }
+});
+
+let announcementBar = new Swiper('.js-announcement--bar', {
+  speed:1000,
+  autoHeight: false,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.slider-arrow .js-arrow-right',
+    prevEl: '.slider-arrow .js-arrow-left',
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
+  loop: true,
+  breakpoints: {      
+      1028: {
+        slidesPerView: 1     
+      },
+      767: {
+        slidesPerView: 1 
       }
   }
 });
 
 
-// //marquee normal flow 
-// let marquee = new Swiper('.js-marque-slider', {
-//   spaceBetween: 76,
-//   centeredSlides: true,
-//   speed: 6000,
-//   autoplay: {
-//     delay: 0,
-//     disableOnInteraction: true,
-//   },
-//   loop: true,
-//   slidesPerView: 'auto',
-//   allowTouchMove: false,
-//   breakpoints: {
-//     1440: {
-//         spaceBetween: 76
-//     },
-
-//     767: {
-//         spaceBetween: 57
-//     }
-// }
-// });
-
-
-// //marquee reverse flow 
-// let marqueeReverse = new Swiper('.js-marque-slider--reverse', {
-//   spaceBetween: 76,
-//   centeredSlides: true,
-//   speed: 6000,
-//   autoplay: {
-//     delay: 0,
-//     disableOnInteraction: true,
-//   },
-//   loop: true,
-//   slidesPerView: 'auto',
-//   allowTouchMove: false,
-//   breakpoints: {
-//     1440: {
-//         spaceBetween: 76
-//     },
-
-//     767: {
-//         spaceBetween: 57
-//     }
-// }
-// });
-
-
 const initSlider = () => {
   //marquee normal flow 
-let marquee = new Swiper('.js-marque-slider', {
-  spaceBetween: 76,
-  centeredSlides: true,
-  speed: 6000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-  },
-  loop: true,
-  slidesPerView: 'auto',
-  allowTouchMove: false,
-  breakpoints: {
-    1440: {
-        spaceBetween: 76
+  let marquee = new Swiper('.js-marque-slider', {
+    spaceBetween: 76,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
     },
+    loop: true,
+    slidesPerView: 'auto',
+    allowTouchMove: false,
+    breakpoints: {
+      1440: {
+          spaceBetween: 76
+      },
 
-    767: {
-        spaceBetween: 57
-    }
-}
+      767: {
+          spaceBetween: 57
+      }
+  }
 });
 
 

@@ -393,6 +393,13 @@
 .announcement-bar__message{
     padding: 0;
 }
+.announcement-bar{
+    width: 100%;
+}
+.announcement-bar__message p{
+    margin: 0;
+    padding: 0.4em;
+}
 .announcement-bar__scrolling-list {
     grid: auto / auto-flow max-content;
     justify-content: center;

@@ -1,6 +1,6 @@
 {% style %}
   :root{
-    --text-xs: 12px;
+    --text-xs: 14px;
     --text-sm: 16px;
     --text-base: 18px;
     --text-lg: 22px;
@@ -20,32 +20,38 @@
   .section-{{ section.id }} .announcement-bar .announcement-bar__message,
   .section-{{ section.id }} .announcement-bar__item,
   .section-{{ section.id }} .announcement-bar__item p,
-  .section-{{ section.id }} .announcement-bar__item p a{
+  .section-{{ section.id }} .announcement-bar__item p a,
+  .section-{{ section.id }} .announcement-bar__message, 
+  .section-{{ section.id }} .announcement-bar__message p a{
     color: {{section.settings.text_color}};
     font-weight: 400;
     letter-spacing: 1px;
   } 
   {% if section.settings.text_size == 'text-xs' %}
     .section-{{ section.id }} .announcement-bar__item, 
-    .section-{{ section.id }} .announcement-bar__item p{
+    .section-{{ section.id }} .announcement-bar__item p,
+    .section-{{ section.id }} .announcement-bar__message p{
       font-size: var(--text-xs);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-sm' %}
     .section-{{ section.id }} .announcement-bar__item,
-    .section-{{ section.id }} .announcement-bar__item p{
+    .section-{{ section.id }} .announcement-bar__item p,
+    .section-{{ section.id }} .announcement-bar__message p{
       font-size: var(--text-sm);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-base' %}
     .section-{{ section.id }} .announcement-bar__item, 
-    .section-{{ section.id }} .announcement-bar__item p{
+    .section-{{ section.id }} .announcement-bar__item p,
+    .section-{{ section.id }} .announcement-bar__message p{
       font-size: var(--text-base);
     }
   {% endif %}
   {% if section.settings.text_size == 'text-lg' %}
     .section-{{ section.id }} .announcement-bar__item,
-    .section-{{ section.id }} .announcement-bar__item p{
+    .section-{{ section.id }} .announcement-bar__item p,
+    .section-{{ section.id }} .announcement-bar__message p{
       font-size: var(--text-lg);
     }
   {% endif %}
@@ -76,29 +82,43 @@
         {%- endfor -%}
       </marquee-text>
     {% else %}  
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'announcement' -%}
-            <div class="announcement-bar gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
-              {%- if block.settings.text != blank -%}
-                {%- if block.settings.link != blank -%}
-                  <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
-                {%- endif -%}
-                    <div class="page_width">
-                      <p class="announcement-bar__message {{ block.settings.text_alignment }} h5">
-                        {{ block.settings.text }}
-                        {%- if block.settings.link != blank -%}
-                          {% render 'icon-arrow' %}
-                        {%- endif -%}
-                      </p>
-                    </div>
-                {%- if block.settings.link != blank -%}
-                  </a>
-                {%- endif -%}
-              {%- endif -%}
+      <div class="js-announcement--bar swiper-container">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'announcement' -%}
+                <div class="swiper-slide">
+                  <div class="announcement-bar gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.text != blank -%}
+                      {%- if block.settings.link != blank -%}
+                        <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+                      {%- endif -%}
+                          <div class="page_width">
+                            <div class="announcement-bar__message {{ block.settings.text_alignment }} h5">
+                              {{ block.settings.text }}
+                              {%- if block.settings.link != blank -%}
+                                {% render 'icon-arrow' %}
+                              {%- endif -%}
+                            </div>
+                          </div>
+                      {%- if block.settings.link != blank -%}
+                        </a>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </div>
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+          {% comment %} <div class="slider-arrow only-desktop">
+            <div class="js-arrow-left arrow-icon">
+              {% render 'icon-left-arrow' %}
             </div>
-        {%- endcase -%}
-      {%- endfor -%}
+            <div class="js-arrow-right arrow-icon">
+              {% render 'icon-right-arrow' %}
+            </div>
+          </div> {% endcomment %}
+      </div>
     {% endif %}
   </div>
 {% endif %}

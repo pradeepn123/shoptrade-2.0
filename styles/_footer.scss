@@ -108,54 +108,52 @@
         }
 
         &:first-child {
-            &::after {
+            // &::after {
+            //     position: absolute;
+            //     content: '';
+            //     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
+            //     height: 41px;
+            //     width: 37px;
+            //     top: -2px;
+            //     right: 1px;
+            //     transform: rotate(270deg) translateY(50%);
 
-                position: absolute;
-                content: '';
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-                height: 41px;
-                width: 37px;
-                top: -2px;
-                right: 1px;
-                transform: rotate(270deg) translateY(50%);
-
-                @media (max-width:767px) {
-                    height: 17px;
-                    width: 15px;
-                    transform: rotate(0) translateY(-50%);
-                    background-size: contain;
-                    top: inherit;
-                    bottom: -17px;
-                    right: 0;
-                }
-            }
-
+            //     @media (max-width:767px) {
+            //         height: 17px;
+            //         width: 15px;
+            //         transform: rotate(0) translateY(-50%);
+            //         background-size: contain;
+            //         top: inherit;
+            //         bottom: -17px;
+            //         right: 0;
+            //     }
+            // }
             @media (max-width:767px) {
                 border-bottom: 1px solid var(--COLOR-BLACK);
             }
         }
 
         &:nth-child(2) {
-            &::after {
-                position: absolute;
-                content: '';
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-                height: 41px;
-                width: 37px;
-                bottom: -2px;
-                right: 1px;
-                transform: rotate(-270deg) translateY(-50%);
+            // &::after {
+            //     position: absolute;
+            //     content: '';
+            //     background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
+            //     height: 41px;
+            //     width: 37px;
+            //     bottom: -2px;
+            //     right: 1px;
+            //     transform: rotate(-270deg) translateY(-50%);
 
-                @media (max-width:767px) {
-                    height: 17px;
-                    width: 15px;
-                    transform: rotate(180deg) translateY(-50%);
-                    background-size: contain;
-                    right: inherit;
-                    left: 0;
-                    bottom: 0;
-                }
-            }
+            //     @media (max-width:767px) {
+            //         height: 17px;
+            //         width: 15px;
+            //         transform: rotate(180deg) translateY(-50%);
+            //         background-size: contain;
+            //         right: inherit;
+            //         left: 0;
+            //         bottom: 0;
+            //     }
+            // }
 
             @media (max-width:767px) {
                 border-bottom: 1px solid var(--COLOR-BLACK);
