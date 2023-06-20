@@ -1540,6 +1540,39 @@ input::-moz-placeholder {
   transition: 0.5s ease all;
 }
 
+.workpage__cards {
+  border-top: 1px solid var(--COLOR-BLACK);
+  padding: 0;
+}
+@media screen and (min-width: 920px) {
+  .workpage__cards {
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
+}
+
+.workpage__card {
+  border-right: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+}
+.workpage__card::after {
+  content: "";
+  position: absolute;
+  right: -0.4px;
+  bottom: 0;
+  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 70px;
+  background-size: 100%;
+  transform: translate(51.2%, 50%);
+}
+@media (max-width: 991px) {
+  .workpage__card::after {
+    width: 15px;
+    height: 28px;
+  }
+}
+
 .work {
   padding-bottom: 40px;
 }
