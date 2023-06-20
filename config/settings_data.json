@@ -119,6 +119,7 @@
           },
           "ca0b996b-f28a-4499-8c3d-e092cda863b8": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p>Welcome to our store<\/p>",
               "text_alignment": "center",
@@ -135,7 +136,7 @@
           "enable_sticky": false,
           "text_size": "text-xs",
           "navigation_mode": "scrolling",
-          "scrolling_speed": 15,
+          "scrolling_speed": 10,
           "background": "#121212",
           "background_gradient": "",
           "text_color": "#ffffff"
