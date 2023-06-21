@@ -139,47 +139,48 @@
             margin-left: 110px;
         }
     }
-
+    
     .header__button {
         font-weight: 600;
         font-size: 12px;
         line-height: 100%;
         text-decoration: none;
         color: var(--COLOR-BLACK);
-        padding: 17px 31px;
+        padding: 17px 24px;
         border: 1px solid var(--COLOR-BLACK);
         border-radius: 44.0647px;
         letter-spacing: -0.03em;
         margin-right: 20px;
-
         &:last-child {
             margin-right: 0;
         }
-
-      @media (min-width:390px) {
-        font-size: 20px;
-      }
-
-        &--primary {
-            background: linear-gradient(97.09deg, #E07527 -9.68%, #FF7121 49.02%, rgba(255, 113, 33, 0.913098) 65.42%, rgba(255, 255, 255, 0.67) 135.89%);
-            border-radius: 49.1007px;
-            color: var(--COLOR-WHITE);
-            border-color: unset;
-            transition: 0.5s ease all;
-            &:hover{
-                background: linear-gradient(270deg,#E07527 -9.68%,#FF7121 49.02%,rgba(255,113,33,.913098) 65.42%,rgba(255,255,255,.67) 135.89%);
-                transition: 0.5s ease all;
-            }
+        @media (min-width:390px) {
+            font-size: 20px;
         }
-
-
         @media (min-width: 1024px) {
             font-size: 14px;
         }
-
         @media (min-width: 1440px) {
             font-size: 16px;
         }
+        &--primary {                        
+            color: var(--COLOR-WHITE);            
+            background-image: linear-gradient(to right, #E07527, rgba(255, 255, 255, 0.90), #FF7121, #FF7121);
+            background-size: 500% 100%;
+            border-radius: 50px;
+            border: 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            &:hover{
+                background-position: 50% 0%;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+        }        
     }
 
     .nav-link {

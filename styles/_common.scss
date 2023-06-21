@@ -119,17 +119,11 @@ body {
     line-height: 100%;
     letter-spacing: -0.03em;
     color: var(--COLOR-BLACK);
-
-    @media (max-width:1335px) {
-        font-size: 56px;
-    }
-
     @media (max-width:991px) {
-        font-size: 42px;
+        font-size: 24px;
     }
-
     @media (max-width:320px) {
-        font-size: 36px;
+        font-size: 20px;
     }
 }
 
