@@ -1935,9 +1935,26 @@ input::-moz-placeholder {
 .ourNumbers {
   padding-top: 60px;
 }
+@media (max-width: 520px) {
+  .ourNumbers {
+    padding-top: 40px;
+  }
+}
 .ourNumbers__wrp {
   max-width: 580px;
-  width: 100%;
+  width: 100% p;
+  width-margin-bottom: 0;
+  width-padding-bottom: 0;
+}
+@media (max-width: 991px) {
+  .ourNumbers__wrp h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .ourNumbers__wrp h2 {
+    font-size: 26px;
+  }
 }
 .ourNumbers__subHeading {
   font-weight: 400;
@@ -1948,6 +1965,7 @@ input::-moz-placeholder {
 @media (max-width: 520px) {
   .ourNumbers__subHeading {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 .ourNumbers__cards {
@@ -1955,7 +1973,7 @@ input::-moz-placeholder {
   border-top: 1px solid var(--COLOR-BLACK);
   border-bottom: 1px solid var(--COLOR-BLACK);
   padding: 0;
-  margin-top: 60px;
+  margin-top: 40px;
   list-style: none;
   position: relative;
   margin-bottom: 0;
@@ -1963,6 +1981,14 @@ input::-moz-placeholder {
 @media (max-width: 767px) {
   .ourNumbers__cards {
     flex-wrap: wrap;
+    margin-top: 20px;
+    border-top: unset;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .ourNumbers__cards {
+    margin-top: 0px;
   }
 }
 .ourNumbers__cards::after {
@@ -1989,38 +2015,10 @@ input::-moz-placeholder {
     padding: 130px 80px;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 520px) and (max-width: 767px) {
   .ourNumbers__cardItem {
-    border-right: 1px solid var(--COLOR-BLACK);
-    border-left: 1px solid var(--COLOR-BLACK);
     margin-right: 15px;
     margin-left: 15px;
-  }
-}
-@media (max-width: 767px) {
-  .ourNumbers__cardItem::before {
-    position: absolute;
-    content: "";
-    top: -2px;
-    left: -3px;
-    height: 20px;
-    width: 17px;
-    background-size: cover;
-    transform: rotate(-90deg) translateY(50%);
-    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-  }
-}
-@media (max-width: 767px) {
-  .ourNumbers__cardItem::after {
-    position: absolute;
-    content: "";
-    top: -3px;
-    right: 17px;
-    height: 20px;
-    width: 17px;
-    background-size: cover;
-    transform: rotate(-90deg) translateY(50%);
-    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
   }
 }
 @media (min-width: 768px) {
@@ -2043,7 +2041,8 @@ input::-moz-placeholder {
 }
 @media (max-width: 520px) {
   .ourNumbers__cardbody p {
-    font-size: 18px !important;
+    font-size: 16px !important;
+    line-height: 24px;
   }
 }
 .ourNumbers__count {
@@ -2058,6 +2057,7 @@ input::-moz-placeholder {
 @media (max-width: 520px) {
   .ourNumbers__count {
     font-size: 38px;
+    margin-top: 10px;
   }
 }
 
@@ -2312,27 +2312,8 @@ input::-moz-placeholder {
 }
 
 .testimonials {
-  padding: 2rem 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media (min-width: 768px) {
-  .testimonials {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .testimonials {
-    padding: 4rem 0;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-@media (max-width: 520px) {
-  .testimonials {
-    padding: 1.5rem 1rem 2rem 1rem;
-  }
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media (min-width: 1200px) {
   .testimonials__wrapper_section {
@@ -2358,6 +2339,11 @@ input::-moz-placeholder {
 }
 .testimonials__wrapper_section .testimonials__header .content_info {
   padding-bottom: 20px;
+}
+@media (max-width: 520px) {
+  .testimonials__wrapper_section .testimonials__header .content_info {
+    padding-bottom: 1px;
+  }
 }
 .testimonials__wrapper_section .testimonials__header .content_info p {
   font-size: 20px;
@@ -2447,12 +2433,17 @@ input::-moz-placeholder {
     padding: 50px 20px;
   }
 }
+@media (max-width: 620px) {
+  .testimonials__body {
+    padding: 20px 20px;
+  }
+}
 .testimonials__body p {
   line-height: 165%;
 }
 @media (max-width: 520px) {
   .testimonials__body p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .testimonials__footer {
@@ -2466,7 +2457,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 520px) {
   .testimonials__footer h5 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .testimonials__footer .designation {
@@ -2475,7 +2466,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 520px) {
   .testimonials__footer .designation {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) {
@@ -2496,11 +2487,6 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .testimonials__profileItem {
     justify-content: center;
-  }
-}
-@media (max-width: 767px) {
-  .testimonials__profileItem {
-    border-bottom: 1px solid var(--COLOR-BLACK);
   }
 }
 .testimonials__profileCard {
@@ -2559,6 +2545,11 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .testimonials__profileDesignation {
     font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .testimonials__profileDesignation {
+    font-size: 12px;
   }
 }
 .testimonials__profileDescription {

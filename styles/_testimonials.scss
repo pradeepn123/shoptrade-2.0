@@ -1,19 +1,30 @@
 .testimonials {
-    padding: 2rem 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    @media(min-width:768px){
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-    @media(min-width:1200px){
-        padding: 4rem 0;
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-    @media(max-width:520px){
-        padding: 1.5rem 1rem 2rem 1rem;
-    }
+    // padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    // @media(min-width:991px){
+    //     padding-left: 2.5rem;
+    //     padding-right: 2.5rem;
+    // }
+    // @media(min-width:1200px){
+    //     padding: 4rem 0;
+    //     // padding-left: 5rem;
+    //     // padding-right: 5rem;
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    // } // @media(min-width:1200px){
+    //     padding: 4rem 0;
+    //     // padding-left: 5rem;
+    //     // padding-right: 5rem;
+    //     padding-left: 1rem;
+    //     padding-right: 1rem;
+    // }
+    // @media(max-width:520px){
+    //     padding: 0.8rem 1rem 2rem 1rem;
+    // }
+    // @media(max-width:520px){
+    //     padding: 0.8rem 1rem 2rem 1rem;
+    // }
     &__wrapper_section{        
         @media(min-width:1200px){
             display: flex;
@@ -34,6 +45,9 @@
             }
             .content_info{
                 padding-bottom: 20px;
+                @media  (max-width:520px) {
+                    padding-bottom: 1px;
+                }
                 p{
                     font-size: 20px;
                     font-weight: 400;
@@ -157,11 +171,14 @@
         @media (max-width:991px) {
             padding: 50px 20px;
         }
+        @media(max-width:620px){
+            padding: 20px 20px;
+        }
 
         p {
             line-height: 165%;
             @media(max-width: 520px){
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
@@ -175,7 +192,7 @@
             line-height: 158%;
             letter-spacing: 0.03em;
             @media(max-width: 520px){
-                font-size: 18px;
+                font-size: 14px;
             }
         }
 
@@ -183,7 +200,7 @@
             font-size: 16px;
             color: var(--COLOR-BLACK);
             @media(max-width: 520px){
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -215,7 +232,7 @@
         }
 
         @media (max-width:767px) {
-            border-bottom: 1px solid var(--COLOR-BLACK)
+            // border-bottom: 1px solid var(--COLOR-BLACK)
         }    
 
     }
@@ -269,6 +286,9 @@
         line-height: 22px;
         @media(min-width:1200px){
             font-size: 20px;
+        }
+        @media  (max-width:520px) {
+            font-size: 12px;
         }
     }
 
