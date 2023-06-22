@@ -2180,11 +2180,6 @@ input::-moz-placeholder {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 1199px) {
-  .newsletter {
-    padding: 60px 0;
-  }
-}
 @media (min-width: 1200px) {
   .newsletter {
     padding: 0 80px;
@@ -2248,10 +2243,9 @@ input::-moz-placeholder {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .newsletter__head {
     border-bottom: 1px solid var(--COLOR-BLACK);
-    border-top: 1px solid var(--COLOR-BLACK);
   }
 }
 @media (min-width: 1200px) {
@@ -2341,7 +2335,7 @@ input::-moz-placeholder {
 .newsletter__body button.btn-wrap.news-icon-mob {
   height: auto;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 520px) and (max-width: 1199px) {
   .newsletter__body button.btn-wrap.news-icon-mob {
     top: 0;
     bottom: 0;
