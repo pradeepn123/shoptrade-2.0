@@ -96,37 +96,7 @@
             margin-right: 15px;
             margin-left: 15px;
         }
-
-        // &::before {
-        //     @media (max-width:767px) {
-
-        //         position: absolute;
-        //         content: '';
-        //         top: -2px;
-        //         left: -3px;
-        //         height: 20px;
-        //         width: 17px;
-        //         background-size: cover;
-        //         transform: rotate(-90deg) translateY(50%);
-        //         background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-        //     }
-
-        // }
-        // &::after {
-        //     @media (max-width:767px) {
-
-        //         position: absolute;
-        //         content: '';
-        //         top: -3px;
-        //         right: 17px;
-        //         height: 20px;
-        //         width: 17px;
-        //         background-size: cover;
-        //         transform: rotate(-90deg) translateY(50%);
-        //         background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-        //     }
-
-        // }
+       
 
         &:not(:last-child) {
             @media (min-width:768px) {
@@ -171,6 +141,10 @@
                 font-size: 16px !important;
                 line-height: 24px;
             }
+        }
+        @media(max-width:475px){
+            min-height: 190px; 
+            padding: 30px 10px;
         }
     }
 

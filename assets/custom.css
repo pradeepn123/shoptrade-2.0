@@ -1389,9 +1389,14 @@ input::-moz-placeholder {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .ourWork__headContainer h2 {
+    font-size: 40px !important;
+  }
+}
 @media screen and (max-width: 520px) {
   .ourWork__headContainer h2 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .ourWork__headContainer a svg {
     width: 42px;
@@ -1824,6 +1829,12 @@ input::-moz-placeholder {
     column-gap: 24px;
   }
 }
+@media (max-width: 520px) {
+  .our--work--card--parent .con-padding--remover .our--work--card .our--work--card-child {
+    row-gap: 50px;
+    column-gap: 10px;
+  }
+}
 @media (min-width: 919px) {
   .our--work--card--parent .con-padding--remover .our--work--card .our--work--card-child .ourWork__card {
     width: 47%;
@@ -2158,6 +2169,12 @@ input::-moz-placeholder {
   .ourNumbers__cardbody p {
     font-size: 16px !important;
     line-height: 24px;
+  }
+}
+@media (max-width: 475px) {
+  .ourNumbers__cardbody {
+    min-height: 190px;
+    padding: 30px 10px;
   }
 }
 .ourNumbers__count {
@@ -2515,6 +2532,11 @@ input::-moz-placeholder {
 .testimonials__wrapper_section .testimonials__header .h1-main {
   margin-bottom: 0;
 }
+@media screen and (max-width: 991px) {
+  .testimonials__wrapper_section .testimonials__header .h1-main {
+    font-size: 40px;
+  }
+}
 @media (max-width: 520px) {
   .testimonials__wrapper_section .testimonials__header .h1-main {
     font-size: 26px;
@@ -2750,9 +2772,15 @@ input::-moz-placeholder {
     padding: 16px;
   }
 }
+@media (max-width: 768px) {
+  .testimonials__profileDescription {
+    padding: 0 16px;
+    margin: 0;
+  }
+}
 @media (max-width: 520px) {
   .testimonials__profileDescription {
-    padding: 16px 0;
+    padding: 0;
   }
 }
 .testimonials__profileDescription h3 {
@@ -2767,6 +2795,12 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .testimonials__profileDescription h3 {
     font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .testimonials__profileDescription h3 {
+    padding: 0;
+    margin: 0;
   }
 }
 .testimonials__profileDescription h3 p {
