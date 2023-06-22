@@ -760,7 +760,9 @@
         "3f894121-9d92-46bb-bf80-14e51a90257d": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/Group_4651.png",
+            "slidertxt": "LENSADVISER",
+            "sliderImage": "shopify:\/\/shop_images\/KIMIA.png",
+            "testimonial_logo": false,
             "sliderText": "“ShopTrade was experienced in developing apps and set realistic timelines.“",
             "name": "Zenos Schmickrath",
             "designation": "Co-Founder"
@@ -769,7 +771,8 @@
         "5400a35e-a308-4e5f-8af3-d8d3c33a3fbe": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/Group_4652.png",
+            "slidertxt": "ELEVATION",
+            "testimonial_logo": false,
             "sliderText": "“They’ve done a really good job. They were on top of things from the get-go.“",
             "name": "Marc Heuberger",
             "designation": "CMO"
@@ -778,7 +781,8 @@
         "ee18843b-9af9-4d7a-912f-2e64c6eb37c8": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/Group_4648.png",
+            "slidertxt": "SYNCHRO",
+            "testimonial_logo": false,
             "sliderText": "“Their communication and responsiveness are impressive in the workflow.“",
             "name": "Graham Ryan",
             "designation": "Founder & CEO"
@@ -787,7 +791,8 @@
         "80408b5c-e690-402a-99ff-3a3b46fa6346": {
           "type": "sliderType",
           "settings": {
-            "sliderImage": "shopify:\/\/shop_images\/Group_4650.png",
+            "slidertxt": "AEROCARE",
+            "testimonial_logo": false,
             "sliderText": "“I am continually impressed by their expertise in Shopify and web development.“",
             "name": "Eddie Rosado",
             "designation": "VP of Product Development"

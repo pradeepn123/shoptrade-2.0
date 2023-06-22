@@ -1,9 +1,28 @@
 .ourNumbers {
     padding-top: 60px;
 
+    @media(max-width:520px){
+        padding-top: 40px;
+    }
+
     &__wrp {
         max-width: 580px;
-        width: 100%;
+        width: 100%
+        
+        p{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        @media(max-width:991px){
+            h2{
+                font-size: 40px;
+            }
+        }
+        @media screen and (max-width:520px) {
+            h2{
+                font-size: 26px;
+            }
+        }
     }
 
     &__subHeading {
@@ -11,6 +30,10 @@
         font-size: 20px;
         line-height: 130%;
         color: var(--COLOR-BLACK);
+        @media(max-width:520px){
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     &__cards {
@@ -19,12 +42,18 @@
         border-top: 1px solid var(--COLOR-BLACK);
         border-bottom: 1px solid var(--COLOR-BLACK);
         padding: 0;
-        margin-top: 60px;
+        margin-top: 40px;
         list-style: none;
         position: relative;
         margin-bottom: 0;
         @media (max-width:767px) {
             flex-wrap: wrap;
+            margin-top: 20px;
+            border-top: unset;
+            padding-bottom: 20px;
+        }
+        @media(max-width:520px){
+            margin-top: 0px;
         }
         &::after {
             position: absolute;
@@ -52,43 +81,43 @@
             padding: 130px 80px;
         }
 
-        @media (max-width:767px) {
-            border-right: 1px solid var(--COLOR-BLACK);
-            border-left: 1px solid var(--COLOR-BLACK);
+        @media (min-width:520px) and (max-width:767px) {
+            // border-right: 1px solid var(--COLOR-BLACK);
+            // border-left: 1px solid var(--COLOR-BLACK);
             margin-right: 15px;
             margin-left: 15px;
         }
 
-        &::before {
-            @media (max-width:767px) {
+        // &::before {
+        //     @media (max-width:767px) {
 
-                position: absolute;
-                content: '';
-                top: -2px;
-                left: -3px;
-                height: 20px;
-                width: 17px;
-                background-size: cover;
-                transform: rotate(-90deg) translateY(50%);
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-            }
+        //         position: absolute;
+        //         content: '';
+        //         top: -2px;
+        //         left: -3px;
+        //         height: 20px;
+        //         width: 17px;
+        //         background-size: cover;
+        //         transform: rotate(-90deg) translateY(50%);
+        //         background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
+        //     }
 
-        }
-        &::after {
-            @media (max-width:767px) {
+        // }
+        // &::after {
+        //     @media (max-width:767px) {
 
-                position: absolute;
-                content: '';
-                top: -3px;
-                right: 17px;
-                height: 20px;
-                width: 17px;
-                background-size: cover;
-                transform: rotate(-90deg) translateY(50%);
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
-            }
+        //         position: absolute;
+        //         content: '';
+        //         top: -3px;
+        //         right: 17px;
+        //         height: 20px;
+        //         width: 17px;
+        //         background-size: cover;
+        //         transform: rotate(-90deg) translateY(50%);
+        //         background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934);
+        //     }
 
-        }
+        // }
 
         &:not(:last-child) {
             @media (min-width:768px) {
@@ -125,6 +154,12 @@
 
             padding: 18px 20px;
         }
+        p{
+            @media(max-width:520px){
+                font-size: 16px !important;
+                line-height: 24px;
+            }
+        }
     }
 
     &__count {
@@ -136,5 +171,9 @@
         color: var(--COLOR-BLACK);
         margin-bottom: 16px;
 
+        @media(max-width:520px){
+            font-size: 38px;
+            margin-top: 10px;
+        }
     }
 }
