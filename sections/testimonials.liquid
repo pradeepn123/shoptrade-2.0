@@ -41,11 +41,19 @@
               {%- if block != blank -%}
                 <li class="testimonials__slide swiper-slide">
                   <div class="testimonials__head">
-                    <div class="testimonials__logoWrp">
-                      {% if block.settings.sliderImage != blank %}
-                        <img class="testimonials__logo" src="{{ block.settings.sliderImage | image_url: width: 1920  }} " />
+                  {% if block.settings.testimonial_logo %}                  
+                    {% if block.settings.sliderImage %}                  
+                       <div class="testimonials__logoWrp">
+                          <img class="testimonials__logo" src="{{ block.settings.sliderImage | img_url: 'master'  }} " />
+                        </div>
                       {% endif %}
-                    </div>
+                    {% else %}
+                      {% if block.settings.slidertxt %}
+                          <div class="testimonials__logoTxtWrp">
+                            <h3 class="testimonials__logoTxt"> {{ block.settings.slidertxt }} </h3>
+                          </div>
+                        {% endif %}
+                  {% endif %} 
                   </div>
                   <div class="testimonials__body">
                     <p class="fnt-600 clr-b m-0">
@@ -92,10 +100,22 @@
         "type": "sliderType",
         "settings": [
           {
+            "id": "slidertxt",
+            "label": "Heading",
+            "type": "text"
+          },
+          {
+            "type": "image_picker",
             "id": "sliderImage",
-            "label": "Logo",
-            "type": "image_picker"
-          }, {
+            "label": "Brand Logo"
+          },
+          {
+            "type": "checkbox",
+            "id": "testimonial_logo",
+            "label": "Show logo insted of text",
+            "default": false
+          },
+          {
             "id": "sliderText",
             "label": "Quotes",
             "type": "text"

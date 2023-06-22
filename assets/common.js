@@ -1046,3 +1046,21 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
   }
 });
 
+// window.addEventListener('resize', function() {
+//   var myDiv = document.getElementById('removerContainer');
+//   if (window.innerWidth >= 1440) {
+//     myDiv.classList.add('container');
+//   } else {
+//     myDiv.classList.remove('container');
+//   }
+// });
+
+// window.addEventListener('resize', function() {
+//   var NmyDiv = document.getElementsById('counter');
+//   if (window.innerWidth >= 1440) {
+//     NmyDiv.classList.add('container');
+//   } else {
+//     NmyDiv.classList.remove('container');
+//   }
+// });
+
