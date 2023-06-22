@@ -83,16 +83,17 @@
         display: flex;
         // flex-wrap: wrap;
         overflow: hidden;
-        @media (max-width:767px) {
+        @media (max-width:1199px) {
             flex-direction: column;
         }
         &>div {
             &:not(:last-child) {
                 border-right: 1px solid var(--COLOR-BLACK);
             }
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 1199px) {
                 &:not(:last-child) {
                     border-right: none;
+                    border-bottom: 1px solid var(--COLOR-BLACK);
                 }
             }
         }

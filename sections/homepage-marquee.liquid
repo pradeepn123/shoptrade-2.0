@@ -14,12 +14,15 @@ endif
             {% for item in section.blocks %}
             <div class="swiper-slide brand-marquee__block">
                 <div class="brand-marquee__icon">
+                    {% if item.settings.icon != blank %}
                     <img src="{{ item.settings.icon | image_url }}">
+                    {% elsif item.settings.icon == blank and item.settings.mar_text != blank%}
+                    <div class="marquee-text">{{item.settings.mar_text}}</div>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
             {% endfor %} 
-
         </div>
     </div>
 </div>

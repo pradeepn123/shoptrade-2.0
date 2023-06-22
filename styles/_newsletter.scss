@@ -125,7 +125,12 @@
             //     width: 80%;
             // }
             @media (max-width:991px) {
-                font-size: 18px;
+                font-size: 24px;
+                padding: 30px 20px;
+            }
+
+            @media (max-width:320px) {
+                font-size: 21px;
                 padding: 30px 20px;
             }
         }
@@ -287,6 +292,7 @@
         @media(min-width:1320px){
             padding: 0px 2rem;
             padding-right: 0;
+            z-index: 2;
             max-width: 660px;
         }
         @media (max-width:991px) {
