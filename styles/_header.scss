@@ -156,10 +156,18 @@
         @media(max-width:1024px){
             width:100%;
         }
+        @media(max-width:425px){
+            padding: 12px 34px;
+            font-size: 16px;
+        }
+        @media(max-width:374px){
+            font-size: 12px;
+            padding: 12px 31px;
+        }
         &:last-child {
             margin-right: 0;
         }
-        @media (min-width:390px) {
+        @media (min-width:391px) {
             font-size: 20px;
         }
         @media (min-width: 1026px) {

@@ -127,6 +127,7 @@
         min-width: 146px;
         background: var(--COLOR-WHITE);
         color: var(--COLOR-BLACK);
+        padding: 22px 82px !important;
 
         @media(min-width: 1200px) {
             min-width: 200px;
@@ -261,11 +262,13 @@
 .services-block__list{
     .button--secondary{
         color: #000000;
+        padding: 23px 54px;
     }
 } 
   
 .homeBanner__content{
     p{
+        font-size: 18px;t
         strong{
             color: var(--COLOR-PRIMARY);
         }

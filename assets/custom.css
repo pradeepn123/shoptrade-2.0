@@ -867,6 +867,7 @@ input::-moz-placeholder {
   min-width: 146px;
   background: var(--COLOR-WHITE);
   color: var(--COLOR-BLACK);
+  padding: 22px 82px !important;
 }
 @media (min-width: 1200px) {
   .homeBanner__cta {
@@ -990,9 +991,13 @@ input::-moz-placeholder {
 
 .services-block__list .button--secondary {
   color: #000000;
+  padding: 23px 54px;
 }
 
-.homeBanner__content p strong {
+.homeBanner__content p {
+  font-size: 18px;
+}
+.homeBanner__content p t strong {
   color: var(--COLOR-PRIMARY);
 }
 
@@ -2140,7 +2145,7 @@ input::-moz-placeholder {
 .ourNumbers__cardbody {
   padding: 10px 38px;
   background-color: var(--COLOR-WHITE);
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 8px;
   flex: 1;
 }
@@ -3184,10 +3189,22 @@ input::-moz-placeholder {
     width: 100%;
   }
 }
+@media (max-width: 425px) {
+  .shoptrade .header__button {
+    padding: 12px 34px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 374px) {
+  .shoptrade .header__button {
+    font-size: 12px;
+    padding: 12px 31px;
+  }
+}
 .shoptrade .header__button:last-child {
   margin-right: 0;
 }
-@media (min-width: 390px) {
+@media (min-width: 391px) {
   .shoptrade .header__button {
     font-size: 20px;
   }
@@ -9648,7 +9665,7 @@ html {
 .services-block__heading {
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 40px;
   margin-bottom: 24px;
   max-width: 600px;
   letter-spacing: -0.03em;
