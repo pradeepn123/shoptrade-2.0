@@ -642,7 +642,7 @@ input::-moz-placeholder {
 .video-container {
     margin-bottom: 20px;
     transition: width 0.2s linear;
-    @media (min-width:992px) {
+    @media (min-width:990px) {
         margin-bottom: 0;
         z-index: 2;
         width: 50%;
@@ -662,7 +662,7 @@ input::-moz-placeholder {
         video {
         display:  none;
         min-height: 358px;
-        @media(min-width: 1200px) {
+        @media(min-width: 991px) {
             min-height: 720px;
             max-height: 100vh;
         } 
@@ -670,7 +670,7 @@ input::-moz-placeholder {
         img {
             min-height: 358px;
             object-fit: unset;
-            @media(min-width: 1200px) {
+            @media(min-width: 991px) {
                 min-height: 720px;
                 max-height: 100vh;
             } 
@@ -693,9 +693,11 @@ input::-moz-placeholder {
         position: absolute;
         bottom: 34px;
         left: 44px;
-        display:  none;
         cursor: pointer;
         z-index: 2;
+        @media(max-width:990px){
+            display:  none;
+        }
         svg {
             transform: rotate(180deg);
         }
