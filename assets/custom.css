@@ -811,6 +811,11 @@ input::-moz-placeholder {
     margin-bottom: 53px;
   }
 }
+@media (max-width: 375px) {
+  .homeBanner__heading {
+    font-size: 26px;
+  }
+}
 .homeBanner__img {
   width: 550px;
   height: 437.31px;
@@ -872,6 +877,11 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .homeBanner__cta {
     min-width: 200px;
+  }
+}
+@media (max-width: 520px) {
+  .homeBanner__cta {
+    padding: 12px 48px !important;
   }
 }
 
@@ -993,11 +1003,16 @@ input::-moz-placeholder {
   color: #000000;
   padding: 23px 54px;
 }
+@media (max-width: 520px) {
+  .services-block__list .button--secondary {
+    padding: 13px 13px;
+  }
+}
 
 .homeBanner__content p {
   font-size: 18px;
 }
-.homeBanner__content p t strong {
+.homeBanner__content p strong {
   color: var(--COLOR-PRIMARY);
 }
 
@@ -1024,7 +1039,7 @@ input::-moz-placeholder {
 
 @media (max-width: 520px) {
   .shoptrade .nav-link {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 }
 @media (max-width: 520px) {
@@ -3238,7 +3253,6 @@ input::-moz-placeholder {
   transition: all 0.4s ease-in-out;
 }
 .shoptrade .nav-link {
-  font-weight: 500;
   font-size: 28px;
   line-height: 100%;
   letter-spacing: -0.03em;
@@ -3246,7 +3260,6 @@ input::-moz-placeholder {
   text-decoration: none;
 }
 .shoptrade .nav-link:hover {
-  font-weight: bold;
   transform: scale(1.1);
 }
 @media (min-width: 1026px) {
