@@ -32,11 +32,11 @@
 
         </div>
         <div class="header__button-wrapper">
-          {% if section.settings.button_1_text and section.settings.button_1_url %}
+          {%- if section.settings.button_1_url -%}
             <a class="header__button header__button_secondary" href="{{section.settings.button_1_url}}">{{section.settings.button_1_text}}</a>
           {%- endif -%}
-          {% if section.settings.button_2_text and section.settings.button_2_url %}
-          <a class="btn-contact contact-btn-details header__button header__button--primary" id="contact-btn-details" href="{{section.settings.button_2_url}}">{{section.settings.button_2_text}}</a>
+          {% if section.settings.button_2_text != blank and section.settings.button_2_url != blank %}
+          <a class="btn-contact contact-btn-details header__button header__button--primary" id="contact-btn-details" href="{{section.settings.button_2_url}}" >{{section.settings.button_2_text}}</a>
           {% endif %}
         </div>
       </div>

@@ -10,13 +10,13 @@
         padding-top: 0;
     }
     & .v-center::after {
-        @media(min-width: 1200px) {
+        @media(min-width: 991px) {
         position: absolute;
         content: "";
         width: 382px;
         height: 473px;
         background: #FF7121;
-        filter: blur(79.5px);
+        filter: blur(3em);
         left: -80px;
         bottom: -173px;
         z-index: 1;
@@ -27,7 +27,7 @@
     &__content {
         padding: 0 var(--base-margin);
         max-width: 600px;
-        @media (min-width:1200px) {
+        @media (min-width:991px) {
             max-width: calc(56% - 20px);
             position: absolute;
             padding-left: var(--base-margin);
@@ -38,10 +38,10 @@
     &__wrp {
         display: flex;
         position: relative;        
-        @media (max-width:991px) {
+        @media (max-width:990px) {
             flex-direction: column-reverse;            
         }
-        @media(min-width:1200px){
+        @media(min-width:991px){
             background: #FFF9F5;
         }
     }
@@ -237,3 +237,99 @@
     animation: coloring 12s linear infinite;
     font-size: 24px;
 }
+
+// homepage scss written 
+.homeBanner__wrp{
+    .homeBanner__content{
+        @media(max-width:1020px) and (min-width:992px){
+            max-width: calc(54% - 20px) !important;
+        }
+    }
+}
+
+.homeBanner__content{
+    .homeBanner__cta:hover{
+        border: 2px solid var(--COLOR-BLACK);
+    }
+}  
+.services-block__list{
+    .button--secondary:hover{
+        border: 2px solid var(--COLOR-BLACK);
+    }
+}
+  
+.services-block__list{
+    .button--secondary{
+        color: #000000;
+    }
+} 
+  
+.homeBanner__content{
+    p{
+        strong{
+            color: var(--COLOR-PRIMARY);
+        }
+    }
+} 
+  
+#circle{
+    .button-rounded--secondary:hover {
+        background-position: 50% 0%;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+} 
+  
+.shoptrade{
+    .nav-item[aria-current=page]:after, .shoptrade__nav-list .nav-item:hover:after {
+        content: "";
+        position: absolute;
+        background: var(--COLOR-PRIMARY);
+        border-radius: 160px;
+        bottom: 8px;
+        width: 9px;
+        height: 9px;
+        left: -16%;
+        transform: translate(-50%);
+        transition: .5s ease all;
+    }
+} 
+  
+.shoptrade{
+    .nav-link{
+        @media(max-width:520px){
+            font-size: 24px !important;
+        }
+    }
+    .nav-item{
+        @media(max-width:520px){
+            padding: 29px 0 29px;
+        }
+    }
+
+}
+ 
+.homeBanner__content{
+    p{
+        @media(min-width:375px) and (max-width:520px){
+            font-size: 14px;
+            letter-spacing: 0.03rem;
+        }
+    }
+}
+
+.homeBanner__content{
+    p{
+        @media(max-width:374px){
+            font-size: 12px;
+            letter-spacing: 0.01rem;
+        }
+    }
+}
+
+
+
+  
+

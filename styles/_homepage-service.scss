@@ -8,6 +8,7 @@
         margin-bottom: 24px;
         max-width: 600px;
         letter-spacing: -0.03em;
+        color: #000000;
 
         @media(min-width: 768px) {
             text-align: center;
@@ -27,12 +28,13 @@
     }
 
     &__subheading {
-        display: none;
+        // display: none;
+        font-size: 21px;
 
         @media(min-width: 1440px) {
             display: block;
             margin-top: 0;
-            font-size: 20px;
+            font-size: 24px;
             line-height: 130%;
             margin-bottom: 10px;
         }
