@@ -1,5 +1,5 @@
 .ourNumbers {
-    padding-top: 60px;
+    padding-top: 80px;
 
     @media(max-width:520px){
         padding-top: 40px;
@@ -7,7 +7,11 @@
 
     &__wrp {
         max-width: 580px;
-        width: 100%
+        width: 100%;
+        padding-bottom: 50px;
+        @media(max-width:768px){
+            padding-bottom: 25px;
+        }
         
         p{
             margin-bottom: 0;
@@ -61,7 +65,12 @@
             inset: 0;
             background: linear-gradient(156deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
             z-index: -1;
+            @media screen and (max-width:768px) {
+                background: linear-gradient(179deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
+                top: -572px;
+            }
         }
+        
     }
 
     &__cardItem {
@@ -78,7 +87,7 @@
 
         @media (min-width:1336px) {
 
-            padding: 130px 80px;
+            padding: 79px 76px;
         }
 
         @media (min-width:520px) and (max-width:767px) {
@@ -144,15 +153,18 @@
     }
 
     &__cardbody {
-        padding: 18px 48px;
+        padding: 10px 38px;
         background-color: var(--COLOR-WHITE);
         border: 2px solid #000000;
-        border-radius: 20px;
+        border-radius: 8px;
         flex: 1;
 
         @media (max-width:1335px) {
-
-            padding: 18px 20px;
+            
+            padding: 10px 20px;
+        }
+        @media screen and (max-width:520px) {
+            border: 1px solid #000000;
         }
         p{
             @media(max-width:520px){
@@ -170,7 +182,6 @@
         letter-spacing: 0.07em;
         color: var(--COLOR-BLACK);
         margin-bottom: 16px;
-
         @media(max-width:520px){
             font-size: 38px;
             margin-top: 10px;

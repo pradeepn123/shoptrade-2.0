@@ -3,11 +3,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width:520px) {
+            h2{
+                font-size: 26px;
+            }
+            a{
+                svg{
+                    width: 42px;
+                    object-fit: contain;
+                }
+            }
+        }
     }
     &__card_border{
         border-top: 1px solid var(--COLOR-BLACK);
         @media screen and (min-width:920px) {
             border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+        @media(max-width:520px){
+            border-top: unset;
         }        
     }
     
@@ -449,35 +463,42 @@
     @media(max-width:920px){
         border-bottom: 1px solid var(--COLOR-BLACK);
     }
-
-    .our--work--card{
-        padding: 30px 0 35px 0;
-        @media(min-width:991px){
-            padding: 72px 0 60px 0;
+    .con-padding--remover{
+        @media(max-width:520px){
+            padding-right: unset;
         }
-        
-            .our--work--card-child{
-                column-gap: 36px;
-                row-gap: 72px;
-                justify-content: space-between;
-                @media(max-width:1200px){
-                    row-gap: 50px;
-                    column-gap: 24px;
-                }
-                
-                .ourWork__card{
-                    @media (min-width:919px) {
-                        width: 47%;
-                    }
-
-                    @media (min-width:1350px) {
-                        width: 31%;
-                    }
-                    .ourWork__cardBody{
-                        padding: unset;
-                    }
-                }
-
+        .our--work--card{
+            padding: 30px 0 35px 0;
+            @media(min-width:991px){
+                padding: 72px 0 60px 0;
             }
+            @media screen and (max-width:520px) {
+                padding: 0 0 35px 0;
+            }
+            
+                .our--work--card-child{
+                    column-gap: 36px;
+                    row-gap: 72px;
+                    justify-content: space-between;
+                    @media(max-width:1200px){
+                        row-gap: 50px;
+                        column-gap: 24px;
+                    }
+                    
+                    .ourWork__card{
+                        @media (min-width:919px) {
+                            width: 47%;
+                        }
+
+                        @media (min-width:1350px) {
+                            width: 31%;
+                        }
+                        .ourWork__cardBody{
+                            padding: unset;
+                        }
+                    }
+
+                }
+            }   
     }
 }
