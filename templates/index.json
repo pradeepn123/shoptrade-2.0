@@ -73,6 +73,7 @@
         "76ea890c-8eee-4452-967c-dbc26d1dbd7f": {
           "type": "brands",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/logo4.png",
             "mar_text": "Chill"
           }
         }
