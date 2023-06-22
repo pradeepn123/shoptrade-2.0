@@ -2116,7 +2116,13 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .newsletter__head h3 {
-    font-size: 18px;
+    font-size: 24px;
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 320px) {
+  .newsletter__head h3 {
+    font-size: 21px;
     padding: 30px 20px;
   }
 }
@@ -2257,6 +2263,7 @@ input::-moz-placeholder {
   .newsletter__bodyWrp {
     padding: 0px 2rem;
     padding-right: 0;
+    z-index: 2;
     max-width: 660px;
   }
 }
@@ -2959,6 +2966,10 @@ input::-moz-placeholder {
   color: #000000;
   text-decoration: none;
 }
+.shoptrade .nav-link:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
 @media (min-width: 1024px) {
   .shoptrade .nav-link {
     font-size: 14px;
@@ -3267,7 +3278,7 @@ input::-moz-placeholder {
   display: flex;
   overflow: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .shopify-footer__Content {
     flex-direction: column;
   }
@@ -3275,9 +3286,10 @@ input::-moz-placeholder {
 .shopify-footer__Content > div:not(:last-child) {
   border-right: 1px solid var(--COLOR-BLACK);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .shopify-footer__Content > div:not(:last-child) {
     border-right: none;
+    border-bottom: 1px solid var(--COLOR-BLACK);
   }
 }
 .shopify-footer__block {
@@ -9361,11 +9373,11 @@ html {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
   align-items: center;
-  padding: 27px 0 27px 0;
+  padding: 8px 0;
 }
 @media (min-width: 1200px) {
   .brand-marquee .swiper-wrapper {
-    padding: 42px 0 40px 0;
+    padding: 25px 0 25px 0;
   }
 }
 .brand-marquee .marquee-text {
