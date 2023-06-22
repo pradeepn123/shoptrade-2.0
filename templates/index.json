@@ -61,19 +61,22 @@
         "fbc499bd-3314-4604-86c5-3fc6129a7608": {
           "type": "brands",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/logo2.png"
+            "icon": "shopify:\/\/shop_images\/logo4.png",
+            "mar_text": "Hathaspace"
           }
         },
         "6069c368-8da2-421a-9c1b-19ba1f578765": {
           "type": "brands",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/logo3.png"
+            "icon": "shopify:\/\/shop_images\/logo5.png",
+            "mar_text": "Adapthealth"
           }
         },
         "76ea890c-8eee-4452-967c-dbc26d1dbd7f": {
           "type": "brands",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/logo5.png"
+            "icon": "shopify:\/\/shop_images\/logo3.png",
+            "mar_text": "Chill"
           }
         }
       },

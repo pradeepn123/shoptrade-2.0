@@ -190,6 +190,10 @@
         letter-spacing: -0.03em;
         color: #000000;
         text-decoration: none;
+        &:hover{
+            font-weight: bold; 
+            transform: scale(1.1);
+        }
 
         @media(min-width: 1024px) {
             font-size: 14px;
