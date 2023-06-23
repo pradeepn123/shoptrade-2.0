@@ -751,6 +751,16 @@ input::-moz-placeholder {
     z-index: 2;
   }
 }
+@media (min-width: 1440px) {
+  .homeBanner__content {
+    max-width: calc(58% - 60px);
+  }
+}
+@media (min-width: 1680px) {
+  .homeBanner__content {
+    max-width: calc(54% - 60px);
+  }
+}
 .homeBanner__wrp {
   display: flex;
   position: relative;

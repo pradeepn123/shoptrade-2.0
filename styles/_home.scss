@@ -33,8 +33,11 @@
             padding-left: var(--base-margin);
             z-index: 2;
         }
-        @media (min-width:1920px) {
-
+        @media (min-width:1440px) {
+            max-width: calc(58% - 60px);
+        }
+        @media (min-width:1680px) {
+            max-width: calc(54% - 60px);
         }
     }
     &__wrp {
