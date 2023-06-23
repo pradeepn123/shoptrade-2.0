@@ -73,6 +73,9 @@
             line-height: 108%;
             margin-bottom: 53px;
         }
+        @media(max-width:375px){
+            font-size: 26px;
+        }
     }
 
     &__img {
@@ -127,9 +130,13 @@
         min-width: 146px;
         background: var(--COLOR-WHITE);
         color: var(--COLOR-BLACK);
+        padding: 22px 82px !important;
 
         @media(min-width: 1200px) {
             min-width: 200px;
+        }
+        @media(max-width:520px){
+            padding: 12px 48px !important;
         }
     }
 }
@@ -261,11 +268,16 @@
 .services-block__list{
     .button--secondary{
         color: #000000;
+        padding: 23px 54px;
+        @media(max-width:520px){
+            padding: 13px 13px;
+        }
     }
 } 
   
 .homeBanner__content{
     p{
+        font-size: 18px;
         strong{
             color: var(--COLOR-PRIMARY);
         }
@@ -300,7 +312,7 @@
 .shoptrade{
     .nav-link{
         @media(max-width:520px){
-            font-size: 24px !important;
+            font-size: 20px !important;
         }
     }
     .nav-item{
