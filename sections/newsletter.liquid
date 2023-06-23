@@ -29,92 +29,90 @@
 
 {%- style -%}
 /* .section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
 }
 
 @media screen and (min-width: 750px) {
-.section-{{ section.id }}-padding {
-padding-top: {{ section.settings.padding_top }}px;
-padding-bottom: {{ section.settings.padding_bottom }}px;
-}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 } */
 {%- endstyle -%}
 
 <div class="newsletter  {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div
-    class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    {%- for block in section.blocks -%}
-    {%- case block.type -%}
-    {%- when '@app' -%}
-    {% render block %}
-    {%- when 'heading' -%}
-    <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}
-    </h2>
-    {%- when 'paragraph' -%}
-    <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-    {%- when 'email_form' -%}
-    <div {{ block.shopify_attributes }}>
-
-
-      <div class="newsletter__wrp">
-        <div class="newsletter__head">
-          <h3>
-            {{ section.settings.heading }}
-          </h3>
-        </div>
-        <div class="container">
-          <div class="newsletter__body">
-            {% form 'customer', class: 'newsletter-form' %}
-            <div class="newsletter__bodyWrp">
-              <div class="newsletter__body_wrapper">
-                <div class="form-group">
-                  {% comment %} <input type="email" placeholder="Enter Your Email ID"> {% endcomment %}
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <div class="newsletter-form__field-wrapper">
-                    <div class="field">
-                      <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
-                        class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off"
-                        autocapitalize="off" autocomplete="email" {% if form.errors %} autofocus aria-invalid="true"
-                        aria-describedby="Newsletter-error--{{ section.id }}" {% elsif form.posted_successfully? %}
-                        aria-describedby="Newsletter-success--{{ section.id }}" {% endif %}
-                        placeholder="{{ 'newsletter.label' | t }}" required>
-                      <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                        {{ 'newsletter.label' | t }}
-                      </label>
-                    </div>
-                    {%- if form.errors -%}
-                    <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{%
-                      render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
-                      form.errors.messages['email'] }}</small>
-                    {%- endif -%}
-                  </div>
-                  {%- if form.posted_successfully? -%}
-                  <h3 class="newsletter-form__message newsletter-form__message--success form__message"
-                    id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{
-                    'newsletter.success' | t }}</h3>
-                  {%- endif -%}
-                  <button type="submit" class="newsletter-form__button field__button btn-wrap mobile_only news-icon-mob" name="commit"
-                    id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                    <img class="mobile_only pos-abs"
-                      src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Group_8306.svg?v=1687347593">
-                  </button>
-                </div>
-                <button type="submit" class="newsletter-form__button field__button btn-wrap desktop_only" name="commit"
-                  id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                  <span class="desktop_only btn news-button-clr">Subscribe</span>
-                </button>
+  <div class="container">
+    <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+      
+          {%- when 'heading' -%}
+            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+      
+          {%- when 'paragraph' -%}
+            <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+      
+          {%- when 'email_form' -%}
+            <div {{ block.shopify_attributes }}>
+            <div class="newsletter__wrp">
+              <div class="newsletter__head">
+                <h3>{{ section.settings.heading }}</h3>
               </div>
-              <p class="newsletter__text"> {{ section.settings.agreeTxt }} </p>
+              <div class="newsletter__body_main">
+                <div class="newsletter__body">
+                  {% form 'customer', class: 'newsletter-form' %}
+                  <div class="newsletter__bodyWrp">
+                    <div class="newsletter__body_wrapper">
+                      <div class="form-group">
+                        {% comment %} <input type="email" placeholder="Enter Your Email ID"> {% endcomment %}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                          <div class="field">
+                            <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
+                              class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off"
+                              autocapitalize="off" autocomplete="email" {% if form.errors %} autofocus aria-invalid="true"
+                              aria-describedby="Newsletter-error--{{ section.id }}" {% elsif form.posted_successfully? %}
+                              aria-describedby="Newsletter-success--{{ section.id }}" {% endif %}
+                              placeholder="{{ 'newsletter.label' | t }}" required>
+                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                              {{ 'newsletter.label' | t }}
+                            </label>
+                          </div>
+                          {%- if form.errors -%}
+                          <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{%
+                            render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
+                            form.errors.messages['email'] }}</small>
+                          {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                        <h3 class="newsletter-form__message newsletter-form__message--success form__message"
+                          id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{
+                          'newsletter.success' | t }}</h3>
+                        {%- endif -%}
+                        <button type="submit" class="newsletter-form__button field__button btn-wrap mobile_only news-icon-mob" name="commit"
+                          id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                          <img class="mobile_only pos-abs"
+                            src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Group_8306.svg?v=1687347593">
+                        </button>
+                      </div>
+                      <button type="submit" class="newsletter-form__button field__button btn-wrap desktop_only" name="commit"
+                        id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                        <span class="desktop_only btn news-button-clr">Subscribe</span>
+                      </button>
+                    </div>
+                    <p class="newsletter__text"> {{ section.settings.agreeTxt }} </p>
+                  </div>
+                  {% endform %}
+                </div>
+              </div>
             </div>
-            {% endform %}
           </div>
-        </div>
-      </div>
-
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
-    {%- endcase -%}
-    {%- endfor -%}
   </div>
 </div>
 

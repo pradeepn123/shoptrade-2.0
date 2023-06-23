@@ -1,5 +1,5 @@
 <header class="shoptrade">
-  <div class="">
+  <div class="container">
     <div class="header-container">
       <div class="v-center nav-container">
       <a class="navbar-brand order-2" href="/">
@@ -9,11 +9,10 @@
        <span class="navbar-toggler-text">Menu</span>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbarSupportedContent">
-     
-        <div class="shoptrade__menu-wrp">
 
-          <ul class="navbar-nav shoptrade__nav-list d-flex  ">
+      <div class="navbarSupportedContent">  
+        <div class="shoptrade__menu-wrp">
+          <ul class="navbar-nav shoptrade__nav-list d-flex">
             {%- for link in section.settings.menu.links -%}
               <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
                 {%- if forloop.last -%}
@@ -28,15 +27,13 @@
               </li>
             {%- endfor -%}
           </ul>
-
-
         </div>
         <div class="header__button-wrapper">
           {%- if section.settings.button_1_url -%}
             <a class="header__button header__button_secondary" href="{{section.settings.button_1_url}}">{{section.settings.button_1_text}}</a>
           {%- endif -%}
           {% if section.settings.button_2_text != blank and section.settings.button_2_url != blank %}
-          <a class="btn-contact contact-btn-details header__button header__button--primary" id="contact-btn-details" href="{{section.settings.button_2_url}}" >{{section.settings.button_2_text}}</a>
+            <a class="btn-contact contact-btn-details header__button header__button--primary" id="contact-btn-details" href="{{section.settings.button_2_url}}" >{{section.settings.button_2_text}}</a>
           {% endif %}
         </div>
       </div>
