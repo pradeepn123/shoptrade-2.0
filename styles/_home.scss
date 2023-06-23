@@ -285,6 +285,12 @@
 } 
   
 #circle{
+    .button-rounded--secondary{
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
     .button-rounded--secondary:hover {
         background-position: 50% 0%;
         moz-transition: all .4s ease-in-out;
@@ -295,7 +301,10 @@
 } 
   
 .shoptrade{
-    .nav-item[aria-current=page]:after, .shoptrade__nav-list .nav-item:hover:after {
+    .shoptrade__nav-list .nav-item:first-child:hover:after {
+        left: -30%;
+    }
+    .shoptrade__nav-list .nav-item:hover:after {
         content: "";
         position: absolute;
         background: var(--COLOR-PRIMARY);
@@ -303,7 +312,7 @@
         bottom: 8px;
         width: 9px;
         height: 9px;
-        left: -16%;
+        left: -20%;
         transform: translate(-50%);
         transition: .5s ease all;
     }

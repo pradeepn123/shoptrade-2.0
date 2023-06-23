@@ -9,6 +9,18 @@
         border-bottom: 1px solid var(--COLOR-BLACK);
         transition: .5s ease all;
     }
+    .shoptrade.active {
+        .shoptrade__menu-wrp{
+            @media(max-width:767px){
+                margin-top: 82px;
+            }
+        }
+    }
+}
+body.overflow-hidden{
+    @media(max-width:1024px){
+        overflow: hidden !important;
+    }
 }
 .shoptrade {
     // padding: 21px var(--base-margin) 25px;
@@ -31,7 +43,7 @@
             border-bottom: 1px solid var(--COLOR-BLACK);
             transition: .5s ease all;
 
-        }
+        }        
     }
 
     &.active {
@@ -120,6 +132,20 @@
             border-top:0;
             margin-top:0;
         }
+        &.desktop_only{
+            display: none;
+            @media(min-width:1026px){
+                display: block;
+            }
+        }
+        &.mobile_only{
+            display: block;
+            height: 100%;
+            overflow-y: auto;
+            @media(min-width:1024px){
+                display: none;
+            }
+        }
     }
 
     .header__button-wrapper {
@@ -130,8 +156,7 @@
         border-top: 1px solid #DCDCDC;
         width: 100%;
         display: flex;
-       
-
+        background-color: #FFFFFF;
         @media(min-width: 1026px) {
             position: static;
             border:0;
@@ -361,6 +386,7 @@
       letter-spacing: -0.03em;
       margin-right: 10px;
       font-family: var(--font-body-family);
+      color: #000000;
     }
 
 }
