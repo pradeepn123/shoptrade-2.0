@@ -17,7 +17,7 @@
         }
     }
 }
-body.overflow-hidden{
+body.overflow-hide{
     @media(max-width:1024px){
         overflow: hidden !important;
     }
@@ -402,13 +402,10 @@ body.overflow-hidden{
     position: relative;
 }
 
-.js-hamberger {
-    // position: absolute;
-    // right: 0;
-    // top: 50%;
+.js-hamberger {    
     display: flex;
     align-items: center;
-    border: 0.75px solid #000000;
+    border: 1px solid #000000;
     border-radius: 26.25px;
     padding: 13px 19px;
 }
