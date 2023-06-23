@@ -423,6 +423,17 @@
 }
 
 .service-showcase {
+    .ourWork__cards{
+        border-top: 1px solid var(--COLOR-BLACK);
+        @media screen and (min-width: 920px){
+            padding: 0;
+            border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+        .ourWork__card{
+            border-right: 1px solid var(--COLOR-BLACK);
+            border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+    }
     h2 {
         margin: 0;
 

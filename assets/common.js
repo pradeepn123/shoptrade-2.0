@@ -477,7 +477,7 @@ $(document).ready(function () {
   //mobile hamberger
   $(".js-hamberger").click(function () {
     $(".shoptrade").toggleClass("active");
-    $('body').toggleClass('overflow-hidden');
+    $('body').toggleClass('overflow-hide');
   });
 
   $(window).scroll(function () {

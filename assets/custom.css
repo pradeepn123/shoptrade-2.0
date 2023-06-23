@@ -998,7 +998,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 520px) {
   .services-block__list .button--secondary {
-    padding: 11px 30px;
+    padding: 12px 30px 11px 30px;
   }
 }
 
@@ -3143,7 +3143,7 @@ input::-moz-placeholder {
 }
 
 @media (max-width: 1024px) {
-  body.overflow-hidden {
+  body.overflow-hide {
     overflow: hidden !important;
   }
 }
@@ -3504,7 +3504,7 @@ input::-moz-placeholder {
 .js-hamberger {
   display: flex;
   align-items: center;
-  border: 0.75px solid #000000;
+  border: 1px solid #000000;
   border-radius: 26.25px;
   padding: 13px 19px;
 }
@@ -4852,6 +4852,19 @@ input::-moz-placeholder {
   }
 }
 
+.service-showcase .ourWork__cards {
+  border-top: 1px solid var(--COLOR-BLACK);
+}
+@media screen and (min-width: 920px) {
+  .service-showcase .ourWork__cards {
+    padding: 0;
+    border-bottom: 1px solid var(--COLOR-BLACK);
+  }
+}
+.service-showcase .ourWork__cards .ourWork__card {
+  border-right: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+}
 .service-showcase h2 {
   margin: 0;
 }

@@ -8,27 +8,21 @@
               <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
                 <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
               </a>
-            </div>
-      
+            </div>      
           </div>
-      </h2>
-  
+      </h2>  
     </div>
     <ul class="ourWork__cards ">
-  
       {% for block in section.blocks %}
         <li class="ourWork__card ">
-  
           <div class="ourWork__cardBody">
             <div class="img-container">
               <div class="img-wrp">
                 <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
                 <div class="btn-wrp">
-                  <a href="{{ block.settings.cardLink }}" target="_blank" class="btn btn--arrow" href="">
-  
+                  <a href="{{ block.settings.cardLink }}" target="_blank" class="btn btn--arrow" href="">  
                     <div>
                       <img class="" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
-  
                     </div>
                   </a>
                 </div>
@@ -36,13 +30,10 @@
               <div class="work-logo-footer">
                 <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
               </div>
-  
             </div>
           </div>
         </li>
       {% endfor %}
-  
-  
     </ul>
   </section>
   
