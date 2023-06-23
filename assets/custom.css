@@ -2083,6 +2083,11 @@ input::-moz-placeholder {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 520px) {
+  .ourNumbers__wrp {
+    padding-bottom: 0px;
+  }
+}
 .ourNumbers__wrp p {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2111,13 +2116,6 @@ input::-moz-placeholder {
 }
 .ourNumbers__cards {
   display: flex;
-  border-top: 1px solid var(--COLOR-BLACK);
-  border-bottom: 1px solid var(--COLOR-BLACK);
-  padding: 0;
-  margin-top: 40px;
-  list-style: none;
-  position: relative;
-  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .ourNumbers__cards {
@@ -2132,40 +2130,38 @@ input::-moz-placeholder {
     margin-top: 0px;
   }
 }
-.ourNumbers__cards::after {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background: linear-gradient(156deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
-  z-index: -1;
-}
-@media screen and (max-width: 768px) {
-  .ourNumbers__cards::after {
-    background: linear-gradient(179deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
-    top: -572px;
-  }
-}
 .ourNumbers__cardItem {
   text-align: center;
-  padding: 20px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   width: 100%;
+}
+.ourNumbers__cardItem:not(:last-child) {
+  padding-right: 15px;
+}
+.ourNumbers__cardItem:not(:first-child) {
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .ourNumbers__cardItem:not(:last-child) {
+    padding-right: unset;
+  }
+  .ourNumbers__cardItem:not(:first-child) {
+    padding-left: unset;
+  }
 }
 @media (min-width: 992px) {
   .ourNumbers__cardItem {
     width: 33.3333333333%;
-    padding: 80px 30px;
+    padding-top: 79px;
+    padding-bottom: 79px;
   }
-}
-@media (min-width: 1336px) {
-  .ourNumbers__cardItem {
-    padding: 79px 76px;
+  .ourNumbers__cardItem:not(:last-child) {
+    padding-right: 30px;
   }
-}
-@media (min-width: 520px) and (max-width: 767px) {
-  .ourNumbers__cardItem {
-    margin-right: 15px;
-    margin-left: 15px;
+  .ourNumbers__cardItem:not(:first-child) {
+    padding-left: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -2217,6 +2213,34 @@ input::-moz-placeholder {
     font-size: 38px;
     margin-top: 10px;
   }
+}
+
+.OurNumber_home {
+  border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+  padding: 0;
+  margin-top: 40px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 0;
+}
+.OurNumber_home::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(156deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .OurNumber_home::after {
+    background: linear-gradient(179deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
+    top: -572px;
+  }
+}
+
+.ourNumbers__cards__culture {
+  border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
 }
 
 .newsletter {
@@ -2506,22 +2530,24 @@ input::-moz-placeholder {
 }
 
 .testimonials {
-  padding: 2rem 0rem 2rem 1rem;
-}
-@media (min-width: 940px) {
-  .testimonials {
-    padding: 2rem 0rem 2rem 1.7rem;
-  }
+  padding: 4rem 0;
+  padding-left: 1rem;
 }
 @media (min-width: 991px) {
   .testimonials {
-    padding: 2rem 0rem 2rem 3.5rem;
+    padding: 4rem 0;
+    padding-left: 3rem;
   }
 }
 @media (min-width: 1200px) {
   .testimonials {
     padding: 4rem 0;
     padding-left: 3rem;
+  }
+}
+@media (min-width: 1370px) {
+  .testimonials {
+    padding-left: 8.5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -2734,7 +2760,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 1200px) {
   .testimonials__profileCard.text-center {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   }
 }

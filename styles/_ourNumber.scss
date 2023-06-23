@@ -12,6 +12,9 @@
         @media(max-width:768px){
             padding-bottom: 25px;
         }
+        @media(max-width:520px){
+            padding-bottom: 0px;
+        }
         
         p{
             margin-bottom: 0;
@@ -42,14 +45,6 @@
 
     &__cards {
         display: flex;
-
-        border-top: 1px solid var(--COLOR-BLACK);
-        border-bottom: 1px solid var(--COLOR-BLACK);
-        padding: 0;
-        margin-top: 40px;
-        list-style: none;
-        position: relative;
-        margin-bottom: 0;
         @media (max-width:767px) {
             flex-wrap: wrap;
             margin-top: 20px;
@@ -59,42 +54,58 @@
         @media(max-width:520px){
             margin-top: 0px;
         }
-        &::after {
-            position: absolute;
-            content: '';
-            inset: 0;
-            background: linear-gradient(156deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
-            z-index: -1;
-            @media screen and (max-width:768px) {
-                background: linear-gradient(179deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
-                top: -572px;
-            }
-        }
+
+       
         
     }
 
     &__cardItem {
         text-align: center;
 
-        padding: 20px 15px;
+        // padding: 20px 15px;
+        padding-top:20px ;
+        padding-bottom:20px ;
         display: flex;
         width: 100%;
+        &:not(:last-child) {
+            padding-right:15px;
+        }
+        &:not(:first-child) {
+            padding-left:15px;
+        }
+        @media(max-width:767px){
+            &:not(:last-child) {
+                padding-right:unset;
+            }
+            &:not(:first-child) {
+                padding-left:unset;
+            }
+        }
         @media (min-width:992px) {
             // background: linear-gradient(180deg, #FFFFFF 20.83%, #FF7121 100%);
             width: calc(100%/3);
-            padding: 80px 30px;
+            // padding: 80px 30px;
+            padding-top:79px ;
+            padding-bottom:79px ;
+            &:not(:last-child) {
+                padding-right:30px;
+            }
+            &:not(:first-child) {
+                padding-left:30px;
+            }
         }
 
         @media (min-width:1336px) {
 
-            padding: 79px 76px;
+            // padding: 79px 76px;
+
         }
 
         @media (min-width:520px) and (max-width:767px) {
             // border-right: 1px solid var(--COLOR-BLACK);
             // border-left: 1px solid var(--COLOR-BLACK);
-            margin-right: 15px;
-            margin-left: 15px;
+            // margin-right: 15px;
+            // margin-left: 15px;
         }
        
 
@@ -161,4 +172,29 @@
             margin-top: 10px;
         }
     }
+}
+.OurNumber_home{
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    padding: 0;
+    margin-top: 40px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 0;
+ 
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background: linear-gradient(156deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
+        z-index: -1;
+        @media screen and (max-width:768px) {
+            background: linear-gradient(179deg, #FFFFFF 58.65%, #FFC8A9 74.7%, #FF7121 100%);
+            top: -572px;
+        }
+    }
+}
+.ourNumbers__cards__culture{
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
 }

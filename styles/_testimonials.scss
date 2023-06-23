@@ -1,23 +1,26 @@
 .testimonials {
-    padding: 2rem 0rem 2rem 1rem;
-    @media(min-width:940px){
-        padding: 2rem 0rem 2rem 1.7rem;
-    }
-    @media (min-width:991px){
-        padding: 2rem 0rem 2rem 3.5rem;
-    }
-    @media(min-width:1200px){
-        padding: 4rem 0;
-        padding-left: 3rem;
-    }
-    @media(min-width:1400px){
-        padding: 4rem 0;
-        padding-left: 5rem;
-    }
-
-    @media(max-width:520px){
-        padding: 0.8rem 0rem 2rem 1rem;
-    }
+    padding: 4rem 0;
+        padding-left: 1rem;
+        @media (min-width:991px){
+            padding: 4rem 0;
+            padding-left: 3rem;
+        } 
+      
+        @media(min-width:1200px){
+            padding: 4rem 0;
+            padding-left: 3rem;
+        }
+        @media(min-width:1370px){
+            padding-left: 8.5rem;
+        }
+        @media(min-width:1400px){
+            padding: 4rem 0;
+            padding-left: 5rem;
+        }
+    
+        @media(max-width:520px){
+            padding: 0.8rem 0rem 2rem 1rem;
+        }
     &__wrapper_section{        
         @media(min-width:1200px){
             display: flex;
@@ -205,6 +208,7 @@
 
     &__wrp {
         // border-bottom: 1px solid var(--COLOR-BLACK);
+       
     }
 
     &__profile {
@@ -250,7 +254,7 @@
     }
     &__profileCard.text-center{
         @media(min-width:1200px){
-            width: 80%;
+            width: 95%;
             margin: 0 auto;
         }
         @media(min-width:1680px){
@@ -466,3 +470,25 @@
         }
     }
 }
+// .align-our-testimonials{
+//     @media(min-width:767px){
+//         padding: 4rem 0;
+//         padding-left: 1rem;
+//         @media (min-width:991px){
+//             padding: 4rem 0;
+//             padding-left: 3rem;
+//         } 
+      
+//         @media(min-width:1200px){
+//             padding: 4rem 0;
+//             padding-left: 3rem;
+//         }
+//         @media(min-width:1370px){
+//             padding-left: 8.5rem;
+//         }
+//         @media(min-width:1400px){
+//             padding: 4rem 0;
+//             padding-left: 5rem;
+//         }
+//     }
+// }
