@@ -3,9 +3,9 @@
     position: relative;
     overflow: hidden;
 
-    @media (max-width:1199px) {
-        padding: 60px 0;
-    }
+    // @media (max-width:1199px) {
+    //     padding: 60px 0;
+    // }
 
     @media(min-width:1200px){
         padding:0 80px;
@@ -68,9 +68,9 @@
         position: relative;
         display: flex;
         align-items: center;
-        @media(max-width:1200px){
+        @media(max-width:1199px){
             border-bottom: 1px solid var(--COLOR-BLACK);
-            border-top: 1px solid var(--COLOR-BLACK);
+            // border-top: 1px solid var(--COLOR-BLACK);
         }
         @media(min-width:1200px){
             border-right: 1px solid var(--COLOR-BLACK);
@@ -202,7 +202,7 @@
 
             &.news-icon-mob{
                 height: auto;
-                @media(min-width: 768px) and (max-width:1199px){
+                @media(min-width: 520px) and (max-width:1199px){
                     top: 0;
                     bottom: 0;
                 }
