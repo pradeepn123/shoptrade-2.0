@@ -270,7 +270,7 @@
         color: #000000;
         padding: 23px 54px;
         @media(max-width:520px){
-            padding: 13px 13px;
+            padding: 11px 30px;
         }
     }
 } 
@@ -341,6 +341,12 @@
     }
 }
 
+:root {
+    @media (min-width: 1440px)
+    {
+        --base-margin: 70px;
+    }
+}
 
 
   
