@@ -33,7 +33,9 @@
             padding-left: var(--base-margin);
             z-index: 2;
         }
+        @media (min-width:1920px) {
 
+        }
     }
     &__wrp {
         display: flex;
@@ -73,7 +75,7 @@
             line-height: 108%;
             margin-bottom: 53px;
         }
-        @media(max-width:375px){
+        @media(max-width:520px){
             font-size: 26px;
         }
     }
@@ -351,12 +353,14 @@
 }
 
 :root {
-    @media (min-width: 1440px)
-    {
+    @media (min-width: 1440px){
+        --base-margin: 75px;
+    }
+    @media (min-width: 1680px){
         --base-margin: 90px;
     }
+    @media (min-width: 1920px){
+        --base-margin: 80px;
+    }
 }
-
-
-  
 

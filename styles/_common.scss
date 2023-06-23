@@ -660,21 +660,8 @@ input::-moz-placeholder {
 
     .js-desktop-video{
         video {
-        display:  none;
-        min-height: 358px;
-        @media(min-width: 991px) {
-            min-height: 720px;
-            max-height: 100vh;
-        } 
-        }
-        img {
-            min-height: 358px;
-            object-fit: unset;
-            @media(min-width: 991px) {
-                min-height: 720px;
-                max-height: 100vh;
-            } 
-        }
+            display:  none;            
+        }        
     }
 
     
