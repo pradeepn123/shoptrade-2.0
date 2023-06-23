@@ -114,16 +114,13 @@
         h3 {
             color: var(--COLOR-BLACK);            
             font-weight: 800;
-            font-size: 40px;
+            font-size: 52px;
             line-height: 124%;
             letter-spacing: 0.02em;
             margin: 0;            
             @media(min-width:768px) and (max-width:1199px){
                 padding: 40px 60px;
-            }
-            // @media(min-width:1200px){
-            //     width: 80%;
-            // }
+            }         
             @media (max-width:991px) {
                 font-size: 24px;
                 padding: 30px 20px;
@@ -274,7 +271,7 @@
             border: 0;
             // border-bottom: 1px solid var(--COLOR-BLACK);
             @media(min-width:1200px){
-                max-width: calc(100% - 60px);
+                max-width: calc(100% - 20px);
             }
             &::placeholder {
                 font-weight: 400;

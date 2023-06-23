@@ -28,7 +28,7 @@
         padding: 0 var(--base-margin);
         max-width: 600px;
         @media (min-width:991px) {
-            max-width: calc(56% - 20px);
+            max-width: calc(52% - 60px);
             position: absolute;
             padding-left: var(--base-margin);
             z-index: 2;
@@ -63,7 +63,7 @@
 
     &__heading {
         font-weight: 700;
-        font-size: 28px;
+        font-size: 23px;
         line-height: 108%;
         margin-bottom: 24px;
 
@@ -256,12 +256,12 @@
 
 .homeBanner__content{
     .homeBanner__cta:hover{
-        border: 2px solid var(--COLOR-BLACK);
+        border: 1px solid #FF7121;
     }
 }  
 .services-block__list{
     .button--secondary:hover{
-        border: 2px solid var(--COLOR-BLACK);
+        border: 1px solid #FF7121;
     }
 }
   

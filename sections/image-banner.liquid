@@ -23,7 +23,7 @@
         </div>
       </div>
       {% else %} 
-      <div class="video-container video-container--expanded">
+      <div class="video-container">
         {% comment %} <iframe width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {% endcomment %}
       
         {% comment %} <video autoplay muted loop playsinline preload="metadata">
@@ -42,7 +42,7 @@
           <div class="button-rounded button-rounded--secondary js-video-expand">
             {% render 'arrow-left'%}
           </div>
-          <div class="rounded-text rotating">
+          <div class="rounded-text rotating rounded-text--expanded">
             <svg viewBox="0 0 202 202">
               <path id="textPath" d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0" transform="translate(100,100)" fill="none" stroke-width="0"></path>
               <g font-size="13.1px">

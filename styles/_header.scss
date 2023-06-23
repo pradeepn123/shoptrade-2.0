@@ -193,7 +193,13 @@
                 -webkit-transition: all .4s ease-in-out;
                 transition: all .4s ease-in-out;
             }
-        }        
+        }
+        &_secondary{
+            &:hover{
+                background-color: #3A4ED4;
+                color: #FFFFFF;
+            }
+        }
     }
 
     .nav-link {
@@ -400,8 +406,8 @@
 
 .shoptrade {
     @media(min-width:1440px) {
-        padding-top: 33px;
-        padding-bottom: 33px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 //annoucement bar 
