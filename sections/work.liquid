@@ -4,11 +4,10 @@
     </h1>
 
   </div>
-  <ul class="ourWork__cards ">
+  <ul class="ourWork__cards workpage__cards">
 
     {% for block in section.blocks %}
-      <li class="ourWork__card ">
-
+      <li class="ourWork__card workpage__card">
         <div class="ourWork__cardBody">
           <div class="img-container">
             <div class="img-wrp" >
@@ -28,10 +27,8 @@
                       <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
                     </div>
                   </a>
-                {% endif %}
-               
-              </div>
-              
+                {% endif %}               
+              </div>              
             </div>
             <div class="work-logo-footer">
               <div class="work-logo-footer__imgWrp">

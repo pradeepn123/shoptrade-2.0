@@ -6,57 +6,59 @@
       </h2>
       <div class="">
         <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
-          <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
+          {% comment %} <img src="{{ 'arrow-icon.png' | asset_img_url }} "/> {% endcomment %}
+          <svg width="74" height="59" viewBox="0 0 74 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M44.5924 1C60.2784 1 73 13.7618 73 29.5031C73 45.2441 60.2787 58 44.5924 58H29.4076C13.7216 58 1 45.2375 1 29.4962C1 13.7552 13.7213 1 29.4076 1H44.5924Z" fill="white" stroke="black" stroke-width="2"/>
+            <path d="M20 29.0909H54.1302M40.0906 15L54.2327 29.1421L40.0906 43.2843" stroke="black" stroke-width="2"/>
+          </svg>
         </a>
       </div>
-
     </div>
-
   </div>
-  <ul class="ourWork__cards swiper-container js-work-slider">
-    <div class="swiper-wrapper">
-    {% for block in section.blocks %}
-      <li class="ourWork__card swiper-slide">
-        <div class="ourWork__cardHead">
-          <div class="marquee  enable-animation">
-            <div class="marquee__content">
-
-              {{ block.settings.cardMarque }}
-              
-              
-            </div>
-            <div class="marquee__content" aria-hidden=" true">
-              {{ block.settings.cardMarque }}
-
-              
-
-            </div>
-          </div>
-        </div>
-        <div class="ourWork__cardBody">
-          <div  class="img-container">
-            <div class="img-wrp">
-              <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-              <div class="btn-wrp">
-                <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
-                  <div class="d-flex">
-                    <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
-                  </div>
-                  <div class="">
-                    <img class="btn-arrow" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/btn-arrow.svg?v=1665478404" alt="arrow"/>
-
+  <div class="ourWork__card_border our--work--card--parent">
+    <div class="container con-padding--remover">
+      <ul class="ourWork__cards swiper-container js-work-slider our--work--card">
+        <div class="swiper-wrapper our--work--card-child">
+          {% for block in section.blocks %}
+          <li class="ourWork__card swiper-slide">
+            {% comment %} <div class="ourWork__cardHead">
+              <div class="marquee  enable-animation">
+                <div class="marquee__content">
+                  {{ block.settings.cardMarque }}
+                </div>
+                <div class="marquee__content" aria-hidden=" true">
+                  {{ block.settings.cardMarque }}
+                </div>
+              </div>
+            </div> {% endcomment %}
+            <div class="ourWork__cardBody">
+              <div  class="img-container">
+                <div class="img-wrp">
+                  <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
+                  {% comment %} <div class="btn-wrp">
+                    <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
+                      <div class="d-flex">
+                        <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
+                      </div>
+                      <div class="">
+                        <img class="btn-arrow" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/btn-arrow.svg?v=1665478404" alt="arrow"/>
+                      </div>
+                    </a>
+                  </div> {% endcomment %}
+                </div>
+                <a href="{{ block.settings.cardtext_url}}">                
+                  <div class="brand_text_wrap">
+                    {{ block.settings.cardtext }}
                   </div>
                 </a>
               </div>
             </div>
-
-          </div>
+          </li>
+          {% endfor %}
         </div>
-      </li>
-    {% endfor %}
+      </ul>
+    </div>
   </div>
-
-  </ul>
 </section>
 
 
@@ -84,24 +86,36 @@
         "type": "cardType",
         "settings": [
           {
+            "id": "cardtext",
+            "type": "richtext",
+            "label": "Brand Name"
+          },
+          {
+            "id": "cardtext_url",
+            "type": "url",
+            "label": "Brand Link"
+          },
+          {
             "id": "cardImage",
             "type": "image_picker",
             "label": "Image"
-
-          }, {
+          }, 
+          {
             "id": "cardImageBrand",
             "type": "image_picker",
             "label": "Logo"
-
-          },{
+          },
+          {
             "id":"buttonLink",
             "label":"Button link",
             "type":"url"
-          },{
+          },
+          {
             "id":"cardMarque",
             "label":"Tag slider",
             "type":"html"
-          },{
+          },
+          {
             "id":"open_new_tabs",
             "type":"checkbox",
             "label":"Open in new tab",

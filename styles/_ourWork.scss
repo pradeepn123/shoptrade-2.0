@@ -3,53 +3,65 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding: 60px 0;
-
-        @media (max-width:991px) {
-            padding: 40px 0;
+        @media (max-width:991px){
+            h2{
+                 font-size: 40px !important;
+            }
+        }
+        @media screen and (max-width:520px) {
+            h2{
+                font-size: 26px !important;
+            }
+            a{
+                svg{
+                    width: 42px;
+                    object-fit: contain;
+                }
+            }
         }
     }
-
+    &__card_border{
+        border-top: 1px solid var(--COLOR-BLACK);
+        @media screen and (min-width:920px) {
+            border-bottom: 1px solid var(--COLOR-BLACK);
+        }
+        @media(max-width:520px){
+            border-top: unset;
+        }        
+    }
+    
     &__cards {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         padding: 0;
         margin: 0;
-        border-top: 1px solid var(--COLOR-BLACK);
-        @media screen and (min-width:920px) {
-            border-bottom: 1px solid var(--COLOR-BLACK);
-        }
-        
-        .swiper-wrapper {
-          
+        @media(min-width:1200px){
+            padding: 50px 0 25px 0;
+        }               
+        .swiper-wrapper {          
             @media (min-width:920px) {
-                flex-wrap: wrap;
-               
+                flex-wrap: wrap;               
             }    
             li {
                 @media screen and (min-width:1349px) {
-                &:nth-last-child(-n+3):not(:first-child) {
-                border-bottom: none;
-                }
-              
-            } 
+                    &:nth-last-child(-n+3):not(:first-child) {
+                        border-bottom: none;
+                    }              
+                } 
+            }
         }
-        }
-    }
-
+    }    
     &__card {
-
-        border-right: 1px solid var(--COLOR-BLACK);
-        border-bottom: 1px solid var(--COLOR-BLACK);
+        
         position: relative;
         display: flex;
         flex-direction: column;
         @media screen and (min-width:920px) {
             &:last-child {
-             border-bottom: none;
+                border-bottom: none;
             }
-            }
+        }
         @media (min-width:919px) {
             width: 49.89%;
         }
@@ -57,29 +69,11 @@
         @media (min-width:1350px) {
             width: 33.26%;
         }
-
-        &::after {
-            content: '';
-            position: absolute;
-            right: -0.4px;
-            bottom: 0;
-            background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989");
-            background-repeat: no-repeat;
-            width: 40px;
-            height: 70px;
-            background-size: 100%;
-            transform: translate(51.2%, 50%);
-
-            @media (max-width:991px) {
-                width: 15px;
-                height: 28px;
-            }
-        }
+        
 
         &:nth-child(3n),
         &:last-child,
         &:nth-last-child(2),
-
         &:nth-last-child(3) {
             &::after {
                 @media (min-width:1336px) {
@@ -100,7 +94,6 @@
     &__cardHead {
         opacity: 0;
         margin-top: 40px;
-
         p {
             font-family: Minecraft;
             font-weight: 500;
@@ -113,17 +106,14 @@
     }
 
     &__cardBody {
-        padding: 40px 72px 72px 35px;
+        padding: 20px 20px 45px;
         // width: 100%;
         display: flex;
         flex-direction: column;
         flex: 1;
-
         @media (max-width:991px) {
             padding: 20px 45px 60px 20px;
         }
-
-
         .img-wrp {
             overflow: hidden;
             // border: 2px solid #000000;
@@ -145,14 +135,33 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: top;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                
             }
         }
 
         .img-container {
-
             position: relative;
+            border-radius: 8px;
+            border: 1px solid var(--COLOR-BLACK);
+            a{
+                text-decoration: none;
+            }
         }
-
+        .brand_text_wrap {
+            font-family: 'Epilogue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--COLOR-BLACK);
+            padding: 38px 0;
+            p{
+                margin: 0;
+            }
+        }
         .work-body {
             flex: 1;
             display: flex;
@@ -249,13 +258,52 @@
         }
     }
 
-    .img-wrp {
-        border-radius: 10px;
-        border: 2px solid var(--COLOR-BLACK);
+    // .img-wrp {
+    //     border-radius: 10px;
+    //     border: 2px solid var(--COLOR-BLACK);
+    // }
+}
+
+.ourWork__card_border{
+    .ourWork__cards{
+        .ourWork__card{
+            .ourWork__cardBody{
+                @media (max-width: 991px){
+                    padding: 60px 10px 10px;
+                }
+            }
+        }
     }
 }
 
+.workpage__cards{
+    border-top: 1px solid var(--COLOR-BLACK);
+    padding: 0;
+    @media screen and (min-width:920px) {
+        border-bottom: 1px solid var(--COLOR-BLACK);
+    }    
+}
 
+.workpage__card{
+    border-right: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    &::after {
+        content: '';
+        position: absolute;
+        right: -0.4px;
+        bottom: 0;
+        background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989");
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 70px;
+        background-size: 100%;
+        transform: translate(51.2%, 50%);
+        @media (max-width:991px) {
+            width: 15px;
+            height: 28px;
+        }
+    }
+}
 
 .work {
     padding-bottom: 40px;
@@ -279,10 +327,7 @@
     .ourWork__card {
         &:nth-child(odd) {
             .ourWork__cardBody {
-
-
                 position: relative;
-
                 &::after {
                     @media (min-width:992px) {
                         content: "";
@@ -295,7 +340,6 @@
                         height: 70px;
                         background-size: 100%;
                         transform: translate(50%, 50%);
-
                     }
                 }
             }
@@ -418,5 +462,52 @@
 
     @media (max-width:991px) {
         font-size: 36px;
+    }
+}
+.our--work--card--parent{
+    @media(max-width:920px){
+        border-bottom: 1px solid var(--COLOR-BLACK);
+    }
+    .con-padding--remover{
+        @media(max-width:520px){
+            padding-right: unset;
+        }
+        .our--work--card{
+            padding: 30px 0 35px 0;
+            @media(min-width:991px){
+                padding: 72px 0 60px 0;
+            }
+            @media screen and (max-width:520px) {
+                padding: 0 0 35px 0;
+            }
+            
+                .our--work--card-child{
+                    column-gap: 36px;
+                    row-gap: 72px;
+                    justify-content: space-between;
+                    @media(max-width:1200px){
+                        row-gap: 50px;
+                        column-gap: 24px;
+                    }
+                    @media(max-width: 520px){
+                        row-gap: 50px;
+                        column-gap: 10px;
+                    }
+                    
+                    .ourWork__card{
+                        @media (min-width:919px) {
+                            width: 47%;
+                        }
+
+                        @media (min-width:1350px) {
+                            width: 31%;
+                        }
+                        .ourWork__cardBody{
+                            padding: unset;
+                        }
+                    }
+
+                }
+            }   
     }
 }

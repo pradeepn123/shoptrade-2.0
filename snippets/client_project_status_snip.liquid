@@ -1,0 +1,28 @@
+<tr>
+    {% if item.settings.STATUS == 'Yet to start' %}
+      {% assign Status_class = 'Yet_to_start' %}
+    {% elsif item.settings.STATUS == 'In Progress' %}
+      {% assign Status_class = 'In_Progress' %}
+    {% else %}
+      {% assign Status_class = 'Completed' %}
+    {% endif %}
+    <td>
+      <span class="heading hide">
+        <p>{{ item.settings.PROJECT_NAME | truncate: 27 }}</p>
+        <a href="{{ item.settings.More_Detail }}">More Detail <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrow-orange.svg?v=1665512744" loading="lazy" width="11" height="11"/> </a>
+      </span>
+    </td>
+    <td>
+      {% if item.settings.TEAM != blank %}
+        <abbr title="{{ item.settings.TEAM }}"><span class="hide">{{ item.settings.TEAM | truncate: 23 }}ⓘ</span></abbr>
+      {% else %}
+        <span>team not assigned</span>
+      {% endif %}
+    </td>
+    <td>
+      <span>{{ item.settings.PHASE }}</span>
+    </td>
+    <td class="STATUS">Loading...</td>
+    <td class="STATUS">{{ item.settings.PROJECT_DEADLINE }}</td>
+    <td class="{{ Status_class }} STATUS">{{ item.settings.STATUS }}</td>
+  </tr>

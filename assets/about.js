@@ -4,33 +4,16 @@ $(document).ready(function () {
 
     let aboutCulterTop = new Swiper('.js-top-image-slider', {
         spaceBetween: 50,
-    centeredSlides: true,
-    speed: 6000,
-    autoplay: {
-      delay: 1,
-    },
-    loop: true,
-    slidesPerView:1.2,
-    allowTouchMove: false,
-    // disableOnInteraction: true,
-    pauseOnMouseEnter:true,
-        // speed: 2000,
-
-        // // slidesPerView: 3,
-        // centerdSlides: "true",
-        // loop: true,
-        // freemode: true,
-        // allowTouchMove: false,
-        // disableOnInteraction: true,
-        // autoplay: {
-        //     duration: 2000
-        // },
-        // spaceBetween: 40,
-        breakpoints: {
-            1920: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+        },
+        loop: true,
+        slidesPerView: 3,        
+        allowTouchMove: false,    
+        pauseOnMouseEnter:true, 
+        breakpoints: {            
             1028: {
                 slidesPerView: 2,
                 spaceBetween: 30
@@ -49,17 +32,10 @@ $(document).ready(function () {
           delay: 1,
         },
         loop: true,
-        slidesPerView:1.2,
+        slidesPerView: 3,
         allowTouchMove: false,
-        // disableOnInteraction: true,
-        pauseOnMouseEnter:true,
-
-        // direction :"ltr",
-        breakpoints: {
-            1920: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
+        pauseOnMouseEnter:true,        
+        breakpoints: {         
             1028: {
                 slidesPerView: 2,
                 spaceBetween: 30

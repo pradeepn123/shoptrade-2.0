@@ -10,7 +10,11 @@
         "settings": {
           "logo-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo.svg?v=1668161224",
           "logombile-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo-mbl.svg?v=1668161454",
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "button_1_text": "CRO Audit",
+          "button_1_url": "",
+          "button_2_text": "Contact Us",
+          "button_2_url": "#contact-us"
         }
       },
       "footer": {
@@ -100,6 +104,42 @@
         "settings": {
           "footerLink": "footer",
           "footerBottomLink": "footer-bottom"
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Check out our new project <a href=\"https:\/\/shoptrade.co\/\" title=\"https:\/\/shoptrade.co\/\">Heal & Co<\/a><\/p>",
+              "text_alignment": "center",
+              "link": ""
+            }
+          },
+          "ca0b996b-f28a-4499-8c3d-e092cda863b8": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "<p>Welcome to our store<\/p>",
+              "text_alignment": "center",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0",
+          "ca0b996b-f28a-4499-8c3d-e092cda863b8"
+        ],
+        "settings": {
+          "enable_announcement": true,
+          "enable_sticky": false,
+          "text_size": "text-xs",
+          "navigation_mode": "arrows",
+          "scrolling_speed": 15,
+          "background": "#121212",
+          "background_gradient": "",
+          "text_color": "#ffffff"
         }
       }
     },

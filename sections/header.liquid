@@ -1,19 +1,36 @@
 <header class="shoptrade">
-  <div class="">
+  <div class="container">
     <div class="header-container">
-      <div class="v-center">
+      <div class="v-center nav-container">
       <a class="navbar-brand order-2" href="/">
-        <img class="only-desktop" src="{{ section.settings.logo-svg  }}" alt="logo">
-        <img class="only-mobile" src="{{ section.settings.logombile-svg }}" alt="logo">
+        {% render 'mobile-logo' %}
       </a>
-      <button class="d-flex p-0 js-hamberger" type="button">
+      <button class="d-flex js-hamberger" type="button">
+       <span class="navbar-toggler-text">Menu</span>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbarSupportedContent">
-     
-        <div class="shoptrade__menu-wrp">
 
-          <ul class="navbar-nav shoptrade__nav-list d-flex  ">
+      <div class="shoptrade__menu-wrp desktop_only">
+        <ul class="navbar-nav shoptrade__nav-list d-flex">
+          {%- for link in section.settings.menu.links -%}
+            <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
+              {%- if forloop.last -%}
+                <a class="nav-link contact-btn-details" href="#" >
+                  {{ link.title }}
+                </a>
+              {%- else -%}
+                <a class="nav-link" href="{{ link.url }}" >
+                  {{ link.title }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="navbarSupportedContent">      
+        <div class="shoptrade__menu-wrp mobile_only">
+          <ul class="navbar-nav shoptrade__nav-list d-flex">
             {%- for link in section.settings.menu.links -%}
               <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
                 {%- if forloop.last -%}
@@ -28,18 +45,17 @@
               </li>
             {%- endfor -%}
           </ul>
-
-
+        </div>    
+        <div class="header__button-wrapper">
+          {%- if section.settings.button_1_url -%}
+            <a class="header__button header__button_secondary" href="{{section.settings.button_1_url}}">{{section.settings.button_1_text}}</a>
+          {%- endif -%}
+          {% if section.settings.button_2_text != blank and section.settings.button_2_url != blank %}
+            <a class="btn-contact contact-btn-details header__button header__button--primary" id="contact-btn-details" href="{{section.settings.button_2_url}}" >{{section.settings.button_2_text}}</a>
+          {% endif %}
         </div>
       </div>
     </div>
-      <div class="contact-btn" >
-        {%- for link in section.settings.menu.links -%}
-          {%- if forloop.last -%}
-            <a class="nav-link btn-contact contact-btn-details" id="contact-btn-details" href="#contact-us">{{ link.title }}</a>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
     </div>
   </div>
 </header>
@@ -62,6 +78,26 @@
         "id": "menu",
         "type": "link_list",
         "label": "Main menu"
+      },
+      {
+        "id": "button_1_text",
+        "type": "text",
+        "label": "Button-1 Text"
+      },
+      {
+        "id": "button_1_url",
+        "type": "url",
+        "label": "Button-1 Url"
+      },
+      {
+        "id": "button_2_text",
+        "type": "text",
+        "label": "Button-2 Text"
+      },
+      {
+        "id": "button_2_url",
+        "type": "url",
+        "label": "Button-2 Url"
       }
     ]
   }

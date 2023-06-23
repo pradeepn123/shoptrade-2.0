@@ -1,9 +1,7 @@
 $(document).ready(function () {
-
   setTimeout(function(){
     $(".js-video-thumbnail").hide()
     $(".js-desktop-video video").show()
- 
     $('video').css("opacity","1")
   },1000)
 
@@ -29,7 +27,7 @@ $(document).ready(function () {
         },
         767: {
             slidesPerView: 1.2,
-            // spaceBetween: 10
+            spaceBetween: 21
         }
     }
   });

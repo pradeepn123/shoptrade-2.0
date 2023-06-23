@@ -22,11 +22,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
-    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
+    
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -329,7 +329,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-
+    <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}">
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
@@ -374,6 +374,7 @@
     {%- comment -%}
       {% section 'announcement-bar' %}
     {%- endcomment -%}
+    {% section 'announcement-bar' %}
     {% section 'header' %}
     {% render 'contact-popup' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">

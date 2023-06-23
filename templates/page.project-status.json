@@ -6,9 +6,74 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "2c864b76-0d98-4b08-beec-e06ac739dbc8": {
+      "type": "client_project_status",
+      "blocks": {
+        "bf175c0f-bb1c-4245-921c-c1d7cf1ef630": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "PROJECT NAME",
+            "More_Detail": "",
+            "TEAM": "Amit Gupta,\nShivnshi,\nAmit Gupta,\nShivnshi,\nAmit Gupta,\nShivnshi,",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "30\/07\/2023",
+            "STATUS": "Yet to start"
+          }
+        },
+        "f505c530-8428-480c-85e3-17293b570ab8": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "PROJECT NAME",
+            "More_Detail": "",
+            "TEAM": "Amit Gupta,\nShivnshi",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "30\/07\/2023",
+            "STATUS": "In Progress"
+          }
+        },
+        "815238d9-041b-4603-a2d8-59b40e7e4bfb": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "PROJECT10NAME",
+            "More_Detail": "",
+            "TEAM": "Amit Gupta,\nShivnshi",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "30\/07\/2023",
+            "STATUS": "Completed"
+          }
+        },
+        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "PROJECT NAME",
+            "More_Detail": "",
+            "TEAM": "",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "30\/07\/2023",
+            "STATUS": "Yet to start"
+          }
+        }
+      },
+      "block_order": [
+        "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
+        "f505c530-8428-480c-85e3-17293b570ab8",
+        "815238d9-041b-4603-a2d8-59b40e7e4bfb",
+        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7"
+      ],
+      "settings": {
+        "title": "ShopTrade Client Project Status",
+        "title_font_size": 52,
+        "table_filter_font_size": 16,
+        "thead_font_size": 14,
+        "tbody_heading_text_font_size": 20,
+        "tbody_heading_a_font_size": 14,
+        "tbody_td_font_size": 18
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "2c864b76-0d98-4b08-beec-e06ac739dbc8"
   ]
 }
