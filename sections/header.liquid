@@ -10,8 +10,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbarSupportedContent">  
-        <div class="shoptrade__menu-wrp">
+      <div class="shoptrade__menu-wrp desktop_only">
+        <ul class="navbar-nav shoptrade__nav-list d-flex">
+          {%- for link in section.settings.menu.links -%}
+            <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
+              {%- if forloop.last -%}
+                <a class="nav-link contact-btn-details" href="#" >
+                  {{ link.title }}
+                </a>
+              {%- else -%}
+                <a class="nav-link" href="{{ link.url }}" >
+                  {{ link.title }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div class="navbarSupportedContent">      
+        <div class="shoptrade__menu-wrp mobile_only">
           <ul class="navbar-nav shoptrade__nav-list d-flex">
             {%- for link in section.settings.menu.links -%}
               <li class="nav-item" {% if link.active %}aria-current="page"{% endif %}>
@@ -27,7 +45,7 @@
               </li>
             {%- endfor -%}
           </ul>
-        </div>
+        </div>    
         <div class="header__button-wrapper">
           {%- if section.settings.button_1_url -%}
             <a class="header__button header__button_secondary" href="{{section.settings.button_1_url}}">{{section.settings.button_1_text}}</a>

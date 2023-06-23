@@ -477,6 +477,7 @@ $(document).ready(function () {
   //mobile hamberger
   $(".js-hamberger").click(function () {
     $(".shoptrade").toggleClass("active");
+    $('body').toggleClass('overflow-hidden');
   });
 
   $(window).scroll(function () {
@@ -568,7 +569,7 @@ $(document).ready(function () {
   // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
-  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn").on('click', function () {
+  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
     $("#contact-btn-details").trigger('click');
   })
 });
