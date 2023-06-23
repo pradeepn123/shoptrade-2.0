@@ -1,22 +1,24 @@
 <div class="services-block">
+  <div class="container">
     <div class="services-block__wrapper">
       {% if section.settings.heading %}
-      <h1 class="services-block__heading">{{section.settings.heading}}</h1>
-    {% endif %}
-     <div class="services-block__list">
-     {% if section.settings.services-block_heading %}
-      <h4 class="services-block__subheading">{{section.settings.services-block_heading}}</h4>
-     {% endif %}
-      <div class="services-block__items">
-        {% for block in section.blocks %}
-         <div class="services-block__item">{{block.settings.service_text}}</div>
-        {% endfor %}
-      </div>
-      {% if section.settings.button_text and section.settings.button_url %}
-    <a href="{{section.settings.button_url}}" class="button button--secondary">{{section.settings.button_text}}</a>
+        <h1 class="services-block__heading">{{section.settings.heading}}</h1>
       {% endif %}
+      <div class="services-block__list">
+        {% if section.settings.services-block_heading %}
+          <h4 class="services-block__subheading">{{section.settings.services-block_heading}}</h4>
+        {% endif %}
+        <div class="services-block__items">
+          {% for block in section.blocks %}
+          <div class="services-block__item">{{block.settings.service_text}}</div>
+          {% endfor %}
+        </div>
+        {% if section.settings.button_text and section.settings.button_url %}
+          <a href="{{section.settings.button_url}}" class="button button--secondary">{{section.settings.button_text}}</a>
+        {% endif %}
+      </div>
     </div>
-    </div>
+  </div>
 </div>
 
 {% schema %} 

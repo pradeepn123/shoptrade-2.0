@@ -1,26 +1,27 @@
 .testimonials {
     padding: 4rem 0;
-        padding-left: 1rem;
-        @media (min-width:991px){
-            padding: 4rem 0;
-            padding-left: 3rem;
-        } 
-      
-        @media(min-width:1200px){
-            padding: 4rem 0;
-            padding-left: 3rem;
-        }
-        @media(min-width:1370px){
-            padding-left: 8.5rem;
-        }
-        @media(min-width:1400px){
-            padding: 4rem 0;
-            padding-left: 5rem;
-        }
-    
-        @media(max-width:520px){
-            padding: 0.8rem 0rem 2rem 1rem;
-        }
+    padding-left: 1rem;
+    @media (min-width:991px){
+        padding: 4rem 0;
+        padding-left: 3rem;
+    }
+    @media(min-width:1200px){
+        padding: 4rem 0;
+        padding-left: 3rem;
+    }
+    @media(min-width:1370px){
+        padding-left: 8.5rem;
+    }
+    @media(min-width:1400px){
+        padding: 4rem 0;
+        padding-left: 5rem;
+    }
+    @media(min-width:1680px){
+        padding-left: 5.6rem;
+    }
+    @media(max-width:520px){
+        padding: 0.8rem 0rem 2rem 1rem;
+    }
     &__wrapper_section{        
         @media(min-width:1200px){
             display: flex;

@@ -1,5 +1,14 @@
 .services-block {
-    padding: 39px var(--base-margin) 50px;
+    // padding: 39px var(--base-margin) 50px;
+    padding: 40px 0;
+    @media (min-width: 768px) {
+        text-align: center;
+    }
+    @media (min-width: 1440px) {
+        text-align: left;
+        padding-top: 91px;
+        padding-bottom: 51px;
+    }
 
     &__heading {
         font-weight: 700;
@@ -81,15 +90,5 @@
         .button.button--secondary{
             font-size: 18px;
         }
-    }
-
-    @media (min-width: 768px) {
-        text-align: center;
-    }
-
-    @media (min-width: 1440px) {
-        text-align: left;
-        padding-top: 91px;
-        padding-bottom: 51px;
-    }
+    }    
 }
