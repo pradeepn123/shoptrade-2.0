@@ -2083,6 +2083,11 @@ input::-moz-placeholder {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 520px) {
+  .ourNumbers__wrp {
+    padding-bottom: 0px;
+  }
+}
 .ourNumbers__wrp p {
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2755,7 +2760,7 @@ input::-moz-placeholder {
 }
 @media (min-width: 1200px) {
   .testimonials__profileCard.text-center {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   }
 }
