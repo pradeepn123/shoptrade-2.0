@@ -111,7 +111,7 @@
 
         &:not(:last-child) {
             @media (min-width:768px) {
-                border-right: 1px solid var(--COLOR-BLACK);
+                // border-right: 1px solid var(--COLOR-BLACK);
                 position: relative;
             }
 

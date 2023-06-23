@@ -224,11 +224,28 @@
     }
 
     .ourNumbers__cardItem {
-        padding: 60px 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left:  0px;
+        padding-right:  0px;
+        &:not(:first-child) {
+            padding-left:  20px;
+           @media(max-width:991px){
+            padding-left:  unset;
+           }
+        }
+        &:not(:last-child) {
+            padding-right:  20px;
+            @media(max-width:991px){
+                padding-right:  unset;
+               }
+        }
 
         @media (max-width:991px) {
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
+        
     }
 }
 
