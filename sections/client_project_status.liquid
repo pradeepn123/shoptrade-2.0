@@ -117,40 +117,42 @@
 
 {% endstyle %}
 
-{% if customer and customer.tags contains "shoptradeadmin" %}
-
-  <div class="client_project_status">
-    <h1 class="title">{{ section.settings.title }}</h1>
-    <div class="table_filter">
-      <a class=" active" href="#" onclick="filterTable('All')">All</a>
-      <a class=" " href="#" onclick="filterTable('Yet to start')">Yet to start</a>
-      <a class=" " href="#" onclick="filterTable('In Progress')">In Progress</a>
-      <a class=" " href="#" onclick="filterTable('Completed')">Completed</a>
+  {% assign showSection = request.design_mode %}
+  {% if customer and customer.tags contains "shoptradeadmin" or request.design_mode %}
+    {% assign showSection = true %}
+  {% endif %}
+  {% if showSection %}
+    <div class="client_project_status">
+      <h1 class="title">{{ section.settings.title }}</h1>
+      <div class="table_filter">
+        <a class=" active" href="#" onclick="filterTable('All')">All</a>
+        <a class=" " href="#" onclick="filterTable('Yet to start')">Yet to start</a>
+        <a class=" " href="#" onclick="filterTable('In Progress')">In Progress</a>
+        <a class=" " href="#" onclick="filterTable('Completed')">Completed</a>
+      </div>
+      <div class="set-overflow">
+        <table id="projectTable">
+          <thead>
+            <tr>
+              <th>PROJECT NAME</th>
+              <th>TEAM</th>
+              <th>PHASE</th>
+              <th>DAYS LEFT</th>
+              <th>PROJECT DEADLINE</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody id="Tablebody">
+            {% for item in section.blocks %}
+              {% render 'client_project_status_snip', item: item %}
+            {% endfor %}
+          </tbody>
+        </table> 
+      </div>
     </div>
-    <div class="set-overflow">
-      <table id="projectTable">
-        <thead>
-          <tr>
-            <th>PROJECT NAME</th>
-            <th>TEAM</th>
-            <th>PHASE</th>
-            <th>DAYS LEFT</th>
-            <th>PROJECT DEADLINE</th>
-            <th>STATUS</th>
-          </tr>
-        </thead>
-        <tbody id="Tablebody">
-          {% for item in section.blocks %}
-            {% render 'client_project_status_snip', item: item %}
-          {% endfor %}
-        </tbody>
-      </table> 
-    </div>
-  </div>
-
-{% else %}
-  <script>window.location.replace("/pages/404");</script>
-{% endif %}
+  {% else %}
+    <script>window.location.replace("/pages/404");</script>
+  {% endif %}
 
 <script>
   
@@ -208,14 +210,7 @@
       if(Difference_In_Days <= 0) 
         daysleft.innerHTML = "deadline passed";
       else
-        daysleft.innerHTML = Math.round(Difference_In_Days) + " days left";
-        
-        {% comment %} 
-      //To display the final no. of days (result)
-      console.log("Total number of days between dates  <br>"
-                + date1 + "<br> and <br>" 
-                + date2 + " is: <br> " 
-                + Difference_In_Days); {% endcomment %}
+        daysleft.innerHTML = Math.round(Difference_In_Days) + " days left";               
     }
   }
 

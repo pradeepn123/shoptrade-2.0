@@ -3739,24 +3739,26 @@ input::-moz-placeholder {
   }
 }
 
-.footerBottom {
-  padding: 24px 54px;
+.footerBottom_main {
+  border-top: 1px solid var(--COLOR-BLACK);
+}
+.footerBottom_main .footerBottom {
+  padding: 24px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--COLOR-BLACK);
 }
 @media (max-width: 991px) {
-  .footerBottom {
+  .footerBottom_main .footerBottom {
     padding: 40px 20px;
     flex-direction: column;
     align-items: flex-start;
   }
 }
-.footerBottom__links a {
+.footerBottom_main .footerBottom__links a {
   display: inline-block;
 }
-.footerBottom__links a:not(:last-child) {
+.footerBottom_main .footerBottom__links a:not(:last-child) {
   margin-right: 26px;
 }
 
