@@ -14,17 +14,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
-        "e02d2737-4bb2-419e-8973-d3e380632127": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Midway.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/midways-logo1.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
         "ecb392bc-5524-4421-8bbc-5656faa04c09": {
           "type": "cardType",
           "settings": {
@@ -282,7 +271,6 @@
       },
       "block_order": [
         "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
-        "e02d2737-4bb2-419e-8973-d3e380632127",
         "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",

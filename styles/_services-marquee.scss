@@ -1,46 +1,32 @@
 .services-marquee-wrap {
     border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
     background: #000;
-
     .swiper-container {
-
         .swiper-wrapper {
-            transition-timing-function: linear;
-        
+            transition-timing-function: linear;        
             .swiper-slide {
                 display: flex;
                 align-items: center;
                 border-right: 1px solid #000;
-                // border-left: 1px solid #000;
                 width: fit-content;
                 background: #fff;
-                position: relative;
-                // border-top-right-radius: 15px;
+                position: relative;                
                 max-width: 432px;
-                height: 135px;                
-                // @media(min-width:1200px){
-                //     border-top-right-radius: 40px;
-                // }
-        
+                height: 135px;
                 // &:not(:first-child) {
-                //     border-top-left-radius: 15px;
-                //     @media(min-width:1200px){
-                //         border-top-left-radius: 40px;
+                //     &:after{
+                //         position: absolute;
+                //         content: "";
+                //         top: -2px;
+                //         right: 2px;
+                //         height: 41px;
+                //         width: 37px;
+                //         z-index: 9;
+                //         transform: rotate(-90deg) translateY(50%);
+                //         background-image: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934');
                 //     }
                 // }
-                &:not(:first-child) {
-                    &:after{
-                        position: absolute;
-                        content: "";
-                        top: -2px;
-                        right: 2px;
-                        height: 41px;
-                        width: 37px;
-                        z-index: 9;
-                        transform: rotate(-90deg) translateY(50%);
-                        background-image: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrrow-left.svg?v=1668167934');
-                    }
-                }
                 
                 .service-icon {
                     padding: 50px;

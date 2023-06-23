@@ -1,0 +1,27 @@
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    padding: 17px 31px;
+    border: 1px solid #000000;
+    border-radius: 47px;  
+    letter-spacing: -0.03em;
+    @media(min-width: 1200px) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+.button-rounded {
+    padding: 31px;
+    display: inline-block;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    &--secondary {
+        // background: linear-gradient(119.89deg, #D16121 -7.23%, #FF7121 53.41%, #FFFFFF 119.49%);
+        background-image: linear-gradient(119.89deg, #E07527 16%, rgba(255, 255, 255, 0.9) 32%, #FF7121, #FF7121);
+        background-size: 500% 100%;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}

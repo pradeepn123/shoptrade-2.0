@@ -1,0 +1,20 @@
+.brand-marquee {
+
+      &__block {
+        max-width: max-content;
+      }
+      .swiper-wrapper{
+        -webkit-transition-timing-function:linear!important;   
+        transition-timing-function:linear!important; 
+        align-items: center;
+        padding: 8px 0;
+
+        @media (min-width: 1200px) {
+          padding: 25px 0 25px 0;
+        }
+      }
+
+      .marquee-text{
+        color: #fff;
+      }
+}

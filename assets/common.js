@@ -477,13 +477,14 @@ $(document).ready(function () {
   //mobile hamberger
   $(".js-hamberger").click(function () {
     $(".shoptrade").toggleClass("active");
+    $('body').toggleClass('overflow-hidden');
   });
 
   $(window).scroll(function () {
-    var sticky = $("header"),
+    var sticky = $("#shopify-section-header"),
       scroll = $(window).scrollTop();
 
-    if (scroll >= 100) sticky.addClass("fixed-header");
+    if (scroll >= 30) sticky.addClass("fixed-header");
     else sticky.removeClass("fixed-header");
   });
 
@@ -568,7 +569,7 @@ $(document).ready(function () {
   // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
-  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn").on('click', function () {
+  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
     $("#contact-btn-details").trigger('click');
   })
 });
@@ -1045,8 +1046,5 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
     },
   }
 });
-
-
-
 
 

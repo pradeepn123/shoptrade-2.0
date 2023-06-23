@@ -971,3 +971,140 @@ let testimonial = new Swiper('.js-testimonial-slider', {
       }
   }
 });
+
+
+//Homepage quick services module
+let quickServices = new Swiper('.js-quickServices-slider', {
+  speed:1000,
+  autoHeight: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  allowTouchMove: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }, 
+  breakpoints: {      
+      1028: {
+        slidesPerView: 2.1,
+        spaceBetween: 26
+      },
+      767: {
+        slidesPerView: 1.1,
+        spaceBetween: 20,
+        allowTouchMove: true
+      }
+  }
+});
+
+let announcementBar = new Swiper('.js-announcement--bar', {
+  speed:1000,
+  autoHeight: false,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.slider-arrow .js-arrow-right',
+    prevEl: '.slider-arrow .js-arrow-left',
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
+  loop: true,
+  breakpoints: {      
+      1028: {
+        slidesPerView: 1     
+      },
+      767: {
+        slidesPerView: 1 
+      }
+  }
+});
+
+
+const initSlider = () => {
+  //marquee normal flow 
+  let marquee = new Swiper('.js-marque-slider', {
+    spaceBetween: 76,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: true,
+    },
+    loop: true,
+    slidesPerView: 'auto',
+    allowTouchMove: false,
+    breakpoints: {
+      1440: {
+          spaceBetween: 76
+      },
+
+      767: {
+          spaceBetween: 57
+      }
+  }
+});
+
+
+//marquee reverse flow 
+let marqueeReverse = new Swiper('.js-marque-slider--reverse', {
+  spaceBetween: 76,
+  centeredSlides: true,
+  speed: 6000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: true,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  allowTouchMove: false,
+  breakpoints: {
+    1440: {
+        spaceBetween: 76
+    },
+
+    767: {
+        spaceBetween: 57
+    }
+}
+});
+}
+
+const expandVideoToFullWidth = (ev) => {
+  const videoContainer = ev.target.closest('.video-container');
+  if(!videoContainer) return;
+  videoContainer.classList?.toggle('video-container--expanded');
+  const videoContainerText = document.querySelector('.rounded-text');
+  if(!videoContainerText) return;
+  videoContainerText.classList?.toggle('rounded-text--expanded');
+}
+
+window.addEventListener('DOMContentLoaded' , () => {
+  initSlider();
+  const videoExpandTriggerElements = document.querySelectorAll('.js-video-expand');
+  if(!videoExpandTriggerElements.length) return;
+  videoExpandTriggerElements?.forEach(videoExpandTriggerElement => videoExpandTriggerElement.addEventListener('click', expandVideoToFullWidth));
+})
+
+window.addEventListener("resize", () => {
+  initSlider();
+});
+
+
+// js/common/ui/marquee-text.js
+var MarqueeText = class extends HTMLElement {
+  constructor() {
+    super();
+    if (window.ResizeObserver) {
+      new ResizeObserver(this._calculateDuration.bind(this)).observe(this);
+    }
+  }
+  _calculateDuration(entries) {
+    const scrollingSpeed = parseInt(this.getAttribute("scrolling-speed") || 5), contentWidth = entries[0].contentRect.width, slowFactor = 1 + (Math.min(1600, contentWidth) - 375) / (1600 - 375);
+    this.style.setProperty("--marquee-animation-duration", `${(scrollingSpeed * slowFactor * entries[0].target.querySelector("span").clientWidth / contentWidth).toFixed(3)}s`);
+  }
+};
+if (!window.customElements.get("marquee-text")) {
+  window.customElements.define("marquee-text", MarqueeText);
+}

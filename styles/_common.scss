@@ -39,7 +39,7 @@ body {
     }
 
     @media (min-width: 768px) {
-        max-width: 720px;
+        max-width: 920px;
     }
 
     @media (min-width: 992px) {
@@ -115,27 +115,22 @@ body {
 
 .h1-main {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 52px;
     line-height: 100%;
     letter-spacing: -0.03em;
     color: var(--COLOR-BLACK);
-
-    @media (max-width:1335px) {
-        font-size: 56px;
-    }
-
     @media (max-width:991px) {
-        font-size: 42px;
+        font-size: 24px;
     }
-
     @media (max-width:320px) {
-        font-size: 36px;
+        font-size: 20px;
     }
 }
 
 .fnt-micro {
     font-family: Minecraft;
 }
+
 .fnt-800 {
     font-weight: 800;
 }
@@ -231,15 +226,18 @@ body {
     line-height: 32px;
 
 }
-.font-20{
+
+.font-20 {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+
     @media screen and (max-width:520px) {
-        font-size: 16px; 
+        font-size: 16px;
         line-height: 27px;
     }
 }
+
 .fnt-24 {
     font-weight: 500;
     font-size: 24px;
@@ -292,13 +290,13 @@ body {
     overflow: hidden;
 }
 
-main {
-    padding-top: 126px;
+// main {
+//     padding-top: 118px;
 
-    @media (max-width:991px) {
-        padding-top: 92px;
-    }
-}
+//     @media (max-width:991px) {
+//         padding-top: 84px;
+//     }
+// }
 
 .border-topBottom {
     border-top: 1px solid var(--COLOR-BLACK);
@@ -494,11 +492,13 @@ main {
         width: auto;
     }
 }
+
 .contact-btn {
     margin-top: auto;
-    
+
 
 }
+
 .social-media-icons {
     list-style: none;
     padding: 0;
@@ -571,7 +571,8 @@ input::-moz-placeholder {
         font-size: 24px;
         line-height: 34px;
         color: var(--COLOR-BLACK);
-        a{
+
+        a {
             color: #000000;
             text-decoration: none;
         }
@@ -639,19 +640,44 @@ input::-moz-placeholder {
 }
 
 .video-container {
-   
     margin-bottom: 20px;
-    @media (min-width:992px) {
+    transition: width 0.2s linear;
+    @media (min-width:990px) {
         margin-bottom: 0;
-        position: absolute;
-        inset: 0;
-        z-index: -1;
+        z-index: 2;
+        width: 50%;
+        right: 0;
+        height: calc(100vh - 20vh);
+        position: relative;
+        margin-left: auto;
     }
 
     .js-desktop-video.only-mobile {
         min-width: 360px;
         width: 100%;
     }
+
+
+    .js-desktop-video{
+        video {
+        display:  none;
+        min-height: 358px;
+        @media(min-width: 991px) {
+            min-height: 720px;
+            max-height: 100vh;
+        } 
+        }
+        img {
+            min-height: 358px;
+            object-fit: unset;
+            @media(min-width: 991px) {
+                min-height: 720px;
+                max-height: 100vh;
+            } 
+        }
+    }
+
+    
 
     video {
         object-fit: cover;
@@ -660,6 +686,43 @@ input::-moz-placeholder {
     .js-desktop-video.only-mobile {
         video {
             display: none;
+        }
+    }
+
+    .button-rounded {
+        position: absolute;
+        bottom: 34px;
+        left: 44px;
+        cursor: pointer;
+        z-index: 2;
+        @media(max-width:990px){
+            display:  none;
+        }
+        svg {
+            transform: rotate(180deg);
+        }
+
+        @media(min-width: 1200px) {
+            width: 87px;
+            height: 87px;
+            text-align: center;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    &--expanded {
+        width: 100%;
+
+        .button-rounded {
+            bottom: 34px;
+            left: 74px;
+            svg {
+                transform: rotate(360deg);
+            }
         }
     }
 }
@@ -694,49 +757,50 @@ input::-moz-placeholder {
 }
 
 .mb-0 {
-    margin-bottom: 0 !important; 
+    margin-bottom: 0 !important;
 }
 
 // hide play button 
 *::-webkit-media-controls-panel {
-    display: none!important;
+    display: none !important;
     -webkit-appearance: none;
-  }
-  
-  /* Old shadow dom for play button */
-  
-  *::-webkit-media-controls-play-button {
-    display: none!important;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+    display: none !important;
     -webkit-appearance: none;
-  }
+}
 
-  
-  /* New shadow dom for play button */
-  
-  /* This one works! */
-  
-  *::-webkit-media-controls-start-playback-button {
-    display: none!important;
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
     -webkit-appearance: none;
-  }
+}
 
-  .font-70 {
-      font-size: 70px;
-  }
+.font-70 {
+    font-size: 70px;
+}
 
 
-  .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(201, 192, 192, 0.5); 
-    z-index: 97; 
+    background-color: rgba(201, 192, 192, 0.5);
+    z-index: 97;
     pointer-events: none;
-  }
+}
+
 //   
 
-#disqus_thread{
-  padding: 20px;
+#disqus_thread {
+    padding: 20px;
 }
