@@ -1064,7 +1064,7 @@ input::-moz-placeholder {
 
 @media (min-width: 1440px) {
   :root {
-    --base-margin: 70px;
+    --base-margin: 90px;
   }
 }
 
@@ -2247,11 +2247,6 @@ input::-moz-placeholder {
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 1200px) {
-  .newsletter {
-    padding: 0 80px;
-  }
-}
 .newsletter__wrapper::after {
   content: "";
   position: absolute;
@@ -2309,11 +2304,7 @@ input::-moz-placeholder {
   position: relative;
   display: flex;
   align-items: center;
-}
-@media (max-width: 1199px) {
-  .newsletter__head {
-    border-bottom: 1px solid var(--COLOR-BLACK);
-  }
+  flex: 1;
 }
 @media (min-width: 1200px) {
   .newsletter__head {
@@ -2346,14 +2337,17 @@ input::-moz-placeholder {
 @media (max-width: 991px) {
   .newsletter__head h3 {
     font-size: 24px;
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
 }
 @media (max-width: 320px) {
   .newsletter__head h3 {
     font-size: 21px;
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
+}
+.newsletter .newsletter__body_main {
+  flex: 1;
 }
 .newsletter__body {
   padding: 0;
@@ -2376,6 +2370,7 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .newsletter__body button {
     position: relative;
+    width: 100%;
   }
 }
 .newsletter__body button.btn-wrap .btn {
@@ -2485,25 +2480,21 @@ input::-moz-placeholder {
   letter-spacing: -0.03em;
   color: rgba(0, 0, 0, 0.39);
 }
-.newsletter__bodyWrp {
-  padding: 40px 60px;
-}
-@media (min-width: 1320px) {
+@media (min-width: 1200px) {
   .newsletter__bodyWrp {
     padding: 0px 2rem;
     padding-right: 0;
     z-index: 2;
-    max-width: 660px;
   }
 }
 @media (max-width: 991px) {
   .newsletter__bodyWrp {
-    padding: 30px 0;
+    padding-bottom: 30px;
   }
 }
 .newsletter__bodyWrp .newsletter__body_wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 .newsletter__bodyWrp .newsletter__body_wrapper .form__message {
   font-size: 1rem;
@@ -2518,7 +2509,7 @@ input::-moz-placeholder {
 @media (min-width: 1200px) {
   .newsletter__text {
     line-height: 22.2px;
-    width: 120%;
+    width: 100%;
   }
 }
 @media (max-width: 520px) {
@@ -2554,6 +2545,11 @@ input::-moz-placeholder {
   .testimonials {
     padding: 4rem 0;
     padding-left: 5rem;
+  }
+}
+@media (min-width: 1680px) {
+  .testimonials {
+    padding-left: 5.6rem;
   }
 }
 @media (max-width: 520px) {
@@ -3126,7 +3122,6 @@ input::-moz-placeholder {
 }
 
 .shoptrade {
-  padding: 21px var(--base-margin) 25px;
   background-color: var(--COLOR-WHITE);
   position: relative;
   left: 0;
@@ -3134,6 +3129,12 @@ input::-moz-placeholder {
   top: 0;
   z-index: 9999;
   transition: 0.5s ease all;
+  padding: 20px 0;
+}
+@media (min-width: 1440px) {
+  .shoptrade {
+    padding: 20px 0;
+  }
 }
 @media (min-width: 1025px) {
   .shoptrade.fixed-header {
@@ -3459,7 +3460,6 @@ input::-moz-placeholder {
 .nav-container {
   width: 100%;
   justify-content: space-between;
-  padding-right: 4px;
 }
 @media (min-width: 1026px) {
   .nav-container {
@@ -3476,13 +3476,6 @@ input::-moz-placeholder {
 @media (max-width: 819px) {
   .only-desktop {
     display: none !important;
-  }
-}
-
-@media (min-width: 1440px) {
-  .shoptrade {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
@@ -3645,7 +3638,7 @@ input::-moz-placeholder {
   }
 }
 .shopify-footer__block {
-  padding: 35px 55px 55px 80px;
+  padding: 35px 55px 55px 90px;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -9739,7 +9732,19 @@ html {
 }
 
 .services-block {
-  padding: 39px var(--base-margin) 50px;
+  padding: 40px 0;
+}
+@media (min-width: 768px) {
+  .services-block {
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .services-block {
+    text-align: left;
+    padding-top: 91px;
+    padding-bottom: 51px;
+  }
 }
 .services-block__heading {
   font-weight: 700;
@@ -9822,18 +9827,6 @@ html {
 }
 .services-block__list .button.button--secondary {
   font-size: 18px;
-}
-@media (min-width: 768px) {
-  .services-block {
-    text-align: center;
-  }
-}
-@media (min-width: 1440px) {
-  .services-block {
-    text-align: left;
-    padding-top: 91px;
-    padding-bottom: 51px;
-  }
 }
 
 .button {

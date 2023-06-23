@@ -11,7 +11,7 @@
     }
 }
 .shoptrade {
-    padding: 21px var(--base-margin) 25px;
+    // padding: 21px var(--base-margin) 25px;
     background-color: var(--COLOR-WHITE);
     position: relative;
     left: 0;
@@ -19,7 +19,10 @@
     top: 0;
     z-index: 9999;
     transition: .5s ease all;
-
+    padding: 20px 0;
+    @media(min-width:1440px) {
+        padding: 20px 0;
+    }
     &.fixed-header {
         @media (min-width:1025px) {
             // border-bottom: 1px solid var(--COLOR-BLACK);
@@ -384,8 +387,6 @@
 .nav-container {
     width: 100%;
     justify-content: space-between;
-    padding-right: 4px;
-
     @media(min-width: 1026px) {
         justify-content: space-between;
     }
@@ -403,13 +404,6 @@
     }
 }
 
-
-.shoptrade {
-    @media(min-width:1440px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
 //annoucement bar 
 .announcement-bar__message{
     padding: 0;
