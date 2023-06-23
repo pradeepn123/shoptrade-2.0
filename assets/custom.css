@@ -2166,7 +2166,6 @@ input::-moz-placeholder {
 }
 @media (min-width: 768px) {
   .ourNumbers__cardItem:not(:last-child) {
-    border-right: 1px solid var(--COLOR-BLACK);
     position: relative;
   }
 }
@@ -5041,11 +5040,31 @@ input::-moz-placeholder {
   }
 }
 .aboutCount .ourNumbers__cardItem {
-  padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.aboutCount .ourNumbers__cardItem:not(:first-child) {
+  padding-left: 20px;
+}
+@media (max-width: 991px) {
+  .aboutCount .ourNumbers__cardItem:not(:first-child) {
+    padding-left: unset;
+  }
+}
+.aboutCount .ourNumbers__cardItem:not(:last-child) {
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .aboutCount .ourNumbers__cardItem:not(:last-child) {
+    padding-right: unset;
+  }
 }
 @media (max-width: 991px) {
   .aboutCount .ourNumbers__cardItem {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
