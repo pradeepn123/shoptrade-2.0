@@ -1,5 +1,44 @@
 {
   "sections": {
+    "ffa88602-72e6-4ab6-a4f5-733f2b494e26": {
+      "type": "customer_journey",
+      "blocks": {
+        "43c8329c-3f03-4248-9018-f7a6143c18a3": {
+          "type": "Block",
+          "settings": {
+            "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect width=\"64\" height=\"64\" rx=\"32\" fill=\"#FF7121\"><\/rect>\n<path d=\"M43.6372 24.7288L35.1337 33.3651C34.9809 33.5202 34.9037 33.598 34.8354 33.6591C33.7308 34.6478 32.0606 34.6478 30.9561 33.6592C30.8877 33.598 30.8099 33.5203 30.6571 33.3651C30.5043 33.2099 30.4279 33.1323 30.3595 33.0711C29.255 32.0825 27.5841 32.0825 26.4796 33.0711C26.4113 33.1321 26.3351 33.2095 26.1831 33.364L20.3638 39.2742M43.6372 24.7288L43.6365 33.456M43.6372 24.7288H34.9092\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "block_heading": "Optimized Conversions",
+            "block_description": "Boost your conversion rates and drive revenue growth with our expertly crafted UX evaluations."
+          }
+        },
+        "2100e748-b91a-4d33-98b3-79b792697e14": {
+          "type": "Block",
+          "settings": {
+            "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect width=\"64\" height=\"64\" rx=\"32\" fill=\"#FF7121\"><\/rect>\n<path d=\"M36.3637 42.1832C36.3637 38.9699 32.4564 36.365 27.6365 36.365C22.8165 36.365 18.9092 38.9699 18.9092 42.1832M45.091 29.0923L39.2728 34.9104L36.3637 32.0014M27.6365 32.0014C24.4232 32.0014 21.8183 29.3965 21.8183 26.1832C21.8183 22.9699 24.4232 20.365 27.6365 20.365C30.8497 20.365 33.4546 22.9699 33.4546 26.1832C33.4546 29.3965 30.8497 32.0014 27.6365 32.0014Z\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "block_heading": "Enhanced User Experience",
+            "block_description": "Delight your customers with a seamless  shopping experience that keeps them coming back for more."
+          }
+        },
+        "e8881e2c-f3f6-40fa-ab1f-dfe32b67ad17": {
+          "type": "Block",
+          "settings": {
+            "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect width=\"64\" height=\"64\" rx=\"32\" fill=\"#FF7121\"><\/rect>\n<path d=\"M31.9991 24.7286V32.0013H39.2718M31.9991 45.0922C24.7692 45.0922 18.9082 39.2312 18.9082 32.0013C18.9082 24.7714 24.7692 18.9104 31.9991 18.9104C39.229 18.9104 45.09 24.7714 45.09 32.0013C45.09 39.2312 39.229 45.0922 31.9991 45.0922Z\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "block_heading": "Streamlined Operations",
+            "block_description": "Save time & resources by streamlining your website's design,  resulting in improved operational efficiency."
+          }
+        }
+      },
+      "block_order": [
+        "43c8329c-3f03-4248-9018-f7a6143c18a3",
+        "2100e748-b91a-4d33-98b3-79b792697e14",
+        "e8881e2c-f3f6-40fa-ab1f-dfe32b67ad17"
+      ],
+      "settings": {
+        "section_title": "Reimagining <br>Customer Journey",
+        "main_section_description": "Our high-value Audit Reports serve as beacons of insight, delivering a swift and refreshing viewpoint of your customer journey. This is more than just an audit; it's your competitive edge, your digital journey reimagined.",
+        "cta_button_text": "View Plan"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -333,7 +372,9 @@
         "19d004a4-6c34-4020-b269-19ca44d0da31": {
           "type": "sliderType",
           "settings": {
+            "slidertxt": "",
             "sliderImage": "shopify:\/\/shop_images\/Group_4651.webp",
+            "testimonial_logo": false,
             "sliderText": "“ShopTrade was experienced in developing apps and set realistic timelines.“",
             "name": "Zenos Schmickrath",
             "designation": "Co-Founder"
@@ -342,7 +383,9 @@
         "454927ea-167f-48e0-9a5a-f8afe79f0c10": {
           "type": "sliderType",
           "settings": {
+            "slidertxt": "",
             "sliderImage": "shopify:\/\/shop_images\/Group_4652.webp",
+            "testimonial_logo": false,
             "sliderText": "“They’ve done a really good job. They were on top of things from the get-go.“",
             "name": "Marc Heuberger",
             "designation": "CMO"
@@ -351,7 +394,9 @@
         "055fb115-9175-403b-9c94-13bb26508775": {
           "type": "sliderType",
           "settings": {
+            "slidertxt": "",
             "sliderImage": "shopify:\/\/shop_images\/Group_4648.webp",
+            "testimonial_logo": false,
             "sliderText": "“Their communication and responsiveness are impressive in the workflow.“",
             "name": "Graham Ryan",
             "designation": "Founder & CEO"
@@ -360,7 +405,9 @@
         "27d3d391-023c-4356-97de-764ae26f40a1": {
           "type": "sliderType",
           "settings": {
+            "slidertxt": "",
             "sliderImage": "shopify:\/\/shop_images\/Group_4650.webp",
+            "testimonial_logo": false,
             "sliderText": "“I am continually impressed by their expertise in Shopify and web development.“",
             "name": "Eddie Rosado",
             "designation": "VP of Product Development"
@@ -435,6 +482,7 @@
     }
   },
   "order": [
+    "ffa88602-72e6-4ab6-a4f5-733f2b494e26",
     "main",
     "7c197c6c-759f-4b28-91b8-9e07ba29726e",
     "1e395575-fd0d-4794-9bb2-c7b3bc2127c5",
