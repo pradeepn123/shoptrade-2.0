@@ -31,35 +31,11 @@
             "PROJECT_DEADLINE": "30\/06\/2023",
             "STATUS": "In Progress"
           }
-        },
-        "815238d9-041b-4603-a2d8-59b40e7e4bfb": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "PROJECT10NAME",
-            "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnshi",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "30\/07\/2023",
-            "STATUS": "Completed"
-          }
-        },
-        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
-            "More_Detail": "",
-            "TEAM": "",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "30\/07\/2023",
-            "STATUS": "Yet to start"
-          }
         }
       },
       "block_order": [
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
-        "f505c530-8428-480c-85e3-17293b570ab8",
-        "815238d9-041b-4603-a2d8-59b40e7e4bfb",
-        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7"
+        "f505c530-8428-480c-85e3-17293b570ab8"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
