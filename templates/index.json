@@ -723,7 +723,7 @@
           "type": "countblock",
           "settings": {
             "currrencySige": "$",
-            "cardNumber": 300000000,
+            "cardNumber": 0,
             "countText": "Revenue generated through our solutions"
           }
         },
