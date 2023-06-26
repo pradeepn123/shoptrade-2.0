@@ -523,7 +523,8 @@ $(document).ready(function () {
       countString.substring(0, countString.length - 1)
     );
     if (countString.slice(countString.length - 1) != "N") {
-      $(this).attr("data-charactor", countString.slice(countString.length - 1));
+      // $(this).attr("data-charactor", countString.slice(countString.length - 1));
+       $(this).attr("data-charactor","M"+$(this).attr("data-charactor"));
     }
   });
 
