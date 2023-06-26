@@ -24,11 +24,11 @@
         "f505c530-8428-480c-85e3-17293b570ab8": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
+            "PROJECT_NAME": "Kimia",
             "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnshi",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "30\/07\/2023",
+            "TEAM": "Umesh",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "30\/06\/2023",
             "STATUS": "In Progress"
           }
         },
