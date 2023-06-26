@@ -24,7 +24,7 @@
 /* Bottom Content Blocks */
 .cus_jr .content_containerParent{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: initial !important;
     column-gap: 35px;
 }
 .cus_jr .content_containerParent .content_container{
@@ -80,8 +80,8 @@
 }
 /* Media Queries */
 @media screen and (min-width: 992px) {
-    .cus_jr .cus_jr_child {
-        margin-bottom: 73px;
+    .cus_jr .content_containerParent {
+        margin-top: 73px;
     }
 }
 
@@ -106,7 +106,7 @@
     .cus_jr .cus_jr_child .cus_jr_child_text p{
         font-size: 14px;
     }
-    .cus_jr .cus_jr_child{
+    .cus_jr .content_containerParent{
         margin-bottom: 48px;
     }
 
@@ -152,9 +152,7 @@
     }
     /* Bottom Content */
     .cus_jr .content_containerParent{
-        grid-template-columns: initial;
-        grid-template-rows: repeat(3, 1fr);
-        grid-auto-flow: column;
+        grid-template-columns: initial !important;
     }
     .cus_jr .content_containerParent .content_container:not(:last-of-type){
         margin-bottom: 32px;

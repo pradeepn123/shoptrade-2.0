@@ -32,9 +32,9 @@
                 </div>
             </div>
 
-            <div class="content_containerParent">
+            <div class="content_containerParent" style="grid-template-rows: repeat({{ section.blocks.size }} , 1fr);grid-template-columns: repeat({{ section.blocks.size }} , 1fr); ">
                 {% for block in section.blocks %}
-                    <div class="content_container">
+                    <div class="content_container" style=" {% if block.settings.svg_icon == blank and block.settings.block_heading == blank or block.settings.block_description == blank%} display: none; {% endif %} ">
                         {{ block.settings.svg_icon }}
                         <span class="cc_heading">{{ block.settings.block_heading }}</span>
                         <span class="cc_description">{{ block.settings.block_description }}</span>
@@ -42,8 +42,8 @@
                 {% endfor %}
             </div>
 
-            <div class="cus_ctaButton" style="background-color: {{ section.settings.button_bgColor }};">
-                    <a href="{{ section.settings.cta_redirect }}" style="color:{{ section.settings.button_textColor }}">{{ section.settings.cta_button_text }}</a>
+            <div class="cus_ctaButton" style="background-color: {{ section.settings.button_bgColor }}; {%if section.settings.cta_button_text == blank and section.settings.cta_redirect == blank %}display: none{% endif %}">
+                    <a href="{{ section.settings.cta_redirect }}" style="color:{{ section.settings.button_textColor }}; {% if section.settings.cta_redirect == blank %}pointer-events: none;{% endif %}">{{ section.settings.cta_button_text }}</a>
             </div>
         </div>
     </div>
@@ -141,6 +141,11 @@
                         "label": "Description"
                     }
                 ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Customer Journey"
             }
         ]
     }
