@@ -9,15 +9,32 @@
     <td>
       <span class="heading hide">
         <p>{{ item.settings.PROJECT_NAME | truncate: 27 }}</p>
-        <a href="{{ item.settings.More_Detail }}">More Detail <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrow-orange.svg?v=1665512744" loading="lazy" width="11" height="11"/> </a>
+        <a href="{{ item.settings.More_Detail }}"> More Detail <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrow-orange.svg?v=1665512744" loading="lazy" width="11" height="11"/> </a>
       </span>
     </td>
     <td>
       {% if item.settings.TEAM != blank %}
-        <abbr title="{{ item.settings.TEAM }}"><span class="hide">{{ item.settings.TEAM | truncate: 23 }}ⓘ</span></abbr>
+        {% assign members = item.settings.TEAM %}
+        {% assign ttmembers = members | split: "," %}
+        {% assign count = ttmembers.size | minus: 2 %}
+      
+        {% if count > 0 %}
+          <div class="tooltip-container">
+            <span class="tooltip-trigger">{{ item.settings.TEAM | truncate: 23 }} &#9432;</span>
+            <div class="tooltip">
+              {% for i in (2..ttmembers.size) %}
+                {{ ttmembers[i] }}
+              {% endfor %}
+            </div>
+          </div>
+        {% else %}
+          <span class="tooltip-trigger">{{ item.settings.TEAM | truncate: 23 }}</span>
+          <div class="tooltip">{{ ttmembers[2] }}</div>
+        {% endif %}
       {% else %}
         <span>team not assigned</span>
       {% endif %}
+      
     </td>
     <td>
       <span>{{ item.settings.PHASE }}</span>

@@ -2,7 +2,7 @@
 
   .client_project_status {
     font-family: 'Epilogue';
-    margin: 0px 70px;
+    padding-bottom: 10px;
   }
 
   .client_project_status .title {
@@ -11,6 +11,7 @@
     line-height: 68px;
     letter-spacing: -0.03em;
     margin: 36px auto;
+    color: #000;
   }
 
   .client_project_status table:not([class]) {
@@ -28,6 +29,7 @@
     letter-spacing: -0.03em;
     color: #000000;
     margin-right: 53px;
+    text-transform: uppercase;
   }
 
   .client_project_status .table_filter {
@@ -48,13 +50,17 @@
     display: block;
     width: 100%;
     height: 3px;
+    transition: all 10s linear;
   }
 
   .client_project_status #projectTable {
     width: 100%;
     border-spacing: 0 14px;
-    margin: 70px 0;
+    margin: 45px 0;
     margin-bottom: 14px;
+  }
+  .client_project_status #projectTable th{
+    margin-left: 10px;
   }
 
   .client_project_status #projectTable tbody {
@@ -75,7 +81,11 @@
     line-height: 30px;
     color: #000000;
     width: 100%;
-    border: 1px solid #000000;
+    border: none;
+    border-top: 1px solid var(--COLOR-BLACK);
+    border-bottom: 1px solid var(--COLOR-BLACK);
+    border-left: 1px solid var(--COLOR-BLACK);
+    display: flex;
   }
 
   .client_project_status #projectTable tbody tr td:first-child {
@@ -84,6 +94,7 @@
 
   .client_project_status #projectTable tbody tr td:last-child {
     border-radius: 0px 8px 8px 0px;
+    border-right: 1px solid var(--COLOR-BLACK);
   }
 
   .client_project_status #projectTable tbody td span * {
@@ -115,14 +126,32 @@
 
   .client_project_status #projectTable tbody td .heading a {
     letter-spacing: -0.03em;
+    text-decoration: none;
+    text-decoration-color: transparent;
+    position: relative;
   }
 
+  .client_project_status #projectTable tbody td .heading a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #FF7121;
+    transform-origin: left; 
+     transform: scaleX(0);
+    transition: transform 0.3s linear;
+  } 
+  
+  .client_project_status #projectTable tbody td .heading a:hover::after {
+    transform: scaleX(0.8); 
+    /* width:100%; */
+  }
   .client_project_status #projectTable tbody td .heading a:hover img {
       visibility : visible;
   }
 
   .client_project_status #projectTable tbody td .heading a img{
-    visibility : hidden;
     transform: rotate(315deg);
     margin: 0 0 5px 5px;
   }
@@ -133,6 +162,9 @@
     align-items: center;
     overflow: hidden;
   }
+  .client_project_status #projectTable thead tr {
+    grid-template-columns: 20% 16% 16% 16% 16% 16%;
+  }
 
   .client_project_status #projectTable thead tr th {
     width: 100%;
@@ -140,46 +172,44 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: -0.03em;
     color: #000000;
     opacity: 0.5;
     border: unset;
     padding: 0px;
   }
 
-  .Yet_to_start {
+  .client_project_status  .Yet_to_start {
     color: #ff985d !important;
   }
 
-  .In_Progress {
+  .client_project_status  .In_Progress {
     color: #0400c1 !important;
   }
 
-  .Completed {
+  .client_project_status  .Completed {
     color: #00933b !important;
   }
 
-  abbr {
+  .client_project_status  abbr {
     text-decoration: none;
   }
- .set-overflow{
-  overflow-x: scroll;
-  width: 100%;
+
+ .client_project_status .hide{
+  cursor: default;
+
  }
 
  @media screen and (max-width:1024px){
-  .client_project_status {
-    margin: 0px 52.5px;
-  }
+
 
   .client_project_status #projectTable {
     margin: 52.5px 0;
     margin-bottom: 9.8px;
   }
 
-
   .client_project_status .title {
     margin: 52.5px auto;
+    line-height: 52px;
   }
 
   .client_project_status .table_filter a {
@@ -187,10 +217,9 @@
   }
  }
 
+
  @media screen and (max-width:840px){
-  .client_project_status {
-    margin: 0px 30px;
-  }
+
 
   .client_project_status #projectTable {
     margin: 30px 0;
@@ -200,21 +229,53 @@
   .client_project_status .title {
     margin: 30px auto;
   }
+  .client_project_status #projectTable tbody tr {
+    grid-template-columns: 25% 20% 20% 20% 20% 20%;
+  }
+  .client_project_status #projectTable thead tr {
+    grid-template-columns: 25% 20% 20% 20% 20% 20%;
+  }
+  .client_project_status .set-overflow{
+    overflow-x: scroll;
+    width: 100%;
+    cursor: grab;
+   }
+   .client_project_status .set-overflow:active{
+    cursor: grabbing;
+   }
+   .client_project_status .set-overflow::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+    }
+    .client_project_status .set-overflow::-webkit-scrollbar{
+      height: 7px;
+      background-color: #F5F5F5;
+    
+    }
+    
+    .client_project_status .set-overflow::-webkit-scrollbar-thumb{
+      background-color: #FF7121;
+      height: 5px;
+      
+    }
+              
+ }
+ @media(max-width:768px){
+  .client_project_status #projectTable tbody tr {
+    grid-template-columns: 35% 30% 30% 30% 30% 30%;
+  }
+  .client_project_status #projectTable thead tr {
+    grid-template-columns: 35% 30% 30% 30% 30% 30%;
+  }
 
  }
 
  @media screen and (max-width:560px){
 
-  .client_project_status #projectTable tbody tr {
-    grid-template-columns: 20% 15% 15% 15% auto auto;
-  }
-  .client_project_status #projectTable thead tr {
-    grid-template-columns: 20% 15% 15% 15% auto auto;
-  }
-
-.client_project_status {
-    margin: 0px 20px;
+.client_project_status .title{
+  font-size: 28px !important;
 }
+
 
 .client_project_status #projectTable {
   margin: 0;
@@ -222,7 +283,9 @@
 }
 
 .client_project_status .title {
-  margin: 0 auto;
+  margin: 25px auto;
+  line-height: 1.1;
+
 }
 
 .client_project_status .table_filter a {
@@ -237,7 +300,53 @@
     margin: 2px;
   }
 
-  .hide{
+ .client_project_status .hide{
     overflow: hidden;
   }
+
+}
+@media(max-width:375px){
+  .client_project_status .table_filter a {
+    margin-right: 10px;
+  }
+}
+
+.client_project_status .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.client_project_status .tooltip-trigger {
+  cursor: pointer;
+}
+
+.client_project_status .tooltip {
+  position: absolute;
+  top: 96%;
+  left: 0%;
+  display: none;
+  background-color: #FFF;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FF7121;
+  box-shadow: 5px 5px  #888888;
+  cursor: default;
+  color: #000;
+  border-radius: 10px;
+  z-index: 9;
+}
+
+.client_project_status .tooltip-container:hover .tooltip {
+  display: block;
+}
+
+.client_project_status .tooltip-container:hover .tooltip-trigger::after{
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  border-width: 15px;
+  border-style: solid;
+  transform: rotate(180deg);
+  border-color: #FF7121 transparent transparent transparent;
 }

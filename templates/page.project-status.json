@@ -15,7 +15,7 @@
           "settings": {
             "PROJECT_NAME": "PROJECT NAME",
             "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnshi,\nAmit Gupta,\nShivnshi,\nAmit Gupta,\nShivnshi,",
+            "TEAM": "Amit Gupta ,\nShivnshi ,   \nOne , <br>\ntwo , <br>\nthree ,",
             "PHASE": "Design",
             "PROJECT_DEADLINE": "30\/07\/2023",
             "STATUS": "Yet to start"
@@ -26,7 +26,7 @@
           "settings": {
             "PROJECT_NAME": "PROJECT NAME",
             "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnshi",
+            "TEAM": "Amit Gupta,\nShivnshi,\nOne , <br>\ntwo , <br>\nthree ,",
             "PHASE": "Design",
             "PROJECT_DEADLINE": "30\/07\/2023",
             "STATUS": "In Progress"
@@ -35,7 +35,7 @@
         "815238d9-041b-4603-a2d8-59b40e7e4bfb": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT10NAME",
+            "PROJECT_NAME": "PROJECT NAME",
             "More_Detail": "",
             "TEAM": "Amit Gupta,\nShivnshi",
             "PHASE": "Development",
