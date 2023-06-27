@@ -1,40 +1,26 @@
 {{ 'customer_journey.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-    @media screen and (min-width: 1200px){
-        .cus_jr{
-            margin-top: {{ section.settings.section_margin_top }}px;
-            margin-bottom: {{ section.settings.section_margin_bottom }}px;"
-        }
-        .cus_jr_parent{
-            background-color: {{ section.settings.section_bgColor }};
-            color: {{ section.settings.section_fontColor }};
-        }
+@media screen and (max-width: 1199px){
+    .audit_repP{
+        background-color: {{ section.settings.section_bgColor }} !important;
+        color: {{ section.settings.section_fontColor }} !important;
     }
-    @media screen and (max-width: 1199px){
-        .cus_jr{
-            background-color: {{ section.settings.section_bgColor }};
-            color: {{ section.settings.section_fontColor }};
-        }
-    }
+}
 {% endstyle %}
 
-<div class="cus_jr">
-    <div class="container">
-        <div class="cus_jr_parent">
+<div class="cus_jr audit_repP">
+    <div class="container" style=" background-color: {{ section.settings.section_bgColor }}; color: {{ section.settings.section_fontColor }};">
+        <div class="cus_jr_parent" style=" background-color: {{ section.settings.section_bgColor }}; color: {{ section.settings.section_fontColor }};">
             <div class="cus_jr_child">
                 <div class="cus_jr_child_heading">
                     <p>{{ section.settings.section_title }}</p>
-                </div>
-
-                <div class="cus_jr_child_text">
-                    <p>{{ section.settings.main_section_description }}</p>
                 </div>
             </div>
 
             <div class="content_containerParent" style="grid-template-rows: repeat({{ section.blocks.size }} , 1fr);grid-template-columns: repeat({{ section.blocks.size }} , 1fr); ">
                 {% for block in section.blocks %}
-                    <div class="content_container" style=" {% if block.settings.svg_icon == blank and block.settings.block_heading == blank or block.settings.block_description == blank%} display: none; {% endif %} ">
+                    <div class="content_container" style=" color: {{ block.settings.block_textColor }} ;background-color: {{ block.settings.block_bgColor }}; {% if block.settings.svg_icon == blank and block.settings.block_heading == blank or block.settings.block_description == blank%} display: none; {% endif %} ">
                         {{ block.settings.svg_icon }}
                         <span class="cc_heading">{{ block.settings.block_heading }}</span>
                         <span class="cc_description">{{ block.settings.block_description }}</span>
@@ -51,19 +37,13 @@
 
 {% schema %}
     {
-        "name": "Customer Journey",
+        "name": "Audit Report Process",
         "settings": [
             {
                 "type": "textarea",
                 "id": "section_title",
                 "label": "Section Title",
                 "default": "Reimagining Customer Journey"
-            },
-            {
-                "type": "text",
-                "id": "main_section_description",
-                "label": "Main Section Description",
-                "default": "Our high-value Audit Reports serve as beacons of insight, delivering a swift and refreshing viewpoint of your customer journey. This is more than just an audit; it's your competitive edge, your digital journey reimagined."
             },
             {
                 "type": "color",
@@ -139,13 +119,25 @@
                         "type": "text",
                         "id": "block_description",
                         "label": "Description"
+                    },
+                    {
+                        "type": "color",
+                        "id": "block_bgColor",
+                        "label": "Background Color",
+                        "default": "#3A4ED4"
+                    },
+                    {
+                        "type": "color",
+                        "id": "block_textColor",
+                        "label": "Text Color",
+                        "default": "#FFF"
                     }
                 ]
             }
         ],
         "presets": [
             {
-                "name": "Customer Journey"
+                "name": "Audit Report Process"
             }
         ]
     }
