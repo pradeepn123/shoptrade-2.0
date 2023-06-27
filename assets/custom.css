@@ -9991,7 +9991,6 @@ html {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-<<<<<<< HEAD
 .client_project_status {
   font-family: "Epilogue";
   padding-bottom: 10px;
@@ -10328,7 +10327,8 @@ html {
 }
 .audit_repP .cus_jr_child .cus_jr_child_heading {
   flex: 1 0 100%;
-=======
+}
+
 #customer_login .field::after {
   display: none;
 }
@@ -10606,5 +10606,4 @@ html {
 }
 .shopify-section .customer #btn-txt-wraper #resetpswd-cancel:hover:after {
   width: 100%;
->>>>>>> 2438d4e (signup and signin resdesign)
 }
