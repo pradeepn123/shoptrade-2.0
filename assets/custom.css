@@ -9991,6 +9991,16 @@ html {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
+@media screen and (min-width: 1200px) {
+  .audit_repP .cus_jr_parent {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .audit_repP .cus_jr_parent {
+    padding: 0 !important;
+  }
+}
 @media screen and (max-width: 1199px) {
   .audit_repP .content_containerParent {
     margin-top: 36px !important;
