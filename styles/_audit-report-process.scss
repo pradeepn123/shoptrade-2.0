@@ -1,0 +1,31 @@
+.audit_repP {
+    .content_containerParent{
+        @media screen and (max-width: 1199px){
+            margin-top: 36px !important;
+        }
+        @media screen and (max-width: 767px){
+            margin-top: 16px !important;
+            margin-bottom: 0 !important;
+        }
+        .content_container{
+            border: none !important;
+            .cc_heading{
+                @media screen and (max-width: 767px){
+                    word-break: normal;
+                }
+                word-break: break-all;
+            }
+            svg{
+                margin-bottom: 24px !important;
+                @media screen and (max-width: 767px){
+                    margin-bottom: 12px !important;
+                }
+            }
+        }
+    }
+    .cus_jr_child{
+        .cus_jr_child_heading{
+            flex: 1 0 100%;
+        }
+    }
+}

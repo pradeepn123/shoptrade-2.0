@@ -1,0 +1,168 @@
+/* Main Conatiner */
+.cus_jr .cus_jr_child{
+    display: flex;
+    flex-direction: row;
+}
+.cus_jr .cus_jr_child div{
+    flex: 1 0 50%;
+}
+.cus_jr .cus_jr_child div p{
+    margin: 0;
+}
+
+/* Top Content Blocks */
+.cus_jr .cus_jr_child .cus_jr_child_text p {
+    font-family: "Epilogue";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 100%;
+}
+
+/* Bottom Content Blocks */
+.cus_jr .content_containerParent{
+    display: grid;
+    grid-template-rows: initial !important;
+    column-gap: 35px;
+}
+.cus_jr .content_containerParent .content_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+.cus_jr .content_containerParent .content_container svg{
+    margin-bottom: 20px;
+}
+
+.cus_jr .cus_jr_child .cus_jr_child_heading p{
+    font-family: "Epilogue";
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cus_jr .content_containerParent .content_container .cc_heading{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.cus_jr .content_containerParent .content_container .cc_description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cus_ctaButton{
+    text-align: center;
+    padding: 12px 60px;
+    border-radius: 39px;
+    width: fit-content;
+    margin: 67px auto 0 auto;
+}
+.cus_ctaButton a{
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+}
+/* Media Queries */
+@media screen and (min-width: 992px) {
+    .cus_jr .content_containerParent {
+        margin-top: 73px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cus_jr .cus_jr_parent {
+        padding: 88px;
+    }
+
+    .cus_jr .cus_jr_parent {
+        border-radius: 16px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    /* Top Container */
+    .cus_jr_parent{
+        padding: 40px 0;
+    }
+    .cus_jr .cus_jr_child .cus_jr_child_heading p{
+        font-size: 36px;
+    }
+    .cus_jr .cus_jr_child .cus_jr_child_text p{
+        font-size: 14px;
+    }
+    .cus_jr .content_containerParent{
+        margin-bottom: 48px;
+    }
+
+    /* Bottom Content */
+    .cus_jr .content_containerParent .content_container svg{
+        width: 45px;
+        height: auto;
+    }
+    .cus_jr .content_containerParent .content_container .cc_heading{
+        font-size: 24px;
+    }
+    .cus_jr .content_containerParent .content_container .cc_description{
+        font-size: 14px;
+    }
+    .cus_ctaButton{
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .cus_jr_parent{
+        padding: 48px 0;
+    }
+    /* Top Content */
+    .cus_jr .cus_jr_child{
+        flex-direction: column;
+    }
+    .cus_jr .cus_jr_child .cus_jr_child_heading p{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.01em;
+        margin-bottom: 16px;
+    }
+    .cus_jr .cus_jr_child .cus_jr_child_heading p br{
+        display: none;
+    }
+    .cus_jr .cus_jr_child .cus_jr_child_text p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+    /* Bottom Content */
+    .cus_jr .content_containerParent{
+        grid-template-columns: initial !important;
+    }
+    .cus_jr .content_containerParent .content_container:not(:last-of-type){
+        margin-bottom: 32px;
+    }
+    .cus_jr .content_containerParent .content_container svg{
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+    .cus_jr .content_containerParent .content_container svg {
+        margin-bottom: 0;
+    }
+}
