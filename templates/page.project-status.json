@@ -13,53 +13,41 @@
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
+            "PROJECT_NAME": "Sproos Life",
             "More_Detail": "",
-            "TEAM": "Amit Gupta ,\nShivnshi ,   \nOne , <br>\ntwo , <br>\nthree ,",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "30\/07\/2023",
-            "STATUS": "Yet to start"
+            "TEAM": "Pradeep, Shweta",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "30\/06\/2023",
+            "STATUS": "In Progress"
           }
         },
         "f505c530-8428-480c-85e3-17293b570ab8": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
-            "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnsh,\nOne , <br>\ntwo , <br>\nthree ,",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "30\/07\/2023",
+            "PROJECT_NAME": "Kimia",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/362339",
+            "TEAM": "Umesh",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "7\/07\/2023",
             "STATUS": "In Progress"
           }
         },
-        "815238d9-041b-4603-a2d8-59b40e7e4bfb": {
+        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
+            "PROJECT_NAME": "ShopTrade Audit",
             "More_Detail": "",
-            "TEAM": "Amit Gupta,\nShivnshi",
+            "TEAM": "Sahrudh",
             "PHASE": "Development",
-            "PROJECT_DEADLINE": "30\/07\/2023",
-            "STATUS": "Completed"
-          }
-        },
-        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "PROJECT NAME",
-            "More_Detail": "",
-            "TEAM": "",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "30\/07\/2023",
-            "STATUS": "Yet to start"
+            "PROJECT_DEADLINE": "29\/06\/2023",
+            "STATUS": "In Progress"
           }
         }
       },
       "block_order": [
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
         "f505c530-8428-480c-85e3-17293b570ab8",
-        "815238d9-041b-4603-a2d8-59b40e7e4bfb",
-        "5a5d8b44-7986-45e1-b60a-e6668dddd2c7"
+        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
