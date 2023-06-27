@@ -36,7 +36,81 @@
       "settings": {
         "section_title": "Reimagining <br>Customer Journey",
         "main_section_description": "Our high-value Audit Reports serve as beacons of insight, delivering a swift and refreshing viewpoint of your customer journey. This is more than just an audit; it's your competitive edge, your digital journey reimagined.",
-        "cta_button_text": "View Plan"
+        "section_bgColor": "#3a4ed4",
+        "section_fontColor": "#ffffff",
+        "cta_button_text": "View Plan",
+        "cta_redirect": "",
+        "button_bgColor": "#ff7121",
+        "button_textColor": "#ffffff",
+        "section_margin_top": 55,
+        "section_margin_bottom": 80
+      }
+    },
+    "ba083ddc-3b96-4311-a1bf-b3b1ecd75fb0": {
+      "type": "inTheReport",
+      "blocks": {
+        "c79378c4-b059-45f0-8ee4-238e4a5ffbac": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/mobile-thumbnail_96cbd01e-8a38-4266-9ffa-df4bdfd5fa6a.jpg",
+            "blockHeading": "Complete Redesign",
+            "blockContent": "Our skilled team of designers will give each section or page of your website a complete redesign, ensuring a visually stunning and user-friendly interface."
+          }
+        },
+        "20a74ab5-4ff1-44c5-af65-b36e1374bc3a": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/Rectangle_401.jpg",
+            "blockHeading": "Section-by-Section Analysis",
+            "blockContent": "Our senior product designers will conduct a thorough analysis of each section, identifying areas for improvement and providing actionable insights."
+          }
+        },
+        "83012528-b750-4ba3-a5d8-364268c465d2": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/Midway.jpg",
+            "blockHeading": "Improved Messaging & Call-to-Actions",
+            "blockContent": "We'll optimize your website's messaging and call-to-actions to captivate and guide your customers through their journey, resulting in higher engagement and conversions."
+          }
+        },
+        "d4f9ec9f-d81b-45da-b3f5-65993d2f4076": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/SNS-Health.jpg",
+            "blockHeading": "Enhanced Page Flows",
+            "blockContent": "We'll streamline the navigation and optimize the flow of your pages, making it effortless for users to find what they need and complete their purchase."
+          }
+        },
+        "e96b622d-166d-47db-ab97-9470ff742b90": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/synchro_new_img.jpg",
+            "blockHeading": "Easy Dev Handoff",
+            "blockContent": "You'll receive Figma design file of the updated user experience, empowering you to visualize the changes and collaborate effectively with your team."
+          }
+        },
+        "8f7facf3-2ccb-4b99-94b0-cca901217346": {
+          "type": "Block",
+          "settings": {
+            "blockImage": "shopify:\/\/shop_images\/Pro-Capture-One-0419_137f5b98-9091-4805-b719-9d00c538dff8.jpg",
+            "blockHeading": "Long-Lasting Conversion Tactics",
+            "blockContent": "We employ proven conversion tactics that have a lasting impact on your business, boosting customer lifetime value , average order value (AOV), and conversion rate (CVR)."
+          }
+        }
+      },
+      "block_order": [
+        "c79378c4-b059-45f0-8ee4-238e4a5ffbac",
+        "20a74ab5-4ff1-44c5-af65-b36e1374bc3a",
+        "83012528-b750-4ba3-a5d8-364268c465d2",
+        "d4f9ec9f-d81b-45da-b3f5-65993d2f4076",
+        "e96b622d-166d-47db-ab97-9470ff742b90",
+        "8f7facf3-2ccb-4b99-94b0-cca901217346"
+      ],
+      "settings": {
+        "heading": "In The Report",
+        "no_of_columns": 3,
+        "no_of_rows": 2,
+        "column_gap": 20
       }
     },
     "main": {
@@ -483,6 +557,7 @@
   },
   "order": [
     "ffa88602-72e6-4ab6-a4f5-733f2b494e26",
+    "ba083ddc-3b96-4311-a1bf-b3b1ecd75fb0",
     "main",
     "7c197c6c-759f-4b28-91b8-9e07ba29726e",
     "1e395575-fd0d-4794-9bb2-c7b3bc2127c5",
