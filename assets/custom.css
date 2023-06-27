@@ -12159,6 +12159,7 @@ html {
   line-height: 36px;
   margin-left: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   letter-spacing: 0;
 }
 @media (max-width: 320px) {
@@ -12260,4 +12261,284 @@ html {
   text-decoration-color: #c7cefa;
 =======
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+}
+#customer_login .field::after {
+  display: none;
+}
+#customer_login .field input {
+  border: 1px solid #A6A9AB;
+  border-radius: 35px;
+  font-size: 16px;
+}
+#customer_login .field input:focus {
+  box-shadow: none;
+}
+#customer_login .field label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3882352941);
+  font-family: Epilogue, sans-serif !important;
+}
+#customer_login .field #forgot-pswd {
+  position: absolute;
+  display: inline-block;
+  top: 31px;
+  right: 20px;
+  font-size: 13px;
+  text-decoration: none;
+}
+@media (max-width: 520px) {
+  #customer_login .field #forgot-pswd {
+    position: unset;
+    margin-top: 20px;
+  }
+}
+#customer_login .field #forgot-pswd::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(18, 18, 18, 0.8509803922);
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+#customer_login .field #forgot-pswd:hover:after {
+  width: 100%;
+}
+#customer_login button {
+  background-color: var(--COLOR-PRIMARY);
+  padding: 24px 52px;
+  border-radius: 42px;
+  margin: 2rem 0 0;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  #customer_login button {
+    font-size: 1.2rem;
+  }
+}
+#customer_login #button-text-wrap {
+  font-size: 18px;
+  margin-top: 5rem;
+}
+@media (max-width: 520px) {
+  #customer_login #button-text-wrap {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  #customer_login #button-text-wrap {
+    font-size: 16px;
+    letter-spacing: 0.01px;
+  }
+}
+@media (max-width: 321px) {
+  #customer_login #button-text-wrap {
+    font-size: 15px;
+  }
+}
+#customer_login #button-text-wrap #create-account {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  #customer_login #button-text-wrap #create-account {
+    font-size: 16px;
+  }
+}
+@media (max-width: 321px) {
+  #customer_login #button-text-wrap #create-account {
+    font-size: 15px;
+  }
+}
+#customer_login #button-text-wrap #create-account::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(18, 18, 18, 0.8509803922);
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+#customer_login #button-text-wrap #create-account:hover:after {
+  width: 100%;
+}
+
+#create_customer .field::after {
+  display: none;
+}
+#create_customer .field input {
+  border: 1px solid #A6A9AB;
+  border-radius: 35px;
+  font-size: 16px;
+}
+#create_customer .field input:focus {
+  box-shadow: none;
+}
+#create_customer .field label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3882352941);
+  font-family: Epilogue, sans-serif !important;
+}
+#create_customer button {
+  background-color: var(--COLOR-PRIMARY);
+  padding: 24px 52px;
+  border-radius: 42px;
+  margin: 2rem 0 0;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  #create_customer button {
+    font-size: 1.2rem;
+  }
+}
+#create_customer #btn-txt-wrapp {
+  font-size: 18px;
+  margin-top: 5rem;
+}
+@media (max-width: 520px) {
+  #create_customer #btn-txt-wrapp {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  #create_customer #btn-txt-wrapp {
+    font-size: 16px;
+    letter-spacing: 0.01px;
+  }
+}
+@media (max-width: 321px) {
+  #create_customer #btn-txt-wrapp {
+    font-size: 15px;
+  }
+}
+#create_customer #btn-txt-wrapp #button-cancel {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  #create_customer #btn-txt-wrapp #button-cancel {
+    font-size: 16px;
+  }
+}
+@media (max-width: 321px) {
+  #create_customer #btn-txt-wrapp #button-cancel {
+    font-size: 15px;
+  }
+}
+#create_customer #btn-txt-wrapp #button-cancel::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(18, 18, 18, 0.8509803922);
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+#create_customer #btn-txt-wrapp #button-cancel:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  #customer_login #password-field {
+    flex-direction: column;
+  }
+}
+
+.shopify-section .customer .field::after {
+  display: none;
+}
+.shopify-section .customer .field input {
+  border: 1px solid #A6A9AB;
+  border-radius: 35px;
+  font-size: 16px;
+}
+.shopify-section .customer .field input:focus {
+  box-shadow: none;
+}
+.shopify-section .customer .field label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.3882352941);
+  font-family: Epilogue, sans-serif !important;
+}
+.shopify-section .customer button {
+  background-color: var(--COLOR-PRIMARY);
+  padding: 24px 52px;
+  border-radius: 42px;
+  margin: 2rem 0 0;
+  width: 100%;
+}
+@media (max-width: 375px) {
+  .shopify-section .customer button {
+    font-size: 1.2rem;
+  }
+}
+.shopify-section .customer #btn-txt-wraper {
+  font-size: 18px;
+  margin-top: 5rem;
+}
+@media (max-width: 520px) {
+  .shopify-section .customer #btn-txt-wraper {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .shopify-section .customer #btn-txt-wraper {
+    font-size: 16px;
+    letter-spacing: 0.01px;
+  }
+}
+@media (max-width: 321px) {
+  .shopify-section .customer #btn-txt-wraper {
+    font-size: 15px;
+  }
+}
+.shopify-section .customer #btn-txt-wraper #resetpswd-cancel {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+}
+@media (max-width: 375px) {
+  .shopify-section .customer #btn-txt-wraper #resetpswd-cancel {
+    font-size: 16px;
+  }
+}
+@media (max-width: 321px) {
+  .shopify-section .customer #btn-txt-wraper #resetpswd-cancel {
+    font-size: 15px;
+  }
+}
+.shopify-section .customer #btn-txt-wraper #resetpswd-cancel::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(18, 18, 18, 0.8509803922);
+  content: "";
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+.shopify-section .customer #btn-txt-wraper #resetpswd-cancel:hover:after {
+  width: 100%;
+>>>>>>> b341a99 (rebase from origin)
 }
