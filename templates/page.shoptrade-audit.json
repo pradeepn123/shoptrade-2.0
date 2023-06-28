@@ -132,6 +132,76 @@
         "margin_bottom": 65
       }
     },
+    "b501d013-e547-4918-9572-2cb7a804bd61": {
+      "type": "marquee_imagesAudit",
+      "blocks": {
+        "af3763d6-9dad-4f18-93d7-e1f87bfc4b69": {
+          "type": "Block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_marquee_1.png"
+          }
+        },
+        "440bad1f-8713-4b58-a1be-852d28467bea": {
+          "type": "Block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_marquee_2.png"
+          }
+        },
+        "954c0b96-2c00-450e-9abe-fef667885d8e": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b.png"
+          }
+        },
+        "49151081-a8d3-4c4e-bfdf-844cd72a4d52": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chill_a1008953-4d16-4dc8-b65f-4f8a749fc852.png"
+          }
+        },
+        "8c8e547b-747a-4120-bbc5-8e4fa9ed5933": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hathaspace_110bd405-bcca-4978-9328-bf6d39b9f207.png"
+          }
+        },
+        "96073354-2192-4e96-a6c9-1e55a03635a3": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buunni_2ab32f3d-0052-456d-81f1-d582d876606f.png"
+          }
+        },
+        "345e98a2-5101-4a8e-b9a8-bd6762f520ad": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/synchro_8cd5e4b2-0a08-403a-84e2-bdceaf8f2df2.png"
+          }
+        },
+        "278e3178-09fd-48a5-9953-a4d4e33eae58": {
+          "type": "brands",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bumpboxx_20e685cb-a9d2-4bf0-b532-467572a524b3.png"
+          }
+        }
+      },
+      "block_order": [
+        "af3763d6-9dad-4f18-93d7-e1f87bfc4b69",
+        "440bad1f-8713-4b58-a1be-852d28467bea",
+        "954c0b96-2c00-450e-9abe-fef667885d8e",
+        "49151081-a8d3-4c4e-bfdf-844cd72a4d52",
+        "8c8e547b-747a-4120-bbc5-8e4fa9ed5933",
+        "96073354-2192-4e96-a6c9-1e55a03635a3",
+        "345e98a2-5101-4a8e-b9a8-bd6762f520ad",
+        "278e3178-09fd-48a5-9953-a4d4e33eae58"
+      ],
+      "settings": {
+        "section_bgColor": "#ff7121",
+        "d_marginTop": 50,
+        "d_marginBottom": 50,
+        "m_marginTop": 20,
+        "m_marginBottom": 20
+      }
+    },
     "314e9091-c86b-4daa-b913-e5a61209c9ab": {
       "type": "audit-report-process",
       "blocks": {
@@ -627,6 +697,7 @@
     "4a16bdb2-4d46-47ae-9316-dee8a7dbf915",
     "ffa88602-72e6-4ab6-a4f5-733f2b494e26",
     "ba083ddc-3b96-4311-a1bf-b3b1ecd75fb0",
+    "b501d013-e547-4918-9572-2cb7a804bd61",
     "314e9091-c86b-4daa-b913-e5a61209c9ab",
     "main",
     "7c197c6c-759f-4b28-91b8-9e07ba29726e",

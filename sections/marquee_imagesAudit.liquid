@@ -1,0 +1,159 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let aboutCulterTop = new Swiper('.js-top-image-slider-new', {
+            spaceBetween: 50,
+            speed: 5000,
+            autoplay: {
+                delay: 0,
+            },
+            loop: true,
+            slidesPerView: 2,
+            allowTouchMove: false,
+            pauseOnMouseEnter:true,
+            breakpoints: {
+                1028: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                767: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: ".mi_audit_pagination"
+                    },
+                }
+            }
+        });
+    })
+</script>
+
+{% style %}
+    .mi_audit{
+        margin-top: {{ section.settings.d_marginTop }}px;
+        margin-bottom: {{ section.settings.d_marginBottom }}px;
+    }
+
+    @media screen and (max-width : 767px){
+        margin-top: {{ section.settings.m_marginTop }}px;
+        margin-bottom: {{ section.settings.m_marginBottom }}px;
+    }
+{% endstyle %}
+
+{% assign image_blocks = section.blocks | where: 'type', 'Block' %}
+{% assign brand_block = section.blocks | where: 'type', 'brands'%}
+
+<div class="mi_audit" style="background-color: {{ section.settings.section_bgColor }}">
+    <div class="container">
+        {% if image_blocks.size > 0 %}
+            <div class="mi_audit_container">
+                <div class="swiper-container js-top-image-slider-new"> 
+                    <div class="swiper-wrapper">
+                        {%- for block in  image_blocks -%}
+                            <div class="swiper-slide"> 
+                                <div class="swiper-slide__wrapper">
+                                    <img src="{{ block.settings.image | img_url: 'master' }}">
+                                </div>
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+                <div class="mi_audit_pagination"></div>
+            </div>
+        {% endif %}
+
+        {% if brand_block.size > 0%}
+            <div class="mi_audit_text">
+                {% for block in brand_block %}
+                    {% if block.settings.image != blank %}
+                        <div class="brand_container">
+                            <img src="{{ block.settings.image | img_url: 'master'}}">
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Image Marquee",
+        "settings": [
+            {
+                "type": "color",
+                "id": "section_bgColor",
+                "default": "#FF7121",
+                "label": "Background Color"
+            },
+            {
+                "type": "range",
+                "id": "d_marginTop",
+                "min": 50,
+                "max": 200,
+                "step": 5,
+                "unit": "px",
+                "label": "Desktop Margin Top",
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "d_marginBottom",
+                "min": 50,
+                "max": 200,
+                "step": 5,
+                "unit": "px",
+                "label": "Desktop Margin Bottom",
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "m_marginTop",
+                "min": 20,
+                "max": 200,
+                "step": 5,
+                "unit": "px",
+                "label": "Mobile Margin Top",
+                "default": 20
+            },
+            {
+                "type": "range",
+                "id": "m_marginBottom",
+                "min": 20,
+                "max": 200,
+                "step": 5,
+                "unit": "px",
+                "label": "Mobile Margin Bottom",
+                "default": 20
+            }
+        ],
+        "blocks": [
+            {
+                "type": "Block",
+                "name": "Block",
+                "settings": [
+                    {
+                        "type":"image_picker",
+                        "id":"image",
+                        "label":"Image"
+                    }
+                ]
+            },
+            {
+                "type": "brands",
+                "name": "Brands Block",
+                "settings": [
+                    {
+                        "type":"image_picker",
+                        "id":"image",
+                        "label":"Brand Image"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Image Marquee"
+            }
+        ]
+    }
+{% endschema %}
