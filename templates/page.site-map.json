@@ -7,7 +7,7 @@
           "type": "sitelink",
           "settings": {
             "siteName": "Home",
-            "siteUrl": "shopify:\/\/collections\/frontpage",
+            "siteUrl": "https:\/\/shoptrade.co\/",
             "siteSublinks": ""
           }
         },
@@ -47,7 +47,7 @@
           "type": "sitelink",
           "settings": {
             "siteName": "Careers",
-            "siteUrl": "",
+            "siteUrl": "https:\/\/www.instahyre.com\/jobs-at-shop-trade\/",
             "siteSublinks": ""
           }
         },
