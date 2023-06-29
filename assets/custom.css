@@ -10867,7 +10867,8 @@ html {
     font-size: 16px;
   }
 }
-.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button {
+.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button, .aP_container .container .aP_parent .ap_rightBlock .auditProduct_atc input {
+  cursor: pointer;
   width: 100%;
   border-radius: 39px;
   background: #FF7121;
@@ -10876,7 +10877,7 @@ html {
   color: white;
 }
 @media screen and (max-width: 767px) {
-  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button, .aP_container .container .aP_parent .ap_rightBlock .auditProduct_atc input {
     margin-top: 24px;
   }
 }

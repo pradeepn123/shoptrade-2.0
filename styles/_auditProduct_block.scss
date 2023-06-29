@@ -165,7 +165,8 @@
                         }
                     }
                 }
-                .ap_rightBlock--button{
+                .ap_rightBlock--button, .auditProduct_atc input{
+                    cursor: pointer;
                     width: 100%;
                     border-radius: 39px;
                     background: #FF7121;

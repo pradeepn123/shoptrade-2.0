@@ -52,9 +52,10 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-                        <button class="buy_button ap_rightBlock--button">
-                            GET IT NOW
-                        </button>
+                    <form method="post" action="/cart/add" class="auditProduct_atc">
+                        <input name="id" value="{{ section.settings.theProduct.variants.first.id }}" type="hidden" />
+                        <input name="add" value="GET IT NOW" type="submit" />
+                    </form>
             </div>
         </div>
     </div>
@@ -64,6 +65,12 @@
     {
         "name": "Pricing Block",
         "settings": [
+            {
+                "type": "product",
+                "id": "theProduct",
+                "label": "Product",
+                "info": "Product"
+            },
             {
                 "type": "text",
                 "id": "heading",
@@ -98,7 +105,7 @@
                 "max": 100,
                 "step": 1,
                 "unit": "px",
-                "label": "SMobile ection Margin",
+                "label": "Mobile Section Margin",
                 "default": 0
             }
         ],
