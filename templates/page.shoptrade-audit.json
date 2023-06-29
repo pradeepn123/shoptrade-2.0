@@ -242,9 +242,12 @@
         "039f59e6-fd37-44ed-aab4-e8be7d8e6a65"
       ],
       "settings": {
+        "theProduct": "shoptrade-audit",
         "heading": "Pricing",
         "section_bg": "#f8f8f8",
-        "pricingPart_color": "#3a4ed4"
+        "pricingPart_color": "#3a4ed4",
+        "section_margin_desktop": 0,
+        "section_margin_mobile": 0
       }
     },
     "b501d013-e547-4918-9572-2cb7a804bd61": {
