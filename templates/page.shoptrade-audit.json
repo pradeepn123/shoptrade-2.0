@@ -251,6 +251,43 @@
         "button_textColor": "#ffffff"
       }
     },
+    "00a490a5-0a36-45f9-96e6-d19f315133bc": {
+      "type": "review-marquee",
+      "blocks": {
+        "5c183f7b-9f86-4069-bc73-2bef706688fc": {
+          "type": "Block",
+          "settings": {
+            "heading": "“They’ve done a really good job. They were on top of things from the get-go.”",
+            "block_heading": "Marc Heuberger",
+            "pos_heading": "CMO - Elevatione"
+          }
+        },
+        "98399918-d564-499a-81e5-ec65603b0019": {
+          "type": "Block",
+          "settings": {
+            "heading": "This is a Shoptrade",
+            "block_heading": "Justice League",
+            "pos_heading": "Batman"
+          }
+        },
+        "0ca69a94-b44c-4499-9bc7-8ce797deb9d0": {
+          "type": "Block",
+          "settings": {
+            "heading": "Faster man alive",
+            "block_heading": "The flash",
+            "pos_heading": "Justice League"
+          }
+        }
+      },
+      "block_order": [
+        "5c183f7b-9f86-4069-bc73-2bef706688fc",
+        "98399918-d564-499a-81e5-ec65603b0019",
+        "0ca69a94-b44c-4499-9bc7-8ce797deb9d0"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -699,6 +736,7 @@
     "ba083ddc-3b96-4311-a1bf-b3b1ecd75fb0",
     "b501d013-e547-4918-9572-2cb7a804bd61",
     "314e9091-c86b-4daa-b913-e5a61209c9ab",
+    "00a490a5-0a36-45f9-96e6-d19f315133bc",
     "main",
     "7c197c6c-759f-4b28-91b8-9e07ba29726e",
     "1e395575-fd0d-4794-9bb2-c7b3bc2127c5",

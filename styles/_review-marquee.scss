@@ -1,0 +1,103 @@
+.reM{
+    .reM_container{
+        .reM_parent{
+            .rm-slider{
+                .swiper-slide{
+                    @media screen and (max-width: 1199px){
+                        padding: 80px 16px;
+                    }
+                    @media screen and (max-width: 1023px){
+                        padding: 50px 16px;
+                    }
+                    @media screen and (max-width: 480px){
+                        padding: 30px 0;
+                    }
+                    height: auto !important;
+                    border-radius: 16px;
+                    border: 1px solid #000;
+                    padding: 100px 16px;
+                    &.swiper-slide-active{
+                        @media screen and (max-width: 480px){
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            background-color: transparent;
+                            border: none;
+                            height: 100% !important;
+                        }
+                        background-color: #FF7121;
+                        color: white;
+                        .swiper-slide__wrapper{
+                            @media screen and (max-width: 480px){
+                                color: white;
+                                background-color: #FF7121;
+                                width: calc(95% - 42px);
+                                border: 1px solid black;
+                                border-radius: 16px;
+                                padding: 48px 16px;
+                            }
+                        }
+                    }
+                    .swiper-slide__wrapper{
+                        @media screen and (max-width: 480px){
+                            width: calc(95% - 42px);
+                            border-radius: 16px;
+                            padding: 48px 16px;
+                        }
+                        // max-width: 575px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                        margin: 0 auto;
+
+                        row-gap: 36px;
+                        .reM_block1{
+                            font-size: 32px;
+                            font-weight: 800;
+                            line-height: 38.4px;
+                            @media screen and (max-width: 1199px){
+                                font-size: 24px;
+                                line-height: 130%;
+                            }
+                            @media screen and (max-width: 1023px){
+                                font-size: 20px;
+                            }
+                        }
+                        .reM_block2{
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 38.4px;
+                            @media screen and (max-width: 1199px){
+                                font-size: 18px;
+                            }
+                        }
+                        .reM_block3{
+                            font-size: 18px;
+                            line-height: 150%;
+                            @media screen and (max-width: 1199px){
+                                font-size: 16px;
+                            }
+                        }
+                        p{
+                            max-width : 575px;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .rm_audit_pagination{
+                @media screen and (min-width: 481px) {
+                    display: none;
+                }
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                justify-content: center;
+                margin-top: 32px;
+            }
+        }
+    }
+}
