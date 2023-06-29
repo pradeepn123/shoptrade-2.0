@@ -285,7 +285,9 @@
         "0ca69a94-b44c-4499-9bc7-8ce797deb9d0"
       ],
       "settings": {
-        "heading": ""
+        "heading": "",
+        "desktop_margin": 75,
+        "mobile_margin": 48
       }
     },
     "main": {
@@ -298,6 +300,7 @@
     },
     "7c197c6c-759f-4b28-91b8-9e07ba29726e": {
       "type": "audit-banner",
+      "disabled": true,
       "settings": {
         "heading": "Boost conversions with exceptional UX analysis",
         "subtext": "Discover the key to unlocking your website's potential with our personalized roadmap to drive conversions, increase customer retention, and establish long-lasting brand credibility.",
@@ -307,6 +310,7 @@
     },
     "1e395575-fd0d-4794-9bb2-c7b3bc2127c5": {
       "type": "audit-analysis",
+      "disabled": true,
       "blocks": {
         "96d1b3fc-3553-40c6-9b0d-c010678b44d4": {
           "type": "cardType",
@@ -336,6 +340,7 @@
     },
     "a7480ca1-4e76-46f9-9023-bec4b287cdc0": {
       "type": "audit-core",
+      "disabled": true,
       "blocks": {
         "03b95dfa-fbf3-457f-9d02-c7b5c06d8f7a": {
           "type": "cardType",
@@ -378,6 +383,7 @@
     },
     "022afbff-bc63-4664-90ed-3be349823d42": {
       "type": "audit-imageswiper",
+      "disabled": true,
       "blocks": {
         "71f3666e-5c62-4858-84ae-cabac8475bc7": {
           "type": "cardType",
@@ -443,6 +449,7 @@
     },
     "45abf2da-6082-4e59-b7c1-51995b3acbf9": {
       "type": "audit-marquee",
+      "disabled": true,
       "blocks": {
         "9f80796f-d59a-4c7d-8c9c-cd2caf64b0ba": {
           "type": "cardType",
@@ -488,6 +495,7 @@
     },
     "454be5a3-e657-4663-a95b-237657a33be6": {
       "type": "audit-product",
+      "disabled": true,
       "blocks": {
         "d6f214c5-5afe-4866-9b6d-2ef5183a6acb": {
           "type": "prod-feat",
@@ -580,6 +588,7 @@
     },
     "00bdd982-76ae-4864-b771-c47f3e61c644": {
       "type": "audit-timeline",
+      "disabled": true,
       "blocks": {
         "14dfb098-481c-4dd3-bf71-a33ee6198d0f": {
           "type": "cardType-right",
@@ -617,6 +626,7 @@
     },
     "96eee045-a6c9-4681-a4c2-ae97390c4146": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "19d004a4-6c34-4020-b269-19ca44d0da31": {
           "type": "sliderType",
@@ -726,7 +736,8 @@
         "aab00711-42ac-4389-af17-a1933b61bd4c"
       ],
       "settings": {
-        "heading": "FAQ's"
+        "heading": "Got questions?",
+        "custom_class": "faq_audit_page"
       }
     }
   },

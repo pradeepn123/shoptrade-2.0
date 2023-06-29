@@ -8418,6 +8418,28 @@ textarea {
   width: 100%;
 }
 
+.audit-faq.faq_audit_page svg path {
+  stroke: #FF7121;
+}
+.audit-faq.faq_audit_page svg path:first-child {
+  stroke: #FF7121;
+  fill: #FF7121;
+}
+.audit-faq.faq_audit_page svg path:last-child {
+  stroke: white;
+}
+.audit-faq.faq_audit_page .faq-heading {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 78px;
+}
+@media screen and (max-width: 480px) {
+  .audit-faq.faq_audit_page .faq-heading {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
 .audit-faq .container .accordion {
   border: 1px solid black;
   margin-bottom: 60px;

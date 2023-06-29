@@ -1,7 +1,29 @@
 
 .audit-faq {
-    
-
+    &.faq_audit_page{
+        svg{
+            path{
+                stroke: #FF7121;
+                &:first-child{
+                    stroke: #FF7121;
+                    fill: #FF7121;
+                }
+                &:last-child{
+                    stroke: white;
+                }
+            }
+        }
+        .faq-heading{
+            @media screen and (max-width: 480px){
+                text-align: left;
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 78px;
+        }
+    }
     .container {
         .faq-heading {
 
