@@ -132,6 +132,121 @@
         "margin_bottom": 65
       }
     },
+    "3df3356c-29f4-4636-9fe1-b847045ac38a": {
+      "type": "pricingBlock-auditPage",
+      "blocks": {
+        "2bbdc569-a2b4-4514-a0c7-ab8c35e708c6": {
+          "type": "leftBlocks",
+          "settings": {
+            "special_block": true,
+            "title": "Plan Overview",
+            "content": "The comprehensive audit report, covering key site areas including the Homepage, Collection Page, Product Page, and Cart\/Cart Drawer, is available for $2499. Additional site pages can be included in the audit starting at $499.",
+            "subContent_title": "",
+            "subContent_content": ""
+          }
+        },
+        "9be9a96e-5ea4-4cb5-8a24-592e62145d43": {
+          "type": "leftBlocks",
+          "settings": {
+            "special_block": false,
+            "title": "",
+            "content": "",
+            "subContent_title": "Screens",
+            "subContent_content": "Mobile, Desktop"
+          }
+        },
+        "2534d8b3-0a10-4994-af8d-57660244d561": {
+          "type": "leftBlocks",
+          "settings": {
+            "special_block": false,
+            "title": "",
+            "content": "",
+            "subContent_title": "Pages to be Audited",
+            "subContent_content": "Homepage, Collection page,<br> Product page & Cart\/Cart Drawer"
+          }
+        },
+        "53d4cd74-3893-4caf-bddd-d90681e26865": {
+          "type": "leftBlocks",
+          "settings": {
+            "special_block": false,
+            "title": "",
+            "content": "",
+            "subContent_title": "Timeline",
+            "subContent_content": "10 - 14 Working days"
+          }
+        },
+        "364ee6c4-e4a3-4d31-9c4f-3590460eea32": {
+          "type": "leftBlocks",
+          "settings": {
+            "special_block": false,
+            "title": "",
+            "content": "",
+            "subContent_title": "You’ll receive",
+            "subContent_content": "Figma file, Analysis report pdf"
+          }
+        },
+        "1e14f071-1969-4d0d-9aac-f8f29be8554f": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "Full Audit Report",
+            "pointers": ""
+          }
+        },
+        "a0744c87-a623-4ec7-8999-f2012a4cc612": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "",
+            "pointers": "Complete redesign of each purchased section or page"
+          }
+        },
+        "9d42bdae-9308-400b-bc0e-0e213a632ad8": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "",
+            "pointers": "Section-by-section analysis by senior product designers"
+          }
+        },
+        "ca9e03e3-099a-4373-a7f0-0e72f773f4e7": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "",
+            "pointers": "Improved messaging, call-to-actions, and page flows"
+          }
+        },
+        "4718ae69-5599-4658-a28f-7da0b8737850": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "",
+            "pointers": "Figma design files and prototypes of the updated experience"
+          }
+        },
+        "039f59e6-fd37-44ed-aab4-e8be7d8e6a65": {
+          "type": "rightBlocks",
+          "settings": {
+            "title": "",
+            "pointers": "Long-lasting, tested conversion tactics\nproven to increase LTV, AOV, and CVR"
+          }
+        }
+      },
+      "block_order": [
+        "2bbdc569-a2b4-4514-a0c7-ab8c35e708c6",
+        "9be9a96e-5ea4-4cb5-8a24-592e62145d43",
+        "2534d8b3-0a10-4994-af8d-57660244d561",
+        "53d4cd74-3893-4caf-bddd-d90681e26865",
+        "364ee6c4-e4a3-4d31-9c4f-3590460eea32",
+        "1e14f071-1969-4d0d-9aac-f8f29be8554f",
+        "a0744c87-a623-4ec7-8999-f2012a4cc612",
+        "9d42bdae-9308-400b-bc0e-0e213a632ad8",
+        "ca9e03e3-099a-4373-a7f0-0e72f773f4e7",
+        "4718ae69-5599-4658-a28f-7da0b8737850",
+        "039f59e6-fd37-44ed-aab4-e8be7d8e6a65"
+      ],
+      "settings": {
+        "heading": "Pricing",
+        "section_bg": "#f8f8f8",
+        "pricingPart_color": "#3a4ed4"
+      }
+    },
     "b501d013-e547-4918-9572-2cb7a804bd61": {
       "type": "marquee_imagesAudit",
       "blocks": {
@@ -745,6 +860,7 @@
     "4a16bdb2-4d46-47ae-9316-dee8a7dbf915",
     "ffa88602-72e6-4ab6-a4f5-733f2b494e26",
     "ba083ddc-3b96-4311-a1bf-b3b1ecd75fb0",
+    "3df3356c-29f4-4636-9fe1-b847045ac38a",
     "b501d013-e547-4918-9572-2cb7a804bd61",
     "314e9091-c86b-4daa-b913-e5a61209c9ab",
     "00a490a5-0a36-45f9-96e6-d19f315133bc",

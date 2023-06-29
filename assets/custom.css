@@ -10666,3 +10666,217 @@ html {
     display: none;
   }
 }
+
+.aP_container .container .aP_parent {
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  padding: 67px 0;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent {
+    height: fit-content;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aP_container .container .aP_parent {
+    padding: 0;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock {
+  padding: 36px 62px;
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock {
+    padding: 36px 31px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aP_container .container .aP_parent .ap_leftBlock {
+    padding: 48px 0;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock p {
+  margin: 0;
+}
+.aP_container .container .aP_parent .ap_leftBlock h3 {
+  margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock h3 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block {
+    margin-bottom: 24px;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:first-child {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:first-child {
+    font-size: 20px;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
+    font-size: 16px;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock .section_heading {
+  color: #000;
+  font-weight: 800;
+  line-height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock .section_heading {
+    margin-bottom: 32px;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 135.5%;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
+    margin-bottom: 16px;
+  }
+}
+.aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
+    margin-bottom: 32px;
+  }
+}
+.aP_container .container .aP_parent .ap_rightBlock {
+  flex: 1 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 36px 62px;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_rightBlock {
+    padding: 36px 31px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .aP_container .container .aP_parent .ap_rightBlock {
+    padding: 48px 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+  }
+}
+.aP_container .container .aP_parent .ap_rightBlock h3 {
+  color: white;
+  margin: 0;
+}
+.aP_container .container .aP_parent .ap_rightBlock p {
+  margin: 0;
+  margin-top: 8px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 135.5%;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+}
+.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers {
+    margin-top: 34px;
+  }
+}
+.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers svg {
+  max-width: 48px;
+}
+.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers p {
+  flex: 1;
+}
+@media screen and (max-width: 1023px) {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers p {
+    font-size: 16px;
+  }
+}
+.aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button {
+  width: 100%;
+  border-radius: 39px;
+  background: #FF7121;
+  padding: 17px 25px;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--button {
+    margin-top: 24px;
+  }
+}

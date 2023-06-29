@@ -1,0 +1,161 @@
+{%- liquid
+    assign leftBlock = section.blocks | where: "type", "leftBlocks"
+    assign rightBlock = section.blocks | where: "type", "rightBlocks"
+%}
+
+{% style %}
+    .aP_container{
+        margin: {{ section.settings.section_margin_desktop }}px 0;
+    }
+    @media screen and (max-width: 767px){
+        margin: {{ section.settings.section_margin_mobile }}px 0;
+    }
+{% endstyle %}
+
+<div class="aP_container" style="background-color: {{ section.settings.section_bg }};">
+    <div class="container">
+        <div class="aP_parent">
+            <div class="ap_leftBlock">
+                <h3 class="section_heading"> {{ section.settings.heading }} </h3>
+                {% for block in leftBlock %}
+                    <div class="ap_leftBlock--mainContainer {% if block.settings.special_block %} special_block {% endif %}" style="{% if block.settings.title == blank and block.settings.content == blank %}display: none;{% endif %}">
+                        <p>{{ block.settings.title }}</p>
+                        <p>{{ block.settings.content }}</p>
+                    </div>
+                    <div class="ap_leftBlock--miniContainer {% if block.settings.special_block == false %} not_special_block {% endif %}" style="{% if block.settings.subContent_title == blank and block.settings.subContent_content == blank %}display: none;{% endif %}">
+                        <p>{{ block.settings.subContent_title }}</p>
+                        <p>{{ block.settings.subContent_content }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="ap_rightBlock" style="background-color: {{ section.settings.pricingPart_color }};color: white;">
+                {% for block in rightBlock %}
+                    <h3 class="rightBlock_heading" style="{% if block.settings.title == blank %}display: none;{% endif %}">{{ block.settings.title }}</h3>
+                    {% if forloop.index == 1 and rightBlock.size > 0 %}
+                        <div class="ap_rightBlock--pricing">
+                            <span class="originPrice">$3249</span>
+                            <span class="discountPrice">$2499 USD</span>
+                        </div>
+                    {% endif %}
+
+                    {% if block.settings.pointers != blank %}
+                        <div class="ap_rightBlock--pointers">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Warning / Wavy_Check">
+                                        <path id="Vector" d="M28.934 8.99858L26.4921 6.91759C25.0564 5.69414 22.9436 5.69414 21.5079 6.91759L19.0657 8.99864C18.4505 9.52292 17.6855 9.83962 16.8798 9.90391L13.6841 10.1588C11.8038 10.3088 10.3083 11.802 10.1583 13.6822L9.90245 16.8805C9.83815 17.6862 9.52353 18.4508 8.99925 19.066L6.9173 21.5084C5.69385 22.9441 5.69442 25.0552 6.91787 26.4908L8.99795 28.9332C9.52223 29.5484 9.8399 30.313 9.9042 31.1188L10.1601 34.317C10.3101 36.1973 11.8013 37.6904 13.6815 37.8404L16.8808 38.0953C17.6865 38.1596 18.4511 38.4763 19.0663 39.0006L21.5077 41.0817C22.9434 42.3052 25.0564 42.3049 26.4921 41.0815L28.9335 39.0004C29.5487 38.4761 30.3133 38.16 31.119 38.0957L34.3183 37.8404C36.1985 37.6904 37.6897 36.1969 37.8397 34.3166L38.0956 31.1186C38.1599 30.3128 38.4776 29.5476 39.0019 28.9323L41.0819 26.4907C42.3054 25.0551 42.3052 22.9433 41.0817 21.5076L39.0017 19.0664C38.4774 18.4512 38.1593 17.6862 38.095 16.8805L37.8407 13.6819C37.6907 11.8016 36.1972 10.309 34.3169 10.159L31.1188 9.90411C30.3131 9.83982 29.5492 9.52286 28.934 8.99858Z" fill="#FF7121"/>
+                                        <path id="Vector_2" d="M30 20L26 24L22 28L18 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            {% comment %} {%endif%} {% endcomment %}
+                            <p>{{ block.settings.pointers }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                        <button class="buy_button ap_rightBlock--button">
+                            GET IT NOW
+                        </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Pricing Block",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "color",
+                "id": "section_bg",
+                "label": "Background Color",
+                "default": "#F8F8F8"
+            },
+            {
+                "type": "color",
+                "id": "pricingPart_color",
+                "label": "Pricing background Color",
+                "default": "#3A4ED4"
+            },
+            {
+                "type": "range",
+                "id": "section_margin_desktop",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "Desktop Section Margin",
+                "default": 0
+            },
+            {
+                "type": "range",
+                "id": "section_margin_mobile",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "SMobile ection Margin",
+                "default": 0
+            }
+        ],
+        "blocks": [
+            {
+                "type": "leftBlocks",
+                "name": "Info Block",
+                "settings": [
+                    {
+                        "type": "checkbox",
+                        "id": "special_block",
+                        "label": "The only special Block",
+                        "default": false
+                    },
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Main Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "content",
+                        "label": "Main Content"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "subContent_title",
+                        "label": "Mini Heading"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "subContent_content",
+                        "label": "Mini Heading Content"
+                    }
+                ]
+            },
+            {
+                "type": "rightBlocks",
+                "name": "Pricing Block",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "pointers",
+                        "label": "Pointers"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Audit Pricing"
+            }
+        ]
+    }
+{% endschema %}
