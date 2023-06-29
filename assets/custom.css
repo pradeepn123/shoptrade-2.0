@@ -8428,6 +8428,31 @@ textarea {
 .audit-faq.faq_audit_page svg path:last-child {
   stroke: white;
 }
+.audit-faq.faq_audit_page .container .accordion {
+  border: 0;
+}
+.audit-faq.faq_audit_page .container .accordion .accordion__header {
+  border: 1px solid black;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.audit-faq.faq_audit_page .container .accordion .accordion__header:not(:first-child) {
+  margin-top: 21px;
+}
+.audit-faq.faq_audit_page .container .accordion .accordion__header.is-active {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+}
+.audit-faq.faq_audit_page .container .accordion .accordion__body.is-active {
+  border: 1px solid #000;
+  border-top: 0;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-radius: 8px;
+}
 .audit-faq.faq_audit_page .faq-heading {
   text-align: center;
   font-size: 48px;
@@ -8542,7 +8567,7 @@ textarea {
   height: auto;
   opacity: 1;
   border-bottom: 1px solid #000;
-  transition: all 0.5s ease-in-out;
+  transition: visibility 0.5s ease-in-out;
 }
 
 #overlay {
