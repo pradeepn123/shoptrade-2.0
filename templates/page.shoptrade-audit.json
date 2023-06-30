@@ -320,8 +320,8 @@
         "section_bgColor": "#ff7121",
         "d_marginTop": 50,
         "d_marginBottom": 50,
-        "m_marginTop": 20,
-        "m_marginBottom": 20
+        "m_marginTop": 0,
+        "m_marginBottom": 50
       }
     },
     "314e9091-c86b-4daa-b913-e5a61209c9ab": {

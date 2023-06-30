@@ -27,9 +27,11 @@
 </script>
 
 {% style %}
-    .mi_audit{
-        margin-top: {{ section.settings.d_marginTop }}px;
-        margin-bottom: {{ section.settings.d_marginBottom }}px;
+    @media screen and (min-width: 768px){
+        .mi_audit{
+            margin-top: {{ section.settings.d_marginTop }}px;
+            margin-bottom: {{ section.settings.d_marginBottom }}px;
+        }
     }
 
     @media screen and (max-width : 767px){
@@ -127,22 +129,22 @@
             {
                 "type": "range",
                 "id": "m_marginTop",
-                "min": 20,
+                "min": 0,
                 "max": 200,
                 "step": 5,
                 "unit": "px",
                 "label": "Mobile Margin Top",
-                "default": 20
+                "default": 0
             },
             {
                 "type": "range",
                 "id": "m_marginBottom",
-                "min": 20,
+                "min": 0,
                 "max": 200,
                 "step": 5,
                 "unit": "px",
                 "label": "Mobile Margin Bottom",
-                "default": 20
+                "default": 0
             }
         ],
         "blocks": [
