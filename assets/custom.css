@@ -8480,6 +8480,7 @@ textarea {
     text-align: left;
     font-size: 24px;
     margin-bottom: 16px;
+    line-height: 36px;
   }
 }
 .audit-faq .container .accordion {
@@ -10142,6 +10143,12 @@ html {
     padding: 0 15px;
   }
 }
+@media screen and (max-width: 480px) {
+  .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left {
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+}
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--sH {
   font-size: 18px;
   line-height: 150%;
@@ -10164,6 +10171,11 @@ html {
   }
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--lH br {
     display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--lH {
+    line-height: 36px;
   }
 }
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--subH {
@@ -10806,6 +10818,11 @@ html {
   .aP_container .container .aP_parent .ap_leftBlock .section_heading {
     margin-bottom: 32px;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aP_container .container .aP_parent .ap_leftBlock .section_heading {
+    line-height: 36px;
   }
 }
 .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {

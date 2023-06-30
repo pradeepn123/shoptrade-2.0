@@ -82,6 +82,9 @@
                         margin-bottom: 32px;
                         font-size: 20px;
                     }
+                    @media screen and (max-width: 480px){
+                        line-height: 36px;
+                    }
                 }
                 .special_block{
                     p{

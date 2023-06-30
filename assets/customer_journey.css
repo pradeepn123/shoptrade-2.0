@@ -158,3 +158,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 480px){
+    .cus_jr .cus_jr_child .cus_jr_child_heading p{
+        line-height: 36px;
+    }
+}
