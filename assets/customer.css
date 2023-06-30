@@ -773,3 +773,8 @@ li[data-address] > h2 {
   padding: 20px 40px;
   width: 100%;
 }
+
+.addresses form button:first-of-type{
+  background-color: white;
+  color: black;
+}
