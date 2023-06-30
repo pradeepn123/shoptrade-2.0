@@ -2,14 +2,13 @@
     document.addEventListener('DOMContentLoaded', () => {
         let aboutCulterTop = new Swiper('.js-top-image-slider-new', {
             spaceBetween: 50,
-            speed: 5000,
-            autoplay: {
-                delay: 0,
-            },
+            slidesPerView: 2, 
             loop: true,
-            slidesPerView: 2,
-            allowTouchMove: false,
             pauseOnMouseEnter:true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
             breakpoints: {
                 1028: {
                     slidesPerView: 2,
@@ -56,8 +55,9 @@
                             </div>
                         {%- endfor -%}
                     </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                 </div>
-                <div class="mi_audit_pagination"></div>
             </div>
         {% endif %}
 

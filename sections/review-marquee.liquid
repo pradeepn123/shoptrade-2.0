@@ -1,15 +1,12 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         let aboutCulterTop = new Swiper('.rm-slider', {
-            spaceBetween: 50,
+            spaceBetween: 20,
             speed: 6000,
-            slidesPerView: 2.1,
+            slidesPerView: 2,
             centeredSlides: true,
             pauseOnMouseEnter:true,
             stopOnLastSlide: true,
-            autoplay: {
-                delay: 1,
-            },
             loop: true,
             breakpoints: {
                 767: {
@@ -19,7 +16,7 @@
                     },
                 },
                 480: {
-                    spaceBetween: 100,
+                    spaceBetween: 10,
                     slidesPerView: 1,
                     pagination: {
                         el: ".rm_audit_pagination"

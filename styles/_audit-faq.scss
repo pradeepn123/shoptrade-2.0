@@ -17,6 +17,10 @@
             .accordion{
                 border: 0;
                 .accordion__header{
+                    padding-left: 35px;
+                    @media screen and (max-width: 767px){
+                        padding-left: 16px;
+                    }
                     border: 1px solid black;
                     border-top-right-radius: 8px;
                     border-top-left-radius: 8px;
@@ -30,6 +34,7 @@
                         border-bottom-right-radius: 0;
                         border-bottom-left-radius: 0;
                         border-bottom: 0;
+                        padding-bottom: 0;
                     }
                 }
                 .accordion__body{
@@ -39,6 +44,14 @@
                         border-top-right-radius: 0 !important;
                         border-top-left-radius: 0 !important;
                         border-radius: 8px;
+                        .fans{
+                            padding-top: 11px;
+                            padding-left: 35px;
+                            @media screen and (max-width: 767px){
+                                padding-top: 8px;
+                                padding-left: 16px !important;
+                            }
+                        }
                     }
                 }
             }
@@ -47,7 +60,7 @@
             @media screen and (max-width: 480px){
                 text-align: left;
                 font-size: 24px;
-                margin-bottom: 32px;
+                margin-bottom: 16px;
             }
             text-align: center;
             font-size: 48px;
