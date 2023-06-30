@@ -58,7 +58,7 @@
         "section_bgColor": "#3a4ed4",
         "section_fontColor": "#ffffff",
         "cta_button_text": "View Plan",
-        "cta_redirect": "shopify:\/\/products\/shoptrade-audit",
+        "cta_redirect": "#aP_container",
         "button_bgColor": "#ff7121",
         "button_textColor": "#ffffff",
         "section_margin_top": 55,
