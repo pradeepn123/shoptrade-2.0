@@ -1,4 +1,4 @@
-<section class="audit-faq">
+<section class="audit-faq {{ section.settings.custom_class }}">
     <div class="container">
         <h1 class="faq-heading">{{ section.settings.heading }}</h1>
         <div class="accordion">
@@ -28,6 +28,11 @@
 "id": "heading",
 "label": "Heading",
 "type": "text"
+},
+{
+    "type": "text",
+    "id": "custom_class",
+    "label": "Custom Class"
 }
 
 ],

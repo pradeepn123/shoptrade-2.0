@@ -1,0 +1,136 @@
+{% style %}
+    .indReport_section{
+        margin-top : {{ section.settings.margin_top }}px;
+        margin-bottom : {{ section.settings.margin_bottom }}px;
+    }
+    .indReport_cc{
+        grid-template-columns: repeat( {{ section.settings.no_of_columns }} , 1fr );
+        grid-template-rows: repeat({{ section.settings.no_of_rows }} , 1fr);
+        column-gap: {{ section.settings.column_gap }}px;
+        row-gap: {{ section.settings.row_gap }}px;
+    }
+{% endstyle %}
+
+{{ 'indReport.css' | asset_url | stylesheet_tag }}
+
+<div class="indReport_container">
+    <div class="container">
+        <div class="indReport_parent">
+            <h3 class="section_title">{{ section.settings.heading }}</h3>
+            <div class="indReport_cc">
+                {% for block in section.blocks %}
+                    <div class="indReport_loop">
+                        {% if block.settings.blockImage != blank %}
+                            <img src="{{ block.settings.blockImage | img_url: 'master' }}" alt="">
+                        {% endif %}
+                        <div class="indReport_loopedData" style="{% if block.settings.blockHeading == blank and block.settings.blockContent == blank %}display: none;{% endif %}">
+                            <h3 style="sahrudh {% if block.settings.blockHeading == blank %}display: none;{% endif %}">{{ block.settings.blockHeading }}</h3>
+                            <p style="{% if block.settings.blockContent == blank %}display: none;{% endif %}">{{ block.settings.blockContent }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "In the Reports",
+        "class": "indReport_section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "In The Report"
+            },
+            {
+                "type": "range",
+                "id": "no_of_columns",
+                "min": 1,
+                "max": 20, 
+                "step": 1,
+                "label": "Number of Columns",
+                "default": 3
+            },
+            {
+                "type": "range",
+                "id": "no_of_rows",
+                "min": 1,
+                "max": 20, 
+                "step": 1,
+                "label": "Number of Rows",
+                "default": 2
+            },
+            {
+                "type": "range",
+                "id": "column_gap",
+                "min": 1,
+                "max": 100, 
+                "step": 1,
+                "unit": "px",
+                "label": "Column Gap",
+                "default": 20
+            },
+            {
+                "type": "range",
+                "id": "row_gap",
+                "min": 1,
+                "max": 100, 
+                "step": 1,
+                "unit": "px",
+                "label": "Column Gap",
+                "default": 48
+            },
+            {
+                "type": "range",
+                "id": "margin_top",
+                "min": 10,
+                "max": 200, 
+                "step": 5,
+                "unit": "px",
+                "label": "Section Margin Top",
+                "default": 80
+            },
+            {
+                "type": "range",
+                "id": "margin_bottom",
+                "min": 10,
+                "max": 200, 
+                "step": 5,
+                "unit": "px",
+                "label": "Section Margin Bottom",
+                "default": 65
+            }
+        ],
+        "blocks": [
+            {
+                "type": "Block",
+                "name": "Block",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "blockImage",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "blockHeading",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "blockContent",
+                        "label": "Content"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "In the Reports"
+            }
+        ]
+    }
+{% endschema %}
