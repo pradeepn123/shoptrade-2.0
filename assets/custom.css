@@ -10823,6 +10823,7 @@ html {
 @media screen and (max-width: 480px) {
   .aP_container .container .aP_parent .ap_leftBlock .section_heading {
     line-height: 36px;
+    font-size: 24px;
   }
 }
 .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
@@ -10941,17 +10942,11 @@ html {
   color: #FFF;
   font-size: 32px;
   font-weight: 700;
-  line-height: 135.5%;
+  line-height: 36px;
 }
 @media screen and (max-width: 1199px) {
   .aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
     font-size: 24px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
-    font-size: 20px;
-    margin-bottom: 0;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers {
