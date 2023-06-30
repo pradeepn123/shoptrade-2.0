@@ -10121,7 +10121,7 @@ html {
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left {
     flex: 1 0 100%;
     max-width: 540px;
-    margin: 48px auto;
+    margin: 36px auto;
     padding: 0 15px;
   }
 }

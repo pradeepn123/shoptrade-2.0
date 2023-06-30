@@ -43,8 +43,8 @@
 
 @media screen and (max-width: 1199px){
     .indReport_container .indReport_parent .section_title{
-        font-size: 36px;
-        margin: 0 0 32px 0;
+        font-size: 26px;
+        margin: 0 0 16px 0;
     }
     .indReport_cc .indReport_loop .indReport_loopedData h3{
         font-size: 24px;
@@ -61,12 +61,15 @@
     .indReport_container .indReport_cc{
         grid-template-rows: initial;
         grid-template-columns: initial;
-        row-gap: 32px;
+        row-gap: 16px;
     }
     .indReport_loop img {
-        height: 260px;
+        height: 230px;
     }
     /* Block Content */
+    .indReport_cc .indReport_loop .indReport_loopedData{
+        margin-top: 16px;
+    }
     .indReport_cc .indReport_loop .indReport_loopedData h3{
         font-size: 20px;
         line-height: 26px;
