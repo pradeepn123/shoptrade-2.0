@@ -1,3 +1,14 @@
+<script>
+let clearClart = function() {
+  var xhrClearCart = new XMLHttpRequest();
+  xhrClearCart.open("POST", "/cart/clear.js", true);
+  xhrClearCart.send();
+};
+window.addEventListener("load", function(){
+    clearClart();
+})
+</script>
+
 {%- liquid
     assign leftBlock = section.blocks | where: "type", "leftBlocks"
     assign rightBlock = section.blocks | where: "type", "rightBlocks"
