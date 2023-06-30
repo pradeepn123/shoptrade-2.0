@@ -13,12 +13,12 @@
 /* Top Content Blocks */
 .cus_jr .cus_jr_child .cus_jr_child_text p {
     font-family: "Epilogue";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
     text-align: left;
     height: 100%;
+    line-height: 150%;
+    height: auto;
 }
 
 /* Bottom Content Blocks */
@@ -31,57 +31,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 28px 32px 32px 44px;
     border: 3px solid white;
     border-radius: 8px;
-}
-.cus_jr .content_containerParent .content_container svg{
-    margin-bottom: 20px;
+
+    row-gap: 20px;
 }
 
 .cus_jr .cus_jr_child .cus_jr_child_heading p{
-    font-family: "Epilogue";
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 65px;
-    letter-spacing: 0em;
     text-align: left;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 108%;
 }
 
 .cus_jr .content_containerParent .content_container .cc_heading{
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 0em;
     text-align: left;
+    margin-bottom: auto;
 }
 .cus_jr .content_containerParent .content_container .cc_description{
     font-size: 18px;
+    line-height: 100%;
     font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0em;
     text-align: left;
+    line-height: 130%;
 }
 
 .cus_ctaButton{
-    text-align: center;
-    padding: 12px 60px;
-    border-radius: 39px;
-    width: fit-content;
-    margin: 67px auto 0 auto;
-}
-.cus_ctaButton a{
-    font-family: Epilogue;
-    font-size: 16px;
     font-weight: 600;
-    line-height: 16px;
     letter-spacing: -0.03em;
+
+    font-size: 20px;
+    line-height: 100%;
+    border-radius: 47px;
     text-decoration: none;
+    padding: 22px 82px !important;
+    border-radius: 39px;
+    background-color: #FF7121;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 /* Media Queries */
 @media screen and (min-width: 992px) {
     .cus_jr .content_containerParent {
-        margin-top: 73px;
+        margin: 73px 0;
     }
 }
 
@@ -101,28 +98,32 @@
         padding: 40px 0;
     }
     .cus_jr .cus_jr_child .cus_jr_child_heading p{
-        font-size: 36px;
+        font-size: 26px;
     }
     .cus_jr .cus_jr_child .cus_jr_child_text p{
-        font-size: 14px;
+        font-size: 16px;
     }
     .cus_jr .content_containerParent{
-        margin-bottom: 48px;
+        margin: 48px 0;
     }
 
     /* Bottom Content */
+    .cus_jr .content_containerParent .content_container {
+        padding: 24px 24px 29px;
+    }
     .cus_jr .content_containerParent .content_container svg{
         width: 45px;
         height: auto;
     }
     .cus_jr .content_containerParent .content_container .cc_heading{
-        font-size: 24px;
+        font-size: 20px;
     }
     .cus_jr .content_containerParent .content_container .cc_description{
-        font-size: 14px;
+        font-size: 16px;
     }
     .cus_ctaButton{
-        margin: 30px auto 0 auto;
+        padding: 12px 48px !important;
+        font-size: 16px;
     }
 }
 
@@ -135,35 +136,25 @@
         flex-direction: column;
     }
     .cus_jr .cus_jr_child .cus_jr_child_heading p{
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 31px;
-        letter-spacing: 0.01em;
         margin-bottom: 16px;
     }
     .cus_jr .cus_jr_child .cus_jr_child_heading p br{
         display: none;
     }
     .cus_jr .cus_jr_child .cus_jr_child_text p{
-        font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
-        margin-bottom: 48px;
     }
     /* Bottom Content */
     .cus_jr .content_containerParent{
         grid-template-columns: initial !important;
+        margin: 40px 0;
+    }
+    .cus_jr .content_containerParent .content_container{
+        row-gap: 10px;
     }
     .cus_jr .content_containerParent .content_container:not(:last-of-type){
-        margin-bottom: 32px;
-    }
-    .cus_jr .content_containerParent .content_container svg{
-        margin-bottom: 12px;
-    }
-}
-@media screen and (max-width: 480px){
-    .cus_jr .content_containerParent .content_container svg {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 }

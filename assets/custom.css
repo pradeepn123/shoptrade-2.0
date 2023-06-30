@@ -10190,7 +10190,7 @@ html {
   padding: 22px 82px !important;
   border-radius: 39px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes {
     padding: 12px 48px !important;
     font-size: 16px;
