@@ -29,7 +29,18 @@
             </div>
 
             <div class="audit_atf_right">
+            {% if section.settings.show_imagesOrVideo == true %}
+                <div class="audit_atf_rightImages">
+                    <div class="desktopImage">
+                        <img src="{{ section.settings.desktop_image | img_url: 'master' }}">
+                    </div>
+                    <div class="mobileImage">
+                        <img src="{{ section.settings.mobile_image | img_url: 'master' }}">
+                    </div>
+                </div>
+            {% else %}
                 {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
+            {% endif %}
             </div>
         </div>
 </div>
@@ -39,6 +50,23 @@
         "name": "Audit ATF",
         "class": "audit_atf_section",
         "settings": [
+            {
+                "type": "checkbox",
+                "id": "show_imagesOrVideo",
+                "label": "Show Image",
+                "default": true,
+                "info": "Check to view images instead of videos"
+            },
+            {
+                "type": "image_picker",
+                "id": "desktop_image",
+                "label": "Desktop Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Mobile Image"
+            },
             {
                 "type": "textarea",
                 "id": "small_heading",

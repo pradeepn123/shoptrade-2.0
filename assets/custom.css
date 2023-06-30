@@ -10245,6 +10245,33 @@ html {
   width: 100%;
   height: 100%;
 }
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages {
+  height: 100%;
+}
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .desktopImage {
+  height: 100%;
+}
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .desktopImage img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .desktopImage {
+    display: none;
+  }
+}
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .mobileImage {
+  display: none;
+}
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .mobileImage img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .audit_atf_section .audit_atf .audit_atf_c .audit_atf_right .audit_atf_rightImages .mobileImage {
+    display: block !important;
+  }
+}
 
 .mi_audit {
   padding-top: 50px;
