@@ -55,8 +55,6 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-                Sahrudh --  {{ reqProduct.id }} -- {{ cart.items.size }}
-
                     <form method="post" action="/cart/add" class="auditProduct_atc">
                         <input type="hidden" name="id" value="{{ reqProduct.selected_or_first_available_variant.id }}">
                         <input type="hidden" name="quantity" value="1">
