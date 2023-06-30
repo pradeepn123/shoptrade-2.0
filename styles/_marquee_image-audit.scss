@@ -1,0 +1,49 @@
+.mi_audit{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media screen and (max-width: 767px){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .mi_audit_pagination{
+        text-align: center;
+        span{
+            background: white;
+            &:not(:last-of-type){
+                margin-right: 15px;
+            }
+        }
+    }
+    .swiper-slide__wrapper{
+        img{
+            width: 100%;
+        }
+    }
+    .mi_audit_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        overflow: scroll;
+        column-gap: 20px;
+        row-gap: 20px;
+        align-items: center;
+        padding: 10px 0;
+        align-items:center;
+        @media screen and (max-width: 1023px){
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 767px){
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            overflow: hidden;
+        }
+        .brand_container
+        img{
+            @media screen and (max-width: 767px){
+                width: 100%;
+                object-fit: scale-down; 
+            }
+        }
+    }
+}

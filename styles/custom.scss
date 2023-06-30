@@ -40,7 +40,11 @@
 @use 'audit-marquee';
 @use 'quick-services';
 @use 'brandmarquee';
-@use 'homepage-service';
+@use 'homepage-service'; 
 @use 'global';
+@use 'audit-report-process';
+@use 'audit-atf'; 
+@use 'marquee_image-audit';
 @use 'client_project';
-@use 'audit-report-process'
+@use 'review-marquee';
+@use 'auditProduct_block';

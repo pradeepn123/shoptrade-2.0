@@ -42,9 +42,7 @@
                 {% endfor %}
             </div>
 
-            <div class="cus_ctaButton" style="background-color: {{ section.settings.button_bgColor }}; {%if section.settings.cta_button_text == blank and section.settings.cta_redirect == blank %}display: none{% endif %}">
-                    <a href="{{ section.settings.cta_redirect }}" style="color:{{ section.settings.button_textColor }}; {% if section.settings.cta_redirect == blank %}pointer-events: none;{% endif %}">{{ section.settings.cta_button_text }}</a>
-            </div>
+            <a href="{{ section.settings.cta_redirect }}" style="color:{{ section.settings.button_textColor }}; {% if section.settings.cta_redirect == blank %}pointer-events: none;{% endif %}" class="cus_ctaButton">{{ section.settings.cta_button_text }}</a>
         </div>
     </div>
 </div>
