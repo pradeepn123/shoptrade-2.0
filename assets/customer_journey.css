@@ -164,4 +164,7 @@
         line-height: 36px;
         font-size: 24px;
     }
+    .cus_jr .content_containerParent .content_container .cc_description {
+        line-height: 32px;
+    }
 }

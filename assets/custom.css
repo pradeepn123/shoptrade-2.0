@@ -8463,6 +8463,7 @@ textarea {
 .audit-faq.faq_audit_page .container .accordion .accordion__body.is-active .fans {
   padding-top: 11px;
   padding-left: 35px;
+  line-height: 32px;
 }
 @media screen and (max-width: 767px) {
   .audit-faq.faq_audit_page .container .accordion .accordion__body.is-active .fans {
@@ -8519,6 +8520,12 @@ textarea {
   .audit-faq .container .accordion .accordion__header .fques {
     font-size: 20px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .audit-faq .container .accordion .accordion__header .fques {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 .audit-faq .container .accordion .accordion__header .accordion__header > * {
@@ -10803,6 +10810,11 @@ html {
     line-height: 108%;
   }
 }
+@media screen and (max-width: 480px) {
+  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
+    line-height: 32px;
+  }
+}
 .aP_container .container .aP_parent .ap_leftBlock .section_heading {
   color: #000;
   font-weight: 800;
@@ -10857,6 +10869,11 @@ html {
 @media screen and (max-width: 767px) {
   .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
     margin-bottom: 18px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
+    line-height: 32px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock {
@@ -10968,12 +10985,22 @@ html {
     height: 32px;
   }
 }
+@media screen and (max-width: 480px) {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers svg {
+    margin-right: 7px;
+  }
+}
 .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers p {
   flex: 1;
 }
 @media screen and (max-width: 1023px) {
   .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers p {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers p {
+    line-height: 26px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock .checkout_btn .shopify-buy-frame--product {

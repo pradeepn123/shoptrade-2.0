@@ -85,4 +85,7 @@
         line-height: 36px;
         font-size: 24px;
     }
+    .indReport_cc .indReport_loop .indReport_loopedData p{
+        line-height: 32px;
+    }
 }
