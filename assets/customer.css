@@ -753,3 +753,23 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+.customer .field input{
+  box-shadow: 0 0 0 calc(.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+}
+
+.customer .field:before{
+  content: none;
+}
+
+.customer .field:after {
+  content: none;
+}
+
+.customer .signIn_icon,
+.customer .resetPasswordSubmit,
+.customer .registerButton,
+.customer .addAddress{
+  padding: 20px 40px;
+  width: 100%;
+}
