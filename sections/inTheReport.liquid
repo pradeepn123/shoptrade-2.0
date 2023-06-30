@@ -24,7 +24,7 @@
                             <img src="{{ block.settings.blockImage | img_url: 'master' }}" alt="">
                         {% endif %}
                         <div class="indReport_loopedData" style="{% if block.settings.blockHeading == blank and block.settings.blockContent == blank %}display: none;{% endif %}">
-                            <h3 style="{% if block.settings.blockHeading == blank %}display: none;{% endif %}">{{ block.settings.blockHeading }}</h3>
+                            <h3 style="sahrudh {% if block.settings.blockHeading == blank %}display: none;{% endif %}">{{ block.settings.blockHeading }}</h3>
                             <p style="{% if block.settings.blockContent == blank %}display: none;{% endif %}">{{ block.settings.blockContent }}</p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                         "label": "Image"
                     },
                     {
-                        "type": "text",
+                        "type": "textarea",
                         "id": "blockHeading",
                         "label": "Title"
                     },

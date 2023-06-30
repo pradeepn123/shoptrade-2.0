@@ -72,7 +72,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Complete_Redesign_image.png",
-            "blockHeading": "Complete Redesign",
+            "blockHeading": "Complete<br> Redesign",
             "blockContent": "Our skilled team of designers will give each section or page of your website a complete redesign, ensuring a visually stunning and user-friendly interface."
           }
         },
@@ -80,7 +80,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Group_8327.png",
-            "blockHeading": "Section-by-Section Analysis",
+            "blockHeading": "Section-by-<br>Section Analysis",
             "blockContent": "Our senior product designers will conduct a thorough analysis of each section, identifying areas for improvement and providing actionable insights."
           }
         },
@@ -88,7 +88,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Group_8329.png",
-            "blockHeading": "Improved Messaging & Call-to-Actions",
+            "blockHeading": "Improved Messaging & <br>Call-to-Actions",
             "blockContent": "We'll optimize your website's messaging and call-to-actions to captivate and guide your customers through their journey, resulting in higher engagement and conversions."
           }
         },
@@ -96,7 +96,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Group_8371.png",
-            "blockHeading": "Enhanced Page Flows",
+            "blockHeading": "Enhanced <br>Page Flows",
             "blockContent": "We'll streamline the navigation and optimize the flow of your pages, making it effortless for users to find what they need and complete their purchase."
           }
         },
@@ -104,7 +104,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Group_8369_1cafbc05-d589-4155-864c-5df32446b4c0.png",
-            "blockHeading": "Easy Dev Handoff",
+            "blockHeading": "Easy Development <br>\nHandoff",
             "blockContent": "You'll receive Figma design file of the updated user experience, empowering you to visualize the changes and collaborate effectively with your team."
           }
         },
@@ -112,7 +112,7 @@
           "type": "Block",
           "settings": {
             "blockImage": "shopify:\/\/shop_images\/Group_8370.png",
-            "blockHeading": "Long-Lasting Conversion Tactics",
+            "blockHeading": "Long-Lasting <br>Conversion Tactics",
             "blockContent": "We employ proven conversion tactics that have a lasting impact on your business, boosting customer lifetime value , average order value (AOV), and conversion rate (CVR)."
           }
         }
@@ -331,7 +331,7 @@
           "type": "Block",
           "settings": {
             "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"1 ICON\">\n<g id=\"Group 8285\">\n<path id=\"Rectangle 3660\" d=\"M0 31.9998C0 14.3266 14.3269 -0.000244141 32 -0.000244141C49.6731 -0.000244141 64 14.3266 64 31.9998C64 49.6729 49.6731 63.9998 32 63.9998C14.3269 63.9998 0 49.6729 0 31.9998Z\" fill=\"#FF7121\"><\/path>\n<\/g>\n<path id=\"1\" d=\"M35.0126 20.352V44H30.8206V24.432C30.7139 24.5387 30.4312 24.6827 29.9726 24.864C29.5246 25.0347 28.9806 25.2 28.3406 25.36C27.7112 25.5093 27.0552 25.616 26.3726 25.68V22.256C27.0552 22.1707 27.7112 22.0213 28.3406 21.808C28.9806 21.5947 29.5299 21.36 29.9886 21.104C30.4472 20.8373 30.7566 20.5867 30.9166 20.352H35.0126Z\" fill=\"white\"><\/path>\n<\/g>\n<\/svg>",
-            "block_heading": "Submit Your Request",
+            "block_heading": "Submit Your <br>Request",
             "block_description": "Once purchased the audit report process begins by submitting your request through our user-friendly form. Provide us with the necessary details about your website .",
             "block_bgColor": "#3a4ed4",
             "block_textColor": "#ffffff"
@@ -341,7 +341,7 @@
           "type": "Block",
           "settings": {
             "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"2 ICON\">\n<g id=\"Group 8284\">\n<path id=\"Rectangle 3664\" d=\"M0 32C0 14.3269 14.3269 0 32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32Z\" fill=\"#FF7121\"><\/path>\n<\/g>\n<path id=\"2\" d=\"M24.0224 44V40.496C24.1078 40.1867 24.3744 39.776 24.8224 39.264C25.2811 38.7414 25.8358 38.1707 26.4864 37.552C27.1478 36.9334 27.8358 36.3094 28.5504 35.68C29.2651 35.0507 29.9318 34.4694 30.5504 33.936C31.2971 33.2854 32.0278 32.608 32.7424 31.904C33.4571 31.2 34.0491 30.4587 34.5184 29.68C34.9878 28.9014 35.2224 28.0747 35.2224 27.2C35.2224 26.0374 34.9451 25.1254 34.3904 24.464C33.8358 23.792 32.9878 23.456 31.8464 23.456C30.9184 23.456 30.1824 23.6587 29.6384 24.064C29.0944 24.4587 28.7051 25.0134 28.4704 25.728C28.2358 26.4427 28.1184 27.2747 28.1184 28.224H23.8784C23.8784 26.5707 24.1824 25.136 24.7904 23.92C25.3984 22.6934 26.2998 21.744 27.4944 21.072C28.6891 20.4 30.1558 20.064 31.8944 20.064C33.5691 20.064 34.9664 20.3787 36.0864 21.008C37.2064 21.6267 38.0438 22.48 38.5984 23.568C39.1638 24.6454 39.4464 25.8667 39.4464 27.232C39.4464 28.16 39.2704 29.0347 38.9184 29.856C38.5771 30.6667 38.1291 31.424 37.5744 32.128C37.0198 32.832 36.4278 33.4774 35.7984 34.064C35.1691 34.6507 34.5664 35.184 33.9904 35.664C33.0518 36.432 32.2144 37.1414 31.4784 37.792C30.7531 38.432 30.1611 38.992 29.7024 39.472C29.2544 39.952 28.9771 40.3467 28.8704 40.656H39.4144V44H24.0224Z\" fill=\"white\"><\/path>\n<\/g>\n<\/svg>",
-            "block_heading": "Comprehensive Evaluation",
+            "block_heading": "Comprehensive <br>Evaluation",
             "block_description": "Our experienced team designers will conduct a comprehensive evaluation of the pages. They will analyze the user experience, to identify areas for improvement.",
             "block_bgColor": "#3a4ed4",
             "block_textColor": "#ffffff"
@@ -351,7 +351,7 @@
           "type": "Block",
           "settings": {
             "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"Component 30\">\n<path id=\"Rectangle 3665\" d=\"M0 31.9998C0 14.3267 14.3269 -0.000183105 32 -0.000183105C49.6731 -0.000183105 64 14.3267 64 31.9998C64 49.6729 49.6731 63.9998 32 63.9998C14.3269 63.9998 0 49.6729 0 31.9998Z\" fill=\"#FF7121\"><\/path>\n<path id=\"3\" d=\"M35.225 31.568C36.1637 31.6 36.9477 31.8614 37.577 32.352C38.217 32.8427 38.7024 33.4987 39.033 34.32C39.3637 35.1307 39.529 36.0374 39.529 37.04C39.529 38.3734 39.257 39.5947 38.713 40.704C38.1797 41.8134 37.3477 42.6987 36.217 43.36C35.0863 44.0214 33.641 44.352 31.881 44.352C30.3877 44.352 29.1397 44.16 28.137 43.776C27.1343 43.3814 26.3343 42.832 25.737 42.128C25.1397 41.4134 24.7077 40.5814 24.441 39.632C24.1743 38.6827 24.041 37.6587 24.041 36.56C24.041 36.5494 24.041 36.5387 24.041 36.528C24.041 36.5174 24.041 36.5067 24.041 36.496H28.265C28.265 36.5067 28.265 36.5174 28.265 36.528C28.265 36.5387 28.265 36.5494 28.265 36.56C28.265 37.7227 28.4143 38.624 28.713 39.264C29.0117 39.904 29.433 40.352 29.977 40.608C30.521 40.864 31.1717 40.992 31.929 40.992C32.9423 40.992 33.753 40.672 34.361 40.032C34.9797 39.3814 35.289 38.3467 35.289 36.928C35.289 36.384 35.2303 35.888 35.113 35.44C34.9957 34.9814 34.793 34.592 34.505 34.272C34.2277 33.9414 33.849 33.6854 33.369 33.504C32.889 33.3227 32.281 33.232 31.545 33.232H30.713V30.16H31.545C32.2703 30.16 32.873 30.064 33.353 29.872C33.833 29.68 34.2117 29.424 34.489 29.104C34.777 28.7734 34.9797 28.4 35.097 27.984C35.225 27.568 35.289 27.136 35.289 26.688C35.289 25.5574 34.985 24.736 34.377 24.224C33.7797 23.712 32.985 23.456 31.993 23.456C30.8943 23.456 29.9983 23.7547 29.305 24.352C28.6117 24.9494 28.265 26.0267 28.265 27.584H24.041C24.041 26.5387 24.1903 25.5627 24.489 24.656C24.7983 23.7494 25.2677 22.9547 25.897 22.272C26.5263 21.5787 27.337 21.04 28.329 20.656C29.3317 20.2614 30.5263 20.064 31.913 20.064C33.6837 20.064 35.1237 20.3627 36.233 20.96C37.353 21.5574 38.1797 22.3467 38.713 23.328C39.257 24.2987 39.529 25.344 39.529 26.464C39.529 27.36 39.3637 28.1867 39.033 28.944C38.7024 29.7014 38.217 30.32 37.577 30.8C36.9477 31.2694 36.1637 31.5254 35.225 31.568Z\" fill=\"white\"><\/path>\n<\/g>\n<\/svg>",
-            "block_heading": "Actionable Recommendations",
+            "block_heading": "Actionable <br>Recommendations",
             "block_description": "After the evaluation, get an analysis report that highlights the findings &  recommendations. Our report will guide you to create a streamlined shopping experience.",
             "block_bgColor": "#3a4ed4",
             "block_textColor": "#ffffff"

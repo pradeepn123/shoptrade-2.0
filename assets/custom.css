@@ -10133,6 +10133,7 @@ html {
 }
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left {
   padding-left: var(--base-margin);
+  padding-right: var(--base-margin);
   flex: 1 0 50%;
   display: flex;
   flex-direction: column;
@@ -10141,6 +10142,7 @@ html {
 @media screen and (max-width: 1023px) {
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left {
     padding-left: calc(var(--base-margin) + 15px);
+    padding-right: calc(var(--base-margin) + 15px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -10865,14 +10867,9 @@ html {
 }
 .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
   color: #000;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-}
-@media screen and (max-width: 1199px) {
-  .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
-    font-size: 24px;
-  }
 }
 @media screen and (max-width: 767px) {
   .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {

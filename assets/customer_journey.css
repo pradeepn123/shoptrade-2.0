@@ -78,7 +78,7 @@
 /* Media Queries */
 @media screen and (min-width: 992px) {
     .cus_jr .content_containerParent {
-        margin: 73px 0;
+        margin: 36px 0;
     }
 }
 
@@ -156,6 +156,9 @@
     }
     .cus_jr .content_containerParent .content_container:not(:last-of-type){
         margin-bottom: 20px;
+    }
+    .cus_jr .content_containerParent .content_container .cc_heading br{
+        display: none;
     }
 }
 
