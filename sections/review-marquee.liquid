@@ -2,25 +2,23 @@
     document.addEventListener('DOMContentLoaded', () => {
         let aboutCulterTop = new Swiper('.rm-slider', {
             spaceBetween: 20,
-            speed: 6000,
+            speed: 2000,
             slidesPerView: 2,
             centeredSlides: true,
             pauseOnMouseEnter:true,
             stopOnLastSlide: true,
             loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
             breakpoints: {
                 767: {
                     spaceBetween: 10,
-                    pagination: {
-                        el: ".rm_audit_pagination"
-                    },
                 },
                 480: {
                     spaceBetween: 10,
                     slidesPerView: 1,
-                    pagination: {
-                        el: ".rm_audit_pagination"
-                    },
                 }
             }
         });
@@ -44,7 +42,7 @@
     <div class="reM_container">
         <div class="reM_parent">
             <div class="swiper-container rm-slider">
-                        <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
                     {% for block in section.blocks %}
                         <div class="swiper-slide">
                             <div class="swiper-slide__wrapper">
@@ -57,8 +55,9 @@
                         </div>
                     {%- endfor -%}
                 </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
             </div>
-            <div class="rm_audit_pagination"></div>
         </div>
     </div>
 </div>

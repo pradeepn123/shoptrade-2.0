@@ -3,9 +3,9 @@
     "4a16bdb2-4d46-47ae-9316-dee8a7dbf915": {
       "type": "audit_atf",
       "settings": {
-        "show_imagesOrVideo": false,
-        "desktop_image": "shopify:\/\/shop_images\/Group_8370.png",
-        "mobile_image": "shopify:\/\/shop_images\/Group_8369_1cafbc05-d589-4155-864c-5df32446b4c0.png",
+        "show_imagesOrVideo": true,
+        "desktop_image": "shopify:\/\/shop_images\/final_banner.png",
+        "mobile_image": "shopify:\/\/shop_images\/final_banner.png",
         "small_heading": "Boost conversions <br>with exceptional <br> CRO analysis",
         "large_heading": "CRO Audit Reports",
         "subheading": "Discover the key to unlocking your website's potential with our personalized roadmap to drive conversions, increase customer retention, and establish long-lasting brand credibility.",
@@ -316,6 +316,7 @@
         "278e3178-09fd-48a5-9953-a4d4e33eae58"
       ],
       "settings": {
+        "image_instead_ofLogos": "shopify:\/\/shop_images\/Logo_for_mobile.png",
         "section_bgColor": "#ff7121",
         "d_marginTop": 50,
         "d_marginBottom": 50,

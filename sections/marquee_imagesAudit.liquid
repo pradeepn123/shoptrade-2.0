@@ -3,11 +3,11 @@
         let aboutCulterTop = new Swiper('.js-top-image-slider-new', {
             spaceBetween: 50,
             slidesPerView: 2, 
+            speed: 4000,
             loop: true,
             pauseOnMouseEnter:true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
+            autoplay: {
+                delay: 1
             },
             breakpoints: {
                 1028: {
@@ -36,6 +36,17 @@
         margin-top: {{ section.settings.m_marginTop }}px;
         margin-bottom: {{ section.settings.m_marginBottom }}px;
     }
+    
+    @media screen and (max-width: 767px){
+        .mi_audit_text.hideInMobile{
+            display: none;
+        }
+    }
+    @media screen and (min-width: 768px){
+        .imageMobileOnly{
+            display: none;
+        }
+    }
 {% endstyle %}
 
 {% assign image_blocks = section.blocks | where: 'type', 'Block' %}
@@ -55,14 +66,17 @@
                             </div>
                         {%- endfor -%}
                     </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                 </div>
             </div>
         {% endif %}
 
         {% if brand_block.size > 0%}
-            <div class="mi_audit_text">
+            {% if section.settings.image_instead_ofLogos != blank %}
+                <div class="imageMobileOnly" style="margin-top: 30px;">
+                    <img src="{{ section.settings.image_instead_ofLogos | img_url: 'master' }}">
+                </div>
+            {% endif %}
+            <div class="mi_audit_text {%if section.settings.image_instead_ofLogos != blank%}hideInMobile{% endif %}">
                 {% for block in brand_block %}
                     {% if block.settings.image != blank %}
                         <div class="brand_container">
@@ -79,6 +93,11 @@
     {
         "name": "Image Marquee",
         "settings": [
+            {
+                "type": "image_picker",
+                "id": "image_instead_ofLogos",
+                "label": "Show Image instead of Logos in Mobile"
+            },
             {
                 "type": "color",
                 "id": "section_bgColor",
