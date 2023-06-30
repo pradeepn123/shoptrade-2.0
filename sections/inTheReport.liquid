@@ -21,7 +21,7 @@
                 {% for block in section.blocks %}
                     <div class="indReport_loop">
                         {% if block.settings.blockImage != blank %}
-                            <img src="{{ block.settings.blockImage | img_url: 'medium'}}" alt="">
+                            <img src="{{ block.settings.blockImage | img_url: 'master' }}" alt="">
                         {% endif %}
                         <div class="indReport_loopedData" style="{% if block.settings.blockHeading == blank and block.settings.blockContent == blank %}display: none;{% endif %}">
                             <h3 style="{% if block.settings.blockHeading == blank %}display: none;{% endif %}">{{ block.settings.blockHeading }}</h3>
