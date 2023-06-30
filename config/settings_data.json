@@ -5,6 +5,9 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/shoptrade.co\/",
     "social_linkedIn_link": "https:\/\/www.linkedin.com\/company\/shoptrade\/",
     "favicon": "shopify:\/\/shop_images\/Fevicon_T.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_81a582d3-6db5-41d4-a66d-ea63923f6e9a.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
     "checkout_accent_color": "#3a4ed4",
     "checkout_button_color": "#3a4ed4",
     "sections": {
