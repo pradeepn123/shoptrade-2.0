@@ -143,7 +143,7 @@
           "settings": {
             "special_block": true,
             "title": "Plan Overview",
-            "content": "The comprehensive audit report, covering key site areas including the Homepage, Collection Page, Product Page, and Cart\/Cart Drawer, is available for $2499. Additional site pages can be included in the audit starting at $499.",
+            "content": "The comprehensive audit report, covering key site areas including the Homepage, Collection Page, Product Page, and Cart\/Cart Drawer, is available for $1499. Additional site pages can be included in the audit starting at $499.",
             "subContent_title": "",
             "subContent_content": ""
           }
@@ -175,7 +175,7 @@
             "title": "",
             "content": "",
             "subContent_title": "Timeline",
-            "subContent_content": "10 - 14 Working days"
+            "subContent_content": "15 - 20 Working days"
           }
         },
         "364ee6c4-e4a3-4d31-9c4f-3590460eea32": {
@@ -387,17 +387,17 @@
         "98399918-d564-499a-81e5-ec65603b0019": {
           "type": "Block",
           "settings": {
-            "heading": "This is a Shoptrade",
-            "block_heading": "Justice League",
-            "pos_heading": "Batman"
+            "heading": "“ShopTrade was experienced in developing apps and set realistic timelines.“",
+            "block_heading": "Zenos Schmickrath",
+            "pos_heading": "Co-Founder"
           }
         },
         "0ca69a94-b44c-4499-9bc7-8ce797deb9d0": {
           "type": "Block",
           "settings": {
-            "heading": "Faster man alive",
-            "block_heading": "The flash",
-            "pos_heading": "Justice League"
+            "heading": "“Their communication and responsiveness are impressive in the workflow.“",
+            "block_heading": "Graham Ryan",
+            "pos_heading": "Founder & CEO - Be Syncro"
           }
         }
       },
