@@ -1,6 +1,7 @@
 {%- liquid
     assign leftBlock = section.blocks | where: "type", "leftBlocks"
     assign rightBlock = section.blocks | where: "type", "rightBlocks"
+    assign reqProduct = section.settings.theProduct
 %}
 
 {% style %}
@@ -34,8 +35,10 @@
                     <h3 class="rightBlock_heading" style="{% if block.settings.title == blank %}display: none;{% endif %}">{{ block.settings.title }}</h3>
                     {% if forloop.index == 1 and rightBlock.size > 0 %}
                         <div class="ap_rightBlock--pricing">
-                            <span class="originPrice">$3249</span>
-                            <span class="discountPrice">$2499 USD</span>
+                                <span class="originPrice">{{ reqProduct.compare_at_price | money }}
+                                    <span class="originalPrice_parent"></span>
+                                </span>
+                            <span class="discountPrice">{{ reqProduct.price | money }}</span>
                         </div>
                     {% endif %}
 
@@ -52,9 +55,13 @@
                         </div>
                     {% endif %}
                 {% endfor %}
+                Sahrudh --  {{ reqProduct.id }} -- {{ cart.items.size }}
+
                     <form method="post" action="/cart/add" class="auditProduct_atc">
-                        <input name="id" value="{{ section.settings.theProduct.variants.first.id }}" type="hidden" />
-                        <input name="add" value="GET IT NOW" type="submit" />
+                        <input type="hidden" name="id" value="{{ reqProduct.selected_or_first_available_variant.id }}">
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="submit" value="GET IT NOW">
+                        <input type="hidden" name="return_to" value="/checkout/" /> 
                     </form>
             </div>
         </div>
