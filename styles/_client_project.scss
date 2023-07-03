@@ -32,6 +32,26 @@
     .table_filter {
         display: flex;
         flex-direction: row;
+        overflow-x: auto;
+        &::-webkit-scrollbar-track{
+            padding-top: 5px; 
+            // -webkit-box-shadow: inset 0 0 6px rgba(255, 254, 254, 0.3);
+            background-color: #F5F5F5;
+        }
+        
+        &::-webkit-scrollbar{
+            height: 2px;
+            width: 1px;
+            padding-top: 5px; 
+            background-color: #F5F5F5;
+        }
+        
+        &::-webkit-scrollbar-thumb{ 
+            padding-top: 5px;
+            background-color: var(--COLOR-PRIMARY);
+            border: 1px solid #251500; 
+        }
+        
     }
 
     .table_filter a {
@@ -59,7 +79,10 @@
     }
 
     #projectTable th {
-        margin-left: 10px;
+        margin-left: 1.2rem; 
+        &:first-child{
+            margin-left: 1.9rem; 
+        }
     }
 
     #projectTable tbody {
@@ -168,7 +191,6 @@
         display: grid;
         grid-template-columns: 20% 16% 16% 16% 16% 16%;
         align-items: center;
-        overflow: hidden;
     }
 
     #projectTable thead tr {
@@ -247,6 +269,18 @@
         transform: rotate(180deg);
         border-color: #FF7121 transparent transparent transparent;
     }
+    .emptyProjects{
+        height: 30vh;
+        border: 1px solid #FF7121;
+        border-radius: 15px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0; 
+        color: #FF7121;
+        font-size: 42px;
+    }
     @media(min-width:920px) and (max-width:1380px){
         .tooltip-container:hover .tooltip-trigger::after{
             top: 60%;
@@ -273,7 +307,7 @@
         }
 
         .set-overflow {
-            overflow-x: scroll;
+            overflow-x: auto;
             width: 100%;
             cursor: grab;
         }
@@ -289,6 +323,7 @@
 
         .set-overflow::-webkit-scrollbar {
             height: 7px;
+            border-radius: 10px;
             background-color: #F5F5F5;
 
         }
@@ -302,6 +337,13 @@
 
     @media screen and (max-width:840px) {
 
+        #projectTable th {
+            margin-left: 1.2rem; 
+            &:first-child{
+                margin-left: 1.2rem;  
+            }
+        }
+
         #projectTable {
             margin: 30px 0;
             margin-bottom: 7px;
@@ -309,15 +351,9 @@
 
         .title {
             margin: 30px auto;
+            line-height: 1.2;  
         }
 
-       
-        // .tooltip-container:hover .tooltip-trigger::after {
-        //     content: "";
-        //     position: absolute;
-        //     top: 60%;
-        //     left: 55%;
-        // }
 
     }
 
@@ -352,6 +388,8 @@
 
         .table_filter a {
             line-height: 20px !important;
+            margin-right: 30px;  
+            white-space: nowrap;
         }
 
         #projectTable tbody td {
@@ -365,12 +403,13 @@
         .hide {
             overflow: hidden;
         }
-
+        .emptyProjects{
+            font-size: 24px;
+            height: 20vh;
+            margin: 10px auto;
     }
-
-    @media(max-width:375px) {
         .table_filter a {
-            margin-right: 10px;
+          padding-bottom: 5px;
         }
     }
 }

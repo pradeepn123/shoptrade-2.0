@@ -10022,6 +10022,22 @@ html {
 .client_project_status .table_filter {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
+}
+.client_project_status .table_filter::-webkit-scrollbar-track {
+  padding-top: 5px;
+  background-color: #F5F5F5;
+}
+.client_project_status .table_filter::-webkit-scrollbar {
+  height: 2px;
+  width: 1px;
+  padding-top: 5px;
+  background-color: #F5F5F5;
+}
+.client_project_status .table_filter::-webkit-scrollbar-thumb {
+  padding-top: 5px;
+  background-color: var(--COLOR-PRIMARY);
+  border: 1px solid #251500;
 }
 .client_project_status .table_filter a {
   width: fit-content;
@@ -10044,7 +10060,10 @@ html {
   margin-bottom: 14px;
 }
 .client_project_status #projectTable th {
-  margin-left: 10px;
+  margin-left: 1.2rem;
+}
+.client_project_status #projectTable th:first-child {
+  margin-left: 1.9rem;
 }
 .client_project_status #projectTable tbody {
   display: flex;
@@ -10138,7 +10157,6 @@ html {
   display: grid;
   grid-template-columns: 20% 16% 16% 16% 16% 16%;
   align-items: center;
-  overflow: hidden;
 }
 .client_project_status #projectTable thead tr {
   grid-template-columns: 20% 16% 16% 16% 16% 16%;
@@ -10204,6 +10222,18 @@ html {
   transform: rotate(180deg);
   border-color: #FF7121 transparent transparent transparent;
 }
+.client_project_status .emptyProjects {
+  height: 30vh;
+  border: 1px solid #FF7121;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #FF7121;
+  font-size: 42px;
+}
 @media (min-width: 920px) and (max-width: 1380px) {
   .client_project_status .tooltip-container:hover .tooltip-trigger::after {
     top: 60%;
@@ -10227,7 +10257,7 @@ html {
     grid-template-columns: 25% 20% 20% 20% 20% 20%;
   }
   .client_project_status .set-overflow {
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     cursor: grab;
   }
@@ -10240,6 +10270,7 @@ html {
   }
   .client_project_status .set-overflow::-webkit-scrollbar {
     height: 7px;
+    border-radius: 10px;
     background-color: #F5F5F5;
   }
   .client_project_status .set-overflow::-webkit-scrollbar-thumb {
@@ -10248,12 +10279,19 @@ html {
   }
 }
 @media screen and (max-width: 840px) {
+  .client_project_status #projectTable th {
+    margin-left: 1.2rem;
+  }
+  .client_project_status #projectTable th:first-child {
+    margin-left: 1.2rem;
+  }
   .client_project_status #projectTable {
     margin: 30px 0;
     margin-bottom: 7px;
   }
   .client_project_status .title {
     margin: 30px auto;
+    line-height: 1.2;
   }
 }
 @media (max-width: 768px) {
@@ -10278,6 +10316,8 @@ html {
   }
   .client_project_status .table_filter a {
     line-height: 20px !important;
+    margin-right: 30px;
+    white-space: nowrap;
   }
   .client_project_status #projectTable tbody td {
     line-height: 150% !important;
@@ -10288,10 +10328,13 @@ html {
   .client_project_status .hide {
     overflow: hidden;
   }
-}
-@media (max-width: 375px) {
+  .client_project_status .emptyProjects {
+    font-size: 24px;
+    height: 20vh;
+    margin: 10px auto;
+  }
   .client_project_status .table_filter a {
-    margin-right: 10px;
+    padding-bottom: 5px;
   }
 }
 

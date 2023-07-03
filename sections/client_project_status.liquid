@@ -94,6 +94,9 @@
         </table> 
       </div>
     </div>
+    <div class="client_project_status container no-projects" style="display: none;">
+      <p class="emptyProjects">NO projects Yet !</p>
+    </div>
   {% else %}
     <script>window.location.replace("/account");</script>
   {% endif %}
@@ -120,6 +123,7 @@
     tbody = document.getElementById("Tablebody");
     rows = tbody.getElementsByTagName("tr");
 
+    var counts = 0;
     // Loops through rows and hides those with countries that don't match the filter
     for (let row of rows) { // `for...of` loops through the NodeList
       cells = row.getElementsByTagName("td");
@@ -127,12 +131,26 @@
       // if the filter is set to 'All', or this is the header row, or 2nd `td` text matches filter
       if (filter === "All" || !status || (filter === status.textContent)) {
         row.style.display = ""; // shows this row
+        counts++;
       }
       else {
         row.style.display = "none"; // hides this row
       }
     }
 
+    if(counts == 0){
+
+      table = document.getElementById("projectTable");
+      table.style.display = "none";
+      var no_pro = document.getElementsByClassName("no-projects")[0];
+      no_pro.style.display = "block";
+    }
+    else{
+      table = document.getElementById("projectTable");
+      table.style.display = "grid";
+      var no_pro = document.getElementsByClassName("no-projects")[0];
+      no_pro.style.display = "none";
+    }
     for (let row of rows) { // `for...of` loops through the NodeList
       cells = row.getElementsByTagName("td");
       var col4 = cells[4];
