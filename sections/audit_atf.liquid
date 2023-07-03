@@ -1,0 +1,142 @@
+{% style %}
+    .audit_atf_section{
+        background-color: {{ section.settings.bg_color }} !important;
+        color: {{ section.settings.text_color }} !important;
+    }
+    .audit_atf_section h3{
+        color: {{ section.settings.text_color }} !important;
+    }
+    .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes{
+        background-color: {{ section.settings.cta_bg_color }};
+        color: {{ section.settings.cta_text_color }};
+    }
+    @media screen and (min-width: 1200px){
+        .audit_atf .audit_atf_c{
+            height: {{ section.settings.section_height }}px;
+        }
+    }
+{% endstyle %}
+
+<div class="audit_atf">
+        <div class="audit_atf_c">
+            <div class="audit_atf_left">
+                <p class="audit_atf--sH">{{ section.settings.large_heading }}</p>
+                <h3 class="audit_atf--lH">{{ section.settings.small_heading }}</h3>
+                <p class="audit_atf--subH">{{ section.settings.subheading }}</p>
+                <div class="cta_parent">
+                    <a {% unless section.settings.cta_link == blank %} href="{{ section.settings.cta_link }}" {% endunless %} class="cta_classes"> {{ section.settings.ctaButton }} </a>
+                </div>
+            </div>
+
+            <div class="audit_atf_right">
+            {% if section.settings.show_imagesOrVideo == true %}
+                <div class="audit_atf_rightImages">
+                    <div class="desktopImage">
+                        <img src="{{ section.settings.desktop_image | img_url: 'master' }}">
+                    </div>
+                    <div class="mobileImage">
+                        <img src="{{ section.settings.mobile_image | img_url: 'master' }}">
+                    </div>
+                </div>
+            {% else %}
+                {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , width: '100%' , height : '100%' }}
+            {% endif %}
+            </div>
+        </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Audit ATF",
+        "class": "audit_atf_section",
+        "settings": [
+            {
+                "type": "checkbox",
+                "id": "show_imagesOrVideo",
+                "label": "Show Image",
+                "default": true,
+                "info": "Check to view images instead of videos"
+            },
+            {
+                "type": "image_picker",
+                "id": "desktop_image",
+                "label": "Desktop Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Mobile Image"
+            },
+            {
+                "type": "textarea",
+                "id": "small_heading",
+                "label": "Small Heading"
+            },
+            {
+                "type": "text",
+                "id": "large_heading",
+                "label": "Large Heading"
+            },
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "Subheading"
+            },
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "Background Color",
+                "default": "#FF7121"
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "Text Color",
+                "default": "#FFF"
+            },
+            {
+                "type": "range",
+                "id": "section_height",
+                "min": 100,
+                "max": 800,
+                "step": 10,
+                "unit": "px",
+                "label": "Section Height",
+                "default": 600
+            },
+            {
+                "type": "text",
+                "id": "ctaButton",
+                "label": "Button Text",
+                "default": "View Plan"
+            },
+            {
+                "type": "url",
+                "id": "cta_link",
+                "label": "CTA Link"
+            },
+            {
+                "type": "color",
+                "id": "cta_bg_color",
+                "label": "Button Background Color",
+                "default": "#3A4ED4"
+            },
+            {
+                "type": "color",
+                "id": "cta_text_color",
+                "label": "Button Text Color",
+                "default": "#FFF"
+            },
+            {
+                "type" : "video",
+                "id": "video",
+                "label": "Video"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Audit ATF"
+            }
+        ]
+    }
+{% endschema %}
