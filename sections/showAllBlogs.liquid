@@ -1,0 +1,190 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let dataTabElements = document.querySelectorAll("#tabs_section .tabTitle");
+        let dataContentElements = document.querySelectorAll("#tabs_dataParent .tabData");
+        
+        dataTabElements.forEach(itemX => {
+        itemX.addEventListener('click', (e) => {
+                let reqID = e.target.id;
+                dataContentElements.forEach((anItem) => {
+                    if(anItem.id.includes(reqID) ){
+                        anItem.classList.add('selected');
+            }
+            else{
+                anItem.classList.remove('selected');
+            }
+        })
+        });
+    });
+    });
+</script>
+
+{% style %}
+    .blogs_container .tabs_section{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        border-bottom: 1px solid red;
+    }
+
+    .blogs_container .tabs_section .tabTitle{
+        border: 1px solid black;
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    #tabs_dataParent .tabData{
+        display: none;
+    }
+
+    #tabs_dataParent .tabData.selected{
+        display: block;
+    }
+{% endstyle %}
+
+{% capture handlesList %}
+    {% for link in linklists.blogs.links %}
+            {% assign blog = link.object %}
+            {{ blog.handle }}
+    {% endfor %}
+{% endcapture %}
+
+{% assign orgHandles = handlesList | split: ' ' %}
+{% assign copyHandles = handlesList | prepend: 'firstElem' | split: ' ' %}
+{% assign blogLoopCount = orgHandles.size %}
+
+<div class="main_blogs">
+    <div class="container">
+        <div class="blogs_container">
+            {% comment %} {% for anItem in copyHandles %}
+                {% if blogs[anItem].title == blank %}
+                    First Element
+                    <br>
+                {% else%}
+                    {{  blogs[anItem].title }}
+                    <br>
+                {% endif %}
+            {% endfor %} {% endcomment %}
+
+                <div class="tabs_section" id="tabs_section">
+                    {% for anItem in copyHandles %}
+                        {% if forloop.index == 1 %}
+                            <span class="tabTitle tabTitle_{{ forloop.index }}" id="tabTitle_{{ forloop.index }}">All Articles</span>
+                        {% else %}
+                            <span class="tabTitle tabTitle_{{ forloop.index }}" id="tabTitle_{{ forloop.index }}">
+                                {{ anItem | replace: '-', ' ' | capitalize }}
+                            </span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
+                {% comment %} <div class="tabs_section" id="tabs_section">
+                    <span class="tabTitle tabTitle_1" id="tabTitle_1">Title 1</span>
+                    <span class="tabTitle tabTitle_2" id="tabTitle_2">Title 2</span>
+                    <span class="tabTitle tabTitle_3" id="tabTitle_3">Title 3</span>
+                </div> {% endcomment %}
+
+
+                <div class="tabs_dataParent" id="tabs_dataParent">
+                    {% for anItem in copyHandles %}
+                        <div class="tabData_{{ forloop.index }} tabData {% if forloop.index == 1%}selected{% endif%}" id="tabTitleChild tabTitle_{{ forloop.index }}">
+                        {% if forloop.index == 1 %}
+                            <div class="blog_grid-item">
+                                {% for item in copyHandles %}
+                                    {% if blogs[item].articles.size > 0 %}
+                                        {% for article in blogs[item].articles %}
+                                            <div class="blog_grid--eachItem">
+                                                <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                <div class="content--eachItem">
+                                                    <span class="content--tags">
+                                                        {% for tag in article.tags %}
+                                                            {{ tag }}
+                                                        {% endfor %}
+                                                    </span>
+                                                    <span class="content--publiDate">
+                                                        {{ article.published_at | date: "%d %b %Y" }}
+                                                    </span>
+                                                </div>
+                                                <div class="content--title">
+                                                    {{ article.title }}
+                                                </div>
+                                                <div class="content--url">
+                                                    <a href="{{ article.url }}">
+                                                    Read Post
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            <div class="blog_grid-item">
+                                {% for item in anItem %}
+                                    {% if blogs[item].articles.size > 0 %}
+                                        {% for article in blogs[item].articles %}
+                                            <div class="blog_grid--eachItem">
+                                                <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                <div class="content--eachItem">
+                                                    <span class="content--tags">
+                                                        {% for tag in article.tags %}
+                                                            {{ tag }}
+                                                        {% endfor %}
+                                                    </span>
+                                                    <span class="content--publiDate">
+                                                        {{ article.published_at | date: "%d %b %Y" }}
+                                                    </span>
+                                                </div>
+                                                <div class="content--title">
+                                                    {{ article.title }}
+                                                </div>
+                                                <div class="content--url">
+                                                    <a href="{{ article.url }}">
+                                                    Read Post
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Show All Blogs",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    }
+  ],
+    "blocks": [
+        {
+            "type": "Blogs",
+            "name": "Blogs",
+            "settings": [
+                {
+                    "id":"selectblog",
+                    "label":"blog",
+                    "type":"blog"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

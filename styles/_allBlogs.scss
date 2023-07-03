@@ -1,0 +1,14 @@
+.main_blogs{
+    .blogs_container{
+        .blog_grid-item{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            gap: 30px;
+            .blog_grid--eachItem{
+                border: 1px solid #DADADA;
+                border-radius: 8px;
+                padding: 20px;
+            }
+        }
+    }
+} 
