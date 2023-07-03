@@ -10407,6 +10407,29 @@ html {
   display: flex;
   flex-direction: column;
 }
+.client_project_status #projectTable tbody tr .In_Progress.STATUS {
+  position: relative;
+}
+.client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+  position: absolute;
+  content: "";
+  background: #009900;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  left: 79%;
+  transform: translateY(-50%);
+  animation: pulse-green 1.5s infinite;
+}
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 #009900;
+  }
+  100% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+}
 .client_project_status #projectTable tbody tr {
   background: #ffffff;
   display: grid;
@@ -10572,6 +10595,16 @@ html {
   color: #FF7121;
   font-size: 42px;
 }
+@media (min-width: 1380px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
+  }
+}
+@media (min-width: 1720px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 50%;
+  }
+}
 @media (min-width: 920px) and (max-width: 1380px) {
   .client_project_status .tooltip-container:hover .tooltip-trigger::after {
     top: 60%;
@@ -10583,8 +10616,14 @@ html {
     top: 64%;
     left: 69%;
   }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 85%;
+  }
 }
 @media (max-width: 1200px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 77%;
+  }
   .client_project_status .heading.hide p {
     line-height: 1.2;
   }
@@ -10631,6 +10670,9 @@ html {
     margin: 30px auto;
     line-height: 1.2;
   }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
+  }
 }
 @media (max-width: 768px) {
   .client_project_status #projectTable tbody tr {
@@ -10638,6 +10680,14 @@ html {
   }
   .client_project_status #projectTable thead tr {
     grid-template-columns: 35% 30% 30% 30% 30% 30%;
+  }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 54%;
+  }
+}
+@media (max-width: 767px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -10673,6 +10723,11 @@ html {
   }
   .client_project_status .table_filter a {
     padding-bottom: 5px;
+  }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    width: 8px;
+    height: 8px;
+    left: 85%;
   }
 }
 

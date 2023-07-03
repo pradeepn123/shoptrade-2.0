@@ -89,7 +89,32 @@
         display: flex;
         flex-direction: column;
     }
-
+    #projectTable tbody tr .In_Progress.STATUS{
+        position: relative;
+    }
+    #projectTable tbody tr .In_Progress.STATUS{
+        &::after{
+            position: absolute;
+            content: "";
+            background: #009900;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: 50%;
+            left: 79%; 
+            transform: translateY(-50%);
+            animation: pulse-green 1.5s infinite;
+        } 
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 #009900;
+            }
+        
+            100% {
+                box-shadow: 0 0 0 12px transparent;
+            }
+        }
+    }
     #projectTable tbody tr {
         background: #ffffff;
         display: grid;
@@ -281,6 +306,21 @@
         color: #FF7121;
         font-size: 42px;
     }
+   
+    @media(min-width:1380px){ 
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{
+                left: 70%;
+            }
+        }
+    }  
+    @media(min-width:1720px){
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{
+                left: 50%;
+            }
+        }
+    }
     @media(min-width:920px) and (max-width:1380px){
         .tooltip-container:hover .tooltip-trigger::after{
             top: 60%;
@@ -292,9 +332,19 @@
             top: 64%;
             left: 69%;
         }
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{ 
+                left: 85%;
+            }
+        }        
     }
 
     @media(max-width:1200px){
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{
+                left: 77%;
+            } 
+        }
         .heading.hide p{
             line-height: 1.2;
         }
@@ -353,7 +403,11 @@
             margin: 30px auto;
             line-height: 1.2;  
         }
-
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{
+                left: 70%;
+            } 
+        }
 
     }
 
@@ -365,8 +419,20 @@
         #projectTable thead tr {
             grid-template-columns: 35% 30% 30% 30% 30% 30%;
         }
-
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{
+                left: 54%;
+            }
+        } 
     }
+
+    @media(max-width:767px){
+        #projectTable tbody tr .In_Progress.STATUS{
+        &::after{
+                left: 70%; 
+            }
+        }
+    } 
 
     @media screen and (max-width:560px) {
 
@@ -411,5 +477,12 @@
         .table_filter a {
           padding-bottom: 5px;
         }
+        #projectTable tbody tr .In_Progress.STATUS{
+            &::after{ 
+                width: 8px;
+                height: 8px;
+                left: 85%;
+            }
+        } 
     }
 }

@@ -95,7 +95,7 @@
       </div>
     </div>
     <div class="client_project_status container no-projects" style="display: none;">
-      <p class="emptyProjects">NO projects Yet !</p>
+      <p class="emptyProjects">{{ section.settings.alternate_text }}</p>
     </div>
   {% else %}
     <script>window.location.replace("/account");</script>
@@ -187,6 +187,12 @@
       "id": "title",
       "label": "title",
       "default": "ShopTrade Client Project Status"
+    },
+    {
+      "type": "text",
+      "id": "alternate_text",
+      "label":"Enter a alternate text if no column present",
+      "default":"No Projects Yet !"
     },
     {
       "type": "range",
