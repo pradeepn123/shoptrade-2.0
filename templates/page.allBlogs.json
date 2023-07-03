@@ -13,6 +13,7 @@
         "56023b22-c7bb-46a3-a108-0fd39349390b": {
           "type": "Blogs",
           "settings": {
+            "selectblog": ""
           }
         }
       },
@@ -20,6 +21,8 @@
         "56023b22-c7bb-46a3-a108-0fd39349390b"
       ],
       "settings": {
+        "heading": "COMMERCE INSIGHTS",
+        "subheading": "Unpacking expert insights on e-commerce, technology, Shopify, and design. Propel your business growth with actionable strategies and pioneering ideas."
       }
     }
   },
