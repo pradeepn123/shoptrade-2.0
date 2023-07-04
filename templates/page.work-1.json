@@ -50,6 +50,17 @@
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
+            "cardImage": "shopify:\/\/shop_images\/ShopTrade-Work_Midway.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/midways-logo1.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/midwaysports.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "9a3e72f5-6d6b-450a-95da-d4116cb263e6": {
+          "type": "cardType",
+          "settings": {
             "cardImage": "shopify:\/\/shop_images\/US.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
             "clickble": true,
@@ -275,6 +286,7 @@
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "9a3e72f5-6d6b-450a-95da-d4116cb263e6",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
         "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
