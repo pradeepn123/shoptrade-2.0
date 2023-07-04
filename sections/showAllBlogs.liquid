@@ -90,67 +90,98 @@
                         <div class="tabData_{{ forloop.index }} tabData {% if forloop.index == 1%}selected{% endif%}" id="tabTitleChild tabTitle_{{ forloop.index }}">
                         {% if forloop.index == 1 %}
                             <div class="blog_grid-item">
-                                {% for item in copyHandles %}
-                                    {% if blogs[item].articles.size > 0 %}
-                                        {% for article in blogs[item].articles %}
-                                            <div class="blog_grid--eachItem">
-                                                <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
-                                                <div class="content--eachItem">
-                                                    <span class="content--tags">
-                                                        {% for tag in article.tags %}
-                                                            {{ tag }}
-                                                        {% endfor %}
-                                                    </span>
-                                                    <span class="content--publiDate">
-                                                        {{ article.published_at | date: "%d %b %Y" }}
-                                                    </span>
+                                <div class="blog_grid-itemChild">
+                                    {% for item in copyHandles %}
+                                        {% if blogs[item].articles.size > 0 %}
+                                            {% for article in blogs[item].articles %}
+                                                <div class="blog_grid--eachItem">
+                                                    <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                    <div class="content--eachItem">
+                                                        {% if article.tags.size > 0 %}
+                                                            <span class="content--tags">
+                                                                {% for tag in article.tags %}
+                                                                    {{ tag }}
+                                                                {% endfor %}
+                                                            </span>
+                                                        {% endif %}
+                                                        <span class="content--publiDate">
+                                                            {{ article.published_at | date: "%b %d, %Y" }}
+                                                        </span>
+                                                    </div>
+                                                    <div class="content_sub">
+                                                        <div class="content--title">
+                                                            {{ article.title }}
+                                                        </div>
+                                                        <div class="content--url">
+                                                            <a href="{{ article.url }}">
+                                                            Read Post
+                                                                <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="content--title">
-                                                    {{ article.title }}
-                                                </div>
-                                                <div class="content--url">
-                                                    <a href="{{ article.url }}">
-                                                    Read Post
-                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        {% endfor %}
-                                    {% endif %}
-                                {% endfor %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
                             </div>
                         {% else %}
                             <div class="blog_grid-item">
                                 {% for item in anItem %}
                                     {% if blogs[item].articles.size > 0 %}
-                                        {% for article in blogs[item].articles %}
-                                            <div class="blog_grid--eachItem">
-                                                <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
-                                                <div class="content--eachItem">
-                                                    <span class="content--tags">
-                                                        {% for tag in article.tags %}
-                                                            {{ tag }}
-                                                        {% endfor %}
-                                                    </span>
-                                                    <span class="content--publiDate">
-                                                        {{ article.published_at | date: "%d %b %Y" }}
-                                                    </span>
-                                                </div>
-                                                <div class="content--title">
-                                                    {{ article.title }}
-                                                </div>
-                                                <div class="content--url">
-                                                    <a href="{{ article.url }}">
-                                                    Read Post
-                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
-                                                        </svg>
-                                                    </a>
-                                                </div>
+                                        {% paginate blogs[item].articles by 9 %}
+                                            <div class="blog_grid-itemChild"> 
+                                                {% for article in blogs[item].articles %}
+                                                    <div class="blog_grid--eachItem">
+                                                        <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                        <div class="content--eachItem">
+                                                            {% if article.tags.size > 0 %}
+                                                                <span class="content--tags">
+                                                                    {% for tag in article.tags %}
+                                                                        {{ tag }}
+                                                                    {% endfor %}
+                                                                </span>
+                                                            {% endif %}
+                                                            <span class="content--publiDate">
+                                                                {{ article.published_at | date: "%d %b %Y" }}
+                                                            </span>
+                                                        </div>
+                                                        <div class="content_sub">
+                                                            <div class="content--title">
+                                                                {{ article.title }}
+                                                            </div>
+                                                            <div class="content--url">
+                                                                <a href="{{ article.url }}">
+                                                                Read Post
+                                                                    <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {% endfor %}
                                             </div>
-                                        {% endfor %}
+                                            <div class="page_pagination">
+                                                {% if paginate.next %}
+                                                    <a href="{{ paginate.next.url }}">Next</a>
+                                                {% endif %}
+                                                
+                                                {% for part in paginate.parts %}
+                                                    {% if part.is_link %}
+                                                        <a href="{{ part.url }}">{{ part.title }}</a>
+                                                    {% else %}
+                                                        <span>{{ part.title }}</span>
+                                                    {% endif %}
+                                                {% endfor %}
+
+                                                {% if paginate.previous %}
+                                                    <a href="{{ paginate.previous.url }}">Previous</a>
+                                                {% endif %}
+                                            </div>
+                                        {% endpaginate %}
                                     {% endif %}
                                 {% endfor %}
                             </div>
