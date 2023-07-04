@@ -72,7 +72,7 @@
                             <span class="tabTitle tabTitle_{{ forloop.index }} {% if forloop.index ==1 %}selectedTabs{% endif %}" id="tabTitle_{{ forloop.index }}">All Articles</span>
                         {% else %}
                             <span class="tabTitle tabTitle_{{ forloop.index }}" id="tabTitle_{{ forloop.index }}">
-                                {{ anItem | replace: '-', ' ' | capitalize }}
+                                {{ blogs[anItem].title }}
                             </span>
                         {% endif %}
                     {% endfor %}
