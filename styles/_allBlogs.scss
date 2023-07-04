@@ -155,6 +155,8 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: 36px;
+                    display: inline-block;
+                    width: fit-content;
                 }
                 img{
                     width: 100% !important;
@@ -171,4 +173,24 @@
             margin-top: 40px;
         }
     }
+}
+
+.blog_grid--eachItem .btn--underline {
+  height: 2px;
+  max-width: 0%;
+  background-color: #ff7121;
+  animation: none;
+}
+
+.blog_grid--eachItem:hover .btn--underline{
+    animation: drawBorder 0.4s linear both;
+}
+
+@keyframes drawBorder {
+  from {
+    max-width: 0%;
+  }
+  to {
+    max-width: 100%;
+  }
 }
