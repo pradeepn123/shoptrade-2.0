@@ -11568,6 +11568,16 @@ html {
   border: 1px solid #DADADA;
   border-radius: 8px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content__eachItem--parent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content__eachItem--parent .content--url {
+  margin-top: auto;
 }
 .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content--eachItem {
   margin-bottom: 15px;
@@ -11618,6 +11628,7 @@ html {
 .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem img {
   width: 100% !important;
   height: 250px;
+  min-height: 250px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
