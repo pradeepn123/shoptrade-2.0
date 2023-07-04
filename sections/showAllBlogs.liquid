@@ -99,11 +99,11 @@
                                                     <div class="content__eachItem--parent">
                                                         <div class="content--eachItem">
                                                             {% if article.tags.size > 0 %}
-                                                                <span class="content--tags">
+                                                                <p class="content--tags">
                                                                     {% for tag in article.tags %}
                                                                         {{ tag }}
                                                                     {% endfor %}
-                                                                </span>
+                                                                </p>
                                                             {% endif %}
                                                             <span class="content--publiDate">
                                                                 {{ article.published_at | date: "%b %d, %Y" }}
@@ -139,11 +139,11 @@
                                                         <div class="content__eachItem--parent">
                                                             <div class="content--eachItem">
                                                                 {% if article.tags.size > 0 %}
-                                                                    <span class="content--tags">
+                                                                    <p class="content--tags">
                                                                         {% for tag in article.tags %}
                                                                             {{ tag }}
                                                                         {% endfor %}
-                                                                    </span>
+                                                                    </p>
                                                                 {% endif %}
                                                                 <span class="content--publiDate">
                                                                     {{ article.published_at | date: "%d %b %Y" }}
