@@ -304,7 +304,7 @@
         justify-content: center;
         padding: 2rem 0; 
         color: #FF7121;
-        font-size: 42px;
+        font-size: 36px;
     }
    
     @media(min-width:1380px){ 
@@ -473,7 +473,7 @@
             font-size: 24px;
             height: 20vh;
             margin: 10px auto;
-    }
+        }
         .table_filter a {
           padding-bottom: 5px;
         }
@@ -484,5 +484,11 @@
                 left: 85%;
             }
         } 
+        #projectTable th {
+            margin-left: 1rem; 
+            &:first-child{
+                margin-left: 1rem;  
+            }
+        }
     }
 }

@@ -169,8 +169,10 @@
       // To calculate the no. of days between two dates
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
       
+      let daysAfterDeadLine =  Math.round(Difference_In_Days)
+      let daysAfterDeadLineABS = Math.abs(daysAfterDeadLine)
       if(Difference_In_Days <= 0) 
-        daysleft.innerHTML = "deadline passed";
+        daysleft.innerHTML = "deadline passed (" + daysAfterDeadLineABS + " days) ";
       else
         daysleft.innerHTML = Math.round(Difference_In_Days) + " days left";               
     }

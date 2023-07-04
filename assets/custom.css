@@ -10593,7 +10593,7 @@ html {
   justify-content: center;
   padding: 2rem 0;
   color: #FF7121;
-  font-size: 42px;
+  font-size: 36px;
 }
 @media (min-width: 1380px) {
   .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
@@ -10728,6 +10728,12 @@ html {
     width: 8px;
     height: 8px;
     left: 85%;
+  }
+  .client_project_status #projectTable th {
+    margin-left: 1rem;
+  }
+  .client_project_status #projectTable th:first-child {
+    margin-left: 1rem;
   }
 }
 
