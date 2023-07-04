@@ -10360,6 +10360,22 @@ html {
 .client_project_status .table_filter {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
+}
+.client_project_status .table_filter::-webkit-scrollbar-track {
+  padding-top: 5px;
+  background-color: #F5F5F5;
+}
+.client_project_status .table_filter::-webkit-scrollbar {
+  height: 2px;
+  width: 1px;
+  padding-top: 5px;
+  background-color: #F5F5F5;
+}
+.client_project_status .table_filter::-webkit-scrollbar-thumb {
+  padding-top: 5px;
+  background-color: var(--COLOR-PRIMARY);
+  border: 1px solid #251500;
 }
 .client_project_status .table_filter a {
   width: fit-content;
@@ -10382,11 +10398,37 @@ html {
   margin-bottom: 14px;
 }
 .client_project_status #projectTable th {
-  margin-left: 10px;
+  margin-left: 1.2rem;
+}
+.client_project_status #projectTable th:first-child {
+  margin-left: 1.9rem;
 }
 .client_project_status #projectTable tbody {
   display: flex;
   flex-direction: column;
+}
+.client_project_status #projectTable tbody tr .In_Progress.STATUS {
+  position: relative;
+}
+.client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+  position: absolute;
+  content: "";
+  background: #009900;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 50%;
+  left: 79%;
+  transform: translateY(-50%);
+  animation: pulse-green 1.5s infinite;
+}
+@keyframes pulse-green {
+  0% {
+    box-shadow: 0 0 0 0 #009900;
+  }
+  100% {
+    box-shadow: 0 0 0 12px transparent;
+  }
 }
 .client_project_status #projectTable tbody tr {
   background: #ffffff;
@@ -10476,7 +10518,6 @@ html {
   display: grid;
   grid-template-columns: 20% 16% 16% 16% 16% 16%;
   align-items: center;
-  overflow: hidden;
 }
 .client_project_status #projectTable thead tr {
   grid-template-columns: 20% 16% 16% 16% 16% 16%;
@@ -10542,6 +10583,28 @@ html {
   transform: rotate(180deg);
   border-color: #FF7121 transparent transparent transparent;
 }
+.client_project_status .emptyProjects {
+  height: 30vh;
+  border: 1px solid #FF7121;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #FF7121;
+  font-size: 36px;
+}
+@media (min-width: 1380px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
+  }
+}
+@media (min-width: 1720px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 50%;
+  }
+}
 @media (min-width: 920px) and (max-width: 1380px) {
   .client_project_status .tooltip-container:hover .tooltip-trigger::after {
     top: 60%;
@@ -10553,8 +10616,14 @@ html {
     top: 64%;
     left: 69%;
   }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 85%;
+  }
 }
 @media (max-width: 1200px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 77%;
+  }
   .client_project_status .heading.hide p {
     line-height: 1.2;
   }
@@ -10565,7 +10634,7 @@ html {
     grid-template-columns: 25% 20% 20% 20% 20% 20%;
   }
   .client_project_status .set-overflow {
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     cursor: grab;
   }
@@ -10578,6 +10647,7 @@ html {
   }
   .client_project_status .set-overflow::-webkit-scrollbar {
     height: 7px;
+    border-radius: 10px;
     background-color: #F5F5F5;
   }
   .client_project_status .set-overflow::-webkit-scrollbar-thumb {
@@ -10586,12 +10656,22 @@ html {
   }
 }
 @media screen and (max-width: 840px) {
+  .client_project_status #projectTable th {
+    margin-left: 1.2rem;
+  }
+  .client_project_status #projectTable th:first-child {
+    margin-left: 1.2rem;
+  }
   .client_project_status #projectTable {
     margin: 30px 0;
     margin-bottom: 7px;
   }
   .client_project_status .title {
     margin: 30px auto;
+    line-height: 1.2;
+  }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
   }
 }
 @media (max-width: 768px) {
@@ -10600,6 +10680,14 @@ html {
   }
   .client_project_status #projectTable thead tr {
     grid-template-columns: 35% 30% 30% 30% 30% 30%;
+  }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 54%;
+  }
+}
+@media (max-width: 767px) {
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    left: 70%;
   }
 }
 @media screen and (max-width: 560px) {
@@ -10616,6 +10704,8 @@ html {
   }
   .client_project_status .table_filter a {
     line-height: 20px !important;
+    margin-right: 30px;
+    white-space: nowrap;
   }
   .client_project_status #projectTable tbody td {
     line-height: 150% !important;
@@ -10626,10 +10716,24 @@ html {
   .client_project_status .hide {
     overflow: hidden;
   }
-}
-@media (max-width: 375px) {
+  .client_project_status .emptyProjects {
+    font-size: 24px;
+    height: 20vh;
+    margin: 10px auto;
+  }
   .client_project_status .table_filter a {
-    margin-right: 10px;
+    padding-bottom: 5px;
+  }
+  .client_project_status #projectTable tbody tr .In_Progress.STATUS::after {
+    width: 8px;
+    height: 8px;
+    left: 85%;
+  }
+  .client_project_status #projectTable th {
+    margin-left: 1rem;
+  }
+  .client_project_status #projectTable th:first-child {
+    margin-left: 1rem;
   }
 }
 
