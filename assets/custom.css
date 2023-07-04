@@ -11584,6 +11584,12 @@ html {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+.main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.1490196078) 0 5px 15px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid black;
 }
 .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content__eachItem--parent {
   height: 100%;
@@ -11601,7 +11607,7 @@ html {
   width: fit-content !important;
   border-radius: 4px;
   border: 1px solid #000;
-  color: rgba(0, 0, 0, 0.6000000238);
+  color: #000;
   font-size: 14px;
   font-weight: 400;
   padding: 5px 8px;
