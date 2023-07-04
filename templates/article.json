@@ -1,5 +1,11 @@
 {
   "sections": {
+    "a72cbdc4-e92d-45d8-b521-f9e01601fd4b": {
+      "type": "articles",
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
@@ -63,6 +69,7 @@
     }
   },
   "order": [
+    "a72cbdc4-e92d-45d8-b521-f9e01601fd4b",
     "main"
   ]
 }
