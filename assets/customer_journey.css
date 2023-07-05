@@ -13,7 +13,7 @@
 /* Top Content Blocks */
 .cus_jr .cus_jr_child .cus_jr_child_text p {
     font-family: "Epilogue";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     text-align: left;
     height: 100%;
@@ -30,8 +30,8 @@
 .cus_jr .content_containerParent .content_container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 28px 32px 32px 44px;
+    /* justify-content: space-between; */
+    padding: 20px 32px 32px 44px;
     border: 3px solid white;
     border-radius: 8px;
 
@@ -41,16 +41,16 @@
 .cus_jr .cus_jr_child .cus_jr_child_heading p{
     text-align: left;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 48px;
     line-height: 108%;
 }
 
 .cus_jr .content_containerParent .content_container .cc_heading{
-    font-size: 24px;
+    font-size: 32px;
     line-height: 30px;
     font-weight: 700;
     text-align: left;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 }
 .cus_jr .content_containerParent .content_container .cc_description{
     font-size: 18px;
@@ -78,13 +78,13 @@
 /* Media Queries */
 @media screen and (min-width: 992px) {
     .cus_jr .content_containerParent {
-        margin: 36px 0;
+        margin:65px 0px 36px 0px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .cus_jr .cus_jr_parent {
-        padding: 88px;
+        padding:141px 88px 88px 88px;
     }
 
     .cus_jr .cus_jr_parent {
@@ -170,4 +170,7 @@
     .cus_jr .content_containerParent .content_container .cc_description {
         line-height: 32px;
     }
+}
+.audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes:hover,.cus_ctaButton:hover{
+    filter: brightness(90%);
 }
