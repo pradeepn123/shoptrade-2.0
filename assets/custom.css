@@ -11587,7 +11587,6 @@ html {
   cursor: pointer;
 }
 .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem:hover {
-  box-shadow: rgba(0, 0, 0, 0.1490196078) 0 5px 15px;
   transition: all 0.4s ease-in-out;
   border: 1px solid black;
 }

@@ -8,6 +8,7 @@
     },
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
