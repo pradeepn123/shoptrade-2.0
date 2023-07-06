@@ -42,7 +42,7 @@
     text-align: left;
     font-weight: 700;
     font-size: 48px;
-    line-height: 108%;
+    line-height: 32px;
 }
 
 .cus_jr .content_containerParent .content_container .cc_heading{
@@ -141,6 +141,7 @@
     }
     .cus_jr .content_containerParent .content_container .cc_heading{
         font-size: 20px;
+        line-height: 26px;
     }
     .cus_jr .content_containerParent .content_container .cc_description{
         font-size: 16px;
@@ -219,7 +220,7 @@
         font-size: 24px;
     }
     .cus_jr .content_containerParent .content_container .cc_description {
-        line-height: 32px;
+        line-height: 24px;
     }
 }
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes:hover,.cus_ctaButton:hover{

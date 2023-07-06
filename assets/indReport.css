@@ -2,7 +2,7 @@
     color: #000;
     font-size: 48px;
     font-weight: 800;
-    line-height: 48px;
+    line-height: 52px;
     letter-spacing: 0em;
     margin: 0 0 45px 0;
 }
@@ -92,8 +92,5 @@
     .indReport_container .indReport_parent .section_title{
         line-height: 36px;
         font-size: 24px;
-    }
-    .indReport_cc .indReport_loop .indReport_loopedData p{
-        line-height: 32px;
     }
 }
