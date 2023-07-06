@@ -8,7 +8,10 @@
     h2{
         font-size: 32px;
         font-weight: 700;
+<<<<<<< HEAD
         line-height: 1.2;
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
         @media screen and (max-width: 1023px){
             font-size: 20px;
         }
@@ -31,7 +34,10 @@
         font-size: 20px;
         line-height: 42px;
         margin: 0;
+<<<<<<< HEAD
         color: #000;
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
         @media screen and (max-width: 1023px){
             font-size: 16px;
             line-height: 26px;
@@ -88,11 +94,15 @@
                     row-gap: 20px;
                 }
                 .majorContent{
+<<<<<<< HEAD
                     border-bottom: 1px solid #000;
                     @media(min-width:1200px){
                         max-width: 75%;
                         padding-bottom: 30px;
                     }
+=======
+                    max-width: 70%;
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
                     img{
                         width: 100%;
                         border-radius: 8px;
@@ -179,9 +189,12 @@
                 }
                 .minorContent{
                     flex: 1 0 30%;
+<<<<<<< HEAD
                     @media(min-width:1200px){
                         flex: 1 0 25%;
                     }
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
                     .minorContent_Container{
                         left: 0;
                         position:
@@ -372,14 +385,18 @@
                     font-weight: 400;
                     line-height: 36px;
                     margin-left: 12px;
+<<<<<<< HEAD
                     letter-spacing: 0;
                     @media(max-width:320px){
                         margin-left: 0;
                     }
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
                 }
             }
         }
     }
+<<<<<<< HEAD
     .bottom_social_share{
         .sharingIcons{            
             display: flex;
@@ -468,5 +485,9 @@
                 text-decoration-color: #c7cefa;
             }
         }
+=======
+    .articles_topicsContainer{
+        
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
     }
 }

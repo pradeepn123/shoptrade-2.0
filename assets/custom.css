@@ -11743,6 +11743,62 @@ html {
     line-height: 26px;
   }
 }
+.mainArticles h1 {
+  font-size: 42px;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles h1 {
+    font-size: 26px;
+  }
+}
+.mainArticles h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles h2 {
+    font-size: 20px;
+  }
+}
+.mainArticles h3 {
+  font-size: 28px;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles h3 {
+    font-size: 18px;
+  }
+}
+.mainArticles h4 {
+  font-size: 24px;
+  line-height: 72px;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles h4 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+.mainArticles p {
+  font-size: 20px;
+  line-height: 42px;
+  margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.mainArticles ul li, .mainArticles ol li {
+  font-size: 20px;
+  line-height: 36px;
+}
+@media screen and (max-width: 1023px) {
+  .mainArticles ul li, .mainArticles ol li {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 .mainArticles .mart_container .mart_leftContainer .article-template__back .article-template__link {
   justify-content: left;
   color: #000 !important;
@@ -11790,6 +11846,9 @@ html {
     max-width: 75%;
     padding-bottom: 30px;
   }
+}
+.mainArticles .mart_container .mart_leftContainer .mainContent .majorContent {
+  max-width: 70%;
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent img {
   width: 100%;
@@ -11893,11 +11952,14 @@ html {
 .mainArticles .mart_container .mart_leftContainer .mainContent .minorContent {
   flex: 1 0 30%;
 }
+<<<<<<< HEAD
 @media (min-width: 1200px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .minorContent {
     flex: 1 0 25%;
   }
 }
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
 .mainArticles .mart_container .mart_leftContainer .mainContent .minorContent .minorContent_Container {
   left: 0;
   position: sticky;
@@ -12096,6 +12158,7 @@ html {
   font-weight: 400;
   line-height: 36px;
   margin-left: 12px;
+<<<<<<< HEAD
   letter-spacing: 0;
 }
 @media (max-width: 320px) {
@@ -12195,4 +12258,6 @@ html {
   color: #3A4ED4;
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
+=======
+>>>>>>> dc088bd (Update Blogs Pages Shopify)
 }
