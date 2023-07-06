@@ -262,11 +262,15 @@
 
     .tooltip-trigger {
         cursor: pointer;
+        .tooltip-icon{
+            position: relative;
+            display: inline;
+        }
     }
 
     .tooltip {
         position: absolute;
-        top: 96%;
+        // top: 96%;
         left: 0%;
         display: none;
         background-color: #FFF;
@@ -282,13 +286,15 @@
 
     .tooltip-container:hover .tooltip {
         display: block;
+        min-width: fit-content;
+        word-wrap: break-word;
     }
 
-    .tooltip-container:hover .tooltip-trigger::after {
+    .tooltip-container:hover .tooltip::after {
         content: "";
         position: absolute;
-        top: 60%;
-        left: 55%;
+        top: -30px;
+        left: 4px;
         border-width: 15px;
         border-style: solid;
         transform: rotate(180deg);

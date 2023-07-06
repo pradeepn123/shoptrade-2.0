@@ -10560,9 +10560,12 @@ html {
 .client_project_status .tooltip-trigger {
   cursor: pointer;
 }
+.client_project_status .tooltip-trigger .tooltip-icon {
+  position: relative;
+  display: inline;
+}
 .client_project_status .tooltip {
   position: absolute;
-  top: 96%;
   left: 0%;
   display: none;
   background-color: #FFF;
@@ -10577,12 +10580,14 @@ html {
 }
 .client_project_status .tooltip-container:hover .tooltip {
   display: block;
+  min-width: fit-content;
+  word-wrap: break-word;
 }
-.client_project_status .tooltip-container:hover .tooltip-trigger::after {
+.client_project_status .tooltip-container:hover .tooltip::after {
   content: "";
   position: absolute;
-  top: 60%;
-  left: 55%;
+  top: -30px;
+  left: 4px;
   border-width: 15px;
   border-style: solid;
   transform: rotate(180deg);
