@@ -8472,6 +8472,7 @@ textarea {
   }
 }
 .audit-faq.faq_audit_page .faq-heading {
+  color: #000;
   text-align: center;
   font-size: 48px;
   margin-bottom: 78px;
@@ -8480,7 +8481,7 @@ textarea {
   .audit-faq.faq_audit_page .faq-heading {
     text-align: left;
     font-size: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     line-height: 36px;
   }
 }
@@ -8578,14 +8579,13 @@ textarea {
   line-height: 30px;
   color: #000000;
   margin: 0;
-  max-width: 60%;
+  max-width: 90%;
   padding: 1em;
 }
 @media (max-width: 520px) {
   .audit-faq .container .accordion .accordion__body .fans {
     font-size: 14px;
     line-height: 21px;
-    max-width: none;
   }
 }
 .audit-faq .container .accordion .accordion__body.is-active {
@@ -10099,7 +10099,7 @@ html {
 .audit_repP .content_containerParent .content_container svg {
   margin-bottom: 24px !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .audit_repP .content_containerParent .content_container svg {
     margin-bottom: 12px !important;
   }
@@ -10177,10 +10177,15 @@ html {
 }
 @media screen and (max-width: 1199px) {
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--lH {
-    font-size: 26px;
+    font-size: 32px;
   }
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--lH br {
     display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 390px) {
+  .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--lH br {
+    display: block;
   }
 }
 @media screen and (max-width: 480px) {
@@ -10202,6 +10207,7 @@ html {
 @media screen and (max-width: 1023px) {
   .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .audit_atf--subH {
     font-size: 16px;
+    line-height: 24px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10303,12 +10309,26 @@ html {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
-  overflow: scroll;
+  overflow: auto;
   column-gap: 20px;
   row-gap: 20px;
   align-items: center;
   padding: 10px 0;
   align-items: center;
+}
+.mi_audit .mi_audit_text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.mi_audit .mi_audit_text::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  background-color: #F5F5F5;
+}
+.mi_audit .mi_audit_text::-webkit-scrollbar-thumb {
+  margin-top: 10px;
+  background-color: #000;
+  border: 1px solid #000;
 }
 @media screen and (max-width: 1023px) {
   .mi_audit .mi_audit_text {
@@ -10876,7 +10896,7 @@ html {
   }
 }
 .aP_container .container .aP_parent .ap_leftBlock {
-  padding: 36px 62px;
+  padding: 36px 62px 36px 0;
   flex: 1 0 50%;
   display: flex;
   flex-direction: column;
@@ -10884,7 +10904,7 @@ html {
 }
 @media screen and (max-width: 1023px) {
   .aP_container .container .aP_parent .ap_leftBlock {
-    padding: 36px 31px;
+    padding: 36px 31px 36px 0px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10924,21 +10944,22 @@ html {
   font-weight: 700;
   line-height: 36px;
 }
+@media screen and (max-width: 520px) {
+  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:first-child {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
   color: #000;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 520px) {
   .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
     font-size: 16px;
-    line-height: 108%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .aP_container .container .aP_parent .ap_leftBlock .ap_leftBlock--miniContainer.not_special_block p:last-child {
-    line-height: 32px;
+    line-height: 24px;
   }
 }
 .aP_container .container .aP_parent .ap_leftBlock .section_heading {
@@ -10949,7 +10970,8 @@ html {
 }
 @media screen and (max-width: 1199px) {
   .aP_container .container .aP_parent .ap_leftBlock .section_heading {
-    font-size: 24px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -10971,6 +10993,12 @@ html {
   line-height: 36px;
   padding-bottom: 8px;
 }
+@media screen and (max-width: 1200px) {
+  .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
 @media screen and (max-width: 767px) {
   .aP_container .container .aP_parent .ap_leftBlock .special_block p:first-child {
     margin-bottom: 16px;
@@ -10983,11 +11011,6 @@ html {
   font-weight: 400;
   line-height: 32px;
 }
-@media screen and (max-width: 1023px) {
-  .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
-    font-size: 16px;
-  }
-}
 @media screen and (max-width: 767px) {
   .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
     margin-bottom: 18px;
@@ -10995,7 +11018,8 @@ html {
 }
 @media screen and (max-width: 480px) {
   .aP_container .container .aP_parent .ap_leftBlock .special_block p:last-child {
-    line-height: 32px;
+    line-height: 24px;
+    font-size: 16px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock {
@@ -11030,7 +11054,7 @@ html {
 }
 @media screen and (max-width: 1023px) {
   .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pricing .originPrice {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pricing .originPrice .originalPrice_parent:before {
@@ -11057,7 +11081,7 @@ html {
 }
 @media screen and (max-width: 1023px) {
   .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pricing .discountPrice {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock h3 {
@@ -11085,7 +11109,7 @@ html {
 }
 @media screen and (max-width: 1199px) {
   .aP_container .container .aP_parent .ap_rightBlock .rightBlock_heading {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .aP_container .container .aP_parent .ap_rightBlock .ap_rightBlock--pointers {

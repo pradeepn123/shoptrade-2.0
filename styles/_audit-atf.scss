@@ -51,9 +51,14 @@
                     font-size: 52px;
                     line-height: 108%;
                     @media screen and (max-width: 1199px){ 
-                        font-size: 26px;
+                        font-size: 32px;
                         br{
                             display: none;
+                        }
+                    }
+                    @media screen and (min-width:375px) and (max-width:390px) {
+                        br{
+                            display: block;
                         }
                     }
                     @media screen and (max-width: 480px){
@@ -70,6 +75,7 @@
                     }
                     @media screen and (max-width: 1023px){
                         font-size: 16px;
+                        line-height: 24px;
                     }
                     @media screen and (max-width: 767px){
                         max-width: none;

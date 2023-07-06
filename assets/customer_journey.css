@@ -75,6 +75,9 @@
     width: fit-content;
     margin: 0 auto;
 }
+.reM .reM_pagination{
+    opacity: 0;
+}
 /* Media Queries */
 @media screen and (min-width: 992px) {
     .cus_jr .content_containerParent {
@@ -105,11 +108,32 @@
     }
     .cus_jr .content_containerParent{
         margin: 48px 0;
+        overflow: auto; 
+        padding-bottom: 10px;
+    }
+    .cus_jr .content_containerParent::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    
+    .cus_jr .content_containerParent::-webkit-scrollbar
+    {
+        width: 2px;
+        height: 2px;
+        background-color: #F5F5F5;
+    }
+    
+    .cus_jr .content_containerParent::-webkit-scrollbar-thumb
+    {
+        background-color: #FF7121;
+        border: 1px solid #FF7121;
     }
 
     /* Bottom Content */
     .cus_jr .content_containerParent .content_container {
         padding: 24px 24px 29px;
+        width: 320px;
     }
     .cus_jr .content_containerParent .content_container svg{
         width: 45px;
@@ -120,12 +144,15 @@
     }
     .cus_jr .content_containerParent .content_container .cc_description{
         font-size: 16px;
+        line-height: 26px;
     }
     .cus_ctaButton{
         padding: 12px 48px !important;
         font-size: 16px;
     }
 }
+
+    
 
 @media screen and (max-width: 767px){
     .cus_jr_parent{
@@ -150,15 +177,39 @@
     .cus_jr .content_containerParent{
         grid-template-columns: initial !important;
         margin: 40px 0;
+        overflow: unset;
     }
     .cus_jr .content_containerParent .content_container{
         row-gap: 10px;
+        width: unset;
     }
     .cus_jr .content_containerParent .content_container:not(:last-of-type){
         margin-bottom: 20px;
     }
     .cus_jr .content_containerParent .content_container .cc_heading br{
         display: none;
+    }
+    .reM .reM_container .reM_parent .swiper-button-next{
+        display: none !important;
+    }
+    .reM .reM_container .reM_parent .swiper-button-prev{
+        display: none !important;
+    }
+    .reM .reM_pagination{
+        width: 100%;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        column-gap: 10px;
+    }
+    .reM .reM_pagination .swiper-pagination-bullet{
+        background: #fff;
+        border: 1.5px solid #FF7121;
+    } 
+    .reM .reM_pagination .swiper-pagination-bullet-active{
+        background: #FF7121;
     }
 }
 

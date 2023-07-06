@@ -41,16 +41,21 @@
     color: #000;
 }
 
-@media screen and (max-width: 1199px){
+.mi_audit .imageMobileOnly img{
+    width: 100%;
+}
+@media screen and (max-width: 1380px){
     .indReport_container .indReport_parent .section_title{
         font-size: 26px;
         margin: 0 0 16px 0;
     }
     .indReport_cc .indReport_loop .indReport_loopedData h3{
         font-size: 24px;
+        line-height: 1.3;
     }
     .indReport_cc .indReport_loop .indReport_loopedData p{
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 28px;
     }
 }
 
@@ -64,7 +69,7 @@
         row-gap: 16px;
     }
     .indReport_loop img {
-        height: 230px;
+        height: 260px;
     }
     /* Block Content */
     .indReport_cc .indReport_loop .indReport_loopedData{
