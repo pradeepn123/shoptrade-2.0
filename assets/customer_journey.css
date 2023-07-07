@@ -222,6 +222,14 @@
     .cus_jr .content_containerParent .content_container .cc_description {
         line-height: 24px;
     }
+    .reM .reM_container .reM_parent .swiper-slide{
+        width: calc(100% - 30px)!important;
+        margin: 0 15px;
+     }
+   .reM .reM_container .reM_parent .swiper-slide.swiper-slide-active{
+        margin-left: 30px;
+    }
+
 }
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes:hover,.cus_ctaButton:hover{
     filter: brightness(90%);
