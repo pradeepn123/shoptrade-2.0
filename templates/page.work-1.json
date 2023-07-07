@@ -3,51 +3,18 @@
     "work": {
       "type": "work",
       "blocks": {
-        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Kimi.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/KIMIA_f02006c8-65b9-4766-958c-18d2c06d9000.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
-        "ecb392bc-5524-4421-8bbc-5656faa04c09": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Heal-_-Co_b54c744e-ed3c-42c2-bdbf-45152b88058f.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
-        "58e1be9a-570f-4374-9d71-d67d4e0b5a33": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Sproos-life.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Sproos.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
-        "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Brekki.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Brekki.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "664a7d18-6342-4685-8f71-280ccf2d8128": {
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Vinera.jpg",
@@ -278,6 +245,50 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
+        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Kimi.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/KIMIA_f02006c8-65b9-4766-958c-18d2c06d9000.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
+        "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
+        "58e1be9a-570f-4374-9d71-d67d4e0b5a33": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Sproos-life.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Sproos.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
+        "ecb392bc-5524-4421-8bbc-5656faa04c09": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Heal-_-Co_b54c744e-ed3c-42c2-bdbf-45152b88058f.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
         "49c0539d-b33c-4081-9f94-817f171e22c3": {
           "type": "cardType",
           "disabled": true,
@@ -292,11 +303,8 @@
         }
       },
       "block_order": [
-        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
-        "ecb392bc-5524-4421-8bbc-5656faa04c09",
-        "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
-        "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "664a7d18-6342-4685-8f71-280ccf2d8128",
         "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8",
         "9a3e72f5-6d6b-450a-95da-d4116cb263e6",
         "56726384-63dc-401c-b4a2-0b9dd92a3610",
@@ -317,6 +325,10 @@
         "a154bb33-3944-473d-a900-8fe847a8cbd6",
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
+        "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
+        "9bd657de-daa5-4356-8d54-4b7c39d912c3",
+        "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
+        "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "49c0539d-b33c-4081-9f94-817f171e22c3"
       ],
       "settings": {
