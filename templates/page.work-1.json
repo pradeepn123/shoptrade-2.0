@@ -6,6 +6,17 @@
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Flore.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Flore.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "cb910bc6-d7fe-4fdc-a743-2df6e0c279ef": {
+          "type": "cardType",
+          "settings": {
             "cardImage": "shopify:\/\/shop_images\/Brekki.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Brekki.png",
             "clickble": true,
@@ -304,6 +315,7 @@
       },
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "cb910bc6-d7fe-4fdc-a743-2df6e0c279ef",
         "664a7d18-6342-4685-8f71-280ccf2d8128",
         "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8",
         "9a3e72f5-6d6b-450a-95da-d4116cb263e6",
