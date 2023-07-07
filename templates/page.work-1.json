@@ -6,6 +6,17 @@
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Alfabet.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Alfabet.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "42d597c8-d471-4d0c-a9a6-55986365f136": {
+          "type": "cardType",
+          "settings": {
             "cardImage": "shopify:\/\/shop_images\/Mailo.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Maillo.png",
             "clickble": true,
@@ -337,6 +348,7 @@
       },
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "42d597c8-d471-4d0c-a9a6-55986365f136",
         "3b72434a-2b30-498c-a8ac-f495d7c4a8c8",
         "fe4cff8f-131c-4756-8061-6be24c659b30",
         "cb910bc6-d7fe-4fdc-a743-2df6e0c279ef",
