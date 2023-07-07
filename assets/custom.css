@@ -9918,6 +9918,20 @@ html {
 .brand-marquee__block {
   max-width: max-content;
 }
+.brand-marquee__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand-marquee__icon img {
+  height: 50px;
+  object-fit: contain;
+}
+@media screen and (max-width: 520px) {
+  .brand-marquee__icon img {
+    height: 40px;
+  }
+}
 .brand-marquee .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
