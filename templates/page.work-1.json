@@ -14,6 +14,17 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
+        "ca9e6bde-a271-4fe2-8aa7-f57e0246fa66": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Cozze.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Cozzee.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
         "2f4bafa9-0f3d-4a35-96d1-e7a40de7c3af": {
           "type": "cardType",
           "settings": {
@@ -370,6 +381,7 @@
       },
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "ca9e6bde-a271-4fe2-8aa7-f57e0246fa66",
         "2f4bafa9-0f3d-4a35-96d1-e7a40de7c3af",
         "69bf07ff-b5df-455b-9fe9-826ee0f13e2b",
         "42d597c8-d471-4d0c-a9a6-55986365f136",
