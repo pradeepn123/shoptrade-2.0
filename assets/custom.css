@@ -8436,6 +8436,7 @@ textarea {
   border: 1px solid black;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  transition: all 0.3s linear;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -8452,6 +8453,7 @@ textarea {
   border-bottom-left-radius: 0;
   border-bottom: 0;
   padding-bottom: 0;
+  transition: all 0.3s linear;
 }
 .audit-faq.faq_audit_page .container .accordion .accordion__body.is-active {
   border: 1px solid #000;
