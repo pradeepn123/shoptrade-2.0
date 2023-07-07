@@ -158,8 +158,18 @@
             text-align: center;
             color: var(--COLOR-BLACK);
             padding: 38px 0;
-            p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{ 
                 margin: 0;
+            }
+           &:hover .Hover__arrow{
+                opacity: 1;
+                transform: rotate(9deg);
+            }
+            .Hover__arrow{
+               opacity: 0;
             }
         }
         .work-body {
