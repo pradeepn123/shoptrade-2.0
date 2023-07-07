@@ -14,6 +14,17 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
+        "1bcaeb95-f29f-4563-b0c5-32937a81356e": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Adventure.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Perfect-Pickle.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
         "22d87739-d08c-4ae2-8817-1fba55d2e6cc": {
           "type": "cardType",
           "settings": {
@@ -392,6 +403,7 @@
       },
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "1bcaeb95-f29f-4563-b0c5-32937a81356e",
         "22d87739-d08c-4ae2-8817-1fba55d2e6cc",
         "ca9e6bde-a271-4fe2-8aa7-f57e0246fa66",
         "2f4bafa9-0f3d-4a35-96d1-e7a40de7c3af",
