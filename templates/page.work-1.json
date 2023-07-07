@@ -17,6 +17,17 @@
         "afa521ec-668b-419d-be9a-f6f1546e498d": {
           "type": "cardType",
           "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Sway.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Sway_bb374529-e7a4-473e-926a-38f5121af5a0.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "31ad16b9-91d2-43fd-98e2-4798438e5085": {
+          "type": "cardType",
+          "settings": {
             "cardImage": "shopify:\/\/shop_images\/Whoa.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/Whoa.png",
             "clickble": true,
@@ -426,6 +437,7 @@
       "block_order": [
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
         "afa521ec-668b-419d-be9a-f6f1546e498d",
+        "31ad16b9-91d2-43fd-98e2-4798438e5085",
         "8e3cc239-fd4e-48a6-811b-5c3296bb1a58",
         "1bcaeb95-f29f-4563-b0c5-32937a81356e",
         "22d87739-d08c-4ae2-8817-1fba55d2e6cc",
