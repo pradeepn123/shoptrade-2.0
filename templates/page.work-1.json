@@ -3,6 +3,28 @@
     "work": {
       "type": "work",
       "blocks": {
+        "6c361f49-c740-4c88-a697-a07cc0978984": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/BEsynchro.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/besynchro.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
+            "clickble": false,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+          }
+        },
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
           "type": "cardType",
           "settings": {
@@ -11,6 +33,28 @@
             "clickble": true,
             "open_new_tab": true,
             "cardLink": "https:\/\/caavadesign.com\/work\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/www.clubsullivan.tv\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
+        },
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/angles90.png",
+            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/shoptrade.co\/pages\/angles",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -234,28 +278,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
-        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/angles90.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/angles",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "6c361f49-c740-4c88-a697-a07cc0978984": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/BEsynchro.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/besynchro.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3": {
           "type": "cardType",
           "settings": {
@@ -264,17 +286,6 @@
             "clickble": true,
             "open_new_tab": true,
             "cardLink": "https:\/\/5percentnutrition.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/www.clubsullivan.tv\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         },
@@ -388,17 +399,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
-        "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
-            "clickble": false,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
-          }
-        },
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33": {
           "type": "cardType",
           "settings": {
@@ -435,7 +435,11 @@
         }
       },
       "block_order": [
+        "6c361f49-c740-4c88-a697-a07cc0978984",
+        "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
+        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
         "afa521ec-668b-419d-be9a-f6f1546e498d",
         "31ad16b9-91d2-43fd-98e2-4798438e5085",
         "8e3cc239-fd4e-48a6-811b-5c3296bb1a58",
@@ -456,10 +460,7 @@
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
         "2c3a4b9b-d183-4461-94ea-8ba213835dca",
         "a042d646-89ce-4d16-8b64-aea734310f47",
-        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
-        "6c361f49-c740-4c88-a697-a07cc0978984",
         "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3",
-        "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
         "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
         "d0aaf961-3564-47c1-b2c5-cc9da6674890",
@@ -470,7 +471,6 @@
         "e3f17897-720d-45a7-86d5-d1b23ee326fa",
         "e278c52b-1936-43f5-8431-6b3e5b982a8b",
         "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
-        "9bd657de-daa5-4356-8d54-4b7c39d912c3",
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "49c0539d-b33c-4081-9f94-817f171e22c3"
