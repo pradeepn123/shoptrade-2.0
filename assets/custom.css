@@ -8452,6 +8452,7 @@ textarea {
   border-bottom-left-radius: 0;
   border-bottom: 0;
   padding-bottom: 0;
+  transition: all 0.3s linear;
 }
 .audit-faq.faq_audit_page .container .accordion .accordion__body.is-active {
   border: 1px solid #000;
@@ -9916,6 +9917,20 @@ html {
 
 .brand-marquee__block {
   max-width: max-content;
+}
+.brand-marquee__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand-marquee__icon img {
+  height: 50px;
+  object-fit: contain;
+}
+@media screen and (max-width: 520px) {
+  .brand-marquee__icon img {
+    height: 40px;
+  }
 }
 .brand-marquee .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
