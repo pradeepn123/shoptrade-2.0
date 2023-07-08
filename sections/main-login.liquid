@@ -60,9 +60,11 @@
         {{ 'customer.login_page.submit' | t }}
       </button>
 
-      <a href="#login">
-        {{ 'customer.login_page.cancel' | t }}
-      </a>
+      <div id="btn-txt-wraper" >Remember your password? 
+        <a href="#login" id="resetpswd-cancel">
+          {{ 'customer.login_page.cancel' | t }}
+        </a>
+      </div>
     {%- endform -%}
   </div>
 
@@ -114,7 +116,7 @@
       </div>
 
       {%- if form.password_needed -%}
-        <div class="field">          
+        <div class="field" id="password-field">          
           <input
             type="password"
             value=""
@@ -129,20 +131,24 @@
           <label for="CustomerPassword">
             {{ 'customer.login_page.password' | t }}
           </label>
-        </div>
 
-        <a href="#recover" class="forgot_password">
+        <a id="forgot-pswd" href="#recover" class="forgot_password">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
+        </div>
+
       {%- endif -%}
 
-      <button class="signIn_icon">
-        {{ 'customer.login_page.sign_in' | t }}
-      </button>
+      <div id="login-button">
+        <button class="signIn_icon">{{ 'customer.login_page.sign_in' | t }}</button>
+      </div>
 
-      <a href="{{ routes.account_register_url }}">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
+
+      <div id="button-text-wrap">don't have account?    
+        <a id="create-account" href="{{ routes.account_register_url }}">
+          {{ 'customer.login_page.create_account' | t }}
+         </a>
+      </div>
       
     {%- endform -%}
   </div>

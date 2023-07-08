@@ -576,6 +576,12 @@ $(document).ready(function () {
 });
 
 
+//Clicking on lets talk in sitemap page must bring up the new contact popup
+$("#letstalk-btn-sitemap, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
+  $("#contact-btn-details").trigger('click');
+})
+
+
 
 
 

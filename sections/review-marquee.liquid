@@ -12,12 +12,16 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
             breakpoints: {
                 767: {
                     spaceBetween: 10,
                 },
                 480: {
-                    spaceBetween: 10,
+                    spaceBetween: 0,
                     slidesPerView: 1,
                 }
             }
@@ -38,7 +42,7 @@
 }
 {% endstyle %}
 
-<div class="reM">
+<div class="reM ">
     <div class="reM_container">
         <div class="reM_parent">
             <div class="swiper-container rm-slider">
@@ -60,6 +64,7 @@
             </div>
         </div>
     </div>
+    <div class="swiper-pagination reM_pagination"></div>
 </div>
 
 {% schema %}

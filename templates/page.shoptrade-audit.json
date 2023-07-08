@@ -319,7 +319,7 @@
         "image_instead_ofLogos": "shopify:\/\/shop_images\/Logo_for_mobile.png",
         "section_bgColor": "#ff7121",
         "d_marginTop": 50,
-        "d_marginBottom": 50,
+        "d_marginBottom": 80,
         "m_marginTop": 0,
         "m_marginBottom": 50
       }
@@ -331,7 +331,7 @@
           "type": "Block",
           "settings": {
             "svg_icon": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"1 ICON\">\n<g id=\"Group 8285\">\n<path id=\"Rectangle 3660\" d=\"M0 31.9998C0 14.3266 14.3269 -0.000244141 32 -0.000244141C49.6731 -0.000244141 64 14.3266 64 31.9998C64 49.6729 49.6731 63.9998 32 63.9998C14.3269 63.9998 0 49.6729 0 31.9998Z\" fill=\"#FF7121\"><\/path>\n<\/g>\n<path id=\"1\" d=\"M35.0126 20.352V44H30.8206V24.432C30.7139 24.5387 30.4312 24.6827 29.9726 24.864C29.5246 25.0347 28.9806 25.2 28.3406 25.36C27.7112 25.5093 27.0552 25.616 26.3726 25.68V22.256C27.0552 22.1707 27.7112 22.0213 28.3406 21.808C28.9806 21.5947 29.5299 21.36 29.9886 21.104C30.4472 20.8373 30.7566 20.5867 30.9166 20.352H35.0126Z\" fill=\"white\"><\/path>\n<\/g>\n<\/svg>",
-            "block_heading": "Submit Your <br>Request",
+            "block_heading": "Submit Your Request",
             "block_description": "Once purchased the audit report process begins by submitting your request through our user-friendly form. Provide us with the necessary details about your website .",
             "block_bgColor": "#3a4ed4",
             "block_textColor": "#ffffff"

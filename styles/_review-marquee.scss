@@ -26,6 +26,10 @@
                     &.swiper-slide-active{
                         background-color: #FF7121;
                         color: white;
+                        transition: background-color 2s linear;
+                        @media(max-width:480px){
+                            transition: unset;
+                        }
                         .swiper-slide__wrapper{
                             @media screen and (max-width: 480px){
                                 color: white;

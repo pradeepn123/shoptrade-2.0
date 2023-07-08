@@ -20,12 +20,12 @@
       
         {% if count > 0 %}
           <div class="tooltip-container">
-            <span class="tooltip-trigger">{{ item.settings.TEAM | truncate: 23 }} &#9432;</span>
+            <div class="tooltip-trigger">{{ item.settings.TEAM | truncate: 23 }} <div class = "tooltip-icon">&#9432;
             <div class="tooltip">
               {% for i in (2..ttmembers.size) %}
                 {{ ttmembers[i] }}
               {% endfor %}
-            </div>
+            </div></div></div>
           </div>
         {% else %}
           <span class="tooltip-trigger">{{ item.settings.TEAM | truncate: 23 }}</span>
