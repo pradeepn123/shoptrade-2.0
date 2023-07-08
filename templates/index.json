@@ -78,12 +78,20 @@
             "icon": "shopify:\/\/shop_images\/logo3.png",
             "mar_text": "Chill"
           }
+        },
+        "012f9854-53ba-4200-a59c-f035e5b0f39a": {
+          "type": "brands",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Us-Polo.png",
+            "mar_text": ""
+          }
         }
       },
       "block_order": [
         "fbc499bd-3314-4604-86c5-3fc6129a7608",
         "6069c368-8da2-421a-9c1b-19ba1f578765",
-        "76ea890c-8eee-4452-967c-dbc26d1dbd7f"
+        "76ea890c-8eee-4452-967c-dbc26d1dbd7f",
+        "012f9854-53ba-4200-a59c-f035e5b0f39a"
       ],
       "settings": {
         "reverse": false,
