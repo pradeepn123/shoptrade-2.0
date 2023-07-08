@@ -99,6 +99,13 @@
             "icon": "shopify:\/\/shop_images\/5_1102686b-0e72-4bc4-b77a-dbda86413e49.png",
             "mar_text": ""
           }
+        },
+        "4d031e26-9b52-4f87-b7f6-de362c9debc3": {
+          "type": "brands",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Dunkin_52f823b8-5980-40e9-bf06-068abf8beabe.png",
+            "mar_text": ""
+          }
         }
       },
       "block_order": [
@@ -107,7 +114,8 @@
         "76ea890c-8eee-4452-967c-dbc26d1dbd7f",
         "012f9854-53ba-4200-a59c-f035e5b0f39a",
         "4fef3928-9868-48aa-923d-c846f94228e4",
-        "85403365-8629-4df0-a135-01d9b5bcb393"
+        "85403365-8629-4df0-a135-01d9b5bcb393",
+        "4d031e26-9b52-4f87-b7f6-de362c9debc3"
       ],
       "settings": {
         "reverse": false,
