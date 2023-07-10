@@ -41,7 +41,7 @@
 } */
 {%- endstyle -%}
 
-<div class="newsletter  {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter  {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}" style="{% if section.settings.border_top == true %}border-top: 1px solid black;{% endif %}">
   <div class="container">
     <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
       {%- for block in section.blocks -%}
@@ -122,6 +122,12 @@
 "tag": "section",
 "class": "section",
 "settings": [
+{
+  "type": "checkbox",
+  "id": "border_top",
+  "label": "Border Top",
+  "default": false
+},
 {
 "type": "select",
 "id": "color_scheme",

@@ -94,10 +94,48 @@
       ],
       "settings": {
       }
+    },
+    "8962684f-7fdf-4849-a6a0-065e33d4367e": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-0",
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-1",
+        "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2"
+      ],
+      "settings": {
+        "border_top": true,
+        "color_scheme": "background-1",
+        "heading": "Sign up for our free ecommerce newsletter.",
+        "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "a72cbdc4-e92d-45d8-b521-f9e01601fd4b",
-    "main"
+    "main",
+    "8962684f-7fdf-4849-a6a0-065e33d4367e"
   ]
 }
