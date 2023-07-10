@@ -43,79 +43,13 @@
             "STATUS": "In Progress"
           }
         },
-        "5c6b76b8-86a3-461c-a601-5f2f019039c6": {
+        "439bc47c-86aa-49d3-8f82-7bb5be6c60a0": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "Be Synchro",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/267997",
-            "TEAM": "Sahrudh, Nagavasavi, Hadhil",
+            "PROJECT_NAME": "Chesapeake Ceramics",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/321674",
+            "TEAM": "Chaman, Nikhil, Shivanshi, Shweta, Amit, Nikhil, Sumayya",
             "PHASE": "Development",
-            "PROJECT_DEADLINE": "-",
-            "STATUS": "In Progress"
-          }
-        },
-        "16ce55b2-f7cf-496f-85bc-cba76e3e497c": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Chill 2.0 - Chill Brand Group",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects",
-            "TEAM": "",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "5072a2be-cdb8-4197-a154-419b3f6f0679": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "CX Ortho Supply",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/288524",
-            "TEAM": "Rosh, Sahrudh, Nagavasavi, Shweta, Amit",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "53c80d35-3f21-4177-a20d-d55301f238e7": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Hathaspace",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/158862",
-            "TEAM": "Faizal, Deekshith, Rosh, Darshika, Shivanshi, Nagavasavi",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "bc2a1bdc-280f-4a80-8d5e-071aa8382f52": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Lens Advizor",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/158867",
-            "TEAM": "Amit, Sumayya,",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "196c15e0-6221-4838-a9e0-a4b6b08bfcb7": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Sendif",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/191493",
-            "TEAM": "Chaman, Shivanshi, Nikhil, Prince",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "Yet to start"
-          }
-        },
-        "ae3d023a-61c1-4e64-a1ec-e173b3412d0c": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "SNS Health & Sproos Life",
-            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/352007",
-            "TEAM": "Adarsh, Chaman, Faizal, Chaman, Rosh, Shweta, Keerthi, Hadil Nagavsavi, Ritu, Pradeep, Amit",
-            "PHASE": "Design",
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
@@ -125,13 +59,7 @@
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
         "f505c530-8428-480c-85e3-17293b570ab8",
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
-        "5c6b76b8-86a3-461c-a601-5f2f019039c6",
-        "16ce55b2-f7cf-496f-85bc-cba76e3e497c",
-        "5072a2be-cdb8-4197-a154-419b3f6f0679",
-        "53c80d35-3f21-4177-a20d-d55301f238e7",
-        "bc2a1bdc-280f-4a80-8d5e-071aa8382f52",
-        "196c15e0-6221-4838-a9e0-a4b6b08bfcb7",
-        "ae3d023a-61c1-4e64-a1ec-e173b3412d0c"
+        "439bc47c-86aa-49d3-8f82-7bb5be6c60a0"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
