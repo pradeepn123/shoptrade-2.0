@@ -53,13 +53,25 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "77dd4b75-2466-4418-a17c-e761e986d2bd": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Heal & Co",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/352005",
+            "TEAM": "Adarsh, Chaman, Faizal, Rosh, Nagavasavi, Sahrudh, Keerthi, Shweta, Pradeep, Hadhil",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
         "f505c530-8428-480c-85e3-17293b570ab8",
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
-        "439bc47c-86aa-49d3-8f82-7bb5be6c60a0"
+        "439bc47c-86aa-49d3-8f82-7bb5be6c60a0",
+        "77dd4b75-2466-4418-a17c-e761e986d2bd"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
