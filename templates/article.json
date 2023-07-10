@@ -7,7 +7,7 @@
           "type": "popularInsights",
           "settings": {
             "title": "Popular Insights",
-            "lt_blog": "insights",
+            "lt_blog": "business-strategy",
             "lt_noOfArticles": 10
           }
         },
