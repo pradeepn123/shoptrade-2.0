@@ -108,7 +108,7 @@
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": ""
           }
         },
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2": {
@@ -123,9 +123,10 @@
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2"
       ],
       "settings": {
+        "border_top": true,
         "color_scheme": "background-1",
-        "heading": "",
-        "agreeTxt": "",
+        "heading": "Sign up for our free ecommerce newsletter.",
+        "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
