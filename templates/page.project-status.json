@@ -64,6 +64,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "5072a2be-cdb8-4197-a154-419b3f6f0679": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "CX Ortho Supply",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/288524",
+            "TEAM": "Rosh, Sahrudh, Nagavasavi, Shweta, Amit",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -71,7 +82,8 @@
         "f505c530-8428-480c-85e3-17293b570ab8",
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
         "5c6b76b8-86a3-461c-a601-5f2f019039c6",
-        "16ce55b2-f7cf-496f-85bc-cba76e3e497c"
+        "16ce55b2-f7cf-496f-85bc-cba76e3e497c",
+        "5072a2be-cdb8-4197-a154-419b3f6f0679"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
