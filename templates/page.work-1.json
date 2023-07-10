@@ -7,8 +7,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Kimi.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/KIMIA_f02006c8-65b9-4766-958c-18d2c06d9000.png",
+            "brand_btn": false,
             "clickble": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/KIMIA_f02006c8-65b9-4766-958c-18d2c06d9000.png",
+            "brand_name": "Kimia",
             "open_new_tab": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
@@ -18,8 +21,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Heal-_-Co_b54c744e-ed3c-42c2-bdbf-45152b88058f.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
+            "brand_btn": false,
             "clickble": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
+            "brand_name": "HEAL + CO",
             "open_new_tab": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
@@ -29,8 +35,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Sproos-life.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Sproos.png",
+            "brand_btn": false,
             "clickble": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Sproos.png",
+            "brand_name": "SPROOS",
             "open_new_tab": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
@@ -40,8 +49,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
+            "brand_btn": false,
             "clickble": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
+            "brand_name": "SNS Health",
             "open_new_tab": false,
             "cardLink": "",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
@@ -51,8 +63,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/US.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
+            "brand_name": "U.S. POLO",
             "open_new_tab": true,
             "cardLink": "https:\/\/www.uspoloassn.co.uk\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -62,8 +77,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
+            "brand_name": "ELEVATIONE",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -73,8 +91,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Pole-Junkie.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
+            "brand_name": "PoleJunkie",
             "open_new_tab": true,
             "cardLink": "https:\/\/www.polejunkie.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -84,8 +105,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
+            "brand_name": "HATHASPACE",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -95,8 +119,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Swing-fans.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
+            "brand_name": "SWING FANs",
             "open_new_tab": true,
             "cardLink": "https:\/\/swingfans.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -106,8 +133,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
+            "brand_name": "CHILL",
             "open_new_tab": false,
             "cardLink": "https:\/\/chill.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -117,8 +147,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/angles90.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
+            "brand_name": "ANGLES90",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/angles",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -128,8 +161,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/BEsynchro.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
+            "brand_name": "SYNCHRO",
             "open_new_tab": false,
             "cardLink": "https:\/\/besynchro.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -139,8 +175,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/5_-Nutr.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/5_175b60fc-f173-456f-822d-0d067ef906bc.jpg",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/5_175b60fc-f173-456f-822d-0d067ef906bc.jpg",
+            "brand_name": "5% Nutrition",
             "open_new_tab": true,
             "cardLink": "https:\/\/5percentnutrition.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -150,8 +189,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
+            "brand_name": "CLUB SULLIVAN",
             "open_new_tab": false,
             "cardLink": "https:\/\/www.clubsullivan.tv\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -161,8 +203,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Wild-junkies_ef56a145-dea1-4783-9a06-38e1897f7a9e.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
+            "brand_name": "Wild Junkie",
             "open_new_tab": false,
             "cardLink": "https:\/\/wildjunkieboutique.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -172,8 +217,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/buunni.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
+            "brand_name": "BUNNI COFFEE",
             "open_new_tab": false,
             "cardLink": "https:\/\/www.buunnicoffee.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -183,8 +231,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
+            "brand_name": "BUMPBOX",
             "open_new_tab": false,
             "cardLink": "https:\/\/bumpboxx.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -194,8 +245,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
+            "brand_name": "LUCKY YOU",
             "open_new_tab": false,
             "cardLink": "https:\/\/luckyyougifts.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -205,8 +259,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/adapthealth_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
+            "brand_name": "ADAPT HEALTH",
             "open_new_tab": false,
             "cardLink": "https:\/\/adapthealth.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -216,8 +273,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Checkit.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103_1e99d9e1-e905-4d44-a273-b10f47d5a15e.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103_1e99d9e1-e905-4d44-a273-b10f47d5a15e.png",
+            "brand_name": "CHEKIT",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/checkit",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -227,8 +287,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/Sendif_6feb5b80-fb36-4d58-883f-6bb6c99a9e3a.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/image_200.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/image_200.png",
+            "brand_name": "SENDIF",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/sendif",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -238,8 +301,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/LensAdvisor.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
+            "brand_name": "LensAdvizor",
             "open_new_tab": false,
             "cardLink": "https:\/\/shoptrade.co\/pages\/lens-advizor",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -249,8 +315,11 @@
           "type": "cardType",
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/paymore.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
+            "brand_name": "PayMore",
             "open_new_tab": false,
             "cardLink": "https:\/\/paymore.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
@@ -261,8 +330,11 @@
           "disabled": true,
           "settings": {
             "cardImage": "shopify:\/\/shop_images\/melissani.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Layer.svg",
+            "brand_btn": false,
             "clickble": true,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Layer.svg",
+            "brand_name": "MILISSANI",
             "open_new_tab": true,
             "cardLink": "https:\/\/melissaniwater.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
