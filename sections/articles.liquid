@@ -1,0 +1,265 @@
+<div class="mainArticles {% if article.content == blank %}articleIsBlank{% endif %}">
+    <div class="container">
+        <div class="mart_container">
+            <div class="mart_leftContainer">
+                <div class="article-template__back left mainTitle">
+                    <a href="/pages/blogs" class="fnt-20 article-template__link link animate-arrow">
+                        <span class="icon-wrap">
+                            <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 8317">
+                                    <path id="Vector 42" d="M11 3H1.5" stroke="black"/>
+                                    <path id="Vector 43" d="M3.5 0.5L1 3L3.5 5.5" stroke="black"/>
+                                </g>
+                            </svg>
+                        </span>
+                        Back to Articles
+                    </a>
+                </div>
+
+                <div class="authorInfo">
+                    <h2 class="articleTitle">{{ article.title }}</h2>
+
+                    <div class="author">
+                        By <span class="authorName">{{ article.author }}</span>
+                    </div>
+
+                    <div class="publishInfo">
+                        {% if article.tags.size > 0 %}
+                            <span class="articleTags">
+                                {% for tags in article.tags %}
+                                <p class='tags'>{{ tags }}</p>
+                                {% endfor %}
+                            </span>
+                        {% endif %}
+                        <span class="publishedDate" style="{% if article.tags.size < 1 %}margin-left : 0;{% endif %}">
+                            {{ article.published_at | date: "%b %d, %Y" }} 
+                        </span>                     
+                        <div class="article_content_time_read">
+                            {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                            {% if article_length <= 300 %}
+                                1 Min Read
+                            {% else %}
+                                {{ article_length | divided_by: 200 | round }} Min Read
+                            {% endif %}
+                        </div>
+                        <span class="social_sharing">
+                            <span class="sharing_icon">
+                                <p>Share</p>
+                                <svg class="shareIcon" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.0769 11.8301V5.16339H9.50426" stroke="black"/>
+                                    <path d="M6.52991 1.27448L9.99999 5.16336L6.52991 9.05225" stroke="black"/>
+                                </svg>
+                            </span>
+                            {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: false %}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="mainContent">
+                    <div class="majorContent">
+                        <div class="article_image_wrapper">
+                            <img src="{{ article.image | img_url: 'master' }}" >
+                        </div>
+                        <div class="articleDescription">
+                            {{ article.content }}                            
+                        </div>
+                    </div>
+
+                    <div class="minorContent">
+                        <div class="minorContent_Container">
+                            <div class="upsell_minorContentBlock" style="background-color: #434343">
+                                {% if section.settings.image != blank or section.settings.svg_html != blank %}
+                                    {% if section.settings.image == blank %}
+                                        {{ section.settings.svg_html }}
+                                    {% else %}
+                                    <img src="{{ section.settings.image | img_url : 'master' }}" alt="" style="height: 65px; width: 65px;">
+                                    {% endif %}
+                                {% endif %}
+                                <p class="upsell_mcb_heading">{{ section.settings.heading }}</p>
+                                <p class="upsell_mcb_content">{{ section.settings.description }}</p>
+                                <a href="{{ section.settings.btn_link }}" target="_blank">{{ section.settings.btn_text }}</a>
+                            </div>
+                            <div class="popularInsights">
+                                {% for block in section.blocks %}
+                                    {% case block.type %}
+                                        {% when 'popularInsights' %}
+                                            <div class="pi_heading">{{ block.settings.title }}</div>
+                                            {% for article in blogs[block.settings.lt_blog].articles limit: block.settings.lt_noOfArticles %}
+                                                <a href="{{ article.url }}">{{ article.title }}</a>
+                                            {% endfor %}
+                                    {% endcase %}
+                                {% endfor %}
+                            </div>
+
+                            <div class="latestInsights">
+                                {% for block in section.blocks %}
+                                    {% case block.type %}
+                                        {% when 'latestInsights' %}
+                                        <div class="li_heading">{{ block.settings.title }}</div>
+                                        {% assign allHandle = block.settings.lt_blog %}
+                                        {% assign arrayOfHandles = allHandle | split: ','%}
+                                        {% assign featuredArticles = false %}
+
+                                        {% for handle in arrayOfHandles %}
+                                            {% if blogs[handle].articles %}
+                                                {% if featuredArticles %}
+                                                    {% assign featuredArticles = featuredArticles | concat:blogs[handle].articles %}
+                                                {% else %}
+                                                    {% assign featuredArticles = blogs[handle].articles %}
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        {% if featuredArticles %}
+                                            {% assign featuredArticles = featuredArticles | sort:'published_at' | reverse %}
+                                            {% for article in featuredArticles limit: block.settings.lt_noOfArticles %}
+                                                <a href="{{ article.url }}">{{ article.title }}</a>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endcase %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom_social_share">
+            <div class="sharingIcons">
+                <span class="sharing_icon">
+                    Share
+                    <svg class="shareIcon" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.0769 11.8301V5.16339H9.50426" stroke="black"/>
+                        <path d="M6.52991 1.27448L9.99999 5.16336L6.52991 9.05225" stroke="black"/>
+                    </svg>
+                </span>
+                {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: false %}
+            </div>
+        </div>
+
+        {% assign articleTopics = article.metafields.custom.topics.value %}
+        {% if articleTopics %}
+            <div class="articles_topicsContainer">
+                <span class="aHeading">
+                    <p>Topics:</p>
+                </span>
+                <span class="articles_links">
+                    {% for topic in articleTopics %}
+                        <a href="/blogs/{{ topic }}" style="padding-right: 20px">{{ topic | replace: '-', ' ' | capitalize }} </a> 
+                    {% endfor %}
+                </span>
+            </div>
+        {% endif %}
+
+        <div class="main_blogs">
+            <div class="blogs_container">
+                <div class='relatedArticles'>
+                    <div class="blog_grid-item">
+                        {% for related_article_handle in article.metafields.custom.related_articles.value %}
+                        {% assign related_article = articles[related_article_handle] %}
+                            <div class="blog_grid-itemChild">
+                                {% render 'blog-article-card', related_article: related_article %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Articles",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "CRO Image when there is no svg"
+            },
+            {
+                "type": "html",
+                "id": "svg_html",
+                "label": "SVG LOGO"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "richtext",
+                "id": "description",
+                "label": "Description"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Label"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "popularInsights",
+                "name": "Popular Insights",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type":"blog",
+                        "id":"lt_blog",
+                        "label":"Blog"
+                    },
+                    {
+                        "id":"lt_noOfArticles",
+                        "label":"No of Articles",
+                        "type":"range",
+                        "min": 1,
+                        "max": 10,
+                        "default": 1
+                    }
+                ]
+            },
+            {
+                "limit": 1,
+                "type": "latestInsights",
+                "name": "Latest Insights",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type":"text",
+                        "id":"lt_blog",
+                        "label":"Blog"
+                    },
+                    {
+                        "id":"lt_noOfArticles",
+                        "label":"No of Articles",
+                        "type":"range",
+                        "min": 1,
+                        "max": 10,
+                        "default": 1
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Articles"
+            }
+        ]
+    }
+{% endschema %}
