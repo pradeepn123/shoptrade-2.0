@@ -130,6 +130,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "4014138e-ea7c-4a97-9557-9be5d7736ba6": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "US POLO",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/346855",
+            "TEAM": "Nikhil, Amit, Nagavasavi, Adarsh",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -143,7 +154,8 @@
         "b84b7614-0d5f-41d0-a92f-35146e059cdc",
         "d4d65f9f-bacc-4f76-9d48-784189f79215",
         "9302a44a-5117-4494-a009-dc1c51418882",
-        "18727643-3cf7-4a05-ace2-4e29e391e64d"
+        "18727643-3cf7-4a05-ace2-4e29e391e64d",
+        "4014138e-ea7c-4a97-9557-9be5d7736ba6"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
