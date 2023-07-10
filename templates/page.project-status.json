@@ -42,12 +42,24 @@
             "PROJECT_DEADLINE": "29\/06\/2023",
             "STATUS": "In Progress"
           }
+        },
+        "5c6b76b8-86a3-461c-a601-5f2f019039c6": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "PROJECT_NAME",
+            "More_Detail": "",
+            "TEAM": "",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "Yet to start"
+          }
         }
       },
       "block_order": [
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
         "f505c530-8428-480c-85e3-17293b570ab8",
-        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6"
+        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
+        "5c6b76b8-86a3-461c-a601-5f2f019039c6"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
