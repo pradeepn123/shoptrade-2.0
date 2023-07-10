@@ -15,7 +15,7 @@
           "settings": {
             "PROJECT_NAME": "Sproos Life",
             "More_Detail": "",
-            "TEAM": "Pradeep, Shweta",
+            "TEAM": "Pradeep, Shweta,\nshivanands",
             "PHASE": "Development",
             "PROJECT_DEADLINE": "30\/06\/2023",
             "STATUS": "In Progress"
@@ -51,6 +51,7 @@
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
+        "alternate_text": "No Projects Yet !",
         "title_font_size": 52,
         "table_filter_font_size": 16,
         "thead_font_size": 14,
