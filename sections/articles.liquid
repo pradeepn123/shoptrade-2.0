@@ -55,7 +55,9 @@
 
                 <div class="mainContent">
                     <div class="majorContent">
-                        <img src="{{ article.image | img_url: 'master' }}" >
+                        <div class="article_image_wrapper">
+                            <img src="{{ article.image | img_url: 'master' }}" >
+                        </div>
                         <div class="articleDescription">
                             {{ article.content }}                            
                         </div>
@@ -68,9 +70,9 @@
                                     <rect x="1" y="0.5" width="63" height="63" rx="31.5" stroke="white"/>
                                     <path d="M44.137 24.7287L35.6335 33.3651C35.4808 33.5202 35.4036 33.5979 35.3352 33.6591C34.2307 34.6477 32.5605 34.6477 31.456 33.6591C31.3876 33.5979 31.3098 33.5202 31.157 33.365C31.0042 33.2099 30.9278 33.1322 30.8594 33.071C29.7549 32.0824 28.084 32.0824 26.9794 33.071C26.9112 33.1321 26.835 33.2095 26.683 33.3639L20.8636 39.2742M44.137 24.7287L44.1364 33.456M44.137 24.7287H35.4091" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p class="upsell_mcb_heading">CRO Audit Services</p>
-                                <p class="upsell_mcb_content">Boost conversions with exceptional CRO analysis</p>
-                                <a href="/pages/cro-audit-for-ecommerce-brands" target="_blank">Learn More</a>
+                                <p class="upsell_mcb_heading">{{ section.settings.heading }}</p>
+                                <p class="upsell_mcb_content">{{ section.settings.description }}</p>
+                                <a href="{{ section.settings.btn_link }}" target="_blank">{{ section.settings.btn_text }}</a>
                             </div>
                             <div class="popularInsights">
                                 {% for block in section.blocks %}
@@ -171,6 +173,21 @@
                 "type": "text",
                 "id": "heading",
                 "label": "Heading"
+            },
+            {
+                "type": "richtext",
+                "id": "description",
+                "label": "Description"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Button Label"
+            },
+            {
+                "type": "url",
+                "id": "btn_link",
+                "label": "Button Link"
             }
         ],
         "blocks": [

@@ -96,57 +96,7 @@
                                         {% if blogs[item].articles.size > 0 %}
                                             {% for article in blogs[item].articles %}
                                                 <div class="blog_grid--eachItem">
-                                                    <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
-                                                    <div class="content__eachItem--parent">
-                                                        <div class="content--eachItem">
-                                                            <div class="tag_date_wrapper">
-                                                                {% if article.tags.size > 0 %}
-                                                                    {% for tag in article.tags %}
-                                                                        <p class="content--tags">
-                                                                            {{ tag }}
-                                                                        </p>
-                                                                    {% endfor %}
-                                                                {% endif %}
-                                                                <span class="content--publiDate">
-                                                                    {{ article.published_at | date: "%b %d, %Y" }}
-                                                                </span>
-                                                            </div>                                                       
-                                                            <div class="article_content_time_read">
-                                                                {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
-                                                                {% if article_length <= 300 %}
-                                                                    1 Min Read
-                                                                {% else %}
-                                                                    {{ article_length | divided_by: 200 | round }} Min Read
-                                                                {% endif %}
-                                                            </div>
-                                                        </div>
-                                                        <div class="content--title">
-                                                            {{ article.title }}
-                                                        </div>
-                                                        <div class="content--url">
-                                                            <a href="{{ article.url }}">
-                                                                Read Post
-                                                                <div class="btn--underline" style="display: block;"></div>
-                                                            </a>
-                                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            {% endfor %}
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>                                
-                            </div>
-                        {% else %}
-                            <div class="blog_grid-item">
-                                {% for item in anItem %}
-                                    {% if blogs[item].articles.size > 0 %}
-                                        {% paginate blogs[item].articles by 9 %}
-                                            <div class="blog_grid-itemChild"> 
-                                                {% for article in blogs[item].articles %}
-                                                    <div class="blog_grid--eachItem">
+                                                    {% if article.url %}<a href="{{ article.url }}">{% endif %}
                                                         <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
                                                         <div class="content__eachItem--parent">
                                                             <div class="content--eachItem">
@@ -171,21 +121,74 @@
                                                                     {% endif %}
                                                                 </div>
                                                             </div>
-                                                            <div class="content_sub">
-                                                                <div class="content--title">
-                                                                    {{ article.title }}
-                                                                </div>
-                                                                <div class="content--url">
-                                                                    <a href="{{ article.url }}">
+                                                            <div class="content--title">
+                                                                {{ article.title }}
+                                                            </div>
+                                                            <div class="content--url">
+                                                                <a href="{{ article.url }}">
                                                                     Read Post
-                                                                        <div class="btn--underline" style="display: block;"></div>
-                                                                    </a>
                                                                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
                                                                     </svg>
-                                                                </div>
+                                                                    <div class="btn--underline" style="display: block;"></div>
+                                                                </a>                                                                
                                                             </div>
                                                         </div>
+                                                    {% if article.url %}</a> {% endif %}
+                                                </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="blog_grid-item">
+                                {% for item in anItem %}
+                                    {% if blogs[item].articles.size > 0 %}
+                                        {% paginate blogs[item].articles by 9 %}
+                                            <div class="blog_grid-itemChild"> 
+                                                {% for article in blogs[item].articles %}
+                                                    <div class="blog_grid--eachItem">
+                                                        {% if article.url %}<a href="{{ article.url }}"> {% endif %}
+                                                            <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                            <div class="content__eachItem--parent">
+                                                                <div class="content--eachItem">
+                                                                    <div class="tag_date_wrapper">
+                                                                        {% if article.tags.size > 0 %}
+                                                                            {% for tag in article.tags %}
+                                                                                <p class="content--tags">
+                                                                                    {{ tag }}
+                                                                                </p>
+                                                                            {% endfor %}
+                                                                        {% endif %}
+                                                                        <span class="content--publiDate">
+                                                                            {{ article.published_at | date: "%b %d, %Y" }}
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="article_content_time_read">
+                                                                        {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                        {% if article_length <= 300 %}
+                                                                            1 Min Read
+                                                                        {% else %}
+                                                                            {{ article_length | divided_by: 200 | round }} Min Read
+                                                                        {% endif %}
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_sub">
+                                                                    <div class="content--title">
+                                                                        {{ article.title }}
+                                                                    </div>
+                                                                    <div class="content--url">
+                                                                        <a href="{{ article.url }}"> Read Post
+                                                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                                            </svg>
+                                                                            <div class="btn--underline" style="display: block;"></div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% if article.url %}</a> {% endif %}
                                                     </div>
                                                 {% endfor %}
                                             </div>
