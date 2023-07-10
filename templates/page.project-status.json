@@ -97,6 +97,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "Yet to start"
           }
+        },
+        "d4d65f9f-bacc-4f76-9d48-784189f79215": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Midway Sports",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/355895",
+            "TEAM": "Shweta, Adarsh, Ritu, Shivanand",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -107,7 +118,8 @@
         "77dd4b75-2466-4418-a17c-e761e986d2bd",
         "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee",
         "375d47a6-8398-460c-9384-a1bbff9322a8",
-        "b84b7614-0d5f-41d0-a92f-35146e059cdc"
+        "b84b7614-0d5f-41d0-a92f-35146e059cdc",
+        "d4d65f9f-bacc-4f76-9d48-784189f79215"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
