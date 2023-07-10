@@ -11789,7 +11789,7 @@ html {
     line-height: 30px;
   }
 }
-.mainArticles p {
+.mainArticles p, .mainArticles a {
   font-size: 20px;
   line-height: 42px;
   margin: 0;
@@ -11797,7 +11797,7 @@ html {
   font-family: "Roboto";
 }
 @media screen and (max-width: 1023px) {
-  .mainArticles p {
+  .mainArticles p, .mainArticles a {
     font-size: 16px;
     line-height: 26px;
   }
@@ -11812,9 +11812,6 @@ html {
     font-size: 16px;
     line-height: 26px;
   }
-}
-.mainArticles a {
-  font-family: "Roboto";
 }
 .mainArticles .mart_container .mart_leftContainer .article-template__back .article-template__link {
   justify-content: left;
