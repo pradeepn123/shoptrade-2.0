@@ -75,6 +75,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "375d47a6-8398-460c-9384-a1bbff9322a8": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Kimia",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/362339",
+            "TEAM": "Hadil, Nagavsavi, Umesh",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -83,7 +94,8 @@
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
         "439bc47c-86aa-49d3-8f82-7bb5be6c60a0",
         "77dd4b75-2466-4418-a17c-e761e986d2bd",
-        "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee"
+        "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee",
+        "375d47a6-8398-460c-9384-a1bbff9322a8"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
