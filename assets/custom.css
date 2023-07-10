@@ -11848,9 +11848,8 @@ html {
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent {
   border-bottom: 1px solid #000;
-  max-width: 70%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent {
     max-width: 75%;
     padding-bottom: 30px;
@@ -11865,6 +11864,23 @@ html {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent img {
     margin-bottom: 35px;
   }
+}
+.mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .article_image_wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .article_image_wrapper {
+    padding-bottom: 50%;
+  }
+}
+.mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .article_image_wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription {
   letter-spacing: 0;
@@ -11956,9 +11972,9 @@ html {
   }
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .minorContent {
-  flex: 1 0 30%;
+  flex: 1 0 100%;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .minorContent {
     flex: 1 0 25%;
   }
