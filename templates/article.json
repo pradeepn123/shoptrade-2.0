@@ -26,6 +26,7 @@
         "7a116ffb-67d4-46df-9d89-624affdf0973"
       ],
       "settings": {
+        "svg_html": "<svg width=\"65\" height=\"64\" viewbox=\"0 0 65 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">                         <rect x=\"1\" y=\"0.5\" width=\"63\" height=\"63\" rx=\"31.5\" stroke=\"white\"><\/rect>\n                                    <path d=\"M44.137 24.7287L35.6335 33.3651C35.4808 33.5202 35.4036 33.5979 35.3352 33.6591C34.2307 34.6477 32.5605 34.6477 31.456 33.6591C31.3876 33.5979 31.3098 33.5202 31.157 33.365C31.0042 33.2099 30.9278 33.1322 30.8594 33.071C29.7549 32.0824 28.084 32.0824 26.9794 33.071C26.9112 33.1321 26.835 33.2095 26.683 33.3639L20.8636 39.2742M44.137 24.7287L44.1364 33.456M44.137 24.7287H35.4091\" stroke=\"white\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>                         <\/svg>",
         "heading": "CRO Audit Services",
         "description": "<p>Boost conversions with exceptional CRO analysis<\/p>",
         "btn_text": "Learn More",

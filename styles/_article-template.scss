@@ -1,4 +1,23 @@
 .mainArticles{
+    &.articleIsBlank{
+        .authorInfo{
+            width: 100% !important;
+            .publishInfo{
+                padding-right: 0 !important;
+            }
+        }
+        .mainContent{
+            column-gap: 0 !important;
+            .minorContent_Container{
+                position: sticky;
+                max-width: 30%;
+                margin: 0 auto;
+                @media screen and (max-width: 767px){
+                    max-width: 100%;
+                }
+            }
+        }
+    }
     h1{
         font-size: 42px;
         @media screen and (max-width: 1023px){
@@ -307,6 +326,7 @@
                 margin-bottom: 5px;
                 .authorName{
                     color: #FF7121;
+                    line-height: 100%;
                 }
             }
             .publishInfo{
@@ -315,10 +335,10 @@
                 justify-content: flex-start; 
                 align-items: center;
                 padding-right: 20px;
-                @media(max-width:320px){
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
+                // @media(max-width:320px){
+                //     flex-direction: column;
+                //     align-items: flex-start;
+                // }
                 .social_sharing{
                     margin-left: auto;
                     display: flex;
@@ -364,17 +384,18 @@
                 }
                 .articleTags{
                     border-radius: 4px;
-                    border: 1px solid #000;
+                    border: 1px solid #777;
                     padding: 0 15px;
                     display: inline-block;
 
-                    color: #000;
+                    color: #777;
                     font-size: 16px;
                     font-family: Epilogue;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 36px;
                     p{
+                        color: #777;
                         margin: 0;
                         display: inline-block;
                         font-size: 16px;

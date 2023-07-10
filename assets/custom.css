@@ -11642,6 +11642,8 @@ html {
   justify-content: space-between;
 }
 .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content--eachItem .article_content_time_read {
+  color: #000;
+  opacity: 0.6000000238;
   font-size: 12px;
   letter-spacing: 0;
 }
@@ -11655,14 +11657,13 @@ html {
   width: fit-content !important;
   border-radius: 4px;
   border: 1px solid #000;
-  color: #000;
+  color: rgba(0, 0, 0, 0.6000000238);
   font-size: 14px;
   font-weight: 400;
   padding: 5px 8px;
   margin-right: 10px;
   line-height: 1.2;
   letter-spacing: 0;
-  opacity: 0.6000000238;
 }
 @media screen and (max-width: 1023px) {
   .main_blogs .blogs_container .blog_grid-itemChild .blog_grid--eachItem .content--eachItem .content--tags {
@@ -11750,6 +11751,25 @@ html {
     max-width: 0%;
   }
   to {
+    max-width: 100%;
+  }
+}
+.mainArticles.articleIsBlank .authorInfo {
+  width: 100% !important;
+}
+.mainArticles.articleIsBlank .authorInfo .publishInfo {
+  padding-right: 0 !important;
+}
+.mainArticles.articleIsBlank .mainContent {
+  column-gap: 0 !important;
+}
+.mainArticles.articleIsBlank .mainContent .minorContent_Container {
+  position: sticky;
+  max-width: 30%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .mainArticles.articleIsBlank .mainContent .minorContent_Container {
     max-width: 100%;
   }
 }
@@ -12096,6 +12116,7 @@ html {
 }
 .mainArticles .mart_container .authorInfo .author .authorName {
   color: #FF7121;
+  line-height: 100%;
 }
 .mainArticles .mart_container .authorInfo .publishInfo {
   display: flex;
@@ -12103,12 +12124,6 @@ html {
   justify-content: flex-start;
   align-items: center;
   padding-right: 20px;
-}
-@media (max-width: 320px) {
-  .mainArticles .mart_container .authorInfo .publishInfo {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 .mainArticles .mart_container .authorInfo .publishInfo .social_sharing {
   margin-left: auto;
@@ -12159,10 +12174,10 @@ html {
 }
 .mainArticles .mart_container .authorInfo .publishInfo .articleTags {
   border-radius: 4px;
-  border: 1px solid #000;
+  border: 1px solid #777;
   padding: 0 15px;
   display: inline-block;
-  color: #000;
+  color: #777;
   font-size: 16px;
   font-family: Epilogue;
   font-style: normal;
@@ -12170,6 +12185,7 @@ html {
   line-height: 36px;
 }
 .mainArticles .mart_container .authorInfo .publishInfo .articleTags p {
+  color: #777;
   margin: 0;
   display: inline-block;
   font-size: 16px;
