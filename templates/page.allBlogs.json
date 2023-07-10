@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "7dcb7d68-18a2-4959-b8df-bc04ef986ac1": {
+      "type": "showAllBlogs",
+      "blocks": {
+        "56023b22-c7bb-46a3-a108-0fd39349390b": {
+          "type": "Blogs",
+          "settings": {
+            "selectblog": ""
+          }
+        }
+      },
+      "block_order": [
+        "56023b22-c7bb-46a3-a108-0fd39349390b"
+      ],
+      "settings": {
+        "heading": "COMMERCE INSIGHTS",
+        "subheading": "Unpacking expert insights on e-commerce, technology, Shopify, and design. Propel your business growth with actionable strategies and pioneering ideas."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7dcb7d68-18a2-4959-b8df-bc04ef986ac1"
+  ]
+}

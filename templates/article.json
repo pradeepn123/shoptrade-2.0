@@ -1,7 +1,37 @@
 {
   "sections": {
+    "a72cbdc4-e92d-45d8-b521-f9e01601fd4b": {
+      "type": "articles",
+      "blocks": {
+        "12019fa2-3900-4db0-b189-3cadbda19751": {
+          "type": "popularInsights",
+          "settings": {
+            "title": "Popular Insights",
+            "lt_blog": "insights",
+            "lt_noOfArticles": 10
+          }
+        },
+        "7a116ffb-67d4-46df-9d89-624affdf0973": {
+          "type": "latestInsights",
+          "disabled": true,
+          "settings": {
+            "title": "Latest Insights",
+            "lt_blog": "conversion-rate-optimization-cro,design,insights",
+            "lt_noOfArticles": 10
+          }
+        }
+      },
+      "block_order": [
+        "12019fa2-3900-4db0-b189-3cadbda19751",
+        "7a116ffb-67d4-46df-9d89-624affdf0973"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
@@ -63,6 +93,7 @@
     }
   },
   "order": [
+    "a72cbdc4-e92d-45d8-b521-f9e01601fd4b",
     "main"
   ]
 }
