@@ -135,8 +135,10 @@
                 .content--eachItem{
                     margin-bottom: 15px;
                     display: flex;
-                    align-items: center;
+                    align-items: baseline;
                     justify-content: space-between;
+                    column-gap: 20px;
+                    flex-wrap: wrap;
                     .article_content_time_read{
                         color: #000;
                         opacity: .6000000238;
@@ -159,7 +161,6 @@
                         line-height: 1.2;
                         letter-spacing: 0;
                         @media screen and (max-width : 1023px){
-                            color: #000;
                             font-size: 12px;
                             font-style: normal;
                         }
