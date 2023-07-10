@@ -108,6 +108,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "9302a44a-5117-4494-a009-dc1c51418882": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Pole Junkie",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/345820",
+            "TEAM": "Pradeep, Rosh, Deekshith,",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -119,7 +130,8 @@
         "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee",
         "375d47a6-8398-460c-9384-a1bbff9322a8",
         "b84b7614-0d5f-41d0-a92f-35146e059cdc",
-        "d4d65f9f-bacc-4f76-9d48-784189f79215"
+        "d4d65f9f-bacc-4f76-9d48-784189f79215",
+        "9302a44a-5117-4494-a009-dc1c51418882"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
