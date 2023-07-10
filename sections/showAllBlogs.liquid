@@ -4,7 +4,7 @@
         let dataContentElements = document.querySelectorAll("#tabs_dataParent .tabData");
         
         dataTabElements.forEach(itemX => {
-        itemX.addEventListener('click', (e) => {
+            itemX.addEventListener('click', (e) => {
                 let reqID = e.target.id;
                 dataContentElements.forEach((anItem) => {
                     if(anItem.id.includes(reqID) ){
@@ -15,13 +15,14 @@
                         })
                         itemX.classList.add('selectedTabs');
                     }
-            else{
-                anItem.classList.remove('selected');
-            }
-        })
+                    else{
+                        anItem.classList.remove('selected');
+                    }
+                })
+            });
         });
     });
-    });
+
 </script>
 
 {% style %}
@@ -98,23 +99,33 @@
                                                     <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
                                                     <div class="content__eachItem--parent">
                                                         <div class="content--eachItem">
-                                                            {% if article.tags.size > 0 %}
-                                                                <p class="content--tags">
+                                                            <div class="tag_date_wrapper">
+                                                                {% if article.tags.size > 0 %}
                                                                     {% for tag in article.tags %}
-                                                                        {{ tag }}
+                                                                        <p class="content--tags">
+                                                                            {{ tag }}
+                                                                        </p>
                                                                     {% endfor %}
-                                                                </p>
-                                                            {% endif %}
-                                                            <span class="content--publiDate">
-                                                                {{ article.published_at | date: "%b %d, %Y" }}
-                                                            </span>
+                                                                {% endif %}
+                                                                <span class="content--publiDate">
+                                                                    {{ article.published_at | date: "%b %d, %Y" }}
+                                                                </span>
+                                                            </div>                                                       
+                                                            <div class="article_content_time_read">
+                                                                {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                {% if article_length <= 300 %}
+                                                                    1 Min Read
+                                                                {% else %}
+                                                                    {{ article_length | divided_by: 200 | round }} Min Read
+                                                                {% endif %}
+                                                            </div>
                                                         </div>
                                                         <div class="content--title">
                                                             {{ article.title }}
                                                         </div>
                                                         <div class="content--url">
                                                             <a href="{{ article.url }}">
-                                                            Read Post
+                                                                Read Post
                                                                 <div class="btn--underline" style="display: block;"></div>
                                                             </a>
                                                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +137,7 @@
                                             {% endfor %}
                                         {% endif %}
                                     {% endfor %}
-                                </div>
+                                </div>                                
                             </div>
                         {% else %}
                             <div class="blog_grid-item">
@@ -139,16 +150,34 @@
                                                         <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
                                                         <div class="content__eachItem--parent">
                                                             <div class="content--eachItem">
-                                                                {% if article.tags.size > 0 %}
-                                                                    <p class="content--tags">
+                                                                <div class="tag_date_wrapper">
+                                                                    {% if article.tags.size > 0 %}
                                                                         {% for tag in article.tags %}
-                                                                            {{ tag }}
+                                                                            <p class="content--tags">
+                                                                                {{ tag }}
+                                                                            </p>
                                                                         {% endfor %}
+<<<<<<< HEAD
                                                                     </p>
                                                                 {% endif %}
                                                                 <span class="content--publiDate">
                                                                     {{ article.published_at | date: "%d %b %Y" }}
                                                                 </span>
+=======
+                                                                    {% endif %}
+                                                                    <span class="content--publiDate">
+                                                                        {{ article.published_at | date: "%b %d, %Y" }}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="article_content_time_read">
+                                                                    {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                    {% if article_length <= 300 %}
+                                                                        1 Min Read
+                                                                    {% else %}
+                                                                        {{ article_length | divided_by: 200 | round }} Min Read
+                                                                    {% endif %}
+                                                                </div>
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                                                             </div>
                                                             <div class="content_sub">
                                                                 <div class="content--title">

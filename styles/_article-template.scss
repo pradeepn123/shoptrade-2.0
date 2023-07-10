@@ -9,9 +9,13 @@
         font-size: 32px;
         font-weight: 700;
 <<<<<<< HEAD
+<<<<<<< HEAD
         line-height: 1.2;
 =======
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+        line-height: 1.2;
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
         @media screen and (max-width: 1023px){
             font-size: 20px;
         }
@@ -35,9 +39,13 @@
         line-height: 42px;
         margin: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
         color: #000;
 =======
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+        color: #000;
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
         @media screen and (max-width: 1023px){
             font-size: 16px;
             line-height: 26px;
@@ -95,14 +103,20 @@
                 }
                 .majorContent{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                     border-bottom: 1px solid #000;
                     @media(min-width:1200px){
                         max-width: 75%;
                         padding-bottom: 30px;
                     }
+<<<<<<< HEAD
 =======
                     max-width: 70%;
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                     img{
                         width: 100%;
                         border-radius: 8px;
@@ -190,11 +204,17 @@
                 .minorContent{
                     flex: 1 0 30%;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     @media(min-width:1200px){
                         flex: 1 0 25%;
                     }
 =======
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+                    @media(min-width:1200px){
+                        flex: 1 0 25%;
+                    }
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                     .minorContent_Container{
                         left: 0;
                         position:
@@ -386,17 +406,26 @@
                     line-height: 36px;
                     margin-left: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                     letter-spacing: 0;
                     @media(max-width:320px){
                         margin-left: 0;
                     }
+<<<<<<< HEAD
 =======
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
                 }
             }
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
     .bottom_social_share{
         .sharingIcons{            
             display: flex;
@@ -452,6 +481,7 @@
         line-height: 1;
         border-left: 1px solid #777;
     }
+<<<<<<< HEAD
     .articles_topicsContainer{
         display: flex;
         align-items: center;
@@ -489,5 +519,40 @@
     .articles_topicsContainer{
         
 >>>>>>> dc088bd (Update Blogs Pages Shopify)
+=======
+    .articles_topicsContainer{
+        display: flex;
+        align-items: center;
+        column-gap: 18px;        
+        margin-top: 20px;
+        padding-top: 20px;
+        @media(max-width:767px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media(min-width:768px){
+            border-top: 1px solid #000;
+        }
+        @media(min-width:1200px){
+            margin-top: 40px;
+            padding-top: 40px;
+        }
+        .aHeading{
+            font-size: 20px;
+            font-weight: 500;
+            p{
+                letter-spacing: 0;
+                line-height: 1;
+            }
+        }
+        .articles_links{
+            a{
+                font-size: 16px;
+                color: #3A4ED4;
+                letter-spacing: 0;
+                text-decoration-color: #c7cefa;
+            }
+        }
+>>>>>>> 733d851 (Blog page bug fixes article page bug fixes)
     }
 }
