@@ -64,6 +64,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "High life",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/365253",
+            "TEAM": "Faizal, Rosh",
+            "PHASE": "Design",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -71,7 +82,8 @@
         "f505c530-8428-480c-85e3-17293b570ab8",
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
         "439bc47c-86aa-49d3-8f82-7bb5be6c60a0",
-        "77dd4b75-2466-4418-a17c-e761e986d2bd"
+        "77dd4b75-2466-4418-a17c-e761e986d2bd",
+        "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
