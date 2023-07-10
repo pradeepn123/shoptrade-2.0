@@ -31,25 +31,7 @@
                         </span>
                         <span class="publishedDate">
                             {{ article.published_at | date: "%b %d, %Y" }} 
-                        </span>
-                        <div class="article_content_time_read">
-                            {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
-                            {% if article_length <= 300 %}
-                                1 Min Read
-                            {% else %}
-                                {{ article_length | divided_by: 200 | round }} Min Read
-                            {% endif %}
-                        </div>
-                        <span class="social_sharing">
-                            <span class="sharing_icon">
-                                <p>Share</p>
-                                <svg class="shareIcon" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.0769 11.8301V5.16339H9.50426" stroke="black"/>
-                                    <path d="M6.52991 1.27448L9.99999 5.16336L6.52991 9.05225" stroke="black"/>
-                                </svg>
-                            </span>
-                            {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: false %}
-                        </span>
+                        </span>                     
                         <div class="article_content_time_read">
                             {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
                             {% if article_length <= 300 %}
