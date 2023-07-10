@@ -46,12 +46,12 @@
         "5c6b76b8-86a3-461c-a601-5f2f019039c6": {
           "type": "project",
           "settings": {
-            "PROJECT_NAME": "PROJECT_NAME",
-            "More_Detail": "",
-            "TEAM": "",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "Yet to start"
+            "PROJECT_NAME": "Be Synhro",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/267997",
+            "TEAM": "Sahrudh, Nagavasavi, Hadhil",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "-",
+            "STATUS": "In Progress"
           }
         }
       },
