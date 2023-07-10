@@ -86,6 +86,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "bc2a1bdc-280f-4a80-8d5e-071aa8382f52": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Lens Advizor",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/158867",
+            "TEAM": "Amit, Sumayya,",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -95,7 +106,8 @@
         "5c6b76b8-86a3-461c-a601-5f2f019039c6",
         "16ce55b2-f7cf-496f-85bc-cba76e3e497c",
         "5072a2be-cdb8-4197-a154-419b3f6f0679",
-        "53c80d35-3f21-4177-a20d-d55301f238e7"
+        "53c80d35-3f21-4177-a20d-d55301f238e7",
+        "bc2a1bdc-280f-4a80-8d5e-071aa8382f52"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
