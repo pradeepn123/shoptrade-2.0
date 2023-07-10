@@ -1488,12 +1488,12 @@ input::-moz-placeholder {
 }
 @media (min-width: 919px) {
   .ourWork__card {
-    width: 49.89%;
+    width: 47%;
   }
 }
 @media (min-width: 1350px) {
   .ourWork__card {
-    width: 33.26%;
+    width: 31%;
   }
 }
 @media (min-width: 1336px) {
@@ -1517,15 +1517,9 @@ input::-moz-placeholder {
   margin: 0;
 }
 .ourWork__cardBody {
-  padding: 20px 20px 45px;
   display: flex;
   flex-direction: column;
   flex: 1;
-}
-@media (max-width: 991px) {
-  .ourWork__cardBody {
-    padding: 20px 45px 60px 20px;
-  }
 }
 .ourWork__cardBody .img-wrp {
   overflow: hidden;
@@ -1576,10 +1570,13 @@ input::-moz-placeholder {
 }
 .ourWork__cardBody .brand_text_wrap:hover .Hover__arrow {
   opacity: 1;
-  transform: rotate(9deg);
 }
 .ourWork__cardBody .brand_text_wrap .Hover__arrow {
   opacity: 0;
+}
+.ourWork__cardBody .brand_text_wrap .Hover__arrow svg {
+  height: 20px;
+  width: 32px;
 }
 .ourWork__cardBody .work-body {
   flex: 1;
@@ -1676,35 +1673,11 @@ input::-moz-placeholder {
 }
 
 .workpage__cards {
-  border-top: 1px solid var(--COLOR-BLACK);
-  padding: 0;
+  padding: 42px 0;
 }
 @media screen and (min-width: 920px) {
   .workpage__cards {
-    border-bottom: 1px solid var(--COLOR-BLACK);
-  }
-}
-
-.workpage__card {
-  border-right: 1px solid var(--COLOR-BLACK);
-  border-bottom: 1px solid var(--COLOR-BLACK);
-}
-.workpage__card::after {
-  content: "";
-  position: absolute;
-  right: -0.4px;
-  bottom: 0;
-  background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989");
-  background-repeat: no-repeat;
-  width: 40px;
-  height: 70px;
-  background-size: 100%;
-  transform: translate(51.2%, 50%);
-}
-@media (max-width: 991px) {
-  .workpage__card::after {
-    width: 15px;
-    height: 28px;
+    padding: 42px 0 72px 0;
   }
 }
 
@@ -1720,27 +1693,8 @@ input::-moz-placeholder {
   letter-spacing: 0.02em;
   color: var(--COLOR-BLACK);
 }
-.work .img-container {
-  border-radius: 10px;
-  border: 2px solid var(--COLOR-BLACK);
-  box-shadow: 10px 10px 60px 0px rgb(187, 184, 184);
-}
 .work .ourWork__card:nth-child(odd) .ourWork__cardBody {
   position: relative;
-}
-@media (min-width: 992px) {
-  .work .ourWork__card:nth-child(odd) .ourWork__cardBody::after {
-    content: "";
-    position: absolute;
-    right: -0.4px;
-    bottom: 0;
-    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 70px;
-    background-size: 100%;
-    transform: translate(50%, 50%);
-  }
 }
 .work .ourWork__card:last-child .ourWork__cardBody::after, .work .ourWork__card:nth-last-child(2):nth-child(odd) .ourWork__cardBody::after {
   display: none;
@@ -1752,7 +1706,6 @@ input::-moz-placeholder {
 .work .work-logo-footer {
   text-align: center;
   padding: 24px 16px 32px;
-  border-top: 2px solid #000;
   height: 108PX;
   display: flex;
   align-items: center;
@@ -1764,12 +1717,55 @@ input::-moz-placeholder {
     height: 94px;
   }
 }
+@media (max-width: 520px) {
+  .work .work-logo-footer {
+    height: unset;
+  }
+}
 .work .work-logo-footer__imgWrp {
   text-align: center;
   display: flex;
 }
-.work .ourWork__cards {
+.work .work-logo-footer .work--page-brand-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .work .work-logo-footer .work--page-brand-name {
+    font-size: 24px;
+  }
+}
+.work .work-logo-footer .work--page-brand-name svg {
+  width: 32px;
+  height: 20px;
+  opacity: 0;
+}
+.work .work-logo-footer .work--page-brand-name:hover svg {
+  opacity: 1;
+}
+.work .workpage__cards_parent {
+  border-top: 1px solid var(--COLOR-BLACK);
+  border-bottom: 1px solid var(--COLOR-BLACK);
+}
+.work .workpage__cards_parent .ourWork__cards {
   overflow: hidden;
+  column-gap: 36px;
+  row-gap: 72px;
+}
+@media screen and (max-width: 1200px) {
+  .work .workpage__cards_parent .ourWork__cards {
+    row-gap: 50px;
+    column-gap: 24px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .work .workpage__cards_parent .ourWork__cards {
+    row-gap: 34px;
+  }
 }
 @media (max-width: 991px) {
   .work .img-wrp {
@@ -1778,7 +1774,7 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .work .ourWork__card {
-    width: 50%;
+    width: 48%;
   }
 }
 @media (max-width: 767px) {
@@ -1786,35 +1782,8 @@ input::-moz-placeholder {
     width: 100%;
   }
 }
-@media (max-width: 991px) {
-  .work .ourWork__card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
-    background-repeat: no-repeat;
-    width: 15px;
-    height: 28px;
-    background-size: 100%;
-    transform: translate(-50%, 50%);
-  }
-}
 .work .btn-arrow {
   margin-left: 0;
-}
-.work .ourWork__cardBody {
-  padding: 30px 84px 54px 54px;
-}
-@media (max-width: 991px) {
-  .work .ourWork__cardBody {
-    padding: 40px 62px 66px 40px;
-  }
-}
-@media (max-width: 520px) {
-  .work .ourWork__cardBody {
-    padding: 40px 40px 66px 20px;
-  }
 }
 .work .brandLogo {
   object-fit: contain;

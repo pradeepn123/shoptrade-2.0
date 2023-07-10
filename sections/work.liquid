@@ -1,17 +1,19 @@
 <section class="work">
   <div class="container">
     <h2 class="work-h1">{{ section.settings.heading }}
-    </h1>
+    </h2>
 
   </div>
-  <ul class="ourWork__cards workpage__cards">
-
+  <div class="workpage__cards_parent">
+  <div class = "container">
+   <ul class="ourWork__cards workpage__cards ">
     {% for block in section.blocks %}
       <li class="ourWork__card workpage__card">
         <div class="ourWork__cardBody">
           <div class="img-container">
             <div class="img-wrp" >
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
+              {% if block.settings.brand_btn %}
               <div class="btn-wrp">
                 {% if block.settings.clickble %}
                   <a href="{{ block.settings.cardLink }}" 
@@ -28,21 +30,26 @@
                     </div>
                   </a>
                 {% endif %}               
-              </div>              
-            </div>
-            <div class="work-logo-footer">
-              <div class="work-logo-footer__imgWrp">
-              <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
               </div>
+            {% endif %}
+            </div>
+            <div class="work-logo-footer ">
+              {% if block.settings.brand_name_logo %}
+              <div class="work-logo-footer__imgWrp">
+                <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
+              </div>
+              {% else %}
+               <a class="work--page-brand-name" href = "{{ block.settings.cardLink }} " {% if block.settings.open_new_tab %} target="_blank" {% endif %}> {{ block.settings.brand_name }} <span class="work_hover_arrow"> {% render 'arrow-icon' %}  </a> </p>
+            {% endif %}
             </div>
 
           </div>
         </div>
       </li>
     {% endfor %}
-
-
   </ul>
+ </div>
+</div>
 </section>
 
 {% schema %}
@@ -67,17 +74,36 @@
             "type": "image_picker",
             "label": "Image"
 
-          }, {
-            "id": "cardImageBrand",
-            "type": "image_picker",
-            "label": "Logo"
-
+          }, 
+          {
+            "id":"brand_btn",
+            "type": "checkbox",
+            "label": "Show button",
+            "default": false
           },
           {
             "id":"clickble",
             "type":"checkbox",
             "label":"Clickable Button",
             "default":true
+          },
+          {
+            "id":"brand_name_logo",
+            "type": "checkbox",
+            "label": "Show Logo insted of text",
+            "default": false
+          },
+          {
+            "id": "cardImageBrand",
+            "type": "image_picker",
+            "label": "Logo"
+
+          },
+          {
+            "type": "text",
+            "id": "brand_name",
+            "label": "Brand name",
+            "default": "Shoptrade"
           },
           {
             "id":"open_new_tab",

@@ -63,11 +63,11 @@
             }
         }
         @media (min-width:919px) {
-            width: 49.89%;
+            width: 47%;
         }
 
         @media (min-width:1350px) {
-            width: 33.26%;
+            width: 31%;
         }
         
 
@@ -106,18 +106,11 @@
     }
 
     &__cardBody {
-        padding: 20px 20px 45px;
-        // width: 100%;
         display: flex;
         flex-direction: column;
         flex: 1;
-        @media (max-width:991px) {
-            padding: 20px 45px 60px 20px;
-        }
         .img-wrp {
             overflow: hidden;
-            // border: 2px solid #000000;
-            // border-radius: 10px;
             width: 100%;
             height: 300px;
 
@@ -166,10 +159,14 @@
             }
            &:hover .Hover__arrow{
                 opacity: 1;
-                transform: rotate(9deg);
             }
             .Hover__arrow{
                opacity: 0;
+            //    transform: rotate(358deg);
+               svg{
+                   height: 20px;
+                   width: 32px;
+               }
             }
         }
         .work-body {
@@ -267,11 +264,6 @@
             }
         }
     }
-
-    // .img-wrp {
-    //     border-radius: 10px;
-    //     border: 2px solid var(--COLOR-BLACK);
-    // }
 }
 
 .ourWork__card_border{
@@ -287,33 +279,14 @@
 }
 
 .workpage__cards{
-    border-top: 1px solid var(--COLOR-BLACK);
-    padding: 0;
+    // border-top: 1px solid var(--COLOR-BLACK);
+    padding: 42px 0;
     @media screen and (min-width:920px) {
-        border-bottom: 1px solid var(--COLOR-BLACK);
+        // border-bottom: 1px solid var(--COLOR-BLACK);
+        padding: 42px 0 72px 0;
     }    
 }
 
-.workpage__card{
-    border-right: 1px solid var(--COLOR-BLACK);
-    border-bottom: 1px solid var(--COLOR-BLACK);
-    &::after {
-        content: '';
-        position: absolute;
-        right: -0.4px;
-        bottom: 0;
-        background-image: url("https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989");
-        background-repeat: no-repeat;
-        width: 40px;
-        height: 70px;
-        background-size: 100%;
-        transform: translate(51.2%, 50%);
-        @media (max-width:991px) {
-            width: 15px;
-            height: 28px;
-        }
-    }
-}
 
 .work {
     padding-bottom: 40px;
@@ -327,31 +300,11 @@
         color: var(--COLOR-BLACK);
     }
 
-    .img-container {
-        border-radius: 10px;
-        border: 2px solid var(--COLOR-BLACK);
-        box-shadow: 10px 10px 60px 0px rgba(187, 184, 184, 1);
-
-    }
 
     .ourWork__card {
         &:nth-child(odd) {
             .ourWork__cardBody {
                 position: relative;
-                &::after {
-                    @media (min-width:992px) {
-                        content: "";
-                        position: absolute;
-                        right: -0.4px;
-                        bottom: 0;
-                        background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
-                        background-repeat: no-repeat;
-                        width: 40px;
-                        height: 70px;
-                        background-size: 100%;
-                        transform: translate(50%, 50%);
-                    }
-                }
             }
         }
         &:last-child,
@@ -372,7 +325,7 @@
     .work-logo-footer {
         text-align: center;
         padding: 24px 16px 32px;
-        border-top: 2px solid #000;
+        // border-top: 2px solid #000;
         height: 108PX;
         display: flex;
         align-items: center;
@@ -381,19 +334,49 @@
             padding: 24px 16px 32px;
             height: 94px;
         }
+        @media (max-width:520px) {
+            height: unset;
+        }
 
         &__imgWrp {
             text-align: center;
             display: flex
         }
+        .work--page-brand-name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            @media(max-width:767px){
+                font-size: 24px;
+            }
+            svg{
+                width: 32px;
+                height: 20px;
+                opacity: 0;
+            }
+            &:hover svg{
+                opacity: 1;
+            }
+        }
     }
-
-    .ourWork__cards {
-
-        overflow: hidden;
-
-
-
+    .workpage__cards_parent{
+        border-top: 1px solid var(--COLOR-BLACK);
+        border-bottom: 1px solid var(--COLOR-BLACK);
+        .ourWork__cards {
+            overflow: hidden;
+            column-gap: 36px;
+            row-gap: 72px;
+            @media screen and (max-width:1200px){
+                row-gap: 50px;
+                column-gap: 24px;
+            }
+            @media screen and (max-width:520px){
+                row-gap: 34px;
+            }
+        }
     }
 
     .img-wrp {
@@ -404,26 +387,11 @@
 
     .ourWork__card {
         @media (max-width:991px) {
-            width: 50%;
+            width: 48%;
         }
 
         @media (max-width:767px) {
             width: 100%;
-        }
-
-        &::before {
-            @media (max-width:991px) {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                background-image: url(https://cdn.shopify.com/s/files/1/0662/5122/7356/files/doller.svg?v=1668168989);
-                background-repeat: no-repeat;
-                width: 15px;
-                height: 28px;
-                background-size: 100%;
-                transform: translate(-50%, 50%);
-            }
         }
     }
 
@@ -435,16 +403,6 @@
         margin-left: 0;
     }
 
-    .ourWork__cardBody {
-        padding: 30px 84px 54px 54px;
-
-        @media (max-width:991px) {
-            padding: 40px 62px 66px 40px;
-        }
-        @media (max-width:520px) {
-            padding: 40px 40px 66px 20px;
-        }
-    }
 
     .brandLogo {
         object-fit: contain;
