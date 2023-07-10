@@ -42,12 +42,24 @@
             "PROJECT_DEADLINE": "29\/06\/2023",
             "STATUS": "In Progress"
           }
+        },
+        "52c0aa98-4575-4dac-88d0-bf1cf12f7337": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "shoptrade llc",
+            "More_Detail": "",
+            "TEAM": "Arjun, sushanth, akila",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "30\/07\/2023",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
         "bf175c0f-bb1c-4245-921c-c1d7cf1ef630",
         "f505c530-8428-480c-85e3-17293b570ab8",
-        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6"
+        "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
+        "52c0aa98-4575-4dac-88d0-bf1cf12f7337"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
