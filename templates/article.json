@@ -7,7 +7,7 @@
           "type": "popularInsights",
           "settings": {
             "title": "Popular Insights",
-            "lt_blog": "insights",
+            "lt_blog": "business-strategy",
             "lt_noOfArticles": 10
           }
         },
@@ -101,14 +101,14 @@
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-0": {
           "type": "heading",
           "settings": {
-            "heading": "",
+            "heading": "Subscribe to our emails",
             "heading_size": "h1"
           }
         },
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-1": {
           "type": "paragraph",
           "settings": {
-            "text": ""
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2": {
@@ -123,10 +123,9 @@
         "template--16843654594780__8962684f-7fdf-4849-a6a0-065e33d4367e-1688989671db01fde7-2"
       ],
       "settings": {
-        "border_top": true,
         "color_scheme": "background-1",
-        "heading": "Sign up for our free ecommerce newsletter.",
-        "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",
+        "heading": "",
+        "agreeTxt": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52

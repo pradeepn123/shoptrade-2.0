@@ -113,12 +113,14 @@
                                                                     </span>
                                                                 </div>
                                                                 <div class="article_content_time_read">
-                                                                    {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
-                                                                    {% if article_length <= 300 %}
-                                                                        1 Min Read
-                                                                    {% else %}
-                                                                        {{ article_length | divided_by: 200 | round }} Min Read
-                                                                    {% endif %}
+                                                                    <span>
+                                                                        {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                        {% if article_length <= 300 %}
+                                                                            1 Min Read
+                                                                        {% else %}
+                                                                            {{ article_length | divided_by: 200 | round }} Min Read
+                                                                        {% endif %}
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                             <div class="content--title">
@@ -166,12 +168,14 @@
                                                                         </span>
                                                                     </div>
                                                                     <div class="article_content_time_read">
-                                                                        {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
-                                                                        {% if article_length <= 300 %}
-                                                                            1 Min Read
-                                                                        {% else %}
-                                                                            {{ article_length | divided_by: 200 | round }} Min Read
-                                                                        {% endif %}
+                                                                        <span> 
+                                                                            {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                            {% if article_length <= 300 %}
+                                                                                1 Min Read
+                                                                            {% else %}
+                                                                                {{ article_length | divided_by: 200 | round }} Min Read
+                                                                            {% endif %}
+                                                                        </span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="content_sub">
