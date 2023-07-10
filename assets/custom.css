@@ -12177,6 +12177,7 @@ html {
   column-gap: 4px;
   font-size: 16px;
   color: #000;
+  margin-bottom: 6px;
 }
 .mainArticles .mart_container .authorInfo .publishInfo .social_sharing .sharing_icon p {
   line-height: 1;
