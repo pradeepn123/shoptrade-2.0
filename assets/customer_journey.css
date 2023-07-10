@@ -42,12 +42,12 @@
     text-align: left;
     font-weight: 700;
     font-size: 48px;
-    line-height: 32px;
+    line-height: 52px;
 }
 
 .cus_jr .content_containerParent .content_container .cc_heading{
     font-size: 32px;
-    line-height: 30px;
+    line-height: 38px;
     font-weight: 700;
     text-align: left;
     /* margin-bottom: auto; */
@@ -101,7 +101,7 @@
         padding: 40px 0;
     }
     .cus_jr .cus_jr_child .cus_jr_child_heading p{
-        font-size: 26px;
+        font-size: 32px;
     }
     .cus_jr .cus_jr_child .cus_jr_child_text p{
         font-size: 16px;
@@ -216,12 +216,20 @@
 
 @media screen and (max-width: 480px){
     .cus_jr .cus_jr_child .cus_jr_child_heading p{
-        line-height: 36px;
+        line-height: 32px;
         font-size: 24px;
     }
     .cus_jr .content_containerParent .content_container .cc_description {
         line-height: 24px;
     }
+    .reM .reM_container .reM_parent .swiper-slide{
+        width: calc(100% - 30px)!important;
+        margin: 0 15px;
+     }
+   .reM .reM_container .reM_parent .swiper-slide.swiper-slide-active{
+        margin-left: 11px;
+    }
+
 }
 .audit_atf_section .audit_atf .audit_atf_c .audit_atf_left .cta_parent .cta_classes:hover,.cus_ctaButton:hover{
     filter: brightness(90%);
