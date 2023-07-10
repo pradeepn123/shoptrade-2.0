@@ -75,6 +75,17 @@
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
           }
+        },
+        "53c80d35-3f21-4177-a20d-d55301f238e7": {
+          "type": "project",
+          "settings": {
+            "PROJECT_NAME": "Hathaspace",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/158862",
+            "TEAM": "Faizal, Deekshith, Rosh, Darshika, Shivanshi, Nagavasavi",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "",
+            "STATUS": "In Progress"
+          }
         }
       },
       "block_order": [
@@ -83,7 +94,8 @@
         "ccd57e03-11b1-4e9e-a27b-6f4143a072e6",
         "5c6b76b8-86a3-461c-a601-5f2f019039c6",
         "16ce55b2-f7cf-496f-85bc-cba76e3e497c",
-        "5072a2be-cdb8-4197-a154-419b3f6f0679"
+        "5072a2be-cdb8-4197-a154-419b3f6f0679",
+        "53c80d35-3f21-4177-a20d-d55301f238e7"
       ],
       "settings": {
         "title": "ShopTrade Client Project Status",
