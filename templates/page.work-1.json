@@ -541,6 +541,17 @@
             "cardLink": "https:\/\/caavadesign.com\/project\/gaucho-rum\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "266e3108-af04-4161-a383-4f062f80ccac": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Kusc.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/kusc.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/classical-kusc-website-2\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -592,7 +603,8 @@
         "444dc9af-8e8c-4c40-adbe-053049614fa4",
         "66159d4e-835e-497d-b294-b6b7f2a5d4de",
         "37b80e1f-26ac-47bb-a0be-3f4efe060d7f",
-        "f62fe189-2eef-43d3-a408-b97834009dc3"
+        "f62fe189-2eef-43d3-a408-b97834009dc3",
+        "266e3108-af04-4161-a383-4f062f80ccac"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
