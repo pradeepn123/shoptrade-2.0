@@ -11810,11 +11810,13 @@ html {
     line-height: 30px;
   }
 }
+.mainArticles p {
+  color: #000;
+}
 .mainArticles p, .mainArticles a {
   font-size: 20px;
   line-height: 42px;
   margin: 0;
-  color: #000;
   font-family: "Roboto";
 }
 @media screen and (max-width: 1023px) {
@@ -11966,11 +11968,12 @@ html {
 @media screen and (max-width: 1023px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription h3 {
     font-size: 18px;
+    line-height: 30px;
   }
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription h4 {
   font-size: 24px;
-  line-height: 72px;
+  line-height: 35px;
 }
 @media screen and (max-width: 1023px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription h4 {
