@@ -542,6 +542,17 @@
             "cardLink": "https:\/\/caavadesign.com\/project\/san-diego-cycling-brigade\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "f62fe189-2eef-43d3-a408-b97834009dc3": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Cauch_54b6d652-f919-4be8-80d6-7432ecdae53e.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/gaucha-rum_2e4648dc-8078-480e-8044-e96168e5f5f8.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "",
+            "btn-icon": ""
+          }
         }
       },
       "block_order": [
@@ -593,7 +604,8 @@
         "1390e326-1c45-4282-98a6-977ccaa49c1e",
         "444dc9af-8e8c-4c40-adbe-053049614fa4",
         "66159d4e-835e-497d-b294-b6b7f2a5d4de",
-        "37b80e1f-26ac-47bb-a0be-3f4efe060d7f"
+        "37b80e1f-26ac-47bb-a0be-3f4efe060d7f",
+        "f62fe189-2eef-43d3-a408-b97834009dc3"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
