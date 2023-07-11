@@ -509,6 +509,17 @@
             "cardLink": "https:\/\/caavadesign.com\/typography\/chris-wilhite-brand-and-website-launch\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "444dc9af-8e8c-4c40-adbe-053049614fa4": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Maillok.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/maiook.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/www.maiook.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -557,7 +568,8 @@
         "12516c95-e0c0-4450-977d-d0552d3419a7",
         "55d807e7-15ac-469e-9652-7830aa7e5e9a",
         "72268d66-2860-4b44-862b-62d3e26254ed",
-        "1390e326-1c45-4282-98a6-977ccaa49c1e"
+        "1390e326-1c45-4282-98a6-977ccaa49c1e",
+        "444dc9af-8e8c-4c40-adbe-053049614fa4"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
