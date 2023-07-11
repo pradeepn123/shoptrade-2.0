@@ -1764,12 +1764,12 @@ input::-moz-placeholder {
   align-items: center;
   justify-content: center;
   color: #000000;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 @media (max-width: 767px) {
   .work .work-logo-footer .work--page-brand-name {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .work .work-logo-footer .work--page-brand-name svg {
