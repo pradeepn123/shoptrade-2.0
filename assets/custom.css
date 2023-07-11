@@ -11914,6 +11914,7 @@ html {
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription {
   letter-spacing: 0;
+  word-wrap: break-word;
 }
 @media (max-width: 767px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription {
@@ -12218,6 +12219,11 @@ html {
   font-weight: 400;
   line-height: 36px;
 }
+@media (max-width: 320px) {
+  .mainArticles .mart_container .authorInfo .publishInfo .articleTags {
+    margin-right: 17px;
+  }
+}
 .mainArticles .mart_container .authorInfo .publishInfo .articleTags p {
   color: #777;
   margin: 0;
@@ -12238,6 +12244,7 @@ html {
 @media (max-width: 320px) {
   .mainArticles .mart_container .authorInfo .publishInfo .publishedDate {
     margin-left: 0;
+    margin-right: 10px;
   }
 }
 .mainArticles .bottom_social_share .sharingIcons {
