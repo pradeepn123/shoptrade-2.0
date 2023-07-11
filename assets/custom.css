@@ -1459,6 +1459,7 @@ input::-moz-placeholder {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -1481,6 +1482,7 @@ input::-moz-placeholder {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 920px) {
   .ourWork__card:last-child {
@@ -1489,12 +1491,17 @@ input::-moz-placeholder {
 }
 @media (min-width: 919px) {
   .ourWork__card {
-    width: 47%;
+    width: 48.7%;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1200px) {
   .ourWork__card {
-    width: 31%;
+    width: 31.15%;
+  }
+}
+@media (min-width: 1400px) {
+  .ourWork__card {
+    width: 31.4%;
   }
 }
 @media (min-width: 1336px) {
