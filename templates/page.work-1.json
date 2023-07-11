@@ -520,6 +520,17 @@
             "cardLink": "https:\/\/www.maiook.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "66159d4e-835e-497d-b294-b6b7f2a5d4de": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/The-Fire.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/patriot.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/patriot-games\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -569,7 +580,8 @@
         "55d807e7-15ac-469e-9652-7830aa7e5e9a",
         "72268d66-2860-4b44-862b-62d3e26254ed",
         "1390e326-1c45-4282-98a6-977ccaa49c1e",
-        "444dc9af-8e8c-4c40-adbe-053049614fa4"
+        "444dc9af-8e8c-4c40-adbe-053049614fa4",
+        "66159d4e-835e-497d-b294-b6b7f2a5d4de"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
