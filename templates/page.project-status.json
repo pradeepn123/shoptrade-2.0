@@ -48,9 +48,9 @@
           "settings": {
             "PROJECT_NAME": "High life",
             "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/365253",
-            "TEAM": "Faizal, Rosh",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "",
+            "TEAM": "Amit, Pradeep, Umesh, Faizal, Rosh",
+            "PHASE": "Development",
+            "PROJECT_DEADLINE": "12\/07\/2023",
             "STATUS": "In Progress"
           }
         }
