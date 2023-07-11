@@ -465,6 +465,17 @@
             "cardLink": "https:\/\/www.buenacerveza.com\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "12516c95-e0c0-4450-977d-d0552d3419a7": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Host-_-Port.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/host-porter.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/host-porter-banquet-ware\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -509,7 +520,8 @@
         "49c0539d-b33c-4081-9f94-817f171e22c3",
         "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6",
         "b09afe88-56e8-4cc1-8e34-349522aafc5e",
-        "01766b43-171e-47ee-bd64-e6a7cb56f34b"
+        "01766b43-171e-47ee-bd64-e6a7cb56f34b",
+        "12516c95-e0c0-4450-977d-d0552d3419a7"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
