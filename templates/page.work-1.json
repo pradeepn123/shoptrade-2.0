@@ -443,6 +443,17 @@
             "cardLink": "https:\/\/caavadesign.com\/project\/alchemy-bottle-shop\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "b09afe88-56e8-4cc1-8e34-349522aafc5e": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Broom-Wagon-Coffee.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/broom-wagon.png",
+            "clickble": true,
+            "open_new_tab": false,
+            "cardLink": "https:\/\/broomwagonbikes.com\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -485,7 +496,8 @@
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "ecb392bc-5524-4421-8bbc-5656faa04c09",
         "49c0539d-b33c-4081-9f94-817f171e22c3",
-        "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6"
+        "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6",
+        "b09afe88-56e8-4cc1-8e34-349522aafc5e"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
