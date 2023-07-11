@@ -1,0 +1,257 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let dataTabElements = document.querySelectorAll("#tabs_section .tabTitle");
+        let dataContentElements = document.querySelectorAll("#tabs_dataParent .tabData");
+        
+        dataTabElements.forEach(itemX => {
+            itemX.addEventListener('click', (e) => {
+                let reqID = e.target.id;
+                dataContentElements.forEach((anItem) => {
+                    if(anItem.id.includes(reqID) ){
+                        anItem.classList.add('selected');
+
+                        dataTabElements.forEach((ele) => {
+                            ele.classList.remove('selectedTabs');
+                        })
+                        itemX.classList.add('selectedTabs');
+                    }
+                    else{
+                        anItem.classList.remove('selected');
+                    }
+                })
+            });
+        });
+    });
+
+</script>
+
+{% style %}
+    #tabs_dataParent .tabData{
+        display: none;
+    }
+
+    #tabs_dataParent .tabData.selected{
+        display: block;
+    }
+{% endstyle %}
+
+{% capture handlesList %}
+    {% for link in linklists.blogs.links %}
+            {% assign blog = link.object %}
+            {{ blog.handle }}
+    {% endfor %}
+{% endcapture %}
+
+{% assign orgHandles = handlesList | split: ' ' %}
+{% assign copyHandles = handlesList | prepend: 'firstElem' | split: ' ' %}
+{% assign blogLoopCount = orgHandles.size %}
+
+<div class="main_blogs">
+    <div class="container">
+        <div class="mb_container">
+            <div class="mb_heading">
+                <p>{{ section.settings.heading }}</p>
+            </div>
+            <div class="mb_subHeading">
+                <p>{{ section.settings.subheading }}</p>
+            </div>
+        </div>
+        <div class="blogs_container">
+            {% comment %} {% for anItem in copyHandles %}
+                {% if blogs[anItem].title == blank %}
+                    First Element
+                    <br>
+                {% else%}
+                    {{  blogs[anItem].title }}
+                    <br>
+                {% endif %}
+            {% endfor %} {% endcomment %}
+
+                <div class="tabs_section" id="tabs_section">
+                    {% for anItem in copyHandles %}
+                        {% if forloop.index == 1 %}
+                            <span class="tabTitle tabTitle_{{ forloop.index }} {% if forloop.index ==1 %}selectedTabs{% endif %}" id="tabTitle_{{ forloop.index }}">All Articles</span>
+                        {% else %}
+                            <span class="tabTitle tabTitle_{{ forloop.index }}" id="tabTitle_{{ forloop.index }}">
+                                {{ blogs[anItem].title }}
+                            </span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
+                {% comment %} <div class="tabs_section" id="tabs_section">
+                    <span class="tabTitle tabTitle_1" id="tabTitle_1">Title 1</span>
+                    <span class="tabTitle tabTitle_2" id="tabTitle_2">Title 2</span>
+                    <span class="tabTitle tabTitle_3" id="tabTitle_3">Title 3</span>
+                </div> {% endcomment %}
+
+
+                <div class="tabs_dataParent" id="tabs_dataParent">
+                    {% for anItem in copyHandles %}
+                        <div class="tabData_{{ forloop.index }} tabData {% if forloop.index == 1%}selected{% endif%}" id="tabTitleChild tabTitle_{{ forloop.index }}">
+                        {% if forloop.index == 1 %}
+                            <div class="blog_grid-item">
+                                <div class="blog_grid-itemChild">
+                                    {% for item in copyHandles %}
+                                        {% if blogs[item].articles.size > 0 %}
+                                            {% for article in blogs[item].articles %}
+                                                <div class="blog_grid--eachItem">
+                                                    {% if article.url %}<a href="{{ article.url }}">{% endif %}
+                                                        <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                        <div class="content__eachItem--parent">
+                                                            <div class="content--eachItem">
+                                                                <div class="tag_date_wrapper">
+                                                                    {% if article.tags.size > 0 %}
+                                                                        {% for tag in article.tags %}
+                                                                            <p class="content--tags">
+                                                                                {{ tag }}
+                                                                            </p>
+                                                                        {% endfor %}
+                                                                    {% endif %}
+                                                                    <span class="content--publiDate">
+                                                                        {{ article.published_at | date: "%b %d, %Y" }}
+                                                                    </span>
+                                                                </div>
+                                                                <div class="article_content_time_read">
+                                                                    <span>
+                                                                        {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                        {% if article_length <= 300 %}
+                                                                            1 Min Read
+                                                                        {% else %}
+                                                                            {{ article_length | divided_by: 200 | round }} Min Read
+                                                                        {% endif %}
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content--title">
+                                                                {{ article.title }}
+                                                            </div>
+                                                            <div class="content--url">
+                                                                <a href="{{ article.url }}">
+                                                                    Read Post
+                                                                    <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                                    </svg>
+                                                                    <div class="btn--underline" style="display: block;"></div>
+                                                                </a>                                                                
+                                                            </div>
+                                                        </div>
+                                                    {% if article.url %}</a> {% endif %}
+                                                </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="blog_grid-item">
+                                {% for item in anItem %}
+                                    {% if blogs[item].articles.size > 0 %}
+                                        {% paginate blogs[item].articles by 9 %}
+                                            <div class="blog_grid-itemChild"> 
+                                                {% for article in blogs[item].articles %}
+                                                    <div class="blog_grid--eachItem">
+                                                        {% if article.url %}<a href="{{ article.url }}"> {% endif %}
+                                                            <img src="{{ article.image | img_url: 'master' }}" alt="" style="width: 200px;">
+                                                            <div class="content__eachItem--parent">
+                                                                <div class="content--eachItem">
+                                                                    <div class="tag_date_wrapper">
+                                                                        {% if article.tags.size > 0 %}
+                                                                            {% for tag in article.tags %}
+                                                                                <p class="content--tags">
+                                                                                    {{ tag }}
+                                                                                </p>
+                                                                            {% endfor %}
+                                                                        {% endif %}
+                                                                        <span class="content--publiDate">
+                                                                            {{ article.published_at | date: "%b %d, %Y" }}
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="article_content_time_read">
+                                                                        <span> 
+                                                                            {% assign article_length = article.content | strip_html | replace: ' ', '' | size %}
+                                                                            {% if article_length <= 300 %}
+                                                                                1 Min Read
+                                                                            {% else %}
+                                                                                {{ article_length | divided_by: 200 | round }} Min Read
+                                                                            {% endif %}
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content_sub">
+                                                                    <div class="content--title">
+                                                                        {{ article.title }}
+                                                                    </div>
+                                                                    <div class="content--url">
+                                                                        <a href="{{ article.url }}"> Read Post
+                                                                            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path id="Vector 44" d="M1 10.5L10 1.5M10 1.5V10.5M10 1.5H1" stroke="#FF7121" stroke-width="1.5"/>
+                                                                            </svg>
+                                                                            <div class="btn--underline" style="display: block;"></div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% if article.url %}</a> {% endif %}
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                            <div class="page_pagination">
+                                                {% if paginate.next %}
+                                                    <a href="{{ paginate.next.url }}">Next</a>
+                                                {% endif %}
+                                                
+                                                {% for part in paginate.parts %}
+                                                    {% if part.is_link %}
+                                                        <a href="{{ part.url }}">{{ part.title }}</a>
+                                                    {% else %}
+                                                        <span>{{ part.title }}</span>
+                                                    {% endif %}
+                                                {% endfor %}
+
+                                                {% if paginate.previous %}
+                                                    <a href="{{ paginate.previous.url }}">Previous</a>
+                                                {% endif %}
+                                            </div>
+                                        {% endpaginate %}
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Show All Blogs",
+  "settings": [
+    {
+      "type": "text",
+      "id" : "heading",
+      "label": "Heading"
+    },
+    {
+        "type": "text",
+        "id" : "subheading",
+        "label": "Sub Heading"
+    }
+  ],
+    "blocks": [
+        {
+            "type": "Blogs",
+            "name": "Blogs",
+            "settings": [
+                {
+                    "id":"selectblog",
+                    "label":"blog",
+                    "type":"blog"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
