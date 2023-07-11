@@ -15,10 +15,17 @@
           "settings": {
             "selectblog": "business-strategy"
           }
+        },
+        "86df79bb-4757-4639-8c9b-9f6fd383f87e": {
+          "type": "Blogs",
+          "settings": {
+            "selectblog": "shopify"
+          }
         }
       },
       "block_order": [
-        "56023b22-c7bb-46a3-a108-0fd39349390b"
+        "56023b22-c7bb-46a3-a108-0fd39349390b",
+        "86df79bb-4757-4639-8c9b-9f6fd383f87e"
       ],
       "settings": {
         "heading": "COMMERCE INSIGHTS",
@@ -67,9 +74,5 @@
     "main",
     "7dcb7d68-18a2-4959-b8df-bc04ef986ac1",
     "c27367fc-1f10-45d7-b5e4-33311042b06b"
-    }
-  },
-  "order": [
-    "main"
   ]
 }

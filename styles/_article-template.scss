@@ -46,11 +46,13 @@
             line-height: 30px;
         }
     }
+    p{
+        color: #000;
+    }
     p , a{
         font-size: 20px;
         line-height: 42px;
         margin: 0;
-        color: #000;
         font-family: 'Roboto';
         @media screen and (max-width: 1023px){
             font-size: 16px;
@@ -163,6 +165,29 @@
                                 width: auto;
                             }
                         }
+
+                        // .link-container {
+                        //     width: 100%;
+                        //     white-space: nowrap; /* Prevents line breaks on desktop */
+                        //   }
+                          
+                        //   .link {
+                        //     display: inline-block;
+                        //     white-space: normal;
+                        //     word-break: break-word;
+                        //     max-width: 100%;
+                        //     color: #3A4ED4; /* Ensures the link doesn't overflow */
+                        //   }
+                          
+                        //   /* Media query for mobile screens */
+                        //   @media (max-width: 767px) {
+                        //     .link {
+                        //       display: block; /* Forces line breaks on mobile */
+                        //       text-align: left;  
+
+                        //     }
+                        //   } 
+                          
                         h1{
                             font-size: 42px;
                             margin: 16px 0;                   
@@ -183,17 +208,18 @@
                             font-size: 28px;
                             @media screen and (max-width: 1023px){
                                 font-size: 18px;
+                                line-height: 30px;
                             }
                         }
                         h4{
                             font-size: 24px;
-                            line-height: 72px;
+                            line-height: 35px;
                             @media screen and (max-width: 1023px){
                                 font-size: 16px;
                                 line-height: 30px;
                             }
                         }
-                        p{
+                        p{ 
                             font-size: 20px;
                             line-height: 42px;
                             @media screen and (max-width: 1023px){
@@ -240,7 +266,7 @@
                             text-decoration-color: #cecece;
                             border-bottom: 1px solid #777777;
                             padding: 15px 0;
-                            color: black;
+                            color: black; 
                             line-height: 1.3;
                         }
                     }

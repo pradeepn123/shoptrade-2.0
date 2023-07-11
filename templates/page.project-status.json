@@ -15,9 +15,9 @@
           "settings": {
             "PROJECT_NAME": "Sproos Life",
             "More_Detail": "",
-            "TEAM": "Pradeep, Shweta,\nshivanands",
+            "TEAM": "Pradeep, Shweta",
             "PHASE": "Development",
-            "PROJECT_DEADLINE": "30/06/2023",
+            "PROJECT_DEADLINE": "30\/06\/2023",
             "STATUS": "In Progress"
           }
         },
@@ -25,10 +25,10 @@
           "type": "project",
           "settings": {
             "PROJECT_NAME": "Kimia",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/362339",
+            "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/362339",
             "TEAM": "Umesh",
             "PHASE": "Development",
-            "PROJECT_DEADLINE": "7/07/2023",
+            "PROJECT_DEADLINE": "7\/07\/2023",
             "STATUS": "In Progress"
           }
         },
@@ -39,106 +39,7 @@
             "More_Detail": "",
             "TEAM": "Sahrudh",
             "PHASE": "Development",
-            "PROJECT_DEADLINE": "29/06/2023",
-            "STATUS": "In Progress"
-          }
-        },
-        "439bc47c-86aa-49d3-8f82-7bb5be6c60a0": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Chesapeake Ceramics",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/321674",
-            "TEAM": "Chaman, Nikhil, Shivanshi, Shweta, Amit, Nikhil, Sumayya",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "77dd4b75-2466-4418-a17c-e761e986d2bd": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Heal & Co",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/352005",
-            "TEAM": "Adarsh, Chaman, Faizal, Rosh, Nagavasavi, Sahrudh, Keerthi, Shweta, Pradeep, Hadhil",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "53dbca8f-78fd-4fb6-b4da-58d0d85e7dee": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "High life",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/365253",
-            "TEAM": "Faizal, Rosh",
-            "PHASE": "Design",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "375d47a6-8398-460c-9384-a1bbff9322a8": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Kimia",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/362339",
-            "TEAM": "Hadil, Nagavsavi, Umesh",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "b84b7614-0d5f-41d0-a92f-35146e059cdc": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Melissani",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/329083",
-            "TEAM": "Faizal, Amit, keerthi, Nagavasavi, Pradeep, Sumayya, Adarsh, Darshika, Shivanshi",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "Yet to start"
-          }
-        },
-        "d4d65f9f-bacc-4f76-9d48-784189f79215": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Midway Sports",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/355895",
-            "TEAM": "Shweta, Adarsh, Ritu, Shivanand",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "9302a44a-5117-4494-a009-dc1c51418882": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Pole Junkie",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/345820",
-            "TEAM": "Pradeep, Rosh, Deekshith,",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "18727643-3cf7-4a05-ace2-4e29e391e64d": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "Swing Fan",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/308656",
-            "TEAM": "Keerthi, deekshith,",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
-            "STATUS": "In Progress"
-          }
-        },
-        "4014138e-ea7c-4a97-9557-9be5d7736ba6": {
-          "type": "project",
-          "settings": {
-            "PROJECT_NAME": "US POLO",
-            "More_Detail": "https://tasks.hubstaff.com/app/organizations/24237/projects/346855",
-            "TEAM": "Nikhil, Amit, Nagavasavi, Adarsh",
-            "PHASE": "Development",
-            "PROJECT_DEADLINE": "",
+            "PROJECT_DEADLINE": "29\/06\/2023",
             "STATUS": "In Progress"
           }
         },
@@ -158,7 +59,7 @@
           "settings": {
             "PROJECT_NAME": "Heal & Co",
             "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/352005",
-            "TEAM": "Adarsh, Chaman, Faizal, Rosh, Nagavasavi, Sahrudh, Keerthi, Shweta, Pradeep, Hadhil",
+            "TEAM": "Adarsh, Chaman, Faizal, \n Rosh, Nagavasavi, Sahrudh, Keerthi, Shweta, Pradeep, Hadhil",
             "PHASE": "Design",
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
@@ -180,7 +81,7 @@
           "settings": {
             "PROJECT_NAME": "Kimia",
             "More_Detail": "https:\/\/tasks.hubstaff.com\/app\/organizations\/24237\/projects\/362339",
-            "TEAM": "Hadil, Nagavsavi, Umesh",
+            "TEAM": "Hadhil, Nagavsavi, \nUmesh",
             "PHASE": "Development",
             "PROJECT_DEADLINE": "",
             "STATUS": "In Progress"
