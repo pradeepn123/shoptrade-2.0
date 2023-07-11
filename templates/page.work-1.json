@@ -421,18 +421,6 @@
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
           }
         },
-        "49c0539d-b33c-4081-9f94-817f171e22c3": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/melissani.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Layer.svg",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/melissaniwater.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
         "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6": {
           "type": "cardType",
           "settings": {
@@ -594,7 +582,6 @@
         "8787ae1f-5ec8-4dc4-a6f2-898a085a4092",
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33",
         "ecb392bc-5524-4421-8bbc-5656faa04c09",
-        "49c0539d-b33c-4081-9f94-817f171e22c3",
         "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6",
         "b09afe88-56e8-4cc1-8e34-349522aafc5e",
         "01766b43-171e-47ee-bd64-e6a7cb56f34b",
