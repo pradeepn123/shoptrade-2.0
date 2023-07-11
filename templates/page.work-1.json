@@ -549,9 +549,9 @@
             "cardImage": "shopify:\/\/shop_images\/Cauch_54b6d652-f919-4be8-80d6-7432ecdae53e.jpg",
             "cardImageBrand": "shopify:\/\/shop_images\/gaucha-rum_2e4648dc-8078-480e-8044-e96168e5f5f8.png",
             "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": ""
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/gaucho-rum\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
         }
       },
