@@ -487,6 +487,17 @@
             "cardLink": "https:\/\/caavadesign.com\/project\/mise\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "72268d66-2860-4b44-862b-62d3e26254ed": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Viva.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/viiva.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/viia-cbd\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -533,7 +544,8 @@
         "b09afe88-56e8-4cc1-8e34-349522aafc5e",
         "01766b43-171e-47ee-bd64-e6a7cb56f34b",
         "12516c95-e0c0-4450-977d-d0552d3419a7",
-        "55d807e7-15ac-469e-9652-7830aa7e5e9a"
+        "55d807e7-15ac-469e-9652-7830aa7e5e9a",
+        "72268d66-2860-4b44-862b-62d3e26254ed"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
