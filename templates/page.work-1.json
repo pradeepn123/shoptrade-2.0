@@ -531,6 +531,17 @@
             "cardLink": "https:\/\/caavadesign.com\/project\/patriot-games\/",
             "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
           }
+        },
+        "37b80e1f-26ac-47bb-a0be-3f4efe060d7f": {
+          "type": "cardType",
+          "settings": {
+            "cardImage": "shopify:\/\/shop_images\/Cycling-b.jpg",
+            "cardImageBrand": "shopify:\/\/shop_images\/Layer-1.png",
+            "clickble": true,
+            "open_new_tab": true,
+            "cardLink": "https:\/\/caavadesign.com\/project\/san-diego-cycling-brigade\/",
+            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+          }
         }
       },
       "block_order": [
@@ -581,7 +592,8 @@
         "72268d66-2860-4b44-862b-62d3e26254ed",
         "1390e326-1c45-4282-98a6-977ccaa49c1e",
         "444dc9af-8e8c-4c40-adbe-053049614fa4",
-        "66159d4e-835e-497d-b294-b6b7f2a5d4de"
+        "66159d4e-835e-497d-b294-b6b7f2a5d4de",
+        "37b80e1f-26ac-47bb-a0be-3f4efe060d7f"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"
