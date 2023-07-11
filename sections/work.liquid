@@ -15,24 +15,29 @@
               <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
               {% if block.settings.brand_btn %}
               <div class="btn-wrp">
-                {% if block.settings.clickble %}
+                {% if block.settings.brand_btn %}
                   <a href="{{ block.settings.cardLink }}" 
                     {% if block.settings.open_new_tab %}target="_blank"{% endif%}
                     class="btn btn--arrow">
                     <div>
-                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
+                      <img class="btn-arrrow-work" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
                     </div>
                   </a>
                 {% else %}
                   <a class="btn btn--arrow unclickble">
                     <div>
-                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
+                      <img class="btn-arrrow-work" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/loading-icon.svg?v=1668582566" alt="arrow"/>
                     </div>
                   </a>
                 {% endif %}               
               </div>
             {% endif %}
             </div>
+            {% if block.settings.comingSOON %}
+            <div class = "coming-soon-parent">
+                <div class = "coming-soon-peoject"> Comming Soon </div>
+            </div>
+            {% endif %}
             <div class="work-logo-footer ">
               {% if block.settings.brand_name_logo %}
               <div class="work-logo-footer__imgWrp">
@@ -74,18 +79,18 @@
             "type": "image_picker",
             "label": "Image"
 
+          },
+          {
+            "type":"checkbox",
+            "id":"comingSOON",
+            "label":"Make it as coming soon",
+            "default": false
           }, 
           {
             "id":"brand_btn",
             "type": "checkbox",
             "label": "Show button",
             "default": false
-          },
-          {
-            "id":"clickble",
-            "type":"checkbox",
-            "label":"Clickable Button",
-            "default":true
           },
           {
             "id":"brand_name_logo",
@@ -116,10 +121,6 @@
           "id":"cardLink",
           "type":"url",
           "label":"Link"
-        },{
-          "id":"btn-icon",
-          "label":"Button Icon",
-          "type":"url"
         }
         ]
       }

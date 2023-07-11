@@ -144,6 +144,24 @@
             a{
                 text-decoration: none;
             }
+            .coming-soon-parent{
+                position: absolute;
+                top: 65%;
+                width: 100%;
+                .coming-soon-peoject{
+                    font-family: 'Minecraft';
+                    border-radius: 20px;
+                    background-color: #ffff;
+                    color: var(--COLOR-BLACK);
+                    padding:10px 20px;
+                    max-width: fit-content;
+                    margin: 0 auto;
+                    font-size: 26px;
+                    @media screen and (max-width:520px) {
+                        font-size: 18px;
+                    }
+                }
+            }
         }
         .brand_text_wrap {
             font-family: 'Epilogue';

@@ -1558,6 +1558,26 @@ input::-moz-placeholder {
 .ourWork__cardBody .img-container a {
   text-decoration: none;
 }
+.ourWork__cardBody .img-container .coming-soon-parent {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+}
+.ourWork__cardBody .img-container .coming-soon-parent .coming-soon-peoject {
+  font-family: "Minecraft";
+  border-radius: 20px;
+  background-color: white;
+  color: var(--COLOR-BLACK);
+  padding: 10px 20px;
+  max-width: fit-content;
+  margin: 0 auto;
+  font-size: 26px;
+}
+@media screen and (max-width: 520px) {
+  .ourWork__cardBody .img-container .coming-soon-parent .coming-soon-peoject {
+    font-size: 18px;
+  }
+}
 .ourWork__cardBody .brand_text_wrap {
   font-family: "Epilogue";
   font-style: normal;
