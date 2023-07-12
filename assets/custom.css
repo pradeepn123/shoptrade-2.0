@@ -11980,6 +11980,7 @@ html {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription h4 {
     font-size: 16px;
     line-height: 30px;
+    margin-bottom: 0;
   }
 }
 .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription p {
@@ -12093,7 +12094,7 @@ html {
   margin-top: 20px;
   color: white;
   background: #FF7121;
-  width: 100%;
+  width: 70%;
   display: inline-block;
   border-radius: 42px;
   font-size: 18px;
@@ -12349,4 +12350,8 @@ html {
   color: #3A4ED4;
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
+}
+
+.container iframe {
+  max-width: 100%;
 }
