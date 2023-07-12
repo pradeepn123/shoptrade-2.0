@@ -11916,6 +11916,9 @@ html {
   letter-spacing: 0;
   word-wrap: break-word;
 }
+.mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription iframe {
+  max-width: 100%;
+}
 @media (max-width: 767px) {
   .mainArticles .mart_container .mart_leftContainer .mainContent .majorContent .articleDescription {
     padding-bottom: 25px;
@@ -12350,8 +12353,4 @@ html {
   color: #3A4ED4;
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
-}
-
-.container iframe {
-  max-width: 100%;
 }

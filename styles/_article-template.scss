@@ -143,6 +143,9 @@
                     .articleDescription{
                         letter-spacing: 0;
                         word-wrap: break-word;
+                        iframe{
+                            max-width: 100%;
+                        }
                         @media(max-width:767px){
                             padding-bottom: 25px;
                         }
@@ -542,6 +545,3 @@
     }
 }
 
-.container iframe{
-    max-width:100%;
-}
