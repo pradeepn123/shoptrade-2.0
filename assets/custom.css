@@ -12351,3 +12351,7 @@ html {
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
 }
+
+.container iframe {
+  max-width: 100%;
+}
