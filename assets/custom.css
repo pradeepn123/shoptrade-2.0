@@ -1602,6 +1602,11 @@ input::-moz-placeholder {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 520px) {
+  .ourWork__cardBody .brand_text_wrap {
+    padding: 20px 0;
+  }
+}
 .ourWork__cardBody .brand_text_wrap p {
   margin: 0;
 }
@@ -1614,6 +1619,9 @@ input::-moz-placeholder {
 .ourWork__cardBody .brand_text_wrap .Hover__arrow svg {
   height: 20px;
   width: 32px;
+}
+.work--cur-notAllow .ourWork__cardBody .brand_text_wrap:hover {
+  cursor: not-allowed;
 }
 .ourWork__cardBody .work-body {
   flex: 1;
@@ -1710,11 +1718,11 @@ input::-moz-placeholder {
 }
 
 .workpage__cards {
-  padding: 42px 0;
+  padding: 42px 0 10px 0;
 }
 @media screen and (min-width: 920px) {
   .workpage__cards {
-    padding: 42px 0 72px 0;
+    padding: 42px 0 20px 0;
   }
 }
 
@@ -1742,7 +1750,7 @@ input::-moz-placeholder {
 }
 .work .work-logo-footer {
   text-align: center;
-  padding: 24px 16px 32px;
+  padding: 26px 16px;
   height: 108PX;
   display: flex;
   align-items: center;
@@ -1750,12 +1758,12 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .work .work-logo-footer {
-    padding: 24px 16px 32px;
     height: 94px;
   }
 }
 @media (max-width: 520px) {
   .work .work-logo-footer {
+    padding: 20px 16px;
     height: unset;
   }
 }
@@ -1784,9 +1792,29 @@ input::-moz-placeholder {
 .work .work-logo-footer .work--page-brand-name:hover svg {
   opacity: 1;
 }
-.work .workpage__cards_parent {
-  border-top: 1px solid var(--COLOR-BLACK);
-  border-bottom: 1px solid var(--COLOR-BLACK);
+.work .filter_cards .filters_switch {
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+.work .filter_cards .filters_switch:not(:last-child) {
+  margin-right: 30px;
+}
+@media (max-width: 520px) {
+  .work .filter_cards .filters_switch:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.work .filter_cards .activeWork {
+  border-bottom: 4px solid #FF7121;
+}
+@media (max-width: 520px) {
+  .work .filter_cards .activeWork {
+    border-bottom: 2px solid #FF7121;
+  }
 }
 .work .workpage__cards_parent .ourWork__cards {
   overflow: hidden;
@@ -1840,12 +1868,23 @@ input::-moz-placeholder {
   line-height: 124%;
   letter-spacing: 0.02em;
   color: var(--COLOR-BLACK);
-  max-width: 806px;
+  max-width: 80%;
   width: 100%;
+}
+@media (max-width: 1380px) {
+  .work-h1 {
+    max-width: unset;
+  }
 }
 @media (max-width: 991px) {
   .work-h1 {
     font-size: 36px;
+  }
+}
+@media (max-width: 520px) {
+  .work-h1 {
+    font-size: 32px;
+    line-height: 1.2;
   }
 }
 

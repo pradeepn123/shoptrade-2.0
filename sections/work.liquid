@@ -2,13 +2,17 @@
   <div class="container">
     <h2 class="work-h1">{{ section.settings.heading }}
     </h2>
-
+  </div>
+  <div class = "filter_cards container">
+    <a class="filters_switch activeWork" id = "All">  All </a>
+    <a class="filters_switch " id="ShopTrade"> ShopTrade </a>
+    <a class="filters_switch" id = "Caava"> Caava </a>
   </div>
   <div class="workpage__cards_parent">
   <div class = "container">
-   <ul class="ourWork__cards workpage__cards ">
+   <ul class="ourWork__cards workpage__cards " id  = "ul">
     {% for block in section.blocks %}
-      <li class="ourWork__card workpage__card">
+      <li class="ourWork__card workpage__card {{ block.settings.filter_tags }}">
         <div class="ourWork__cardBody">
           <div class="img-container">
             <div class="img-wrp" >
@@ -42,9 +46,9 @@
               {% if block.settings.brand_name_logo %}
               <div class="work-logo-footer__imgWrp">
                 <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
-              </div>
+              </div>filters_switch
               {% else %}
-               <a class="work--page-brand-name" href = "{{ block.settings.cardLink }} " {% if block.settings.open_new_tab %} target="_blank" {% endif %}> {{ block.settings.brand_name }} <span class="work_hover_arrow"> {% render 'arrow-icon' %}  </a> </p>
+               <a class="work--page-brand-name {% if block.settings.cardLink %}work--cur-notAllow {% endif %}" href = "{{ block.settings.cardLink }} " {% if block.settings.open_new_tab %} target="_blank" {% endif %}> {{ block.settings.brand_name }} {% if  block.settings.cardLink %} <span class="work_hover_arrow"> {% render 'arrow-icon' %} </span>   {% endif %} </a> 
             {% endif %}
             </div>
 
@@ -75,10 +79,25 @@
         "type": "cardType",
         "settings": [
           {
+            "type": "select",
+            "id": "filter_tags",
+            "label": "filter Tags",
+            "options": [
+              {
+                "value": "Shoptrade",
+                "label": "ShopTrade"
+              },
+              {
+                "value": "CaaVa",
+                "label": "Caava"
+              }
+            ],
+            "default": "Shoptrade"
+          },
+          {
             "id": "cardImage",
             "type": "image_picker",
             "label": "Image"
-
           },
           {
             "type":"checkbox",
@@ -134,3 +153,53 @@
 
   }
 {% endschema %}
+
+<script>
+  window.addEventListener('load', function () {
+  // the blow code is for work page tabs switch filters
+  let filters = document.querySelectorAll(".filters_switch");
+  var a = filters[0].getElementsByTagName("a");
+  let ul  = document.getElementById("ul")
+  let ShopTrade = ul.querySelectorAll(".Shoptrade");
+  let Caava = ul.querySelectorAll(".CaaVa");
+  let ShowAll = ul.querySelectorAll(".Shoptrade, .CaaVa");
+
+  showD(ShowAll);
+
+  filters.forEach(f => {
+    f.addEventListener('click', function(){
+
+      var current = document.getElementsByClassName("activeWork");
+      current[0].className = current[0].className.replace(" activeWork", "");
+      this.className += " activeWork";
+
+      if(f.id === "ShopTrade"){
+        showD(ShopTrade);
+        hideD(Caava);
+      }
+      else if (f.id === "Caava"){
+    
+        hideD(ShopTrade);
+        showD(Caava);
+      }
+      else if (f.id === "All"){
+      
+        showD(ShowAll);
+      }
+    });
+  });
+});
+
+  function showD(ele){
+    ele.forEach(k =>{
+      k.style.display= "block";
+    });
+  }
+  
+  function hideD(ele){
+    ele.forEach (m => {
+      m.style.display = "none";
+    })
+  }
+
+</script>
