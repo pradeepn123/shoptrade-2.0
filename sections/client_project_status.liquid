@@ -62,7 +62,7 @@
 {% endstyle %}
 
   {% assign showSection = request.design_mode %}
-  {% if customer and customer.tags contains "shoptradeadmin" or request.design_mode %}
+  {% if customer and customer.tags contains "shoptradeadmin" or request.design_mode or customer.email contains 'shoptrade.co' %}
     {% assign showSection = true %}
   {% endif %}
   {% if showSection %}
@@ -168,13 +168,14 @@
 
       // To calculate the no. of days between two dates
       var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-      
-      let daysAfterDeadLine =  Math.round(Difference_In_Days)
-      let daysAfterDeadLineABS = Math.abs(daysAfterDeadLine)
-      if(Difference_In_Days <= 0) 
-        daysleft.innerHTML = "deadline passed (" + daysAfterDeadLineABS + " days) ";
-      else
-        daysleft.innerHTML = Math.round(Difference_In_Days) + " days left";               
+      console.log(Difference_In_Days)
+      const daysPassed = Math.floor(Math.abs(Difference_In_Days))
+      if(daysPassed == 0){
+        daysleft.innerHTML = "Deadline Today";
+      } else if(Difference_In_Days < 0){
+        daysleft.innerHTML = "Deadline passed (" + daysPassed + " days) ";
+      } else
+        daysleft.innerHTML = Math.ceil(Difference_In_Days) + " days left";               
     }
   }
 
