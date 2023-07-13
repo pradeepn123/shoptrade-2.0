@@ -3,62 +3,99 @@
     <h2 class="work-h1">{{ section.settings.heading }}
     </h2>
   </div>
-  <div class = "filter_cards container">
-    <a class="filters_switch activeWork" id = "All">  All </a>
-    <a class="filters_switch " id="ShopTrade"> ShopTrade </a>
-    <a class="filters_switch" id = "Caava"> Caava </a>
+  <div class="filter_cards container">
+    <div class="filters_card_child">
+    <a class="filters_switch activeWork" id="All">
+      All
+    </a>
+    <a class="filters_switch " id="ShopTrade">
+      ShopTrade
+    </a>
+    <a class="filters_switch" id="Caava">
+      Caava
+    </a>
+  </div>
   </div>
   <div class="workpage__cards_parent">
-  <div class = "container">
-   <ul class="ourWork__cards workpage__cards " id  = "ul">
-    {% for block in section.blocks %}
-      <li class="ourWork__card workpage__card {{ block.settings.filter_tags }}">
-        <div class="ourWork__cardBody">
-          <div class="img-container">
-            <div class="img-wrp" >
-              <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-              {% if block.settings.brand_btn %}
-              <div class="btn-wrp">
-                {% if block.settings.brand_btn %}
-                  <a href="{{ block.settings.cardLink }}" 
-                    {% if block.settings.open_new_tab %}target="_blank"{% endif%}
-                    class="btn btn--arrow">
-                    <div>
-                      <img class="btn-arrrow-work" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
+    <div class="container">
+      <ul class="ourWork__cards workpage__cards " id="ul">
+        {% for block in section.blocks %}
+          <li class="ourWork__card workpage__card {{ block.settings.filter_tags }}">
+            <div class="ourWork__cardBody">
+              <div class="img-container">
+                <div id="work-img-wrp" class="img-wrp">
+                  <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}" />
+                  <div class="workOn-hover--info">
+                   
+                      {{ block.settings.work_info_txt }}
+                    
+                    {% comment %} <h6 class="work_info_author">
+                      {{ block.settings.work_info_author }}
+                    </h6> {% endcomment %}
+                  </div>
+                  {% if block.settings.brand_btn %}
+                    <div class="btn-wrp">
+                      {% if block.settings.brand_btn %}
+                        <a
+                          href="{{ block.settings.cardLink }}"
+                          {% if block.settings.open_new_tab %}target="_blank"{% endif %}
+                          class="btn btn--arrow">
+                          <div>
+                            <img
+                              class="btn-arrrow-work"
+                              src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684"
+                              alt="arrow" />
+                          </div>
+                        </a>
+                      {% else %}
+                        <a class="btn btn--arrow unclickble">
+                          <div>
+                            <img
+                              class="btn-arrrow-work"
+                              src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/loading-icon.svg?v=1668582566"
+                              alt="arrow" />
+                          </div>
+                        </a>
+                      {% endif %}
                     </div>
-                  </a>
-                {% else %}
-                  <a class="btn btn--arrow unclickble">
-                    <div>
-                      <img class="btn-arrrow-work" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/loading-icon.svg?v=1668582566" alt="arrow"/>
+                  {% endif %}
+                </div>
+                {% if block.settings.comingSOON %}
+                  <div class="coming-soon-parent">
+                    <div class="coming-soon-peoject">
+                      Comming Soon
                     </div>
-                  </a>
-                {% endif %}               
-              </div>
-            {% endif %}
-            </div>
-            {% if block.settings.comingSOON %}
-            <div class = "coming-soon-parent">
-                <div class = "coming-soon-peoject"> Comming Soon </div>
-            </div>
-            {% endif %}
-            <div class="work-logo-footer ">
-              {% if block.settings.brand_name_logo %}
-              <div class="work-logo-footer__imgWrp">
-                <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
-              </div>filters_switch
-              {% else %}
-               <a class="work--page-brand-name {% if block.settings.cardLink %}work--cur-notAllow {% endif %}" href = "{{ block.settings.cardLink }} " {% if block.settings.open_new_tab %} target="_blank" {% endif %}> {{ block.settings.brand_name }} {% if  block.settings.cardLink %} <span class="work_hover_arrow"> {% render 'arrow-icon' %} </span>   {% endif %} </a> 
-            {% endif %}
-            </div>
+                  </div>
+                {% endif %}
+                <div class="work-logo-footer ">
+                  {% if block.settings.brand_name_logo %}
+                    <div class="work-logo-footer__imgWrp">
+                      <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  " />
+                    </div>filters_switch
+                  {% else %}
+                    <a
+                      class="work--page-brand-name {% if block.settings.cardLink %}work--cur-notAllow {% endif %}"
+                      href="{{ block.settings.cardLink }} "
+                      {% if block.settings.open_new_tab %}
+                      target="_blank"
+                      {% endif %}>
+                      {{ block.settings.brand_name }}
+                      {% if block.settings.cardLink %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </a>
+                  {% endif %}
+                </div>
 
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
- </div>
-</div>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>
 
 {% schema %}
@@ -86,8 +123,7 @@
               {
                 "value": "Shoptrade",
                 "label": "ShopTrade"
-              },
-              {
+              }, {
                 "value": "CaaVa",
                 "label": "Caava"
               }
@@ -100,106 +136,102 @@
             "label": "Image"
           },
           {
-            "type":"checkbox",
-            "id":"comingSOON",
-            "label":"Make it as coming soon",
+            "type": "richtext",
+            "id": "work_info_txt",
+            "label": "Work information"
+          },
+           {
+            "type": "checkbox",
+            "id": "comingSOON",
+            "label": "Make it as coming soon",
             "default": false
-          }, 
-          {
-            "id":"brand_btn",
+          }, {
+            "id": "brand_btn",
             "type": "checkbox",
             "label": "Show button",
             "default": false
-          },
-          {
-            "id":"brand_name_logo",
+          }, {
+            "id": "brand_name_logo",
             "type": "checkbox",
             "label": "Show Logo insted of text",
             "default": false
-          },
-          {
+          }, {
             "id": "cardImageBrand",
             "type": "image_picker",
             "label": "Logo"
 
-          },
-          {
+          }, {
             "type": "text",
             "id": "brand_name",
             "label": "Brand name",
             "default": "Shoptrade"
-          },
-          {
-            "id":"open_new_tab",
-            "type":"checkbox",
-            "label":"Open in new tab",
-            "default":false
-          },
-          
-          {
-          "id":"cardLink",
-          "type":"url",
-          "label":"Link"
-        }
+          }, {
+            "id": "open_new_tab",
+            "type": "checkbox",
+            "label": "Open in new tab",
+            "default": false
+          }, {
+            "id": "cardLink",
+            "type": "url",
+            "label": "Link"
+          }
         ]
       }
     ],
 
-  "presets": [
-    {
-      "name": "works"
-    }
-  ]
+    "presets": [
+      {
+        "name": "works"
+      }
+    ]
 
   }
 {% endschema %}
 
 <script>
-  window.addEventListener('load', function () {
-  // the blow code is for work page tabs switch filters
-  let filters = document.querySelectorAll(".filters_switch");
-  var a = filters[0].getElementsByTagName("a");
-  let ul  = document.getElementById("ul")
-  let ShopTrade = ul.querySelectorAll(".Shoptrade");
-  let Caava = ul.querySelectorAll(".CaaVa");
-  let ShowAll = ul.querySelectorAll(".Shoptrade, .CaaVa");
+  window.addEventListener('load', function() {
 
-  showD(ShowAll);
+// the blow code is for work page tabs switch filters
+    let filters = document.querySelectorAll(".filters_switch");
+    var a = filters[0].getElementsByTagName("a");
+    let ul = document.getElementById("ul")
+    let ShopTrade = ul.querySelectorAll(".Shoptrade");
+    let Caava = ul.querySelectorAll(".CaaVa");
+    let ShowAll = ul.querySelectorAll(".Shoptrade, .CaaVa");
 
-  filters.forEach(f => {
-    f.addEventListener('click', function(){
+    showD(ShowAll);
 
-      var current = document.getElementsByClassName("activeWork");
-      current[0].className = current[0].className.replace(" activeWork", "");
-      this.className += " activeWork";
+    filters.forEach(f => {
+      f.addEventListener('click', function() {
 
-      if(f.id === "ShopTrade"){
-        showD(ShopTrade);
-        hideD(Caava);
-      }
-      else if (f.id === "Caava"){
-    
-        hideD(ShopTrade);
-        showD(Caava);
-      }
-      else if (f.id === "All"){
-      
-        showD(ShowAll);
-      }
+        var current = document.getElementsByClassName("activeWork");
+        current[0].className = current[0].className.replace(" activeWork", "");
+        this.className += " activeWork";
+
+        if (f.id === "ShopTrade") {
+          showD(ShopTrade);
+          hideD(Caava);
+        } else if (f.id === "Caava") {
+
+          hideD(ShopTrade);
+          showD(Caava);
+        } else if (f.id === "All") {
+
+          showD(ShowAll);
+        }
+      });
     });
   });
-});
 
-  function showD(ele){
-    ele.forEach(k =>{
-      k.style.display= "block";
+  function showD(ele) {
+    ele.forEach(k => {
+      k.style.display = "block";
     });
   }
-  
-  function hideD(ele){
-    ele.forEach (m => {
+
+  function hideD(ele) {
+    ele.forEach(m => {
       m.style.display = "none";
     })
   }
-
 </script>

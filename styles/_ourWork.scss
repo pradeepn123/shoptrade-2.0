@@ -141,6 +141,48 @@
                 
             }
         }
+        .workOn-hover--info {
+            display: none;
+            transition: 0.3s all linear;
+        }
+        #work-img-wrp:hover .thumb-img{
+            filter: brightness(50%);
+            transition: 0.3s all linear;
+        }
+        #work-img-wrp:hover .workOn-hover--info {
+            display: block;
+            position: absolute;
+            bottom: 29%;
+            left: 2%;
+            transition: 0.3s all linear;
+        
+          }
+          .workOn-hover--info  {
+                transition: 0.3s all linear;
+                filter: brightness(100%);                   
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 16px;
+                color: #000;
+                font-weight: 400;
+                background: #fff;
+                padding: 5px 10px;
+                border-radius: 8px;
+            }
+            .work_info_author {   
+                font-size: 24px;
+                transition: 0.3s all linear;
+                color: #fff;
+                filter: brightness(100%);
+                margin: 0;
+                padding: 0;
+                @media (max-width:767px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        
 
         .img-container {
             position: relative;
@@ -151,8 +193,10 @@
             }
             .coming-soon-parent{
                 position: absolute;
-                top: 65%;
+                top: 2%;
                 width: 100%;
+                display: flex;
+                justify-content: end;
                 .coming-soon-peoject{
                     font-family: 'Minecraft';
                     border-radius: 20px;
@@ -160,10 +204,11 @@
                     color: var(--COLOR-BLACK);
                     padding:10px 20px;
                     max-width: fit-content;
-                    margin: 0 auto;
-                    font-size: 26px;
+                    font-size: 18px;
+
                     @media screen and (max-width:520px) {
-                        font-size: 18px;
+                        font-size: 14px;
+                        padding:7px 15px;
                     }
                 }
             }
@@ -191,7 +236,7 @@
             }
             .Hover__arrow{
                opacity: 0;
-            //    transform: rotate(358deg);
+            /* //    transform: rotate(358deg); */
                svg{
                    height: 20px;
                    width: 32px;
@@ -243,7 +288,7 @@
                     height: 22px;
                 }
 
-                // margin-right: 20px;
+                /* // margin-right: 20px; */
             }
 
             .btn-arrow {
@@ -312,10 +357,10 @@
 }
 
 .workpage__cards{
-    // border-top: 1px solid var(--COLOR-BLACK);
+    /* // border-top: 1px solid var(--COLOR-BLACK); */
     padding: 42px 0 10px 0;
     @media screen and (min-width:920px) {
-        // border-bottom: 1px solid var(--COLOR-BLACK);
+        /* // border-bottom: 1px solid var(--COLOR-BLACK); */
         padding: 42px 0 20px 0;
     }    
 }
@@ -354,11 +399,10 @@
         border-radius: 10px 10px 0 0;
         overflow: hidden;
     }
-
+ 
     .work-logo-footer {
         text-align: center;
         padding: 26px 16px;
-        // border-top: 2px solid #000;
         height: 108PX;
         display: flex;
         align-items: center;
@@ -396,21 +440,30 @@
         }
     }
     .filter_cards {
-        .filters_switch {
-            color: #000;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            text-decoration: none;
-            position: relative;
-           
-            &:not(:last-child){
-                margin-right: 30px;
-                @media(max-width:520px){
-                    margin-right: 10px;
+        .filters_card_child{
+          border-bottom: 2px solid #DADADA;
+          padding-bottom: 20px;
+          @media (max-width:520px) {
+            padding-bottom: 10px;
+          }
+            .filters_switch {
+                color: #000;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: none;
+                position: relative;
+                padding-bottom: 20px;
+                &:not(:last-child){
+                    margin-right: 30px;
+                    @media(max-width:520px){
+                        margin-right: 10px;
+                    }
+                }
+                @media(max-width:767px){
+                    padding-bottom: 10px;
                 }
             }
-          
         }
 
         .activeWork{
@@ -452,7 +505,7 @@
     }
 
     .btn {
-        // width: auto !important;
+        /* // width: auto !important; */
     }
 
     .btn-arrow {
