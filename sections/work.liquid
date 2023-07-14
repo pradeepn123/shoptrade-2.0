@@ -29,9 +29,9 @@
                    
                       {{ block.settings.work_info_txt }}
                     
-                    {% comment %} <h6 class="work_info_author">
+                     <h6 class="work_info_author">
                       {{ block.settings.work_info_author }}
-                    </h6> {% endcomment %}
+                    </h6> 
                   </div>
                   {% if block.settings.brand_btn %}
                     <div class="btn-wrp">
@@ -139,6 +139,11 @@
             "type": "richtext",
             "id": "work_info_txt",
             "label": "Work information"
+          },
+          {
+            "type": "text",
+            "id": "work_info_author",
+            "label": "Brand Info"
           },
            {
             "type": "checkbox",
