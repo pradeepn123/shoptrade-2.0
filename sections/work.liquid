@@ -5,40 +5,47 @@
   </div>
   <div class="filter_cards container">
     <div class="filters_card_child">
-    <a class="filters_switch activeWork" id="All">
-      All
-    </a>
-    <a class="filters_switch " id="ShopTrade">
-      ShopTrade
-    </a>
-    <a class="filters_switch" id="Caava">
-      Caava
-    </a>
+      <a class="filters_switch activeWork" id="All" onclick='switchTab("workpage__card")'>
+        All
+      </a>
+      
+      {% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
+      {% for tag in unique_tags %}
+        {% if tag == "ST" %}
+          <a class="filters_switch " id="{{ tag }}" onclick='switchTab("{{ tag }}")'>
+            ShopTrade
+          </a>
+        {% else %}
+          <a class="filters_switch " id="{{ tag }}" onclick='switchTab("{{ tag }}")'>
+            {{ tag }}
+          </a>
+        {% endif %}
+      {% endfor %}
+
   </div>
   </div>
   <div class="workpage__cards_parent">
     <div class="container">
       <ul class="ourWork__cards workpage__cards " id="ul">
-        {% for block in section.blocks %}
-          <li class="ourWork__card workpage__card {{ block.settings.filter_tags }}">
+        {% for block in page.metafields.custom.works.value %}
+          <a href="{{ block.link }} " {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag }}">
             <div class="ourWork__cardBody">
               <div class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
-                  <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}" />
+                  <img class="thumb-img" src="{{ block.image | image_url}}" />
                   <div class="workOn-hover--info">
                    
-                      {{ block.settings.work_info_txt }}
+                      {{ block.work_information }}
                     
                      <h6 class="work_info_author">
-                      {{ block.settings.work_info_author }}
+                      {{ block.brand_info }}
                     </h6> 
                   </div>
-                  {% if block.settings.brand_btn %}
+                  {% if block.show_button %}
                     <div class="btn-wrp">
-                      {% if block.settings.brand_btn %}
-                        <a
-                          href="{{ block.settings.cardLink }}"
-                          {% if block.settings.open_new_tab %}target="_blank"{% endif %}
+                      {% if block.make_it_as_coming_soon %}
+                        <a href="{{ block.link }}"
+                          {% if block.open_in_new_tab %}target="_blank"{% endif %}
                           class="btn btn--arrow">
                           <div>
                             <img
@@ -60,7 +67,7 @@
                     </div>
                   {% endif %}
                 </div>
-                {% if block.settings.comingSOON %}
+                {% if block.make_it_as_coming_soon %}
                   <div class="coming-soon-parent">
                     <div class="coming-soon-peoject">
                       Comming Soon
@@ -68,35 +75,38 @@
                   </div>
                 {% endif %}
                 <div class="work-logo-footer ">
-                  {% if block.settings.brand_name_logo %}
+                  {% if block.show_logo_insted_of_text %}
                     <div class="work-logo-footer__imgWrp">
-                      <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  " />
-                    </div>filters_switch
-                  {% else %}
-                    <a
-                      class="work--page-brand-name {% if block.settings.cardLink %}work--cur-notAllow {% endif %}"
-                      href="{{ block.settings.cardLink }} "
-                      {% if block.settings.open_new_tab %}
-                      target="_blank"
-                      {% endif %}>
-                      {{ block.settings.brand_name }}
-                      {% if block.settings.cardLink %}
+                      <img class=" brandLogo" src=" {{ block.brand_logo | image_url}}  " />
+                      {% if block.link %}
                         <span class="work_hover_arrow">
                           {% render 'arrow-icon' %}
                         </span>
                       {% endif %}
-                    </a>
+                    </div>
+                  {% else %}
+                    <p
+                      class="work--page-brand-name {% if block.link %}work--cur-notAllow {% endif %}">
+                      {{ block.brand_name }}
+                      {% if block.link %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </p>
                   {% endif %}
                 </div>
 
               </div>
             </div>
-          </li>
+          </a>
         {% endfor %}
       </ul>
+      
     </div>
   </div>
-</section>
+
+
 
 {% schema %}
 
@@ -110,79 +120,6 @@
 
       }
     ],
-    "blocks": [
-      {
-        "name": "card",
-        "type": "cardType",
-        "settings": [
-          {
-            "type": "select",
-            "id": "filter_tags",
-            "label": "filter Tags",
-            "options": [
-              {
-                "value": "Shoptrade",
-                "label": "ShopTrade"
-              }, {
-                "value": "CaaVa",
-                "label": "Caava"
-              }
-            ],
-            "default": "Shoptrade"
-          },
-          {
-            "id": "cardImage",
-            "type": "image_picker",
-            "label": "Image"
-          },
-          {
-            "type": "richtext",
-            "id": "work_info_txt",
-            "label": "Work information"
-          },
-          {
-            "type": "text",
-            "id": "work_info_author",
-            "label": "Brand Info"
-          },
-           {
-            "type": "checkbox",
-            "id": "comingSOON",
-            "label": "Make it as coming soon",
-            "default": false
-          }, {
-            "id": "brand_btn",
-            "type": "checkbox",
-            "label": "Show button",
-            "default": false
-          }, {
-            "id": "brand_name_logo",
-            "type": "checkbox",
-            "label": "Show Logo insted of text",
-            "default": false
-          }, {
-            "id": "cardImageBrand",
-            "type": "image_picker",
-            "label": "Logo"
-
-          }, {
-            "type": "text",
-            "id": "brand_name",
-            "label": "Brand name",
-            "default": "Shoptrade"
-          }, {
-            "id": "open_new_tab",
-            "type": "checkbox",
-            "label": "Open in new tab",
-            "default": false
-          }, {
-            "id": "cardLink",
-            "type": "url",
-            "label": "Link"
-          }
-        ]
-      }
-    ],
 
     "presets": [
       {
@@ -194,49 +131,26 @@
 {% endschema %}
 
 <script>
-  window.addEventListener('load', function() {
 
-// the blow code is for work page tabs switch filters
-    let filters = document.querySelectorAll(".filters_switch");
-    var a = filters[0].getElementsByTagName("a");
-    let ul = document.getElementById("ul")
-    let ShopTrade = ul.querySelectorAll(".Shoptrade");
-    let Caava = ul.querySelectorAll(".CaaVa");
-    let ShowAll = ul.querySelectorAll(".Shoptrade, .CaaVa");
+  let ul = document.getElementById("ul")
+  let allcards = ul.querySelectorAll(".workpage__card");
 
-    showD(ShowAll);
+    function switchTab(tabname) {
 
-    filters.forEach(f => {
-      f.addEventListener('click', function() {
+       var current = document.getElementsByClassName("activeWork");
+      current[0].className = current[0].className.replace(" activeWork", "");
+      event.target.classList.add("activeWork");
 
-        var current = document.getElementsByClassName("activeWork");
-        current[0].className = current[0].className.replace(" activeWork", "");
-        this.className += " activeWork";
+      allcards.forEach(c => {
+        c.style.display = "none";
+      })
 
-        if (f.id === "ShopTrade") {
-          showD(ShopTrade);
-          hideD(Caava);
-        } else if (f.id === "Caava") {
+      let show = ul.querySelectorAll("."+tabname);
 
-          hideD(ShopTrade);
-          showD(Caava);
-        } else if (f.id === "All") {
+      show.forEach(c => {
+        c.style.display = "block";
+      })
 
-          showD(ShowAll);
-        }
-      });
-    });
-  });
+    }
 
-  function showD(ele) {
-    ele.forEach(k => {
-      k.style.display = "block";
-    });
-  }
-
-  function hideD(ele) {
-    ele.forEach(m => {
-      m.style.display = "none";
-    })
-  }
 </script>

@@ -1533,6 +1533,19 @@ input::-moz-placeholder {
   flex-direction: column;
   flex: 1;
 }
+.ourWork__cardBody:hover .work_hover_arrow svg {
+  opacity: 1;
+}
+.ourWork__cardBody .work_hover_arrow svg {
+  width: 32px;
+  height: 20px;
+  opacity: 0;
+}
+.ourWork__cardBody .work-logo-footer__imgWrp .work_hover_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .ourWork__cardBody .img-wrp {
   overflow: hidden;
   width: 100%;
@@ -1552,14 +1565,21 @@ input::-moz-placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: unset;
+  object-position: top;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  transition: all 0.2s linear;
+  filter: brightness(100%);
 }
 @media (max-width: 1350px) {
   .ourWork__cardBody .img-wrp .thumb-img {
     object-position: top;
   }
+}
+.ourWork__cardBody .img-wrp .thumb-img:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.05);
+  filter: brightness(50%);
 }
 .ourWork__cardBody #work-img-wrp .thumb-img {
   filter: brightness(100%);
@@ -1570,39 +1590,68 @@ input::-moz-placeholder {
   transition: 0.3s all linear;
   transform: scale(1.05);
 }
+.ourWork__cardBody:hover .Hover__arrow {
+  opacity: 1;
+}
+.ourWork__cardBody .Hover__arrow {
+  opacity: 0;
+  /* //    transform: rotate(358deg); */
+}
+.ourWork__cardBody .Hover__arrow svg {
+  height: 20px;
+  width: 32px;
+}
 .ourWork__cardBody .workOn-hover--info {
   transition: 0.3s all linear;
   opacity: 0;
   position: absolute;
   bottom: 29%;
   left: 6%;
+  margin: 0;
+  transition: 0.3s all linear;
+  padding: 0;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+}
+@media (max-width: 520px) {
+  .ourWork__cardBody .workOn-hover--info {
+    font-size: 13px;
+  }
 }
 .ourWork__cardBody .workOn-hover--info p {
   margin: 0;
   transition: 0.3s all linear;
   padding: 0;
-  font-size: 16px;
   color: #fff;
   font-weight: 500;
   line-height: 1.3;
-  border-radius: 8px;
+  font-size: 16px;
+}
+@media (max-width: 520px) {
+  .ourWork__cardBody .workOn-hover--info p {
+    font-size: 13px;
+  }
 }
 .ourWork__cardBody .workOn-hover--info .work_info_author {
-  font-size: 24px;
+  font-size: 18px;
   transition: 0.3s all linear;
   color: #fff;
   filter: brightness(100%);
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
-@media (max-width: 767px) {
+@media (max-width: 520px) {
   .ourWork__cardBody .workOn-hover--info .work_info_author {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .ourWork__cardBody #work-img-wrp:hover .workOn-hover--info {
   opacity: 1;
   transition: 0.3s all linear;
+  color: #fff;
 }
 .ourWork__cardBody .img-container {
   position: relative;
@@ -1655,17 +1704,6 @@ input::-moz-placeholder {
 }
 .ourWork__cardBody .brand_text_wrap p {
   margin: 0;
-}
-.ourWork__cardBody .brand_text_wrap:hover .Hover__arrow {
-  opacity: 1;
-}
-.ourWork__cardBody .brand_text_wrap .Hover__arrow {
-  opacity: 0;
-  /* //    transform: rotate(358deg); */
-}
-.ourWork__cardBody .brand_text_wrap .Hover__arrow svg {
-  height: 20px;
-  width: 32px;
 }
 .work--cur-notAllow .ourWork__cardBody .brand_text_wrap:hover {
   cursor: not-allowed;
@@ -1759,6 +1797,9 @@ input::-moz-placeholder {
   transition: 0.5s ease all;
 }
 
+.ourWork__card_border .ourWork__cards .ourWork__card a {
+  text-decoration: none;
+}
 @media (max-width: 991px) {
   .ourWork__card_border .ourWork__cards .ourWork__card .ourWork__cardBody {
     padding: 60px 10px 10px;
@@ -1834,14 +1875,6 @@ input::-moz-placeholder {
     font-size: 20px;
   }
 }
-.work .work-logo-footer .work--page-brand-name svg {
-  width: 32px;
-  height: 20px;
-  opacity: 0;
-}
-.work .work-logo-footer .work--page-brand-name:hover svg {
-  opacity: 1;
-}
 .work .filter_cards .filters_card_child {
   border-bottom: 2px solid #DADADA;
   padding-bottom: 20px;
@@ -1885,6 +1918,9 @@ input::-moz-placeholder {
   overflow: hidden;
   column-gap: 36px;
   row-gap: 72px;
+}
+.work .workpage__cards_parent .ourWork__cards a {
+  text-decoration: none;
 }
 @media screen and (max-width: 1200px) {
   .work .workpage__cards_parent .ourWork__cards {
