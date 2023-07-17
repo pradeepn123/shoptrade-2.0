@@ -11,15 +11,13 @@
       
       {% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
       {% for tag in unique_tags %}
-        {% if tag == "ST" %}
-          <a class="filters_switch " id="{{ tag }}" onclick='switchTab("{{ tag }}")'>
-            ShopTrade
+        {% assign Ntag = tag | replace: '(', '' | replace: ')', '' | replace: '/', '' %}
+          <a class="filters_switch " id="{{ Ntag }}" onclick='switchTab("{{ Ntag }}")'>
+            {% assign split_tags = tag | split: ',' %}
+            {% assign first_word = split_tags[0] %}
+            {% assign first_words = first_word | replace: '_', '   ' %}
+              {{ first_words }}
           </a>
-        {% else %}
-          <a class="filters_switch " id="{{ tag }}" onclick='switchTab("{{ tag }}")'>
-            {{ tag }}
-          </a>
-        {% endif %}
       {% endfor %}
 
   </div>
@@ -28,14 +26,14 @@
     <div class="container">
       <ul class="ourWork__cards workpage__cards " id="ul">
         {% for block in page.metafields.custom.works.value %}
-          <a href="{{ block.link }} " {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag }}">
+          <a href="{{ block.link }} " {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', ''  }}">
             <div class="ourWork__cardBody">
               <div class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
                   <img class="thumb-img" src="{{ block.image | image_url}}" />
                   <div class="workOn-hover--info">
                    
-                      {{ block.work_information }}
+                      {{ block.work_information | replace: ' ', '  &bull; ' }}
                     
                      <h6 class="work_info_author">
                       {{ block.brand_info }}
