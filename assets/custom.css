@@ -1605,7 +1605,7 @@ input::-moz-placeholder {
   transition: 0.3s all linear;
   opacity: 0;
   position: absolute;
-  bottom: 29%;
+  bottom: 25%;
   left: 6%;
   margin: 0;
   transition: 0.3s all linear;
@@ -1682,6 +1682,41 @@ input::-moz-placeholder {
   .ourWork__cardBody .img-container .coming-soon-parent .coming-soon-peoject {
     font-size: 14px;
     padding: 7px 15px;
+  }
+}
+.ourWork__cardBody .img-container .work-logo-footer {
+  text-align: center;
+  height: 108PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .ourWork__cardBody .img-container .work-logo-footer {
+    height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .ourWork__cardBody .img-container .work-logo-footer {
+    height: unset;
+  }
+}
+.ourWork__cardBody .img-container .work-logo-footer .work-logo-footer__imgWrp {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+.ourWork__cardBody .img-container .work-logo-footer .work--page-brand-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .ourWork__cardBody .img-container .work-logo-footer .work--page-brand-name {
+    font-size: 20px;
   }
 }
 .ourWork__cardBody .brand_text_wrap {
@@ -1849,12 +1884,13 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .work .work-logo-footer {
+    padding: unset;
     height: 94px;
   }
 }
 @media (max-width: 520px) {
   .work .work-logo-footer {
-    padding: 20px 16px;
+    padding: unset;
     height: unset;
   }
 }
@@ -1879,7 +1915,26 @@ input::-moz-placeholder {
   border-bottom: 2px solid #DADADA;
   padding-bottom: 20px;
 }
-@media (max-width: 520px) {
+@media (max-width: 1200px) {
+  .work .filter_cards .filters_card_child {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.work .filter_cards .filters_card_child::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.work .filter_cards .filters_card_child::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  background-color: #F5F5F5;
+}
+.work .filter_cards .filters_card_child::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+@media (max-width: 767px) {
   .work .filter_cards .filters_card_child {
     padding-bottom: 10px;
   }

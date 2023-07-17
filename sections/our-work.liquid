@@ -42,13 +42,34 @@
                   </div>
                 {% endif %}
                 </div>
-                             
-                  <div class="brand_text_wrap">
+                <div class="work-logo-footer ">          
+                {% if block.settings.show_logo_insted_of_text %}
+                  <div class="work-logo-footer__imgWrp">
+                    <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  " />
+                    {% if block.settings.buttonLink %}
+                      <span class="work_hover_arrow">
+                        {% render 'arrow-icon' %}
+                      </span>
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <p
+                    class="work--page-brand-name">
+                    {{ block.settings.cardtext }}
+                    {% if block.settings.buttonLink %}
+                      <span class="work_hover_arrow">
+                        {% render 'arrow-icon' %}
+                      </span>
+                    {% endif %}
+                  </p>
+                {% endif %}
+              </div>
+                  {% comment %} <div class="brand_text_wrap">
                     {{ block.settings.cardtext }}
                     <span class="Hover__arrow">
                       {% render 'arrow-icon' %}
                     </span>
-                  </div>
+                  </div> {% endcomment %}
                 
               </div>
             </div>
@@ -87,7 +108,7 @@
         "settings": [
           {
             "id": "cardtext",
-            "type": "richtext",
+            "type": "text",
             "label": "Brand Name"
           },
           {
@@ -120,6 +141,12 @@
             "id": "cardImageBrand",
             "type": "image_picker",
             "label": "Logo"
+          },
+          {
+            "id":"show_logo_insted_of_text",
+            "type":"checkbox",
+            "label":"Show logo insted of text",
+            "default": false
           },
           {
             "id":"buttonLink",

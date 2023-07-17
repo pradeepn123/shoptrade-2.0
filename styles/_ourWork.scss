@@ -191,7 +191,7 @@
                 transition: 0.3s all linear;   
                 opacity: 0;  
                 position: absolute;
-                bottom: 29%;
+                bottom: 25%;
                 left: 6%;       
                 margin: 0;
                 transition: 0.3s all linear;
@@ -259,6 +259,36 @@
                     @media screen and (max-width:520px) {
                         font-size: 14px;
                         padding:7px 15px;
+                    }
+                }
+            }
+            .work-logo-footer {
+                text-align: center;
+            
+                height: 108PX;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media (max-width:991px) {
+                    height: 80px;
+                }
+                @media (max-width:767px) {
+                    height: unset;
+                }
+                .work-logo-footer__imgWrp{
+                    display: inherit;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .work--page-brand-name{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000000; 
+                    font-size: 24px;
+                    font-weight: 700;
+                    @media(max-width:767px){
+                        font-size: 20px;
                     }
                 }
             }
@@ -452,10 +482,11 @@
         align-items: center;
         justify-content: center;
         @media (max-width:991px) {
+            padding: unset;
             height: 94px;
         }
         @media (max-width:520px) {
-            padding: 20px 16px;
+            padding: unset;
             height: unset;
         }
 
@@ -479,7 +510,25 @@
         .filters_card_child{
           border-bottom: 2px solid #DADADA;
           padding-bottom: 20px;
-          @media (max-width:520px) {
+          @media (max-width:1200px){
+            overflow-x: auto;
+            white-space: nowrap;
+          }
+          &::-webkit-scrollbar-track{
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    background-color: #F5F5F5;
+            }
+          &::-webkit-scrollbar{
+            width: 1px;
+            height: 1px;
+            background-color: #F5F5F5;
+            }
+         &::-webkit-scrollbar-thumb{
+            background-color: #000000;
+            border: 2px solid #555555;
+         }
+
+          @media (max-width:767px) {
             padding-bottom: 10px;
           }
             .filters_switch {
