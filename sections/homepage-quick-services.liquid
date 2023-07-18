@@ -99,3 +99,17 @@
   ]
 }
 {% endschema %}
+<script>
+  
+  window.addEventListener("DOMContentLoaded", (event) => {
+    let one = document.querySelector("a.quick-services__block-link.link-1");
+    one.addEventListener("click", function(event){
+      event.preventDefault();
+      var temp= document.getElementById("contact-popup");
+      temp.style.display = "none";
+      var goto = one.getAttribute("href");
+      location.href = goto;
+    });
+  });
+
+</script>
