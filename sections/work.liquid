@@ -6,7 +6,7 @@
   <div class="filter_cards container">
     <div class="filters_card_child">
       <a class="filters_switch activeWork" id="All" onclick='switchTab("workpage__card")'>
-        All
+        All Work
       </a>
       
       {% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
