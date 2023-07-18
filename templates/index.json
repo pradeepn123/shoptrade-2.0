@@ -89,7 +89,7 @@
         "4fef3928-9868-48aa-923d-c846f94228e4": {
           "type": "brands",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/Chill_55ee57c7-5809-4e58-a51d-8c5773027cd7.png",
+            "icon": "shopify:\/\/shop_images\/Chill_c26b57f7-0000-435b-8ad1-e1fceb50082b.png",
             "mar_text": ""
           }
         },
@@ -877,6 +877,7 @@
         "fd3729bd-ecf7-48d5-8ba8-d61d429c07ac"
       ],
       "settings": {
+        "border_top": false,
         "color_scheme": "background-1",
         "heading": "Sign up for our free ecommerce newsletter.",
         "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",
