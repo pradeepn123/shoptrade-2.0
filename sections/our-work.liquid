@@ -28,7 +28,7 @@
                   <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
                   <div class="workOn-hover--info">
                    
-                    {{ block.settings.work_info }}
+                    {{ block.settings.work_info | replace: ' ', '  &bull; ' }}
                   
                    <h6 class="work_info_author">
                     {{ block.settings.brand_info }}
