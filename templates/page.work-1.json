@@ -6,566 +6,696 @@
         "6c361f49-c740-4c88-a697-a07cc0978984": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/BEsynchro.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-synchro.png",
-            "clickble": true,
+            "brand_name": "SYNCHRO",
             "open_new_tab": true,
-            "cardLink": "https:\/\/besynchro.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "56726384-63dc-401c-b4a2-0b9dd92a3610": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/elevatione",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "a042d646-89ce-4d16-8b64-aea734310f47": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/chill.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Pole-Junkie.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/www.polejunkie.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "9a3e72f5-6d6b-450a-95da-d4116cb263e6": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/US.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/www.uspoloassn.co.uk\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/angles90.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/angles",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/buunni.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/www.buunnicoffee.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Union-Co.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/Union-Co-work.png",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/unioncowork.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/besynchro.com\/"
           }
         },
         "9bd657de-daa5-4356-8d54-4b7c39d912c3": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/SNS-Health_59bf6a1f-5f8e-4eac-b13d-f729c2e67dcb.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/SNS1_923c4f10-832b-4114-ae22-6267e54a97a9.png",
-            "clickble": false,
+            "brand_name": "SNS Health",
             "open_new_tab": true,
-            "cardLink": "https:\/\/snshealth.com",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+            "cardLink": "https:\/\/snshealth.com"
+          }
+        },
+        "8c6a1681-b421-447c-aaae-4d00a33dfb3d": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "CaaVa",
+            "cardImage": "shopify:\/\/shop_images\/Union-Co.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Union-Co-work.png",
+            "brand_name": "Union Cowork",
+            "open_new_tab": true,
+            "cardLink": "https:\/\/unioncowork.com\/"
           }
         },
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Club-Sulivan.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-club.png",
-            "clickble": true,
+            "brand_name": "CLUB SULLIVAN",
             "open_new_tab": true,
-            "cardLink": "https:\/\/www.clubsullivan.tv\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/www.clubsullivan.tv\/"
           }
         },
-        "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8": {
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/ShopTrade-Work_Midway.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/midways-logo1.png",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/midwaysports.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/angles90.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/angles90-logo.png",
+            "brand_name": "ANGLES 90",
+            "open_new_tab": false,
+            "cardLink": "https:\/\/shoptrade.co\/pages\/angles"
           }
         },
         "afa521ec-668b-419d-be9a-f6f1546e498d": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Sway.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Sway_bb374529-e7a4-473e-926a-38f5121af5a0.png",
-            "clickble": true,
+            "brand_name": "SWAY",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/whoa-nelly-catering-branding-website\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/whoa-nelly-catering-branding-website\/"
           }
         },
         "31ad16b9-91d2-43fd-98e2-4798438e5085": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Whoa.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Whoa.png",
-            "clickble": true,
+            "brand_name": "WHOA NELLY",
             "open_new_tab": true,
-            "cardLink": "https:\/\/www.whoanellycatering.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/www.whoanellycatering.com\/"
           }
         },
         "8e3cc239-fd4e-48a6-811b-5c3296bb1a58": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Adventure_0a9c194e-6a15-4065-9df5-116b48602c4e.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Adventure.png",
-            "clickble": true,
+            "brand_name": "Adventure SERIES",
             "open_new_tab": true,
-            "cardLink": "https:\/\/oldharbordistilling.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/oldharbordistilling.com\/"
           }
         },
         "1bcaeb95-f29f-4563-b0c5-32937a81356e": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Perfect-pick.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Perfect-Pickle.png",
-            "clickble": true,
+            "brand_name": "PERFECT PICKLES",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/paynes-perfection-pickles\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/paynes-perfection-pickles\/"
           }
         },
         "22d87739-d08c-4ae2-8817-1fba55d2e6cc": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Salt.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Salt.png",
-            "clickble": true,
+            "brand_name": "SALT & BARREL",
             "open_new_tab": true,
-            "cardLink": "https:\/\/saltandbarrel.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/saltandbarrel.com\/"
           }
         },
         "ca9e6bde-a271-4fe2-8aa7-f57e0246fa66": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Cozze.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Cozzee.png",
-            "clickble": true,
+            "brand_name": "COZZEE AND A CAUSE",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/cozzee-coffee\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/cozzee-coffee\/"
           }
         },
         "2f4bafa9-0f3d-4a35-96d1-e7a40de7c3af": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Jeremiah.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Jere_38f55fdf-bb3c-4549-bcf9-6cb2f8d5d606.png",
-            "clickble": true,
+            "brand_name": "JEREMIAH JOHNSON",
             "open_new_tab": true,
-            "cardLink": "https:\/\/www.jjbrew.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
-            "clickble": true,
-            "open_new_tab": false,
-            "cardLink": "https:\/\/bumpboxx.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/www.jjbrew.com\/"
           }
         },
         "69bf07ff-b5df-455b-9fe9-826ee0f13e2b": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Alfabet_8ee6bcf9-ed82-48ec-9178-a762f244121f.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Alfabet.png",
-            "clickble": true,
+            "brand_name": "ALFABET",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/alfabet-furniture-2\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/alfabet-furniture-2\/"
           }
         },
         "42d597c8-d471-4d0c-a9a6-55986365f136": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Mailo.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Maillo.png",
-            "clickble": true,
+            "brand_name": "MAILLO",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/work\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/work\/"
           }
         },
         "3b72434a-2b30-498c-a8ac-f495d7c4a8c8": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Flore.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Flore.png",
-            "clickble": true,
+            "brand_name": "Flore",
             "open_new_tab": true,
-            "cardLink": "https:\/\/flore.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/flore.com\/"
           }
         },
         "fe4cff8f-131c-4756-8061-6be24c659b30": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Java-Time.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Java-Time.png",
-            "clickble": true,
+            "brand_name": "JAVA TIME",
             "open_new_tab": true,
-            "cardLink": "https:\/\/shop.javatime.net\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/shop.javatime.net\/"
           }
         },
         "cb910bc6-d7fe-4fdc-a743-2df6e0c279ef": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Brekki_d7b4588a-fb94-4f32-8738-e7ebb33ef31a.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Brekki.png",
-            "clickble": true,
+            "brand_name": "Brekki",
             "open_new_tab": true,
-            "cardLink": "https:\/\/brekki.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/brekki.com\/"
           }
         },
         "664a7d18-6342-4685-8f71-280ccf2d8128": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Vinera.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Vinera.png",
-            "clickble": true,
+            "brand_name": "Vinera",
             "open_new_tab": true,
-            "cardLink": "https:\/\/vinerawines.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/vinerawines.com\/"
+          }
+        },
+        "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/ShopTrade-Work_Midway.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/midways-logo1.png",
+            "brand_name": "MID WAY SPORTS",
+            "open_new_tab": true,
+            "cardLink": "https:\/\/midwaysports.com\/"
+          }
+        },
+        "9a3e72f5-6d6b-450a-95da-d4116cb263e6": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/US.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Us-polo-logo_944d81ef-53e8-41d3-8bdf-48690b607778.jpg",
+            "brand_name": "U.S. POLO",
+            "open_new_tab": true,
+            "cardLink": "https:\/\/www.uspoloassn.co.uk\/"
+          }
+        },
+        "56726384-63dc-401c-b4a2-0b9dd92a3610": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
+            "brand_name": "ELEVATIONE",
+            "open_new_tab": false,
+            "cardLink": "https:\/\/shoptrade.co\/pages\/elevatione"
+          }
+        },
+        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/Pole-Junkie.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/Pole-Junkie_Logo_2d50173b-fbb3-4b70-92b3-56f6ba7c1196.png",
+            "brand_name": "PoleJunkie",
+            "open_new_tab": true,
+            "cardLink": "https:\/\/www.polejunkie.com\/"
           }
         },
         "76491b44-8f38-4690-a5b9-c3a54bffc955": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
-            "clickble": true,
+            "brand_name": "HATHASPACE",
             "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/shoptrade.co\/pages\/hathaspace"
           }
         },
         "2c3a4b9b-d183-4461-94ea-8ba213835dca": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Swing-fans.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-swiing.png",
-            "clickble": true,
+            "brand_name": "SWING FANS",
             "open_new_tab": true,
-            "cardLink": "https:\/\/swingfans.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/swingfans.com\/"
+          }
+        },
+        "a042d646-89ce-4d16-8b64-aea734310f47": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
+            "brand_name": "CHILL",
+            "open_new_tab": false,
+            "cardLink": "https:\/\/chill.com\/"
           }
         },
         "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/5_-Nutr.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/5_175b60fc-f173-456f-822d-0d067ef906bc.jpg",
-            "clickble": true,
+            "brand_name": "5% Nutrition",
             "open_new_tab": true,
-            "cardLink": "https:\/\/5percentnutrition.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/5percentnutrition.com\/"
           }
         },
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Wild-junkies_ef56a145-dea1-4783-9a06-38e1897f7a9e.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-wild.png",
-            "clickble": true,
+            "brand_name": "Wild Junkies",
             "open_new_tab": false,
-            "cardLink": "https:\/\/wildjunkieboutique.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/wildjunkieboutique.com\/"
+          }
+        },
+        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/buunni.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bunni.png",
+            "brand_name": "BUNNI COFFEE",
+            "open_new_tab": false,
+            "cardLink": "https:\/\/www.buunnicoffee.com\/"
+          }
+        },
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890": {
+          "type": "cardType",
+          "settings": {
+            "filter_tags": "Shoptrade",
+            "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/logo-bump.png",
+            "brand_name": "BUMPBOX",
+            "open_new_tab": false,
+            "cardLink": "https:\/\/bumpboxx.com\/"
           }
         },
         "07f8cf6d-5332-43d0-ad62-4a812965a113": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/lucky-you.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lucky.png",
-            "clickble": true,
+            "brand_name": "LUCKY YOU",
             "open_new_tab": false,
-            "cardLink": "https:\/\/luckyyougifts.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/luckyyougifts.com\/"
           }
         },
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/adapthealth_1.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/adapt-logo.png",
-            "clickble": true,
+            "brand_name": "ADAPT HEALTH",
             "open_new_tab": false,
-            "cardLink": "https:\/\/adapthealth.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/adapthealth.com\/"
           }
         },
         "4f536d0a-f989-4a1e-b706-e379ef217bca": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Checkit.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Mask_Group_103_1e99d9e1-e905-4d44-a273-b10f47d5a15e.png",
-            "clickble": true,
+            "brand_name": "CHEKIT",
             "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/checkit",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/shoptrade.co\/pages\/checkit"
           }
         },
         "a154bb33-3944-473d-a900-8fe847a8cbd6": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Sendif_6feb5b80-fb36-4d58-883f-6bb6c99a9e3a.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/image_200.png",
-            "clickble": true,
+            "brand_name": "SENDIF",
             "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/sendif",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/shoptrade.co\/pages\/sendif"
           }
         },
         "e3f17897-720d-45a7-86d5-d1b23ee326fa": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/LensAdvisor.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-lendz.png",
-            "clickble": true,
+            "brand_name": "LensAdvizor",
             "open_new_tab": false,
-            "cardLink": "https:\/\/shoptrade.co\/pages\/lens-advizor",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/shoptrade.co\/pages\/lens-advizor"
           }
         },
         "e278c52b-1936-43f5-8431-6b3e5b982a8b": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/paymore.png",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/logo-paymore.png",
-            "clickble": true,
+            "brand_name": "PayMore",
             "open_new_tab": false,
-            "cardLink": "https:\/\/paymore.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/paymore.com\/"
           }
         },
         "8787ae1f-5ec8-4dc4-a6f2-898a085a4092": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Kimi.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/KIMIA_f02006c8-65b9-4766-958c-18d2c06d9000.png",
-            "clickble": false,
+            "brand_name": "Kimia",
             "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+            "cardLink": ""
           }
         },
         "58e1be9a-570f-4374-9d71-d67d4e0b5a33": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Sproos-life.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Sproos.png",
-            "clickble": false,
+            "brand_name": "SPROOS",
             "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+            "cardLink": ""
           }
         },
         "ecb392bc-5524-4421-8bbc-5656faa04c09": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "Shoptrade",
             "cardImage": "shopify:\/\/shop_images\/Heal-_-Co_b54c744e-ed3c-42c2-bdbf-45152b88058f.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/heal-_-co.png",
-            "clickble": false,
+            "brand_name": "HEAL + CO.",
             "open_new_tab": false,
-            "cardLink": "",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/loading-icon.svg?v=1668582566"
+            "cardLink": ""
           }
         },
         "6e72c6d4-27ea-4cc5-acda-cd171f0d49e6": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Alche_4af601b1-8238-4962-9d04-584548b9f432.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/alchemy-bottle-shop.png",
-            "clickble": true,
+            "brand_name": "ALCHEMY",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/alchemy-bottle-shop\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/alchemy-bottle-shop\/"
           }
         },
         "b09afe88-56e8-4cc1-8e34-349522aafc5e": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Broom-Wagon-Coffee.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/broom-wagon.png",
-            "clickble": true,
+            "brand_name": "BROOM WAGON",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/broomwagon-coffee\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/broomwagon-coffee\/"
           }
         },
         "01766b43-171e-47ee-bd64-e6a7cb56f34b": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Buena.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/buena_eb43f7de-b7b2-40c9-9c51-f27d900f9af7.png",
-            "clickble": true,
+            "brand_name": "BUENA",
             "open_new_tab": true,
-            "cardLink": "https:\/\/www.buenacerveza.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/www.buenacerveza.com\/"
           }
         },
         "12516c95-e0c0-4450-977d-d0552d3419a7": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Host-_-Port.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/host-porter.png",
-            "clickble": true,
+            "brand_name": "Host & Porter",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/host-porter-banquet-ware\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/host-porter-banquet-ware\/"
           }
         },
         "55d807e7-15ac-469e-9652-7830aa7e5e9a": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Mise.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/mise.png",
-            "clickble": true,
+            "brand_name": "MISE",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/mise\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/mise\/"
           }
         },
         "72268d66-2860-4b44-862b-62d3e26254ed": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Viva.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/viiva.png",
-            "clickble": true,
+            "brand_name": "VIIA",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/viia-cbd\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/viia-cbd\/"
           }
         },
         "1390e326-1c45-4282-98a6-977ccaa49c1e": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Chris.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/chris-wilhite.png",
-            "clickble": true,
+            "brand_name": "CHRIS WILHITE DESIGN",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/typography\/chris-wilhite-brand-and-website-launch\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/typography\/chris-wilhite-brand-and-website-launch\/"
           }
         },
         "444dc9af-8e8c-4c40-adbe-053049614fa4": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Maillok.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/maiook.png",
-            "clickble": true,
+            "brand_name": "MAIOOK",
             "open_new_tab": true,
-            "cardLink": "https:\/\/www.maiook.com\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/www.maiook.com\/"
           }
         },
         "66159d4e-835e-497d-b294-b6b7f2a5d4de": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/The-Fire.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/patriot.png",
-            "clickble": true,
+            "brand_name": "PATRIOT GAMES",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/patriot-games\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/patriot-games\/"
           }
         },
         "37b80e1f-26ac-47bb-a0be-3f4efe060d7f": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Cycling-b.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/Layer-1.png",
-            "clickble": true,
+            "brand_name": "Cycling Brigade",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/san-diego-cycling-brigade\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/san-diego-cycling-brigade\/"
           }
         },
         "f62fe189-2eef-43d3-a408-b97834009dc3": {
           "type": "cardType",
           "settings": {
+            "filter_tags": "CaaVa",
             "cardImage": "shopify:\/\/shop_images\/Cauch_54b6d652-f919-4be8-80d6-7432ecdae53e.jpg",
+            "comingSOON": false,
+            "brand_btn": false,
+            "brand_name_logo": false,
             "cardImageBrand": "shopify:\/\/shop_images\/gaucha-rum_2e4648dc-8078-480e-8044-e96168e5f5f8.png",
-            "clickble": true,
+            "brand_name": "CAUCHO",
             "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/gaucho-rum\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
-          }
-        },
-        "266e3108-af04-4161-a383-4f062f80ccac": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Kusc.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/kusc.png",
-            "clickble": true,
-            "open_new_tab": true,
-            "cardLink": "https:\/\/caavadesign.com\/project\/classical-kusc-website-2\/",
-            "btn-icon": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/WHITE-ARROW.png?v=1666071684"
+            "cardLink": "https:\/\/caavadesign.com\/project\/gaucho-rum\/"
           }
         }
       },
       "block_order": [
         "6c361f49-c740-4c88-a697-a07cc0978984",
-        "56726384-63dc-401c-b4a2-0b9dd92a3610",
-        "a042d646-89ce-4d16-8b64-aea734310f47",
-        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
-        "9a3e72f5-6d6b-450a-95da-d4116cb263e6",
-        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
-        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
-        "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
         "9bd657de-daa5-4356-8d54-4b7c39d912c3",
+        "8c6a1681-b421-447c-aaae-4d00a33dfb3d",
         "fdd17445-b5ac-4720-a876-6a4d511c8d3b",
-        "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8",
+        "1e3ad282-7bf6-4d04-9c6e-83c9d233c7f1",
         "afa521ec-668b-419d-be9a-f6f1546e498d",
         "31ad16b9-91d2-43fd-98e2-4798438e5085",
         "8e3cc239-fd4e-48a6-811b-5c3296bb1a58",
@@ -573,17 +703,23 @@
         "22d87739-d08c-4ae2-8817-1fba55d2e6cc",
         "ca9e6bde-a271-4fe2-8aa7-f57e0246fa66",
         "2f4bafa9-0f3d-4a35-96d1-e7a40de7c3af",
-        "d0aaf961-3564-47c1-b2c5-cc9da6674890",
         "69bf07ff-b5df-455b-9fe9-826ee0f13e2b",
         "42d597c8-d471-4d0c-a9a6-55986365f136",
         "3b72434a-2b30-498c-a8ac-f495d7c4a8c8",
         "fe4cff8f-131c-4756-8061-6be24c659b30",
         "cb910bc6-d7fe-4fdc-a743-2df6e0c279ef",
         "664a7d18-6342-4685-8f71-280ccf2d8128",
+        "4614b5b8-b3c5-4966-9ff5-c17559c1e7b8",
+        "9a3e72f5-6d6b-450a-95da-d4116cb263e6",
+        "56726384-63dc-401c-b4a2-0b9dd92a3610",
+        "2e9eb280-2aa9-4485-9eb7-0d0f838dcb2e",
         "76491b44-8f38-4690-a5b9-c3a54bffc955",
         "2c3a4b9b-d183-4461-94ea-8ba213835dca",
+        "a042d646-89ce-4d16-8b64-aea734310f47",
         "42cb13fe-72a5-430d-a2b0-d927ee4ae6c3",
         "cfb0d6fc-905c-4d22-aafe-b59a90cc9551",
+        "b91fb8e1-af76-4722-9ae3-43ab0ebe69aa",
+        "d0aaf961-3564-47c1-b2c5-cc9da6674890",
         "07f8cf6d-5332-43d0-ad62-4a812965a113",
         "0dc37d69-d0f6-4f56-80df-1b3b9d837f55",
         "4f536d0a-f989-4a1e-b706-e379ef217bca",
@@ -603,8 +739,7 @@
         "444dc9af-8e8c-4c40-adbe-053049614fa4",
         "66159d4e-835e-497d-b294-b6b7f2a5d4de",
         "37b80e1f-26ac-47bb-a0be-3f4efe060d7f",
-        "f62fe189-2eef-43d3-a408-b97834009dc3",
-        "266e3108-af04-4161-a383-4f062f80ccac"
+        "f62fe189-2eef-43d3-a408-b97834009dc3"
       ],
       "settings": {
         "heading": "We elevate brands by crafting global ecommerce success stories"

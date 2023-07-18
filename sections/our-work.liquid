@@ -20,39 +20,60 @@
       <ul class="ourWork__cards swiper-container js-work-slider our--work--card">
         <div class="swiper-wrapper our--work--card-child">
           {% for block in section.blocks %}
-          <li class="ourWork__card swiper-slide">
-            {% comment %} <div class="ourWork__cardHead">
-              <div class="marquee  enable-animation">
-                <div class="marquee__content">
-                  {{ block.settings.cardMarque }}
-                </div>
-                <div class="marquee__content" aria-hidden=" true">
-                  {{ block.settings.cardMarque }}
-                </div>
-              </div>
-            </div> {% endcomment %}
+            <li class="ourWork__card swiper-slide">
+              <a href="{{ block.settings.cardtext_url }}">  
             <div class="ourWork__cardBody">
               <div  class="img-container">
-                <div class="img-wrp">
+                <div id="work-img-wrp" class="img-wrp">
                   <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-                  {% comment %} <div class="btn-wrp">
-                    <a class="btn "  href="{{ block.settings.buttonLink }}" {% if block.settings.open_new_tabs %}target="_blank"{% endif%}> 
-                      <div class="d-flex">
-                        <img class="w-100 brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
-                      </div>
-                      <div class="">
-                        <img class="btn-arrow" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/btn-arrow.svg?v=1665478404" alt="arrow"/>
-                      </div>
-                    </a>
-                  </div> {% endcomment %}
+                  <div class="workOn-hover--info">
+                   
+                    {{ block.settings.work_info | replace: ' ', '  &bull; ' }}
+                  
+                   <h6 class="work_info_author">
+                    {{ block.settings.brand_info }}
+                  </h6> 
                 </div>
-                <a href="{{ block.settings.cardtext_url}}">                
-                  <div class="brand_text_wrap">
-                    {{ block.settings.cardtext }}
+                {% if block.settings.coming_soon %}
+                  <div class="coming-soon-parent">
+                    <div class="coming-soon-peoject">
+                      Comming Soon
+                    </div>
                   </div>
-                </a>
+                {% endif %}
+                </div>
+                <div class="work-logo-footer ">          
+                {% if block.settings.show_logo_insted_of_text %}
+                  <div class="work-logo-footer__imgWrp">
+                    <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  " />
+                    {% if block.settings.buttonLink %}
+                      <span class="work_hover_arrow">
+                        {% render 'arrow-icon' %}
+                      </span>
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <p
+                    class="work--page-brand-name">
+                    {{ block.settings.cardtext }}
+                    {% if block.settings.buttonLink %}
+                      <span class="work_hover_arrow">
+                        {% render 'arrow-icon' %}
+                      </span>
+                    {% endif %}
+                  </p>
+                {% endif %}
+              </div>
+                  {% comment %} <div class="brand_text_wrap">
+                    {{ block.settings.cardtext }}
+                    <span class="Hover__arrow">
+                      {% render 'arrow-icon' %}
+                    </span>
+                  </div> {% endcomment %}
+                
               </div>
             </div>
+          </a>
           </li>
           {% endfor %}
         </div>
@@ -87,7 +108,7 @@
         "settings": [
           {
             "id": "cardtext",
-            "type": "richtext",
+            "type": "text",
             "label": "Brand Name"
           },
           {
@@ -101,9 +122,31 @@
             "label": "Image"
           }, 
           {
+          "type":"richtext",
+          "id":"work_info",
+          "label":"work nNformation"
+          },
+          {
+            "type":"text",
+            "id":"brand_info",
+            "label": "Brand Info"
+          },
+          {
+          "id":"coming_soon",
+          "type":"checkbox",
+          "label": "make it as coming soon",
+          "default": false
+          },
+          {
             "id": "cardImageBrand",
             "type": "image_picker",
             "label": "Logo"
+          },
+          {
+            "id":"show_logo_insted_of_text",
+            "type":"checkbox",
+            "label":"Show logo insted of text",
+            "default": false
           },
           {
             "id":"buttonLink",
@@ -122,6 +165,11 @@
             "default":false
           }
         ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "our work"
       }
     ]
   }

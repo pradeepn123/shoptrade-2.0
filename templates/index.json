@@ -606,10 +606,14 @@
         "821fbf2b-7e10-42f4-a60e-280102bbbcb0": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Elevatione<\/p>",
+            "cardtext": "Elevatione",
             "cardtext_url": "https:\/\/shoptrade.co\/pages\/elevatione",
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
+            "show_logo_insted_of_text": true,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -618,10 +622,14 @@
         "5e235ad6-01a5-4cad-830b-cef51b7c3121": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Hathaspace<\/p>",
+            "cardtext": "Hathaspace",
             "cardtext_url": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n              <div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Headless\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -630,10 +638,14 @@
         "7dce5870-cbc5-4dd3-83fd-02b7132c5b83": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Chill<\/p>",
+            "cardtext": "Chill",
             "cardtext_url": "https:\/\/chill.com\/",
             "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/chill.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -642,10 +654,14 @@
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Wild Junkie<\/p>",
+            "cardtext": "Wild Junkie",
             "cardtext_url": "https:\/\/wildjunkieboutique.com\/",
             "cardImage": "shopify:\/\/shop_images\/Wild-junkies_ef56a145-dea1-4783-9a06-38e1897f7a9e.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/WILD_JUNKIE_3f61b3d9-67d7-4b9b-bf90-c9a4635dd183.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/wildjunkieboutique.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -654,10 +670,14 @@
         "97481e62-2db3-4b14-b26a-f57b817e6d76": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Buunni<\/p>",
+            "cardtext": "Buunni",
             "cardtext_url": "https:\/\/www.buunnicoffee.com\/",
             "cardImage": "shopify:\/\/shop_images\/buunni.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/BUUNNI_0bd4f7ca-e7a9-467c-a300-13379547888e.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/www.buunnicoffee.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -666,10 +686,14 @@
         "2b37814a-1e6d-4338-a477-da3bdfe3d2b7": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Bumpboxx<\/p>",
+            "cardtext": "Bumpboxx",
             "cardtext_url": "https:\/\/bumpboxx.com\/",
             "cardImage": "shopify:\/\/shop_images\/bumpboxx.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/BUMPBOXX_06bcd82a-4e3e-421a-8158-629832f7777c.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/bumpboxx.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -678,10 +702,14 @@
         "65ef3c07-6117-450b-8674-45cc59043ecf": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Sendif<\/p>",
+            "cardtext": "Sendif",
             "cardtext_url": "https:\/\/shoptrade.co\/pages\/sendif",
             "cardImage": "shopify:\/\/shop_images\/Sendif_6feb5b80-fb36-4d58-883f-6bb6c99a9e3a.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/SENDIF_c3154382-4b02-4e04-8065-52314686cce1.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/sendif",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Product\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Shopify App\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -690,10 +718,14 @@
         "6c32fdc2-cd65-4a89-8b84-df3d5352c735": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Checkit<\/p>",
+            "cardtext": "Checkit",
             "cardtext_url": "https:\/\/shoptrade.co\/pages\/checkit",
             "cardImage": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/CHECKIT.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/checkit",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Product\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Shopify App\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -702,10 +734,14 @@
         "47264a60-c3ad-49da-81b2-ce6993409052": {
           "type": "cardType",
           "settings": {
-            "cardtext": "<p>Lensadvisor <\/p>",
+            "cardtext": "LensAdvisor",
             "cardtext_url": "https:\/\/shoptrade.co\/pages\/lens-advizor",
             "cardImage": "shopify:\/\/shop_images\/LensAdvisor_13c6a77f-95dd-4ed8-9642-1b54ab09a304.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/LENSADVIZOR.png",
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/lens-advizor",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Product\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Shopify App\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
@@ -877,6 +913,7 @@
         "fd3729bd-ecf7-48d5-8ba8-d61d429c07ac"
       ],
       "settings": {
+        "border_top": false,
         "color_scheme": "background-1",
         "heading": "Sign up for our free ecommerce newsletter.",
         "agreeTxt": "By providing your email, you agree for us to contact you via email with e‑commerce advice. Your data is stored securely and we never pass it on to third parties.",

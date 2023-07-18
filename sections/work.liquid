@@ -1,49 +1,110 @@
 <section class="work">
   <div class="container">
     <h2 class="work-h1">{{ section.settings.heading }}
-    </h1>
+    </h2>
+  </div>
+  <div class="filter_cards container">
+    <div class="filters_card_child">
+      <a class="filters_switch activeWork" id="All" onclick='switchTab("workpage__card")'>
+        All Work
+      </a>
+      
+      {% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
+      {% for tag in unique_tags %}
+        {% assign Ntag = tag | replace: '(', '' | replace: ')', '' | replace: '/', '' %}
+          <a class="filters_switch " id="{{ Ntag }}" onclick='switchTab("{{ Ntag }}")'>
+            {% assign split_tags = tag | split: ',' %}
+            {% assign first_word = split_tags[0] %}
+            {% assign first_words = first_word | replace: '_', '   ' %}
+              {{ first_words }}
+          </a>
+      {% endfor %}
 
   </div>
-  <ul class="ourWork__cards workpage__cards">
+  </div>
+  <div class="workpage__cards_parent">
+    <div class="container">
+      <ul class="ourWork__cards workpage__cards " id="ul">
+        {% for block in page.metafields.custom.works.value %}
+          <a href="{{ block.link }} " {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', ''  }}">
+            <div class="ourWork__cardBody">
+              <div class="img-container">
+                <div id="work-img-wrp" class="img-wrp">
+                  <img class="thumb-img" src="{{ block.image | image_url}}" />
+                  <div class="workOn-hover--info">
+                   
+                      {{ block.work_information | replace: ' ', '  &bull; ' }}
+                    
+                     <h6 class="work_info_author">
+                      {{ block.brand_info }}
+                    </h6> 
+                  </div>
+                  {% if block.show_button %}
+                    <div class="btn-wrp">
+                      {% if block.make_it_as_coming_soon %}
+                        <a href="{{ block.link }}"
+                          {% if block.open_in_new_tab %}target="_blank"{% endif %}
+                          class="btn btn--arrow">
+                          <div>
+                            <img
+                              class="btn-arrrow-work"
+                              src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684"
+                              alt="arrow" />
+                          </div>
+                        </a>
+                      {% else %}
+                        <a class="btn btn--arrow unclickble">
+                          <div>
+                            <img
+                              class="btn-arrrow-work"
+                              src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/loading-icon.svg?v=1668582566"
+                              alt="arrow" />
+                          </div>
+                        </a>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if block.make_it_as_coming_soon %}
+                  <div class="coming-soon-parent">
+                    <div class="coming-soon-peoject">
+                      Comming Soon
+                    </div>
+                  </div>
+                {% endif %}
+                <div class="work-logo-footer ">
+                  {% if block.show_logo_insted_of_text %}
+                    <div class="work-logo-footer__imgWrp">
+                      <img class=" brandLogo" src=" {{ block.brand_logo | image_url}}  " />
+                      {% if block.link %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </div>
+                  {% else %}
+                    <p
+                      class="work--page-brand-name {% if block.link %}work--cur-notAllow {% endif %}">
+                      {{ block.brand_name }}
+                      {% if block.link %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                </div>
 
-    {% for block in section.blocks %}
-      <li class="ourWork__card workpage__card">
-        <div class="ourWork__cardBody">
-          <div class="img-container">
-            <div class="img-wrp" >
-              <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-              <div class="btn-wrp">
-                {% if block.settings.clickble %}
-                  <a href="{{ block.settings.cardLink }}" 
-                    {% if block.settings.open_new_tab %}target="_blank"{% endif%}
-                    class="btn btn--arrow">
-                    <div>
-                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
-                    </div>
-                  </a>
-                {% else %}
-                  <a class="btn btn--arrow unclickble">
-                    <div>
-                      <img class="btn-arrrow-work" src="{{ block.settings.btn-icon }}" alt="arrow"/>
-                    </div>
-                  </a>
-                {% endif %}               
-              </div>              
-            </div>
-            <div class="work-logo-footer">
-              <div class="work-logo-footer__imgWrp">
-              <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
               </div>
             </div>
+          </a>
+        {% endfor %}
+      </ul>
+      
+    </div>
+  </div>
 
-          </div>
-        </div>
-      </li>
-    {% endfor %}
 
-
-  </ul>
-</section>
 
 {% schema %}
 
@@ -57,47 +118,37 @@
 
       }
     ],
-    "blocks": [
+
+    "presets": [
       {
-        "name": "card",
-        "type": "cardType",
-        "settings": [
-          {
-            "id": "cardImage",
-            "type": "image_picker",
-            "label": "Image"
-
-          }, {
-            "id": "cardImageBrand",
-            "type": "image_picker",
-            "label": "Logo"
-
-          },
-          {
-            "id":"clickble",
-            "type":"checkbox",
-            "label":"Clickable Button",
-            "default":true
-          },
-          {
-            "id":"open_new_tab",
-            "type":"checkbox",
-            "label":"Open in new tab",
-            "default":false
-          },
-          
-          {
-          "id":"cardLink",
-          "type":"url",
-          "label":"Link"
-        },{
-          "id":"btn-icon",
-          "label":"Button Icon",
-          "type":"url"
-        }
-        ]
+        "name": "works"
       }
     ]
 
   }
 {% endschema %}
+
+<script>
+
+  let ul = document.getElementById("ul")
+  let allcards = ul.querySelectorAll(".workpage__card");
+
+    function switchTab(tabname) {
+
+       var current = document.getElementsByClassName("activeWork");
+      current[0].className = current[0].className.replace(" activeWork", "");
+      event.target.classList.add("activeWork");
+
+      allcards.forEach(c => {
+        c.style.display = "none";
+      })
+
+      let show = ul.querySelectorAll("."+tabname);
+
+      show.forEach(c => {
+        c.style.display = "block";
+      })
+
+    }
+
+</script>
