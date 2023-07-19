@@ -21,7 +21,7 @@
         <div class="swiper-wrapper our--work--card-child">
           {% for block in section.blocks %}
             <li class="ourWork__card swiper-slide">
-              <a href="{{ block.settings.cardtext_url }}">  
+            <a {% if block.settings.coming_soon == false %} href="{{ block.settings.cardtext_url }}" {% endif %}>  
             <div class="ourWork__cardBody">
               <div  class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
