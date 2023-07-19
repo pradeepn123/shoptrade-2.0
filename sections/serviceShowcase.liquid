@@ -1,84 +1,159 @@
-<section class="work service-showcase">
+<section class="work">
+  <div class="container">
+    <h2 class="work-h1 serviceShowcaseh2">{{ section.settings.heading }}
+    </h2>
+  </div>
+  <div class="workpage__cards_parent">
     <div class="container">
-        <div class="ourWork__headContainer">
-            <h2 class="h1-main ">
-              {{ section.settings.heading }}
-            </h2>
-            <div class="">
-              <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
-                <img src="{{ 'arrow-icon.png' | asset_img_url}} "/>
-              </a>
-            </div>      
-          </div>
-      </h2>  
-    </div>
-    <ul class="ourWork__cards ">
-      {% for block in section.blocks %}
-        <li class="ourWork__card ">
-          <div class="ourWork__cardBody">
-            <div class="img-container">
-              <div class="img-wrp">
-                <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
-                <div class="btn-wrp">
-                  <a href="{{ block.settings.cardLink }}" target="_blank" class="btn btn--arrow" href="">  
-                    <div>
-                      <img class="" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/WHITE-ARROW.png?v=1666071684" alt="arrow"/>
-                    </div>
-                  </a>
+      <ul class="ourWork__cards workpage__cards " id="ul">
+        {% for item in section.blocks %}
+          {% assign block = item.settings %}
+          <a {% if block.coming_soon == false %} href="{{ block.cardtext_url }}" {% endif %} {% if block.open_new_tabs %} target="_blank" {% endif %} class="ourWork__card workpage__card">
+            <div class="ourWork__cardBody">
+              <div class="img-container">
+                <div id="work-img-wrp" class="img-wrp">
+                  <img class="thumb-img" src="{{ block.cardImage | image_url}}" />
+                  <div class="workOn-hover--info">
+                   
+                      {{ block.work_info | replace: ' ', '  &bull; ' }}
+                    
+                     <h6 class="work_info_author">
+                      {{ block.brand_info }}
+                    </h6> 
+                  </div>
                 </div>
-              </div>
-              <div class="work-logo-footer">
-                <img class=" brandLogo" src=" {{ block.settings.cardImageBrand | image_url}}  "/>
+                {% if block.coming_soon %}
+                  <div class="coming-soon-parent">
+                    <div class="coming-soon-peoject">
+                      Comming Soon
+                    </div>
+                  </div>
+                {% endif %}
+                <div class="work-logo-footer ">
+                  {% if block.show_logo_insted_of_text %}
+                    <div class="work-logo-footer__imgWrp">
+                      <img class=" brandLogo" src=" {{ block.cardImageBrand | image_url}}  " />
+                      {% if block.buttonLink %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </div>
+                  {% else %}
+                    <p
+                      class="work--page-brand-name {% if block.link %}work--cur-notAllow {% endif %}">
+                      {{ block.cardtext }}
+                      {% if block.buttonLink %}
+                        <span class="work_hover_arrow">
+                          {% render 'arrow-icon' %}
+                        </span>
+                      {% endif %}
+                    </p>
+                  {% endif %}
+                </div>
+
               </div>
             </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-  
-  {% schema %}
-  
-    {
-      "name": "service showcase",
-      "settings": [
-        {
-          "id": "heading",
-          "label": "Heading",
-          "type": "text"
-  
-        },{
+          </a>
+        {% endfor %}
+      </ul>
+      
+    </div>
+  </div>
+
+
+
+{% schema %}
+
+  {
+    "name": "service showcase",
+    "settings": [
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text",
+        "default": "Our Works"
+      },{
         
-            "id":"link",
-            "label":"Nav link",
-            "type":"url"
-        
-        }
-      ],
-      "blocks": [
-        {
-          "name": "cards",
-          "type": "cardType",
-          "settings": [
-            {
-              "id": "cardImage",
-              "type": "image_picker",
-              "label": "Card image"
-  
-            }, {
-              "id": "cardImageBrand",
-              "type": "image_picker",
-              "label": "Brand logo"
-  
-            },{
-            "id":"cardLink",
-            "type":"url",
-            "label":"link"
-          }
-          ]
-        }
-      ]
-     
-  
+        "id":"link",
+        "label":"Link",
+        "type":"url"
+    
     }
-  {% endschema %}
+
+    ],
+    "blocks": [
+      {
+        "name": "card",
+        "type": "cardType",
+        "settings": [
+          {
+            "id": "cardtext",
+            "type": "text",
+            "label": "Brand Name"
+          },
+          {
+            "id": "cardtext_url",
+            "type": "url",
+            "label": "Brand Link"
+          },
+          {
+            "id": "cardImage",
+            "type": "image_picker",
+            "label": "Image"
+          }, 
+          {
+          "type":"richtext",
+          "id":"work_info",
+          "label":"work nNformation"
+          },
+          {
+            "type":"text",
+            "id":"brand_info",
+            "label": "Brand Info"
+          },
+          {
+          "id":"coming_soon",
+          "type":"checkbox",
+          "label": "make it as coming soon",
+          "default": false
+          },
+          {
+            "id": "cardImageBrand",
+            "type": "image_picker",
+            "label": "Logo"
+          },
+          {
+            "id":"show_logo_insted_of_text",
+            "type":"checkbox",
+            "label":"Show logo insted of text",
+            "default": false
+          },
+          {
+            "id":"buttonLink",
+            "label":"Button link",
+            "type":"url"
+          },
+          {
+            "id":"cardMarque",
+            "label":"Tag slider",
+            "type":"html"
+          },
+          {
+            "id":"open_new_tabs",
+            "type":"checkbox",
+            "label":"Open in new tab",
+            "default":false
+          }
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "service showcase"
+      }
+    ]
+
+  }
+{% endschema %}

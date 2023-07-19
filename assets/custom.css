@@ -1749,6 +1749,11 @@ input::-moz-placeholder {
   margin: 0;
   text-transform: uppercase;
 }
+@media (max-width: 1420px) {
+  .ourWork__cardBody .img-container .work-logo-footer .work--page-brand-name {
+    font-size: 24px;
+  }
+}
 @media (max-width: 767px) {
   .ourWork__cardBody .img-container .work-logo-footer .work--page-brand-name {
     font-size: 20px;
@@ -1939,6 +1944,11 @@ input::-moz-placeholder {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (max-width: 1420px) {
+  .work .work-logo-footer .work--page-brand-name {
+    font-size: 24px;
+  }
+}
 @media (max-width: 767px) {
   .work .work-logo-footer .work--page-brand-name {
     font-size: 20px;
@@ -2099,6 +2109,11 @@ input::-moz-placeholder {
     font-size: 32px;
     line-height: 1.2;
   }
+}
+
+.work .serviceShowcaseh2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 920px) {
