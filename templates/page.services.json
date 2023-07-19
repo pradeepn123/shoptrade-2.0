@@ -395,6 +395,7 @@
     },
     "serviceShowcase": {
       "type": "serviceShowcase",
+      "disabled": true,
       "blocks": {
         "155001b4-249c-4384-8b5e-4d4c9f32e232": {
           "type": "cardType",
@@ -430,6 +431,68 @@
         "heading": "Showcase",
         "link": ""
       }
+    },
+    "75db6820-94f4-4716-8640-2ed7893cda13": {
+      "type": "our-work",
+      "blocks": {
+        "894fbcd1-1376-43bb-bdd9-f8a45e9d8723": {
+          "type": "cardType",
+          "settings": {
+            "cardtext": "Hathaspace",
+            "cardtext_url": "https:\/\/shoptrade.co\/pages\/hathaspace",
+            "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
+            "show_logo_insted_of_text": false,
+            "buttonLink": "",
+            "cardMarque": "",
+            "open_new_tabs": false
+          }
+        },
+        "457ebcad-1169-433b-bf8d-4d18a5332558": {
+          "type": "cardType",
+          "settings": {
+            "cardtext": "Chill",
+            "cardtext_url": "https:\/\/chill.com\/",
+            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
+            "show_logo_insted_of_text": false,
+            "buttonLink": "https:\/\/chill.com\/",
+            "cardMarque": "",
+            "open_new_tabs": false
+          }
+        },
+        "f6a815a6-f2f5-440f-aa1e-6300ffc950bb": {
+          "type": "cardType",
+          "settings": {
+            "cardtext": "Elevatione",
+            "cardtext_url": "https:\/\/shoptrade.co\/pages\/elevatione",
+            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify Plus (ongoing Success)",
+            "coming_soon": false,
+            "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
+            "show_logo_insted_of_text": false,
+            "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
+            "cardMarque": "",
+            "open_new_tabs": false
+          }
+        }
+      },
+      "block_order": [
+        "894fbcd1-1376-43bb-bdd9-f8a45e9d8723",
+        "457ebcad-1169-433b-bf8d-4d18a5332558",
+        "f6a815a6-f2f5-440f-aa1e-6300ffc950bb"
+      ],
+      "settings": {
+        "heading": "Showcase",
+        "link": ""
+      }
     }
   },
   "order": [
@@ -440,6 +503,7 @@
     "99ff0356-87ec-426e-beff-585e9ce851eb",
     "d5bfa5e9-52d3-44e6-8ffe-6ecb0b22bdc8",
     "ourPartners",
-    "serviceShowcase"
+    "serviceShowcase",
+    "75db6820-94f4-4716-8640-2ed7893cda13"
   ]
 }
