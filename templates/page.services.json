@@ -393,49 +393,25 @@
         "heading": "Our Partners"
       }
     },
-    "serviceShowcase": {
+    "76f22a36-9b85-4115-ae37-19d4fa235c7c": {
       "type": "serviceShowcase",
-      "disabled": true,
       "blocks": {
-        "155001b4-249c-4384-8b5e-4d4c9f32e232": {
+        "ab6f98f3-0aa4-4ddf-9e27-60e5eff2e7e7": {
           "type": "cardType",
           "settings": {
-            "cardImage": "shopify:\/\/shop_images\/banner-showcase.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-hata.png",
-            "cardLink": "https:\/\/hathaspace.com\/"
-          }
-        },
-        "e5d302cc-53f8-4cd1-9deb-aef1cb356e92": {
-          "type": "cardType",
-          "settings": {
-            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-chill.png",
-            "cardLink": "https:\/\/chill.com\/"
-          }
-        },
-        "965d6888-7062-4c71-909f-2f2112b24df6": {
-          "type": "cardType",
-          "settings": {
+            "cardtext": "Elevatione",
+            "cardtext_url": "https:\/\/shoptrade.co\/pages\/elevatione",
             "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "cardImageBrand": "shopify:\/\/shop_images\/logo-elevatione.png",
-            "cardLink": "https:\/\/www.elevatione.com\/"
+            "work_info": "<p>Design(UI\/UX) Development<\/p>",
+            "brand_info": "Shopify plus",
+            "coming_soon": false,
+            "show_logo_insted_of_text": false,
+            "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
+            "cardMarque": "",
+            "open_new_tabs": false
           }
-        }
-      },
-      "block_order": [
-        "155001b4-249c-4384-8b5e-4d4c9f32e232",
-        "e5d302cc-53f8-4cd1-9deb-aef1cb356e92",
-        "965d6888-7062-4c71-909f-2f2112b24df6"
-      ],
-      "settings": {
-        "heading": "Showcase",
-        "link": ""
-      }
-    },
-    "75db6820-94f4-4716-8640-2ed7893cda13": {
-      "type": "our-work",
-      "blocks": {
-        "894fbcd1-1376-43bb-bdd9-f8a45e9d8723": {
+        },
+        "8762c89a-60b8-4da8-b221-20fe09a14488": {
           "type": "cardType",
           "settings": {
             "cardtext": "Hathaspace",
@@ -446,16 +422,16 @@
             "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
             "show_logo_insted_of_text": false,
-            "buttonLink": "",
+            "buttonLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
             "cardMarque": "",
             "open_new_tabs": false
           }
         },
-        "457ebcad-1169-433b-bf8d-4d18a5332558": {
+        "208a5b23-2a3a-448b-81c0-0d5a0a971a0b": {
           "type": "cardType",
           "settings": {
             "cardtext": "Chill",
-            "cardtext_url": "https:\/\/chill.com\/",
+            "cardtext_url": "",
             "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
             "work_info": "<p>Design(UI\/UX) Development<\/p>",
             "brand_info": "Shopify Plus (ongoing Success)",
@@ -464,34 +440,18 @@
             "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/chill.com\/",
             "cardMarque": "",
-            "open_new_tabs": false
-          }
-        },
-        "f6a815a6-f2f5-440f-aa1e-6300ffc950bb": {
-          "type": "cardType",
-          "settings": {
-            "cardtext": "Elevatione",
-            "cardtext_url": "https:\/\/shoptrade.co\/pages\/elevatione",
-            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "work_info": "<p>Design(UI\/UX) Development<\/p>",
-            "brand_info": "Shopify Plus (ongoing Success)",
-            "coming_soon": false,
-            "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
-            "show_logo_insted_of_text": false,
-            "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
-            "cardMarque": "",
-            "open_new_tabs": false
+            "open_new_tabs": true
           }
         }
       },
       "block_order": [
-        "894fbcd1-1376-43bb-bdd9-f8a45e9d8723",
-        "457ebcad-1169-433b-bf8d-4d18a5332558",
-        "f6a815a6-f2f5-440f-aa1e-6300ffc950bb"
+        "ab6f98f3-0aa4-4ddf-9e27-60e5eff2e7e7",
+        "8762c89a-60b8-4da8-b221-20fe09a14488",
+        "208a5b23-2a3a-448b-81c0-0d5a0a971a0b"
       ],
       "settings": {
         "heading": "Showcase",
-        "link": ""
+        "link": "shopify:\/\/pages\/work"
       }
     }
   },
@@ -503,7 +463,6 @@
     "99ff0356-87ec-426e-beff-585e9ce851eb",
     "d5bfa5e9-52d3-44e6-8ffe-6ecb0b22bdc8",
     "ourPartners",
-    "serviceShowcase",
-    "75db6820-94f4-4716-8640-2ed7893cda13"
+    "76f22a36-9b85-4115-ae37-19d4fa235c7c"
   ]
 }
