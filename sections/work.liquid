@@ -26,7 +26,7 @@
     <div class="container">
       <ul class="ourWork__cards workpage__cards " id="ul">
         {% for block in page.metafields.custom.works.value %}
-          <a href="{{ block.link }} " {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', ''  }}">
+          <a {% if block.make_it_as_coming_soon == false %} href="{{ block.link }}" {% endif %} {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', '' }}">
             <div class="ourWork__cardBody">
               <div class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
