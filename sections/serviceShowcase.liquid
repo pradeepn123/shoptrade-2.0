@@ -1,10 +1,21 @@
 <section class="work">
-  <div class="container">
+  <div class="container ">
+    <div class="serviceShowHeading">
     <h2 class="work-h1 serviceShowcaseh2">{{ section.settings.heading }}
     </h2>
+    {% if section.settings.link %}
+    <div class="serviceShowcasebtn">
+      <a href="{{ section.settings.link }}" class="d-inline-block arrow-btn">
+        <svg width="74" height="59" viewBox="0 0 74 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M44.5924 1C60.2784 1 73 13.7618 73 29.5031C73 45.2441 60.2787 58 44.5924 58H29.4076C13.7216 58 1 45.2375 1 29.4962C1 13.7552 13.7213 1 29.4076 1H44.5924Z" fill="white" stroke="black" stroke-width="2"/>
+          <path d="M20 29.0909H54.1302M40.0906 15L54.2327 29.1421L40.0906 43.2843" stroke="black" stroke-width="2"/>
+        </svg>
+      </a>
+    </div>
+  {% endif %}
   </div>
   <div class="workpage__cards_parent">
-    <div class="container">
+    <div class="">
       <ul class="ourWork__cards workpage__cards " id="ul">
         {% for item in section.blocks %}
           {% assign block = item.settings %}
@@ -25,7 +36,7 @@
                 {% if block.coming_soon %}
                   <div class="coming-soon-parent">
                     <div class="coming-soon-peoject">
-                      Comming Soon
+                      Coming Soon
                     </div>
                   </div>
                 {% endif %}
