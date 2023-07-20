@@ -613,7 +613,7 @@
             "brand_info": "Shopify Plus",
             "coming_soon": false,
             "cardImageBrand": "shopify:\/\/shop_images\/ELEVATIONE_1761f714-c00f-4c53-aa8b-783615f30285.png",
-            "show_logo_insted_of_text": true,
+            "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
             "open_new_tabs": false
