@@ -21,11 +21,11 @@
         <div class="swiper-wrapper our--work--card-child">
           {% for block in section.blocks %}
             <li class="ourWork__card swiper-slide">
-            <a {% if block.settings.coming_soon == false %} href="{{ block.settings.cardtext_url }}" {% endif %}>  
+            <a {% if block.settings.coming_soon == false %} href="{{ block.settings.cardtext_url }}" {% endif %} {% if block.settings.open_new_tabs %} target="_blank" {% endif %}>  
             <div class="ourWork__cardBody">
               <div  class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
-                  <img class="thumb-img" src="{{ block.settings.cardImage | image_url}}"/>
+                  <img class="thumb-img work_img_our_work" src="{{ block.settings.cardImage | image_url}}"/>
                   <div class="workOn-hover--info">
                    
                     {{ block.settings.work_info | replace: ' ', '  &bull; ' }}

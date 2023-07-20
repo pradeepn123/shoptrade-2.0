@@ -1582,6 +1582,12 @@ input::-moz-placeholder {
   filter: brightness(100%);
   transition: 0.3s all linear;
 }
+.ourWork__cardBody #work-img-wrp .work_img_our_work {
+  border-radius: 6px 6px 0 0;
+}
+.ourWork__cardBody #work-img-wrp .work_img_our_work:hover {
+  border-radius: 40px 40px 0 0;
+}
 .ourWork__cardBody #work-img-wrp:hover .thumb-img {
   filter: brightness(50%);
   transition: 0.3s all linear;
