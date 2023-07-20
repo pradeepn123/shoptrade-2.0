@@ -169,6 +169,14 @@
                 filter: brightness(100%);
                 transition: 0.3s all linear;
             }
+            .work_img_our_work{
+                border-radius: 6px 6px 0 0;
+               
+                &:hover{
+              
+                    border-radius: 40px 40px 0 0;
+                }
+            }
             &:hover .thumb-img{
                     filter: brightness(50%);
                     transition: 0.3s all linear;
