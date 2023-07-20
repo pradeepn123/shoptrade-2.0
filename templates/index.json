@@ -648,7 +648,7 @@
             "show_logo_insted_of_text": false,
             "buttonLink": "https:\/\/chill.com\/",
             "cardMarque": "<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Development\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Design\n                <\/p>\n              <\/div>\n<div class=\"Marquee-tag\">\n                <p>\n                 <span class=\"clr-o\">#<\/span>Integration\n                <\/p>\n              <\/div>",
-            "open_new_tabs": true
+            "open_new_tabs": false
           }
         },
         "da4a40d1-85b4-45ff-ad41-f19bde0b63e2": {
