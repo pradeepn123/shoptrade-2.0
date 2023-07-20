@@ -679,10 +679,16 @@
     }
 }
 .work{
+    .serviceShowHeading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .serviceShowcaseh2{
         margin-bottom: 0;
         padding-bottom: 0;
     }
+    
 }
 .our--work--card--parent{
     @media(max-width:920px){
