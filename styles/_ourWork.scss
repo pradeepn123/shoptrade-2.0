@@ -683,10 +683,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 30px;
     }
     .serviceShowcaseh2{
-        margin-bottom: 0;
-        padding-bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .serviceShowcasebtn a svg{
+        @media (max-width:520px) {
+            height: 50px;
+           
+        }
     }
     
 }

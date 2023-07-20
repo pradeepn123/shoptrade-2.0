@@ -2115,10 +2115,16 @@ input::-moz-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 }
 .work .serviceShowcaseh2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 520px) {
+  .work .serviceShowcasebtn a svg {
+    height: 50px;
+  }
 }
 
 @media (max-width: 920px) {
