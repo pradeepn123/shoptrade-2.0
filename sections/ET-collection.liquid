@@ -1,0 +1,51 @@
+
+<div class="container">
+    <div class="ET-product-container">
+    {% for item in collection.products %}
+        <a href="{{ item.url }}" class="ET-product">
+            <div class="ET-product-img">
+                {% if  item.metafields.custom.delivery_imagies.value.delivery_img %}
+                    <img src= "{{ item.metafields.custom.delivery_imagies.value.delivery_img | img_url: 'master'}}"  loading="lazy" alt = "product image">
+                {% else %} 
+                    <img src= "{{ item.featured_image | img_url: 'master'}}"  loading="lazy" alt = "product image">
+                {% endif %}
+            </div>
+            <div class="ET-product-text">
+                <div class="ET-product-title">
+                {% if   item.metafields.custom.delivery_imagies.value.delivery_heading %}
+                    <h4>  {{ item.metafields.custom.delivery_imagies.value.delivery_heading }} </h4>
+                {% else %}
+                    <h4> {{ item.title }} </h4>
+                {% endif %}
+                </div>
+                <div class="ET-delivery-info">
+                    <span>
+                        <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/clock.png?v=1690262888" loading="lazy" alt="clock-icon">
+                    </span>
+                    <span class="delivery_duration">
+                        {{ item.metafields.custom.delivery.value }}
+                    </span>
+                </div>
+            </div>   
+        </a>
+        {% endfor %}
+    </div>
+<div>
+
+
+
+
+
+{% schema %}
+    {
+        "name":"ET collection",
+        "settings":[
+           
+        ],
+        "presets":[
+            {
+                "name": "ET collection"
+            }
+        ]
+    }
+{% endschema %}

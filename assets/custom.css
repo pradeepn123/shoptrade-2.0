@@ -4837,7 +4837,7 @@ input::-moz-placeholder {
 }
 
 .services {
-  padding: 100px 0;
+  padding: 84px 0;
   position: relative;
   overflow: hidden;
 }
@@ -4870,6 +4870,67 @@ input::-moz-placeholder {
 .services h1 {
   max-width: 900px;
   width: 100%;
+}
+.services .banner_para {
+  max-width: 60%;
+}
+@media (max-width: 1200px) {
+  .services .banner_para {
+    max-width: unset;
+  }
+}
+.services .banner_para p {
+  color: var(--COLOR-BLACK);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 520px) {
+  .services .banner_para p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page_banner_shadow::after {
+    background: linear-gradient(179deg, #FFFFFF 1%, #FFC8A9 100%, #FF7121 100%);
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    transform: unset;
+    filter: unset;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .page_banner_shadow::after {
+    background: linear-gradient(179deg, #FFFFFF 42.65%, #FFC8A9 100%, #FF7121 100%);
+    width: 100%;
+    height: 100%;
+    top: -3%;
+    filter: blur(4em);
+    right: unset;
+  }
+}
+@media (max-width: 520px) {
+  .page_banner_shadow::after {
+    padding: 53px 0;
+    top: -46%;
+    background: linear-gradient(179deg, #FFFFFF 42.65%, #FFC8A9 100%, #FF7121 100%);
+  }
+}
+.page_banner_shadow .h1 {
+  margin-bottom: 20px;
+}
+@media (max-width: 520px) {
+  .page_banner_shadow .h1 {
+    margin-bottom: 10px;
+  }
 }
 
 .ourServices {
@@ -12648,4 +12709,100 @@ html {
   color: #3A4ED4;
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
+}
+
+.ET-product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 75px 0;
+}
+@media (max-width: 991px) {
+  .ET-product-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .ET-product-container {
+    margin: 54px 0;
+  }
+}
+@media (max-width: 520px) {
+  .ET-product-container {
+    margin: 20px 0;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.ET-product-container .ET-product {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.ET-product-container .ET-product:hover {
+  border-color: #FF7121;
+}
+.ET-product-container .ET-product .ET-product-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0 0;
+}
+.ET-product-container .ET-product .ET-product-text {
+  padding: 13px 0 20px 0;
+  margin-left: 20px;
+}
+@media (max-width: 520px) {
+  .ET-product-container .ET-product .ET-product-text {
+    margin-left: 10px;
+  }
+}
+.ET-product-container .ET-product .ET-product-text .ET-product-title {
+  max-width: fit-content;
+}
+.ET-product-container .ET-product .ET-product-text .ET-product-title h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  text-decoration: none;
+}
+@media (max-width: 520px) {
+  .ET-product-container .ET-product .ET-product-text .ET-product-title h4 {
+    font-size: 20px;
+  }
+}
+.ET-product-container .ET-product .ET-product-text .ET-product-title h4:hover {
+  color: #FF7121;
+  text-decoration: underline #FF7121;
+}
+.ET-product-container .ET-product .ET-product-text .ET-delivery-info {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+@media (max-width: 520px) {
+  .ET-product-container .ET-product .ET-product-text .ET-delivery-info {
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+}
+.ET-product-container .ET-product .ET-product-text .ET-delivery-info span img {
+  height: 17px;
+  width: 17px;
+}
+.ET-product-container .ET-product .ET-product-text .ET-delivery-info .delivery_duration {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 7px;
+}
+@media (max-width: 520px) {
+  .ET-product-container .ET-product .ET-product-text .ET-delivery-info .delivery_duration {
+    font-size: 16px;
+    float: right;
+  }
 }
