@@ -43,12 +43,58 @@
       "type": "ET-collection",
       "settings": {
       }
+    },
+    "80534ffb-4c24-4392-afcb-8449b1f6f673": {
+      "type": "ET-hour_pack",
+      "blocks": {
+        "699adde5-81d2-4a66-b699-c5d208997a2d": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Development & design work",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Fast turnaround",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "3cd3150a-b24f-4b92-9ba2-9401ac532c17": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Dedicated Experts",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Replenish as needed",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        }
+      },
+      "block_order": [
+        "699adde5-81d2-4a66-b699-c5d208997a2d",
+        "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8",
+        "3cd3150a-b24f-4b92-9ba2-9401ac532c17",
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795"
+      ],
+      "settings": {
+        "hp_heading": "Hour Packs",
+        "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
+        "hp_btn_txt": "Buy Hour Packs",
+        "hp_btn_url": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8475&mode=design&t=CL30yxXwdHkJNDXN-0"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "0b59a68c-7978-4724-83b3-5e23504e4c96",
-    "94ea82c8-b424-423a-916e-d89b7c96810e"
+    "94ea82c8-b424-423a-916e-d89b7c96810e",
+    "80534ffb-4c24-4392-afcb-8449b1f6f673"
   ]
 }

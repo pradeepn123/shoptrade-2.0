@@ -55,33 +55,21 @@
 .page_banner_shadow{
     &::after{
         @media(min-width:992px){
-            background: linear-gradient(179deg, #FFFFFF  1%, #FFC8A9 100%, #FF7121 100%);
             top: unset;
             left: unset;
             right: unset;
             bottom: unset;
             transform: unset;
-            filter: unset;
             width: 100%;
             height: 100%;
+            background: #FFC8A9;
         }
     
     @media(max-width:991px){
-        background: linear-gradient(179deg, #FFFFFF  42.65%, #FFC8A9 100%, #FF7121 100%);
-        // top: unset;
-        //     left: unset;
-        //     right: unset;
-        //     bottom: unset;
+            background: #FFC8A9;
             width: 100%;
-            height: 100%;
-            top:-3%;
-            filter: blur(4em);
+            top: 32%;
             right: unset;
-    }
-    @media (max-width:520px) {
-        padding: 53px 0 ;
-        top:-46%;
-        background: linear-gradient(179deg, #FFFFFF  42.65%, #FFC8A9 100%, #FF7121 100%);
     }
 }
     .h1{
