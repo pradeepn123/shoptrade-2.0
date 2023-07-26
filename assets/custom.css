@@ -12944,7 +12944,7 @@ html {
 .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
   max-width: fit-content;
   background-color: #3A4ED4;
-  padding: 17px 77px;
+  padding: 11px 77px;
   border-radius: 32px;
 }
 @media (max-width: 520px) {
@@ -12993,12 +12993,16 @@ html {
   display: flex;
   align-items: center;
 }
-.hp_content_main .Hour_contain .hp_points .hp_point_lines span {
-  height: 40px;
+@media (max-width: 520px) {
+  .hp_content_main .Hour_contain .hp_points .hp_point_lines span {
+    height: 40px;
+  }
 }
-.hp_content_main .Hour_contain .hp_points .hp_point_lines span img {
-  height: auto;
-  width: 40px;
+@media (max-width: 520px) {
+  .hp_content_main .Hour_contain .hp_points .hp_point_lines span img {
+    height: auto;
+    width: 40px;
+  }
 }
 .hp_content_main .Hour_contain .hp_points .hp_point_lines h6 {
   font-size: 18px;
