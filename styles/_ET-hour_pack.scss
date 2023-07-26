@@ -61,14 +61,21 @@
                 width: 100%;
                 padding-right: unset;
                 border-right: none;
-                border-bottom: 1px solid #000000;
+                // border-bottom: 1px solid #000000;
                 border-radius: 8px 8px 0 0;
-                padding: 30px 20px 30px 30px;
+                padding: 30px 20px 0 30px;
             }
             @media(max-width:520px){
-                padding: 20px;
+                padding: 20px 20px 0 20px;
             }
-
+         .hour_pack_text_child{
+            @media(max-width:767px){
+                border-bottom: 1px solid #000000;
+                padding-bottom: 30px;
+            }
+            @media(max-width:520px){
+                padding-bottom: 20px;
+            }
             .hp_heading {
                 max-width: fit-content;
                 display: flex;
@@ -145,6 +152,7 @@
 
                 }
             }
+         }
         }
 
         .hp_points {
@@ -160,6 +168,7 @@
                 width: 100%;
                 padding-left: unset;
                 padding: 20px;
+                border-radius: 0 0 8px 8px; 
             }
             @media(max-width:520px){
                 padding-top: 10px;

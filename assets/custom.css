@@ -12868,23 +12868,33 @@ html {
     width: 100%;
     padding-right: unset;
     border-right: none;
-    border-bottom: 1px solid #000000;
     border-radius: 8px 8px 0 0;
-    padding: 30px 20px 30px 30px;
+    padding: 30px 20px 0 30px;
   }
 }
 @media (max-width: 520px) {
   .hp_content_main .Hour_contain .hour_pack_text {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
   }
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_heading {
+@media (max-width: 767px) {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child {
+    padding-bottom: 20px;
+  }
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_heading {
   max-width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_heading h2 {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_heading h2 {
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
@@ -12894,29 +12904,29 @@ html {
   padding-right: 10px;
 }
 @media (max-width: 520px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hp_heading h2 {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_heading h2 {
     font-size: 28px;
   }
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_heading span svg {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_heading span svg {
   height: auto;
   width: 22px;
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_para {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_para {
   max-width: 85%;
   padding: 10px 0 20px 0;
 }
 @media (max-width: 1200px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hp_para {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_para {
     max-width: unset;
   }
 }
 @media (max-width: 520px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hp_para {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_para {
     padding: 6px 0 14px 0;
   }
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_para p {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_para p {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -12926,25 +12936,25 @@ html {
   color: #000000;
 }
 @media (max-width: 520px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hp_para p {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_para p {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_button {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
   max-width: fit-content;
   background-color: #3A4ED4;
   padding: 17px 77px;
   border-radius: 32px;
 }
 @media (max-width: 520px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hp_button {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
     max-width: 100%;
     padding: 10px 0;
     text-align: center;
   }
 }
-.hp_content_main .Hour_contain .hour_pack_text .hp_button a {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button a {
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
@@ -12971,6 +12981,7 @@ html {
     width: 100%;
     padding-left: unset;
     padding: 20px;
+    border-radius: 0 0 8px 8px;
   }
 }
 @media (max-width: 520px) {
