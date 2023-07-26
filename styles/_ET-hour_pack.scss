@@ -147,7 +147,17 @@
                     background-color: #3A4ED4;
                     padding: 11px 77px;
                     border-radius: 32px;
-
+                    cursor: pointer;
+                    border: 1px solid #3A4ED4;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        transition: all 0.3s linear;
+                        background-color: #fff;
+                    }
+                    &:hover a{
+                        transition: all 0.3s linear;
+                        color: #3A4ED4;
+                    }
                     @media(max-width:520px) {
                         max-width: 100%;
                         padding: 10px 0;
@@ -163,7 +173,6 @@
                         margin: 0;
                         color: #fff;
                         text-decoration: none;
-
                     }
                 }
             }

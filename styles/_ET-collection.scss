@@ -46,14 +46,6 @@
                     @media (max-width:520px) {
                         font-size: 20px;
                     }
-                    &:hover{
-                        color: #FF7121;
-                        text-decoration: underline #FF7121;
-                        // transition: 0.1s all linear;
-                        &:after{
-                            // transform: scaleX(0.8);
-                        }
-                    }
                 }
             }
             .ET-delivery-info{
@@ -87,4 +79,21 @@
             }
         }
     }
+}
+.ET-product .ET-product-title::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FF7121;
+    transition: width .4s;
+}
+.ET-product:hover .ET-product-title::after{
+                width: 100%;
+                transition: width .4s;
+}
+
+.ET-product:hover .ET-product-title h4{
+    color: #FF7121;
+    transition: 0.1s all linear;
 }

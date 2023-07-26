@@ -12762,10 +12762,6 @@ html {
     font-size: 20px;
   }
 }
-.ET-product-container .ET-product .ET-product-text .ET-product-title h4:hover {
-  color: #FF7121;
-  text-decoration: underline #FF7121;
-}
 .ET-product-container .ET-product .ET-product-text .ET-delivery-info {
   display: flex;
   align-items: center;
@@ -12795,6 +12791,25 @@ html {
     font-size: 16px;
     float: right;
   }
+}
+
+.ET-product .ET-product-title::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FF7121;
+  transition: width 0.4s;
+}
+
+.ET-product:hover .ET-product-title::after {
+  width: 100%;
+  transition: width 0.4s;
+}
+
+.ET-product:hover .ET-product-title h4 {
+  color: #FF7121;
+  transition: 0.1s all linear;
 }
 
 .hp_content_main {
@@ -12946,6 +12961,17 @@ html {
   background-color: #3A4ED4;
   padding: 11px 77px;
   border-radius: 32px;
+  cursor: pointer;
+  border: 1px solid #3A4ED4;
+  transition: all 0.3s linear;
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover {
+  transition: all 0.3s linear;
+  background-color: #fff;
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover a {
+  transition: all 0.3s linear;
+  color: #3A4ED4;
 }
 @media (max-width: 520px) {
   .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
