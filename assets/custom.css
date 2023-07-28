@@ -12649,3 +12649,119 @@ html {
   letter-spacing: 0;
   text-decoration-color: #c7cefa;
 }
+
+.headline_wrapper {
+  padding: 100px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.headline_wrapper::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 65px;
+  background: #FF7121;
+  width: 100rem;
+  height: 2.5rem;
+  filter: blur(45.5px);
+}
+
+.headline-content__wrapper .headline-banner__title {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.headline-content__wrapper .headline-banner__description {
+  width: 60%;
+  line-height: 28px;
+  color: #000;
+  font-size: 24px;
+}
+
+.product-showcase__wrapper {
+  padding: 60px 15px;
+}
+.product-showcase__wrapper .ps__content-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.product-showcase__wrapper .ps__block {
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.product-showcase__wrapper .ps__title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  border-bottom: 1px solid black;
+  padding: 15px 20px;
+  background: #F5F5F5;
+}
+.product-showcase__wrapper .ps__description {
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  line-height: 26px;
+}
+.product-showcase__wrapper .ps__price {
+  padding: 0 0 30px 20px;
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+}
+.product-showcase__wrapper .ps__price span {
+  font-size: 24px;
+  font-weight: 400;
+}
+.product-showcase__wrapper .ps__features {
+  border-top: 1px solid #000;
+}
+.product-showcase__wrapper .ps__features ul {
+  padding: 0 20px;
+}
+.product-showcase__wrapper .ps__features ul li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.product-showcase__wrapper .ps__button {
+  margin: 0 20px 20px 20px;
+  padding: 17px 25px;
+  background: #3A4ED4;
+  color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product-showcase__wrapper .ps__features ul li::before {
+  content: url(../assets/check-mark.svg);
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+@media (max-width: 1399px) {
+  .product-showcase__wrapper .ps__content-wrap {
+    gap: 20px;
+  }
+  .product-showcase__wrapper .ps__features ul li {
+    padding-bottom: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .product-showcase__wrapper .ps__content-wrap {
+    flex-direction: column;
+  }
+  .product-showcase__wrapper .ps__description {
+    display: none;
+  }
+  .product-showcase__wrapper .ps__price {
+    margin-top: 30px;
+  }
+}
