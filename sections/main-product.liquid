@@ -328,10 +328,12 @@
       </div>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
+    <div class="st-product-sticky">
       <div
         id="ProductInfo-{{ section.id }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
       >
+       
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
@@ -839,6 +841,10 @@
           {% render 'icon-arrow' %}
         </a>
       </div>
+      <div class="shopify-logo">
+     {% render 'icon-shopify' %}
+      </div>
+    </div> 
     </div>
     {%- if section.settings.media_position == 'right' -%}
       <div class="grid__item product__media-wrapper small-hide">

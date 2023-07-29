@@ -2,16 +2,18 @@
     border-top: unset;
     border-bottom: 1px solid #000;
 
-    .product__info-container--sticky{
-        top: 11% !important;
-    }
+    
     .product__info-wrapper {
         padding: 0 0 0 20px !important;
-
+        .st-product-sticky{
+            position: sticky;
+            top: 11%;
+        }
         .product__info-container {
             border: 1px solid #000;
             padding: 28px 20px;
             border-radius: 8px;
+           
 
             .ST-product-pg-text {
                 font-size: 20px;
@@ -235,6 +237,10 @@
     .grid__item {
         &:first-child{
             border-right: 1px solid #000;
+        }
+        .product__media-gallery{
+            position: unset;
+            top: unset;
         }
         .product__description {
             padding: 16px 0 67px 0;

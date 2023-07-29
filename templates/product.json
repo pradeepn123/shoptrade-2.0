@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "Expert Task",
+            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
@@ -15,16 +15,9 @@
           "settings": {
           }
         },
-        "5dc1c306-84b8-4017-80f7-84621efd0808": {
+        "product-rating": {
           "type": "rating",
           "settings": {
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -34,7 +27,6 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button"
           }
@@ -48,52 +40,14 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "btn_url_start": "",
+            "btn_start": ""
           }
         },
         "description": {
           "type": "description",
           "settings": {
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
           }
         },
         "share": {
@@ -102,217 +56,82 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "00fac909-e934-48fb-a652-e2a03f390350": {
+          "type": "question",
+          "settings": {
+            "question_text": "<p>Have a question? <a href=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\" title=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\">Ask us<\/a><\/p>"
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "5dc1c306-84b8-4017-80f7-84621efd0808",
-        "caption",
+        "product-rating",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "share",
+        "00fac909-e934-48fb-a652-e2a03f390350"
       ],
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "stacked",
-        "media_size": "large",
-        "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
     },
-    "9a5773ae-e045-48c1-8e32-8c5a0428b3f9": {
-      "type": "product_pack_details",
-      "blocks": {
-        "08637223-1fe0-4e64-90cb-161f17b58522": {
-          "type": "blocks",
-          "settings": {
-            "mainText": "qswdfgnhmj",
-            "paratext": "<p>sdvfbgnh<\/p>"
-          }
-        },
-        "b8a1591b-f5a4-42ab-85b7-a2a0fbe76873": {
-          "type": "blocks",
-          "settings": {
-            "mainText": "dasfghj",
-            "paratext": "<p>ewftghj<\/p>"
-          }
-        },
-        "318ccbe1-ac86-40de-b951-bd9d52e46a83": {
-          "type": "blocks",
-          "settings": {
-            "mainText": "sdfdhtj",
-            "paratext": "<p>srthteb<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "08637223-1fe0-4e64-90cb-161f17b58522",
-        "b8a1591b-f5a4-42ab-85b7-a2a0fbe76873",
-        "318ccbe1-ac86-40de-b951-bd9d52e46a83"
-      ],
-      "settings": {
-        "product_heading": "Package details"
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "168414448731360b9c": {
+      "type": "apps",
       "disabled": true,
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "include_margins": true
       }
     },
-    "0b2260a9-8b6a-4007-bc96-37f8447ac134": {
+    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3": {
       "type": "news-gallery",
-      "blocks": {
-        "5be190fe-0cde-41ca-b782-a359d587c215": {
-          "type": "sliderType",
-          "settings": {
-            "slide_img": "shopify:\/\/shop_images\/gallery_1.png"
-          }
-        },
-        "a04faa8d-a019-4196-8670-882cdb3f8e51": {
-          "type": "sliderType",
-          "settings": {
-            "slide_img": "shopify:\/\/shop_images\/gallery_2.png"
-          }
-        },
-        "6dd551c6-629b-4bd2-a107-8e1355493bd0": {
-          "type": "sliderType",
-          "settings": {
-            "slide_img": "shopify:\/\/shop_images\/gallery_3.png"
-          }
-        }
-      },
-      "block_order": [
-        "5be190fe-0cde-41ca-b782-a359d587c215",
-        "a04faa8d-a019-4196-8670-882cdb3f8e51",
-        "6dd551c6-629b-4bd2-a107-8e1355493bd0"
-      ],
       "settings": {
         "neg_heading": "Gallery"
       }
     },
-    "5b31206a-72f4-4a42-be07-1515763281a3": {
+    "c4140a39-1d4c-4de8-9de4-88c4e0200333": {
       "type": "product-multicoumn",
-      "blocks": {
-        "5a466511-169d-453e-9666-61a348c7ddce": {
-          "type": "block",
-          "settings": {
-            "PT_number": 1,
-            "pt_heading": "Send Your Brief",
-            "pt_para": "<p>After purchasing the task, fill out the requirements form to kickstart the project. Provide us with the necessary details, and we'll get started promptly.<\/p>"
-          }
-        },
-        "fcb7e963-cfe1-4960-8739-d036aeac7f8f": {
-          "type": "block",
-          "settings": {
-            "PT_number": 2,
-            "pt_heading": "Design Delivery",
-            "pt_para": "<p>Our skilled team designs and delivers the task's deliverables within the agreed-upon delivery date. You can expect timely and efficient service.<\/p>"
-          }
-        },
-        "3dd78fb9-131d-438a-b77f-a13b00843265": {
-          "type": "block",
-          "settings": {
-            "PT_number": 3,
-            "pt_heading": "Review & Approve",
-            "pt_para": "<p>Once the work is complete, review the deliverables. If everything meets your expectations, simply approve the project, and it's good to go!<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "5a466511-169d-453e-9666-61a348c7ddce",
-        "fcb7e963-cfe1-4960-8739-d036aeac7f8f",
-        "3dd78fb9-131d-438a-b77f-a13b00843265"
-      ],
       "settings": {
         "pm_heading": "How it works"
       }
     },
-    "ab2f8958-0a4a-485f-a0c8-380185d26fda": {
+    "cf15af33-4bb1-43df-a296-ef91aeed87bd": {
       "type": "ET-hour_pack",
       "blocks": {
-        "bcff5c65-66e7-42b8-914d-eeafecfdafc0": {
+        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1": {
           "type": "points",
           "settings": {
             "hp_lines": "Development & design work",
             "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
         },
-        "cb9eee72-743b-41f0-8af5-852a722d09df": {
+        "f2a2742e-37cc-4593-9629-0c35e58a3d7b": {
           "type": "points",
           "settings": {
             "hp_lines": "Fast turnaround",
             "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
         },
-        "56f28886-56c1-4830-bb5c-fc47b299c567": {
+        "5f646eef-4f0b-4d11-bdd6-04e8c138b967": {
           "type": "points",
           "settings": {
             "hp_lines": "Dedicated Experts",
             "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
         },
-        "d0c9a02e-9732-466a-a2ca-1e7afecc5661": {
+        "3f46b0c1-98d8-47f7-bdee-bf754980c115": {
           "type": "points",
           "settings": {
             "hp_lines": "Replenish as needed",
@@ -321,26 +140,24 @@
         }
       },
       "block_order": [
-        "bcff5c65-66e7-42b8-914d-eeafecfdafc0",
-        "cb9eee72-743b-41f0-8af5-852a722d09df",
-        "56f28886-56c1-4830-bb5c-fc47b299c567",
-        "d0c9a02e-9732-466a-a2ca-1e7afecc5661"
+        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1",
+        "f2a2742e-37cc-4593-9629-0c35e58a3d7b",
+        "5f646eef-4f0b-4d11-bdd6-04e8c138b967",
+        "3f46b0c1-98d8-47f7-bdee-bf754980c115"
       ],
       "settings": {
         "hp_heading": "Hour Packs",
         "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
         "hp_btn_txt": "Buy Hour Packs",
-        "hp_btn_url": "https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=rTPnwUaXYa4GrRKr-0"
+        "hp_btn_url": "shopify:\/\/products\/40-hours"
       }
     }
   },
   "order": [
     "main",
-    "9a5773ae-e045-48c1-8e32-8c5a0428b3f9",
-    "image-with-text",
-    "product-recommendations",
-    "0b2260a9-8b6a-4007-bc96-37f8447ac134",
-    "5b31206a-72f4-4a42-be07-1515763281a3",
-    "ab2f8958-0a4a-485f-a0c8-380185d26fda"
+    "168414448731360b9c",
+    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3",
+    "c4140a39-1d4c-4de8-9de4-88c4e0200333",
+    "cf15af33-4bb1-43df-a296-ef91aeed87bd"
   ]
 }

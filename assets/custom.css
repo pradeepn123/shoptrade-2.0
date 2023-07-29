@@ -13346,11 +13346,12 @@ html {
   border-top: unset;
   border-bottom: 1px solid #000;
 }
-.st-product-pg .product__info-container--sticky {
-  top: 11% !important;
-}
 .st-product-pg .product__info-wrapper {
   padding: 0 0 0 20px !important;
+}
+.st-product-pg .product__info-wrapper .st-product-sticky {
+  position: sticky;
+  top: 11%;
 }
 .st-product-pg .product__info-wrapper .product__info-container {
   border: 1px solid #000;
@@ -13547,6 +13548,10 @@ html {
 }
 .st-product-pg .grid__item:first-child {
   border-right: 1px solid #000;
+}
+.st-product-pg .grid__item .product__media-gallery {
+  position: unset;
+  top: unset;
 }
 .st-product-pg .grid__item .product__description {
   padding: 16px 0 67px 0;
