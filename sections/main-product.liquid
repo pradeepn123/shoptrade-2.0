@@ -1,5 +1,5 @@
 <section class="container">
-<div
+<div 
   id="MainProduct-{{ section.id }}"
   class="page-width-product section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
@@ -48,7 +48,7 @@
     >
   {%- endif -%}
 
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} st-product-pg">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
         id="MediaGallery-{{ section.id }}"
@@ -156,7 +156,7 @@
             data-shopify-model3d-id="{{ first_3d_model.id }}"
             data-shopify-title="{{ product.title | escape }}"
             data-shopify-xr-hidden
-          >
+          > 
             {% render 'icon-3d-model' %}
             {{ 'products.product.xr_button' | t }}
           </button>
@@ -301,6 +301,31 @@
           </slider-component>
         {%- endif -%}
       </media-gallery>
+      {%- if product.description != blank -%}
+        <div class="product__description rte quick-add-hidden">
+          {{ product.description }}
+        </div>
+      {%- endif -%}
+      <div class="Product_pack_main">
+        <div class="Product_pack_heading">
+          {% for item in product.metafields.custom.pack_details.value %}
+            <h2>{{ item.pack_main_heading }}</h2>
+          {% endfor %}
+       
+        </div>
+        <div class="Product_pack_details">
+          {% for item in product.metafields.custom.pack_details.value %}
+            <div class="Product_pd_main">
+              <div class="Product_pd_heading">
+                <h6>{{ item.package_heading }}</h6>
+              </div>
+              <div class="Product_pd_para">
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
     </div>
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div
@@ -315,7 +340,7 @@
               {% render block %}
             {%- when 'text' -%}
               <p
-                class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %} ST-product-pg-text"
                 {{ block.shopify_attributes }}
               >
                 {{- block.settings.text -}}
@@ -330,7 +355,7 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden ST-product-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
@@ -350,12 +375,10 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
-            {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class="product__description rte quick-add-hidden">
-                  {{ product.description }}
-                </div>
-              {%- endif -%}
+              {% assign metadata = product.metafields.custom.product_banner_info.value %}
+              <div class="product_banner_info">
+                <p> {{ metadata.product_banner_info }} </p>
+              </div>
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
@@ -492,8 +515,9 @@
                               checked
                             {% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                          <label class="ST-product-size" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
+                            <span class="checked-mark"> {% render 'product-right-mark' %} </span>
                           </label>
                         {%- endfor -%}
                       </fieldset>
@@ -543,7 +567,6 @@
                   </variant-selects>
                 {%- endif -%}
               {%- endunless -%}
-
               <noscript class="product-form__noscript-wrapper-{{ section.id }}">
                 <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                   <label class="form__label" for="Variants-{{ section.id }}">
@@ -603,7 +626,7 @@
                       disabled
                     >
                     <div class="product-form__buttons">
-                      <button
+                      {% comment %} <button
                         type="submit"
                         name="add"
                         class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
@@ -611,13 +634,13 @@
                           disabled
                         {% endif %}
                       >
-                        <span>
+                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
-                        </span>
+                        </span> 
                         <div class="loading-overlay__spinner hidden">
                           <svg
                             aria-hidden="true"
@@ -630,14 +653,28 @@
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
-                      </button>
+                      </button>{% endcomment %}
+                     <div class="start-project-btn {%- if block.settings.show_dynamic_checkout == false -%} startproject_btn  {% endif %}"> 
                       {%- if block.settings.show_dynamic_checkout -%}
                         {{ form | payment_button }}
+                      {%else %}
+                      {% if block.settings.btn_url_start %}
+                        <a href=" {{ block.settings.btn_url_start }} "> {{ block.settings.btn_start }} </a>
+                        {% style %}
+                          .start-project-btn{
+                            padding: 17px 0;
+                          } 
+                        {% endstyle %}
+                      {% endif %}
                       {%- endif -%}
+                    </div>
                     </div>
                   {%- endform -%}
                 </product-form>
-
+                {% assign metadata = product.metafields.custom.product_banner_info.value %}
+                <div class="product_payment_info">
+                  <span> {% render 'clock-icon' %} </span> <p>   {{ metadata.product_payment_info }} </p>
+                </div>
                 {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
                 {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -783,6 +820,18 @@
                     <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
                   {%- endif -%}
                 </product-recommendations>
+              {%- when 'question' -%}
+                {% if block.settings.question_text %}
+                  <div class="product_question">
+                     {{ block.settings.question_text }} 
+                  </div> 
+                {% endif %}
+              {% when 'Logo' %}
+                {% if  block.settings.shopify_logo %}
+                  <div class="ST-shopify-logo">
+                    <img src= "{{ block.settings.shopify_logo | img_url: 'master' }}" loading="lazy" alt="shopify-logo">
+                  </div>
+                {% endif %}
           {%- endcase -%}
         {%- endfor -%}
         <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -1165,6 +1214,14 @@
 {% schema %}
 {
   "name": "t:sections.main-product.name",
+  "settings":[
+    {
+      "type":"text",
+      "id": "product_heading",
+      "label": "packege heading",
+      "default":"Package details"
+    }
+  ],
   "tag": "section",
   "class": "section",
   "blocks": [
@@ -1252,6 +1309,16 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+        },
+        {
+          "type":"url",
+          "id":"btn_url_start",
+          "label": "Extra button link"
+        },
+        {
+          "type":"text",
+          "id":"btn_start",
+          "label":"Extra button text"
         }
       ]
     },
@@ -1797,6 +1864,30 @@
           "id": "enable_quick_add",
           "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "Logo",
+      "name": "Logo",
+      "limit": 2,
+      "settings": [
+        {
+          "type":"image_picker",
+          "id": "shopify_logo",
+          "label":"Add a logo"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "question",
+      "limit": 2,
+      "settings": [
+        {
+          "type":"richtext",
+          "id":"question_text",
+          "label":"Question button text"
         }
       ]
     }
