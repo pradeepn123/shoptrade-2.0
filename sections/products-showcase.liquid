@@ -1,0 +1,51 @@
+<section class="product-showcase__wrapper container">
+  {% if section.blocks != blank %}
+    <div class="ps__content-wrap">
+      {% for block in section.blocks %}
+        <div class="ps__block">
+          <div class="ps__title">{{ block.settings.custom__product.title }}</div>
+          <div class="ps__description">
+            {{ block.settings.custom__product.description }}
+          </div>
+          {% assign hourly_charged = block.settings.custom__product.title %}
+          <div class="ps__price">
+            {{ block.settings.custom__product.price | divided_by: hourly_charged | money_without_trailing_zeros -}}
+            <span>/hour</span>
+          </div>
+          <div class="ps__features">{{ block.settings.product__features }}</div>
+          <div class="ps__button">Buy {{ block.settings.custom__product.title }}</div>
+          
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Products Showcase",
+  "blocks": [
+    {
+      "name": "Add Product",
+      "type": "ProductType",
+      "settings": [
+        {
+          "type": "product",
+          "id": "custom__product",
+          "label": "Add Product"
+        },
+        {
+          "type": "richtext",
+          "id": "product__features",
+          "label": "Add Features"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Showcase"
+    }
+  ]
+}
+{% endschema %}
