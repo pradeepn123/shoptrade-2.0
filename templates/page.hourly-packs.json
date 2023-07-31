@@ -6,9 +6,51 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "020c5e48-d4dd-49fa-a228-277be27e5da5": {
+      "type": "headline-banner",
+      "settings": {
+        "banner_title": "Add a title",
+        "banner_description": "<p>Add a description<\/p>"
+      }
+    },
+    "58d4cc53-9645-4bc0-bd59-a837de6fc3f1": {
+      "type": "products-showcase",
+      "blocks": {
+        "0e7e727f-8f56-4fdc-bf64-df4cd26f3888": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "10-hours",
+            "product__features": "<ul><li>10-hour credit balance<\/li><li>7 Days validity<\/li><li>Basic development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul><p><\/p>"
+          }
+        },
+        "07a699d0-b52a-4688-bc59-e187c81d4d9e": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "25-hours",
+            "product__features": "<ul><li>25-hour credit balance<\/li><li>14 Days validity<\/li><li>Intermediate development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+          }
+        },
+        "8c93da82-7ab3-4c18-9613-4038e7a4bbfa": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "40-hours",
+            "product__features": "<ul><li>50-hour credit balance<\/li><li>30 Days validity<\/li><li>Complex development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "0e7e727f-8f56-4fdc-bf64-df4cd26f3888",
+        "07a699d0-b52a-4688-bc59-e187c81d4d9e",
+        "8c93da82-7ab3-4c18-9613-4038e7a4bbfa"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "020c5e48-d4dd-49fa-a228-277be27e5da5",
+    "58d4cc53-9645-4bc0-bd59-a837de6fc3f1"
   ]
 }
