@@ -796,3 +796,23 @@ input::-moz-placeholder {
 #disqus_thread {
     padding: 20px;
 }
+.breadcrumb{
+    a{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #999999;
+        text-decoration: none;
+    }
+    span{
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}

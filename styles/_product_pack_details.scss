@@ -1,0 +1,134 @@
+.Product_pack_main {
+    
+    padding: 50px 52px 55px 0;
+    @media (max-width:1200px) {
+        padding: 30px 32px 35px 0;
+    }
+    @media(max-width:1200px){
+        padding: 28px 0 43px 0;
+    }
+    .Product_pack_heading {
+        padding-bottom: 20px;
+        @media(max-width:520px){
+            padding-bottom: 15px;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 43px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+
+            @media(max-width:1200px) {
+                font-size: 28px;
+                line-height: 37px;
+            }
+        }
+    }
+
+    .Product_pack_details {
+        border: 1px solid #999999;
+        border-radius: 8px;
+        // max-width: 65%;
+
+        // @media(max-width:991px) {
+        //     max-width: 100%;
+        // }
+
+        @media(max-width:1200px) {
+            border: unset;
+            border-radius: unset;
+        }
+
+        .Product_pd_main {
+            background: #fff;
+            display: flex;
+
+            @media(max-width:1200px) {
+                flex-direction: column;
+            }
+
+            &:nth-child(odd) {
+                background: #F5F5F5;
+                @media(max-width:1200px) {
+                    background: unset;
+                }
+            }
+            &:first-child{
+                border-radius: 8px 8px 0 0;
+                @media(max-width:1200px) {
+                    border-radius: unset;
+                }
+            }
+            &:last-child{
+                border-radius: 0 0  8px 8px;
+                @media(max-width:1200px) {
+                    border-radius: unset;
+                }
+            }
+           
+            .Product_pd_heading {
+                border-right: 1px solid #999999;
+                padding: 20px 0 20px 30px;
+                width: 25%;
+                @media(min-width:768px) and (max-width:1200px){
+                    width: 35%;
+                }
+                @media(max-width:1200px) {
+                    padding: 10px 0 5px 0;
+                    border-right: unset;
+                    width: unset;
+                }
+
+                h6 {
+                    color: #000;
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    @media(max-width:1200px) {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+
+            .Product_pd_para {
+                padding: 20px 0 20px 30px;
+                width: 75%;
+                @media(min-width:768px) and (max-width:1200px){
+                    width: 65%;
+                }
+                @media(max-width:1200px) {
+                    padding: 10px 0;
+                    width: unset;
+
+                    &:nth-child(even) {
+                        background: #F5F5F5;
+                    }
+                }
+
+                p {
+                    color: #000;
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    @media(max-width:1200px) {
+                        font-size: 16px;
+                        line-height: 21px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

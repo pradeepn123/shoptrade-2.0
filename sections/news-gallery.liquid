@@ -1,0 +1,83 @@
+<section class="News_gallary">
+  <div class="container">
+    <div class="neg_contain">
+      <div class="neg_heading">
+        <h3>{{ section.settings.neg_heading }}</h3>
+      </div>
+      <div class="neg_contain__slider-arrow">
+        <div class="slider-arrow" id="slidingArrowProduct">
+          <div class="js-arrow-left-neg arrow-icon">
+            {% render 'icon-left-arrow' %}
+          </div>
+          <div class="js-arrow-right-neg arrow-icon">
+            {% render 'icon-right-arrow' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container neg_slider" id="neg_slider">
+    <div class="swiper-wrapper neg_sliding_images">
+        {% for item in product.metafields.custom.gallery_image.value %}
+            {% if item %}
+                <div class="swiper-slide neg_slide_img">
+                    <img src="{{ item | img_url: 'master' }}" loading="lazy" alt="sliding-img">
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "News gallary",
+  "settings": [
+    {
+      "id": "neg_heading",
+      "label": "Heading",
+      "type": "text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "News gallary"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+// product page slider
+document.addEventListener('DOMContentLoaded', () => {
+  let neg_slider = new Swiper('#neg_slider', {
+    speed:1000,
+    autoHeight: false,
+    slidesPerView: 3, 
+    spaceBetween: 19,
+      navigation: {
+      nextEl: '.js-arrow-right-neg',
+      prevEl: '.js-arrow-left-neg',
+    },
+    breakpoints: {
+      991: {
+        slidesPerView: 2,
+      },
+      475: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    }
+  });
+  let slidingArrowP = document.getElementById("slidingArrowProduct")
+  function toggleNextBtn() {
+    if (neg_slider.isEnd && neg_slider.slides.length <= neg_slider.params.slidesPerView) {
+      slidingArrowP.style.display = 'none';
+    } else {
+     slidingArrowP.style.display = 'flex';
+    }
+  }
+  toggleNextBtn();
+  window.addEventListener('resize', toggleNextBtn);
+});
+</script>
