@@ -1,4 +1,11 @@
-<section class="container">
+<section class="ST-product-page-main">
+  <div class="container">
+  {% render 'breadcrumps' %}
+  </div>
+  <div class="only-mobile_banner_image"> 
+      <img src= "{{ product | img_url : 'master' }}" loading="lazy" alt="product-image">
+  </div>
+<div class="container">
 <div 
   id="MainProduct-{{ section.id }}"
   class="page-width-product section-{{ section.id }}-padding"
@@ -25,6 +32,11 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+    @media screen and (max-width:767px){
+      .section-{{ section.id }}-padding {
+        padding-top: unset;
+      }
+    }
   {%- endstyle -%}
 
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -47,7 +59,6 @@
       onload="this.media='all'"
     >
   {%- endif -%}
-
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} st-product-pg">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       <media-gallery
@@ -304,7 +315,8 @@
       {%- if product.description != blank -%}
         <div class="product__description rte quick-add-hidden">
           {{ product.description }}
-        </div>
+          <div class="ST-product-P-border"> i </div>
+        </div>    
       {%- endif -%}
       <div class="Product_pack_main">
         <div class="Product_pack_heading">
@@ -438,8 +450,7 @@
               <modal-opener
                 class="product-popup-modal__opener no-js-hidden quick-add-hidden"
                 data-modal="#PopupModal-{{ block.id }}"
-                {{ block.shopify_attributes }}
-              >
+                {{ block.shopify_attributes }}>
                 <button
                   id="ProductPopup-{{ block.id }}"
                   class="product-popup-modal__button link"
@@ -658,6 +669,7 @@
                       </button>{% endcomment %}
                      <div class="start-project-btn {%- if block.settings.show_dynamic_checkout == false -%} startproject_btn  {% endif %}"> 
                       {%- if block.settings.show_dynamic_checkout -%}
+                        {% comment %} {{ form | payment_button }} {% endcomment %}
                         {{ form | payment_button }}
                       {%else %}
                       {% if block.settings.btn_url_start %}
@@ -855,8 +867,7 @@
             class="product__media-gallery"
           {% endif %}
           aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
-          data-desktop-layout="{{ section.settings.gallery_layout }}"
-        >
+          data-desktop-layout="{{ section.settings.gallery_layout }}" >
           <div id="GalleryStatus-{{ section.id }}-right" class="visually-hidden" role="status"></div>
           <slider-component id="GalleryViewer-{{ section.id }}-right" class="slider-mobile-gutter">
             <ul
@@ -1214,6 +1225,7 @@
       ]
     }
   </script>
+</div>
 </div>
 </section>
 
@@ -2031,3 +2043,12 @@
   ]
 }
 {% endschema %}
+
+<script>
+  {% comment %} document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const button = document.querySelector(".product-form__buttons button");
+      button.textContent = "Start this project";
+    }, 1200);
+  }); {% endcomment %}
+</script>

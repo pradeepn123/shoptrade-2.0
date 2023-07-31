@@ -9,6 +9,9 @@
     }
     .Product_pack_heading {
         padding-bottom: 20px;
+        @media(max-width:520px){
+            padding-bottom: 15px;
+        }
         h2 {
             font-size: 32px;
             font-weight: 600;
