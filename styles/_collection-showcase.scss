@@ -1,0 +1,42 @@
+.collection-showcase__wrapper{
+
+    .collection-title__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .CS-title{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .CS-description p{
+        margin-top: 12px;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+    }
+  
+    .CS-button{
+        font-weight: 600;
+        font-size: 15px;
+        color: #000;
+        background: #fff;
+        padding: 17px 25px;
+        border: 1px solid #000;
+        border-radius: 35px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .CS-collection__wrapper{
+
+        .ET-delivery-info{     
+            justify-content: end;
+            padding-right: 20px;
+        }
+        
+        
+    }
+}
