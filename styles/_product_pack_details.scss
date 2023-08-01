@@ -1,5 +1,4 @@
 .Product_pack_main {
-    
     padding: 50px 52px 55px 0;
     @media (max-width:1200px) {
         padding: 30px 32px 35px 0;
@@ -123,9 +122,12 @@
 
                     @media(max-width:1200px) {
                         font-size: 16px;
-                        line-height: 21px;
+                        line-height: 24px;
                         padding-left: 10px;
                         padding-right: 10px;
+                    }
+                    @media(max-width:520px){
+                        line-height: 22px;
                     }
                 }
             }
