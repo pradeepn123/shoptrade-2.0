@@ -1,6 +1,12 @@
 .News_gallary{
     background: #fff;
     padding-top: 75px;
+    @media(max-width:1200px){
+        padding-top: 50px ;
+    }
+    @media(max-width:520px){
+        padding-top: 32px;
+    }
     .neg_contain{
         display: flex;
         justify-content: space-between;
@@ -41,12 +47,6 @@
    
       @media(max-width:520px){
         padding-bottom: 65px;
-      }
-      @media screen and (max-width: 520px) {
-        overflow: visible !important;
-      }
-      @media screen and (min-width: 991px){
-        overflow: visible !important;
       }
         .neg_sliding_images{
             .neg_slide_img{

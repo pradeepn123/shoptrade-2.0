@@ -20,6 +20,13 @@
         text-decoration: none;
         &:hover{
             border-color: #FF7121;
+            .ET-product-text{
+                background-color: #FFF3EC;
+                border-radius: 0 0 8px 8px;
+            }
+            .ET-product-img{
+                background-color: #FFF3EC;
+            }
         }
         .ET-product-img{  
             img{
@@ -29,10 +36,10 @@
             }
         }
         .ET-product-text{
-            padding: 13px 0 20px 0;
-            margin-left: 20px;
+            padding: 13px 0 20px 20px;
+            
             @media(max-width:520px){
-                margin-left: 10px;
+                padding-left: 10px;
             }
             .ET-product-title{
                 max-width: fit-content; 
@@ -86,7 +93,7 @@
     width: 0;
     height: 2px;
     background: #FF7121;
-    transition: width .4s;
+    transition: width .4s; 
 }
 .ET-product:hover .ET-product-title::after{
                 width: 100%;

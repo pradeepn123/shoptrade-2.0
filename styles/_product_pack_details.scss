@@ -66,14 +66,17 @@
                     border-radius: unset;
                 }
             }
+            &:not(:first-child){
+                @media(max-width:1200px){
+                    padding-top: 10px;
+                }
+            }
            
             .Product_pd_heading {
                 border-right: 1px solid #999999;
                 padding: 20px 0 20px 30px;
                 width: 25%;
-                @media(min-width:768px) and (max-width:1200px){
-                    width: 35%;
-                }
+               
                 @media(max-width:1200px) {
                     padding: 10px 0 5px 0;
                     border-right: unset;
