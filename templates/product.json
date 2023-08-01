@@ -6,8 +6,8 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "Expert Task",
+            "text_style": "body"
           }
         },
         "title": {
@@ -148,6 +148,9 @@
       "settings": {
         "hp_heading": "Hour Packs",
         "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
+        "show_ser_btn": false,
+        "ser_url": "",
+        "ser_text": "View Services",
         "hp_btn_txt": "Buy Hour Packs",
         "hp_btn_url": "shopify:\/\/products\/40-hours"
       }

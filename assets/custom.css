@@ -4914,19 +4914,17 @@ input::-moz-placeholder {
 
 @media (min-width: 992px) {
   .page_banner_shadow::after {
-    top: unset;
+    top: 105%;
     left: unset;
     right: unset;
     bottom: unset;
     transform: unset;
     width: 100%;
     height: 100%;
-    background: #FFC8A9;
   }
 }
 @media (max-width: 991px) {
   .page_banner_shadow::after {
-    background: #FFC8A9;
     width: 100%;
     top: 32%;
     right: unset;
@@ -12854,6 +12852,7 @@ html {
 }
 .ET-product-container .ET-product:hover .ET-product-img {
   background-color: #FFF3EC;
+  border-radius: 9px 9px 0 0;
 }
 .ET-product-container .ET-product .ET-product-img img {
   width: 100%;
@@ -12942,20 +12941,13 @@ html {
 .hp_content_main::before {
   content: "";
   position: absolute;
-  width: 394px;
-  height: 394px;
+  width: 197px;
+  height: 194px;
   right: 0;
   top: -10%;
-  background: #FF7121;
   filter: blur(94.5px);
   transform: translate(50%, -50%);
   z-index: -1;
-}
-@media (max-width: 520px) {
-  .hp_content_main::before {
-    width: 194px;
-    height: 194px;
-  }
 }
 .hp_content_main .Hour_contain {
   border: 1px solid #000000;
@@ -12973,24 +12965,17 @@ html {
 .hp_content_main .Hour_contain::after {
   content: "";
   position: absolute;
-  width: 394px;
-  height: 394px;
-  left: -37%;
-  top: 100%;
-  background: #FF7121;
-  filter: blur(94.5px);
+  width: 277px;
+  height: 194px;
+  left: -30%;
+  top: 135%;
+  filter: blur(62.5px);
   transform: translate(50%, -50%);
   z-index: -1;
 }
 @media (max-width: 767px) {
   .hp_content_main .Hour_contain::after {
     left: -100%;
-  }
-}
-@media (max-width: 520px) {
-  .hp_content_main .Hour_contain::after {
-    width: 194px;
-    height: 194px;
   }
 }
 @media (max-width: 767px) {
@@ -13868,7 +13853,6 @@ html {
   height: 130px;
   right: 116px;
   top: -150px;
-  background: #FF7121;
   filter: blur(37.5px);
   z-index: -1;
 }

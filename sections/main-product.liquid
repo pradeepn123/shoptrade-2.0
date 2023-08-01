@@ -25,7 +25,12 @@
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-
+    .ST-product-page-main .shopify-logo::before{
+      background: {{ section.settings.bg-linear-section }};
+    }
+    .ST-product-page-main .product__info-wrapper::before{
+      background: {{ section.settings.bg-linear-section }};
+    }
     @media screen and (min-width: 750px) {
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
@@ -2038,7 +2043,14 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "bg-linear-section",
+      "label": "Section bg color",
+      "default": "#FF7121"
     }
+        
   ]
 }
 {% endschema %}
