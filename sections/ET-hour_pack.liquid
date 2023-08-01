@@ -14,6 +14,13 @@
         <div class="hp_para">
           {{ section.settings.hp_para }}
         </div>
+        {% if section.settings.show_ser_btn %}
+          <div class="hp_service_btn">   
+          {% if  section.settings.ser_url %}              
+              <a src="{{ section.settings.ser_url }}"> {{ section.settings.ser_text }} </a>
+            {% endif %}
+          </div>
+        {% endif %}
         <div class="hp_button">
           {% if section.settings.hp_btn_url %}
             <a href="{{ section.settings.hp_btn_url }}"> {{ section.settings.hp_btn_txt }}</a>
@@ -49,6 +56,23 @@
       "id": "hp_para",
       "label": "Para"
     },
+    {
+      "type": "checkbox",
+      "id": "show_ser_btn",
+      "label": "Show service button",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "ser_url",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "ser_text",
+      "label": "Button text",
+      "default": "View Services"
+    },        
     {
       "type": "text",
       "id": "hp_btn_txt",
