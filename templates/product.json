@@ -15,11 +15,9 @@
           "settings": {
           }
         },
-        "caption": {
-          "type": "text",
+        "product-rating": {
+          "type": "rating",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -35,13 +33,16 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "btn_url_start": "",
+            "btn_start": ""
           }
         },
         "description": {
@@ -49,174 +50,114 @@
           "settings": {
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "00fac909-e934-48fb-a652-e2a03f390350": {
+          "type": "question",
+          "settings": {
+            "question_text": "<p>Have a question? <a href=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\" title=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\">Ask us<\/a><\/p>"
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "caption",
+        "product-rating",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "share",
+        "00fac909-e934-48fb-a652-e2a03f390350"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
-        "media_size": "large",
-        "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        "media_position": "left",
+        "gallery_layout": "thumbnail",
+        "media_size": "medium",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 20,
+        "padding_bottom": 0
       }
     },
-    "image-with-text": {
-      "type": "image-with-text",
+    "168414448731360b9c": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3": {
+      "type": "news-gallery",
+      "settings": {
+        "neg_heading": "Gallery"
+      }
+    },
+    "c4140a39-1d4c-4de8-9de4-88c4e0200333": {
+      "type": "product-multicoumn",
+      "settings": {
+        "pm_heading": "How it works"
+      }
+    },
+    "cf15af33-4bb1-43df-a296-ef91aeed87bd": {
+      "type": "ET-hour_pack",
       "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
+        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1": {
+          "type": "points",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "hp_lines": "Development & design work",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
         },
-        "image-with-text-1": {
-          "type": "text",
+        "f2a2742e-37cc-4593-9629-0c35e58a3d7b": {
+          "type": "points",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "hp_lines": "Fast turnaround",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "5f646eef-4f0b-4d11-bdd6-04e8c138b967": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Dedicated Experts",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "3f46b0c1-98d8-47f7-bdee-bf754980c115": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Replenish as needed",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
         }
       },
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1",
+        "f2a2742e-37cc-4593-9629-0c35e58a3d7b",
+        "5f646eef-4f0b-4d11-bdd6-04e8c138b967",
+        "3f46b0c1-98d8-47f7-bdee-bf754980c115"
       ],
       "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "hp_heading": "Hour Packs",
+        "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
+        "hp_btn_txt": "Buy Hour Packs",
+        "hp_btn_url": "shopify:\/\/products\/40-hours"
       }
     }
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
-    "product-recommendations"
+    "168414448731360b9c",
+    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3",
+    "c4140a39-1d4c-4de8-9de4-88c4e0200333",
+    "cf15af33-4bb1-43df-a296-ef91aeed87bd"
   ]
 }

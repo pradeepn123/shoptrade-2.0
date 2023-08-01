@@ -2,6 +2,7 @@
 <div class="container">
     <div class="ET-product-container">
     {% for item in collection.products %}
+        {% if  item.metafields.custom.delivery_imagies.value.delivery_img  or  item.featured_image %}
         <a href="{{ item.url }}" class="ET-product">
             <div class="ET-product-img">
                 {% if  item.metafields.custom.delivery_imagies.value.delivery_img %}
@@ -28,6 +29,7 @@
                 </div>
             </div>   
         </a>
+     {% endif %}
         {% endfor %}
     </div>
 </div>
