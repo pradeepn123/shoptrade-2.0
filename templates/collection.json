@@ -75,13 +75,29 @@
             "hp_lines": "Replenish as needed",
             "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
+        },
+        "51d9f89b-edf0-42e0-a1d3-dfff49b04826": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "point 5",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "fc926d68-98e4-4548-932f-4c9a5284700c": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "point 6",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
         }
       },
       "block_order": [
         "699adde5-81d2-4a66-b699-c5d208997a2d",
         "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8",
         "3cd3150a-b24f-4b92-9ba2-9401ac532c17",
-        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795"
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795",
+        "51d9f89b-edf0-42e0-a1d3-dfff49b04826",
+        "fc926d68-98e4-4548-932f-4c9a5284700c"
       ],
       "settings": {
         "hp_heading": "Hour Packs",
