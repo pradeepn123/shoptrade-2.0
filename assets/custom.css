@@ -12831,6 +12831,7 @@ html {
   font-size: 18px;
   font-weight: 400;
   color: #000;
+  line-height: 24px;
 }
 .collection-showcase__wrapper .CS-button {
   font-weight: 600;
@@ -12847,6 +12848,9 @@ html {
   .collection-showcase__wrapper .CS-mobile {
     display: none;
   }
+  .collection-showcase__wrapper .CS-description p {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .collection-showcase__wrapper .CS-desktop {
@@ -12855,6 +12859,9 @@ html {
   .collection-showcase__wrapper .CS-title {
     font-size: 28px;
     margin-bottom: 8px;
+  }
+  .collection-showcase__wrapper .CS-description p {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -12870,9 +12877,19 @@ html {
     padding: 14px 18px;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1280px) {
+  .collection-showcase__wrapper .CS-description {
+    width: 75%;
+  }
+}
 .collection-showcase__wrapper .CS-collection__wrapper .ET-delivery-info {
   justify-content: end;
   padding-right: 20px;
+}
+@media screen and (min-width: 1820px) {
+  .collection-showcase__wrapper .CS-collection__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
 }
 
 .ET-product-container {
