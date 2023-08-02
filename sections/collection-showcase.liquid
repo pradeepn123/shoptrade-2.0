@@ -17,7 +17,7 @@
         </div>
       {% endif %}
     </div>
-   
+
     {% if section.settings.button_label != blank %}
       <a href="{{ section.settings.button_url }}">
         <button type="button" class="CS-button">{{ section.settings.button_label }}</button>
@@ -33,35 +33,36 @@
 
   <div class="ET-product-container CS-collection__wrapper">
     {% for product in collections.products %}
-        <a href="{{ product.url }}" class="ET-product">
-            <div class="ET-product-img">
-                {% if product.metafields.custom.delivery_imagies.value.delivery_img %}
-                    <img src= "{{ product.metafields.custom.delivery_imagies.value.delivery_img | img_url: 'master'}}"  loading="lazy" alt = "product image">
-                {% else %} 
-                    <img src= "{{ product.featured_image | img_url: 'master'}}"  loading="lazy" alt = "product image">
-                {% endif %}
-            </div>
-            <div class="ET-product-text">
-                <div class="ET-product-title">
-                {% if product.metafields.custom.delivery_imagies.value.delivery_heading %}
-                    <h4>  {{ product.metafields.custom.delivery_imagies.value.delivery_heading }} </h4>
-                {% else %}
-                    <h4> {{ product.title }} </h4>
-                {% endif %}
-                </div>
-                <div class="ET-delivery-info CS-end">
-                    <span>
-                        <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/clock.png?v=1690262888" loading="lazy" alt="clock-icon">
-                    </span>
-                    <span class="delivery_duration">
-                        {{ product.metafields.custom.delivery.value }}
-                    </span>
-                </div>
-            </div>   
-        </a>
+      <a href="{{ product.url }}" class="ET-product">
+        <div class="ET-product-img">
+          {% if product.metafields.custom.delivery_imagies.value.delivery_img %}
+            <img src="{{ product.metafields.custom.delivery_imagies.value.delivery_img | img_url: 'master'}}" loading="lazy" alt="product image">
+          {% else %}
+            <img src="{{ product.featured_image | img_url: 'master'}}" loading="lazy" alt="product image">
+          {% endif %}
+        </div>
+        <div class="ET-product-text">
+          <div class="ET-product-title">
+            {% if product.metafields.custom.delivery_imagies.value.delivery_heading %}
+              <h4>{{ product.metafields.custom.delivery_imagies.value.delivery_heading }}</h4>
+            {% else %}
+              <h4>{{ product.title }}</h4>
+            {% endif %}
+          </div>
+          <div class="ET-delivery-info CS-end">
+            <span>
+              <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/clock.png?v=1690262888" loading="lazy" alt="clock-icon">
+            </span>
+            <span class="delivery_duration">
+              {{ product.metafields.custom.delivery.value }}
+            </span>
+          </div>
+        </div>
+      </a>
     {% endfor %}
   </div>
 </section>
+
 
 
 
