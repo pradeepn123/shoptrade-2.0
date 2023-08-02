@@ -57,6 +57,9 @@
             background: #fff;
             border-radius: 8px 0 0 8px;
             border-right: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             @media(max-width:1024px) {
                 padding: 46px 20px 46px 30px;
@@ -121,10 +124,6 @@
                         max-width: unset;
                     }
 
-                    @media(max-width:520px) {
-                        padding: 6px 0 14px 0;
-                    }
-
                     p {
                         font-size: 18px;
                         font-weight: 400;
@@ -140,15 +139,37 @@
                         }
                     }
                 }
-                .hp_service_btn{
-                    padding-bottom: 20px;
-                    a{
+                .hp_service_btn{   
+                    max-width: fit-content;
+                    background-color: #3A4ED4;
+                    padding: 11px 77px;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    border: 1px solid #3A4ED4;
+                    transition: all 0.3s linear;
+                    margin-top: 20px;
+                    &:hover{
+                        transition: all 0.3s linear;
+                        background-color: #fff;
+                    }
+                    &:hover a{
+                        transition: all 0.3s linear;
                         color: #3A4ED4;
+                    }
+                    @media(max-width:520px) {
+                        max-width: 100%;
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                    a {
                         font-size: 16px;
                         font-weight: 600;
                         line-height: 16px;
                         letter-spacing: -0.03em;
-                        text-align: center;
+                        text-align: left;
+                        margin: 0;
+                        color: #fff;
+                        text-decoration: none;
                     }
                 }
                 .hp_button {
@@ -191,6 +212,7 @@
             width: 50%;
             padding-top: 38px;
             padding-left: 73px;
+            padding-bottom: 45px;
             background: #fff;
             border-radius: 8px;
 

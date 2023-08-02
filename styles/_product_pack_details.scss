@@ -75,7 +75,7 @@
             .Product_pd_heading {
                 border-right: 1px solid #999999;
                 padding: 20px 0 20px 30px;
-                width: 25%;
+                width: 35%;
                
                 @media(max-width:1200px) {
                     padding: 10px 0 5px 0;
@@ -95,13 +95,14 @@
                     @media(max-width:1200px) {
                         font-size: 16px;
                         line-height: 21px;
+                        font-weight: 600;
                     }
                 }
             }
 
             .Product_pd_para {
                 padding: 20px 0 20px 30px;
-                width: 75%;
+                width: 65%;
                 @media(min-width:768px) and (max-width:1200px){
                     width: 65%;
                 }
@@ -125,12 +126,8 @@
 
                     @media(max-width:1200px) {
                         font-size: 16px;
-                        line-height: 24px;
                         padding-left: 10px;
                         padding-right: 10px;
-                    }
-                    @media(max-width:520px){
-                        line-height: 22px;
                     }
                 }
             }

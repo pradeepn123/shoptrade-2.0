@@ -22,16 +22,16 @@
         <div class="hp_para">
           {{ section.settings.hp_para }}
         </div>
-        {% if  section.settings.ser_url %}              
-          <div class="hp_service_btn">   
-              <a src="{{ section.settings.ser_url }}"> {{ section.settings.ser_text }} </a>
-            </div>
-          {% endif %}
         <div class="hp_button">
           {% if section.settings.hp_btn_url %}
             <a href="{{ section.settings.hp_btn_url }}"> {{ section.settings.hp_btn_txt }}</a>
           {% endif %}
         </div>
+        {% if  section.settings.ser_url %}              
+        <div class="hp_service_btn">   
+            <a href="{{ section.settings.ser_url }}"> {{ section.settings.ser_text }} </a>
+        </div>
+        {% endif %}
       </div>
       </div>
       <div class="hp_points">
@@ -65,12 +65,12 @@
     {
       "type": "url",
       "id": "ser_url",
-      "label": "Button link"
+      "label": "secvices Button link"
     },
     {
       "type": "text",
       "id": "ser_text",
-      "label": "Button text",
+      "label": "secvices Button text",
       "default": "View Services"
     },        
     {
