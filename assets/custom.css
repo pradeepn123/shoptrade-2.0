@@ -715,6 +715,8 @@ input::-moz-placeholder {
 }
 
 .containermain_breadcrumb_nopad .breadcrumbs-list {
+  padding: 0;
+  margin: 0;
   display: flex;
   list-style-type: none;
 }
@@ -13848,6 +13850,9 @@ html {
   display: flex;
   padding-right: 20px;
 }
+.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons {
+  cursor: pointer;
+}
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn {
   background: #3A4ED4;
   border-radius: 39px;
@@ -13859,7 +13864,6 @@ html {
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn:hover {
   filter: brightness(0.9);
-  background: #fff;
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button {
   width: 100%;
@@ -13874,9 +13878,6 @@ html {
   letter-spacing: -0.03em;
   position: relative;
   color: #fff;
-}
-.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button button:hover {
-  color: #3A4ED4;
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button__button {
   width: 100%;
@@ -13919,8 +13920,10 @@ html {
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question {
   text-align: center;
-  position: relative;
   padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question p {
   color: #999999;
@@ -13930,6 +13933,7 @@ html {
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
+  padding-right: 5px;
 }
 @media (max-width: 520px) {
   .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question p {
@@ -13937,12 +13941,18 @@ html {
     line-height: 21px;
   }
 }
-.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question p a {
+.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question span {
   color: #FF7121;
   text-decoration: underline #FF7121;
   transition: all 0.3s linear;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
 }
-.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question p a:hover {
+.ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_question span:hover {
   text-decoration: none;
   transition: all 0.3s linear;
 }

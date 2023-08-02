@@ -581,6 +581,11 @@ $("#letstalk-btn-sitemap, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on
   $("#contact-btn-details").trigger('click');
 })
 
+// product page contact pop up open
+$("#opentContactUs, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
+  $("#contact-btn-details").trigger('click');
+})
+
 
 
 
