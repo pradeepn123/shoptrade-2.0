@@ -12844,6 +12844,10 @@ html {
   text-align: center;
   cursor: pointer;
 }
+.collection-showcase__wrapper .CS-button:hover {
+  background-color: #3a4ed4;
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
   .collection-showcase__wrapper .CS-mobile {
     display: none;

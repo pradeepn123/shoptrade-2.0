@@ -29,6 +29,11 @@
         border-radius: 35px;
         text-align: center;
         cursor: pointer;
+
+        &:hover{
+            background-color: #3a4ed4;
+            color: #fff;
+        }
     }
 
     @media screen and (min-width: 768px){
