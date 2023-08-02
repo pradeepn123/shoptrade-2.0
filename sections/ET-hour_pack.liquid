@@ -1,3 +1,11 @@
+{% style %}
+  .hp_content_main::before {
+    background: {{ section.settings.bg-linear-color }};
+  }
+  .Hour_contain::after {
+    background: {{ section.settings.bg-linear-color }};
+  }
+{% endstyle %}
 <div class="hp_content_main">
   <div class="container">
     <div class="Hour_contain">
@@ -14,13 +22,11 @@
         <div class="hp_para">
           {{ section.settings.hp_para }}
         </div>
-        {% if section.settings.show_ser_btn %}
+        {% if  section.settings.ser_url %}              
           <div class="hp_service_btn">   
-          {% if  section.settings.ser_url %}              
               <a src="{{ section.settings.ser_url }}"> {{ section.settings.ser_text }} </a>
-            {% endif %}
-          </div>
-        {% endif %}
+            </div>
+          {% endif %}
         <div class="hp_button">
           {% if section.settings.hp_btn_url %}
             <a href="{{ section.settings.hp_btn_url }}"> {{ section.settings.hp_btn_txt }}</a>
@@ -57,12 +63,6 @@
       "label": "Para"
     },
     {
-      "type": "checkbox",
-      "id": "show_ser_btn",
-      "label": "Show service button",
-      "default": false
-    },
-    {
       "type": "url",
       "id": "ser_url",
       "label": "Button link"
@@ -82,7 +82,13 @@
       "type": "url",
       "id": "hp_btn_url",
       "label": "Button link"
-    }
+    },
+    {
+      "type": "color",
+      "id": "bg-linear-color",
+      "label": "Linear color",
+      "default": "#FF7121"
+    }    
   ],
   "blocks": [
     {
