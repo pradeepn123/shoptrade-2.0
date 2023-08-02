@@ -12,17 +12,24 @@
         </h3>
       {% endif %}
       {% if section.settings.description != blank %}
-        <div class="CS-description">
+        <div class="CS-description CS-desktop">
           {{ section.settings.description }}
         </div>
       {% endif %}
     </div>
+   
     {% if section.settings.button_label != blank %}
       <a href="{{ section.settings.button_url }}">
         <button type="button" class="CS-button">{{ section.settings.button_label }}</button>
       </a>
     {% endif %}
   </div>
+
+  {% if section.settings.description != blank %}
+    <div class="CS-description CS-mobile">
+      {{ section.settings.description }}
+    </div>
+  {% endif %}
 
   <div class="ET-product-container CS-collection__wrapper">
     {% for product in collections.products %}
