@@ -16,6 +16,7 @@
         font-size: 18px;
         font-weight: 400;
         color: #000;
+        line-height: 24px;
     }
   
     .CS-button{
@@ -28,11 +29,19 @@
         border-radius: 35px;
         text-align: center;
         cursor: pointer;
+
+        &:hover{
+            background-color: #3a4ed4;
+            color: #fff;
+        }
     }
 
     @media screen and (min-width: 768px){
         .CS-mobile{
             display: none;
+        }
+        .CS-description p {
+            margin-top: 20px;
         }
     }
     @media screen and (max-width:767px) {
@@ -43,6 +52,10 @@
             font-size: 28px;
             margin-bottom: 8px;
         }
+        .CS-description p{
+            font-size: 16px;
+        }
+
     }
     @media screen and (max-width: 350px){
         .CS-title{
@@ -59,13 +72,21 @@
         }
     }
 
+    @media screen and (min-width: 767px) and (max-width:1280px){
+        .CS-description{
+            width: 75%;
+        }
+
+    }
     .CS-collection__wrapper{
 
         .ET-delivery-info{     
             justify-content: end;
             padding-right: 20px;
+        }  
+
+        @media screen and (min-width: 1820px){
+            grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
         }
-        
-        
     }
 }
