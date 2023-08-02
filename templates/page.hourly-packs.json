@@ -8,11 +8,16 @@
         "padding_bottom": 28
       }
     },
-    "020c5e48-d4dd-49fa-a228-277be27e5da5": {
-      "type": "headline-banner",
+    "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87": {
+      "type": "about-banner",
       "settings": {
-        "banner_title": "Hour Packs",
-        "banner_description": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>"
+        "heading": "Hour Packs",
+        "font_size_desk": 52,
+        "font_size_mob": 28,
+        "banner_para": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>",
+        "btntext": "",
+        "bg_linear": "#FF7121",
+        "bottom_shadow": true
       }
     },
     "58d4cc53-9645-4bc0-bd59-a837de6fc3f1": {
@@ -67,7 +72,7 @@
   },
   "order": [
     "main",
-    "020c5e48-d4dd-49fa-a228-277be27e5da5",
+    "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87",
     "58d4cc53-9645-4bc0-bd59-a837de6fc3f1",
     "d1859f89-bc29-4674-9dea-45595636e3c9"
   ]
