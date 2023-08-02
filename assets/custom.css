@@ -12762,7 +12762,7 @@ html {
   display: flex;
   align-items: center;
   font-size: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .product-showcase__wrapper .ps__features ul li::before {
   content: url(../assets/check-mark.svg);
@@ -12778,9 +12778,6 @@ html {
 @media (max-width: 1399px) {
   .product-showcase__wrapper .ps__content-wrap {
     gap: 20px;
-  }
-  .product-showcase__wrapper .ps__features ul li {
-    padding-bottom: 18px;
   }
 }
 @media (max-width: 767px) {
