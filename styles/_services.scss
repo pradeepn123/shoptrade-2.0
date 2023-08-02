@@ -54,21 +54,19 @@
 }
 .page_banner_shadow{
     &::after{
+        filter: blur(2.219em);
+        -webkit-backdrop-filter: blur(67.5px);
+        width: 100%;
+        height: 100%;
+        right: unset;
         @media(min-width:992px){
             top: 105%;
-            left: unset;
-            right: unset;
+            left: unset;  
             bottom: unset;
-            transform: unset;
-            width: 100%;
-            height: 100%;
+            transform: unset;           
         }
-    
-    @media(max-width:991px){
-          
-            width: 100%;
-            top: 32%;
-            right: unset;
+        @media(max-width:991px){
+            top: 63%;
     }
 }
     .h1{

@@ -33,6 +33,12 @@
             .slider-arrow{
                 display: flex;
                 column-gap: 14px;
+                .js-arrow-left-neg{
+                    cursor: pointer;
+                }
+                .js-arrow-right-neg{
+                    cursor: pointer;
+                }
                     svg{
                         @media(max-width:767px){
                                 height: 42px;
