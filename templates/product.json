@@ -60,7 +60,8 @@
         "00fac909-e934-48fb-a652-e2a03f390350": {
           "type": "question",
           "settings": {
-            "question_text": "<p>Have a question? <a href=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\" title=\"https:\/\/www.figma.com\/file\/KOfvAYmfRT1GVpG7INWmEM\/SHOPTRADE-REDESIGN-%2F-DEVELOPERS-FILE?type=design&node-id=4304-8581&mode=design&t=IH5J9OjwZeuii66w-0\">Ask us<\/a><\/p>"
+            "question_text": "<p>Have a question?<\/p>",
+            "question_popUp": "Ask us"
           }
         }
       },
@@ -85,7 +86,8 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 20,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "bg-linear-section": "#ff7121"
       }
     },
     "168414448731360b9c": {
@@ -151,7 +153,8 @@
         "ser_url": "",
         "ser_text": "View Services",
         "hp_btn_txt": "Buy Hour Packs",
-        "hp_btn_url": "shopify:\/\/products\/40-hours"
+        "hp_btn_url": "shopify:\/\/products\/40-hours",
+        "bg-linear-color": "#ff7121"
       }
     }
   },

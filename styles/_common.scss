@@ -796,23 +796,32 @@ input::-moz-placeholder {
 #disqus_thread {
     padding: 20px;
 }
-.breadcrumb{
-    a{
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 16px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #999999;
-        text-decoration: none;
-    }
-    span{
-        color: #000;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 16px;
-        letter-spacing: 0em;
-        text-align: left;
-
+.containermain_breadcrumb_nopad{
+    .breadcrumbs-list{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        .breadcrumbs-list__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:first-child){
+                padding-left: 10px;
+            }
+            .breadcrumbs-list__link{
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #000000;
+                .breadcrump_arrow svg{
+                    padding-top: 2px;
+                }
+              
+            }
+        }
     }
 }

@@ -2,8 +2,15 @@
 <div class="container">
     <div class="ET-product-container">
     {% for item in collection.products %}
+        {% liquid
+            if collection
+              assign product_url = item.url | within: collection
+            else
+              assign product_url = item.url
+            endif
+          %}
         {% if  item.metafields.custom.delivery_imagies.value.delivery_img  or  item.featured_image %}
-        <a href="{{ item.url }}" class="ET-product">
+        <a href="{{ product_url }}" class="ET-product">
             <div class="ET-product-img">
                 {% if  item.metafields.custom.delivery_imagies.value.delivery_img %}
                     <img src= "{{ item.metafields.custom.delivery_imagies.value.delivery_img | img_url: 'master'}}"  loading="lazy" alt = "product image">

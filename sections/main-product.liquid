@@ -324,10 +324,7 @@
       {%- endif -%}
       <div class="Product_pack_main">
         <div class="Product_pack_heading">
-          {% for item in product.metafields.custom.pack_details.value %}
-            <h2>{{ item.pack_main_heading }}</h2>
-          {% endfor %}
-       
+            <h2>{{ section.settings.product_heading }}</h2>
         </div>
         <div class="Product_pack_details">
           {% for item in product.metafields.custom.pack_details.value %}
@@ -339,6 +336,8 @@
                 <p>{{ item.description }}</p>
               </div>
             </div>
+            <div> 
+          </div>
           {% endfor %}
         </div>
       </div>
@@ -840,8 +839,9 @@
                   </product-recommendations>
                 {%- when 'question' -%}
                   {% if block.settings.question_text %}
-                    <div class="product_question">
+                    <div class="product_question" id="opentContactUs">
                       {{ block.settings.question_text }} 
+                      <span> {{ block.settings.question_popUp }} </span>
                     </div> 
                   {% endif %}
                 {% when 'Logo' %}
@@ -1237,12 +1237,6 @@
 {
   "name": "t:sections.main-product.name",
   "settings":[
-    {
-      "type":"text",
-      "id": "product_heading",
-      "label": "packege heading",
-      "default":"Package details"
-    }
   ],
   "tag": "section",
   "class": "section",
@@ -1910,6 +1904,11 @@
           "type":"richtext",
           "id":"question_text",
           "label":"Question button text"
+        },
+        {
+          "type": "text",
+          "id":"question_popUp",
+          "label": "Question pop up text"
         }
       ]
     }
@@ -2049,6 +2048,12 @@
       "id": "bg-linear-section",
       "label": "Section bg color",
       "default": "#FF7121"
+    },
+    {
+      "type":"text",
+      "id": "product_heading",
+      "label": "packege heading",
+      "default":"Package details"
     }
         
   ]
@@ -2056,10 +2061,10 @@
 {% endschema %}
 
 <script>
-  {% comment %} document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       const button = document.querySelector(".product-form__buttons button");
       button.textContent = "Start this project";
-    }, 1200);
-  }); {% endcomment %}
+    }, 2000);
+  }); 
 </script>
