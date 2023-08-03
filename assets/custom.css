@@ -4869,8 +4869,8 @@ input::-moz-placeholder {
   content: "";
   width: 330px;
   height: 202px;
-  background: #FF7121;
-  filter: blur(94.5px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgb(255, 113, 33) 40%, rgb(255, 113, 33) 100%) !important;
+  filter: blur(64.5px);
   right: -12%;
   top: 50%;
   transform: translateY(-50%);
@@ -4882,7 +4882,7 @@ input::-moz-placeholder {
     top: inherit;
     bottom: 0;
     transform: translateY(50%);
-    filter: blur(49.5px);
+    filter: blur(67.5px);
   }
 }
 .services h1 {
@@ -4914,7 +4914,7 @@ input::-moz-placeholder {
 
 @media (min-width: 992px) {
   .page_banner_shadow::after {
-    top: 105%;
+    top: unset;
     left: unset;
     right: unset;
     bottom: unset;
