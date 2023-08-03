@@ -798,6 +798,8 @@ input::-moz-placeholder {
 }
 .containermain_breadcrumb_nopad{
     .breadcrumbs-list{
+        padding: 0;
+        margin: 0;
         display: flex;
         list-style-type: none;
         .breadcrumbs-list__item{
