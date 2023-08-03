@@ -17,6 +17,7 @@
         @media(max-width:767px){
             padding: 0 !important;
             padding-top: 15px !important;
+            width: 100%;
         }
         &::before{
                 content: "";
@@ -38,11 +39,18 @@
                 @media(max-width:767px){
                     content: unset;
                 }
+                @media(min-width: 1420px){
+                    right: 22px;
+                }
+                @media(min-width: 1680px){
+                    right: 60px;
+                }
             }
           
         .st-product-sticky{
             position: sticky;
             top: 12%; 
+            z-index: 2;
             @media(min-width: 1820px){
                 top: 8%; 
             }
@@ -52,6 +60,16 @@
             @media(max-width:1023px){
                 top: 16%;
             }
+        }
+        .product-form__buttons{
+            @media(max-width:520px){
+                display: block;
+                position: fixed;
+                bottom: 2%;
+                left: 0;
+                z-index: 9999;
+                width: 100%;
+            } 
         }
         .product__info-container {
             border: 1px solid #000;
@@ -225,8 +243,15 @@
                             line-height: 16px;
                             letter-spacing: -0.03em;
                             position: relative;
-                            color: #fff;
-                            
+                            color: #0b28e9;
+                            &:after{
+                                content: "Start the project";
+                                position: absolute;
+                                width: 100%;
+                                left: 0;
+                                right : 0;
+                                color: #fff;
+                            }
                         }
                     }
                     .shopify-payment-button__button{ 
@@ -339,6 +364,10 @@
                 }
                 @media(max-width:767px){
                     content: unset;
+                }
+                @media(min-width:1420px){
+                    width: 279px;
+                    right: 79px;
                 }
             }
             &::after{
@@ -481,5 +510,14 @@
             height: 100%; 
         }
     }
-
+    .product--medium:not(.product--no-media) .product__info-wrapper{
+        @media(min-width:1420px){
+            max-width: 34% !important;
+        }
+    }
+    .product--medium:not(.product--no-media) .product__media-wrapper{
+        @media(min-width:1420px){
+            max-width: 66% !important;
+        }
+    }
 }
