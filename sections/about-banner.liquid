@@ -8,9 +8,6 @@
         font-size: {{ section.settings.font_size_mob }}px;
      }
     }
-    .page_banner_shadow::after{
-      background: {{ section.settings.bg_linear }};
-    }
     {% if section.settings.bottom_shadow %}
       .services .h1{
         font-weight: 700;
@@ -72,13 +69,7 @@
       "id": "btntext",
       "label": "Button Text",
       "type": "text"
-    },
-    {
-      "type": "color",
-      "id": "bg_linear",
-      "label": "Background linear",
-      "default": "#FF7121"
-    },    
+    },  
     {
         "type": "checkbox",
         "id": "bottom_shadow",
