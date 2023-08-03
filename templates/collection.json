@@ -36,7 +36,7 @@
         "font_size_mob": 28,
         "banner_para": "<p>Get the freedom to delegate tasks on-demand or set up recurring tasks for consistent support.<\/p>",
         "btntext": "",
-        "bg_linear": "#FF7121",
+        "bg_linear": "#ff7121",
         "bottom_shadow": true
       }
     },
@@ -102,11 +102,11 @@
       "settings": {
         "hp_heading": "Hour Packs",
         "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
-        "ser_url": "",
+        "ser_url": "shopify:\/\/pages\/services",
         "ser_text": "View Services",
         "hp_btn_txt": "Buy Hour Packs",
-        "hp_btn_url": "#",
-        "bg-linear-color": "#FF7121"
+        "hp_btn_url": "shopify:\/\/pages\/hourly-packs",
+        "bg-linear-color": "#ff7121"
       }
     }
   },
