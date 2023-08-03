@@ -333,11 +333,9 @@
                 <h6>{{ item.package_heading }}</h6>
               </div>
               <div class="Product_pd_para">
-                <p>{{ item.description }}</p>
+                 {{ item.description }}
               </div>
             </div>
-            <div> 
-          </div>
           {% endfor %}
         </div>
       </div>
@@ -2059,12 +2057,3 @@
   ]
 }
 {% endschema %}
-
-<script>
- document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-      const button = document.querySelector(".product-form__buttons button");
-      button.textContent = "Start this project";
-    }, 2000);
-  }); 
-</script>

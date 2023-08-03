@@ -141,20 +141,20 @@
                 }
                 .hp_service_btn{   
                     max-width: fit-content;
-                    background-color: #3A4ED4;
+                    background-color: #fff;
                     padding: 11px 77px;
                     border-radius: 32px;
                     cursor: pointer;
-                    border: 1px solid #3A4ED4;
                     transition: all 0.3s linear;
                     margin-top: 20px;
+                    color: #3A4ED4;
                     &:hover{
                         transition: all 0.3s linear;
-                        background-color: #fff;
+                        background-color: #3A4ED4;
                     }
                     &:hover a{
                         transition: all 0.3s linear;
-                        color: #3A4ED4;
+                       color: #fff;
                     }
                     @media(max-width:520px) {
                         max-width: 100%;
@@ -168,25 +168,27 @@
                         letter-spacing: -0.03em;
                         text-align: left;
                         margin: 0;
-                        color: #fff;
+                        color: #3A4ED4;;
                         text-decoration: none;
                     }
                 }
                 .hp_button {
                     max-width: fit-content;
-                    background-color: #3A4ED4;
+                    background-color: #fff;
                     padding: 11px 77px;
                     border-radius: 32px;
                     cursor: pointer;
-                    border: 1px solid #3A4ED4;
+                    // border: 1px solid #3A4ED4;
                     transition: all 0.3s linear;
+                    color: #3A4ED4;
+                    
                     &:hover{
                         transition: all 0.3s linear;
-                        background-color: #fff;
+                        background-color: #3A4ED4;
                     }
                     &:hover a{
                         transition: all 0.3s linear;
-                        color: #3A4ED4;
+                        color: #fff;
                     }
                     @media(max-width:520px) {
                         max-width: 100%;
@@ -202,6 +204,7 @@
                         text-align: left;
                         margin: 0;
                         color: #fff;
+                        color: #3A4ED4;
                         text-decoration: none;
                     }
                 }
