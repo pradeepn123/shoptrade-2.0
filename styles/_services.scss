@@ -58,20 +58,21 @@
 }
 .page_banner_shadow{
     &::after{
-        filter: blur(2.219em);
-        -webkit-backdrop-filter: blur(67.5px);
+        background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,113,33,1) 40%, rgba(255,113,33,1) 100%);
+        filter: blur(67.5px);
         width: 100%;
         height: 100%;
         right: unset;
         @media(min-width:992px){
-            top: 105%;
-            left: unset;  
+            top: unset;
+            left: unset;
+            right: unset;
             bottom: unset;
             transform: unset;           
         }
-        @media(max-width:991px){
-            top: 63%;
-    }
+        @media(max-width:992px){
+            background: linear-gradient(180deg,rgba(255,255,255,0) 60%,rgb(255,113,33) 40%,rgb(255,113,33) 100%);
+        }
 }
     .h1{
         margin-bottom: 20px;
