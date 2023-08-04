@@ -13890,7 +13890,7 @@ html {
   color: #0b28e9;
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button button:after {
-  content: "Start the project";
+  content: "Start this project";
   position: absolute;
   width: 100%;
   left: 0;
@@ -14175,6 +14175,12 @@ html {
     max-width: 66% !important;
   }
 }
+.ST-product-page-main .product-form {
+  transition: all 0.3s linear;
+}
+.ST-product-page-main .mobile-sticky {
+  opacity: 0;
+}
 @media (max-width: 520px) {
   .ST-product-page-main .mobile-sticky {
     position: fixed !important;
@@ -14185,6 +14191,7 @@ html {
     transition: all 0.3s linear;
     background: #fff;
     padding: 19px 3px;
+    opacity: 1;
     border-top: 1px solid #000;
   }
 }

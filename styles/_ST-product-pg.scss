@@ -239,7 +239,7 @@
                             position: relative;
                             color: #0b28e9;
                             &:after{
-                                content: "Start the project";
+                                content: "Start this project";
                                 position: absolute;
                                 width: 100%;
                                 left: 0;
@@ -514,7 +514,11 @@
             max-width: 66% !important;
         }
     }
+    .product-form{
+        transition: all 0.3s linear;
+    }
     .mobile-sticky {
+        opacity: 0;
         @media(max-width:520px){
             position: fixed !important;
             bottom: 0;
@@ -524,6 +528,7 @@
             transition: all 0.3s linear;
             background: #fff;
             padding: 19px 3px;
+            opacity: 1;
             border-top: 1px solid #000;
         }
     }
