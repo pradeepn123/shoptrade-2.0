@@ -528,10 +528,12 @@ $(document).ready(function () {
     }
   });
 
-  //count on scroll
-  var counted = 0;
-  $(window).scroll(function () {
+//count on scroll
+var counted = 0;
+$(window).scroll(function () {
+if ($("#counter").length) {
     var oTop = $("#counter").offset().top - window.innerHeight;
+  try {
     if (counted == 0 && $(window).scrollTop() > oTop + 400) {
       $(".count").each(function () {
         var $this = $(this),
@@ -561,8 +563,11 @@ $(document).ready(function () {
       });
       counted = 1;
     }
-  });
-
+  } catch (error) {
+    console.log(error);
+  }
+}
+});
   // Clicking on Contact Button in Footer Must bring up the new Contact popup instead of Contact Form
   // $("#footer-id-4 a").attr('href', "javascript:;");
   // $("#footer-id-4 a").on('click', function(){
