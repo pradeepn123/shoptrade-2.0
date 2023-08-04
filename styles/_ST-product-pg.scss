@@ -235,7 +235,7 @@
                             position: relative;
                             color: #0b28e9;
                             &:after{
-                                content: "Start the project";
+                                content: "Start this project";
                                 position: absolute;
                                 width: 100%;
                                 left: 0;
@@ -510,14 +510,33 @@
             max-width: 66% !important;
         }
     }
+    .product-form{
+        transition: all 0.3s linear;
+    }
     .mobile-sticky {
         @media(max-width:520px){
             position: fixed !important;
-            bottom: 1%;
+            bottom: 0;
             left: 0;
             z-index: 9999;
             width: 100%;
+            background: #fff;
+            padding: 19px 3px;
+            border-top: 1px solid #000;
             transition: all 0.3s linear;
+            animation: button-from-bottom 0.5s ease-in-out;         
+        }
+        .start-project-btn{
+            width: calc(100% - 35px);
+            margin: 0 auto;
+        }
+    }
+    @keyframes button-from-bottom {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
         }
     }
 }
