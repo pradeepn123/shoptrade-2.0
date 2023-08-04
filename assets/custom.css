@@ -13869,12 +13869,6 @@ html {
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn:hover {
   filter: brightness(0.9);
 }
-@media (max-width: 520px) {
-  .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn {
-    width: calc(100% - 30px);
-    margin: 0 auto;
-  }
-}
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button {
   width: 100%;
 }
@@ -14178,9 +14172,6 @@ html {
 .ST-product-page-main .product-form {
   transition: all 0.3s linear;
 }
-.ST-product-page-main .mobile-sticky {
-  opacity: 0;
-}
 @media (max-width: 520px) {
   .ST-product-page-main .mobile-sticky {
     position: fixed !important;
@@ -14188,10 +14179,22 @@ html {
     left: 0;
     z-index: 9999;
     width: 100%;
-    transition: all 0.3s linear;
     background: #fff;
     padding: 19px 3px;
-    opacity: 1;
     border-top: 1px solid #000;
+    transition: all 0.3s linear;
+    animation: button-from-bottom 0.5s ease-in-out;
+  }
+}
+.ST-product-page-main .mobile-sticky .start-project-btn {
+  width: calc(100% - 35px);
+  margin: 0 auto;
+}
+@keyframes button-from-bottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

@@ -222,10 +222,6 @@
                     &:hover{
                         filter: brightness(0.9);
                     }
-                    @media(max-width: 520px){
-                        width: calc(100% - 30px);
-                        margin: 0 auto;
-                    }
                     .shopify-payment-button{
                         width: 100%;
                         button{
@@ -518,18 +514,29 @@
         transition: all 0.3s linear;
     }
     .mobile-sticky {
-        opacity: 0;
         @media(max-width:520px){
             position: fixed !important;
             bottom: 0;
             left: 0;
             z-index: 9999;
             width: 100%;
-            transition: all 0.3s linear;
             background: #fff;
             padding: 19px 3px;
-            opacity: 1;
             border-top: 1px solid #000;
+            transition: all 0.3s linear;
+            animation: button-from-bottom 0.5s ease-in-out;         
+        }
+        .start-project-btn{
+            width: calc(100% - 35px);
+            margin: 0 auto;
+        }
+    }
+    @keyframes button-from-bottom {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
         }
     }
 }
