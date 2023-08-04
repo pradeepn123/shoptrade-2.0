@@ -6,11 +6,11 @@
     &::before {
         content: "";
         position: absolute;
-        width: 197px;
+        width: 240px;
         height: 194px;
         right: 0;
         top: -10%;
-        filter: blur(94.5px);
+        filter: blur(78.5px);
         transform: translate(50%, -50%);
         z-index: -1;
     }
@@ -139,56 +139,23 @@
                         }
                     }
                 }
-                .hp_service_btn{   
-                    max-width: fit-content;
-                    background-color: #fff;
-                    padding: 11px 77px;
-                    border-radius: 32px;
-                    cursor: pointer;
-                    transition: all 0.3s linear;
-                    margin-top: 20px;
-                    color: #3A4ED4;
-                    &:hover{
-                        transition: all 0.3s linear;
-                        background-color: #3A4ED4;
-                    }
-                    &:hover a{
-                        transition: all 0.3s linear;
-                       color: #fff;
-                    }
-                    @media(max-width:520px) {
-                        max-width: 100%;
-                        padding: 10px 0;
-                        text-align: center;
-                    }
-                    a {
-                        font-size: 16px;
-                        font-weight: 600;
-                        line-height: 16px;
-                        letter-spacing: -0.03em;
-                        text-align: left;
-                        margin: 0;
-                        color: #3A4ED4;;
-                        text-decoration: none;
-                    }
-                }
                 .hp_button {
                     max-width: fit-content;
-                    background-color: #fff;
+                    background-color:  #3A4ED4;
                     padding: 11px 77px;
                     border-radius: 32px;
                     cursor: pointer;
-                    // border: 1px solid #3A4ED4;
+                    border: 1px solid #3A4ED4;
                     transition: all 0.3s linear;
-                    color: #3A4ED4;
+                    color: #fff;
                     
                     &:hover{
                         transition: all 0.3s linear;
-                        background-color: #3A4ED4;
+                        background-color: #fff;
                     }
                     &:hover a{
                         transition: all 0.3s linear;
-                        color: #fff;
+                        color: #3A4ED4;
                     }
                     @media(max-width:520px) {
                         max-width: 100%;
@@ -204,7 +171,6 @@
                         text-align: left;
                         margin: 0;
                         color: #fff;
-                        color: #3A4ED4;
                         text-decoration: none;
                     }
                 }
