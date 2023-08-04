@@ -13869,6 +13869,12 @@ html {
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn:hover {
   filter: brightness(0.9);
 }
+@media (max-width: 520px) {
+  .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+}
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product-form__buttons .start-project-btn .shopify-payment-button {
   width: 100%;
 }
@@ -14172,10 +14178,13 @@ html {
 @media (max-width: 520px) {
   .ST-product-page-main .mobile-sticky {
     position: fixed !important;
-    bottom: 1%;
+    bottom: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
     transition: all 0.3s linear;
+    background: #fff;
+    padding: 19px 3px;
+    border-top: 1px solid #000;
   }
 }

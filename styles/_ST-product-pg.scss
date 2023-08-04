@@ -222,6 +222,10 @@
                     &:hover{
                         filter: brightness(0.9);
                     }
+                    @media(max-width: 520px){
+                        width: calc(100% - 30px);
+                        margin: 0 auto;
+                    }
                     .shopify-payment-button{
                         width: 100%;
                         button{
@@ -513,11 +517,14 @@
     .mobile-sticky {
         @media(max-width:520px){
             position: fixed !important;
-            bottom: 1%;
+            bottom: 0;
             left: 0;
             z-index: 9999;
             width: 100%;
             transition: all 0.3s linear;
+            background: #fff;
+            padding: 19px 3px;
+            border-top: 1px solid #000;
         }
     }
 }
