@@ -11,12 +11,11 @@
     "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87": {
       "type": "about-banner",
       "settings": {
-        "heading": "Hour Packs",
+        "heading": "On-Demand Support Pack",
         "font_size_desk": 52,
         "font_size_mob": 28,
         "banner_para": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>",
         "btntext": "",
-        "bg_linear": "#FF7121",
         "bottom_shadow": true
       }
     },
