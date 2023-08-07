@@ -62,9 +62,9 @@
       "type": "collection-showcase",
       "settings": {
         "title": "Expert Tasks",
-        "description": "<p>Efficiently Enhance Your Shopify Store with Our Expert Tasks<\/p>",
+        "description": "<p>Get quick tasks done efficiently without sacrificing quality.<\/p>",
         "button_label": "View All",
-        "button_url": "\/collections\/all",
+        "button_url": "shopify:\/\/collections\/expert-tasks",
         "collections": "expert-tasks"
       }
     }
