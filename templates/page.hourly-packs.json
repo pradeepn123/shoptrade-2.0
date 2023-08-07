@@ -28,7 +28,7 @@
             "custom__product": "10-hours",
             "tag": "",
             "buy_button-id": "product-component-1690877862688",
-            "product__features": "<ul><li>10-hours<\/li><li>30 Days validity<\/li><li>Basic development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul><p><\/p>"
+            "product__features": "<ul><li>10-hours<\/li><li>30 Days validity<\/li><li>Basic development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul><p><\/p>"
           }
         },
         "07a699d0-b52a-4688-bc59-e187c81d4d9e": {
@@ -37,7 +37,7 @@
             "custom__product": "25-hours",
             "tag": "Best Value",
             "buy_button-id": "product-component-1690878375830",
-            "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+            "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
           }
         },
         "8c93da82-7ab3-4c18-9613-4038e7a4bbfa": {
@@ -46,7 +46,7 @@
             "custom__product": "40-hours",
             "tag": "",
             "buy_button-id": "product-component-1690878994024",
-            "product__features": "<ul><li>50-hours<\/li><li>90 Days validity<\/li><li>Complex development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+            "product__features": "<ul><li>50-hours<\/li><li>90 Days validity<\/li><li>Complex development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
           }
         }
       },
