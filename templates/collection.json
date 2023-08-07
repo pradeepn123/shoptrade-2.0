@@ -92,9 +92,9 @@
       ],
       "settings": {
         "hp_heading": "Hour Packs",
-        "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
-        "ser_url": "shopify:\/\/pages\/services",
-        "ser_text": "View Services",
+        "hp_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <\/p>",
+        "ser_url": "",
+        "ser_text": "",
         "hp_btn_txt": "Buy Hour Packs",
         "hp_btn_url": "shopify:\/\/pages\/hour-packs",
         "bg-linear-color": "#ff7121"
