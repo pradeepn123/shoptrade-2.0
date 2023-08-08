@@ -157,7 +157,7 @@
                         transition: all 0.3s linear;
                         color: #3A4ED4;
                     }
-                    @media(max-width:520px) {
+                    @media(max-width:767px) {
                         max-width: 100%;
                         padding: 10px 0;
                         text-align: center;
@@ -194,7 +194,7 @@
                         text-align: center;
                         transition: all 0.3s linear;
                     }
-                    @media(max-width:520px){
+                    @media(max-width:767px){
                         max-width: 100%;
                         text-align: center;
                         padding: 11px 0;

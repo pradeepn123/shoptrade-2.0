@@ -13195,7 +13195,7 @@ html {
   transition: all 0.3s linear;
   color: #3A4ED4;
 }
-@media (max-width: 520px) {
+@media (max-width: 767px) {
   .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
     max-width: 100%;
     padding: 10px 0;
@@ -13233,7 +13233,7 @@ html {
   text-align: center;
   transition: all 0.3s linear;
 }
-@media (max-width: 520px) {
+@media (max-width: 767px) {
   .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn {
     max-width: 100%;
     text-align: center;
@@ -13645,7 +13645,7 @@ html {
 .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para ul {
   padding: 0;
   margin: 0;
-  padding-left: 21px;
+  padding-left: 16px;
 }
 .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para ul li {
   color: #000;

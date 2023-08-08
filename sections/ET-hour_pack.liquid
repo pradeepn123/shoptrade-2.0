@@ -13,6 +13,11 @@
         <div class="hour_pack_text_child">
         <div class="hp_heading">
           {% if section.settings.hp_heading %}
+            {% assign showSections = request.design_mode %}
+            {% if customer and customer.tags contains "shoptradeadmin" or request.design_mode or customer.email contains 'shoptrade.co' %}
+              {% assign showSection = true %}
+            {% endif %}
+            {{ showSections }}
             <h2>{{ section.settings.hp_heading }}</h2>
             <span>
               {% render 'arrow-icon' %}
@@ -63,17 +68,6 @@
       "label": "Para"
     },
     {
-      "type": "url",
-      "id": "ser_url",
-      "label": "secvices Button link"
-    },
-    {
-      "type": "text",
-      "id": "ser_text",
-      "label": "secvices Button text",
-      "default": "View Services"
-    },        
-    {
       "type": "text",
       "id": "hp_btn_txt",
       "label": "Button text"
@@ -83,6 +77,17 @@
       "id": "hp_btn_url",
       "label": "Button link"
     },
+    {
+      "type": "url",
+      "id": "ser_url",
+      "label": "secvices Button link"
+    },
+    {
+      "type": "text",
+      "id": "ser_text",
+      "label": "secvices Button text",
+      "default": "View Services"
+    },   
     {
       "type": "color",
       "id": "bg-linear-color",
