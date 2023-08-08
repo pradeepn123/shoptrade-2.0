@@ -509,6 +509,9 @@
               {%- when 'variant_picker' -%}
                 {%- unless product.has_only_default_variant -%}
                   {%- if block.settings.picker_type == 'button' -%}
+                    <div>
+                      <div class="mobile-sticky-btn">
+                      <div class="mobileStickyBtn-child">
                     <variant-radios
                       class="no-js-hidden"
                       data-section="{{ section.id }}"
@@ -670,7 +673,7 @@
                         </button>{% endcomment %}
                       <div class="start-project-btn {%- if block.settings.show_dynamic_checkout == false -%} startproject_btn  {% endif %}"> 
                         {%- if block.settings.show_dynamic_checkout -%}
-                          {% comment %} {{ form | payment_button }} {% endcomment %}
+                          
                           {{ form | payment_button }}
                         {%else %}
                         {% if block.settings.btn_url_start %}
@@ -686,6 +689,9 @@
                       </div>
                     {%- endform -%}
                   </product-form>
+                </div>  
+              </div>
+              </div>
                   {% assign metadata = product.metafields.custom.product_banner_info.value %}
                   <div class="product_payment_info">
                     <span> {% render 'clock-icon' %} </span> <p>   {{ metadata.product_payment_info }} </p>
@@ -2059,33 +2065,36 @@
 {% endschema %}
 
 <script> 
-
 document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+  var footerh = $('.shopify-footer').height();
   function sticky_relocate_left() {
     var window_top = $(window).scrollTop();
-    var div_top = $('.st-product-sticky').offset().top;
-    if (window_top > div_top) {
-        $('.product-form').addClass('mobile-sticky');
+    {% comment %} var div_top = $('.st-product-sticky').offset().top; {% endcomment %}
+    var footerCartUp = $(document).height() - $(window).height() - footerh;
+    {% comment %} alert(last300px) {% endcomment %}
+    if (window_top > 100  && window_top < footerCartUp ) {
+        $('.mobile-sticky-btn').addClass('mobile-sticky');
     } else {
-        $('.product-form').removeClass('mobile-sticky');
+        $('.mobile-sticky-btn').removeClass('mobile-sticky');
     }
-}
-
-function sticky_relocate_right() {
-  var window_top2 = $(window).scrollTop();
-  var div_top2 = $('.st-product-sticky').offset().top;
-  if (window_top2 > div_top2) {
-      $('.product-form').addClass('mobile-sticky');
-  } else {
-      $('.product-form').removeClass('mobile-sticky');
   }
-}
-$(function () {
-  setTimeout($(window).scroll(sticky_relocate_left),0);
-  $(window).scroll(sticky_relocate_right);
-  sticky_relocate_left();
-  sticky_relocate_right();
-});
 
+ function sticky_relocate_right() {
+    var window_top2 = $(window).scrollTop();
+    {% comment %} var div_top2 = $('.st-product-sticky').offset().top; {% endcomment %}
+    var footerCart = $(document).height() - $(window).height()  - footerh;
+    if (window_top2 > 100 && window_top2 < footerCart ) {
+        $('.mobile-sticky-btn').addClass('mobile-sticky');
+    } else {
+        $('.mobile-sticky-btn').removeClass('mobile-sticky');
+    }
+  }
+
+  $(window).scroll(function () {
+    sticky_relocate_left();
+    sticky_relocate_right();
+  });
+ }, 4000);
 }); 
 </script>
