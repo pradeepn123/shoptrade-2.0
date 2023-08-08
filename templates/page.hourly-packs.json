@@ -11,12 +11,11 @@
     "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87": {
       "type": "about-banner",
       "settings": {
-        "heading": "Hour Packs",
+        "heading": "On-Demand Hour Packs",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>",
+        "banner_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <strong>No commitments!<\/strong> <\/p>",
         "btntext": "",
-        "bg_linear": "#FF7121",
         "bottom_shadow": true
       }
     },
@@ -29,7 +28,7 @@
             "custom__product": "10-hours",
             "tag": "",
             "buy_button-id": "product-component-1690877862688",
-            "product__features": "<ul><li>10-hour credit balance<\/li><li>7 Days validity<\/li><li>Basic development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul><p><\/p>"
+            "product__features": "<ul><li>10-hours<\/li><li>30 Days validity<\/li><li>Basic development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Available experts<\/li><\/ul>"
           }
         },
         "07a699d0-b52a-4688-bc59-e187c81d4d9e": {
@@ -38,7 +37,7 @@
             "custom__product": "25-hours",
             "tag": "Best Value",
             "buy_button-id": "product-component-1690878375830",
-            "product__features": "<ul><li>25-hour credit balance<\/li><li>14 Days validity<\/li><li>Intermediate development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+            "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated expert<\/li><\/ul>"
           }
         },
         "8c93da82-7ab3-4c18-9613-4038e7a4bbfa": {
@@ -47,7 +46,7 @@
             "custom__product": "40-hours",
             "tag": "",
             "buy_button-id": "product-component-1690878994024",
-            "product__features": "<ul><li>50-hour credit balance<\/li><li>30 Days validity<\/li><li>Complex development<\/li><li>Fast turnaround<\/li><li>Dedicated experts<\/li><li>Replenish as needed<\/li><\/ul>"
+            "product__features": "<ul><li>50-hours<\/li><li>90 Days validity<\/li><li>Complex development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated Team<\/li><\/ul>"
           }
         }
       },
@@ -63,9 +62,9 @@
       "type": "collection-showcase",
       "settings": {
         "title": "Expert Tasks",
-        "description": "<p>Efficiently Enhance Your Shopify Store with Our Expert Tasks<\/p>",
+        "description": "<p>Get quick tasks done efficiently without sacrificing quality.<\/p>",
         "button_label": "View All",
-        "button_url": "\/collections\/all",
+        "button_url": "shopify:\/\/collections\/expert-tasks",
         "collections": "expert-tasks"
       }
     }

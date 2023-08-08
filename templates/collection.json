@@ -34,9 +34,8 @@
         "heading": "Expert Tasks",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Get the freedom to delegate tasks on-demand or set up recurring tasks for consistent support.<\/p>",
+        "banner_para": "<p>Get quick tasks done efficiently without sacrificing quality. No bullsh**. GEt<\/p>",
         "btntext": "",
-        "bg_linear": "#ff7121",
         "bottom_shadow": true
       }
     },
@@ -75,21 +74,29 @@
             "hp_lines": "Replenish as needed",
             "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
           }
+        },
+        "09d7d7a9-3977-4894-8894-b5bcd1e0fd7c": {
+          "type": "points",
+          "disabled": true,
+          "settings": {
+            "hp_lines": ""
+          }
         }
       },
       "block_order": [
         "699adde5-81d2-4a66-b699-c5d208997a2d",
         "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8",
         "3cd3150a-b24f-4b92-9ba2-9401ac532c17",
-        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795"
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795",
+        "09d7d7a9-3977-4894-8894-b5bcd1e0fd7c"
       ],
       "settings": {
         "hp_heading": "Hour Packs",
-        "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
+        "hp_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <\/p>",
         "ser_url": "",
-        "ser_text": "View Services",
+        "ser_text": "",
         "hp_btn_txt": "Buy Hour Packs",
-        "hp_btn_url": "shopify:\/\/pages\/hourly-packs",
+        "hp_btn_url": "shopify:\/\/pages\/hour-packs",
         "bg-linear-color": "#ff7121"
       }
     }
