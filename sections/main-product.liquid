@@ -2067,24 +2067,21 @@
 <script> 
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
-  var footerh = $('.shopify-footer').height();
-  function sticky_relocate_left() {
+  var footerHeight = $('.shopify-footer').height();
+  function sticky_relocate_top() {
     var window_top = $(window).scrollTop();
-    {% comment %} var div_top = $('.st-product-sticky').offset().top; {% endcomment %}
-    var footerCartUp = $(document).height() - $(window).height() - footerh;
-    {% comment %} alert(last300px) {% endcomment %}
-    if (window_top > 100  && window_top < footerCartUp ) {
+    var footerCartShow = $(document).height() - $(window).height() - footerHeight;
+    if (window_top > 100  && window_top < footerCartShow ) {
         $('.mobile-sticky-btn').addClass('mobile-sticky');
     } else {
         $('.mobile-sticky-btn').removeClass('mobile-sticky');
     }
   }
 
- function sticky_relocate_right() {
+ function sticky_relocate_bottom() {
     var window_top2 = $(window).scrollTop();
-    {% comment %} var div_top2 = $('.st-product-sticky').offset().top; {% endcomment %}
-    var footerCart = $(document).height() - $(window).height()  - footerh;
-    if (window_top2 > 100 && window_top2 < footerCart ) {
+    var footerCarthide = $(document).height() - $(window).height()  - footerHeight;
+    if (window_top2 > 100 && window_top2 < footerCarthide ) {
         $('.mobile-sticky-btn').addClass('mobile-sticky');
     } else {
         $('.mobile-sticky-btn').removeClass('mobile-sticky');
@@ -2092,8 +2089,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   $(window).scroll(function () {
-    sticky_relocate_left();
-    sticky_relocate_right();
+    sticky_relocate_top();
+    sticky_relocate_bottom();
   });
  }, 4000);
 }); 
