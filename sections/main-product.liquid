@@ -1,3 +1,8 @@
+<script>
+  {% if product.metafields.custom.show_page.value == false %}
+    window.location.href = "/";
+  {% endif %}
+</script>
 <section class="ST-product-page-main">
   <div class="container">
   {% render 'breadcrumps' %}
