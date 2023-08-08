@@ -207,6 +207,9 @@
                 .checked-mark{
                  display: flex;
                  padding-right: 20px;
+                 @media(max-width:520px){
+                    padding-right: 10px;
+                 }
                 }
             }
             .product-form__buttons{
@@ -285,7 +288,7 @@
                     }
                 }
             }
-            .product_question{
+            #opentContactUs{
                 text-align: center;
                 padding-top: 14px;
                 display: flex;
@@ -453,7 +456,7 @@
                     }
              
             }
-            .desciption_heading{
+            h4{
                 color: #000;
                 font-size: 32px;
                 font-weight: 600;
@@ -469,7 +472,7 @@
                 }
 
             }
-            .desciption_para{
+            p{
                 color: #000;
                 font-size: 18px;
                 font-weight: 400;
@@ -521,14 +524,16 @@
             z-index: 9999;
             width: 100%;
             background: #fff;
-            padding: 19px 3px;
+            padding:0 3px 19px 3px;
             border-top: 1px solid #000;
             transition: all 0.3s linear;
-            animation: button-from-bottom 0.5s ease-in-out;         
+            animation: button-from-bottom 0.5s ease-in-out;   
         }
-        .start-project-btn{
-            width: calc(100% - 35px);
-            margin: 0 auto;
+        .mobileStickyBtn-child{
+            @media(max-width:520px){
+                width: calc(100% - 35px);
+                margin: 0 auto;
+            }
         }
     }
     @keyframes button-from-bottom {

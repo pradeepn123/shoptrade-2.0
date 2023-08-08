@@ -173,7 +173,45 @@
                         color: #fff;
                         text-decoration: none;
                     }
-                }
+                }               
+                .hp_service_btn{   
+                    max-width: fit-content;
+                    background-color: #fff;
+                    padding: 11px 77px;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    margin-top: 20px;
+                    color: #3A4ED4;
+                    &:hover{
+                        transition: all 0.3s linear;
+                        background-color: #3A4ED4;
+                    }
+                    &:hover a{
+                        color: #fff;
+                        max-width: 100%;
+                        padding: 10px 0;
+                        text-align: center;
+                        transition: all 0.3s linear;
+                    }
+                    @media(max-width:520px){
+                        max-width: 100%;
+                        text-align: center;
+                        padding: 11px 0;
+                        margin-top: 15px;
+                    }
+                    a {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        letter-spacing: -0.03em;
+                        text-align: left;
+                        margin: 0;
+                        color: #3A4ED4;
+                        text-decoration: none;
+                        transition: all 0.3s linear;
+                    }
+                  }
             }
         }
 
