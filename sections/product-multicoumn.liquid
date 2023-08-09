@@ -1,0 +1,40 @@
+<div class="product-multicolumn">
+  <div class="container">
+    <div class="product-multicolumn_heading">
+        <h2> {{ section.settings.pm_heading }} </h2>
+    </div>
+    <div class="product_multicolumn-list">
+      {% for blockI in product.metafields.custom.product_work_info.value %}
+        <div class="product_tabel">
+          <div class="product_tabel_number">
+            {{ blockI.porduct_info_num }}.
+         </div>
+         <div class="product_table_heading">
+            <h3> {{ blockI.product_heading }} </h3>
+         </div>
+         <div class="product_table_para">
+           <p> {{ blockI.product_info }} </p>
+         </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+    {
+        "name":"product multicolumn",
+        "settings":[
+            {
+                "type":"text",
+                "id": "pm_heading",
+                "label": "Heading"
+            }
+        ],
+        "presets":[
+            {
+                "name": "product multicolumn"
+            }
+        ]                 
+    }
+{% endschema %}

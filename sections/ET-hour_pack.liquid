@@ -1,0 +1,117 @@
+{% style %}
+  .hp_content_main::before {
+    background: {{ section.settings.bg-linear-color }};
+  }
+  .Hour_contain::after {
+    background: {{ section.settings.bg-linear-color }};
+  }
+{% endstyle %}
+<div class="hp_content_main">
+  <div class="container">
+    <div class="Hour_contain">
+      <div class="hour_pack_text">
+        <div class="hour_pack_text_child">
+        <div class="hp_heading">
+          {% if section.settings.hp_heading %}
+            <h2>{{ section.settings.hp_heading }}</h2>
+            <span>
+              {% render 'arrow-icon' %}
+            </span>
+          {% endif %}
+        </div>
+        <div class="hp_para">
+          {{ section.settings.hp_para }}
+        </div>
+        <div class="hp_button">
+          {% if section.settings.hp_btn_url %}
+            <a href="{{ section.settings.hp_btn_url }}"> {{ section.settings.hp_btn_txt }}</a>
+          {% endif %}
+        </div>
+        {% if  section.settings.ser_url %}              
+        <div class="hp_service_btn">   
+            <a href="{{ section.settings.ser_url }}"> {{ section.settings.ser_text }} </a>
+        </div>
+        {% endif %}
+      </div>
+      </div>
+      <div class="hp_points">
+        {% for item in section.blocks %}
+          <div class="hp_point_lines">
+            {% if item.settings.icon %}
+              <span> <img src=" {{ item.settings.icon  | img_url: 'master' }}" loading="lazy"> </span>
+            {% endif %}
+            <h6>{{ item.settings.hp_lines }}</h6>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hour pack",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hp_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "hp_para",
+      "label": "Para"
+    },
+    {
+      "type": "text",
+      "id": "hp_btn_txt",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "hp_btn_url",
+      "label": "Button link"
+    },
+    {
+      "type": "url",
+      "id": "ser_url",
+      "label": "secvices Button link"
+    },
+    {
+      "type": "text",
+      "id": "ser_text",
+      "label": "secvices Button text",
+      "default": "View Services"
+    },   
+    {
+      "type": "color",
+      "id": "bg-linear-color",
+      "label": "Linear color",
+      "default": "#FF7121"
+    }    
+  ],
+  "blocks": [
+    {
+      "name": "Points",
+      "type": "points",
+      "settings": [
+        {
+          "type": "text",
+          "id": "hp_lines",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hour pack"
+    }
+  ]
+}
+{% endschema %}

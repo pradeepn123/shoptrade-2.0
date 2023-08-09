@@ -2,13 +2,77 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87": {
+      "type": "about-banner",
+      "settings": {
+        "heading": "On-Demand Hour Packs",
+        "font_size_desk": 52,
+        "font_size_mob": 28,
+        "banner_para": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>",
+        "btntext": "",
+        "bottom_shadow": true
+      }
+    },
+    "58d4cc53-9645-4bc0-bd59-a837de6fc3f1": {
+      "type": "products-showcase",
+      "blocks": {
+        "0e7e727f-8f56-4fdc-bf64-df4cd26f3888": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "10-hours",
+            "tag": "",
+            "buy_button-id": "product-component-1690877862688",
+            "product__features": "<ul><li>10-hours<\/li><li>30 Days validity<\/li><li>Basic development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Available experts<\/li><\/ul>"
+          }
+        },
+        "07a699d0-b52a-4688-bc59-e187c81d4d9e": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "25-hours",
+            "tag": "POPULAR",
+            "buy_button-id": "product-component-1690878375830",
+            "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated expert<\/li><\/ul>"
+          }
+        },
+        "8c93da82-7ab3-4c18-9613-4038e7a4bbfa": {
+          "type": "ProductType",
+          "settings": {
+            "custom__product": "40-hours",
+            "tag": "",
+            "buy_button-id": "product-component-1690878994024",
+            "product__features": "<ul><li>50-hours<\/li><li>90 Days validity<\/li><li>Complex development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated Team<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "0e7e727f-8f56-4fdc-bf64-df4cd26f3888",
+        "07a699d0-b52a-4688-bc59-e187c81d4d9e",
+        "8c93da82-7ab3-4c18-9613-4038e7a4bbfa"
+      ],
+      "settings": {
+      }
+    },
+    "d1859f89-bc29-4674-9dea-45595636e3c9": {
+      "type": "collection-showcase",
+      "settings": {
+        "title": "Expert Tasks",
+        "description": "<p>Get quick tasks done efficiently without sacrificing quality.<\/p>",
+        "button_label": "View All",
+        "button_url": "shopify:\/\/collections\/expert-tasks",
+        "collections": "expert-tasks"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "31ac5bde-0eb9-4ed8-80d9-9c67b6afbc87",
+    "58d4cc53-9645-4bc0-bd59-a837de6fc3f1",
+    "d1859f89-bc29-4674-9dea-45595636e3c9"
   ]
 }

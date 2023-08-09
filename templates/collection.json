@@ -2,6 +2,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -10,6 +11,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
@@ -17,16 +19,93 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "0b59a68c-7978-4724-83b3-5e23504e4c96": {
+      "type": "about-banner",
+      "settings": {
+        "heading": "Expert Tasks",
+        "font_size_desk": 52,
+        "font_size_mob": 28,
+        "banner_para": "<p>Get the freedom to delegate tasks on-demand or set up recurring tasks for consistent support.<\/p>",
+        "btntext": "",
+        "bottom_shadow": true
+      }
+    },
+    "94ea82c8-b424-423a-916e-d89b7c96810e": {
+      "type": "ET-collection",
+      "settings": {
+      }
+    },
+    "80534ffb-4c24-4392-afcb-8449b1f6f673": {
+      "type": "ET-hour_pack",
+      "blocks": {
+        "699adde5-81d2-4a66-b699-c5d208997a2d": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Development & design work",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Fast turnaround",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "3cd3150a-b24f-4b92-9ba2-9401ac532c17": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Dedicated Experts",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795": {
+          "type": "points",
+          "settings": {
+            "hp_lines": "Replenish as needed",
+            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
+          }
+        },
+        "09d7d7a9-3977-4894-8894-b5bcd1e0fd7c": {
+          "type": "points",
+          "disabled": true,
+          "settings": {
+            "hp_lines": ""
+          }
+        }
+      },
+      "block_order": [
+        "699adde5-81d2-4a66-b699-c5d208997a2d",
+        "8c7160a9-6ca7-4481-b50d-c62a62f2c7f8",
+        "3cd3150a-b24f-4b92-9ba2-9401ac532c17",
+        "8eb3cc7e-57e9-49c4-a93b-8a6e855db795",
+        "09d7d7a9-3977-4894-8894-b5bcd1e0fd7c"
+      ],
+      "settings": {
+        "hp_heading": "Hour Packs",
+        "hp_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <\/p>",
+        "hp_btn_txt": "Buy Hour Packs",
+        "hp_btn_url": "shopify:\/\/pages\/hour-packs",
+        "ser_url": "",
+        "ser_text": "",
+        "bg-linear-color": "#ff7121"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "0b59a68c-7978-4724-83b3-5e23504e4c96",
+    "94ea82c8-b424-423a-916e-d89b7c96810e",
+    "80534ffb-4c24-4392-afcb-8449b1f6f673"
   ]
 }

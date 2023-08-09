@@ -1,5 +1,5 @@
 .services {
-    padding: 100px 0;
+    padding: 84px 0;
     position: relative;
     overflow: hidden;
 
@@ -32,8 +32,54 @@
         max-width: 900px;
         width: 100%;
     }
+    .banner_para{ 
+        max-width: 60%;
+        @media(max-width:1200px){
+            max-width: unset;
+        }
+            p{
+            color: var(--COLOR-BLACK);
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            @media(max-width:991px){
+                font-size: 18px;
+                line-height: 22px;
+            }
+                @media(max-width:520px){
+                    font-size: 15px;
+                    line-height: 20px;
 
-
+                }
+        }
+    }
+}
+.page_banner_shadow{
+    &::after{
+        background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,113,33,1) 40%, rgba(255,113,33,1) 100%);
+        filter: blur(67.5px);
+        width: 100%;
+        height: 100%;
+        right: unset;
+        @media(min-width:992px){
+            top: unset;
+            left: unset;
+            right: unset;
+            bottom: unset;
+            transform: unset;           
+        }
+        @media(max-width:992px){
+            background: linear-gradient(180deg,rgba(255,255,255,0) 60%,rgb(255,113,33) 40%,rgb(255,113,33) 100%);
+        }
+}
+    .h1{
+        margin-bottom: 20px;
+        @media(max-width:520px){
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .ourServices {

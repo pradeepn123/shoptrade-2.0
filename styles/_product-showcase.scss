@@ -1,0 +1,127 @@
+
+.product-showcase__wrapper{
+    padding: 60px 15px;
+
+    .ps__content-wrap{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .ps__block{
+        border: 1px solid #000;
+        border-radius: 8px;
+        overflow: hidden;
+        flex-wrap: wrap;
+        &:nth-child(2){
+            .ps__title{
+                background: #FF7121;
+                color: #fff;
+            }
+        }
+    }
+    .ps__title{
+        font-size: 21px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 1px solid black;
+        padding: 15px 20px;
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ps__tag{
+        margin: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .ps__description{
+        padding: 25px;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        line-height: 26px;
+    }
+    .ps__price{
+        padding: 0 0 30px 20px;
+        font-size: 38px;
+        font-weight: 700;
+        color: #000;
+    }
+    .ps__price span{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .ps__features{
+        border-top: 1px solid #000;
+    }
+    .ps__features ul{
+        padding:0 24px;
+        margin-bottom: 0;
+
+    }
+    .ps__features ul li {
+        display: flex;
+        align-items:center;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+   
+    .ps__features ul li::before {
+        content: url(../assets/check-mark.svg);
+        width: 42px;
+        height: 42px;
+        margin-right: 10px; 
+    }
+
+    .ps_buy-buttons{
+        max-width: 100% !important;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+
+    @media(max-width:1399px){
+        .ps__content-wrap{
+            gap: 20px;
+        }
+    }
+
+    @media (max-width:767px) {
+        .ps__content-wrap{
+            flex-direction: column;  
+        }    
+        .ps__description{
+            display: none;
+        }
+        .ps__price{
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1024px){
+        .ps__title {
+            font-size: 20px;
+        }
+        .ps__description {
+            padding: 12px;
+            font-size: 16px;
+        }
+        .ps__tag {
+            font-size: 12px
+        }
+        .ps__price {
+            padding: 0 0 15px 12px;
+            font-size: 25px;
+        }
+        .ps__features ul {
+            padding: 0 15px;
+        }
+        .ps__features ul li {
+            padding-bottom: 10px;
+            font-size: 15px;
+        }
+
+    }
+}
