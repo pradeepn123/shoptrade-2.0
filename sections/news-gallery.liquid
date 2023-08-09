@@ -25,7 +25,12 @@
             {% endif %}
         {% endfor %}
     </div>
-    </div>
+    </div> 
+    <div class="popup-container">
+      <div class="popup-image-wrapper">
+          <img class="popup-image" src="" alt="popup-image" loading="lazy">
+      </div>
+    </div> 
   </div>
 </section>
 
@@ -80,5 +85,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   toggleNextBtn();
   window.addEventListener('resize', toggleNextBtn);
+
+  //
+    const images = document.querySelectorAll(".neg_slide_img img");
+  
+    const popupContainer = document.querySelector(".popup-container");
+
+    const popupImage = document.querySelector(".popup-image");
+
+    const sectionBody = document.querySelector("body")
+
+   
+
+    images.forEach(image => {
+        image.addEventListener("click", function() {
+            popupImage.src = this.src;
+            popupContainer.style.display = "flex";     
+        });
+    });
+
+    window.addEventListener("mouseup", function(event) {
+        if(event.target != sectionBody && event.target.parentNode != sectionBody){
+          popupContainer.style.display = 'none';
+      }
+    });
 });
 </script>

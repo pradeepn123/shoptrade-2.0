@@ -12,8 +12,7 @@
         border-radius: 8px;
         overflow: hidden;
         flex-wrap: wrap;
-
-        &:hover{
+        &:nth-child(2){
             .ps__title{
                 background: #FF7121;
                 color: #fff;

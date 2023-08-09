@@ -14,7 +14,7 @@
         "heading": "On-Demand Hour Packs",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <strong>No commitments!<\/strong> <\/p>",
+        "banner_para": "<p>Gain the flexibility to leverage our expert services at your convenience with our pre-purchased hour bundles.<\/p>",
         "btntext": "",
         "bottom_shadow": true
       }
@@ -35,7 +35,7 @@
           "type": "ProductType",
           "settings": {
             "custom__product": "25-hours",
-            "tag": "Best Value",
+            "tag": "POPULAR",
             "buy_button-id": "product-component-1690878375830",
             "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated expert<\/li><\/ul>"
           }

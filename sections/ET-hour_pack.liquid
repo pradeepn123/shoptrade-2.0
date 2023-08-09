@@ -13,11 +13,6 @@
         <div class="hour_pack_text_child">
         <div class="hp_heading">
           {% if section.settings.hp_heading %}
-            {% assign showSections = request.design_mode %}
-            {% if customer and customer.tags contains "shoptradeadmin" or request.design_mode or customer.email contains 'shoptrade.co' %}
-              {% assign showSection = true %}
-            {% endif %}
-            {{ showSections }}
             <h2>{{ section.settings.hp_heading }}</h2>
             <span>
               {% render 'arrow-icon' %}

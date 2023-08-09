@@ -34,7 +34,7 @@
         "heading": "Expert Tasks",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Get quick tasks done efficiently without sacrificing quality. No bullsh**. GEt<\/p>",
+        "banner_para": "<p>Get the freedom to delegate tasks on-demand or set up recurring tasks for consistent support.<\/p>",
         "btntext": "",
         "bottom_shadow": true
       }
@@ -93,10 +93,10 @@
       "settings": {
         "hp_heading": "Hour Packs",
         "hp_para": "<p>Get design and development support for projects of any size with our On-Demand packs. <\/p>",
-        "ser_url": "",
-        "ser_text": "",
         "hp_btn_txt": "Buy Hour Packs",
         "hp_btn_url": "shopify:\/\/pages\/hour-packs",
+        "ser_url": "",
+        "ser_text": "",
         "bg-linear-color": "#ff7121"
       }
     }
