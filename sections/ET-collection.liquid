@@ -2,6 +2,7 @@
 <div class="container">
     <div class="ET-product-container">  
     {% for item in collection.products %}
+        {% if  item.metafields.custom.dont_show_on_collection_page.value %}
         {% liquid
             if collection
               assign product_url = item.url | within: collection
@@ -41,6 +42,7 @@
             </div>   
         </a>
      {% endif %}
+    {% endif %}
         {% endfor %}
     </div>
 </div>
