@@ -150,10 +150,10 @@
       "settings": {
         "hp_heading": "Hour Packs",
         "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
-        "ser_url": "",
-        "ser_text": "View Services",
         "hp_btn_txt": "Buy Hour Packs",
         "hp_btn_url": "shopify:\/\/products\/40-hours",
+        "ser_url": "",
+        "ser_text": "View Services",
         "bg-linear-color": "#ff7121"
       }
     }

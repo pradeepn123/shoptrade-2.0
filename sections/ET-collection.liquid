@@ -1,6 +1,6 @@
 
 <div class="container">
-    <div class="ET-product-container">
+    <div class="ET-product-container">  
     {% for item in collection.products %}
         {% liquid
             if collection
@@ -10,8 +10,12 @@
             endif
           %}
         {% if  item.metafields.custom.delivery_imagies.value.delivery_img  or  item.featured_image %}
-        <a href="{{ product_url }}" class="ET-product">
-            <div class="ET-product-img">
+            {% if item.metafields.custom.delivery_imagies.value.different_page_link %}
+                <a href="{{ item.metafields.custom.delivery_imagies.value.different_page_link }}" class="ET-product">
+            {% else %}       
+                <a href="{{ product_url }}" class="ET-product">
+            {% endif %}
+            <div class="ET-product-img">                   
                 {% if  item.metafields.custom.delivery_imagies.value.delivery_img %}
                     <img src= "{{ item.metafields.custom.delivery_imagies.value.delivery_img | img_url: 'master'}}"  loading="lazy" alt = "product image">
                 {% else %} 

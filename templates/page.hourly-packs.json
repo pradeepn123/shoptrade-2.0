@@ -35,7 +35,7 @@
           "type": "ProductType",
           "settings": {
             "custom__product": "25-hours",
-            "tag": "Best Value",
+            "tag": "POPULAR",
             "buy_button-id": "product-component-1690878375830",
             "product__features": "<ul><li>25-hours<\/li><li>60 Days validity<\/li><li>Intermediate development<\/li><li>Design(UI\/UX)<\/li><li>Fast turnaround<\/li><li>Dedicated expert<\/li><\/ul>"
           }
