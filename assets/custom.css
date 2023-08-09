@@ -13211,6 +13211,7 @@ html {
   margin: 0;
   color: #fff;
   text-decoration: none;
+  vertical-align: middle;
 }
 .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn {
   max-width: fit-content;
@@ -13520,6 +13521,7 @@ html {
   width: 80%;
   height: 80%;
   margin: auto;
+  overflow: auto;
 }
 .News_gallary .popup-container .popup-image-wrapper .popup-image {
   width: 100%;
@@ -14287,8 +14289,4 @@ html {
   to {
     transform: translateY(0);
   }
-}
-
-.product-form__input input[type=radio]:checked + label .product_banner_info {
-  display: none;
 }

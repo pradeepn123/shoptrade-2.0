@@ -100,13 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
     images.forEach(image => {
         image.addEventListener("click", function() {
             popupImage.src = this.src;
-            popupContainer.style.display = "flex";     
+            popupContainer.style.display = "flex"; 
+            sectionBody.style.overflow = "hidden";    
         });
     });
 
     window.addEventListener("mouseup", function(event) {
         if(event.target != sectionBody && event.target.parentNode != sectionBody){
           popupContainer.style.display = 'none';
+          sectionBody.style.overflow = "auto"; 
       }
     });
 });
