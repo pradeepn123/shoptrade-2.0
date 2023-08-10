@@ -331,17 +331,23 @@
         <div class="Product_pack_heading">
             <h2>{{ section.settings.product_heading }}</h2>
         </div>
-        <div class="Product_pack_details">
-          {% for item in product.metafields.custom.pack_details.value %}
-            <div class="Product_pd_main">
-              <div class="Product_pd_heading">
-                <h6>{{ item.package_heading }}</h6>
-              </div>
-              <div class="Product_pd_para">
-                 {{ item.description }}
-              </div>
-            </div>
-          {% endfor %}
+        <div class="Product_pack_details" >
+          <div class="variantDataId" variant-data-id="{{ variant.id }}">          
+            <div class="Product_pack_details_sub">
+              {% for variants in product.variants %}
+                {% for ss in variants.metafields.custom.pack_details.value %}
+                <div class="Product_pd_main" data-para-id={{ variants.id }} id='prodDescID' style="{% if product.selected_or_first_available_variant.id == variants.id %}display: flex; {%else %}display: none;{% endif %}">
+                  <div class="Product_pd_heading">
+                    <h6>{{ ss.package_heading }}</h6>
+                  </div>
+                  <div class="Product_pd_para">
+                    {{ ss.description }}
+                  </div>
+                </div>
+                {% endfor %}
+              {% endfor %}
+           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -395,9 +401,12 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
-                {% assign metadata = product.metafields.custom.product_banner_info.value %}
-                <div class="product_banner_info">
-                  <p> {{ metadata.product_banner_info }} </p>
+                <div class="product_banner_info">               
+                    <div class="variantDataId" variant-data-id="{{ variant.id }}">
+                    {% for variants in product.variants %}
+                         <p data-para-id={{ variants.id }} id='prodDescID' style="{% if product.selected_or_first_available_variant.id == variants.id %}display: block {%else %}display: none;{% endif %}">{{ variants.metafields.custom.size_primary }}</p>
+                      {% endfor %} 
+                    </div>
                 </div>
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
@@ -697,9 +706,14 @@
                 </div>  
               </div>
               </div>
-                  {% assign metadata = product.metafields.custom.product_banner_info.value %}
+              {% comment %} metadata {% endcomment %}
                   <div class="product_payment_info">
-                    <span> {% render 'clock-icon' %} </span> <p>   {{ metadata.product_payment_info }} </p>
+                    <span> {% render 'clock-icon' %} </span>
+                    <div class="variantDataId" variant-data-id="{{ variant.id }}">
+                      {% for variants in product.variants %}
+                          <p data-para-id={{ variants.id }} id='prodDescID' style="{% if product.selected_or_first_available_variant.id == variants.id %}display: block {%else %}display: none;{% endif %}">{{ variants.metafields.custom.size_secondary }}</p>
+                      {% endfor %}
+                    </div>
                   </div>
                   {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
