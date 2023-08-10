@@ -13186,23 +13186,6 @@ html {
   border: 1px solid #3A4ED4;
   transition: all 0.3s linear;
   color: #fff;
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover {
-  transition: all 0.3s linear;
-  background-color: #fff;
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover a {
-  transition: all 0.3s linear;
-  color: #3A4ED4;
-}
-@media (max-width: 767px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
-    max-width: 100%;
-    padding: 10px 0;
-    text-align: center;
-  }
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button a {
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
@@ -13211,38 +13194,40 @@ html {
   margin: 0;
   color: #fff;
   text-decoration: none;
-  vertical-align: middle;
 }
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn {
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover {
+  transition: all 0.3s linear;
+  background-color: #fff;
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button:hover {
+  transition: all 0.3s linear;
+  color: #3A4ED4;
+}
+@media (max-width: 767px) {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_button {
+    display: block;
+    max-width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main {
+  margin: 28px 0 0 0;
+  display: block;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main {
+    margin: 15px 0 0 0;
+  }
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main .hp_service_btn {
   max-width: fit-content;
   background-color: #fff;
   padding: 11px 77px;
   border-radius: 32px;
   cursor: pointer;
   transition: all 0.3s linear;
-  margin-top: 20px;
-  color: #3A4ED4;
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn:hover {
-  transition: all 0.3s linear;
-  background-color: #3A4ED4;
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn:hover a {
-  color: #fff;
-  max-width: 100%;
-  padding: 10px 0;
-  text-align: center;
-  transition: all 0.3s linear;
-}
-@media (max-width: 767px) {
-  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn {
-    max-width: 100%;
-    text-align: center;
-    padding: 11px 0;
-    margin-top: 15px;
-  }
-}
-.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn a {
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
@@ -13251,7 +13236,25 @@ html {
   margin: 0;
   color: #3A4ED4;
   text-decoration: none;
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main .hp_service_btn:hover {
   transition: all 0.3s linear;
+  background-color: #3A4ED4;
+}
+.hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main .hp_service_btn:hover {
+  color: #fff;
+  max-width: 100%;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+@media (max-width: 767px) {
+  .hp_content_main .Hour_contain .hour_pack_text .hour_pack_text_child .hp_service_btn_main .hp_service_btn {
+    display: block;
+    max-width: 100% !important;
+    text-align: center;
+    padding: 11px 0;
+    margin-top: 15px;
+  }
 }
 .hp_content_main .Hour_contain .hp_points {
   width: 50%;
@@ -13522,13 +13525,22 @@ html {
   height: 80%;
   margin: auto;
   overflow: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .News_gallary .popup-container .popup-image-wrapper .popup-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   object-fit: contain;
   animation-name: zoom;
   animation-duration: 0.6s;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .News_gallary .popup-container .popup-image-wrapper .popup-image {
+    width: 100%;
+  }
 }
 @keyframes zoom {
   from {
@@ -13574,67 +13586,92 @@ html {
     line-height: 37px;
   }
 }
-.Product_pack_main .Product_pack_details {
+.Product_pack_main .Product_pack_details_sub {
   border: 1px solid #999999;
   border-radius: 8px;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details {
+  .Product_pack_main .Product_pack_details_sub {
     border: unset;
     border-radius: unset;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main {
   background: #fff;
   display: flex;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main {
     flex-direction: column;
+    border-radius: unset;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main:nth-child(odd) {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
   background: #F5F5F5;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main:nth-child(odd) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
     background: unset;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main:first-child {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
+  background: #F5F5F5;
+}
+@media (max-width: 1200px) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
+    background: unset;
+  }
+}
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:first-child {
   border-radius: 8px 8px 0 0;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main:first-child {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:first-child {
     border-radius: unset;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main:last-child {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(7) {
   border-radius: 0 0 8px 8px;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main:last-child {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(7) {
+    border-radius: unset;
+  }
+}
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(8) {
+  border-radius: 8px 8px 0 0;
+}
+@media (max-width: 1200px) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(8) {
+    border-radius: unset;
+  }
+}
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:last-child {
+  border-radius: 0 0 8px 8px;
+}
+@media (max-width: 1200px) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:last-child {
     border-radius: unset;
   }
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main:not(:first-child) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:not(:first-child) {
     padding-top: 10px;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_heading {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_heading {
   border-right: 1px solid #999999;
   padding: 20px 5px 20px 30px;
   width: 35%;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_heading {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_heading {
     padding: 10px 5px 5px 0;
     border-right: unset;
     width: unset;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_heading h6 {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_heading h6 {
   color: #000;
   margin: 0;
   font-size: 18px;
@@ -13644,13 +13681,13 @@ html {
   text-align: left;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_heading h6 {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_heading h6 {
     font-size: 16px;
     line-height: 21px;
     font-weight: 600;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para {
   padding: 20px 10px 20px 30px;
   width: 65%;
   color: #000;
@@ -13662,32 +13699,32 @@ html {
   text-align: left;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para {
     width: 65%;
   }
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para {
     padding: 10px 0;
     width: unset;
   }
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para:nth-child(even) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para:nth-child(even) {
     background: #F5F5F5;
   }
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para {
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para ul {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para ul {
   padding: 0;
   margin: 0;
   padding-left: 16px;
 }
-.Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para ul li {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para ul li {
   color: #000;
   margin: 0;
   font-size: 18px;
@@ -13698,7 +13735,7 @@ html {
   list-style-position: outside;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details .Product_pd_main .Product_pd_para ul li {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main .Product_pd_para ul li {
     font-size: 16px;
     padding-right: 10px;
   }

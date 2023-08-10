@@ -777,7 +777,7 @@ class VariantSelects extends HTMLElement {
   updateProductDescription() {
     document.querySelectorAll("#prodDescID").forEach((item) => {
       if(item.getAttribute('data-para-id') == this.currentVariant.id){
-        item.style.display = 'block';
+        item.style.display = 'flex';
       }
       else{
         item.style.display=  'none';
