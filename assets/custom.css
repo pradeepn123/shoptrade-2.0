@@ -14003,7 +14003,7 @@ html {
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_payment_info {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .ST-product-page-main .st-product-pg .product__info-wrapper .product__info-container .product_payment_info span {
   padding-right: 10px;

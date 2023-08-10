@@ -752,18 +752,18 @@ customElements.define('slideshow-component', SlideshowComponent);
 class VariantSelects extends HTMLElement {
   constructor() {
     super();
-    this.addEventListener('change', this.onVariantChange);
+    this.addEventListener("change", this.onVariantChange);
   }
 
   onVariantChange() {
     this.updateOptions();
     this.updateMasterId();
-    this.toggleAddButton(true, '', false);
+    this.toggleAddButton(true, "", false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-
+    this.updateProductDescription();
     if (!this.currentVariant) {
-      this.toggleAddButton(true, '', true);
+      this.toggleAddButton(true, "", true);
       this.setUnavailable();
     } else {
       this.updateMedia();
@@ -774,15 +774,31 @@ class VariantSelects extends HTMLElement {
     }
   }
 
+  updateProductDescription() {
+    document.querySelectorAll("#prodDescID").forEach((item) => {
+      if(item.getAttribute('data-para-id') == this.currentVariant.id){
+        item.style.display = 'block';
+      }
+      else{
+        item.style.display=  'none';
+      }
+    });
+  }
+
   updateOptions() {
-    this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
+    this.options = Array.from(
+      this.querySelectorAll("select"),
+      (select) => select.value
+    );
   }
 
   updateMasterId() {
     this.currentVariant = this.getVariantData().find((variant) => {
-      return !variant.options.map((option, index) => {
-        return this.options[index] === option;
-      }).includes(false);
+      return !variant.options
+        .map((option, index) => {
+          return this.options[index] === option;
+        })
+        .includes(false);
     });
   }
 
@@ -790,83 +806,123 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
 
-    const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
-    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
+    const mediaGalleries = document.querySelectorAll(
+      `[id^="MediaGallery-${this.dataset.section}"]`
+    );
+    mediaGalleries.forEach((mediaGallery) =>
+      mediaGallery.setActiveMedia(
+        `${this.dataset.section}-${this.currentVariant.featured_media.id}`,
+        true
+      )
+    );
 
-    const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
+    const modalContent = document.querySelector(
+      `#ProductModal-${this.dataset.section} .product-media-modal__content`
+    );
     if (!modalContent) return;
-    const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
+    const newMediaModal = modalContent.querySelector(
+      `[data-media-id="${this.currentVariant.featured_media.id}"]`
+    );
     modalContent.prepend(newMediaModal);
   }
 
   updateURL() {
-    if (!this.currentVariant || this.dataset.updateUrl === 'false') return;
-    window.history.replaceState({ }, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
+    if (!this.currentVariant || this.dataset.updateUrl === "false") return;
+    window.history.replaceState(
+      {},
+      "",
+      `${this.dataset.url}?variant=${this.currentVariant.id}`
+    );
   }
 
   updateShareUrl() {
-    const shareButton = document.getElementById(`Share-${this.dataset.section}`);
+    const shareButton = document.getElementById(
+      `Share-${this.dataset.section}`
+    );
     if (!shareButton || !shareButton.updateUrl) return;
-    shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
+    shareButton.updateUrl(
+      `${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`
+    );
   }
 
   updateVariantInput() {
-    const productForms = document.querySelectorAll(`#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`);
+    const productForms = document.querySelectorAll(
+      `#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`
+    );
     productForms.forEach((productForm) => {
       const input = productForm.querySelector('input[name="id"]');
       input.value = this.currentVariant.id;
-      input.dispatchEvent(new Event('change', { bubbles: true }));
+      input.dispatchEvent(new Event("change", { bubbles: true }));
     });
   }
 
   updatePickupAvailability() {
-    const pickUpAvailability = document.querySelector('pickup-availability');
+    const pickUpAvailability = document.querySelector("pickup-availability");
     if (!pickUpAvailability) return;
 
     if (this.currentVariant && this.currentVariant.available) {
       pickUpAvailability.fetchAvailability(this.currentVariant.id);
     } else {
-      pickUpAvailability.removeAttribute('available');
-      pickUpAvailability.innerHTML = '';
+      pickUpAvailability.removeAttribute("available");
+      pickUpAvailability.innerHTML = "";
     }
   }
 
   removeErrorMessage() {
-    const section = this.closest('section');
+    const section = this.closest("section");
     if (!section) return;
 
-    const productForm = section.querySelector('product-form');
+    const productForm = section.querySelector("product-form");
     if (productForm) productForm.handleErrorMessage();
   }
 
   renderProductInfo() {
-    fetch(`${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`)
+    fetch(
+      `${this.dataset.url}?variant=${this.currentVariant.id}&section_id=${
+        this.dataset.originalSection
+          ? this.dataset.originalSection
+          : this.dataset.section
+      }`
+    )
       .then((response) => response.text())
       .then((responseText) => {
-        const html = new DOMParser().parseFromString(responseText, 'text/html')
-        const destination = document.getElementById(`price-${this.dataset.section}`);
-        const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        const html = new DOMParser().parseFromString(responseText, "text/html");
+        const destination = document.getElementById(
+          `price-${this.dataset.section}`
+        );
+        const source = html.getElementById(
+          `price-${
+            this.dataset.originalSection
+              ? this.dataset.originalSection
+              : this.dataset.section
+          }`
+        );
         if (source && destination) destination.innerHTML = source.innerHTML;
 
         const price = document.getElementById(`price-${this.dataset.section}`);
 
-        if (price) price.classList.remove('visibility-hidden');
-        this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+        if (price) price.classList.remove("visibility-hidden");
+        this.toggleAddButton(
+          !this.currentVariant.available,
+          window.variantStrings.soldOut
+        );
       });
   }
 
   toggleAddButton(disable = true, text, modifyClass = true) {
-    const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+    const productForm = document.getElementById(
+      `product-form-${this.dataset.section}`
+    );
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
     const addButtonText = productForm.querySelector('[name="add"] > span');
     if (!addButton) return;
 
     if (disable) {
-      addButton.setAttribute('disabled', 'disabled');
+      addButton.setAttribute("disabled", "disabled");
       if (text) addButtonText.textContent = text;
     } else {
-      addButton.removeAttribute('disabled');
+      addButton.removeAttribute("disabled");
       addButtonText.textContent = window.variantStrings.addToCart;
     }
 
@@ -874,17 +930,21 @@ class VariantSelects extends HTMLElement {
   }
 
   setUnavailable() {
-    const button = document.getElementById(`product-form-${this.dataset.section}`);
+    const button = document.getElementById(
+      `product-form-${this.dataset.section}`
+    );
     const addButton = button.querySelector('[name="add"]');
     const addButtonText = button.querySelector('[name="add"] > span');
     const price = document.getElementById(`price-${this.dataset.section}`);
     if (!addButton) return;
     addButtonText.textContent = window.variantStrings.unavailable;
-    if (price) price.classList.add('visibility-hidden');
+    if (price) price.classList.add("visibility-hidden");
   }
 
   getVariantData() {
-    this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
+    this.variantData =
+      this.variantData ||
+      JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return this.variantData;
   }
 }
