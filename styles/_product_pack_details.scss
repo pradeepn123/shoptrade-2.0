@@ -44,7 +44,15 @@
                 border-radius: unset;
             }
 
-            &:nth-child(odd) {
+            &:nth-child(odd):not(:nth-child(n+8)) {
+                background: #F5F5F5;
+                @media(max-width:1200px) {
+                    background: unset;
+                }
+            }
+        
+        
+            &:nth-child(2n+8){
                 background: #F5F5F5;
                 @media(max-width:1200px) {
                     background: unset;
