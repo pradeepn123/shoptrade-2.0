@@ -13606,19 +13606,11 @@ html {
     border-radius: unset;
   }
 }
-.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd) {
   background: #F5F5F5;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
-    background: unset;
-  }
-}
-.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
-  background: #F5F5F5;
-}
-@media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd) {
     background: unset;
   }
 }
