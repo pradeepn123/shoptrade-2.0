@@ -752,18 +752,13 @@ input::-moz-placeholder {
   color: var(--COLOR-BLACK);
   margin: 0;
   padding: 0;
-  line-height: 40px;
+  line-height: 42px;
   font-size: 20px;
   font-family: "Roboto";
   word-wrap: break-word;
+  word-break: break-all;
 }
-@media (max-width: 991px) {
-  .shopify-policy__container .shopify-policy__body p {
-    line-height: 32px;
-    font-size: 18px;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 767px) {
   .shopify-policy__container .shopify-policy__body p {
     line-height: 26px;
     font-size: 16px;
@@ -778,13 +773,13 @@ input::-moz-placeholder {
 }
 .shopify-policy__container .shopify-policy__body .PP-heads {
   font-size: 28px;
-  line-height: 1.1;
+  line-height: 1.4;
   margin-bottom: 10px;
 }
 @media (max-width: 520px) {
   .shopify-policy__container .shopify-policy__body .PP-heads {
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.3;
   }
 }
 .shopify-policy__container .shopify-policy__body .PP-heads:not(:first-child) {
