@@ -741,13 +741,11 @@ input::-moz-placeholder {
   padding-top: 2px;
 }
 
-.shopify-policy__container .shopify-policy__title h1 {
-  font-size: 30px;
-  line-height: 1.1;
-}
 @media (max-width: 767px) {
   .shopify-policy__container .shopify-policy__title h1 {
     margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.1;
   }
 }
 .shopify-policy__container .shopify-policy__body p {
@@ -761,8 +759,8 @@ input::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .shopify-policy__container .shopify-policy__body p {
-    line-height: 1.3;
-    font-size: 22px;
+    line-height: 32px;
+    font-size: 18px;
   }
 }
 @media (max-width: 520px) {

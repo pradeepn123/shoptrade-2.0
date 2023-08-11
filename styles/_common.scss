@@ -828,10 +828,11 @@ input::-moz-placeholder {
 .shopify-policy__container{
     .shopify-policy__title{
         h1{
-            font-size: 30px;
-            line-height: 1.1;
+            
             @media(max-width:767px){
                 margin-bottom: 20px;
+                font-size: 30px;
+                line-height: 1.1;
             }
         }
     }
@@ -845,8 +846,8 @@ input::-moz-placeholder {
             font-family: 'Roboto';
             word-wrap: break-word;
             @media(max-width:991px){
-                line-height: 1.3;
-                font-size: 22px;
+                line-height: 32px;
+                font-size: 18px;
             }
 
             @media(max-width:520px){
