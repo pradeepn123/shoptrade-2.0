@@ -332,19 +332,21 @@
             <h2>{{ section.settings.product_heading }}</h2>
         </div>
         <div class="Product_pack_details" >
-          <div class="variantDataId" variant-data-id="{{ variant.id }}">          
+          <div class="variantDataId" variant-data-id="{{ variant.id }}">
             <div class="Product_pack_details_sub">
               {% for variants in product.variants %}
-                {% for ss in variants.metafields.custom.pack_details.value %}
-                <div class="Product_pd_main" data-para-id={{ variants.id }} id='prodDescID' style="{% if product.selected_or_first_available_variant.id == variants.id %}display: flex; {%else %}display: none;{% endif %}">
-                  <div class="Product_pd_heading">
-                    <h6>{{ ss.package_heading }}</h6>
+                <div>
+                  {% for NewVarient in variants.metafields.custom.pack_details.value %}
+                  <div class="Product_pd_main" data-para-id={{ variants.id }} id='prodDescID' style="{% if product.selected_or_first_available_variant.id == variants.id %}display: flex; {%else %}display: none;{% endif %}">
+                    <div class="Product_pd_heading">
+                      <h6>{{ NewVarient.package_heading }}</h6>
+                    </div>
+                    <div class="Product_pd_para">
+                      {{ NewVarient.description }}
+                    </div>
                   </div>
-                  <div class="Product_pd_para">
-                    {{ ss.description }}
-                  </div>
+                  {% endfor %}
                 </div>
-                {% endfor %}
               {% endfor %}
            </div>
           </div>
