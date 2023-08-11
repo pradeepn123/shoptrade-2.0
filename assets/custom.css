@@ -741,6 +741,56 @@ input::-moz-placeholder {
   padding-top: 2px;
 }
 
+@media (max-width: 767px) {
+  .shopify-policy__container .shopify-policy__title h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 1.1;
+  }
+}
+.shopify-policy__container .shopify-policy__body p {
+  color: var(--COLOR-BLACK);
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: "Roboto";
+  word-wrap: break-word;
+}
+@media (max-width: 991px) {
+  .shopify-policy__container .shopify-policy__body p {
+    line-height: 32px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 520px) {
+  .shopify-policy__container .shopify-policy__body p {
+    line-height: 26px;
+    font-size: 16px;
+  }
+}
+.shopify-policy__container .shopify-policy__body p a {
+  color: var(--COLOR-PRIMARY);
+  text-decoration: none;
+}
+.shopify-policy__container .shopify-policy__body p a:hover {
+  text-decoration: underline;
+}
+.shopify-policy__container .shopify-policy__body .PP-heads {
+  font-size: 28px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+@media (max-width: 520px) {
+  .shopify-policy__container .shopify-policy__body .PP-heads {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+.shopify-policy__container .shopify-policy__body .PP-heads:not(:first-child) {
+  margin-top: 20px;
+}
+
 .homeBanner {
   overflow: hidden;
   position: relative;
@@ -13606,19 +13656,11 @@ html {
     border-radius: unset;
   }
 }
-.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
+.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd) {
   background: #F5F5F5;
 }
 @media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd):not(:nth-child(n+8)) {
-    background: unset;
-  }
-}
-.Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
-  background: #F5F5F5;
-}
-@media (max-width: 1200px) {
-  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(2n+8) {
+  .Product_pack_main .Product_pack_details_sub .Product_pd_main:nth-child(odd) {
     background: unset;
   }
 }
