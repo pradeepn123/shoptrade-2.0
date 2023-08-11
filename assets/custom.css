@@ -756,6 +756,7 @@ input::-moz-placeholder {
   font-size: 20px;
   font-family: "Roboto";
   word-wrap: break-word;
+  word-break: break-all;
 }
 @media (max-width: 767px) {
   .shopify-policy__container .shopify-policy__body p {
