@@ -179,7 +179,6 @@
     },
     "marquee": {
       "type": "marquee",
-      "disabled": true,
       "blocks": {
         "116094d0-983b-443e-aebf-1c58e6585a3f": {
           "type": "marqueeType",
@@ -305,6 +304,7 @@
         "e57e9c29-541c-4b80-8aad-c6ac9b981b29",
         "f83dcf24-9a7d-452c-8f7a-d78fc1609f60"
       ],
+      "disabled": true,
       "settings": {
         "scrolling_mode": "auto",
         "scrolling_speed": 10
@@ -312,7 +312,6 @@
     },
     "54b153cd-107d-47ab-86a0-2793af834b5d": {
       "type": "showcase-role",
-      "disabled": true,
       "blocks": {
         "b930ccac-b86d-4559-8075-8191d76ad2fb": {
           "type": "role",
@@ -339,6 +338,7 @@
         "b930ccac-b86d-4559-8075-8191d76ad2fb",
         "629bbe23-c4bd-4e90-9d86-7283e87c0c51"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -457,7 +457,6 @@
     },
     "uiDesign": {
       "type": "UI-Design",
-      "disabled": true,
       "blocks": {
         "3c86b867-83cc-47fa-aa39-dd0c0b5ab730": {
           "type": "services",
@@ -597,6 +596,7 @@
         "77a00356-e129-4e02-9ac1-9d19d236e478",
         "44417285-9944-429b-acd3-2c8a89f9c0a6"
       ],
+      "disabled": true,
       "settings": {
       }
     },

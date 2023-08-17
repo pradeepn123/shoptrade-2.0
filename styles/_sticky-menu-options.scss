@@ -1,0 +1,31 @@
+.Sticky-options-menu_parent {
+    background: #3A4ED4;
+
+    .Sticky-options-menu {
+
+
+        .all_options {
+            padding: 32px 0;
+            max-width: fit-content;
+
+            a {
+                color: #FFF;
+                font-size: 27.225px;
+                font-weight: 600;
+                line-height: 36px;
+                letter-spacing: -0.817px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                span{
+                    padding-left: 10px;
+                }
+
+            }
+        }
+
+        .options_parent {
+            a {}
+        }
+    }
+}

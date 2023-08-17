@@ -1,0 +1,67 @@
+<div class="Sticky-options-menu_parent">
+  <div class="container">
+    <div class="Sticky-options-menu">
+      <div class="all_options">
+        <a>
+          {{ section.settings.Main_btn }}
+          <span id="exploreAll"> {% render 'Show-hide-arrow' %} </span>
+        </a>
+      </div>
+      <div class="options_parent">
+        {% for block in section.blocks %}
+          <a href="{{ block.settings.options_url }}"> {{ block.settings.options_text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sticky-menu-options",
+  "settings": [
+    {
+      "type": "text",
+      "id": "Main_btn",
+      "label": "Heading",
+      "default": "Explore ALL"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "menu options",
+      "type": "menu_options",
+      "settings": [
+        {
+          "type": "text",
+          "id": "options_text",
+          "label": "Heading",
+          "default": "Butto Text"
+        },
+        {
+          "type": "url",
+          "id": "options_url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky Menu"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  window.onload = function(){
+    
+    let allOpt = document.querySelector("#exploreAll");
+    allOpt.addEventListner("click", function(){
+    allOpt.style.transform= "rotate(90deg)";
+  });
+    
+  }
+
+</script>
