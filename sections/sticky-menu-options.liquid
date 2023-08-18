@@ -1,21 +1,57 @@
-<div class="Sticky-options-menu_parent">
+<div class="sticky_pop_up_parent">
   <div class="container">
-    <div class="Sticky-options-menu">
-      <div class="all_options">
-        <a>
-          {{ section.settings.Main_btn }}
-          <span id="exploreAll"> {% render 'Show-hide-arrow' %} </span>
-        </a>
-      </div>
+    <div class="tab-sticky-options">
       <div class="options_parent">
-        {% for block in section.blocks %}
-          <a href="{{ block.settings.options_url }}"> {{ block.settings.options_text }}</a>
+        {% assign explore_all_menu = linklists['explore-all'] %}
+        {% for link in explore_all_menu.links %}
+          <a href="{{ link.url }}"> {{ link.title }}</a>
         {% endfor %}
       </div>
     </div>
   </div>
+  <div class="Sticky-options-menu_parent">
+    <div class="container">
+      <div class="Sticky-options-menu">
+        <div class="all_options">
+          {% if section.settings.Main_btn %}
+            <a>
+              {{ section.settings.Main_btn }}
+              <span id="exploreAll"> {% render 'Show-hide-arrow' %} </span>
+            </a>
+          {% endif %}
+        </div>
+        <div class="options_parent">
+          {% assign explore_all_menu = linklists['explore-all'] %}
+          {% for link in explore_all_menu.links %}
+            <a href="{{ link.url }}"> {{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-popup-content" id="showOnClick">
+    <div class="container">
+      <div class="sticky-popup">
+        <div class="sticky_popup_child">
+          {% for link in explore_all_menu.links %}
+            <div class="sticky-popup_text">
+              <a class="sticky-pop_heading" href="{{ link.url }}">{{ link.title }}</a>
+              {% if link.links %}
+                <div class="sticky-pop_links_head">
+                  {% for child_link in link.links %}
+                    <div class="sticky-pop_links_child">
+                      <a class="sticky-pop_links" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
 {% schema %}
 {
   "name": "Sticky-menu-options",
@@ -25,22 +61,50 @@
       "id": "Main_btn",
       "label": "Heading",
       "default": "Explore ALL"
+    },
+    {
+      "type": "text",
+      "id": "options_text",
+      "label": "Heading",
+      "default": "Butto Text"
+    },
+    {
+      "type": "url",
+      "id": "options_url",
+      "label": "Button link"
     }
   ],
   "blocks": [
     {
-      "name": "menu options",
-      "type": "menu_options",
+      "name": "menu-heading",
+      "type": "menu-heading",
       "settings": [
         {
           "type": "text",
           "id": "options_text",
           "label": "Heading",
-          "default": "Butto Text"
+          "default": "Button Text"
         },
         {
           "type": "url",
           "id": "options_url",
+          "label": "Button link"
+        }
+      ]
+    },
+    {
+      "name": "menu-links",
+      "type": "menu-links",
+      "settings": [
+        {
+          "type": "text",
+          "id": "pop-content-options",
+          "label": "Heading",
+          "default": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "pop-content-url",
           "label": "Button link"
         }
       ]
@@ -55,13 +119,43 @@
 {% endschema %}
 
 <script>
-  window.onload = function(){
-    
-    let allOpt = document.querySelector("#exploreAll");
-    allOpt.addEventListner("click", function(){
-    allOpt.style.transform= "rotate(90deg)";
-  });
-    
-  }
+  window.onload = function () {
+    let allOpt = document.querySelector('#exploreAll');
+    let optSvg = document.querySelector('#exploreAll svg');
+    let popHeight = document.querySelector('#showOnClick');
+    allOpt.addEventListener('click', function () {
+      if (optSvg.classList.contains('rotate_arrow')) {
+        optSvg.classList.remove('rotate_arrow');
+        popHeight.style.display = 'none';
+      } else {
+        optSvg.classList.add('rotate_arrow');
+        popHeight.style.display = 'flex';
+      }
+    });
+    var footerHeight = $('.shopify-footer').height();
+    function sticky_relocate_top() {
+      var window_top = $(window).scrollTop();
+      var footerCartShow = $(document).height() - $(window).height() - footerHeight;
+      if (window_top > 100 && window_top < footerCartShow) {
+        $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+      } else {
+        $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+      }
+    }
 
+    function sticky_relocate_bottom() {
+      var window_top2 = $(window).scrollTop();
+      var footerCarthide = $(document).height() - $(window).height() - footerHeight;
+      if (window_top2 > 100 && window_top2 < footerCarthide) {
+        $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+      } else {
+        $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+      }
+    }
+
+    $(window).scroll(function () {
+      sticky_relocate_top();
+      sticky_relocate_bottom();
+    });
+  };
 </script>
