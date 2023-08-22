@@ -81,8 +81,8 @@
                               </span>
                             {% endif %}
                           </div>
-                          <div class="aboutUsVideo" data-js="video" data-hidden="true">
-                            <div data-js="video-root"></div>
+                          <div class="aboutUsVideo" data-js="video" data-hidden="">
+                         
                           </div>
                         </div>
                       </div>
@@ -192,6 +192,7 @@
     const closePopup = document.querySelector('.gib_close-popup');
     const videoPlayer = document.querySelector('.video-player');
     const videoFrame = document.getElementById('videoFrame');
+    const videoDiv = document.querySelector('.aboutUsVideo');
   
   
     playButtons.forEach(playButton => {
@@ -199,6 +200,7 @@
             const videoUrl = videoPlayer.getAttribute('data-player-url');
             videoFrame.src = videoUrl;
             popup.style.display = 'block';
+            videoDiv.setAttribute('data-hidden', 'true');
         });
     });
     closePopup.addEventListener('click', () => {
