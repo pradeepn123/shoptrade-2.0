@@ -15030,6 +15030,20 @@ html {
   cursor: pointer;
   color: #fff;
 }
+.grid_img_container_main .grid_img_container #videoFrame {
+  width: 100vh;
+  height: 57vh;
+}
+@media (max-width: 575px) {
+  .grid_img_container_main .grid_img_container #videoFrame {
+    height: 35vh;
+  }
+}
+@media (max-width: 375px) {
+  .grid_img_container_main .grid_img_container #videoFrame {
+    height: fit-content;
+  }
+}
 .grid_img_container_main .Gridthree {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

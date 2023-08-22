@@ -94,6 +94,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Data Driven UI\/UX",
+            "box_url": "",
             "gib_para": "<p>Transform your user experience with our data-driven UI\/UX service. Elevate engagement and conversions through personalized designs. Data powers success!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768.png",
@@ -104,6 +105,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "3D Modelling",
+            "box_url": "",
             "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774.png",
@@ -114,6 +116,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "CRO Audit",
+            "box_url": "",
             "gib_para": "<p>Maximize your website's potential with our comprehensive CRO audit service. Uncover opportunities for growth and boost conversions with data-driven insights. Optimize for success now!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775.png",
@@ -124,6 +127,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Package Design",
+            "box_url": "",
             "gib_para": "<p>Stand out on the shelves with our captivating package design service. From concept to reality, we create eye-catching, memorable packaging that leaves a lasting impression on your customers. Elevate your brand today!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1.png",
@@ -134,16 +138,18 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Art Direction",
+            "box_url": "",
             "gib_para": "<p>Unleash your creative vision witht our art direction design service. From illustrations to videography and photography, we bring your ideas to life with expertise and flair.<\/p>",
             "enble_video": true,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3618.png",
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
         "0e2bf65f-1240-49b7-bc95-18682b2d66bd": {
           "type": "image-block",
           "settings": {
             "gib_heading": "Photo Retouching",
+            "box_url": "",
             "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to trans-formative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_1.png",
@@ -161,7 +167,6 @@
       ],
       "settings": {
         "uniuq_id": "Design",
-        "vertical_alignment": "GridOne",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -548,6 +553,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Product Development",
+            "box_url": "",
             "gib_para": "<p>Turn your ideas into reality with our end-to-end product development service. From concept to launch, we deliver innovative solutions that exceed expectations and drive business success.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_a6a7d96a-862b-40a6-a197-204a5042b3d9.png",
@@ -558,6 +564,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Platform Migration",
+            "box_url": "",
             "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to transformative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_5b0f514e-90a3-4856-980a-1eaec8cec183.png",
@@ -568,6 +575,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Theme Development",
+            "box_url": "",
             "gib_para": "<p>Choose between Custom Theme for unique user experience with existing design or Theme-Based for swift, budget-friendly launch based on Shopify themes. Tailored solutions for varied needs.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_1_060286c0-88a4-44e8-8115-c6e626bdd64c.png",
@@ -578,6 +586,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "System Integration",
+            "box_url": "",
             "gib_para": "<p>Powerful SaaS partnerships for an exceptional commerce experience. Custom integrations for seamless connections with ERP, CRM, PIM, and more. Grow your brand effortlessly.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_2.png",
@@ -588,6 +597,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Headless Commerce",
+            "box_url": "",
             "gib_para": "<p>360° Headless Commerce experts. Mastering backend & frontend: Shopify, Next.js, React, Contentful, Python, Node.js. Simplifying complexity, unlocking new possibilities. <\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_3.png",
@@ -604,7 +614,6 @@
       ],
       "settings": {
         "uniuq_id": "Development",
-        "vertical_alignment": "GridTwo",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -627,6 +636,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Brand Design",
+            "box_url": "",
             "gib_para": "<p>Capture your essence. Elevate your brand. Crafting unique, consistent, and visually pleasing communication systems that leave lasting impressions on your customers. <\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_6b6277fa-1700-4025-8718-36c54ac1a952.png",
@@ -637,6 +647,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Brand Strategy",
+            "box_url": "",
             "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_52e39203-37d7-44a2-a367-2fa8ef34c7bd.png",
@@ -650,7 +661,6 @@
       ],
       "settings": {
         "uniuq_id": "Branding",
-        "vertical_alignment": "Gridthree",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -673,6 +683,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Social Media Design",
+            "box_url": "",
             "gib_para": "<p>Build trust through consistency. We crafts messaging & visual strategies to connect you with your audience across platforms. Elevate your social media presence.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_923f196d-5dad-42e4-94c0-8513bfe4bfe0.png",
@@ -683,6 +694,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Promotional Emailer",
+            "box_url": "",
             "gib_para": "<p>Engage, entice, and elevate. Our expert emailer design service delivers eye-catching promotions that captivate your audience and drive results. Take your campaigns to new heights.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_0bc3f6ee-10ae-4a55-ac8f-4105cfa53288.png",
@@ -693,6 +705,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Marketing",
+            "box_url": "",
             "gib_para": "<p>Unleash your brand's potential. Reach new audiences, gain a competitive edge with strategic marketing, compelling messaging, and captivating visuals. <\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_2.png",
@@ -703,6 +716,7 @@
           "type": "image-block",
           "settings": {
             "gib_heading": "Messaging",
+            "box_url": "",
             "gib_para": "<p>Speak volumes with impactful messaging. Crafting powerful statements that resonate deeply with customers, forging lasting connections beyond mere descriptions.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_3.png",
@@ -718,7 +732,6 @@
       ],
       "settings": {
         "uniuq_id": "Marketing",
-        "vertical_alignment": "Gridfour",
         "padding_btm_desk": 80,
         "padding_btm_mob": 80
       }

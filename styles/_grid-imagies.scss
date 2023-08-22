@@ -340,6 +340,17 @@
             font-size: 20px;
             cursor: pointer;
             color: #fff;
+            
+        }
+        #videoFrame{
+            width: 100vh;
+            height: 57vh;
+            @media(max-width:575px){
+             height: 35vh;
+            }
+            @media(max-width:375px){
+             height: fit-content;
+            }
         }
     }
 
