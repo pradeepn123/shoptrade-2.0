@@ -818,7 +818,7 @@ class VideoPlayer {
 
   show(element) {
     element.setAttribute('data-hidden', 'false');
-     document.querySelector(".gib_video_palyer").style.paddingBottom = "89%";
+     document.querySelector(".gib_video_palyer").style.paddingBottom = "77%";
   }
 
   hide(element) {

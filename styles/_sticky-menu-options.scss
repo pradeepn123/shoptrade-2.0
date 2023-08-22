@@ -67,6 +67,7 @@
         display: none;
         background-color: #fff !important;
         width: 100%;
+        transition: all 0.3s linear;
 
         .sticky-popup {
             background: #fff !important;
@@ -80,15 +81,18 @@
             width: auto;
             overflow: auto;
 
-            @media (max-width:991px) {
+          
+            @media(max-width:991px){
+                position: fixed;
+                top: 0;
+                z-index: 1;
 
                 left: 0;
                 right: 0;
-                top: -100%;
-                padding: 36px 20px;
+                // top: -100%;
+                padding: 36px 20px 90px 20px;
                 height: 100%;
             }
-
 
             .sticky_popup_child {
                 display: flex;
@@ -168,6 +172,11 @@
     .Sticky-options-menu_parent {
         background: #3A4ED4;
 
+        @media(max-width: 991px){
+            position: relative;
+            z-index: 9999;
+        }
+
         .Sticky-options-menu {
             display: flex;
             align-items: center;
@@ -195,12 +204,26 @@
                     @media(max-width:920px) {
                         justify-content: center;
                     }
+                    @media(max-width:520px){
+                        font-size: 20px;
+                        line-height: 27px;
+                        letter-spacing: -0.613px;
+                    }
 
                     span {
                         padding-left: 10px;
+                        line-height: unset;
+                        @media(max-width:520px){
+                            padding-left: unset;
+                            display: flex;
+                            align-items: center;
+                            }
 
                         svg {
                             transition: all 0.3s linear;
+                            @media(max-width:520px){
+                                height: 30px;
+                            }
                         }
 
                         .rotate_arrow {

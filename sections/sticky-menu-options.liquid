@@ -14,11 +14,11 @@
   <div class="Sticky-options-menu_parent">
     <div class="container">
       <div class="Sticky-options-menu">
-        <div class="all_options">
+        <div class="all_options" id="exploreAll">
           {% if section.settings.Main_btn %}
             <a>
               {{ section.settings.Main_btn }}
-              <span id="exploreAll"> {% render 'Show-hide-arrow' %} </span>
+              <span> {% render 'Show-hide-arrow' %} </span>
             </a>
           {% endif %}
         </div>
@@ -136,10 +136,9 @@
     });
     var footerHeight = $('.shopify-footer').height();
     function sticky_relocate_top() {
-      var window_top = $(window).scrollTop();
-     
+      var window_top = $(window).scrollTop();      
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
-      if (window_top > 200 && window_top < footerCartShow) {
+      if (window_top > 100 && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -149,7 +148,7 @@
     function sticky_relocate_bottom() {
       var window_top2 = $(window).scrollTop();
       var footerCarthide = $(document).height() - $(window).height() - footerHeight;
-      if (window_top2 > 200 && window_top2 < footerCarthide) {
+      if (window_top2 > 100 && window_top2 < footerCarthide) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -160,5 +159,24 @@
       sticky_relocate_top();
       sticky_relocate_bottom();
     });
+
+
+    let mac = document.querySelector("#exploreAll");
+    let body = document.querySelector("body");
+    let menuBtnNext = document.querySelectorAll('.sticky-pop_links');
+    mac.addEventListener("click", function() {
+      if (body.style.overflow === "auto") { 
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "auto";
+      }
+    });
+    
+    menuBtnNext.forEach(function (menuBtnN) {
+      menuBtnN.addEventListener('click', function () {
+        body.style.overflow = "auto";
+      });
+    });
+
   };
 </script>

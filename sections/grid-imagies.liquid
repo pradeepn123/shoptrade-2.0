@@ -1,8 +1,12 @@
 {% style %}
-
   html{
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 11rem;
   }
+  @media(max-width: 520px){
+      html{
+      scroll-padding-top: 7rem;
+      }
+    }
   .grid_img_container_main--{{ section.id }}{
     
     padding-bottom: {{ section.settings.padding_btm_desk }}px;
@@ -84,6 +88,12 @@
                       </div>
                     </div>
                   </div>
+                  <div class="gib_popup">
+                    <div class="gib_popup-content">
+                        <span class="gib_close-popup">&times;</span>
+                        <iframe allow="autoplay; muted"  id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                 </div>
                 {% endif %}
               </a>
             </div>
@@ -175,4 +185,29 @@
 }
 {% endschema %}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const playButtons = document.querySelectorAll('.play-icon');
+    const popup = document.querySelector('.gib_popup');
+    const closePopup = document.querySelector('.gib_close-popup');
+    const videoPlayer = document.querySelector('.video-player');
+    const videoFrame = document.getElementById('videoFrame');
+  
+  
+    playButtons.forEach(playButton => {
+        playButton.addEventListener('click', () => {
+            const videoUrl = videoPlayer.getAttribute('data-player-url');
+            videoFrame.src = videoUrl;
+            popup.style.display = 'block';
+        });
+    });
+    closePopup.addEventListener('click', () => {
+      videoFrame.src = '';
+     popup.style.display = 'none';
+ });
+   
+ 
+});
+
+</script>
 

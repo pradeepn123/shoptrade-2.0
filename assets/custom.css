@@ -14412,7 +14412,7 @@ html {
   border-radius: 7px 7px 0 0;
 }
 .services_multicolumn_container .services-MulColumn .service_column_text {
-  padding: 13px 0 20px 20px;
+  padding: 9px 0 13px 20px;
 }
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text {
@@ -14443,7 +14443,6 @@ html {
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text .ET-delivery-info {
     margin-top: 0px;
-    justify-content: flex-end;
     margin-right: 10px;
   }
 }
@@ -14458,6 +14457,7 @@ html {
   font-weight: 400;
   line-height: 30px;
   margin-left: 7px;
+  letter-spacing: 0;
 }
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text .ET-delivery-info .delivery_duration {
@@ -14541,6 +14541,7 @@ html {
   display: none;
   background-color: #fff !important;
   width: 100%;
+  transition: all 0.3s linear;
 }
 .sticky_pop_up_parent .sticky-popup-content .sticky-popup {
   background: #fff !important;
@@ -14555,10 +14556,12 @@ html {
 }
 @media (max-width: 991px) {
   .sticky_pop_up_parent .sticky-popup-content .sticky-popup {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     left: 0;
     right: 0;
-    top: -100%;
-    padding: 36px 20px;
+    padding: 36px 20px 90px 20px;
     height: 100%;
   }
 }
@@ -14630,6 +14633,12 @@ html {
 .sticky_pop_up_parent .Sticky-options-menu_parent {
   background: #3A4ED4;
 }
+@media (max-width: 991px) {
+  .sticky_pop_up_parent .Sticky-options-menu_parent {
+    position: relative;
+    z-index: 9999;
+  }
+}
 .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu {
   display: flex;
   align-items: center;
@@ -14660,11 +14669,31 @@ html {
     justify-content: center;
   }
 }
+@media (max-width: 520px) {
+  .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.613px;
+  }
+}
 .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a span {
   padding-left: 10px;
+  line-height: unset;
+}
+@media (max-width: 520px) {
+  .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a span {
+    padding-left: unset;
+    display: flex;
+    align-items: center;
+  }
 }
 .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a span svg {
   transition: all 0.3s linear;
+}
+@media (max-width: 520px) {
+  .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a span svg {
+    height: 30px;
+  }
 }
 .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .all_options a span .rotate_arrow {
   transform: rotate(180deg);
@@ -14970,10 +14999,39 @@ html {
     grid-column: unset;
   }
 }
+.grid_img_container_main .grid_img_container .gib_popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.grid_img_container_main .grid_img_container .gib_popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(40, 40, 40, 0.2);
+}
+.grid_img_container_main .grid_img_container .gib_close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
 .grid_img_container_main .Gridthree {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 22px;
+  row-gap: 40px;
 }
 @media (max-width: 475px) {
   .grid_img_container_main .Gridthree {
@@ -15021,5 +15079,16 @@ html {
 @media (max-width: 475px) {
   .grid_img_container_main .Gridfour .gi_blocks4 {
     grid-row: unset;
+  }
+}
+.grid_img_container_main .GridFive {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 22px;
+}
+@media (max-width: 475px) {
+  .grid_img_container_main .GridFive {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
