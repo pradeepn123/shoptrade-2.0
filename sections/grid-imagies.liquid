@@ -1,0 +1,205 @@
+{% style %}
+
+  html{
+    scroll-padding-top: 7rem;
+  }
+  .grid_img_container_main--{{ section.id }}{
+    
+    padding-bottom: {{ section.settings.padding_btm_desk }}px;
+  }
+  @media(max-width: 767px){
+    .grid_img_container_main--{{ section.id }}{
+    padding-bottom: {{ section.settings.padding_btm_mob }}px;
+    }
+  }
+{% endstyle %}
+{% for block in section.blocks %}
+  {% assign loopValue = forloop.index %}
+{% endfor %}
+<div class="grid_img_container_main grid_img_container_main--{{ section.id }}">
+<div class="container">
+  <div id="{{ section.settings.uniuq_id }}" class="grid_img_container" >
+    <div class="gi_blocks_main {% if loopValue == 6 %} GridOne{% elsif loopValue == 5 %}GridTwo{% elsif loopValue == 2 %}Gridthree{% elsif loopValue == 4 %}Gridfour {% elsif loopValue == 3 %} GridFive{% endif %} ">
+      {% for block in section.blocks %}
+        {% assign items = block.settings %}
+        {% assign valueLopp = forloop.index %}
+        {% if items.gib_img or items.external_video_url %}
+          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if valueLopp == 6 %}girdOne{{ forloop.index }}{% elsif valueLopp == 5 %}GridTwo{{ forloop.index }}{% elsif valueLopp == 2 %}Gridthree{{ forloop.index }}{% elsif valueLopp == 4 %}Gridfour{{ forloop.index }}{% elsif valueLopp == 3 %}Gridfive{{ forloop.index }}{% endif %}">
+            <div class="gi_blocks_child">
+              <a  {% if items.enble_video == false %} href="" {% endif %}>
+                <div class="gib_heading">
+                  <h5>{{ items.gib_heading }}</h5>
+                </div>
+                <div class="gib_para">
+                  {{ items.gib_para }}
+                </div>
+                {% if items.enble_video == false %}
+                  {% if items.gib_img %}                    
+                    <div class="gib_img">
+                      <img src="{{ items.gib_img | img_url: 'master' }}" loading="lazy" alt="gridImg">
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <div class="gib-video__wrp">
+                    <div class="gib-video__vedioWrp">
+                      <div class="vedio__container gib-vid__container">
+                        <div
+                          class="video-player"
+                          data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
+                          data-player-url="{{block.settings.external_video_url }}"
+                        >
+                          <div class="preview" data-js="preview">
+                            <img
+                              id="image2"
+                              class="vedio__thumbnail"
+                              src="{{ items.gib_img | img_url :'master' }}"
+                              loading="lazy"
+                            >
+                            {% if block.settings.external_video_url != null %}
+                              <span class="play-icon arrow-btn ">
+                                <img
+                                  id="image1"
+                                  src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Play_Circle.svg?v=1692360919"
+                                  loading="lazy"
+                                >
+                              </span>
+                            {% endif %}
+                          </div>
+                          <div class="aboutUsVideo" data-js="video" data-hidden="true">
+                            <div data-js="video-root"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+{% for block in section.blocks %}
+{% endfor %}
+{% schema %}
+{
+  "name": "grid imagies",
+  "settings": [
+    {
+      "type": "text",
+      "label":"Uniqe ID",
+      "id":"uniuq_id"
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "GridOne",
+          "label": "Style 1"
+        },
+        {
+          "value": "GridTwo",
+          "label": "Style 2"
+        },
+        {
+          "value": "Gridthree",
+          "label": "Style 3"
+        },
+        {
+          "value": "Gridfour",
+          "label": "Style 4"
+        }
+      ],
+      "default": "GridOne"
+    },
+    {
+      "type": "range",
+      "id": "padding_btm_desk",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font bottom dekstop",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_btm_mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font bottom mobile",
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image block",
+      "type": "image-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "gib_heading",
+          "label": "Heading",
+          "default": "Quick links"
+        },
+        {
+          "type": "richtext",
+          "id": "gib_para",
+          "label": "Paragraph"
+        },
+        {
+          "type": "checkbox",
+          "id": "enble_video",
+          "label": "Show video instead of image",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "gib_img",
+          "label": "Image"
+        },
+        {
+          "type": "video_url",
+          "id": "external_video_url",
+          "accept": ["vimeo", "youtube"],
+          "label": "Video URL",
+          "default": "https://player.vimeo.com/video/794041269"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "grid imagies"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+ window.addEventListener("load", (event) => {
+  let videoPlay = document.querySelector(".video-player");
+  let playIcon = document.querySelector(".play-icon");
+  let boxImg = document.querySelector("#image2");
+
+  playIcon.addEventListener("click", function() {
+   videoPlay.style.paddingBottom = "89%";
+  });
+  boxImg.addEventListener("click", function() {
+   videoPlay.style.paddingBottom = "89%";
+  });
+
+  
+
+}) ;
+
+
+
+</script>

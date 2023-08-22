@@ -1,11 +1,13 @@
 <div class="sticky_pop_up_parent">
-  <div class="container">
-    <div class="tab-sticky-options">
-      <div class="options_parent">
-        {% assign explore_all_menu = linklists['explore-all'] %}
-        {% for link in explore_all_menu.links %}
-          <a href="{{ link.url }}"> {{ link.title }}</a>
-        {% endfor %}
+  <div class="tab-sticky-options_main">
+    <div class="container">
+      <div class="tab-sticky-options">
+        <div class="options_parent">
+          {% assign explore_all_menu = linklists['explore-all'] %}
+          {% for link in explore_all_menu.links %}
+            <a href="{{ link.url }}"> {{ link.title }}</a>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -80,32 +82,9 @@
       "type": "menu-heading",
       "settings": [
         {
-          "type": "text",
-          "id": "options_text",
-          "label": "Heading",
-          "default": "Button Text"
-        },
-        {
-          "type": "url",
-          "id": "options_url",
-          "label": "Button link"
-        }
-      ]
-    },
-    {
-      "name": "menu-links",
-      "type": "menu-links",
-      "settings": [
-        {
-          "type": "text",
-          "id": "pop-content-options",
-          "label": "Heading",
-          "default": "Button Text"
-        },
-        {
-          "type": "url",
-          "id": "pop-content-url",
-          "label": "Button link"
+          "type": "color",
+          "id": "bg_color",
+          "label": "choose color"
         }
       ]
     }
@@ -120,6 +99,30 @@
 
 <script>
   window.onload = function () {
+
+    function highlight(btn){
+     let div = document.querySelector(btn.getAttribute('href'));  
+      div.style.boxShadow = "rgba(230, 126, 34, 1) 0px 8px 24px";
+      setTimeout(function() { highlightend(div); }, 3000);
+    
+    }
+
+    function highlightend(div){
+      div.style.boxShadow = "0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08)";
+    }
+
+    
+   let menuBtn = document.querySelectorAll(".sticky-pop_links");
+   let optSvgM = document.querySelector('#exploreAll svg');
+   let stickyPopup = document.querySelector("#showOnClick");
+   menuBtn.forEach(function(menuBtn) {
+    menuBtn.addEventListener("click", function() {
+      stickyPopup.style.display = "none";
+      optSvgM.classList.remove('rotate_arrow');
+      highlight(this);
+    });
+  });
+
     let allOpt = document.querySelector('#exploreAll');
     let optSvg = document.querySelector('#exploreAll svg');
     let popHeight = document.querySelector('#showOnClick');
@@ -157,5 +160,7 @@
       sticky_relocate_top();
       sticky_relocate_bottom();
     });
+
+   
   };
 </script>
