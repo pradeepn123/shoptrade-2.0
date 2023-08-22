@@ -90,8 +90,8 @@
                   </div>
                   <div class="gib_popup">
                     <div class="gib_popup-content">
-                        <span class="gib_close-popup">&times;</span>
-                        <iframe allow="autoplay; muted"  id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                        <span class="gib_close-popup"></span>
+                        <iframe  id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen allow="autoplay"  autoplay ></iframe>
                     </div>
                  </div>
                 {% endif %}
@@ -193,7 +193,8 @@
     const videoPlayer = document.querySelector('.video-player');
     const videoFrame = document.getElementById('videoFrame');
     const videoDiv = document.querySelector('.aboutUsVideo');
-  
+
+
   
     playButtons.forEach(playButton => {
         playButton.addEventListener('click', () => {
@@ -208,7 +209,12 @@
      popup.style.display = 'none';
  });
    
- 
+
+ popup.addEventListener('click', () => {
+        videoFrame.src = '';
+      popup.style.display = 'none';
+      });
+
 });
 
 </script>
