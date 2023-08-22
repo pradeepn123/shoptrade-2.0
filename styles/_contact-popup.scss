@@ -133,6 +133,9 @@ textarea {
                             color: #b6b8ba;
                             opacity: 1; /* Firefox */
                         }
+                        &:focus{
+                            border-color: #000000;
+                        }
 
                         :-ms-input-placeholder { /* Internet Explorer 10-11 */
                             color: #b6b8ba;

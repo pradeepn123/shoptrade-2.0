@@ -6833,6 +6833,9 @@ textarea {
   color: #b6b8ba;
   opacity: 1; /* Firefox */
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]):focus {
+  border-color: #000000;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]) :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: #b6b8ba;
 }

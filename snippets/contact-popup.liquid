@@ -14,7 +14,7 @@
                 <h1>
                     Contact Us
                 </h1>
-                <form method="POST" action="https://formspree.io/f/xoqzzdgz" enctype="multipart/form-data" multistep="true" id="contact-form">
+                <form method="POST" action="https://formspree.io/f/xgeqbpbl" enctype="multipart/form-data" multistep="true" id="contact-form">
                     <progress id="form-progress" value="25" max="100">
                         25%
                     </progress>
@@ -24,7 +24,7 @@
                             Let's discuss strategies for expanding your brand.
                         </h2>
                         <div class="form-group">
-                            <input type="text" placeholder="Name" oninput="this.className = ''" name="Name">
+                            <input type="text" placeholder="Name" oninput="this.className = ''" name="Name" id="autoFocus">
                         </div>
                         <div class="form-group">
                             <input type="email" placeholder="Email" oninput="this.className = ''" name="Email">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="form-group">
                             <label class="custom-checkbox-wrapper">
-                                <input type="checkbox" name="Subscribe" required>
+                                <input type="checkbox" name="Subscribe" required checked>
                                 <span class="custom-checkbox"></span>
                                 <span>By providing your email, you agree for us to contact you via email with eCommerce advice. Your data is stored securely and we never pass it on to third parties.</span>
                             </label>
@@ -315,3 +315,23 @@
 
     </div>
 </div>
+
+<script>
+    window.onload = function() {
+
+    document.querySelector("#autoFocus").focus();
+
+    function focusOnAutoFocus() {
+        let autoFocus = document.querySelector('#autoFocus');
+        autoFocus.focus();
+    }
+    
+    let contactBtn = document.querySelector("#contact-btn-details");
+    contactBtn.addEventListener("click", focusOnAutoFocus);
+    
+    let askUs = document.querySelector("#opentContactUs");
+    askUs.addEventListener("click", focusOnAutoFocus);
+
+     
+    }
+</script>
