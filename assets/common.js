@@ -818,10 +818,12 @@ class VideoPlayer {
 
   show(element) {
     element.setAttribute('data-hidden', 'false');
+     document.querySelector(".gib_video_palyer").style.paddingBottom = "89%";
   }
 
   hide(element) {
     element.setAttribute('data-hidden', 'true');
+    document.querySelector(".gib_video_palyer").style.paddingBottom = "0";
   }
 
   play() {
@@ -1032,16 +1034,16 @@ var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
     },
   },
 });
-function togglePagination() {
-  if (mySwiper_new.isEnd && mySwiper_new.slides.length <= mySwiper_new.params.slidesPerView) {
-    mySwiper_new.pagination.el.style.display = 'none';
-  } else {
-    mySwiper_new.pagination.el.style.display = 'block';
-  }
-}
+// function togglePagination() {
+//   if (mySwiper_new.isEnd && mySwiper_new.slides.length <= mySwiper_new.params.slidesPerView) {
+//     mySwiper_new.pagination.el.style.display = 'none';
+//   } else {
+//     mySwiper_new.pagination.el.style.display = 'block';
+//   }
+// }
 
-togglePagination();
-window.addEventListener('resize', togglePagination);
+// togglePagination();
+// window.addEventListener('resize', togglePagination);
 
 // active slides shoptrade-info ends here
 

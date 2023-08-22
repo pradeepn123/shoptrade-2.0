@@ -1,4 +1,4 @@
-<div class="sticky_pop_up_parent">
+<div class="sticky_pop_up_parent  ">
   <div class="tab-sticky-options_main">
     <div class="container">
       <div class="tab-sticky-options">
@@ -99,29 +99,28 @@
 
 <script>
   window.onload = function () {
-
-    function highlight(btn){
-     let div = document.querySelector(btn.getAttribute('href'));  
-      div.style.boxShadow = "rgba(230, 126, 34, 1) 0px 8px 24px";
-      setTimeout(function() { highlightend(div); }, 3000);
-    
+    function highlight(btn) {
+      let div = document.querySelector(btn.getAttribute('href'));
+      div.style.borderColor = '#FF7121';
+      setTimeout(function () {
+        highlightend(div);
+      }, 3000);
     }
 
-    function highlightend(div){
-      div.style.boxShadow = "0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08)";
+    function highlightend(div) {
+      div.style.borderColor = '#fff';
     }
 
-    
-   let menuBtn = document.querySelectorAll(".sticky-pop_links");
-   let optSvgM = document.querySelector('#exploreAll svg');
-   let stickyPopup = document.querySelector("#showOnClick");
-   menuBtn.forEach(function(menuBtn) {
-    menuBtn.addEventListener("click", function() {
-      stickyPopup.style.display = "none";
-      optSvgM.classList.remove('rotate_arrow');
-      highlight(this);
+    let menuBtn = document.querySelectorAll('.sticky-pop_links');
+    let optSvgM = document.querySelector('#exploreAll svg');
+    let stickyPopup = document.querySelector('#showOnClick');
+    menuBtn.forEach(function (menuBtn) {
+      menuBtn.addEventListener('click', function () {
+        stickyPopup.style.display = 'none';
+        optSvgM.classList.remove('rotate_arrow');
+        highlight(this);
+      });
     });
-  });
 
     let allOpt = document.querySelector('#exploreAll');
     let optSvg = document.querySelector('#exploreAll svg');
@@ -138,8 +137,9 @@
     var footerHeight = $('.shopify-footer').height();
     function sticky_relocate_top() {
       var window_top = $(window).scrollTop();
+     
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
-      if (window_top > 100 && window_top < footerCartShow) {
+      if (window_top > 200 && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -149,7 +149,7 @@
     function sticky_relocate_bottom() {
       var window_top2 = $(window).scrollTop();
       var footerCarthide = $(document).height() - $(window).height() - footerHeight;
-      if (window_top2 > 100 && window_top2 < footerCarthide) {
+      if (window_top2 > 200 && window_top2 < footerCarthide) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -160,7 +160,5 @@
       sticky_relocate_top();
       sticky_relocate_bottom();
     });
-
-   
   };
 </script>

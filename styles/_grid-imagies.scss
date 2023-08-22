@@ -32,7 +32,7 @@
             background-color: #fff;
 
             @media(max-width:1200px) {
-                align-items: end;
+                align-items: start;
             }
 
 
@@ -43,7 +43,7 @@
                 border: 1px solid #fff;
 
                 &:hover {
-                    border-color: #FF7121;
+                    border-color: #FF7121 !important;
                 }
 
                 .gi_blocks_child {
@@ -95,6 +95,11 @@
                                 font-weight: 400;
                                 line-height: 24px;
                                 text-decoration: none;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
                             }
                         }
 
@@ -109,46 +114,47 @@
                             }
                         }
 
-                        .gib-video__wrp {
+                        
+                    }
+                }
+            }
+            .gib-video__wrp {
+                height: 100%;
+            
+                .gib-video__vedioWrp {
+                    height: 100%;
+            
+                    .gib-vid__container {
+                        border: none;
+                        height: 100%;
+                        border-radius: 0 0 16px 16px;
+            
+                        .video-player {
                             height: 100%;
-
-                            .gib-video__vedioWrp {
-                                height: 100%;
-
-                                .gib-vid__container {
-                                    border: none;
-                                    height: 100%;
+                            padding-bottom: 0;
+            
+                            .preview {
+                                position: relative;
+                                height: fit-content;
+            
+                                .vedio__thumbnail {
                                     border-radius: 0 0 16px 16px;
-
-                                    .video-player {
-                                        height: 100%;
-                                        padding-bottom: 0;
-
-                                        .preview {
-                                            position: relative;
-                                            height: fit-content;
-
-                                            .vedio__thumbnail {
-                                                border-radius: 0 0 16px 16px;
-                                            }
-
-                                            .play-icon {
-
-                                                position: absolute;
-                                                top: 35%;
-                                                left: 39%;
-
-                                                img {
-                                                    // width: 30px;
-                                                }
-                                            }
-
-                                        }
-                                    }
-
                                 }
+            
+                                .play-icon {
+            
+                                    position: absolute;
+                                    top: 35%;
+                                    left: 39%;
+            
+                                    img {
+                                        // width: 30px;
+                                    }
+                                }
+            
                             }
                         }
+            
                     }
                 }
             }

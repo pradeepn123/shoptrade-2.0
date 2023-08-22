@@ -24,15 +24,27 @@
         {% assign items = block.settings %}
         {% assign valueLopp = forloop.index %}
         {% if items.gib_img or items.external_video_url %}
-          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if valueLopp == 6 %}girdOne{{ forloop.index }}{% elsif valueLopp == 5 %}GridTwo{{ forloop.index }}{% elsif valueLopp == 2 %}Gridthree{{ forloop.index }}{% elsif valueLopp == 4 %}Gridfour{{ forloop.index }}{% elsif valueLopp == 3 %}Gridfive{{ forloop.index }}{% endif %}">
+          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if loopValue == 6 %}girdOne{{ valueLopp }}{% elsif loopValue == 5 %}GridTwo{{ valueLopp }}{% elsif loopValue == 2 %}Gridthree{{ valueLopp }}{% elsif loopValue == 4 %}Gridfour{{ valueLopp }}{% elsif loopValue == 3 %}Gridfive{{ valueLopp }}{% endif %}">
             <div class="gi_blocks_child">
-              <a  {% if items.enble_video == false %} href="" {% endif %}>
+              <a  {% if items.enble_video == false %} href="{{ block.settings.box_url }}" {% endif %}>
+                {% if items.enble_video %}
+                  <a href = "{{ block.settings.box_url }}">             
+                    <div class="gib_heading">
+                      <h5>{{ items.gib_heading }}</h5>
+                    </div>
+                    <div class="gib_para">
+                      {{ items.gib_para }}
+                    </div> 
+                  </a>
+                {% endif %}
+              {% if items.enble_video == false %}           
                 <div class="gib_heading">
                   <h5>{{ items.gib_heading }}</h5>
                 </div>
                 <div class="gib_para">
                   {{ items.gib_para }}
                 </div>
+              {% endif %}
                 {% if items.enble_video == false %}
                   {% if items.gib_img %}                    
                     <div class="gib_img">
@@ -44,7 +56,7 @@
                     <div class="gib-video__vedioWrp">
                       <div class="vedio__container gib-vid__container">
                         <div
-                          class="video-player"
+                          class="video-player gib_video_palyer"
                           data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
                           data-player-url="{{block.settings.external_video_url }}"
                         >
@@ -94,30 +106,6 @@
       "id":"uniuq_id"
     },
     {
-      "type": "select",
-      "id": "vertical_alignment",
-      "label": "Vertical alignment",
-      "options": [
-        {
-          "value": "GridOne",
-          "label": "Style 1"
-        },
-        {
-          "value": "GridTwo",
-          "label": "Style 2"
-        },
-        {
-          "value": "Gridthree",
-          "label": "Style 3"
-        },
-        {
-          "value": "Gridfour",
-          "label": "Style 4"
-        }
-      ],
-      "default": "GridOne"
-    },
-    {
       "type": "range",
       "id": "padding_btm_desk",
       "min": 1,
@@ -148,6 +136,10 @@
           "id": "gib_heading",
           "label": "Heading",
           "default": "Quick links"
+        },{
+          "type":"url",
+          "id":"box_url",
+          "label":"URL"
         },
         {
           "type": "richtext",
@@ -183,23 +175,4 @@
 }
 {% endschema %}
 
-<script>
- window.addEventListener("load", (event) => {
-  let videoPlay = document.querySelector(".video-player");
-  let playIcon = document.querySelector(".play-icon");
-  let boxImg = document.querySelector("#image2");
 
-  playIcon.addEventListener("click", function() {
-   videoPlay.style.paddingBottom = "89%";
-  });
-  boxImg.addEventListener("click", function() {
-   videoPlay.style.paddingBottom = "89%";
-  });
-
-  
-
-}) ;
-
-
-
-</script>
