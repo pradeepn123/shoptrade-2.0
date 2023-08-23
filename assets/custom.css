@@ -4959,7 +4959,7 @@ input::-moz-placeholder {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .services .banner_para p {
     font-size: 18px;
     line-height: 22px;
@@ -4967,11 +4967,16 @@ input::-moz-placeholder {
 }
 @media (max-width: 520px) {
   .services .banner_para p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
 }
 
+@media (max-width: 520px) {
+  .page_banner_shadow {
+    padding: 50px 0;
+  }
+}
 .page_banner_shadow::after {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgb(255, 113, 33) 40%, rgb(255, 113, 33) 100%);
   filter: blur(67.5px);
@@ -14383,7 +14388,8 @@ html {
 @media (max-width: 767px) {
   .services_multicolumn_container {
     grid-template-columns: repeat(2, 1fr);
-    margin: 54px 0;
+    column-gap: 12px;
+    margin: 40px 0;
   }
 }
 @media (max-width: 375px) {
@@ -14420,6 +14426,7 @@ html {
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text {
     padding-left: 10px;
+    padding: 0px 0 5px 20px;
   }
 }
 .services_multicolumn_container .services-MulColumn .service_column_text .service_column_title {
@@ -14435,7 +14442,8 @@ html {
 }
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text .service_column_title h4 {
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 .services_multicolumn_container .services-MulColumn .service_column_text .ET-delivery-info {
@@ -14464,7 +14472,7 @@ html {
 }
 @media (max-width: 520px) {
   .services_multicolumn_container .services-MulColumn .service_column_text .ET-delivery-info .delivery_duration {
-    font-size: 16px;
+    font-size: 12px;
     float: right;
   }
 }
@@ -14490,7 +14498,12 @@ html {
 
 .sticky_pop_up_parent {
   transition: all 0.3s linear;
-  position: relative;
+  position: fixed;
+}
+@media (min-width: 1480px) {
+  .sticky_pop_up_parent {
+    position: sticky;
+  }
 }
 .sticky_pop_up_parent .tab-sticky-options_main {
   background-color: #fff;
@@ -14744,6 +14757,18 @@ html {
   }
 }
 
+#sticky_menu_parent_popUP {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  cursor: pointer;
+}
+
 .grid_img_container_main .grid_img_container .grid_img_heading_main h2 {
   margin: 0;
   color: #000;
@@ -14809,6 +14834,14 @@ html {
     line-height: 1;
   }
 }
+.grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 br {
+  display: none;
+}
+@media (max-width: 1025px) and (min-width: 991px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 br {
+    display: block;
+  }
+}
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_para {
   margin: 24px 0 40px 0;
 }
@@ -14830,6 +14863,7 @@ html {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  min-height: 96px;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;
@@ -14859,6 +14893,11 @@ html {
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gib-video__wrp .gib-video__vedioWrp .gib-vid__container .gib_video_palyer .preview .vedio__thumbnail {
   border-radius: 0 0 16px 16px;
+}
+@media (max-width: 840px) and (min-width: 475px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gib-video__wrp .gib-video__vedioWrp .gib-vid__container .gib_video_palyer .preview .vedio__thumbnail {
+    aspect-ratio: 1/1;
+  }
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gib-video__wrp .gib-video__vedioWrp .gib-vid__container .gib_video_palyer .preview .play-icon {
   position: absolute;
@@ -15025,8 +15064,8 @@ html {
 }
 .grid_img_container_main .grid_img_container .gib_close-popup {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -5%;
+  right: -2%;
   font-size: 40px;
   cursor: pointer;
   color: #fff;
@@ -15043,7 +15082,7 @@ html {
     right: 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .grid_img_container_main .grid_img_container .gib_close-popup {
     top: -8%;
     left: 69%;
@@ -15059,7 +15098,7 @@ html {
     height: 35vh;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .grid_img_container_main .grid_img_container #videoFrame {
     height: fit-content;
   }

@@ -54,6 +54,8 @@
     </div>
   </div>
 </div>
+<div  id ="sticky_menu_parent_popUP">
+</div>
 {% schema %}
 {
   "name": "Sticky-menu-options",
@@ -99,6 +101,7 @@
 
 <script>
   window.onload = function () {
+    let stickyBody = document.querySelector('#sticky_menu_parent_popUP');
     function highlight(btn) {
       let div = document.querySelector(btn.getAttribute('href'));
       div.style.borderColor = '#FF7121';
@@ -135,10 +138,15 @@
       }
     });
     var footerHeight = $('.shopify-footer').height();
+    var elementDiv = document.querySelector('.services_multicolumn_container'); 
+    var heightDiv = elementDiv.clientHeight;
+    var bannerHeight = document.querySelector('.page_banner_shadow ');
+    var bannerDiv = bannerHeight.clientHeight;
+    let totalHeight = heightDiv + bannerDiv;
     function sticky_relocate_top() {
       var window_top = $(window).scrollTop();      
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
-      if (window_top > 100 && window_top < footerCartShow) {
+      if (window_top > totalHeight && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -148,7 +156,7 @@
     function sticky_relocate_bottom() {
       var window_top2 = $(window).scrollTop();
       var footerCarthide = $(document).height() - $(window).height() - footerHeight;
-      if (window_top2 > 100 && window_top2 < footerCarthide) {
+      if (window_top2 > totalHeight && window_top2 < footerCarthide) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
@@ -163,20 +171,30 @@
 
     let mac = document.querySelector("#exploreAll");
     let body = document.querySelector("body");
-    let menuBtnNext = document.querySelectorAll('.sticky-pop_links');
+    let menuBtnNext = document.querySelectorAll('.sticky-pop_links'); 
     mac.addEventListener("click", function() {
       if (body.style.overflow === "auto") { 
+        stickyBody.style.display = "block";
         body.style.overflow = "hidden";
       } else {
         body.style.overflow = "auto";
+        stickyBody.style.display = "none";
       }
     });
     
     menuBtnNext.forEach(function (menuBtnN) {
       menuBtnN.addEventListener('click', function () {
         body.style.overflow = "auto";
+        stickyBody.style.display = "none";
       });
     });
 
+   stickyBody.addEventListener("click", function(){
+    stickyPopup.style.display = "none";
+    stickyBody.style.display = "none";
+    body.style.overflow = "auto";
+    optSvg.classList.remove('rotate_arrow');
+    }); 
+   
   };
 </script>

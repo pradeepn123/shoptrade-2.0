@@ -74,6 +74,13 @@
                                     font-size: 24px;
                                     line-height: 1;
                                 }
+                                br{
+
+                                    display: none;
+                                    @media(max-width: 1025px) and (min-width: 991px){
+                                        display: block;
+                                    }
+                                }
                             }
                         }
 
@@ -96,6 +103,7 @@
                                 display: -webkit-box;
                                 -webkit-line-clamp: 4;
                                 -webkit-box-orient: vertical;
+                                min-height: 96px;
                             }
                         }
 
@@ -135,6 +143,9 @@
             
                                 .vedio__thumbnail {
                                     border-radius: 0 0 16px 16px;
+                                    @media(max-width:840px) and (min-width: 475px){
+                                       aspect-ratio: 1/1;
+                                    }
                                 }
             
                                 .play-icon {
@@ -331,8 +342,8 @@
         
         .gib_close-popup {
             position: absolute;
-            top: 0;
-            right: 0;
+            top: -5%;
+            right: -2%;
             font-size: 40px;
             cursor: pointer;
             color: #fff;
@@ -344,7 +355,7 @@
                 left: 79%;
                 right: 0;
             }
-            @media(max-width: 375px){
+            @media(max-width: 475px){
                 top: -8%;
                 left: 69%;
                 right: 0;
@@ -357,7 +368,7 @@
             @media(max-width:575px){
              height: 35vh;
             }
-            @media(max-width:375px){
+            @media(max-width:475px){
              height: fit-content;
             }
         }

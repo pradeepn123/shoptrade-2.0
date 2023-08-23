@@ -1,14 +1,9 @@
 {% style %}
   html{
-    scroll-padding-top: 13rem;
+    scroll-padding-top: 7rem;
   }
-  @media(max-width: 520px){
-      html{
-      scroll-padding-top: 7rem;
-      }
-    }
-  .grid_img_container_main--{{ section.id }}{
-    
+  
+  .grid_img_container_main--{{ section.id }}{ 
     padding-bottom: {{ section.settings.padding_btm_desk }}px;
   }
   @media(max-width: 767px){
@@ -16,13 +11,32 @@
     padding-bottom: {{ section.settings.padding_btm_mob }}px;
     }
   }
+  {% for block in section.blocks %}
+    {% if block.settings.fixed_height %}
+      .gib_img{
+
+        height: 280px;
+      }
+    @media(max-width: 1024px){
+      .gib_img{
+        height: 240px;
+        }
+    }
+    @media(max-width: 768px){
+      .gib_img{
+        height: 240px;
+        }
+    }
+    {% endif %}
+  {% endfor %}
 {% endstyle %}
+
 {% for block in section.blocks %}
   {% assign loopValue = forloop.index %}
 {% endfor %}
 <div class="grid_img_container_main grid_img_container_main--{{ section.id }}">
 <div class="container">
-  <div id="{{ section.settings.uniuq_id }}" class="grid_img_container" >
+  <div class="grid_img_container" >
     <div class="gi_blocks_main {% if loopValue == 6 %} GridOne{% elsif loopValue == 5 %}GridTwo{% elsif loopValue == 2 %}Gridthree{% elsif loopValue == 4 %}Gridfour {% elsif loopValue == 3 %} GridFive {% elsif loopValue > 6 %} Gridmany {% endif %} ">
       {% for block in section.blocks %}
         {% assign items = block.settings %}
@@ -72,7 +86,7 @@
                               loading="lazy"
                             >
                             {% if block.settings.external_video_url != null %}
-                              <span class="play-icon arrow-btn ">
+                              <span class="play-icon arrow-btn" id ="service_play_icon">
                                 <img
                                   id="image1"
                                   src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Play_Circle.svg?v=1692360919"
@@ -90,7 +104,7 @@
                   </div>
                   <div class="gib_popup">
                     <div class="gib_popup-content">
-                        <span class="gib_close-popup"> &#10060; </span>
+                        <span class="gib_close-popup"> &#x2715; </span>
                         <iframe  id="videoFrame"  src="" frameborder="0" allowfullscreen allow="autoplay"  autoplay ></iframe>
                     </div>
                  </div>
@@ -110,11 +124,6 @@
 {
   "name": "grid imagies",
   "settings": [
-    {
-      "type": "text",
-      "label":"Uniqe ID",
-      "id":"uniuq_id"
-    },
     {
       "type": "range",
       "id": "padding_btm_desk",
@@ -136,6 +145,7 @@
       "default": 1
     }
   ],
+  "max_blocks": 6,
   "blocks": [
     {
       "name": "image block",
@@ -168,6 +178,12 @@
           "label": "Image"
         },
         {
+          "type": "checkbox",
+          "id": "fixed_height",
+          "label": "Fixed height for imagies",
+          "default": false
+        },
+        {
           "type": "video_url",
           "id": "external_video_url",
           "accept": ["vimeo", "youtube"],
@@ -188,13 +204,13 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const playButtons = document.querySelectorAll('.play-icon');
+    const playButtons = document.querySelectorAll('#service_play_icon');
     const popup = document.querySelector('.gib_popup');
     const closePopup = document.querySelector('.gib_close-popup');
     const videoPlayer = document.querySelector('.gib_video_palyer');
     const videoFrame = document.getElementById('videoFrame');
     const videoDiv = document.querySelector('.aboutUsVideoMY');
-
+    const serviceBody = document.querySelector('body');
 
   
     playButtons.forEach(playButton => {
@@ -203,16 +219,19 @@
             videoFrame.src = videoUrl;
             popup.style.display = 'block';
             videoDiv.setAttribute('data-hidden', 'true');
+            serviceBody.style.overflow = "hidden";
         });
     });
     closePopup.addEventListener('click', () => {
       videoFrame.src = '';
      popup.style.display = 'none';
+     serviceBody.style.overflow = "auto";
  });
 
  popup.addEventListener('click', () => {
         videoFrame.src = '';
       popup.style.display = 'none';
+      serviceBody.style.overflow = "auto";
       });
 
 });
