@@ -13,7 +13,7 @@
       "settings": {
         "heading": "Services",
         "font_size_desk": 52,
-        "font_size_mob": 24,
+        "font_size_mob": 28,
         "banner_para": "<p>Problem solvers at heart, we’re here to build long standing relationships<\/p>",
         "btntext": "",
         "bottom_shadow": true
@@ -80,11 +80,10 @@
       "type": "service_sections_header",
       "settings": {
         "heading": "Design",
-        "dont_show_mobile": true,
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(0deg, rgb(209 252 219) 0%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, #DDEDE1 0%, rgba(255, 255, 255, 0.00) 100%)",
         "padding_top": 2,
-        "padding_btm": 40
+        "padding_btm": 24
       }
     },
     "e900bf56-a284-4d8b-9019-9ca15d761eaf": {
@@ -166,7 +165,6 @@
         "0e2bf65f-1240-49b7-bc95-18682b2d66bd"
       ],
       "settings": {
-        "uniuq_id": "Design",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -539,11 +537,10 @@
       "type": "service_sections_header",
       "settings": {
         "heading": "Development",
-        "dont_show_mobile": true,
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(0deg, rgb(249 218 208) 0%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, #FDDACE 0%, rgba(255, 255, 255, 0.00) 100%)",
         "padding_top": 40,
-        "padding_btm": 40
+        "padding_btm": 24
       }
     },
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6": {
@@ -585,7 +582,7 @@
         "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "System Integration",
+            "gib_heading": "System <br>Integration",
             "box_url": "",
             "gib_para": "<p>Powerful SaaS partnerships for an exceptional commerce experience. Custom integrations for seamless connections with ERP, CRM, PIM, and more. Grow your brand effortlessly.<\/p>",
             "enble_video": false,
@@ -613,7 +610,6 @@
         "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3"
       ],
       "settings": {
-        "uniuq_id": "Development",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -622,11 +618,10 @@
       "type": "service_sections_header",
       "settings": {
         "heading": "Branding",
-        "dont_show_mobile": true,
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(0deg, rgb(215 230 244) 0%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, #C5DDF3 0%, rgba(255, 255, 255, 0.00) 100%)",
         "padding_top": 40,
-        "padding_btm": 40
+        "padding_btm": 24
       }
     },
     "df190e32-5df7-4c18-93e5-ff9e9ccab961": {
@@ -660,7 +655,6 @@
         "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f"
       ],
       "settings": {
-        "uniuq_id": "Branding",
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
       }
@@ -669,11 +663,10 @@
       "type": "service_sections_header",
       "settings": {
         "heading": "Marketing",
-        "dont_show_mobile": true,
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(0deg, rgb(255 237 171) 0%, rgba(255,255,255,1) 61%, rgba(255,255,255,1) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, #FBF1CA 0%, rgba(255, 255, 255, 0.00) 100%)",
         "padding_top": 40,
-        "padding_btm": 40
+        "padding_btm": 24
       }
     },
     "4bd1dde6-dd93-43e8-9a2f-8a543445c233": {
@@ -731,7 +724,6 @@
         "3ddff7cb-76b2-4ad4-a8bd-3389a954b707"
       ],
       "settings": {
-        "uniuq_id": "Marketing",
         "padding_btm_desk": 80,
         "padding_btm_mob": 80
       }

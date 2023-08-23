@@ -18,20 +18,18 @@
  
       }
       .service_section_header--{{ section.id }}{
-          padding-top: {{ section.settings.padding_top | times: 0.75 | round }}px;
-          padding-bottom: {{ section.settings.padding_btm | times: 0.75 | round }}px;
+          padding-top: {{ section.settings.padding_top | times: 0.85 | round }}px;
+          padding-bottom: {{ section.settings.padding_btm | times: 0.90 | round }}px;
       }
      }
-
-    @media(max-width:520px){
-    {% if section.settings.dont_show_mobile %}
-    .service_section_header--{{ section.id }}{
-      display: none;
+@media(max-width:520px){
+  .service_section_header--{{ section.id }} .h1{
+        font-size: {{ section.settings.font_size_desk | times: 0.55 | round }}px;
     }
-    {% endif %}
-  }
+}
+   
 {% endstyle %}
-<section class="page_banner_shadow service_section_header--{{ section.id }}">
+<section class="page_banner_shadow service_section_header--{{ section.id }}" id ="{{ section.settings.heading }}">
   <div class="container">
     <div>
       <h1 class="h1">{{ section.settings.heading }}</h1>
@@ -47,12 +45,6 @@
       "id": "heading",
       "label": "Heading",
       "type": "text"
-    },
-    {
-      "type": "checkbox",
-      "id": "dont_show_mobile",
-      "label": "Dont show on mobile",
-      "default": false
     },
     {
       "type": "range",

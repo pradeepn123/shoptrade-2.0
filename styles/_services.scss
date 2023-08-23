@@ -44,12 +44,12 @@
             font-weight: 400;
             margin: 0;
             padding: 0;
-            @media(max-width:991px){
+            @media(max-width:1024px){
                 font-size: 18px;
                 line-height: 22px;
             }
                 @media(max-width:520px){
-                    font-size: 15px;
+                    font-size: 16px;
                     line-height: 20px;
 
                 }
@@ -57,6 +57,9 @@
     }
 }
 .page_banner_shadow{
+    @media(max-width:520px){
+        padding: 50px 0;
+    }
     &::after{
         background: linear-gradient(180deg, rgba(255,255,255,0) 30%, rgba(255,113,33,1) 40%, rgba(255,113,33,1) 100%);
         filter: blur(67.5px);
@@ -72,8 +75,8 @@
         }
         @media(max-width:992px){
             background: linear-gradient(180deg,rgba(255,255,255,0) 60%,rgb(255,113,33) 40%,rgb(255,113,33) 100%);
-        }
-}
+        }       
+    }
     .h1{
         margin-bottom: 20px;
         @media(max-width:520px){

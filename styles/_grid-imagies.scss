@@ -74,15 +74,18 @@
                                     font-size: 24px;
                                     line-height: 1;
                                 }
+                                br{
+
+                                    display: none;
+                                    @media(max-width: 1025px) and (min-width: 991px){
+                                        display: block;
+                                    }
+                                }
                             }
                         }
 
                         .gib_para {
                             margin: 24px 0 40px 0;
-
-                            // display: flex;
-                            // align-items: center;
-                            // justify-content: center;
                             @media(max-width:1200px) {
                                 margin: 20px 0 28px 0;
                             }
@@ -98,8 +101,9 @@
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 display: -webkit-box;
-                                -webkit-line-clamp: 3;
+                                -webkit-line-clamp: 4;
                                 -webkit-box-orient: vertical;
+                                min-height: 96px;
                             }
                         }
 
@@ -129,7 +133,7 @@
                         height: 100%;
                         border-radius: 0 0 16px 16px;
             
-                        .video-player {
+                        .gib_video_palyer {
                             height: 100%;
                             padding-bottom: 0;
             
@@ -139,6 +143,9 @@
             
                                 .vedio__thumbnail {
                                     border-radius: 0 0 16px 16px;
+                                    @media(max-width:840px) and (min-width: 475px){
+                                       aspect-ratio: 1/1;
+                                    }
                                 }
             
                                 .play-icon {
@@ -335,11 +342,24 @@
         
         .gib_close-popup {
             position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
+            top: -5%;
+            right: -2%;
+            font-size: 40px;
             cursor: pointer;
             color: #fff;
+            @media(max-width: 767px){
+                font-size: 26px;
+            }
+            @media(max-width: 575px){
+                top: -7%;
+                left: 79%;
+                right: 0;
+            }
+            @media(max-width: 475px){
+                top: -8%;
+                left: 69%;
+                right: 0;
+            }
             
         }
         #videoFrame{
@@ -348,7 +368,7 @@
             @media(max-width:575px){
              height: 35vh;
             }
-            @media(max-width:375px){
+            @media(max-width:475px){
              height: fit-content;
             }
         }
@@ -417,6 +437,18 @@
             grid-template-columns: repeat(1, 1fr);
         }
 
+    }
+    .Gridmany{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 22px;
+        row-gap: 40px;
+        @media(max-width: 840px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media(max-width: 475px){
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
 

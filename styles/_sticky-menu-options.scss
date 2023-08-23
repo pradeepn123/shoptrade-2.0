@@ -2,7 +2,10 @@
     // display: flex;
     // flex-direction: column-reverse;
     transition: all 0.3s linear;
-    position: relative;
+    position: fixed;
+    @media(min-width: 1480px){
+        position: sticky;
+    }
 
     .tab-sticky-options_main {
         background-color: #fff;
@@ -279,4 +282,15 @@
             transform: translateY(0);
         }
     }
+}
+#sticky_menu_parent_popUP{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    cursor: pointer;
 }
