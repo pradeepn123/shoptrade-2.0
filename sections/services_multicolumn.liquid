@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="services_multicolumn_container">
+    {% for item in section.blocks %}
+      {% if item.settings.box_url %}
+        <a href="{{ item.settings.box_url }}" class="services-MulColumn">
+          <div class="service_column_img">
+            <img src="{{ item.settings.featured_image | img_url: 'master'}}" loading="lazy" alt="product image">
+          </div>
+          <div class="service_column_text">
+            <div class="service_column_title">
+              <h4>{{ item.settings.column_heading }}</h4>
+            </div>
+            <div class="ET-delivery-info">
+              <span>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/clock.png?v=1690262888"
+                  loading="lazy"
+                  alt="clock-icon"
+                >
+              </span>
+              <span class="delivery_duration">
+                {{ item.settings.services_numbers }}
+              </span>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "services multicolumn",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "column-blocks",
+      "type": "column-blocks",
+      "settings": [
+        {
+          "type": "url",
+          "id": "box_url",
+          "label": "Column URL"
+        },
+        {
+          "type": "image_picker",
+          "id": "featured_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "column_heading",
+          "label": "Heading",
+          "default": "Quick links"
+        },
+        {
+          "type": "text",
+          "id": "services_numbers",
+          "label": "Number of Services ",
+          "default": "Quick links"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "services multicolumn"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,182 @@
+<div class="sticky_pop_up_parent  ">
+  <div class="tab-sticky-options_main">
+    <div class="container">
+      <div class="tab-sticky-options">
+        <div class="options_parent">
+          {% assign explore_all_menu = linklists['explore-all'] %}
+          {% for link in explore_all_menu.links %}
+            <a href="{{ link.url }}"> {{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Sticky-options-menu_parent">
+    <div class="container">
+      <div class="Sticky-options-menu">
+        <div class="all_options" id="exploreAll">
+          {% if section.settings.Main_btn %}
+            <a>
+              {{ section.settings.Main_btn }}
+              <span> {% render 'Show-hide-arrow' %} </span>
+            </a>
+          {% endif %}
+        </div>
+        <div class="options_parent">
+          {% assign explore_all_menu = linklists['explore-all'] %}
+          {% for link in explore_all_menu.links %}
+            <a href="{{ link.url }}"> {{ link.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-popup-content" id="showOnClick">
+    <div class="container">
+      <div class="sticky-popup">
+        <div class="sticky_popup_child">
+          {% for link in explore_all_menu.links %}
+            <div class="sticky-popup_text">
+              <a class="sticky-pop_heading" href="{{ link.url }}">{{ link.title }}</a>
+              {% if link.links %}
+                <div class="sticky-pop_links_head">
+                  {% for child_link in link.links %}
+                    <div class="sticky-pop_links_child">
+                      <a class="sticky-pop_links" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Sticky-menu-options",
+  "settings": [
+    {
+      "type": "text",
+      "id": "Main_btn",
+      "label": "Heading",
+      "default": "Explore ALL"
+    },
+    {
+      "type": "text",
+      "id": "options_text",
+      "label": "Heading",
+      "default": "Butto Text"
+    },
+    {
+      "type": "url",
+      "id": "options_url",
+      "label": "Button link"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "menu-heading",
+      "type": "menu-heading",
+      "settings": [
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "choose color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky Menu"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  window.onload = function () {
+    function highlight(btn) {
+      let div = document.querySelector(btn.getAttribute('href'));
+      div.style.borderColor = '#FF7121';
+      setTimeout(function () {
+        highlightend(div);
+      }, 3000);
+    }
+
+    function highlightend(div) {
+      div.style.borderColor = '#fff';
+    }
+
+    let menuBtn = document.querySelectorAll('.sticky-pop_links');
+    let optSvgM = document.querySelector('#exploreAll svg');
+    let stickyPopup = document.querySelector('#showOnClick');
+    menuBtn.forEach(function (menuBtn) {
+      menuBtn.addEventListener('click', function () {
+        stickyPopup.style.display = 'none';
+        optSvgM.classList.remove('rotate_arrow');
+        highlight(this);
+      });
+    });
+
+    let allOpt = document.querySelector('#exploreAll');
+    let optSvg = document.querySelector('#exploreAll svg');
+    let popHeight = document.querySelector('#showOnClick');
+    allOpt.addEventListener('click', function () {
+      if (optSvg.classList.contains('rotate_arrow')) {
+        optSvg.classList.remove('rotate_arrow');
+        popHeight.style.display = 'none';
+      } else {
+        optSvg.classList.add('rotate_arrow');
+        popHeight.style.display = 'flex';
+      }
+    });
+    var footerHeight = $('.shopify-footer').height();
+    function sticky_relocate_top() {
+      var window_top = $(window).scrollTop();      
+      var footerCartShow = $(document).height() - $(window).height() - footerHeight;
+      if (window_top > 100 && window_top < footerCartShow) {
+        $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+      } else {
+        $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+      }
+    }
+
+    function sticky_relocate_bottom() {
+      var window_top2 = $(window).scrollTop();
+      var footerCarthide = $(document).height() - $(window).height() - footerHeight;
+      if (window_top2 > 100 && window_top2 < footerCarthide) {
+        $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+      } else {
+        $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+      }
+    }
+
+    $(window).scroll(function () {
+      sticky_relocate_top();
+      sticky_relocate_bottom();
+    });
+
+
+    let mac = document.querySelector("#exploreAll");
+    let body = document.querySelector("body");
+    let menuBtnNext = document.querySelectorAll('.sticky-pop_links');
+    mac.addEventListener("click", function() {
+      if (body.style.overflow === "auto") { 
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "auto";
+      }
+    });
+    
+    menuBtnNext.forEach(function (menuBtnN) {
+      menuBtnN.addEventListener('click', function () {
+        body.style.overflow = "auto";
+      });
+    });
+
+  };
+</script>

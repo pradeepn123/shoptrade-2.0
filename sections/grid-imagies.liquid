@@ -1,0 +1,221 @@
+{% style %}
+  html{
+    scroll-padding-top: 13rem;
+  }
+  @media(max-width: 520px){
+      html{
+      scroll-padding-top: 7rem;
+      }
+    }
+  .grid_img_container_main--{{ section.id }}{
+    
+    padding-bottom: {{ section.settings.padding_btm_desk }}px;
+  }
+  @media(max-width: 767px){
+    .grid_img_container_main--{{ section.id }}{
+    padding-bottom: {{ section.settings.padding_btm_mob }}px;
+    }
+  }
+{% endstyle %}
+{% for block in section.blocks %}
+  {% assign loopValue = forloop.index %}
+{% endfor %}
+<div class="grid_img_container_main grid_img_container_main--{{ section.id }}">
+<div class="container">
+  <div id="{{ section.settings.uniuq_id }}" class="grid_img_container" >
+    <div class="gi_blocks_main {% if loopValue == 6 %} GridOne{% elsif loopValue == 5 %}GridTwo{% elsif loopValue == 2 %}Gridthree{% elsif loopValue == 4 %}Gridfour {% elsif loopValue == 3 %} GridFive{% endif %} ">
+      {% for block in section.blocks %}
+        {% assign items = block.settings %}
+        {% assign valueLopp = forloop.index %}
+        {% if items.gib_img or items.external_video_url %}
+          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if loopValue == 6 %}girdOne{{ valueLopp }}{% elsif loopValue == 5 %}GridTwo{{ valueLopp }}{% elsif loopValue == 2 %}Gridthree{{ valueLopp }}{% elsif loopValue == 4 %}Gridfour{{ valueLopp }}{% elsif loopValue == 3 %}Gridfive{{ valueLopp }}{% endif %}">
+            <div class="gi_blocks_child">
+              <a  {% if items.enble_video == false %} href="{{ block.settings.box_url }}" {% endif %}>
+                {% if items.enble_video %}
+                  <a href = "{{ block.settings.box_url }}">             
+                    <div class="gib_heading">
+                      <h5>{{ items.gib_heading }}</h5>
+                    </div>
+                    <div class="gib_para">
+                      {{ items.gib_para }}
+                    </div> 
+                  </a>
+                {% endif %}
+              {% if items.enble_video == false %}           
+                <div class="gib_heading">
+                  <h5>{{ items.gib_heading }}</h5>
+                </div>
+                <div class="gib_para">
+                  {{ items.gib_para }}
+                </div>
+              {% endif %}
+                {% if items.enble_video == false %}
+                  {% if items.gib_img %}                    
+                    <div class="gib_img">
+                      <img src="{{ items.gib_img | img_url: 'master' }}" loading="lazy" alt="gridImg">
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <div class="gib-video__wrp">
+                    <div class="gib-video__vedioWrp">
+                      <div class="vedio__container gib-vid__container">
+                        <div
+                          class="video-player gib_video_palyer"
+                          data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
+                          data-player-url="{{block.settings.external_video_url }}"
+                        >
+                          <div class="preview" data-js="preview">
+                            <img
+                              id="image2"
+                              class="vedio__thumbnail"
+                              src="{{ items.gib_img | img_url :'master' }}"
+                              loading="lazy"
+                            >
+                            {% if block.settings.external_video_url != null %}
+                              <span class="play-icon arrow-btn ">
+                                <img
+                                  id="image1"
+                                  src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Play_Circle.svg?v=1692360919"
+                                  loading="lazy"
+                                >
+                              </span>
+                            {% endif %}
+                          </div>
+                          <div class="aboutUsVideo" data-js="video" data-hidden="">
+                         
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gib_popup">
+                    <div class="gib_popup-content">
+                        <span class="gib_close-popup"></span>
+                        <iframe  id="videoFrame"  src="" frameborder="0" allowfullscreen allow="autoplay"  autoplay ></iframe>
+                    </div>
+                 </div>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+{% for block in section.blocks %}
+{% endfor %}
+{% schema %}
+{
+  "name": "grid imagies",
+  "settings": [
+    {
+      "type": "text",
+      "label":"Uniqe ID",
+      "id":"uniuq_id"
+    },
+    {
+      "type": "range",
+      "id": "padding_btm_desk",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font bottom dekstop",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_btm_mob",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font bottom mobile",
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "image block",
+      "type": "image-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "gib_heading",
+          "label": "Heading",
+          "default": "Quick links"
+        },{
+          "type":"url",
+          "id":"box_url",
+          "label":"URL"
+        },
+        {
+          "type": "richtext",
+          "id": "gib_para",
+          "label": "Paragraph"
+        },
+        {
+          "type": "checkbox",
+          "id": "enble_video",
+          "label": "Show video instead of image",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "gib_img",
+          "label": "Image"
+        },
+        {
+          "type": "video_url",
+          "id": "external_video_url",
+          "accept": ["vimeo", "youtube"],
+          "label": "Video URL",
+          "default": "https://player.vimeo.com/video/794041269?autoplay=1"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "grid imagies"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const playButtons = document.querySelectorAll('.play-icon');
+    const popup = document.querySelector('.gib_popup');
+    const closePopup = document.querySelector('.gib_close-popup');
+    const videoPlayer = document.querySelector('.video-player');
+    const videoFrame = document.getElementById('videoFrame');
+    const videoDiv = document.querySelector('.aboutUsVideo');
+
+
+  
+    playButtons.forEach(playButton => {
+        playButton.addEventListener('click', () => {
+            const videoUrl = videoPlayer.getAttribute('data-player-url');
+            videoFrame.src = videoUrl;
+            popup.style.display = 'block';
+            videoDiv.setAttribute('data-hidden', 'true');
+        });
+    });
+    closePopup.addEventListener('click', () => {
+      videoFrame.src = '';
+     popup.style.display = 'none';
+ });
+   
+
+ popup.addEventListener('click', () => {
+        videoFrame.src = '';
+      popup.style.display = 'none';
+      });
+
+});
+
+</script>
+
