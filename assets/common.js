@@ -818,12 +818,10 @@ class VideoPlayer {
 
   show(element) {
     element.setAttribute('data-hidden', 'false');
-     document.querySelector(".gib_video_palyer").style.paddingBottom = "77%";
   }
 
   hide(element) {
     element.setAttribute('data-hidden', 'true');
-    document.querySelector(".gib_video_palyer").style.paddingBottom = "0";
   }
 
   play() {

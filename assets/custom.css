@@ -14864,6 +14864,7 @@ html {
   position: absolute;
   top: 35%;
   left: 39%;
+  cursor: pointer;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks {
   box-shadow: 0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08);
