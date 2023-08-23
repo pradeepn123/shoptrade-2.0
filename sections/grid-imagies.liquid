@@ -23,7 +23,7 @@
 <div class="grid_img_container_main grid_img_container_main--{{ section.id }}">
 <div class="container">
   <div id="{{ section.settings.uniuq_id }}" class="grid_img_container" >
-    <div class="gi_blocks_main {% if loopValue == 6 %} GridOne{% elsif loopValue == 5 %}GridTwo{% elsif loopValue == 2 %}Gridthree{% elsif loopValue == 4 %}Gridfour {% elsif loopValue == 3 %} GridFive{% endif %} ">
+    <div class="gi_blocks_main {% if loopValue == 6 %} GridOne{% elsif loopValue == 5 %}GridTwo{% elsif loopValue == 2 %}Gridthree{% elsif loopValue == 4 %}Gridfour {% elsif loopValue == 3 %} GridFive {% elsif loopValue > 6 %} Gridmany {% endif %} ">
       {% for block in section.blocks %}
         {% assign items = block.settings %}
         {% assign valueLopp = forloop.index %}
@@ -58,9 +58,9 @@
                 {% else %}
                   <div class="gib-video__wrp">
                     <div class="gib-video__vedioWrp">
-                      <div class="vedio__container gib-vid__container">
+                      <div class="gib-vid__container">
                         <div
-                          class="video-player gib_video_palyer"
+                          class="gib_video_palyer"
                           data-player-type="{% if block.settings.external_video_url contains   'vimeo' %}vimeo{% else %}youtube{% endif %}"
                           data-player-url="{{block.settings.external_video_url }}"
                         >
@@ -81,7 +81,7 @@
                               </span>
                             {% endif %}
                           </div>
-                          <div class="aboutUsVideo" data-js="video" data-hidden="">
+                          <div class="aboutUsVideoMY">
                          
                           </div>
                         </div>
@@ -90,7 +90,7 @@
                   </div>
                   <div class="gib_popup">
                     <div class="gib_popup-content">
-                        <span class="gib_close-popup"></span>
+                        <span class="gib_close-popup"> &#10060; </span>
                         <iframe  id="videoFrame"  src="" frameborder="0" allowfullscreen allow="autoplay"  autoplay ></iframe>
                     </div>
                  </div>
@@ -172,7 +172,8 @@
           "id": "external_video_url",
           "accept": ["vimeo", "youtube"],
           "label": "Video URL",
-          "default": "https://player.vimeo.com/video/794041269?autoplay=1"
+          "default": "https://player.vimeo.com/video/794041269?autoplay=1",
+          "info": "For autoplay add ?autoplay=1 to the end of the video" 
         }
       ]
     }
@@ -190,9 +191,9 @@
     const playButtons = document.querySelectorAll('.play-icon');
     const popup = document.querySelector('.gib_popup');
     const closePopup = document.querySelector('.gib_close-popup');
-    const videoPlayer = document.querySelector('.video-player');
+    const videoPlayer = document.querySelector('.gib_video_palyer');
     const videoFrame = document.getElementById('videoFrame');
-    const videoDiv = document.querySelector('.aboutUsVideo');
+    const videoDiv = document.querySelector('.aboutUsVideoMY');
 
 
   
@@ -208,7 +209,6 @@
       videoFrame.src = '';
      popup.style.display = 'none';
  });
-   
 
  popup.addEventListener('click', () => {
         videoFrame.src = '';

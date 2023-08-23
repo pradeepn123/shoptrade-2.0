@@ -1032,18 +1032,7 @@ var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
     },
   },
 });
-// function togglePagination() {
-//   if (mySwiper_new.isEnd && mySwiper_new.slides.length <= mySwiper_new.params.slidesPerView) {
-//     mySwiper_new.pagination.el.style.display = 'none';
-//   } else {
-//     mySwiper_new.pagination.el.style.display = 'block';
-//   }
-// }
 
-// togglePagination();
-// window.addEventListener('resize', togglePagination);
-
-// active slides shoptrade-info ends here
 
 
 // manuel images scroll .manuel-img-scroll-main
