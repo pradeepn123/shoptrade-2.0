@@ -680,8 +680,9 @@
           "settings": {
             "gib_heading": "Quick links",
             "box_url": "",
-            "gib_para": "",
+            "gib_para": "<p>Quick linksQuick linksQuick links<\/p>",
             "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_6b6277fa-1700-4025-8718-36c54ac1a952.png",
             "fixed_height": false,
             "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
@@ -692,8 +693,9 @@
           "settings": {
             "gib_heading": "Quick links",
             "box_url": "",
-            "gib_para": "",
+            "gib_para": "<p>Quick linksQuick linksQuick linksQuick links<\/p>",
             "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_923f196d-5dad-42e4-94c0-8513bfe4bfe0.png",
             "fixed_height": false,
             "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
