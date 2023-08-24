@@ -14499,11 +14499,7 @@ html {
 .sticky_pop_up_parent {
   transition: all 0.3s linear;
   position: fixed;
-}
-@media (min-width: 1480px) {
-  .sticky_pop_up_parent {
-    position: sticky;
-  }
+  width: 100%;
 }
 .sticky_pop_up_parent .tab-sticky-options_main {
   background-color: #fff;
@@ -14566,7 +14562,7 @@ html {
   top: -15.1em;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 999;
   width: auto;
   overflow: auto;
 }
@@ -14868,7 +14864,7 @@ html {
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   border-radius: 0 0 16px 16px;
 }
