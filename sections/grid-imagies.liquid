@@ -13,19 +13,19 @@
   }
   {% for block in section.blocks %}
     {% if block.settings.fixed_height %}
-      .gib_img{
-
-        height: 280px;
+      .gib_img_{{ block.id }}_{{ forloop.index }} img{
+        height: {{ block.settings.img_height }}px !important;
+        object-fit: cover !important;
       }
     @media(max-width: 1024px){
-      .gib_img{
-        height: 240px;
+      .gib_img_{{ block.id }}_{{ forloop.index }} img{
+        height: {{ block.settings.img_height | times: 0.75 | round }}px !important;
         }
     }
     @media(max-width: 768px){
-      .gib_img{
-        height: 240px;
-        }
+      .gib_img_{{ block.id }}_{{ forloop.index }} img{
+        height: {{ block.settings.img_height | times: 0.65 | round }}px !important;
+       }
     }
     {% endif %}
   {% endfor %}
@@ -42,7 +42,7 @@
         {% assign items = block.settings %}
         {% assign valueLopp = forloop.index %}
         {% if items.gib_img or items.external_video_url %}
-          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if loopValue == 6 %}girdOne{{ valueLopp }}{% elsif loopValue == 5 %}GridTwo{{ valueLopp }}{% elsif loopValue == 2 %}Gridthree{{ valueLopp }}{% elsif loopValue == 4 %}Gridfour{{ valueLopp }}{% elsif loopValue == 3 %}Gridfive{{ valueLopp }}{% endif %}">
+          <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if loopValue == 6 %}girdOne{{ valueLopp }}{{ block.id }}{% elsif loopValue == 5 %}GridTwo{{ valueLopp }}{{ block.id }}{% elsif loopValue == 2 %}Gridthree{{ valueLopp }}{{ block.id }}{% elsif loopValue == 4 %}Gridfour{{ valueLopp }}{{ block.id }}{% elsif loopValue == 3 %}Gridfive{{ valueLopp }}{{ block.id }}{% endif %}">
             <div class="gi_blocks_child">
               <a  {% if items.enble_video == false %} href="{{ block.settings.box_url }}" {% endif %}>
                 {% if items.enble_video %}
@@ -65,10 +65,10 @@
               {% endif %}
                 {% if items.enble_video == false %}
                   {% if items.gib_img %}                    
-                    <div class="gib_img">
+                    <div class="gib_img gib_img_{{ block.id }}_{{ forloop.index }}">
                       <img src="{{ items.gib_img | img_url: 'master' }}" loading="lazy" alt="gridImg">
-                    {% endif %}
-                  </div>
+                    </div>
+                  {% endif %}
                 {% else %}
                   <div class="gib-video__wrp">
                     <div class="gib-video__vedioWrp">
@@ -183,6 +183,16 @@
           "label": "Fixed height for imagies",
           "default": false
         },
+        {
+          "type": "range",
+          "id": "img_height",
+          "min": 5,
+          "max": 500,
+          "step": 5,
+          "unit": "px",
+          "label": "Fixed height for the image",
+          "default": 200
+        },        
         {
           "type": "video_url",
           "id": "external_video_url",
