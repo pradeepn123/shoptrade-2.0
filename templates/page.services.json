@@ -652,7 +652,7 @@
         "38cc58f7-d7c7-41ea-bbab-464920264944": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "Branding",
+            "gib_heading": "Brand Design",
             "box_url": "",
             "gib_para": "<p>Capture your essence. Elevate your brand. Crafting unique, consistent, and visually pleasing communication systems that leave lasting impressions on your customers. <\/p>",
             "enble_video": false,
@@ -665,7 +665,7 @@
         "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "Packaging",
+            "gib_heading": "Brand Strategy",
             "box_url": "",
             "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
             "enble_video": false,
@@ -674,39 +674,11 @@
             "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
-        },
-        "3ea8ab17-a128-4eb7-9904-b85c0858cbf8": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Art direction",
-            "box_url": "",
-            "gib_para": "<p>Quick linksQuick linksQuick links<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_6b6277fa-1700-4025-8718-36c54ac1a952.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
-          }
-        },
-        "dce19d6a-fca0-461b-858c-dea81017702e": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "messaging",
-            "box_url": "",
-            "gib_para": "<p>Quick linksQuick linksQuick linksQuick links<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_923f196d-5dad-42e4-94c0-8513bfe4bfe0.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
-          }
         }
       },
       "block_order": [
         "38cc58f7-d7c7-41ea-bbab-464920264944",
-        "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f",
-        "3ea8ab17-a128-4eb7-9904-b85c0858cbf8",
-        "dce19d6a-fca0-461b-858c-dea81017702e"
+        "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f"
       ],
       "settings": {
         "padding_btm_desk": 1,
