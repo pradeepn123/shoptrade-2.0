@@ -1247,8 +1247,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector("#contact-form").addEventListener('submit', (e) => {
     e.preventDefault();
-    alert("submitted");
-    getContactFormData();
+    // alert("submitted");
+    // getContactFormData();
     formv3();
   })
 })
