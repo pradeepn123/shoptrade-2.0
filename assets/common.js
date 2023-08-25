@@ -1054,3 +1054,201 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
 });
 
 
+// Contact us Form
+document.addEventListener('DOMContentLoaded', () => {
+  // function getContactFormData(){
+  //   // get data from these elements
+  //   // Tab 1 -
+  //   const nameData = document.querySelector("#contactus-name").value ? document.querySelector("#contactus-name").value : null;
+  //   const emailData = document.querySelector("#contactus-email").value ? document.querySelector("#contactus-email").value : "null";
+  //   const phoneData = document.querySelector("#contactus-phoneno").value ? document.querySelector("#contactus-phoneno").value : null;
+  //   const companyNameData = document.querySelector("#contactus-companyname").value ? document.querySelector("#contactus-companyname").value : null;
+  //   const websiteLinkData = document.querySelector("#website_name_validation").value ? document.querySelector("#website_name_validation").value : null;
+
+  //   // Tab 2 - Project Details
+  //   let projectDetailsData = "";
+  //   const inputFields = document.querySelectorAll("#checkboxes-form input");
+  //   for (var i = 0; i < inputFields.length; i++) {
+  //     if (inputFields[i].checked == true) {
+  //       projectDetailsData = inputFields[i].value;
+  //       break;
+  //     }
+  //   }
+
+  //   // Tab 3 -
+  //   // Timeline
+  //   const timelineData = Object.values(
+  //     document.querySelectorAll(".contact-us-timeline input")
+  //   );
+  //   let timelineValue = "";
+  //   for (let i in Object.values(timelineData)) {
+  //     // console.log(timelineData[i].value);
+  //     if (timelineData[i].checked) timelineValue = timelineData[i].value;
+  //     break;
+  //   }
+
+  //   // Budget
+  //   const budgetData = document.querySelectorAll(".contact-us-budget input");
+  //   let budgetValue = "";
+  //   for (let i in Object.values(budgetData)) {
+  //     if (budgetData[i].checked) budgetValue = budgetData[i].value;
+  //     break;
+  //   }
+
+  //   // Additional info
+  //   const additionalInfo = document.querySelector("#additional-note").value ? document.querySelector("#additional-note").value : null;
+  //   // Contact us data
+
+  //   // Agreeing to receive communication
+  //   const aggreementComms = document.querySelector("#contactus-communication-aggreement").checked ? document.querySelector("#contactus-communication-aggreement").checked : null;
+  // }
+
+  function formv3() {
+    // get data from these elements
+    // Tab 1 -
+    const nameData = document.querySelector("#contactus-name").value ? document.querySelector("#contactus-name").value : null;
+    const emailData = document.querySelector("#contactus-email").value ? document.querySelector("#contactus-email").value : "null";
+    const phoneData = document.querySelector("#contactus-phoneno").value ? document.querySelector("#contactus-phoneno").value : null;
+    const companyNameData = document.querySelector("#contactus-companyname").value ? document.querySelector("#contactus-companyname").value : null;
+    const websiteLinkData = document.querySelector("#website_name_validation").value ? document.querySelector("#website_name_validation").value : null;
+
+    // Tab 2 - Project Details
+    let projectDetailsData = "";
+    const inputFields = document.querySelectorAll("#checkboxes-form input");
+    for (var i = 0; i < inputFields.length; i++) {
+      if (inputFields[i].checked == true) {
+        projectDetailsData = inputFields[i].value;
+        break;
+      }
+    }
+
+    // Tab 3 -
+    // Timeline
+    const timelineData = Object.values(
+      document.querySelectorAll(".contact-us-timeline input")
+    );
+    let timelineValue = "";
+    for (let i in Object.values(timelineData)) {
+      // console.log(timelineData[i].value);
+      if (timelineData[i].checked) timelineValue = timelineData[i].value;
+      break;
+    }
+
+    // Budget
+    const budgetData = document.querySelectorAll(".contact-us-budget input");
+    let budgetValue = "";
+    for (let i in Object.values(budgetData)) {
+      if (budgetData[i].checked) budgetValue = budgetData[i].value;
+      break;
+    }
+
+    // Additional info
+    const additionalInfo = document.querySelector("#additional-note").value ? document.querySelector("#additional-note").value : null;
+    // Contact us data
+
+    // Agreeing to receive communication
+    const aggreementComms = document.querySelector("#contactus-communication-aggreement").checked ? document.querySelector("#contactus-communication-aggreement").checked : null;
+    // Experiment ends
+    //  ------------------------------------------------
+
+    // Create the new request
+    var xhr = new XMLHttpRequest();
+    var url =
+      "https://api.hsforms.com/submissions/v3/integration/submit/21154059/7f485969-a15e-41c4-89f0-9c9427a2ec98";
+
+    // Example request JSON:
+    var data = {
+      submittedAt: `${Date.now()}`,
+      fields: [
+        {
+          objectTypeId: "0-1",
+          name: "email",
+          value: `${emailData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "firstname",
+          value: `${nameData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "phone",
+          value: `${phoneData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "company",
+          value: `${companyNameData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "wesbitedata",
+          value: `${websiteLinkData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "project_details",
+          value: `${projectDetailsData}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "timeline_data",
+          value: `${timelineValue}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "budget_data",
+          value: `${budgetValue}`,
+        },
+        {
+          objectTypeId: "0-1",
+          name: "additional_info",
+          value: `${additionalInfo}`,
+        },
+      ],
+      legalConsentOptions: {
+        // Include this object when GDPR options are enabled
+        consent: {
+          consentToProcess: true,
+          text: "I agree to allow Example Company to store and process my personal data.",
+          communications: [
+            {
+              value: `${aggreementComms}`,
+              subscriptionTypeId: 999,
+              text: "I agree to receive marketing communications from Example Company.",
+            },
+          ],
+        },
+      },
+    };
+
+    var final_data = JSON.stringify(data);
+
+    xhr.open("POST", url);
+    // Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
+      } else if (xhr.readyState == 4 && xhr.status == 400) {
+        console.log(xhr.responseText); // Returns a 400 error the submission is rejected.
+      } else if (xhr.readyState == 4 && xhr.status == 403) {
+        console.log(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.
+      } else if (xhr.readyState == 4 && xhr.status == 404) {
+        console.log(xhr.responseText); //Returns a 404 error if the formGuid isn't found
+      }
+    };
+
+    // Sends the request
+
+    xhr.send(final_data);
+  }
+
+  document.querySelector("#contact-form").addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert("submitted");
+    getContactFormData();
+    formv3();
+  })
+})
