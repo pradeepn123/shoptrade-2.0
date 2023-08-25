@@ -104,14 +104,14 @@
     let stickyBody = document.querySelector('#sticky_menu_parent_popUP');
     function highlight(btn) {
       let div = document.querySelector(btn.getAttribute('href'));
-      div.style.borderColor = '#FF7121';
+      div.style.boxShadow = '0px 16px 24px 0px rgba(0, 0, 0, 0.08), 0px -12px 12px 0px rgba(0, 0, 0, 0.08)';
       setTimeout(function () {
         highlightend(div);
       }, 3000);
     }
 
     function highlightend(div) {
-      div.style.borderColor = '#fff';
+      div.style.boxShadow = '0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08)';
     }
 
     let menuBtn = document.querySelectorAll('.sticky-pop_links');

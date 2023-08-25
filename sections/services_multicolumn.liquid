@@ -1,5 +1,9 @@
+{% for item in section.blocks %}
+  {% assign itemCount = forloop.index %}
+{% endfor %}
+
 <div class="container">
-  <div class="services_multicolumn_container">
+  <div class="services_multicolumn_container  {% if itemCount == 4 %} services_multicolumn_containerFour {% elsif itemCount == 3 %} services_multicolumn_containerThree {% elsif itemCount == 2 %} services_multicolumn_containerTwo {% elsif itemCount == 1 %} services_multicolumn_containerOne {% elsif itemCount > 1 %} services_multicolumn_containerMany {% endif %}">
     {% for item in section.blocks %}
       {% if item.settings.box_url %}
         <a href="{{ item.settings.box_url }}" class="services-MulColumn">
