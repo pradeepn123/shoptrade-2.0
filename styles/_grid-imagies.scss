@@ -37,25 +37,27 @@
 
 
             .gi_blocks {
-                height: fit-content;
+                height: 100%;
                 background: #fff;
                 border-radius: 16px;
                 border: 1px solid #fff;
 
-                &:hover {
-                    border-color: #FF7121 !important;
-                }
-
                 .gi_blocks_child {
                     padding: 20px 16px 16px 16px;
-
+                    height: 100%;
                     a {
                         text-decoration: none;
                         cursor: pointer;
+                        display: block;
+                       
+                        overflow: hidden;
 
-
+                        .gib_block_set{
+                            display: grid;
+                            min-height: 100%;
+                        }
                         .gib_heading {
-
+                            // max-height: 0;
 
                             h5 {
                                 margin: 0;
@@ -108,11 +110,13 @@
                         }
 
                         .gib_img {
-
+                            height: 100%;
+                            width: 100%;
+                            aspect-ratio: 1/1;
                             img {
                                 max-width: 100%;
-                                height: auto;
-                                object-fit: contain;
+                                height: 100%;
+                                object-fit: cover;
                                 width: 100%;
                                 border-radius: 0 0 16px 16px;
                             }
@@ -120,6 +124,10 @@
 
                         
                     }
+
+                }
+                .gi_blocks_wrapper{
+                    height: 100%;
                 }
             }
             .gib-video__wrp {
@@ -144,7 +152,7 @@
                                 .vedio__thumbnail {
                                     border-radius: 0 0 16px 16px;
                                     @media(max-width:840px) and (min-width: 475px){
-                                       aspect-ratio: 1/1;
+                                        aspect-ratio: 1/1;
                                     }
                                 }
             
@@ -168,6 +176,10 @@
 
             .gi_blocks {
                 box-shadow: 0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08);
+                &:hover{
+                    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.08), 0px -12px 12px 0px rgba(0, 0, 0, 0.08) !important;
+
+                }
             }
 
 
@@ -260,6 +272,9 @@
                 grid-template-columns: repeat(1, 1fr);
             }
 
+            img{
+                // aspect-ratio: 1/1;
+            }
             .gi_blocks1 {
                 grid-column: 1 / 4;
                 // grid-row: 1/2;
@@ -379,7 +394,9 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 22px;
         row-gap: 40px;
-
+           img{
+                // aspect-ratio: 1/1;
+            }
         @media(max-width:475px) {
             grid-template-columns: repeat(1, 1fr);
         }
@@ -430,9 +447,15 @@
     }
     .GridFive{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         row-gap: 40px;
         column-gap: 22px;
+           img{
+                // aspect-ratio: 1/1;
+            }
+        @media(max-width: 840px){
+            grid-template-columns: repeat(2, 1fr);
+        }
         @media(max-width: 475px){
             grid-template-columns: repeat(1, 1fr);
         }
@@ -443,6 +466,9 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 22px;
         row-gap: 40px;
+        img{
+                // aspect-ratio: 1/1; 
+            }
         @media(max-width: 840px){
             grid-template-columns: repeat(2, 1fr);
         }
