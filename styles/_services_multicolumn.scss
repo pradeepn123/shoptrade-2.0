@@ -11,7 +11,13 @@
     grid-template-columns: repeat(4, 1fr);
     @media(max-width:1200px){
         grid-template-columns: repeat(3, 1fr);
-    } 
+    }
+ }
+ .services_multicolumn_containerFour{
+    grid-template-columns: repeat(4, 1fr);
+    @media(max-width:1200px){
+        grid-template-columns: repeat(3, 1fr);
+    }
  }
 .services_multicolumn_container{
     display: grid; 
@@ -122,10 +128,3 @@
      transition: 0.1s all linear;
  }
 
- .services_multicolumn_containerFour{
-    grid-template-columns: repeat(4, 1fr);
-    @media(max-width:1200px){
-        grid-template-columns: repeat(3, 1fr);
-    }
-   
- }

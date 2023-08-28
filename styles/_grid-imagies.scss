@@ -37,21 +37,27 @@
 
 
             .gi_blocks {
-                height: fit-content;
+                height: 100%;
                 background: #fff;
                 border-radius: 16px;
                 border: 1px solid #fff;
 
                 .gi_blocks_child {
                     padding: 20px 16px 16px 16px;
-
+                    height: 100%;
                     a {
                         text-decoration: none;
                         cursor: pointer;
+                        display: block;
+                       
+                        overflow: hidden;
 
-
+                        .gib_block_set{
+                            display: grid;
+                            min-height: 100%;
+                        }
                         .gib_heading {
-
+                            // max-height: 0;
 
                             h5 {
                                 margin: 0;
@@ -104,10 +110,12 @@
                         }
 
                         .gib_img {
-
+                            height: 100%;
+                            width: 100%;
+                            aspect-ratio: 1/1;
                             img {
                                 max-width: 100%;
-                                // height: auto;
+                                height: 100%;
                                 object-fit: cover;
                                 width: 100%;
                                 border-radius: 0 0 16px 16px;
@@ -116,6 +124,10 @@
 
                         
                     }
+
+                }
+                .gi_blocks_wrapper{
+                    height: 100%;
                 }
             }
             .gib-video__wrp {
@@ -140,7 +152,7 @@
                                 .vedio__thumbnail {
                                     border-radius: 0 0 16px 16px;
                                     @media(max-width:840px) and (min-width: 475px){
-                                       aspect-ratio: 1/1;
+                                        aspect-ratio: 1/1;
                                     }
                                 }
             
@@ -261,7 +273,7 @@
             }
 
             img{
-                aspect-ratio: 1/1;
+                // aspect-ratio: 1/1;
             }
             .gi_blocks1 {
                 grid-column: 1 / 4;
@@ -383,7 +395,7 @@
         column-gap: 22px;
         row-gap: 40px;
            img{
-                aspect-ratio: 1/1;
+                // aspect-ratio: 1/1;
             }
         @media(max-width:475px) {
             grid-template-columns: repeat(1, 1fr);
@@ -439,7 +451,7 @@
         row-gap: 40px;
         column-gap: 22px;
            img{
-                aspect-ratio: 1/1;
+                // aspect-ratio: 1/1;
             }
         @media(max-width: 840px){
             grid-template-columns: repeat(2, 1fr);
@@ -455,7 +467,7 @@
         column-gap: 22px;
         row-gap: 40px;
         img{
-                aspect-ratio: 1/1; 
+                // aspect-ratio: 1/1; 
             }
         @media(max-width: 840px){
             grid-template-columns: repeat(2, 1fr);

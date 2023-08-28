@@ -4,9 +4,7 @@
     transition: all 0.3s linear;
     position: fixed;
     width: 100%; 
-    @media(min-width:1440px){
-        position: sticky;
-    }
+  
     .tab-sticky-options_main {
         background-color: #fff;
 
