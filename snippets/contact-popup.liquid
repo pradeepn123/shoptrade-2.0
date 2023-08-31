@@ -149,14 +149,15 @@
                         <div class="form-group">
                             <textarea id="additional-note" placeholder="Let us know..." oninput="this.className = ''" name="Additional Note"></textarea>
                         </div>
-            
+                        {% comment %}
                         <div class="form-group block">
                             <label class="label-text">Attachments</label>
                             <div class="drop-zone">
                                 <span class="drop-zone__prompt">Drag & drop or <span style="color: #000; text-decoration: underline;">browse</span></span>
                                 <input type="file" name="Attached File" class="drop-zone__input">
-                            </div> 
+                            </div>
                         </div>
+                        {% endcomment %}
                     </div>
                     <div class="error"></div>
                     <div class="form-buttons" style="overflow:auto;">
