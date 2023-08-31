@@ -1117,8 +1117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputFields = document.querySelectorAll("#checkboxes-form input");
     for (var i = 0; i < inputFields.length; i++) {
       if (inputFields[i].checked == true) {
-        projectDetailsData = inputFields[i].value;
-        break;
+        projectDetailsData += inputFields[i].value + ",";
       }
     }
 
