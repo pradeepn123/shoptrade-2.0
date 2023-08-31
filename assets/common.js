@@ -1174,6 +1174,18 @@ document.addEventListener('DOMContentLoaded', () => {
       return "";
     }
 
+    // Getting ip address 
+    let ipAddress = (function () {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://api.ipify.org?format=json", false); // use synchronous request
+      xhr.send();
+      if (xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        return response.ip;
+      }
+      return "";
+    })();
+    
     var hutk = getCookie("hubspotutk");
 
 
@@ -1227,7 +1239,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       ],
       context: {
-        "hutk": hutk, // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+        "hutk": hutk,
+        "ipAddress": ipAddress,
         "pageUri": "www.shoptrade.co",
         "pageName": "ShopTrade"
       },
