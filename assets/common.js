@@ -1155,8 +1155,28 @@ document.addEventListener('DOMContentLoaded', () => {
     var xhr = new XMLHttpRequest();
     var url =
       "https://api.hsforms.com/submissions/v3/integration/submit/21154059/7f485969-a15e-41c4-89f0-9c9427a2ec98";
+    
+    
+    // Generating HUTK code
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
 
-    // Example request JSON:
+    var hutk = getCookie("hubspotutk");
+
+
     var data = {
       submittedAt: `${Date.now()}`,
       fields: [
@@ -1206,6 +1226,11 @@ document.addEventListener('DOMContentLoaded', () => {
           value: `${additionalInfo}`,
         },
       ],
+      context: {
+        "hutk": hutk, // include this parameter and set it to the hubspotutk cookie value to enable cookie tracking on your submission
+        "pageUri": "www.shoptrade.co",
+        "pageName": "ShopTrade"
+      },
       legalConsentOptions: {
         // Include this object when GDPR options are enabled
         consent: {
