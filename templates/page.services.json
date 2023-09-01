@@ -98,7 +98,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": ""
           }
         },
@@ -111,7 +110,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -124,20 +122,18 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
         "0186aa5e-7ff5-4a19-82e5-a8a0bd614348": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "Package Design",
+            "gib_heading": "Promotional Email Design",
             "box_url": "",
             "gib_para": "<p>Stand out on the shelves with our captivating package design service. From concept to reality, we create eye-catching, memorable packaging that leaves a lasting impression on your customers. Elevate your brand today!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": ""
           }
         },
@@ -150,7 +146,6 @@
             "enble_video": true,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3618.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
@@ -163,7 +158,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_1.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": ""
           }
         }
@@ -567,7 +561,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_a6a7d96a-862b-40a6-a197-204a5042b3d9.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -580,7 +573,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_5b0f514e-90a3-4856-980a-1eaec8cec183.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -593,7 +585,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_1_060286c0-88a4-44e8-8115-c6e626bdd64c.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -606,7 +597,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_2.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -619,7 +609,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_3.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         }
@@ -658,7 +647,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_6b6277fa-1700-4025-8718-36c54ac1a952.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -671,7 +659,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_52e39203-37d7-44a2-a367-2fa8ef34c7bd.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         }
@@ -707,7 +694,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_923f196d-5dad-42e4-94c0-8513bfe4bfe0.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -720,7 +706,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_0bc3f6ee-10ae-4a55-ac8f-4105cfa53288.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -733,7 +718,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_2.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
@@ -746,7 +730,6 @@
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_3.png",
             "fixed_height": false,
-            "img_height": 200,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         }
