@@ -628,9 +628,9 @@
     "a90855fb-8b32-4b3d-a55e-a4d04fd7ec22": {
       "type": "service_sections_header",
       "settings": {
-        "heading": "Branding",
+        "heading": "Brand Identity",
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #C5DDF3 0%, rgba(255, 255, 255, 0.00) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(197, 221, 243, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 40,
         "padding_btm": 24
       }
