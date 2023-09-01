@@ -673,12 +673,25 @@
             "fixed_height": false,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
+        },
+        "c8a98e04-a97a-4770-a010-226c2d68b040": {
+          "type": "image-block",
+          "settings": {
+            "gib_heading": "Art Direction",
+            "box_url": "",
+            "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_52e39203-37d7-44a2-a367-2fa8ef34c7bd.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+          }
         }
       },
       "block_order": [
         "38cc58f7-d7c7-41ea-bbab-464920264944",
         "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f",
-        "909d2f91-1105-4255-aef5-1e476febb674"
+        "909d2f91-1105-4255-aef5-1e476febb674",
+        "c8a98e04-a97a-4770-a010-226c2d68b040"
       ],
       "settings": {
         "padding_btm_desk": 1,
