@@ -726,7 +726,7 @@
         "cefdca22-c543-4f46-8621-b1508fe0eb89": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "Promotional Emailer",
+            "gib_heading": "Email Marketing",
             "box_url": "",
             "gib_para": "<p>Engage, entice, and elevate. Our expert emailer design service delivers eye-catching promotions that captivate your audience and drive results. Take your campaigns to new heights.<\/p>",
             "enble_video": false,
@@ -737,6 +737,7 @@
         },
         "dc1c7e41-6ac9-467d-976c-33be81d9a430": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "gib_heading": "Marketing",
             "box_url": "",
@@ -749,6 +750,7 @@
         },
         "3ddff7cb-76b2-4ad4-a8bd-3389a954b707": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "gib_heading": "Messaging",
             "box_url": "",
