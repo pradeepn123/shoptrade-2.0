@@ -14892,7 +14892,6 @@ html {
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img {
   height: 100%;
   width: 100%;
-  aspect-ratio: 1/1;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;

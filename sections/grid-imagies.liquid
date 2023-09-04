@@ -17,6 +17,11 @@
       max-height: 0;
      }
     {% endif %}
+    {% if block.settings.enble_video %}
+     #image2{
+      filter: brightness(60%);
+     }
+    {% endif %}
   {% endfor %}
 {% endstyle %}
 
