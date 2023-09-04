@@ -560,6 +560,7 @@
       "blocks": {
         "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Shopify Theme Builds",
