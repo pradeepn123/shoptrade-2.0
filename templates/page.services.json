@@ -561,7 +561,7 @@
         "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
+            "show_contactpopUP": true,
             "gib_heading": "Theme Development",
             "box_url": "",
             "gib_para": "<p>We offer full fetch public\/custom Shopify app development. This includes creating, customizing, and deploying Shopify apps to help you automate your business processes and improve your customer experience.<\/p>",
@@ -574,7 +574,7 @@
         "9192b4d7-c3c6-42e1-9701-4f61e385db81": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
+            "show_contactpopUP": true,
             "gib_heading": "Product Development",
             "box_url": "",
             "gib_para": "<p>We offer full fetch public\/custom Shopify app development. This includes creating, customizing, and deploying Shopify apps to help you automate your business processes and improve your customer experience.<\/p>",
@@ -587,7 +587,7 @@
         "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
+            "show_contactpopUP": true,
             "gib_heading": "Headless Commerce",
             "box_url": "",
             "gib_para": "<p>We design, build, and optimize headless commerce websites for some of the world's largest enterprise brands. Headless commerce separates the frontend from the backend, resulting in a faster, more customizable, and consistent commerce experience for your customers.<\/p>",
@@ -600,8 +600,8 @@
         "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
-            "gib_heading": "Platform Migration",
+            "show_contactpopUP": true,
+            "gib_heading": "Replatforming",
             "box_url": "",
             "gib_para": "<p>If your current eCommerce platform is not meeting your needs, we can help you migrate to Shopify Plus. Shopify Plus is the world's most scalable e-commerce platform, and it can help you grow your business to the next level.<\/p>",
             "enble_video": false,
@@ -613,7 +613,7 @@
         "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
+            "show_contactpopUP": true,
             "gib_heading": "System Integrations",
             "box_url": "",
             "gib_para": "<p>We have partnerships with top SaaS companies to provide a top-notch commerce experience. We can also create custom integrations to connect your ERP, CRM, PIM, and other systems, allowing you to focus on growing your brand.<\/p>",
@@ -626,7 +626,7 @@
         "69bf280d-0946-4f49-bd41-b7da426dac40": {
           "type": "image-block",
           "settings": {
-            "show_contactpopUP": false,
+            "show_contactpopUP": true,
             "gib_heading": "International Expansion",
             "box_url": "",
             "gib_para": "<p>We can help you expand your business beyond borders with the right solutions. We can help you localize your website, set up shipping and payment gateways, and comply with local regulations.<\/p>",
