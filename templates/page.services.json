@@ -14,7 +14,7 @@
         "heading": "Services",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Problem solvers at heart, we’re here to build long standing relationships<\/p>",
+        "banner_para": "<p>Driving business acceleration with data-informed UX and Shopify Plus e-commerce expertise.<\/p>",
         "btntext": "",
         "bottom_shadow": true
       }
@@ -81,7 +81,7 @@
       "settings": {
         "heading": "Design",
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #DDEDE1 0%, rgba(255, 255, 255, 0.00) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(221, 237, 225, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 2,
         "padding_btm": 24
       }
