@@ -148,8 +148,10 @@
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
       if (window_top > totalHeight && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+        $('#shopify-section-header').removeClass('fixed-header');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+        $('#shopify-section-header').addClass('fixed-header');       
       }
     }
 
