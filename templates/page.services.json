@@ -43,9 +43,9 @@
         "efaa7c01-f158-4d1e-b318-6e3378d76d0f": {
           "type": "column-blocks",
           "settings": {
-            "box_url": "#Branding",
+            "box_url": "#Brand_Identity",
             "featured_image": "shopify:\/\/shop_images\/image_1_914ac0b7-4776-4c39-b3ad-23b3c885e7b4.png",
-            "column_heading": "Branding",
+            "column_heading": "Brand Identity",
             "services_numbers": "2 Services"
           }
         },
