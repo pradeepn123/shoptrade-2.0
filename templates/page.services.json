@@ -102,19 +102,6 @@
             "external_video_url": ""
           }
         },
-        "d9129280-72c6-4119-a511-b427bac04d4c": {
-          "type": "image-block",
-          "settings": {
-            "show_contactpopUP": false,
-            "gib_heading": "3D Modelling",
-            "box_url": "",
-            "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/3D.png",
-            "fixed_height": false,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
         "0e459002-2c52-4d88-bc3c-017d2cc69339": {
           "type": "image-block",
           "settings": {
@@ -139,6 +126,19 @@
             "gib_img": "shopify:\/\/shop_images\/emailer.png",
             "fixed_height": false,
             "external_video_url": ""
+          }
+        },
+        "d9129280-72c6-4119-a511-b427bac04d4c": {
+          "type": "image-block",
+          "settings": {
+            "show_contactpopUP": false,
+            "gib_heading": "3D Modelling",
+            "box_url": "",
+            "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/3D.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
         "fd79c0ee-87d4-41a1-a215-bb32c0cbe940": {
@@ -170,9 +170,9 @@
       },
       "block_order": [
         "f3895426-c4de-4591-8249-00fcf23dfdbd",
-        "d9129280-72c6-4119-a511-b427bac04d4c",
         "0e459002-2c52-4d88-bc3c-017d2cc69339",
         "0186aa5e-7ff5-4a19-82e5-a8a0bd614348",
+        "d9129280-72c6-4119-a511-b427bac04d4c",
         "fd79c0ee-87d4-41a1-a215-bb32c0cbe940",
         "0e2bf65f-1240-49b7-bc95-18682b2d66bd"
       ],
