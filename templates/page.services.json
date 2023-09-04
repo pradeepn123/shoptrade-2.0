@@ -602,6 +602,7 @@
         },
         "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Replatforming",
@@ -615,6 +616,7 @@
         },
         "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "System Integrations",
@@ -628,12 +630,11 @@
         },
         "69bf280d-0946-4f49-bd41-b7da426dac40": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "International Expansion",
             "box_url": "",
-            "gib_para": "<p>We can help you expand your business beyond borders with the right solutions. We can help you localize your website, set up shipping and payment gateways, and comply with local regulations.<\/p>",
+            "gib_para": "<p>Facilitate global market entry with our strategic international expansion services. We offer website localization, integrated payment and shipping solutions, and ensure compliance with local legal frameworks—enabling enterprise-level growth across borders.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/HEADLESS_COMMERCE.png",
             "fixed_height": false,
