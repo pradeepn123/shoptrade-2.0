@@ -560,7 +560,6 @@
       "blocks": {
         "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Shopify Theme Builds",
@@ -574,7 +573,6 @@
         },
         "9192b4d7-c3c6-42e1-9701-4f61e385db81": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Shopify App Solutions",
@@ -588,7 +586,6 @@
         },
         "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Headless Commerce",
@@ -602,7 +599,6 @@
         },
         "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Replatforming",
