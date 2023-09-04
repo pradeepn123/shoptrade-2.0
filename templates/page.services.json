@@ -92,6 +92,7 @@
         "f3895426-c4de-4591-8249-00fcf23dfdbd": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Data Driven UI\/UX",
             "box_url": "",
             "gib_para": "<p>Transform your user experience with our data-driven UI\/UX service. Elevate engagement and conversions through personalized designs. Data powers success!<\/p>",
@@ -104,6 +105,7 @@
         "d9129280-72c6-4119-a511-b427bac04d4c": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "3D Modelling",
             "box_url": "",
             "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
@@ -116,6 +118,7 @@
         "0e459002-2c52-4d88-bc3c-017d2cc69339": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "CRO Audit",
             "box_url": "",
             "gib_para": "<p>Maximize your website's potential with our comprehensive CRO audit service. Uncover opportunities for growth and boost conversions with data-driven insights. Optimize for success now!<\/p>",
@@ -128,6 +131,7 @@
         "0186aa5e-7ff5-4a19-82e5-a8a0bd614348": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Promotional Email Design",
             "box_url": "",
             "gib_para": "<p>Stand out on the shelves with our captivating package design service. From concept to reality, we create eye-catching, memorable packaging that leaves a lasting impression on your customers. Elevate your brand today!<\/p>",
@@ -140,6 +144,7 @@
         "fd79c0ee-87d4-41a1-a215-bb32c0cbe940": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "UGC Video Editing",
             "box_url": "",
             "gib_para": "<p>Unleash your creative vision witht our art direction design service. From illustrations to videography and photography, we bring your ideas to life with expertise and flair.<\/p>",
@@ -152,6 +157,7 @@
         "0e2bf65f-1240-49b7-bc95-18682b2d66bd": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Photo Retouching",
             "box_url": "",
             "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to trans-formative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now<\/p>",
@@ -552,50 +558,28 @@
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6": {
       "type": "grid-imagies",
       "blocks": {
-        "9192b4d7-c3c6-42e1-9701-4f61e385db81": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Product Development",
-            "box_url": "",
-            "gib_para": "<p>Turn your ideas into reality with our end-to-end product development service. From concept to launch, we deliver innovative solutions that exceed expectations and drive business success.<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/PRODUCT_DEV.png",
-            "fixed_height": false,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
-        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Platform Migration",
-            "box_url": "",
-            "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to transformative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/MIGRATION.png",
-            "fixed_height": false,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
         "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Theme Development",
             "box_url": "",
-            "gib_para": "<p>Choose between Custom Theme for unique user experience with existing design or Theme-Based for swift, budget-friendly launch based on Shopify themes. Tailored solutions for varied needs.<\/p>",
+            "gib_para": "<p>We offer full fetch public\/custom Shopify app development. This includes creating, customizing, and deploying Shopify apps to help you automate your business processes and improve your customer experience.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/Theme_customization.png",
             "fixed_height": false,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
         },
-        "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
+        "9192b4d7-c3c6-42e1-9701-4f61e385db81": {
           "type": "image-block",
           "settings": {
-            "gib_heading": "System Integration",
+            "show_contactpopUP": false,
+            "gib_heading": "Product Development",
             "box_url": "",
-            "gib_para": "<p>Powerful SaaS partnerships for an exceptional commerce experience. Custom integrations for seamless connections with ERP, CRM, PIM, and more. Grow your brand effortlessly.<\/p>",
+            "gib_para": "<p>We offer full fetch public\/custom Shopify app development. This includes creating, customizing, and deploying Shopify apps to help you automate your business processes and improve your customer experience.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/SYS_INTEGRATION.png",
+            "gib_img": "shopify:\/\/shop_images\/PRODUCT_DEV.png",
             "fixed_height": false,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
@@ -603,22 +587,63 @@
         "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Headless Commerce",
             "box_url": "",
-            "gib_para": "<p>360° Headless Commerce experts. Mastering backend & frontend: Shopify, Next.js, React, Contentful, Python, Node.js. Simplifying complexity, unlocking new possibilities. <\/p>",
+            "gib_para": "<p>We design, build, and optimize headless commerce websites for some of the world's largest enterprise brands. Headless commerce separates the frontend from the backend, resulting in a faster, more customizable, and consistent commerce experience for your customers.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/HEADLESS_COMMERCE.png",
             "fixed_height": false,
             "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
           }
+        },
+        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
+          "type": "image-block",
+          "settings": {
+            "show_contactpopUP": false,
+            "gib_heading": "Platform Migration",
+            "box_url": "",
+            "gib_para": "<p>If your current eCommerce platform is not meeting your needs, we can help you migrate to Shopify Plus. Shopify Plus is the world's most scalable e-commerce platform, and it can help you grow your business to the next level.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/MIGRATION.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+          }
+        },
+        "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
+          "type": "image-block",
+          "settings": {
+            "show_contactpopUP": false,
+            "gib_heading": "System Integrations",
+            "box_url": "",
+            "gib_para": "<p>We have partnerships with top SaaS companies to provide a top-notch commerce experience. We can also create custom integrations to connect your ERP, CRM, PIM, and other systems, allowing you to focus on growing your brand.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/SYS_INTEGRATION.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+          }
+        },
+        "69bf280d-0946-4f49-bd41-b7da426dac40": {
+          "type": "image-block",
+          "settings": {
+            "show_contactpopUP": false,
+            "gib_heading": "International Expansion",
+            "box_url": "",
+            "gib_para": "<p>We can help you expand your business beyond borders with the right solutions. We can help you localize your website, set up shipping and payment gateways, and comply with local regulations.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/HEADLESS_COMMERCE.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
         }
       },
       "block_order": [
-        "9192b4d7-c3c6-42e1-9701-4f61e385db81",
-        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8",
         "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d",
+        "9192b4d7-c3c6-42e1-9701-4f61e385db81",
+        "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3",
+        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8",
         "005749bb-25d3-4ac6-a8b5-010ca96ddead",
-        "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3"
+        "69bf280d-0946-4f49-bd41-b7da426dac40"
       ],
       "settings": {
         "padding_btm_desk": 1,
@@ -641,6 +666,7 @@
         "38cc58f7-d7c7-41ea-bbab-464920264944": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Strategy",
             "box_url": "",
             "gib_para": "<p>Capture your essence. Elevate your brand. Crafting unique, consistent, and visually pleasing communication systems that leave lasting impressions on your customers. <\/p>",
@@ -653,6 +679,7 @@
         "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Brand",
             "box_url": "",
             "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
@@ -665,6 +692,7 @@
         "909d2f91-1105-4255-aef5-1e476febb674": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Packaging",
             "box_url": "",
             "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
@@ -677,6 +705,7 @@
         "c8a98e04-a97a-4770-a010-226c2d68b040": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Art Direction",
             "box_url": "",
             "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
@@ -714,6 +743,7 @@
         "ad172c22-1751-425f-a91a-dca9113ab2ea": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Performance Marketing",
             "box_url": "",
             "gib_para": "<p>Build trust through consistency. We crafts messaging & visual strategies to connect you with your audience across platforms. Elevate your social media presence.<\/p>",
@@ -726,6 +756,7 @@
         "cefdca22-c543-4f46-8621-b1508fe0eb89": {
           "type": "image-block",
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Email Marketing",
             "box_url": "",
             "gib_para": "<p>Engage, entice, and elevate. Our expert emailer design service delivers eye-catching promotions that captivate your audience and drive results. Take your campaigns to new heights.<\/p>",
@@ -739,6 +770,7 @@
           "type": "image-block",
           "disabled": true,
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Marketing",
             "box_url": "",
             "gib_para": "<p>Unleash your brand's potential. Reach new audiences, gain a competitive edge with strategic marketing, compelling messaging, and captivating visuals. <\/p>",
@@ -752,6 +784,7 @@
           "type": "image-block",
           "disabled": true,
           "settings": {
+            "show_contactpopUP": false,
             "gib_heading": "Messaging",
             "box_url": "",
             "gib_para": "<p>Speak volumes with impactful messaging. Crafting powerful statements that resonate deeply with customers, forging lasting connections beyond mere descriptions.<\/p>",
