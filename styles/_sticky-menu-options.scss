@@ -240,7 +240,8 @@
                 display: none;
                 justify-content: space-between;
                 width: 100%;
-
+                overflow: auto;
+                gap: 20px;
                 @media(min-width:921px) {
                     display: flex;
                 }

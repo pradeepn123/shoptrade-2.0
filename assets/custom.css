@@ -14739,6 +14739,8 @@ html {
   display: none;
   justify-content: space-between;
   width: 100%;
+  overflow: auto;
+  gap: 20px;
 }
 @media (min-width: 921px) {
   .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .options_parent {
