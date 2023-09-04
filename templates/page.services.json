@@ -588,6 +588,7 @@
         },
         "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3": {
           "type": "image-block",
+          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "Headless Commerce",
@@ -614,7 +615,6 @@
         },
         "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
           "type": "image-block",
-          "disabled": true,
           "settings": {
             "show_contactpopUP": true,
             "gib_heading": "System Integrations",
