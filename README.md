@@ -22,3 +22,7 @@
 <p>
   Please use this link - <a href="https://trello.com/invite/b/tjvhzF5R/ATTI82a72c69b136ee3233b2a96b494f520cC2E04546/shoptrade-website">Trello Board</a> to keep with the activities of this Repository.
 </p>
+<p>
+Old services page json
+<a href="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/old_service_page.json?v=1693292213"> </a>
+</p>
