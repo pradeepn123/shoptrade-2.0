@@ -137,8 +137,8 @@
             "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/3D.png",
-            "fixed_height": false,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "fixed_height": true,
+            "external_video_url": ""
           }
         },
         "fd79c0ee-87d4-41a1-a215-bb32c0cbe940": {
