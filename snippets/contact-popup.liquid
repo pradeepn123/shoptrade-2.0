@@ -321,6 +321,8 @@
             })();
             
             var hutk = getCookie("hubspotutk");
+            alert(hutk);
+            alert(ipAddress);
 
 
             var data = {
@@ -352,6 +354,12 @@
                     value: `${ndetails}`,
                 }
             ],
+            context: {
+                "hutk": hutk,
+                "ipAddress": ipAddress,
+                "pageUri": "www.shoptrade.co",
+                "pageName": "ShopTrade"
+            },
             legalConsentOptions: {
                 consent: {
                 consentToProcess: true,
