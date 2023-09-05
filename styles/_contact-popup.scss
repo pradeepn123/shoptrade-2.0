@@ -317,8 +317,14 @@ textarea {
                         padding: 1em;
                         min-height: 150px;
                         outline: none;
+                        font-size: 16px;
                         box-shadow: none;
                         border: 1px solid #bbb3b3;
+                    }
+                    #new-details{
+                        &::placeholder{
+                            color: #b6b8ba;
+                        }
                     }
                     .invalid {
                         border-color: red;

@@ -7003,8 +7003,12 @@ textarea {
   padding: 1em;
   min-height: 150px;
   outline: none;
+  font-size: 16px;
   box-shadow: none;
   border: 1px solid #bbb3b3;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::placeholder {
+  color: #b6b8ba;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .invalid {
   border-color: red;
