@@ -64,19 +64,19 @@
                                 color: #000;
                                 font-size: 32px;
                                 font-weight: 600;
-                                line-height: 1;
+                                line-height: 1.1;
                                 text-decoration: none;
                                 display: flex;
                                 align-items: center;
 
                                 @media(max-width:1024px) {
                                     font-size: 28px;
-                                    line-height: 1;
+                                  
                                 }
 
                                 @media(max-width:520px) {
                                     font-size: 24px;
-                                    line-height: 1;
+                                   
                                 }
                                 br{
 
@@ -102,12 +102,12 @@
                                 font-weight: 400;
                                 line-height: 24px;
                                 text-decoration: none;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                display: -webkit-box;
-                                -webkit-line-clamp: 4;
-                                -webkit-box-orient: vertical;
-                                min-height: 96px;
+                                //overflow: hidden;
+                                //text-overflow: ellipsis;
+                                // display: -webkit-box;
+                                // -webkit-line-clamp: 4;
+                                // -webkit-box-orient: vertical;
+                                // min-height: 96px;
                             }
                         }
 

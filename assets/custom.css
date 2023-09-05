@@ -14846,7 +14846,7 @@ html {
   color: #000;
   font-size: 32px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.1;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -14854,13 +14854,11 @@ html {
 @media (max-width: 1024px) {
   .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
     font-size: 28px;
-    line-height: 1;
   }
 }
 @media (max-width: 520px) {
   .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
     font-size: 24px;
-    line-height: 1;
   }
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 br {
@@ -14887,12 +14885,6 @@ html {
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  min-height: 96px;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img {
   height: 100%;
