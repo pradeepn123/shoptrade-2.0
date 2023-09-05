@@ -322,7 +322,19 @@ textarea {
                         border: 1px solid #bbb3b3;
                     }
                     #new-details{
-                        &::placeholder{
+                        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                            color: #b6b8ba;
+                            opacity: 1; /* Firefox */
+                        }
+                        &:focus{
+                            border-color: #000000;
+                        }
+
+                        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: #b6b8ba;
+                        }
+
+                        ::-ms-input-placeholder { /* Microsoft Edge */
                             color: #b6b8ba;
                         }
                     }

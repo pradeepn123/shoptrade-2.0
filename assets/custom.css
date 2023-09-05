@@ -7007,7 +7007,17 @@ textarea {
   box-shadow: none;
   border: 1px solid #bbb3b3;
 }
-#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::placeholder {
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details:focus {
+  border-color: #000000;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details ::-ms-input-placeholder { /* Microsoft Edge */
   color: #b6b8ba;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .invalid {
