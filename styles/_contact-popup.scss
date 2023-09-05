@@ -1,3 +1,7 @@
+[error-message]{
+    font-size: 12px;
+}
+
 textarea {
   resize: none;
   font-family: 'Epilogue';
@@ -319,6 +323,11 @@ textarea {
                     .invalid {
                         border-color: red;
                     }
+                }
+                .flex-form-group{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
                 }
                 .form-group1 {
                     display: grid;

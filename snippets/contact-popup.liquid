@@ -16,27 +16,27 @@
                 </h1>
                 <div class="form-tab">
                     <form id='new-contactForm' method="POST">
-                        <div class="form-group">
+                        <div class="form-group flex-form-group">
                             <input type="text" name="firstname" id="new-firstName" placeholder="First Name">
                             <div class="firstName-errormsg" style="color: red; display: none" error-message error-firstName>Please check your First name Input</div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group flex-form-group">
                             <input type="text" name="lastname" id="new-lastName" placeholder="Last Name">
                             <div class="lastName-errormsg" style="color: red; display: none" error-message error-lastName>Please check your Last name Input</div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group flex-form-group">
                             <input type="email" name="email" id="new-Email" placeholder="Email">
                             <div class="email-errormsg" style="color: red; display: none" error-message error-email>Please check your Email Input</div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group flex-form-group">
                             <input type="text" name="company" id="new-Company" placeholder="Comapny">
                             <div class="company-errormsg" style="color: red; display: none" error-message error-company>Please check your Company input</div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group flex-form-group">
                             <textarea id="new-details" name="Additional Note" placeholder="DETAILS ABOUT YOUR PROJECT (SERVICES, SCOPE, TIMELINE, ETC.)"></textarea>
                             <div class="projectDetails-errormsg" style="color: red; display: none" error-message error-additionalMessage>Please check your Details input</div>
                         </div>
@@ -195,8 +195,83 @@
 <script>
     document.querySelector("#new-contactForm").addEventListener("submit", (e) => {
         e.preventDefault();
-        newForm();
+        // newForm();
+        validationForm();
     });
+
+
+    function validationForm(){
+        const nameRegex = /^[a-zA-Z ]{2,30}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const textOnlyRegex = /^.{2,}$/;
+
+        let fname_cotuner = 0;
+        let lname_counter = 0;
+        let nemail_counter = 0 ;
+        let ncompany_cotuner = 0;
+        let ndetails_counter = 0;
+
+        // Values
+        let fname = document.querySelector("#new-firstName").value;
+        let lname = document.querySelector("#new-lastName").value;
+        let nemail = document.querySelector("#new-Email").value;
+        let ncompany = document.querySelector("#new-Company").value;
+        let ndetails = document.querySelector("#new-details").value;
+
+
+        // First Name Regex
+        if (!nameRegex.test(fname)) {
+            document.querySelector("div[error-firstname]").style.display = "block";
+            fname_cotuner = 0;
+        }
+        else{
+            document.querySelector("div[error-firstname]").style.display = "none";
+            fname_cotuner = 1;
+        }
+
+        // Last Name Regex
+        if (!nameRegex.test(lname)) {
+            document.querySelector("div[error-lastName]").style.display = "block";
+            lname_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-lastName]").style.display = "none";
+            lname_counter = 1;
+        }
+
+        // Email Regex
+        if (!emailRegex.test(nemail)) {
+            document.querySelector("div[error-email]").style.display = "block";
+            nemail_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-email]").style.display = "none";
+            nemail_counter = 1;
+        }
+
+        // Company Regex
+        if (!textOnlyRegex.test(ncompany)) {
+            document.querySelector("div[error-company]").style.display = "block";
+            ncompany_cotuner = 0;
+        }
+        else{
+            document.querySelector("div[error-company]").style.display = "none";
+            ncompany_cotuner = 1;
+        }
+
+        // Extra text
+        if (!textOnlyRegex.test(ndetails)) {
+            document.querySelector("div[error-additionalMessage]").style.display = "block";
+            ndetails_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-additionalMessage]").style.display = "none";
+            ndetails_counter = 1;
+        }
+        if(fname_cotuner && lname_counter && nemail_counter && ncompany_cotuner && ndetails_counter){
+            newForm();
+        }
+    }
 
         //New Contact us Form
         function newForm(){

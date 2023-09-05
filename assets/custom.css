@@ -6700,6 +6700,10 @@ input::-moz-placeholder {
   }
 }
 
+[error-message] {
+  font-size: 12px;
+}
+
 textarea {
   resize: none;
   font-family: "Epilogue";
@@ -7004,6 +7008,11 @@ textarea {
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group .invalid {
   border-color: red;
+}
+#contact-popup #left-contact-content .form-content .form-tab .flex-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 {
   display: grid;
