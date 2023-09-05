@@ -14838,7 +14838,8 @@ html {
   overflow: hidden;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_block_set {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
@@ -14887,15 +14888,18 @@ html {
   text-decoration: none;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img {
-  height: 100%;
+  display: flex;
+  min-height: 100%;
   width: 100%;
+  flex-grow: 1;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   border-radius: 0 0 16px 16px;
+  min-height: 100%;
+  flex-grow: 1;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_wrapper {
   height: 100%;
