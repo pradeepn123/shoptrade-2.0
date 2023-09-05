@@ -6993,7 +6993,7 @@ textarea {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note {
+#contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note, #contact-popup #left-contact-content .form-content .form-tab .form-group #new-details {
   width: 100%;
   border-radius: 7px;
   padding: 1em;
