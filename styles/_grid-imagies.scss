@@ -66,6 +66,8 @@
                                 font-weight: 600;
                                 line-height: 1;
                                 text-decoration: none;
+                                display: flex;
+                                align-items: center;
 
                                 @media(max-width:1024px) {
                                     font-size: 28px;

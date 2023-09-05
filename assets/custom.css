@@ -14541,6 +14541,7 @@ html {
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a {
   display: none;
+  white-space: nowrap;
 }
 @media (max-width: 920px) {
   .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a {
@@ -14847,6 +14848,8 @@ html {
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
