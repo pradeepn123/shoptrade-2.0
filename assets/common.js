@@ -377,8 +377,6 @@ const ContactPopUp = {
       this.selectors.dropZoneThumb
     );
 
-    debugger;
-
     // First time - remove the prompt
     if (dropZoneElement.querySelector(".drop-zone__prompt")) {
       dropZoneElement.querySelector(".drop-zone__prompt").remove();
@@ -467,12 +465,6 @@ $(document).ready(function () {
     let src = $(".yt_player_iframe").attr("src");
     $(".yt_player_iframe").attr("src", src);
     $(".model-popup").fadeOut();
-  });
-
-  //mobile hamberger
-  $(".js-hamberger").click(function () {
-    $(".shoptrade").toggleClass("active");
-    $('body').toggleClass('overflow-hide');
   });
 
   $(window).scroll(function () {
@@ -868,6 +860,19 @@ $("#contact-btn-service").on('click', function () {
   $("#contact-btn-details").trigger('click');
 })
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".js-hamberger").addEventListener("click", function() {
+    document.querySelector(".shoptrade").classList.toggle("active");
+    document.querySelector("body").classList.toggle("overflow-hide");
+  })
+
+  // Open Popup
+  document.querySelector("#contact-btn-details").addEventListener("click", function(){
+    document.querySelector("#contact-popup").style.display = 'block';
+    document.querySelector("#contact-popup #left-contact-content .form-content .form-tab").style.display = 'block';
+  })
+})
 
 // Tech Stack - Our Services Page
 document.addEventListener('DOMContentLoaded', function () {
