@@ -6700,6 +6700,14 @@ input::-moz-placeholder {
   }
 }
 
+.formSubmissionAgreement {
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #83898c;
+}
+
 [error-message] {
   font-size: 12px;
 }
