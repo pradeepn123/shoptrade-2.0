@@ -7204,7 +7204,11 @@ textarea {
   display: block;
 }
 #contact-popup #left-contact-content .form-content .form-buttons #submitBtn {
-  display: none;
+  width: 100%;
+  margin-left: 0;
+}
+#contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+  width: 102%;
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:after {
   background: #FF7121;

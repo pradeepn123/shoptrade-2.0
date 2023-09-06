@@ -545,7 +545,11 @@ textarea {
                 }
 
                 #submitBtn {
-                    display: none;
+                    width: 100%;
+                    margin-left: 0;
+                    &:after{
+                        width: 102%;
+                    }
                 }
 
                 .btn--orange {
