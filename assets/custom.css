@@ -6700,6 +6700,18 @@ input::-moz-placeholder {
   }
 }
 
+.formSubmissionAgreement {
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #83898c;
+}
+
+[error-message] {
+  font-size: 12px;
+}
+
 textarea {
   resize: none;
   font-family: "Epilogue";
@@ -6993,17 +7005,36 @@ textarea {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note {
+#contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note, #contact-popup #left-contact-content .form-content .form-tab .form-group #new-details {
   width: 100%;
   border-radius: 7px;
   padding: 1em;
   min-height: 150px;
   outline: none;
+  font-size: 16px;
   box-shadow: none;
   border: 1px solid #bbb3b3;
 }
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details:focus {
+  border-color: #000000;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b6b8ba;
+}
 #contact-popup #left-contact-content .form-content .form-tab .form-group .invalid {
   border-color: red;
+}
+#contact-popup #left-contact-content .form-content .form-tab .flex-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #contact-popup #left-contact-content .form-content .form-tab .form-group1 {
   display: grid;
@@ -7173,7 +7204,11 @@ textarea {
   display: block;
 }
 #contact-popup #left-contact-content .form-content .form-buttons #submitBtn {
-  display: none;
+  width: 100%;
+  margin-left: 0;
+}
+#contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+  width: 102%;
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:after {
   background: #FF7121;
@@ -14541,6 +14576,7 @@ html {
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a {
   display: none;
+  white-space: nowrap;
 }
 @media (max-width: 920px) {
   .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a {
@@ -14583,7 +14619,7 @@ html {
   background: #fff !important;
   padding: 38px 0;
   position: absolute;
-  top: -17.5em;
+  top: -17em;
   left: 0;
   right: 0;
   z-index: 999;
@@ -14653,11 +14689,11 @@ html {
 }
 .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child .sticky-popup_text .sticky-pop_links_head .sticky-pop_links_child .sticky-pop_links {
   text-decoration: none;
-  padding: 12px 20px 15px 20px;
+  padding: 13px 20px 13px 20px;
   color: #6C6C6C;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1;
   display: block;
   max-width: fit-content;
   border-radius: 8px;
@@ -14739,6 +14775,8 @@ html {
   display: none;
   justify-content: space-between;
   width: 100%;
+  overflow: auto;
+  gap: 20px;
 }
 @media (min-width: 921px) {
   .sticky_pop_up_parent .Sticky-options-menu_parent .Sticky-options-menu .options_parent {
@@ -14835,7 +14873,8 @@ html {
   overflow: hidden;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_block_set {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
@@ -14843,19 +14882,19 @@ html {
   color: #000;
   font-size: 32px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.1;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
     font-size: 28px;
-    line-height: 1;
   }
 }
 @media (max-width: 520px) {
   .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 {
     font-size: 24px;
-    line-height: 1;
   }
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_heading h5 br {
@@ -14882,24 +14921,20 @@ html {
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  min-height: 96px;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img {
-  height: 100%;
+  display: flex;
+  min-height: 100%;
   width: 100%;
-  aspect-ratio: 1/1;
+  flex-grow: 1;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   border-radius: 0 0 16px 16px;
+  min-height: 100%;
+  flex-grow: 1;
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_wrapper {
   height: 100%;

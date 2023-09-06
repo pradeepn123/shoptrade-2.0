@@ -65,30 +65,6 @@
       "id": "Main_btn",
       "label": "Heading",
       "default": "Explore ALL"
-    },
-    {
-      "type": "text",
-      "id": "options_text",
-      "label": "Heading",
-      "default": "Butto Text"
-    },
-    {
-      "type": "url",
-      "id": "options_url",
-      "label": "Button link"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "menu-heading",
-      "type": "menu-heading",
-      "settings": [
-        {
-          "type": "color",
-          "id": "bg_color",
-          "label": "choose color"
-        }
-      ]
     }
   ],
   "presets": [
@@ -148,8 +124,10 @@
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
       if (window_top > totalHeight && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+        $('#shopify-section-header').removeClass('fixed-header');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+        $('#shopify-section-header').addClass('fixed-header');       
       }
     }
 

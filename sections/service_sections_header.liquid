@@ -29,7 +29,7 @@
 }
    
 {% endstyle %}
-<section class="page_banner_shadow service_section_header--{{ section.id }}" id ="{{ section.settings.heading }}">
+<section class="page_banner_shadow service_section_header--{{ section.id }}" id ="{{ section.settings.heading | replace: " ", "_" }}">
   <div class="container">
     <div>
       <h1 class="h1">{{ section.settings.heading }}</h1>

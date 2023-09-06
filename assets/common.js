@@ -233,6 +233,9 @@ const ContactPopUp = {
     $(this.selectors.contactPopUp).fadeIn("fast");
     $("body").addClass("overflow-hidden");
     this.resetValues();
+
+    // New Contact form
+    newForm();
   },
   resetValues: function () {
     document.querySelector(this.selectors.formSubmitContent).style.display =
@@ -253,19 +256,11 @@ const ContactPopUp = {
   },
   submit: async function (event) {
     event.preventDefault();
-    const data = new FormData(event.target);
     $(this.selectors.closeIconBtn).hide();
     $(".loader ").show("fast");
     $(this.selectors.form)
       .find("input, select, radio, checkbox", "button")
       .attr("disabled", "disabled");
-    fetch(event.target.action, {
-      method: event.target.method,
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    }).then(this.success.bind(this));
     return false;
   },
   success: async function () {
@@ -1052,5 +1047,3 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
     },
   }
 });
-
-

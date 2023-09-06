@@ -17,6 +17,11 @@
       max-height: 0;
      }
     {% endif %}
+    {% if block.settings.enble_video %}
+     #image2{
+      filter: brightness(60%);
+     }
+    {% endif %}
   {% endfor %}
 {% endstyle %}
 
@@ -38,7 +43,7 @@
                 {% if items.enble_video %}
                   <a {% if items.show_contactpopUP == false %}href = "{{ block.settings.box_url }}" {% endif %} data-contacTattribute="{{ items.show_contactpopUP }}">             
                     <div class="gib_heading gib_heading{{ block.id }}">
-                      <h5>{{ items.gib_heading }}</h5>
+                      <h5>{{ items.title }}</h5>
                     </div>
                     <div class="gib_para">
                       {{ items.gib_para }}
@@ -47,7 +52,7 @@
                 {% endif %}
               {% if items.enble_video == false %}           
                 <div class="gib_heading gib_heading{{ block.id }}">
-                  <h5>{{ items.gib_heading }}</h5>
+                  <h5>{{ items.title }}</h5>
                 </div>
                 <div class="gib_para">
                   {{ items.gib_para }}
@@ -113,7 +118,7 @@
 {% endfor %}
 {% schema %}
 {
-  "name": "grid imagies",
+  "name": "Image gallery",
   "settings": [
     {
       "type": "range",
@@ -139,8 +144,8 @@
   "max_blocks": 6,
   "blocks": [
     {
-      "name": "image block",
-      "type": "image-block",
+      "type": "Image_blocks",
+      "name": "grid blocks",
       "settings": [
         {
           "type": "checkbox",
@@ -150,9 +155,8 @@
         },        
         {
           "type": "text",
-          "id": "gib_heading",
-          "label": "Heading",
-          "default": "Quick links"
+          "id": "title",
+          "label": "Heading"
         },{
           "type":"url",
           "id":"box_url",
@@ -193,7 +197,7 @@
   ],
   "presets": [
     {
-      "name": "grid imagies"
+      "name": "Image gallery"
     }
   ]
 }

@@ -11,10 +11,10 @@
     "237ac443-6bfa-4638-a17f-5cf7eb130901": {
       "type": "about-banner",
       "settings": {
-        "heading": "Services",
+        "heading": "Our Services",
         "font_size_desk": 52,
         "font_size_mob": 28,
-        "banner_para": "<p>Problem solvers at heart, we’re here to build long standing relationships<\/p>",
+        "banner_para": "<p>Driving business acceleration with data-informed UX and Shopify Plus e-commerce expertise.<\/p>",
         "btntext": "",
         "bottom_shadow": true
       }
@@ -22,46 +22,46 @@
     "1428fdce-3cdd-477e-9c8b-3060e0bec7ab": {
       "type": "services_multicolumn",
       "blocks": {
-        "27e444cb-6084-4b47-a16f-d29597a4bdad": {
-          "type": "column-blocks",
-          "settings": {
-            "box_url": "#Design",
-            "featured_image": "shopify:\/\/shop_images\/image.png",
-            "column_heading": "Design",
-            "services_numbers": "6 Services"
-          }
-        },
         "90a01e1a-4fef-4d77-aade-1e70d1e142f4": {
           "type": "column-blocks",
           "settings": {
             "box_url": "#Development",
-            "featured_image": "shopify:\/\/shop_images\/Group_1000005301.png",
-            "column_heading": "Development",
-            "services_numbers": "5 Services"
+            "featured_image": "shopify:\/\/shop_images\/DEVELOPMENT.png",
+            "title": "Development",
+            "services_numbers": ""
+          }
+        },
+        "27e444cb-6084-4b47-a16f-d29597a4bdad": {
+          "type": "column-blocks",
+          "settings": {
+            "box_url": "#Design",
+            "featured_image": "shopify:\/\/shop_images\/DESIGN.png",
+            "title": "Design",
+            "services_numbers": ""
           }
         },
         "efaa7c01-f158-4d1e-b318-6e3378d76d0f": {
           "type": "column-blocks",
           "settings": {
-            "box_url": "#Branding",
-            "featured_image": "shopify:\/\/shop_images\/image_1_914ac0b7-4776-4c39-b3ad-23b3c885e7b4.png",
-            "column_heading": "Branding",
-            "services_numbers": "2 Services"
+            "box_url": "#Brand_Identity",
+            "featured_image": "shopify:\/\/shop_images\/BRANDING.png",
+            "title": "Brand Identity",
+            "services_numbers": ""
           }
         },
         "5a6fb1a8-c62f-4f7c-a8e7-5ae9116d65fb": {
           "type": "column-blocks",
           "settings": {
             "box_url": "#Marketing",
-            "featured_image": "shopify:\/\/shop_images\/Group_1000005302.png",
-            "column_heading": "Marketing",
-            "services_numbers": "4 Services"
+            "featured_image": "shopify:\/\/shop_images\/MARKETING.png",
+            "title": "Marketing",
+            "services_numbers": ""
           }
         }
       },
       "block_order": [
-        "27e444cb-6084-4b47-a16f-d29597a4bdad",
         "90a01e1a-4fef-4d77-aade-1e70d1e142f4",
+        "27e444cb-6084-4b47-a16f-d29597a4bdad",
         "efaa7c01-f158-4d1e-b318-6e3378d76d0f",
         "5a6fb1a8-c62f-4f7c-a8e7-5ae9116d65fb"
       ],
@@ -71,114 +71,7 @@
     "f0a6862f-1632-4f2c-9fb1-3a866f234cea": {
       "type": "sticky-menu-options",
       "settings": {
-        "Main_btn": "Explore ALL",
-        "options_text": "Butto Text",
-        "options_url": ""
-      }
-    },
-    "f2fb7dbc-274d-4997-ba9b-ac1aea970744": {
-      "type": "service_sections_header",
-      "settings": {
-        "heading": "Design",
-        "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #DDEDE1 0%, rgba(255, 255, 255, 0.00) 100%)",
-        "padding_top": 2,
-        "padding_btm": 24
-      }
-    },
-    "e900bf56-a284-4d8b-9019-9ca15d761eaf": {
-      "type": "grid-imagies",
-      "blocks": {
-        "f3895426-c4de-4591-8249-00fcf23dfdbd": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Data Driven UI\/UX",
-            "box_url": "",
-            "gib_para": "<p>Transform your user experience with our data-driven UI\/UX service. Elevate engagement and conversions through personalized designs. Data powers success!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3768.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": ""
-          }
-        },
-        "d9129280-72c6-4119-a511-b427bac04d4c": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "3D Modelling",
-            "box_url": "",
-            "gib_para": "<p>Unlock the power of creativity with our cutting-edge 3D modeling service. Turn your visions into reality with stunning, lifelike designs that captivate and inspire. Let imagination take shape today!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
-        "0e459002-2c52-4d88-bc3c-017d2cc69339": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "CRO Audit",
-            "box_url": "",
-            "gib_para": "<p>Maximize your website's potential with our comprehensive CRO audit service. Uncover opportunities for growth and boost conversions with data-driven insights. Optimize for success now!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3775.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
-        "0186aa5e-7ff5-4a19-82e5-a8a0bd614348": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Package Design",
-            "box_url": "",
-            "gib_para": "<p>Stand out on the shelves with our captivating package design service. From concept to reality, we create eye-catching, memorable packaging that leaves a lasting impression on your customers. Elevate your brand today!<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": ""
-          }
-        },
-        "fd79c0ee-87d4-41a1-a215-bb32c0cbe940": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Art Direction",
-            "box_url": "",
-            "gib_para": "<p>Unleash your creative vision witht our art direction design service. From illustrations to videography and photography, we bring your ideas to life with expertise and flair.<\/p>",
-            "enble_video": true,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3618.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
-          }
-        },
-        "0e2bf65f-1240-49b7-bc95-18682b2d66bd": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Photo Retouching",
-            "box_url": "",
-            "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to trans-formative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_1.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "f3895426-c4de-4591-8249-00fcf23dfdbd",
-        "d9129280-72c6-4119-a511-b427bac04d4c",
-        "0e459002-2c52-4d88-bc3c-017d2cc69339",
-        "0186aa5e-7ff5-4a19-82e5-a8a0bd614348",
-        "fd79c0ee-87d4-41a1-a215-bb32c0cbe940",
-        "0e2bf65f-1240-49b7-bc95-18682b2d66bd"
-      ],
-      "settings": {
-        "padding_btm_desk": 1,
-        "padding_btm_mob": 1
+        "Main_btn": "Explore ALL"
       }
     },
     "ourservices": {
@@ -558,78 +451,197 @@
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6": {
       "type": "grid-imagies",
       "blocks": {
-        "9192b4d7-c3c6-42e1-9701-4f61e385db81": {
-          "type": "image-block",
+        "7f7dc752-ae68-4a24-a507-c45d80b6d3c7": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Product Development",
+            "show_contactpopUP": true,
+            "title": "Shopify Theme Builds",
             "box_url": "",
-            "gib_para": "<p>Turn your ideas into reality with our end-to-end product development service. From concept to launch, we deliver innovative solutions that exceed expectations and drive business success.<\/p>",
+            "gib_para": "<p>Get the storefront you've always wanted with our range of theme services. We specialize in crafting custom Shopify themes, modifying existing themes, and upgrading to Shopify 2.0. Launch fast or launch uniquely—it's your choice.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3775_a6a7d96a-862b-40a6-a197-204a5042b3d9.png",
+            "gib_img": "shopify:\/\/shop_images\/Theme_customization.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8": {
-          "type": "image-block",
+        "da24a044-9580-4c39-b9ab-4cbbd4d4875d": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Platform Migration",
+            "show_contactpopUP": true,
+            "title": "Shopify App Solutions",
             "box_url": "",
-            "gib_para": "<p>Enhance your images with our expert photo retouching service. From subtle touch-ups to transformative edits, we breathe new life into your photos, ensuring perfection and leaving a lasting impression. Unleash the beauty now!<\/p>",
+            "gib_para": "<p>From public apps designed for the Shopify marketplace to custom solutions built just for you, we do it all. We excel in designing and developing apps that automate business processes while elevating the user experience.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_5b0f514e-90a3-4856-980a-1eaec8cec183.png",
+            "gib_img": "shopify:\/\/shop_images\/PRODUCT_DEV.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d": {
-          "type": "image-block",
+        "554b64f9-78b0-417e-a654-a77d4f198734": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Theme Development",
+            "show_contactpopUP": true,
+            "title": "Headless Commerce",
             "box_url": "",
-            "gib_para": "<p>Choose between Custom Theme for unique user experience with existing design or Theme-Based for swift, budget-friendly launch based on Shopify themes. Tailored solutions for varied needs.<\/p>",
+            "gib_para": "<p>Experience fast, customizable eCommerce with our Headless solutions. We separate frontend from backend, making our service ideal for complex infrastructures and ambitious UX, using Hydrogen or NextJs frameworks.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_1_060286c0-88a4-44e8-8115-c6e626bdd64c.png",
+            "gib_img": "shopify:\/\/shop_images\/HEADLESS_COMMERCE.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "005749bb-25d3-4ac6-a8b5-010ca96ddead": {
-          "type": "image-block",
+        "4400ea97-b15b-4f98-bf80-e7362fc96fe7": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "System <br>Integration",
+            "show_contactpopUP": true,
+            "title": "Replatforming",
             "box_url": "",
-            "gib_para": "<p>Powerful SaaS partnerships for an exceptional commerce experience. Custom integrations for seamless connections with ERP, CRM, PIM, and more. Grow your brand effortlessly.<\/p>",
+            "gib_para": "<p>Outgrown your current e-commerce platform? Switch to Shopify or Shopify Plus for scalability. Opt for a rapid launch or a tailor-made setup—the choice is yours.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_2.png",
+            "gib_img": "shopify:\/\/shop_images\/new_migration.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3": {
-          "type": "image-block",
+        "bca8bc01-235f-4f82-9b24-fa3fd1d1abe8": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Headless Commerce",
+            "show_contactpopUP": true,
+            "title": "System Integrations",
             "box_url": "",
-            "gib_para": "<p>360° Headless Commerce experts. Mastering backend & frontend: Shopify, Next.js, React, Contentful, Python, Node.js. Simplifying complexity, unlocking new possibilities. <\/p>",
+            "gib_para": "<p>Optimize your operations with our specialized System Integration services. We seamlessly connect ERP, CRM, and PIM systems, enabling a unified commerce ecosystem that empowers brand scalability.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3768_3.png",
+            "gib_img": "shopify:\/\/shop_images\/new_international_image.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "4f7be99b-f40b-4e76-9802-682808914a91": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "International Expansion",
+            "box_url": "",
+            "gib_para": "<p>Strategically enter global markets with our specialized services. We handle website localization, payment and shipping integration, and local compliance to fuel your enterprise's global reach.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/custom_resized_c4a805aa-e89b-4ca7-a6a0-19b57fc21c45.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         }
       },
       "block_order": [
-        "9192b4d7-c3c6-42e1-9701-4f61e385db81",
-        "ee444a40-ff48-40ac-9a0e-49e5d244cdb8",
-        "53048f0d-1a6a-48d1-a0ba-95c4dd335b9d",
-        "005749bb-25d3-4ac6-a8b5-010ca96ddead",
-        "94d7be6a-4112-4b8f-8a23-c22e9e5bc2f3"
+        "7f7dc752-ae68-4a24-a507-c45d80b6d3c7",
+        "da24a044-9580-4c39-b9ab-4cbbd4d4875d",
+        "554b64f9-78b0-417e-a654-a77d4f198734",
+        "4400ea97-b15b-4f98-bf80-e7362fc96fe7",
+        "bca8bc01-235f-4f82-9b24-fa3fd1d1abe8",
+        "4f7be99b-f40b-4e76-9802-682808914a91"
+      ],
+      "settings": {
+        "padding_btm_desk": 1,
+        "padding_btm_mob": 1
+      }
+    },
+    "f2fb7dbc-274d-4997-ba9b-ac1aea970744": {
+      "type": "service_sections_header",
+      "settings": {
+        "heading": "Design",
+        "font_size_desk": 52,
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(221, 237, 225, 1), rgba(255, 255, 255, 0) 100%)",
+        "padding_top": 2,
+        "padding_btm": 24
+      }
+    },
+    "e900bf56-a284-4d8b-9019-9ca15d761eaf": {
+      "type": "grid-imagies",
+      "blocks": {
+        "4a6736d6-20a7-4e77-8c1a-b7cda539d491": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "Data Driven UI\/UX",
+            "box_url": "",
+            "gib_para": "<p>Creating digital experiences that resonate with your audience. Using the insights, we craft user interfaces and experiences that not only look stunning but also drive results and elevate engagement and conversions.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/UX.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "45e7857f-8203-4d8d-a960-01afabc7d243": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "CRO Audit",
+            "box_url": "",
+            "gib_para": "<p>Our team of experts will analyze every aspect of your website, identifying hidden opportunities and roadblocks that impact your conversion rates. You'll receive actionable insights and a roadmap to enhance your website.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/CRO.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "e10bd07f-76f9-485b-9e48-f6f52b7a45cd": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "Promotional Email Design",
+            "box_url": "",
+            "gib_para": "<p>Connect with customers in a meaningful way, by using visually stunning and effective promotional emails tailored to your Brand. Our email designs are engineered to boost engagement, conversions, and customer loyalty.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/emailer.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "d6a8a62a-24e5-4bc5-b3d1-1d333146bd50": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "3D Modelling",
+            "box_url": "",
+            "gib_para": "<p>3D Models that will transform your online store into a immersive shopping destination. Our designers specializes in creating realistic and attention-grabbing 3D models that showcase your products from every angle.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/3D.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "e0ce5661-256a-4829-a414-7b8dec9d211e": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "UGC Video Editing",
+            "box_url": "",
+            "gib_para": "<p>Elevate your brand's storytelling capabilities, our video editors create on-brand videos using UGC to create compelling narratives , Leverage the voices of your customers and turn them into compelling stories that drive growth and customer loyalty.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/UGC.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "38d54d3b-375e-4a62-a120-b237d19314e6": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "Photo Retouching",
+            "box_url": "",
+            "gib_para": "<p>Captivating product imagery is crucial to attracting customers and driving sales. Transform your product photos into flawless, high-quality images that showcase your offerings in the best light possible.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/PHOTO_RETOUCH.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        }
+      },
+      "block_order": [
+        "4a6736d6-20a7-4e77-8c1a-b7cda539d491",
+        "45e7857f-8203-4d8d-a960-01afabc7d243",
+        "e10bd07f-76f9-485b-9e48-f6f52b7a45cd",
+        "d6a8a62a-24e5-4bc5-b3d1-1d333146bd50",
+        "e0ce5661-256a-4829-a414-7b8dec9d211e",
+        "38d54d3b-375e-4a62-a120-b237d19314e6"
       ],
       "settings": {
         "padding_btm_desk": 1,
@@ -639,9 +651,9 @@
     "a90855fb-8b32-4b3d-a55e-a4d04fd7ec22": {
       "type": "service_sections_header",
       "settings": {
-        "heading": "Branding",
+        "heading": "Brand Identity",
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #C5DDF3 0%, rgba(255, 255, 255, 0.00) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(197, 221, 243, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 40,
         "padding_btm": 24
       }
@@ -649,36 +661,64 @@
     "df190e32-5df7-4c18-93e5-ff9e9ccab961": {
       "type": "grid-imagies",
       "blocks": {
-        "38cc58f7-d7c7-41ea-bbab-464920264944": {
-          "type": "image-block",
+        "3d728d62-c19e-4bae-92ad-5f3a75162216": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Brand Design",
+            "show_contactpopUP": true,
+            "title": "Strategy",
             "box_url": "",
-            "gib_para": "<p>Capture your essence. Elevate your brand. Crafting unique, consistent, and visually pleasing communication systems that leave lasting impressions on your customers. <\/p>",
+            "gib_para": "<p>Transform your brand into a compelling story that connects with your audience on a personal level. We will work closely with you to create a comprehensive brand roadmap that sets you apart in a crowded market.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_6b6277fa-1700-4025-8718-36c54ac1a952.png",
+            "gib_img": "shopify:\/\/shop_images\/BRAND_STRATEGY.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f": {
-          "type": "image-block",
+        "cda31f3f-aa05-44a1-a321-71ade4d875f3": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Brand Strategy",
+            "show_contactpopUP": true,
+            "title": "Brand",
             "box_url": "",
-            "gib_para": "<p>Strategic design with purpose. Analyzing your audience, defining uniqueness, and crafting memorable messages. Elevate your brand with purposeful communication. Discover the difference.<\/p>",
+            "gib_para": "<p>Brand identity is your key to creating a brand identity that not only captures attention but also leaves a lasting impact. We help you craft a distinctive and memorable brand identity that customers will remember and trust.<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_52e39203-37d7-44a2-a367-2fa8ef34c7bd.png",
+            "gib_img": "shopify:\/\/shop_images\/BRAND_DESIGN.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "9c4d2d91-9294-4d17-bd77-f22a1c988755": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "Packaging",
+            "box_url": "",
+            "gib_para": "<p>Enhance the visual appeal and impact of your product packaging. We create packaging that not only protects your products but also tells a compelling brand story creating a memorable unboxing experience for your customers.<br\/><br\/><\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/PACKAGING.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
+          }
+        },
+        "4b516fc1-fdf3-46f7-873d-c43881c9f980": {
+          "type": "Image_blocks",
+          "settings": {
+            "show_contactpopUP": true,
+            "title": "Art Direction",
+            "box_url": "",
+            "gib_para": "<p>Unleash your creative vision with our art direction design service. From illustrations to videography and photography, bring your brand's unique story to life through stunning visuals.<\/p>",
+            "enble_video": false,
+            "gib_img": "shopify:\/\/shop_images\/ART_DIRECTION.png",
+            "fixed_height": false,
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         }
       },
       "block_order": [
-        "38cc58f7-d7c7-41ea-bbab-464920264944",
-        "3b0e0dff-1726-4c89-acfc-c35d3e01cd0f"
+        "3d728d62-c19e-4bae-92ad-5f3a75162216",
+        "cda31f3f-aa05-44a1-a321-71ade4d875f3",
+        "9c4d2d91-9294-4d17-bd77-f22a1c988755",
+        "4b516fc1-fdf3-46f7-873d-c43881c9f980"
       ],
       "settings": {
         "padding_btm_desk": 1,
@@ -698,64 +738,36 @@
     "4bd1dde6-dd93-43e8-9a2f-8a543445c233": {
       "type": "grid-imagies",
       "blocks": {
-        "ad172c22-1751-425f-a91a-dca9113ab2ea": {
-          "type": "image-block",
+        "bb54de9e-2c6b-4b9e-b5ad-f608f47e208a": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Social Media Design",
+            "show_contactpopUP": true,
+            "title": "Performance Marketing",
             "box_url": "",
-            "gib_para": "<p>Build trust through consistency. We crafts messaging & visual strategies to connect you with your audience across platforms. Elevate your social media presence.<\/p>",
+            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_923f196d-5dad-42e4-94c0-8513bfe4bfe0.png",
+            "gib_img": "shopify:\/\/shop_images\/Performance_marketing.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         },
-        "cefdca22-c543-4f46-8621-b1508fe0eb89": {
-          "type": "image-block",
+        "79e9ad54-c455-4720-8d7d-dacfd84731b7": {
+          "type": "Image_blocks",
           "settings": {
-            "gib_heading": "Promotional Emailer",
+            "show_contactpopUP": true,
+            "title": "Email Marketing",
             "box_url": "",
-            "gib_para": "<p>Engage, entice, and elevate. Our expert emailer design service delivers eye-catching promotions that captivate your audience and drive results. Take your campaigns to new heights.<\/p>",
+            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
             "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_1_0bc3f6ee-10ae-4a55-ac8f-4105cfa53288.png",
+            "gib_img": "shopify:\/\/shop_images\/email_marketing.png",
             "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
-        "dc1c7e41-6ac9-467d-976c-33be81d9a430": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Marketing",
-            "box_url": "",
-            "gib_para": "<p>Unleash your brand's potential. Reach new audiences, gain a competitive edge with strategic marketing, compelling messaging, and captivating visuals. <\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_2.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
-          }
-        },
-        "3ddff7cb-76b2-4ad4-a8bd-3389a954b707": {
-          "type": "image-block",
-          "settings": {
-            "gib_heading": "Messaging",
-            "box_url": "",
-            "gib_para": "<p>Speak volumes with impactful messaging. Crafting powerful statements that resonate deeply with customers, forging lasting connections beyond mere descriptions.<\/p>",
-            "enble_video": false,
-            "gib_img": "shopify:\/\/shop_images\/Rectangle_3774_3.png",
-            "fixed_height": false,
-            "img_height": 200,
-            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269"
+            "external_video_url": "https:\/\/player.vimeo.com\/video\/794041269?autoplay=1"
           }
         }
       },
       "block_order": [
-        "ad172c22-1751-425f-a91a-dca9113ab2ea",
-        "cefdca22-c543-4f46-8621-b1508fe0eb89",
-        "dc1c7e41-6ac9-467d-976c-33be81d9a430",
-        "3ddff7cb-76b2-4ad4-a8bd-3389a954b707"
+        "bb54de9e-2c6b-4b9e-b5ad-f608f47e208a",
+        "79e9ad54-c455-4720-8d7d-dacfd84731b7"
       ],
       "settings": {
         "padding_btm_desk": 80,
@@ -768,8 +780,6 @@
     "237ac443-6bfa-4638-a17f-5cf7eb130901",
     "1428fdce-3cdd-477e-9c8b-3060e0bec7ab",
     "f0a6862f-1632-4f2c-9fb1-3a866f234cea",
-    "f2fb7dbc-274d-4997-ba9b-ac1aea970744",
-    "e900bf56-a284-4d8b-9019-9ca15d761eaf",
     "ourservices",
     "88ffbe53-acb8-414d-861b-4921ccf95ed5",
     "99ff0356-87ec-426e-beff-585e9ce851eb",
@@ -778,6 +788,8 @@
     "76f22a36-9b85-4115-ae37-19d4fa235c7c",
     "18584dcb-2da3-49bb-8905-ef92e1620a79",
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6",
+    "f2fb7dbc-274d-4997-ba9b-ac1aea970744",
+    "e900bf56-a284-4d8b-9019-9ca15d761eaf",
     "a90855fb-8b32-4b3d-a55e-a4d04fd7ec22",
     "df190e32-5df7-4c18-93e5-ff9e9ccab961",
     "bc15418a-e94c-4bdb-90c1-e4a140c5568c",
