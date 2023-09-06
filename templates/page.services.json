@@ -26,7 +26,7 @@
           "type": "column-blocks",
           "settings": {
             "box_url": "#Development",
-            "featured_image": "shopify:\/\/shop_images\/Group_1000005301.png",
+            "featured_image": "shopify:\/\/shop_images\/DEVELOPMENT.png",
             "title": "Development",
             "services_numbers": ""
           }
@@ -35,7 +35,7 @@
           "type": "column-blocks",
           "settings": {
             "box_url": "#Design",
-            "featured_image": "shopify:\/\/shop_images\/image.png",
+            "featured_image": "shopify:\/\/shop_images\/DESIGN.png",
             "title": "Design",
             "services_numbers": ""
           }
@@ -44,7 +44,7 @@
           "type": "column-blocks",
           "settings": {
             "box_url": "#Brand_Identity",
-            "featured_image": "shopify:\/\/shop_images\/image_1_914ac0b7-4776-4c39-b3ad-23b3c885e7b4.png",
+            "featured_image": "shopify:\/\/shop_images\/BRANDING.png",
             "title": "Brand Identity",
             "services_numbers": ""
           }
@@ -53,7 +53,7 @@
           "type": "column-blocks",
           "settings": {
             "box_url": "#Marketing",
-            "featured_image": "shopify:\/\/shop_images\/Group_1000005302.png",
+            "featured_image": "shopify:\/\/shop_images\/MARKETING.png",
             "title": "Marketing",
             "services_numbers": ""
           }
@@ -562,7 +562,7 @@
             "show_contactpopUP": true,
             "title": "Data Driven UI\/UX",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Creating digital experiences that resonate with your audience. Using the insights, we craft user interfaces and experiences that not only look stunning but also drive results and elevate engagement and conversions.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/UX.png",
             "fixed_height": false,
@@ -575,7 +575,7 @@
             "show_contactpopUP": true,
             "title": "CRO Audit",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Our team of experts will analyze every aspect of your website, identifying hidden opportunities and roadblocks that impact your conversion rates. You'll receive actionable insights and a roadmap to enhance your website.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/CRO.png",
             "fixed_height": false,
@@ -588,7 +588,7 @@
             "show_contactpopUP": true,
             "title": "Promotional Email Design",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Connect with customers in a meaningful way, by using visually stunning and effective promotional emails tailored to your Brand. Our email designs are engineered to boost engagement, conversions, and customer loyalty.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/emailer.png",
             "fixed_height": false,
@@ -601,7 +601,7 @@
             "show_contactpopUP": true,
             "title": "3D Modelling",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>3D Models that will transform your online store into a immersive shopping destination. Our designers specializes in creating realistic and attention-grabbing 3D models that showcase your products from every angle.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/3D.png",
             "fixed_height": false,
@@ -614,7 +614,7 @@
             "show_contactpopUP": true,
             "title": "UGC Video Editing",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Elevate your brand's storytelling capabilities, our video editors create on-brand videos using UGC to create compelling narratives , Leverage the voices of your customers and turn them into compelling stories that drive growth and customer loyalty.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/UGC.png",
             "fixed_height": false,
@@ -627,7 +627,7 @@
             "show_contactpopUP": true,
             "title": "Photo Retouching",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Captivating product imagery is crucial to attracting customers and driving sales. Transform your product photos into flawless, high-quality images that showcase your offerings in the best light possible.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/PHOTO_RETOUCH.png",
             "fixed_height": false,
@@ -667,7 +667,7 @@
             "show_contactpopUP": true,
             "title": "Strategy",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Transform your brand into a compelling story that connects with your audience on a personal level. We will work closely with you to create a comprehensive brand roadmap that sets you apart in a crowded market.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/BRAND_STRATEGY.png",
             "fixed_height": false,
@@ -680,7 +680,7 @@
             "show_contactpopUP": true,
             "title": "Brand",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Brand identity is your key to creating a brand identity that not only captures attention but also leaves a lasting impact. We help you craft a distinctive and memorable brand identity that customers will remember and trust.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/BRAND_DESIGN.png",
             "fixed_height": false,
@@ -693,7 +693,7 @@
             "show_contactpopUP": true,
             "title": "Packaging",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Enhance the visual appeal and impact of your product packaging. We create packaging that not only protects your products but also tells a compelling brand story creating a memorable unboxing experience for your customers.<br\/><br\/><\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/PACKAGING.png",
             "fixed_height": false,
@@ -706,7 +706,7 @@
             "show_contactpopUP": true,
             "title": "Art Direction",
             "box_url": "",
-            "gib_para": "<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in<\/p>",
+            "gib_para": "<p>Unleash your creative vision with our art direction design service. From illustrations to videography and photography, bring your brand's unique story to life through stunning visuals.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/ART_DIRECTION.png",
             "fixed_height": false,
