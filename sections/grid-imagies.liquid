@@ -13,20 +13,14 @@
   }
   {% for block in section.blocks %}
     {% if block.settings.fixed_height %}
-      .gib_img_{{ block.id }}_{{ forloop.index }} img{
-        height: {{ block.settings.img_height }}px !important;
-        object-fit: cover !important;
-      }
-    @media(max-width: 1024px){
-      .gib_img_{{ block.id }}_{{ forloop.index }} img{
-        height: {{ block.settings.img_height | times: 0.75 | round }}px !important;
-        }
-    }
-    @media(max-width: 768px){
-      .gib_img_{{ block.id }}_{{ forloop.index }} img{
-        height: {{ block.settings.img_height | times: 0.65 | round }}px !important;
-       }
-    }
+     .gib_heading{{ block.id }}{
+      max-height: 0;
+     }
+    {% endif %}
+    {% if block.settings.enble_video %}
+     #image2{
+      filter: brightness(60%);
+     }
     {% endif %}
   {% endfor %}
 {% endstyle %}
@@ -43,12 +37,13 @@
         {% assign valueLopp = forloop.index %}
         {% if items.gib_img or items.external_video_url %}
           <div class="gi_blocks gi_blocks{{ forloop.index }}" id="{% if loopValue == 6 %}girdOne{{ valueLopp }}{{ block.id }}{% elsif loopValue == 5 %}GridTwo{{ valueLopp }}{{ block.id }}{% elsif loopValue == 2 %}Gridthree{{ valueLopp }}{{ block.id }}{% elsif loopValue == 4 %}Gridfour{{ valueLopp }}{{ block.id }}{% elsif loopValue == 3 %}Gridfive{{ valueLopp }}{{ block.id }}{% endif %}">
-            <div class="gi_blocks_child">
-              <a  {% if items.enble_video == false %} href="{{ block.settings.box_url }}" {% endif %}>
+            <div class="gi_blocks_child  {% if items.enble_video == false %} gi_blocks_wrapper {% endif %}">
+              <a class="{% if items.enble_video == false %} gi_blocks_wrapper {% endif %}" data-contacTattribute="{{ items.show_contactpopUP }}" {% if items.enble_video == false and items.show_contactpopUP == false %} href="{{ block.settings.box_url }}" {% endif %} >
+                <div class="gib_block_set">
                 {% if items.enble_video %}
-                  <a href = "{{ block.settings.box_url }}">             
-                    <div class="gib_heading">
-                      <h5>{{ items.gib_heading }}</h5>
+                  <a {% if items.show_contactpopUP == false %}href = "{{ block.settings.box_url }}" {% endif %} data-contacTattribute="{{ items.show_contactpopUP }}">             
+                    <div class="gib_heading gib_heading{{ block.id }}">
+                      <h5>{{ items.title }}</h5>
                     </div>
                     <div class="gib_para">
                       {{ items.gib_para }}
@@ -56,8 +51,8 @@
                   </a>
                 {% endif %}
               {% if items.enble_video == false %}           
-                <div class="gib_heading">
-                  <h5>{{ items.gib_heading }}</h5>
+                <div class="gib_heading gib_heading{{ block.id }}">
+                  <h5>{{ items.title }}</h5>
                 </div>
                 <div class="gib_para">
                   {{ items.gib_para }}
@@ -109,6 +104,7 @@
                     </div>
                  </div>
                 {% endif %}
+              </div>
               </a>
             </div>
           </div>
@@ -122,7 +118,7 @@
 {% endfor %}
 {% schema %}
 {
-  "name": "grid imagies",
+  "name": "Image gallery",
   "settings": [
     {
       "type": "range",
@@ -148,14 +144,19 @@
   "max_blocks": 6,
   "blocks": [
     {
-      "name": "image block",
-      "type": "image-block",
+      "type": "Image_blocks",
+      "name": "grid blocks",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "show_contactpopUP",
+          "label": "Show contactUS popUP insted of URL",
+          "default": false
+        },        
+        {
           "type": "text",
-          "id": "gib_heading",
-          "label": "Heading",
-          "default": "Quick links"
+          "id": "title",
+          "label": "Heading"
         },{
           "type":"url",
           "id":"box_url",
@@ -180,19 +181,9 @@
         {
           "type": "checkbox",
           "id": "fixed_height",
-          "label": "Fixed height for imagies",
+          "label": "Adjust Text height",
           "default": false
-        },
-        {
-          "type": "range",
-          "id": "img_height",
-          "min": 5,
-          "max": 500,
-          "step": 5,
-          "unit": "px",
-          "label": "Fixed height for the image",
-          "default": 200
-        },        
+        },       
         {
           "type": "video_url",
           "id": "external_video_url",
@@ -206,7 +197,7 @@
   ],
   "presets": [
     {
-      "name": "grid imagies"
+      "name": "Image gallery"
     }
   ]
 }
@@ -214,6 +205,16 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+      const elements = document.querySelectorAll("a[data-contacTattribute='true']");
+      elements.forEach(element => {
+        element.addEventListener('click', function () {
+          const contactBtnDetails = document.getElementById('contact-btn-details');
+          if (contactBtnDetails) {
+            contactBtnDetails.click();
+          }
+        });
+      });
+      
     const playButtons = document.querySelectorAll('#service_play_icon');
     const popup = document.querySelector('.gib_popup');
     const closePopup = document.querySelector('.gib_close-popup');

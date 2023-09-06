@@ -65,30 +65,6 @@
       "id": "Main_btn",
       "label": "Heading",
       "default": "Explore ALL"
-    },
-    {
-      "type": "text",
-      "id": "options_text",
-      "label": "Heading",
-      "default": "Butto Text"
-    },
-    {
-      "type": "url",
-      "id": "options_url",
-      "label": "Button link"
-    }
-  ],
-  "blocks": [
-    {
-      "name": "menu-heading",
-      "type": "menu-heading",
-      "settings": [
-        {
-          "type": "color",
-          "id": "bg_color",
-          "label": "choose color"
-        }
-      ]
     }
   ],
   "presets": [
@@ -104,14 +80,14 @@
     let stickyBody = document.querySelector('#sticky_menu_parent_popUP');
     function highlight(btn) {
       let div = document.querySelector(btn.getAttribute('href'));
-      div.style.borderColor = '#FF7121';
+      div.style.boxShadow = '0px 16px 24px 0px rgba(0, 0, 0, 0.08), 0px -12px 12px 0px rgba(0, 0, 0, 0.08)';
       setTimeout(function () {
         highlightend(div);
       }, 3000);
     }
 
     function highlightend(div) {
-      div.style.borderColor = '#fff';
+      div.style.boxShadow = '0px 16px 24px 0px rgba(50, 50, 71, 0.08), 0px 12px 12px 0px rgba(50, 50, 71, 0.08)';
     }
 
     let menuBtn = document.querySelectorAll('.sticky-pop_links');
@@ -148,8 +124,10 @@
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
       if (window_top > totalHeight && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
+        $('#shopify-section-header').removeClass('fixed-header');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');
+        $('#shopify-section-header').addClass('fixed-header');       
       }
     }
 
