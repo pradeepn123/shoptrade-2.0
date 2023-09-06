@@ -122,7 +122,7 @@
     function sticky_relocate_top() {
       var window_top = $(window).scrollTop();      
       var footerCartShow = $(document).height() - $(window).height() - footerHeight;
-      if (window_top > totalHeight && window_top < footerCartShow) {
+      if (window_top > 60 && window_top < footerCartShow) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
         $('#shopify-section-header').removeClass('fixed-header');
       } else {
@@ -134,7 +134,7 @@
     function sticky_relocate_bottom() {
       var window_top2 = $(window).scrollTop();
       var footerCarthide = $(document).height() - $(window).height() - footerHeight;
-      if (window_top2 > totalHeight && window_top2 < footerCarthide) {
+      if (window_top2 > 60 && window_top2 < footerCarthide) {
         $('.sticky_pop_up_parent').addClass('mobile-sticky-service');
       } else {
         $('.sticky_pop_up_parent').removeClass('mobile-sticky-service');

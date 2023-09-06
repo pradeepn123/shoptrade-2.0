@@ -14557,7 +14557,7 @@ html {
 
 .sticky_pop_up_parent {
   transition: all 0.3s linear;
-  position: fixed;
+  position: initial;
   width: 100%;
 }
 .sticky_pop_up_parent .tab-sticky-options_main {
@@ -14930,7 +14930,7 @@ html {
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
   max-width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   border-radius: 0 0 16px 16px;
   min-height: 100%;
