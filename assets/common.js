@@ -247,9 +247,10 @@ const ContactPopUp = {
     this.currentTab = 0;
     $(this.selectors.form).trigger("reset");
     this.nextPrev(0);
-    document.querySelector(this.selectors.dropZoneThumb).remove()
-    document
-      .querySelector(this.selectors.dropZone).innerHTML += `<span class="drop-zone__prompt">
+    document.querySelector(this.selectors.dropZoneThumb).remove();
+    document.querySelector(
+      this.selectors.dropZone
+    ).innerHTML += `<span class="drop-zone__prompt">
       Drag & drop or 
       <span style="color: #000; text-decoration: underline;">browse</span>
     </span>`;
@@ -273,7 +274,7 @@ const ContactPopUp = {
     // Redirect to Homepage after submission
     setTimeout(() => {
       window.location.href = "/";
-    }, 6000)
+    }, 6000);
     $(this.selectors.form).trigger("reset");
     $(".loader ").hide("fast");
     $(this.selectors.form)
@@ -407,34 +408,33 @@ const ContactPopUp = {
 
 $(document).ready(function () {
   // Audit page - before after section//
-  var swiper = new Swiper('.js-bfr-afr', {
-    speed:1000,
-      slidesPerView: 1.8,
-      spaceBetween: 25,
-      slidesPerGroup: 2,
-      navigation: {
-        nextEl: '.audit__slider-arrow .slider-arrow .js-arrow-right',
-        prevEl: '.audit__slider-arrow .slider-arrow .js-arrow-left',
+  var swiper = new Swiper(".js-bfr-afr", {
+    speed: 1000,
+    slidesPerView: 1.8,
+    spaceBetween: 25,
+    slidesPerGroup: 2,
+    navigation: {
+      nextEl: ".audit__slider-arrow .slider-arrow .js-arrow-right",
+      prevEl: ".audit__slider-arrow .slider-arrow .js-arrow-left",
+    },
+    breakpoints: {
+      1920: {
+        // slidesPerView: 3,
+        // spaceBetween: 30
+        slidesPerView: 2,
+        spaceBetween: 25,
+        slidesPerGroup: 2,
       },
-      breakpoints: {
-          1920: {
-              // slidesPerView: 3,
-              // spaceBetween: 30
-              slidesPerView: 2,
-              spaceBetween: 25,
-              slidesPerGroup: 2
-
-          },
-          1028: {
-              slidesPerView: 1.8,
-              // spaceBetween: 30
-          },
-          767: {
-              slidesPerView: 1.2,
-              slidesPerGroup: 1,
-              // spaceBetween: 10
-          }
-      }
+      1028: {
+        slidesPerView: 1.8,
+        // spaceBetween: 30
+      },
+      767: {
+        slidesPerView: 1.2,
+        slidesPerGroup: 1,
+        // spaceBetween: 10
+      },
+    },
   });
   // Contact Form - Final Page , Change Name TO Upload instead of Drag and Drop or Browse
   if ($(window).width() < 480) {
@@ -488,73 +488,9 @@ $(document).ready(function () {
   // });
   // conversion
 
-  function convertToInternationalCurrencySystem(labelValue) {
-    // Nine Zeroes for Billions
-    return Math.abs(Number(labelValue)) >= 1.0e9
-      ? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(0) + "B"
-      : // Six Zeroes for Millions
-      Math.abs(Number(labelValue)) >= 1.0e6
-        ? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(0) + "M"
-        : // Three Zeroes for Thousands
-        Math.abs(Number(labelValue)) >= 1.0e3
-          ? (Math.abs(Number(labelValue)) / 1.0e3).toFixed(0) + "K"
-          : Math.abs(Number(labelValue)) + "N";
-  }
-
-  $(".count").each(function () {
-    let countTo = $(this).attr("data-count");
-    let countString = convertToInternationalCurrencySystem(countTo);
-
-    $(this).attr(
-      "data-converted",
-      countString.substring(0, countString.length - 1)
-    );
-    if (countString.slice(countString.length - 1) != "N") {
-      // $(this).attr("data-charactor", countString.slice(countString.length - 1));
-       $(this).attr("data-charactor","M"+$(this).attr("data-charactor"));
-    }
-  });
-
-//count on scroll
-var counted = 0;
-$(window).scroll(function () {
-if ($("#counter").length) {
-    var oTop = $("#counter").offset().top - window.innerHeight;
-  try {
-    if (counted == 0 && $(window).scrollTop() > oTop + 400) {
-      $(".count").each(function () {
-        var $this = $(this),
-          countTo = $this.attr("data-converted");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
-
-          {
-            duration: 1000,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(
-                $this.attr("data-currrencySige") +
-                $this.attr("data-converted") +
-                $this.attr("data-charactor")
-              );
-            },
-          }
-        );
-      });
-      counted = 1;
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
-});
+  
+  
+  
   // Clicking on Contact Button in Footer Must bring up the new Contact popup instead of Contact Form
   // $("#footer-id-4 a").attr('href', "javascript:;");
   // $("#footer-id-4 a").on('click', function(){
@@ -562,46 +498,47 @@ if ($("#counter").length) {
   // })
 
   // Clicking on Contact Button on About Us page must bring up the new Contact popup instead of Contact Form
-  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
-    $("#contact-btn-details").trigger('click');
-  })
+  $("#contact-btn-about, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on(
+    "click",
+    function () {
+      $("#contact-btn-details").trigger("click");
+    }
+  );
 });
 
-
 //Clicking on lets talk in sitemap page must bring up the new contact popup
-$("#letstalk-btn-sitemap, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
-  $("#contact-btn-details").trigger('click');
-})
+$(
+  "#letstalk-btn-sitemap, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1"
+).on("click", function () {
+  $("#contact-btn-details").trigger("click");
+});
 
 // product page contact pop up open
-$("#opentContactUs, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on('click', function () {
-  $("#contact-btn-details").trigger('click');
-})
-
-
-
-
+$("#opentContactUs, .plus-btn-main .plus-btn, .lets-talk-btn, .link-1").on(
+  "click",
+  function () {
+    $("#contact-btn-details").trigger("click");
+  }
+);
 
 // Extract Youtube video ID from Youtube video URL
 const extractYoutubeId = function (url) {
-  const regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+  const regExp =
+    /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
   const match = url.match(regExp);
-  return (match && match[7].length == 11) ? match[7] : false;
+  return match && match[7].length == 11 ? match[7] : false;
 };
 
 // Inject script into page asynchronously
-const injectScript = function ({
-  id,
-  src,
-}) {
+const injectScript = function ({ id, src }) {
   const existingScript = document.querySelector(`#${id}`);
   if (existingScript) return;
 
-  const tag = document.createElement('script');
+  const tag = document.createElement("script");
   tag.src = src;
   tag.id = id;
 
-  const firstScriptTag = document.getElementsByTagName('script')[0];
+  const firstScriptTag = document.getElementsByTagName("script")[0];
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 };
 
@@ -633,8 +570,8 @@ class VideoPlayerYoutube {
 
   injectIframe() {
     this.player = new YT.Player(this.config.root, {
-      height: '390',
-      width: '640',
+      height: "390",
+      width: "640",
       videoId: extractYoutubeId(this.config.url),
       playerVars: {
         showinfo: 0,
@@ -644,7 +581,7 @@ class VideoPlayerYoutube {
       },
       enablejsapi: 1,
       events: {
-        'onStateChange': this.onPlayerStateChange.bind(this),
+        onStateChange: this.onPlayerStateChange.bind(this),
       },
     });
   }
@@ -664,8 +601,8 @@ class VideoPlayerYoutube {
     if (this.isScriptInjected) return;
 
     injectScript({
-      id: 'video-player-iframe-youtube',
-      src: 'https://www.youtube.com/iframe_api',
+      id: "video-player-iframe-youtube",
+      src: "https://www.youtube.com/iframe_api",
     });
     this.isScriptInjected = true;
 
@@ -722,15 +659,15 @@ class VideoPlayerVimeo {
     // See: https://github.com/vimeo/player.js#create-a-player
     this.player = new Vimeo.Player(this.config.root, {
       url: this.config.url,
-      width: 640
+      width: 640,
     });
 
     // See: https://github.com/vimeo/player.js#events
-    this.player.on('ended', this.onPlayerEvent.bind(this, 'ended'));
+    this.player.on("ended", this.onPlayerEvent.bind(this, "ended"));
   }
 
   onPlayerEvent(eventName) {
-    if (eventName === 'ended') {
+    if (eventName === "ended") {
       this.events.onEnd.forEach((callback) => {
         callback();
       });
@@ -746,8 +683,8 @@ class VideoPlayerVimeo {
     if (this.isScriptInjected) return;
 
     injectScript({
-      id: 'video-player-iframe-vimeo',
-      src: 'https://player.vimeo.com/api/player.js',
+      id: "video-player-iframe-vimeo",
+      src: "https://player.vimeo.com/api/player.js",
     });
     this.isScriptInjected = true;
 
@@ -779,36 +716,36 @@ class VideoPlayer {
 
     // This element is going to be used/modified by our video platform-specific libraries
     const videoRoot = element.querySelector('[data-js="video-root"]');
-    const type = element.getAttribute('data-player-type');
-    const url = element.getAttribute('data-player-url');
+    const type = element.getAttribute("data-player-type");
+    const url = element.getAttribute("data-player-url");
 
-    if (type === 'youtube') {
+    if (type === "youtube") {
       this.Player = new VideoPlayerYoutube({
         root: videoRoot,
         url,
       });
-    } else if (type === 'vimeo') {
+    } else if (type === "vimeo") {
       this.Player = new VideoPlayerVimeo({
         root: videoRoot,
         url,
       });
     } else {
-      console.error('Invalid video type. Things aren\'t going to work.');
+      console.error("Invalid video type. Things aren't going to work.");
       return;
     }
 
     this.Player.init();
-    this.Player.addEventListener('onEnd', this.reset.bind(this));
+    this.Player.addEventListener("onEnd", this.reset.bind(this));
 
     this.addEventlisteners();
   }
 
   show(element) {
-    element.setAttribute('data-hidden', 'false');
+    element.setAttribute("data-hidden", "false");
   }
 
   hide(element) {
-    element.setAttribute('data-hidden', 'true');
+    element.setAttribute("data-hidden", "true");
   }
 
   play() {
@@ -824,26 +761,28 @@ class VideoPlayer {
 
   reset() {
     this.show(this.previewContainer);
-    this.hide(this.videoContainer);//
+    this.hide(this.videoContainer); //
   }
 
   handleNotReady() {
-    console.log('Video isn\'t ready yet to be viewed. Try again in a few seconds.');
+    console.log(
+      "Video isn't ready yet to be viewed. Try again in a few seconds."
+    );
   }
 
   addEventlisteners() {
-    this.previewContainer.addEventListener('click', this.play.bind(this));
+    this.previewContainer.addEventListener("click", this.play.bind(this));
   }
 }
 
 // Initialize components
-const players = document.querySelectorAll('.video-player');
+const players = document.querySelectorAll(".video-player");
 
 for (let { length: i } = players; i > 0; i -= 1) {
   const player = players[i - 1];
   new VideoPlayer(player);
 }
-// The backdrop loader 
+// The backdrop loader
 $(document).ready(function () {
   $(".backdrop").show();
   $("body").css("overflow", "hidden");
@@ -853,95 +792,104 @@ $(document).ready(function () {
     $("body").css("overflow", "auto");
   }, 1);
 });
-// 
+//
 
-
-$("#contact-btn-service").on('click', function () {
-  $("#contact-btn-details").trigger('click');
-})
-
+$("#contact-btn-service").on("click", function () {
+  $("#contact-btn-details").trigger("click");
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".js-hamberger").addEventListener("click", function() {
-    document.querySelector(".shoptrade").classList.toggle("active");
-    document.querySelector("body").classList.toggle("overflow-hide");
-  })
+  document
+    .querySelector(".js-hamberger")
+    .addEventListener("click", function () {
+      document.querySelector(".shoptrade").classList.toggle("active");
+      document.querySelector("body").classList.toggle("overflow-hide");
+    });
 
   // Open Popup
-  document.querySelector("#contact-btn-details").addEventListener("click", function(){
-    document.querySelector("#contact-popup").style.display = 'block';
-    document.querySelector("#contact-popup #left-contact-content .form-content .form-tab").style.display = 'block';
-  })
-})
+  document
+    .querySelector("#contact-btn-details")
+    .addEventListener("click", function () {
+      document.querySelector("#contact-popup").style.display = "block";
+      document.querySelector(
+        "#contact-popup #left-contact-content .form-content .form-tab"
+      ).style.display = "block";
+    });
+});
 
 // Tech Stack - Our Services Page
-document.addEventListener('DOMContentLoaded', function () {
-  const accordionImagePlusIcon = document.querySelectorAll(".accordion_image_container .plus_icon");
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionImagePlusIcon = document.querySelectorAll(
+    ".accordion_image_container .plus_icon"
+  );
   if (accordionImagePlusIcon != null) {
-    const plusIconEle = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_heading');
-    const accordionImageBlocksContainer = document.querySelectorAll('.accordion_image_container .accordion_image_content .accordion_image_blocks');
+    const plusIconEle = document.querySelectorAll(
+      ".accordion_image_container .accordion_image_content .accordion_image_heading"
+    );
+    const accordionImageBlocksContainer = document.querySelectorAll(
+      ".accordion_image_container .accordion_image_content .accordion_image_blocks"
+    );
     for (let i = 0; i < plusIconEle.length; i++) {
-      plusIconEle[i].addEventListener('click', function () {
+      plusIconEle[i].addEventListener("click", function () {
         accordionImagePlusIcon[i].classList.toggle("rotate_plus_icon");
-        accordionImageBlocksContainer[i].classList.toggle("hide_height_on_click");
-      })
+        accordionImageBlocksContainer[i].classList.toggle(
+          "hide_height_on_click"
+        );
+      });
     }
   }
-})
+});
 
 $(".play-icon").click(function (e) {
   $(".vedio__info").hide();
 });
 
 // Audit page - before after section//
-var swiper = new Swiper('.js-bfr-afr', {
-  speed:1000,
-    slidesPerView: 1.8,
-    spaceBetween: 25,
-    slidesPerGroup: 2,
-    navigation: {
-      nextEl: '.audit__slider-arrow .slider-arrow .js-arrow-right',
-      prevEl: '.audit__slider-arrow .slider-arrow .js-arrow-left',
+var swiper = new Swiper(".js-bfr-afr", {
+  speed: 1000,
+  slidesPerView: 1.8,
+  spaceBetween: 25,
+  slidesPerGroup: 2,
+  navigation: {
+    nextEl: ".audit__slider-arrow .slider-arrow .js-arrow-right",
+    prevEl: ".audit__slider-arrow .slider-arrow .js-arrow-left",
+  },
+  breakpoints: {
+    1920: {
+      // slidesPerView: 3,
+      // spaceBetween: 30
+      slidesPerView: 2,
+      spaceBetween: 25,
+      slidesPerGroup: 2,
     },
-    breakpoints: {
-        1920: {
-            // slidesPerView: 3,
-            // spaceBetween: 30
-            slidesPerView: 2,
-            spaceBetween: 25,
-            slidesPerGroup: 2
-
-        },
-        1028: {
-            slidesPerView: 1.8,
-            // spaceBetween: 30
-        },
-        767: {
-            slidesPerView: 1.2,
-            slidesPerGroup: 1,
-            // spaceBetween: 10
-        }
-    }
+    1028: {
+      slidesPerView: 1.8,
+      // spaceBetween: 30
+    },
+    767: {
+      slidesPerView: 1.2,
+      slidesPerGroup: 1,
+      // spaceBetween: 10
+    },
+  },
 });
-
 
 // the image sliding logos
 $(document).ready(function () {
-
   //Audit page - FAQ Accordion//
-  $('.accordion__header').click(function(e) {
+  $(".accordion__header").click(function (e) {
     e.preventDefault();
-    var currentIsActive = $(this).hasClass('is-active');
-    $(this).parent('.accordion').find('> *').removeClass('is-active');
-    $('.accordion__toggle svg').removeClass('rotate_svg');
-    if(currentIsActive != 1) {
-      $(this).addClass('is-active');
-      $(this).next('.accordion__body').addClass('is-active');
-      $(this).find('.accordion__toggle svg').addClass('rotate_svg');
+    var currentIsActive = $(this).hasClass("is-active");
+    $(this).parent(".accordion").find("> *").removeClass("is-active");
+    $(".accordion__toggle svg").removeClass("rotate_svg");
+    if (currentIsActive != 1) {
+      $(this).addClass("is-active");
+      $(this).next(".accordion__body").addClass("is-active");
+      $(this).find(".accordion__toggle svg").addClass("rotate_svg");
     }
   });
 
-  let slidingLogos = new Swiper('.js-top-image-sliders', {
+  let slidingLogos = new Swiper(".js-top-image-sliders", {
     speed: 24000,
     autoplay: true,
     loop: true,
@@ -957,32 +905,22 @@ $(document).ready(function () {
   });
 });
 
-
 // swiper our clients section and  destroying swipper @ more than 769px
-const breakpoint = window.matchMedia('(min-width:769px)');
+const breakpoint = window.matchMedia("(min-width:769px)");
 
 let mySwiper;
 const breakpointChecker = function () {
-  console.log(breakpoint)
   if (breakpoint.matches === true) {
-
     if (mySwiper !== undefined) mySwiper.destroy(true, true);
 
-
     return;
-
   } else if (breakpoint.matches === false) {
-
     return enableSwiper();
-
   }
-
 };
 
-
 const enableSwiper = function () {
-
-  mySwiper = new Swiper('.js-top-image-sliders-mobile', {
+  mySwiper = new Swiper(".js-top-image-sliders-mobile", {
     speed: 4000,
     autoplay: true,
     loop: true,
@@ -993,10 +931,8 @@ const enableSwiper = function () {
       520: {
         slidesPerView: 1,
       },
-    }
-
+    },
   });
-
 };
 
 breakpoint.addListener(breakpointChecker);
@@ -1004,11 +940,11 @@ breakpoint.addListener(breakpointChecker);
 breakpointChecker();
 
 // active slides shoptrade-info starts here
-var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
+var mySwiper_new = new Swiper(".shoptrade-plus-info-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     hide: false,
     draggable: true,
   },
@@ -1019,7 +955,7 @@ var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
     1400: {
       slidesPerView: 2,
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         hide: false,
         draggable: true,
       },
@@ -1033,10 +969,8 @@ var mySwiper_new = new Swiper('.shoptrade-plus-info-slider', {
   },
 });
 
-
-
 // manuel images scroll .manuel-img-scroll-main
-var swiper_manual = new Swiper('.grid-item-main-scroll', {
+var swiper_manual = new Swiper(".grid-item-main-scroll", {
   slidesPerView: 3,
   spaceBetween: 20,
   // loop: true,
@@ -1050,5 +984,75 @@ var swiper_manual = new Swiper('.grid-item-main-scroll', {
     991: {
       slidesPerView: 2.3,
     },
+  },
+});
+
+
+$(document).ready(function () {
+  function convertToInternationalCurrencySystem(labelValue) {
+    // Nine Zeroes for Billions
+    return Math.abs(Number(labelValue)) >= 1.0e9
+      ? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(0) + "B"
+      : // Six Zeroes for Millions
+      Math.abs(Number(labelValue)) >= 1.0e6
+      ? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(0) + "M"
+      : // Three Zeroes for Thousands
+      Math.abs(Number(labelValue)) >= 1.0e3
+      ? (Math.abs(Number(labelValue)) / 1.0e3).toFixed(0) + "K"
+      : Math.abs(Number(labelValue)) + "N";
   }
+  $(".count").each(function () {
+    let countTo = $(this).attr("data-count");
+    let countString = convertToInternationalCurrencySystem(countTo);
+
+    $(this).attr(
+      "data-converted",
+      countString.substring(0, countString.length - 1)
+    );
+    if (countString.slice(countString.length - 1) != "N") {
+      // $(this).attr("data-charactor", countString.slice(countString.length - 1));
+      $(this).attr("data-charactor", "M" + $(this).attr("data-charactor"));
+    }
+  });
+
+  //count on scroll
+  var counted = 0;
+  $(window).scroll(function () {
+    if ($("#counter").length) {
+      var oTop = $("#counter").offset().top - window.innerHeight;
+      try {
+        if (counted == 0 && $(window).scrollTop() > oTop + 300) {
+          $(".count").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-converted");
+            $({
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 1000,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(
+                    $this.attr("data-currrencySige") +
+                      $this.attr("data-converted") +
+                      $this.attr("data-charactor")
+                  );
+                },
+              }
+            );
+          });
+          counted = 1;
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  });
 });
