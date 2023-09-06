@@ -14596,16 +14596,16 @@ html {
   border-color: var(--COLOR-PRIMARY);
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a:nth-child(1) {
-  background-color: #D2F6DA;
+  background-color: #EE795B;
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a:nth-child(2) {
-  background-color: #F6DFD2;
+  background-color: #4E9E94;
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a:nth-child(3) {
-  background-color: #D2E5F6;
+  background-color: #95A7E8;
 }
 .sticky_pop_up_parent .tab-sticky-options_main .tab-sticky-options .options_parent a:nth-child(4) {
-  background-color: #F6EED2;
+  background-color: #F7CB45;
 }
 .sticky_pop_up_parent .sticky-popup-content {
   transition: all 0.3s linear;
