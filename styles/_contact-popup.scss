@@ -1,3 +1,9 @@
+@media screen and (min-width: 769px){
+    .display-hidden-onDesktop{
+        display: none;
+    }
+}
+
 .formSubmissionAgreement{
     position: relative;
     font-size: 12px;
