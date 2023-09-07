@@ -6772,7 +6772,7 @@ textarea {
   padding: 30px;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #contact-popup #left-contact-content {
     width: 100%;
   }
@@ -6785,7 +6785,7 @@ textarea {
   margin: 0 auto 2em auto;
   width: 58%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #contact-popup #left-contact-content .form-content {
     width: 100%;
   }
@@ -7243,7 +7243,7 @@ textarea {
   background-color: #F9F9F9;
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #contact-popup #testimonial-content {
     display: none;
   }
@@ -7254,11 +7254,18 @@ textarea {
 }
 #contact-popup #testimonial-content .testimonial-card {
   width: min-content;
-  height: fit-content;
+  height: auto;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   margin: 3em auto 5em auto;
   border-radius: 10px;
-  display: none;
+  display: block !important;
+  padding-left: 20px;
+  cursor: grab !important;
+}
+#contact-popup #testimonial-content .testimonial-card .card-img {
+  width: 382px;
+  height: 200px;
+  object-fit: cover;
 }
 #contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {
   border-top-left-radius: 10px;

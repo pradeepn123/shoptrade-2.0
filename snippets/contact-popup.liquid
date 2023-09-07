@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div id="testimonial-content">
+        <div id="testimonial-content">      
             <div class="close-icon" onclick="ContactPopUp.closePopup()" id="close-icon-btn">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
@@ -66,7 +66,19 @@
                     <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
                 </svg>
             </div>
-            <div class="testimonial-card">
+            {% comment %} <div class="neg_contain__slider-arrow">
+                <div class="slider-arrow" id="slidingArrowProduct">
+                  <div class="js-arrow-left-negs arrow-icon">
+                    {% render 'icon-left-arrow' %}
+                  </div>
+                  <div class="js-arrow-right-negs arrow-icon">
+                    {% render 'icon-right-arrow' %}
+                  </div>
+                </div>
+            </div> {% endcomment %}
+         <div class="swiper-container contactForm_slider">
+           <div class="swiper-wrapper">
+            <div class="testimonial-card swiper-slide">
                 {% comment %}
                     1
                 {% endcomment %}
@@ -86,7 +98,7 @@
                     </p>
                 </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card swiper-slide">
                 {% comment %}
                     2
                 {% endcomment %}
@@ -106,7 +118,7 @@
                     </p>
                 </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card swiper-slide">
                 {% comment %}
                     3
                 {% endcomment %}
@@ -126,12 +138,12 @@
                     </p>
                 </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card swiper-slide">
                 {% comment %}
                     4
                 {% endcomment %}
                 <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/1951/9451/files/grahamRyan.png?v=1669895433"/>
+                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/imgonline-com-ua-resize-NcoRZtpNUNn2.jpg?v=1694092869"/>
                 </div>
                 <div class="card-content">
                     <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/synchroLogo.png?v=1669895532"/>
@@ -146,6 +158,8 @@
                     </p>
                 </div>
             </div>
+         </div>
+        </div>
         </div>
   
         <div id="form-submit-content">
@@ -428,28 +442,23 @@
     contactBtn.addEventListener("click", focusOnAutoFocus);
     
     let askUs = document.querySelector("#opentContactUs");
-    askUs.addEventListener("click", focusOnAutoFocus);
-
-     
+    askUs.addEventListener("click", focusOnAutoFocus); 
     }
-
-    {% comment %} let ctnBtn = document.querySelector("#contact-btn-details");
-  
-    let webBody  = document.querySelector("body");
-   ctnBtn.addEventListener('click', function() {
-    if(webBody.style.overflow="scroll"){
-        webBody.style.overflow="hidden";
-    }
-    else{
-        webBody.style.overflow="auto";
-    }
-}); 
-let closeIcon = document.querySelector("#close-icon-btn");
-    closeIcon.addEventListener('click', function() {
-        if(webBody.style.overflow="hidden"){
-            webBody.style.overflow="auto";
-        }
-    }); {% endcomment %}
-
-
+    //
+    window.addEventListener("DOMContentLoaded", (event) => {
+    let contactSlider = new Swiper('.contactForm_slider', {
+        speed:1000,
+        slidesPerView: 2, 
+        //loop: true,
+        navigation: {
+            nextEl: '.js-arrow-right-negs',
+            prevEl: '.js-arrow-left-negs',
+          },
+        breakpoints: {
+          1740: {
+            slidesPerView: 1,
+          }
+        } 
+      });
+    });
 </script>

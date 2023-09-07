@@ -66,7 +66,7 @@ textarea {
         padding: 30px;
         display: block;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             width: 100%;
         }
 
@@ -78,7 +78,7 @@ textarea {
         .form-content{
             margin: 0 auto 2em auto;
             width: 58%;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 991px) {
                 width: 100%;
             }
             @media screen and (max-width: 480px){
@@ -584,7 +584,10 @@ textarea {
     }
     #testimonial-content {
         display: block;
-        @media screen and (max-width: 768px) {
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // overflow: auto;
+        @media screen and (max-width: 991px) {
             display: none;
         }
         width: 50%;
@@ -598,11 +601,18 @@ textarea {
 
         .testimonial-card {
             width: min-content;
-            height: fit-content;
+            height: auto;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
             margin: 3em auto 5em auto;
             border-radius: 10px;
-            display: none;
+            display: block !important;
+            padding-left: 20px;
+            cursor: grab !important;
+            .card-img{
+                width: 382px;
+                height: 200px;
+                object-fit: cover;
+            }
             .card-image, .card-img, iframe {
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
