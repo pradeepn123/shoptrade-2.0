@@ -552,7 +552,7 @@ textarea {
 
                 #submitBtn {
                     width: 100%;
-                    margin-left: 0;
+                   // margin-left: 0;
                     &:after{
                         width: 102%;
                     }
@@ -562,13 +562,13 @@ textarea {
                     &:after {
                         background: #FF7121;
                         border: 1px solid #000000;
-                        border-radius: 10px 6px 11px;
+                        border-radius: 6px 15px;
                         width: 107%;
                         height: 115%;
                         z-index: -1;
                     }
                     &:hover {
-                        padding: 11px 33px;
+                        margin-left: 0.2%;
                         background-color: #fff;
                         &:after {
                             opacity: 0;
@@ -597,8 +597,8 @@ textarea {
         }
 
         .testimonial-card {
-            width: 382px;
-            height: 600px;
+            width: min-content;
+            height: fit-content;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
             margin: 3em auto 5em auto;
             border-radius: 10px;
@@ -648,8 +648,8 @@ textarea {
         padding: 30px;
 
         #thankyou-card {
-            width: 382px;
-            height: 600px;
+            width: fit-content;
+            height: auto;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
             margin: 0.5em auto 5em auto;
             border-radius: 10px;

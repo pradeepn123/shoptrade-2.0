@@ -432,4 +432,24 @@
 
      
     }
+
+    {% comment %} let ctnBtn = document.querySelector("#contact-btn-details");
+  
+    let webBody  = document.querySelector("body");
+   ctnBtn.addEventListener('click', function() {
+    if(webBody.style.overflow="scroll"){
+        webBody.style.overflow="hidden";
+    }
+    else{
+        webBody.style.overflow="auto";
+    }
+}); 
+let closeIcon = document.querySelector("#close-icon-btn");
+    closeIcon.addEventListener('click', function() {
+        if(webBody.style.overflow="hidden"){
+            webBody.style.overflow="auto";
+        }
+    }); {% endcomment %}
+
+
 </script>
