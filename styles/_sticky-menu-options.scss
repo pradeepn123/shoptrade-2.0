@@ -4,6 +4,8 @@
     transition: all 0.3s linear;
     position: initial; 
     width: 100%; 
+    position: sticky;
+    z-index: 9;
   
     .tab-sticky-options_main {
         background-color: #fff;
@@ -74,10 +76,10 @@
             background: #fff !important;
             padding: 38px 0;
 
-            position: absolute;
-            top: -17em;
+            position: absolute;         
             left: 0;
             right: 0;
+            bottom: 100%;
             z-index: 999;
             width: auto;
             overflow: auto;
@@ -266,7 +268,7 @@
 }
 
 .mobile-sticky-service {
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     z-index: 9;
     bottom: 0;
