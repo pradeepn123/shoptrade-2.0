@@ -7248,6 +7248,11 @@ textarea {
     display: none;
   }
 }
+@media (max-width: 1240px) {
+  #contact-popup #testimonial-content {
+    height: fit-content;
+  }
+}
 #contact-popup #testimonial-content .close-icon {
   float: right;
   cursor: pointer;
