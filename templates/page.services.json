@@ -376,74 +376,12 @@
         "heading": "Our Partners"
       }
     },
-    "76f22a36-9b85-4115-ae37-19d4fa235c7c": {
-      "type": "serviceShowcase",
-      "blocks": {
-        "ab6f98f3-0aa4-4ddf-9e27-60e5eff2e7e7": {
-          "type": "cardType",
-          "settings": {
-            "cardtext": "Elevatione",
-            "cardtext_url": "https:\/\/shoptrade.co\/pages\/elevatione",
-            "cardImage": "shopify:\/\/shop_images\/elevatione_1.png",
-            "work_info": "<p>Design(UI\/UX) Development<\/p>",
-            "brand_info": "Shopify plus",
-            "coming_soon": false,
-            "show_logo_insted_of_text": false,
-            "buttonLink": "https:\/\/shoptrade.co\/pages\/elevatione",
-            "cardMarque": "",
-            "open_new_tabs": false
-          }
-        },
-        "8762c89a-60b8-4da8-b221-20fe09a14488": {
-          "type": "cardType",
-          "settings": {
-            "cardtext": "Hathaspace",
-            "cardtext_url": "https:\/\/shoptrade.co\/pages\/hathaspace",
-            "cardImage": "shopify:\/\/shop_images\/hathaspace.png",
-            "work_info": "<p>Design(UI\/UX) Development<\/p>",
-            "brand_info": "Shopify Plus (ongoing Success)",
-            "coming_soon": false,
-            "cardImageBrand": "shopify:\/\/shop_images\/HATHASPACE_118aa769-51e5-49c2-a742-a8ab04565c3b.png",
-            "show_logo_insted_of_text": false,
-            "buttonLink": "https:\/\/shoptrade.co\/pages\/hathaspace",
-            "cardMarque": "",
-            "open_new_tabs": false
-          }
-        },
-        "208a5b23-2a3a-448b-81c0-0d5a0a971a0b": {
-          "type": "cardType",
-          "settings": {
-            "cardtext": "Chill",
-            "cardtext_url": "https:\/\/chill.com\/",
-            "cardImage": "shopify:\/\/shop_images\/Chill.jpg",
-            "work_info": "<p>Design(UI\/UX) Development<\/p>",
-            "brand_info": "Shopify Plus (ongoing Success)",
-            "coming_soon": false,
-            "cardImageBrand": "shopify:\/\/shop_images\/CHILL_800d88e0-6e47-46da-afaf-d39d715ce3b1.png",
-            "show_logo_insted_of_text": false,
-            "buttonLink": "https:\/\/chill.com\/",
-            "cardMarque": "",
-            "open_new_tabs": true
-          }
-        }
-      },
-      "block_order": [
-        "ab6f98f3-0aa4-4ddf-9e27-60e5eff2e7e7",
-        "8762c89a-60b8-4da8-b221-20fe09a14488",
-        "208a5b23-2a3a-448b-81c0-0d5a0a971a0b"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Showcase",
-        "link": "shopify:\/\/pages\/work"
-      }
-    },
     "18584dcb-2da3-49bb-8905-ef92e1620a79": {
       "type": "service_sections_header",
       "settings": {
         "heading": "Development",
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #FDDACE 0%, rgba(255, 255, 255, 0.00) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(253, 218, 206, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 40,
         "padding_btm": 24
       }
@@ -730,7 +668,7 @@
       "settings": {
         "heading": "Marketing",
         "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, #FBF1CA 0%, rgba(255, 255, 255, 0.00) 100%)",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(251, 241, 202, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 40,
         "padding_btm": 24
       }
@@ -785,7 +723,6 @@
     "99ff0356-87ec-426e-beff-585e9ce851eb",
     "d5bfa5e9-52d3-44e6-8ffe-6ecb0b22bdc8",
     "ourPartners",
-    "76f22a36-9b85-4115-ae37-19d4fa235c7c",
     "18584dcb-2da3-49bb-8905-ef92e1620a79",
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6",
     "f2fb7dbc-274d-4997-ba9b-ac1aea970744",
