@@ -25,7 +25,7 @@
         <div class="options_parent">
           {% assign explore_all_menu = linklists['explore-all'] %}
           {% for link in explore_all_menu.links %}
-            <a href="{{ link.url }}"> {{ link.title }}</a>
+            <a href="{{ link.url | replace: '/en-in', '' }}"> {{ link.title }}</a>
           {% endfor %}
         </div>
       </div>
@@ -37,12 +37,12 @@
         <div class="sticky_popup_child">
           {% for link in explore_all_menu.links %}
             <div class="sticky-popup_text">
-              <a class="sticky-pop_heading" href="{{ link.url }}">{{ link.title }}</a>
+              <a class="sticky-pop_heading" href="{{ link.url | replace: '/en-in', '' }}">{{ link.title }}</a>
               {% if link.links %}
                 <div class="sticky-pop_links_head">
                   {% for child_link in link.links %}
                     <div class="sticky-pop_links_child">
-                      <a class="sticky-pop_links" href="{{ child_link.url }}">{{ child_link.title }}</a>
+                      <a class="sticky-pop_links" href="{{ child_link.url | replace: '/en-in', '' }}">{{ child_link.title }}</a>
                     </div>
                   {% endfor %}
                 </div>
