@@ -7263,8 +7263,6 @@ textarea {
   cursor: grab !important;
 }
 #contact-popup #testimonial-content .testimonial-card .card-img {
-  width: 382px;
-  height: 200px;
   object-fit: cover;
 }
 #contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {

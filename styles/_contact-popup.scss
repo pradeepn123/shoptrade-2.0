@@ -608,10 +608,12 @@ textarea {
             display: block !important;
             padding-left: 20px;
             cursor: grab !important;
-            .card-img{
-                width: 382px;
-                height: 200px;
+            .card-img{               
                 object-fit: cover;
+                // @media(max-width:1200px){
+                //     width: 100%; 
+                //     height: 100%; 
+                // }
             }
             .card-image, .card-img, iframe {
                 border-top-left-radius: 10px;
