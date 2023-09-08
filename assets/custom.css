@@ -786,6 +786,10 @@ input::-moz-placeholder {
   margin-top: 20px;
 }
 
+body.overflow-hidden {
+  overflow: hidden !important;
+}
+
 .homeBanner {
   overflow: hidden;
   position: relative;
@@ -6768,7 +6772,7 @@ textarea {
   padding: 30px;
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   #contact-popup #left-contact-content {
     width: 100%;
   }
@@ -6781,7 +6785,7 @@ textarea {
   margin: 0 auto 2em auto;
   width: 58%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   #contact-popup #left-contact-content .form-content {
     width: 100%;
   }
@@ -7210,7 +7214,6 @@ textarea {
 }
 #contact-popup #left-contact-content .form-content .form-buttons #submitBtn {
   width: 100%;
-  margin-left: 0;
 }
 #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
   width: 102%;
@@ -7218,13 +7221,13 @@ textarea {
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:after {
   background: #FF7121;
   border: 1px solid #000000;
-  border-radius: 10px 6px 11px;
+  border-radius: 6px 15px;
   width: 107%;
   height: 115%;
   z-index: -1;
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:hover {
-  padding: 11px 33px;
+  margin-left: 0.2%;
   background-color: #fff;
 }
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:hover:after {
@@ -7240,7 +7243,7 @@ textarea {
   background-color: #F9F9F9;
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   #contact-popup #testimonial-content {
     display: none;
   }
@@ -7250,12 +7253,15 @@ textarea {
   cursor: pointer;
 }
 #contact-popup #testimonial-content .testimonial-card {
-  width: 382px;
-  height: 600px;
+  width: min-content;
+  height: auto;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   margin: 3em auto 5em auto;
   border-radius: 10px;
   display: none;
+}
+#contact-popup #testimonial-content .testimonial-card .card-img {
+  object-fit: cover;
 }
 #contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {
   border-top-left-radius: 10px;
@@ -7298,8 +7304,8 @@ textarea {
   cursor: pointer;
 }
 #contact-popup #form-submit-content #thankyou-card {
-  width: 382px;
-  height: 600px;
+  width: fit-content;
+  height: auto;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   margin: 0.5em auto 5em auto;
   border-radius: 10px;
@@ -14574,6 +14580,8 @@ html {
   transition: all 0.3s linear;
   position: initial;
   width: 100%;
+  position: sticky;
+  z-index: 9;
 }
 .sticky_pop_up_parent .tab-sticky-options_main {
   background-color: #fff;
@@ -14634,9 +14642,9 @@ html {
   background: #fff !important;
   padding: 38px 0;
   position: absolute;
-  top: -17em;
   left: 0;
   right: 0;
+  bottom: 100%;
   z-index: 999;
   width: auto;
   overflow: auto;
@@ -14708,7 +14716,6 @@ html {
   color: #6C6C6C;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1;
   display: block;
   max-width: fit-content;
   border-radius: 8px;
@@ -14815,7 +14822,7 @@ html {
 }
 
 .mobile-sticky-service {
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   z-index: 9;
   bottom: 0;
@@ -14937,6 +14944,12 @@ html {
   line-height: 24px;
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_para p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img {
   display: flex;
   min-height: 100%;
@@ -14950,6 +14963,16 @@ html {
   border-radius: 0 0 16px 16px;
   min-height: 100%;
   flex-grow: 1;
+}
+@media (max-width: 1200px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
+    object-fit: fill;
+  }
+}
+@media (max-width: 475px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_img img {
+    object-fit: contain;
+  }
 }
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_wrapper {
   height: 100%;
@@ -15194,6 +15217,11 @@ html {
   column-gap: 22px;
   row-gap: 40px;
 }
+@media (max-width: 767px) {
+  .grid_img_container_main .Gridthree {
+    column-gap: 16px;
+  }
+}
 @media (max-width: 475px) {
   .grid_img_container_main .Gridthree {
     grid-template-columns: repeat(1, 1fr);
@@ -15204,6 +15232,11 @@ html {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 40px;
   column-gap: 22px;
+}
+@media (max-width: 767px) {
+  .grid_img_container_main .Gridfour {
+    column-gap: 16px;
+  }
 }
 @media (max-width: 475px) {
   .grid_img_container_main .Gridfour {

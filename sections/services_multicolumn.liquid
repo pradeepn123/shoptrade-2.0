@@ -5,7 +5,7 @@
 <div class="container">
   <div class="services_multicolumn_container  {% if itemCount == 4 %} services_multicolumn_containerFour {% elsif itemCount == 3 %} services_multicolumn_containerThree {% elsif itemCount == 2 %} services_multicolumn_containerTwo {% elsif itemCount == 1 %} services_multicolumn_containerOne {% elsif itemCount > 1 %} services_multicolumn_containerMany {% endif %}">
     {% for item in section.blocks %}    
-        <a href="{{ item.settings.box_url }}" class="services-MulColumn">
+        <a href="{{ item.settings.box_url | replace: '/en-in', '' }}" class="services-MulColumn">
           <div class="service_column_img">
             <img src="{{ item.settings.featured_image | img_url: 'master'}}" loading="lazy" alt="product image">
           </div>
