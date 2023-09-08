@@ -4,7 +4,11 @@
       "type": "about-banner",
       "settings": {
         "heading": "Scale your business with a team of highly skilled professionals",
-        "btntext": "Contact us"
+        "font_size_desk": 64,
+        "font_size_mob": 42,
+        "banner_para": "",
+        "btntext": "Contact us",
+        "bottom_shadow": false
       }
     },
     "about-mision": {
@@ -264,7 +268,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_4645.png",
             "leaderName": "Deekshith K Suvarna",
-            "designation": "DIRECTOR & HEAD OF DESIGN",
+            "designation": "DIRECTOR (INDIA) | HEAD OF DESIGN",
             "info": "<p>Deekshith is an accomplished professional with over 9+ years of experience in the field of Design,  Branding, Graphic Design, UX, UI and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.<\/p>"
           }
         },
