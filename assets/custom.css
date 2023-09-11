@@ -14661,31 +14661,28 @@ html {
   }
 }
 .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
-  display: flex;
+  display: grid;
   justify-content: space-around;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 90%;
-}
-@media (max-width: 920px) {
-  .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
-  }
+  overflow: auto;
+  row-gap: 25px;
+  margin: 0 auto;
 }
 @media (max-width: 520px) {
   .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
     row-gap: unset;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (max-width: 1200px) {
-  .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
-    width: auto;
   }
 }
 @media (max-width: 1440px) {
   .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
     align-items: left;
+  }
+}
+@media (max-width: 425px) {
+  .sticky_pop_up_parent .sticky-popup-content .sticky-popup .sticky_popup_child {
+    width: auto;
+    justify-content: unset;
   }
 }
 @media (min-width: 2140px) {
