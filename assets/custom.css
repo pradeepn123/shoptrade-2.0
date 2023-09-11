@@ -14933,6 +14933,11 @@ html {
     margin: 20px 0 28px 0;
   }
 }
+@media (max-width: 520px) {
+  .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_para {
+    margin: 15px 0 20px 0;
+  }
+}
 .grid_img_container_main .grid_img_container .gi_blocks_main .gi_blocks .gi_blocks_child a .gib_para p {
   margin: 0;
   color: #000;
