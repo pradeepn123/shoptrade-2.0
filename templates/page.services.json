@@ -570,7 +570,7 @@
         "title_main": "Design",
         "font_size_desk": 52,
         "bg_gradient_desk": "linear-gradient(360deg, rgba(221, 237, 225, 1), rgba(255, 255, 255, 0) 100%)",
-        "padding_top": 2,
+        "padding_top": 40,
         "padding_btm": 24,
         "padding_btm_desk": 1,
         "padding_btm_mob": 1
