@@ -6772,7 +6772,7 @@ textarea {
   padding: 30px;
   display: block;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 991px) {
   #contact-popup #left-contact-content {
     width: 100%;
   }
@@ -6785,7 +6785,7 @@ textarea {
   margin: 0 auto 2em auto;
   width: 58%;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 991px) {
   #contact-popup #left-contact-content .form-content {
     width: 100%;
   }
@@ -7243,7 +7243,7 @@ textarea {
   background-color: #F9F9F9;
   padding: 30px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 991px) {
   #contact-popup #testimonial-content {
     display: none;
   }
@@ -7258,7 +7258,9 @@ textarea {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
   margin: 3em auto 5em auto;
   border-radius: 10px;
-  display: none;
+  display: block !important;
+  padding-left: 20px;
+  cursor: grab;
 }
 #contact-popup #testimonial-content .testimonial-card .card-img {
   object-fit: cover;
