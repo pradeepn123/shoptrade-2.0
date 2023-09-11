@@ -590,6 +590,8 @@ textarea {
         width: 50%;
         background-color: #F9F9F9;
         padding: 30px;
+        height: fit-content !important;
+      
 
         .close-icon {
             float: right;
