@@ -183,6 +183,16 @@
       optSvg.classList.remove('rotate_arrow');
      });
     });
-   
+
+    let optionsParent = document.querySelectorAll(".options_parent a");
+    optionsParent.forEach(elem =>{
+      elem.addEventListener("click", ()=>{
+        popHeight.style.display = "none";
+        stickyBody.style.display = "none";
+        body.style.overflow = "auto";
+        optSvg.classList.remove('rotate_arrow');
+      });
+    });
+
   };
 </script>

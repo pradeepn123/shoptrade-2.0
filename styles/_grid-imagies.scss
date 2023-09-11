@@ -94,7 +94,9 @@
                             @media(max-width:1200px) {
                                 margin: 20px 0 28px 0;
                             }
-
+                            @media(max-width: 520px) {
+                                margin: 15px 0 25px 0;
+                            }
                             p {
                                 margin: 0;
                                 color: #000;
