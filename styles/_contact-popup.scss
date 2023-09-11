@@ -590,10 +590,8 @@ textarea {
         width: 50%;
         background-color: #F9F9F9;
         padding: 30px;
-        height: 100%;
-       @media (max-width: 1389px) {
-        height: fit-content;
-       }
+        height: fit-content !important;
+      
 
         .close-icon {
             float: right;

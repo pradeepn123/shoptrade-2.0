@@ -7242,16 +7242,11 @@ textarea {
   width: 50%;
   background-color: #F9F9F9;
   padding: 30px;
-  height: 100%;
+  height: fit-content !important;
 }
 @media screen and (max-width: 840px) {
   #contact-popup #testimonial-content {
     display: none;
-  }
-}
-@media (max-width: 1389px) {
-  #contact-popup #testimonial-content {
-    height: fit-content;
   }
 }
 #contact-popup #testimonial-content .close-icon {
