@@ -376,16 +376,6 @@
         "heading": "Our Partners"
       }
     },
-    "18584dcb-2da3-49bb-8905-ef92e1620a79": {
-      "type": "service_sections_header",
-      "settings": {
-        "heading": "Development",
-        "font_size_desk": 52,
-        "bg_gradient_desk": "linear-gradient(360deg, rgba(253, 218, 206, 1), rgba(255, 255, 255, 0) 100%)",
-        "padding_top": 40,
-        "padding_btm": 24
-      }
-    },
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6": {
       "type": "grid-imagies",
       "blocks": {
@@ -477,9 +467,9 @@
         "4f7be99b-f40b-4e76-9802-682808914a91"
       ],
       "settings": {
-        "title_main": "",
+        "title_main": "Development",
         "font_size_desk": 52,
-        "bg_gradient_desk": "",
+        "bg_gradient_desk": "linear-gradient(360deg, rgba(253, 218, 206, 1), rgba(255, 255, 255, 0) 100%)",
         "padding_top": 40,
         "padding_btm": 24,
         "padding_btm_desk": 1,
@@ -713,7 +703,6 @@
     "99ff0356-87ec-426e-beff-585e9ce851eb",
     "d5bfa5e9-52d3-44e6-8ffe-6ecb0b22bdc8",
     "ourPartners",
-    "18584dcb-2da3-49bb-8905-ef92e1620a79",
     "ccac3b70-0a7d-4384-a4e1-85e964af87e6",
     "e900bf56-a284-4d8b-9019-9ca15d761eaf",
     "df190e32-5df7-4c18-93e5-ff9e9ccab961",
