@@ -563,7 +563,14 @@ textarea {
                    // margin-left: 0;
                     &:after{
                         width: 102%;
+                        @media screen and (max-width: 840px) {
+                            width: 101%;
+                        }
+                        @media screen and (max-width: 575px) {
+                            width: 102%;
+                        }
                     }
+                   
                 }
 
                 .btn--orange {

@@ -7223,6 +7223,16 @@ textarea {
 #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
   width: 102%;
 }
+@media screen and (max-width: 840px) {
+  #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+    width: 101%;
+  }
+}
+@media screen and (max-width: 575px) {
+  #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+    width: 102%;
+  }
+}
 #contact-popup #left-contact-content .form-content .form-buttons .btn--orange:after {
   background: #FF7121;
   border: 1px solid #000000;
