@@ -1,4 +1,32 @@
 {% style %}
+    .service_section_header--{{ section.id }} .h1{
+        font-size: {{ section.settings.font_size_desk }}px;
+        font-weight: 700;
+    }
+    .service_section_header--{{ section.id }}{
+      background: {{ section.settings.bg_gradient_desk }};
+    }
+    .service_section_header--{{ section.id }}{
+      margin-top: 50px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_btm }}px;
+    }
+    @media(max-width:1200px){
+      .service_section_header--{{ section.id }} .h1{
+          font-size: {{ section.settings.font_size_desk | times: 0.75 | round }}px;
+          margin-bottom: 0;
+ 
+      }
+      .service_section_header--{{ section.id }}{
+          padding-top: {{ section.settings.padding_top | times: 0.85 | round }}px;
+          padding-bottom: {{ section.settings.padding_btm | times: 0.90 | round }}px;
+      }
+     }
+@media(max-width:520px){
+  .service_section_header--{{ section.id }} .h1{
+        font-size: {{ section.settings.font_size_desk | times: 0.55 | round }}px;
+    }
+}
   html{
     scroll-padding-top: 7rem;
   }
@@ -24,6 +52,20 @@
     {% endif %}
   {% endfor %}
 {% endstyle %}
+
+{% comment %}  {% endcomment %}
+
+{% if section.settings.title_main %}
+<section class="page_banner_shadow service_section_header--{{ section.id }}" id ="{{ section.settings.title_main | replace: " ", "_" }}">
+  <div class="container">
+    <div>
+      <h1 class="h1">{{ section.settings.title_main }}</h1>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %}  {% endcomment %}
 
 {% for block in section.blocks %}
   {% assign loopValue = forloop.index %}
@@ -121,13 +163,53 @@
   "name": "Image gallery",
   "settings": [
     {
+      "id": "title_main",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "type": "range",
+      "id": "font_size_desk",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size desktop",
+      "default": 52
+    },
+    {
+      "type": "color_background",
+      "id": "bg_gradient_desk",
+      "label": "Background"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 2,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading padding top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_btm",
+      "min": 2,
+      "max": 200, 
+      "step": 2,
+      "unit": "px",
+      "label": "Heading Padding bottom",
+      "default": 24
+    },
+    {
       "type": "range",
       "id": "padding_btm_desk",
       "min": 1,
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Font bottom dekstop",
+      "label": "section padding bottom dekstop",
       "default": 1
     },
     {
@@ -137,7 +219,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Font bottom mobile",
+      "label": "section padding bottom mobile",
       "default": 1
     }
   ],

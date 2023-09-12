@@ -5,7 +5,7 @@
         <div class="options_parent">
           {% assign explore_all_menu = linklists['explore-all'] %}
           {% for link in explore_all_menu.links %}
-            <a href="{{ link.url }}"> {{ link.title }}</a>
+            <a href="{{ link.url | replace: '/en-in', '' }}"> {{ link.title }}</a>
           {% endfor %}
         </div>
       </div>
@@ -173,6 +173,26 @@
     body.style.overflow = "auto";
     optSvg.classList.remove('rotate_arrow');
     }); 
-   
+
+    let menuStickyOPt = document.querySelectorAll(".sticky-pop_heading");
+    menuStickyOPt.forEach(ele =>{
+    ele.addEventListener("click", () => {
+      popHeight.style.display = "none";
+      stickyBody.style.display = "none";
+      body.style.overflow = "auto";
+      optSvg.classList.remove('rotate_arrow');
+     });
+    });
+
+    let optionsParent = document.querySelectorAll(".options_parent a");
+    optionsParent.forEach(elem =>{
+      elem.addEventListener("click", ()=>{
+        popHeight.style.display = "none";
+        stickyBody.style.display = "none";
+        body.style.overflow = "auto";
+        optSvg.classList.remove('rotate_arrow');
+      });
+    });
+
   };
 </script>
