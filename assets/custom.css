@@ -7265,12 +7265,12 @@ textarea {
 }
 @media (max-width: 1340px) {
   #contact-popup #testimonial-content {
-    padding: 3rem 4rem;
+    padding: 4rem 5rem;
   }
 }
 @media (max-width: 1200px) {
   #contact-popup #testimonial-content {
-    padding: 3rem;
+    padding: 4rem;
   }
 }
 @media (max-width: 1023px) {
@@ -7283,8 +7283,11 @@ textarea {
   cursor: pointer;
   padding-left: 15px;
 }
+#contact-popup #testimonial-content #contactForm_slider {
+  background-color: #fff;
+}
 #contact-popup #testimonial-content .testimonial-card {
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   display: block !important;
   cursor: grab;
   height: auto;
@@ -7306,17 +7309,23 @@ textarea {
   height: 300px;
   width: inherit;
 }
+@media (max-width: 1340px) {
+  #contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {
+    height: 250px;
+  }
+}
 @media (max-width: 1023px) {
   #contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {
     height: 200px;
   }
 }
 #contact-popup #testimonial-content .testimonial-card .card-content {
-  padding: 30px 0;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
 }
 @media (max-width: 1200px) {
   #contact-popup #testimonial-content .testimonial-card .card-content {
-    padding: 20px 0;
+    padding: 20px;
   }
 }
 #contact-popup #testimonial-content .testimonial-card .card-content .testimonial {
@@ -7350,9 +7359,11 @@ textarea {
   color: #000000;
 }
 #contact-popup #testimonial-content .swiper-pagination-contact {
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f9f9f9;
 }
 #contact-popup #testimonial-content .swiper-pagination-contact .swiper-pagination-bullet {
   background-color: orange;
