@@ -336,7 +336,7 @@ textarea {
                         width: 100%;
                         border-radius: 7px;
                         padding: 1em;
-                        min-height: 150px;
+                        min-height: 100px;
                         outline: none;
                         font-size: 16px;
                         box-shadow: none;
@@ -612,8 +612,11 @@ textarea {
             cursor: pointer;
         }
         #contactForm_slider{
-            margin: 0 8rem;
+            margin: 0.5rem 10rem  0 10rem;
             @media(max-width: 1340px){
+                margin: 0 6rem;
+            }
+            @media(max-width: 1200px){
                 margin: 0 4rem;
             }
             @media(max-width: 1023px){
@@ -628,7 +631,8 @@ textarea {
             height: auto;
             background-color: #fff;
             margin: 2.5em auto 0 auto;
-            // box-shadow: 0 8px 24px #00000026;
+            box-shadow: 0 0 10px #00000026;
+
             &:active{
                 cursor: grabbing;
             }
@@ -645,9 +649,8 @@ textarea {
                 width: inherit;              
             }
             .card-content {
-                padding: 30px;
+                padding: 20px 30px;
                 border-radius: 0 0 10px 10px;
-               
                
                 @media(max-width:1200px){
                     padding: 20px;
@@ -655,8 +658,8 @@ textarea {
                 .testimonial {
                     font-family: 'Epilogue', sans-serif;
                     font-weight: 700;
-                    font-size: 24px;
-                    line-height: 42px;
+                    font-size: 22px;
+                    line-height: 38px;
                     color: #000000;
                     letter-spacing: -0.03em;
                     @media(max-width:1200px){
@@ -667,16 +670,16 @@ textarea {
                 .author {
                     font-family: 'Epilogue', sans-serif;
                     font-weight: 700;
-                    font-size: 20px;
-                    line-height: 25.28px;
+                    font-size: 18px;
+                    line-height: 22.28px;
                     margin-bottom: 0;
                     color: #000000;
                 }
                 .designation {
                     font-family: 'Epilogue', sans-serif;
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 25.28px;
+                    font-size: 14px;
+                    line-height: 22.28px;
                     margin-top: 0;
                     color: #000000;
                 }

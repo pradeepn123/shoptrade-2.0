@@ -7023,7 +7023,7 @@ textarea {
   width: 100%;
   border-radius: 7px;
   padding: 1em;
-  min-height: 150px;
+  min-height: 100px;
   outline: none;
   font-size: 16px;
   box-shadow: none;
@@ -7268,9 +7268,14 @@ textarea {
   cursor: pointer;
 }
 #contact-popup #testimonial-content #contactForm_slider {
-  margin: 0 8rem;
+  margin: 0.5rem 10rem 0 10rem;
 }
 @media (max-width: 1340px) {
+  #contact-popup #testimonial-content #contactForm_slider {
+    margin: 0 6rem;
+  }
+}
+@media (max-width: 1200px) {
   #contact-popup #testimonial-content #contactForm_slider {
     margin: 0 4rem;
   }
@@ -7287,6 +7292,7 @@ textarea {
   height: auto;
   background-color: #fff;
   margin: 2.5em auto 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1490196078);
 }
 #contact-popup #testimonial-content .testimonial-card:active {
   cursor: grabbing;
@@ -7306,7 +7312,7 @@ textarea {
   width: inherit;
 }
 #contact-popup #testimonial-content .testimonial-card .card-content {
-  padding: 30px;
+  padding: 20px 30px;
   border-radius: 0 0 10px 10px;
 }
 @media (max-width: 1200px) {
@@ -7317,8 +7323,8 @@ textarea {
 #contact-popup #testimonial-content .testimonial-card .card-content .testimonial {
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 22px;
+  line-height: 38px;
   color: #000000;
   letter-spacing: -0.03em;
 }
@@ -7331,16 +7337,16 @@ textarea {
 #contact-popup #testimonial-content .testimonial-card .card-content .author {
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 25.28px;
+  font-size: 18px;
+  line-height: 22.28px;
   margin-bottom: 0;
   color: #000000;
 }
 #contact-popup #testimonial-content .testimonial-card .card-content .designation {
   font-family: "Epilogue", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 25.28px;
+  font-size: 14px;
+  line-height: 22.28px;
   margin-top: 0;
   color: #000000;
 }
