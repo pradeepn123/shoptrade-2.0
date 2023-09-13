@@ -66,87 +66,102 @@
                     <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
                 </svg>
             </div>
-            <div class="testimonial-card">
-                {% comment %}
-                    1
-                {% endcomment %}
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469"/>
+             {% comment %} <div class="neg_contain__slider-arrow">
+                <div class="slider-arrow" id="slidingArrowProduct">
+                  <div class="js-arrow-left-negs arrow-icon">
+                    {% render 'icon-left-arrow' %}
+                  </div>
+                  <div class="js-arrow-right-negs arrow-icon">
+                    {% render 'icon-right-arrow' %}
+                  </div>
                 </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
-                    <p class="testimonial">
-                        “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
-                    </p>
-                    <p class="author">
-                        Harley Finkelstein
-                    </p>
-                    <p class="designation">
-                        President of Shopify
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                {% comment %}
-                    2
-                {% endcomment %}
-                <div class="card-image">
-                    <iframe width="382" height="200" src="https://www.youtube.com/embed/9Erlh1_oMxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
-                    <p class="testimonial">
-                        “I am continually impressed by their expertise in Shopify & web development.”
-                    </p>
-                    <p class="author">
-                        Eddie Rosado
-                    </p>
-                    <p class="designation">
-                        VP of product developtment
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                {% comment %}
-                    3
-                {% endcomment %}
-                <div class="card-image">
-                    <iframe width="382" height="200" src="https://www.youtube.com/embed/PBrlQ2hrX98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/lensAdvisorLogo.png?v=1669874735"/>
-                    <p class="testimonial">
-                        “ShopTrade was experieced  in developing apps and set  realistic timelines.”
-                    </p>
-                    <p class="author">
-                        Zenos Schmickrath
-                    </p>
-                    <p class="designation">
-                        Co-Founder
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                {% comment %}
-                    4
-                {% endcomment %}
-                <div class="card-image">
-                    <img class="card-img" src="https://cdn.shopify.com/s/files/1/1951/9451/files/grahamRyan.png?v=1669895433"/>
-                </div>
-                <div class="card-content">
-                    <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/synchroLogo.png?v=1669895532"/>
-                    <p class="testimonial">
-                        “Their communication and responsiveness are impressive in the workflow.”
-                    </p>
-                    <p class="author">
-                        Graham Ryan
-                    </p>
-                    <p class="designation">
-                        Founder & CEO
-                    </p>
-                </div>
-            </div>
-        </div>
+            </div> {% endcomment %}
+            <div class="swiper-container" id="contactForm_slider">
+             <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            1
+                        {% endcomment %}
+                        <div class="card-image">
+                            <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469"/>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+                            <p class="testimonial">
+                                “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
+                            </p>
+                            <p class="author">
+                                Harley Finkelstein
+                            </p>
+                            <p class="designation">
+                                President of Shopify
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            2
+                        {% endcomment %}
+                        <div class="card-image">
+                            <iframe  src="https://www.youtube.com/embed/9Erlh1_oMxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+                            <p class="testimonial">
+                                “I am continually impressed by their expertise in Shopify & web development.”
+                            </p>
+                            <p class="author">
+                                Eddie Rosado
+                            </p>
+                            <p class="designation">
+                                VP of product developtment
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            3
+                        {% endcomment %}
+                        <div class="card-image">
+                            <iframe  src="https://www.youtube.com/embed/PBrlQ2hrX98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/lensAdvisorLogo.png?v=1669874735"/>
+                            <p class="testimonial">
+                                “ShopTrade was experieced  in developing apps and set  realistic timelines.”
+                            </p>
+                            <p class="author">
+                                Zenos Schmickrath
+                            </p>
+                            <p class="designation">
+                                Co-Founder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            4
+                        {% endcomment %}
+                        <div class="card-image">
+                            <img class="card-img" src="https://cdn.shopify.com/s/files/1/1951/9451/files/grahamRyan.png?v=1669895433"/>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/synchroLogo.png?v=1669895532"/>
+                            <p class="testimonial">
+                                “Their communication and responsiveness are impressive in the workflow.”
+                            </p>
+                            <p class="author">
+                                Graham Ryan
+                            </p>
+                            <p class="designation">
+                                Founder & CEO
+                            </p>
+                        </div>
+                    </div>
+             </div>
+             <div class="swiper-pagination-contact"></div>
+           </div>
+     </div>
   
         <div id="form-submit-content">
             <div class="close-icon" onclick="ContactPopUp.closePopup()">
@@ -417,7 +432,7 @@
             xhr.send(final_data);
         }
 
-    window.onload = function() {
+    {% comment %} window.onload = function() {
     document.querySelector("#contactus-name").focus();
     function focusOnAutoFocus() {
         let autoFocus = document.querySelector('#autoFocus');
@@ -429,5 +444,32 @@
     
     let askUs = document.querySelector("#opentContactUs");
     askUs.addEventListener("click", focusOnAutoFocus); 
-    }
+    } {% endcomment %}
+    //
+    window.addEventListener("DOMContentLoaded", () => {
+    let contactBtn = document.querySelector("#contact-btn-details");
+   
+    contactBtn.addEventListener("click", () => {
+       //alert(contactBtn);
+        let contactSlider = new Swiper('#contactForm_slider', {
+           speed:1000,
+           slidesPerView: 1, 
+           direction:"horizontal",
+           loop: true,
+           centeredSlides: true,
+          draggable: true,
+          pagination: {
+            el: ".swiper-pagination-contact",
+            clickable: true,
+          },
+          });
+      const slides = document.querySelectorAll('.swiper-slide');
+          slides.forEach((slide, index) => {
+              slide.addEventListener('click', () => {
+                  // Stop the Swiper when we click on contact slide
+                  contactSlider.autoplay.stop();
+              });
+          }); 
+        });
+    });
 </script>
