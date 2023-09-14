@@ -497,7 +497,7 @@
           "settings": {
             "show_contactpopUP": true,
             "title": "CRO Audit",
-            "box_url": "",
+            "box_url": "shopify:\/\/pages\/cro-audit-for-ecommerce-brands",
             "gib_para": "<p>Our team of experts will analyze every aspect of your website, identifying hidden opportunities and roadblocks that impact your conversion rates. You'll receive actionable insights and a roadmap to enhance your website.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/CRO_24468710-b5b6-4b0f-b743-bb710f4fb6bd.png",
