@@ -547,9 +547,9 @@
         "38d54d3b-375e-4a62-a120-b237d19314e6": {
           "type": "Image_blocks",
           "settings": {
-            "show_contactpopUP": true,
+            "show_contactpopUP": false,
             "title": "Photo Retouching",
-            "box_url": "",
+            "box_url": "shopify:\/\/products\/photo-retouching",
             "gib_para": "<p>Captivating product imagery is crucial to attracting customers and driving sales. Transform your product photos into flawless, high-quality images that showcase your offerings in the best light possible.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/PHOTO_RETOUCH_30fa4831-8f8b-42eb-a78b-dbddffef6ad1.png",
