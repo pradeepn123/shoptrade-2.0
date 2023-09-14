@@ -521,9 +521,9 @@
         "d6a8a62a-24e5-4bc5-b3d1-1d333146bd50": {
           "type": "Image_blocks",
           "settings": {
-            "show_contactpopUP": true,
+            "show_contactpopUP": false,
             "title": "3D Modelling",
-            "box_url": "",
+            "box_url": "shopify:\/\/products\/3d-product-rendering",
             "gib_para": "<p>3D Models that will transform your online store into a immersive shopping destination. Our designers specializes in creating realistic and attention-grabbing 3D models that showcase your products from every angle.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/3D.png",
