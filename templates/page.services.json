@@ -508,9 +508,9 @@
         "e10bd07f-76f9-485b-9e48-f6f52b7a45cd": {
           "type": "Image_blocks",
           "settings": {
-            "show_contactpopUP": true,
+            "show_contactpopUP": false,
             "title": "Promotional Email Design",
-            "box_url": "",
+            "box_url": "shopify:\/\/products\/design-newsletters",
             "gib_para": "<p>Connect with customers in a meaningful way, by using visually stunning and effective promotional emails tailored to your Brand. Our email designs are engineered to boost engagement, conversions, and customer loyalty.<\/p>",
             "enble_video": false,
             "gib_img": "shopify:\/\/shop_images\/emailer.png",
