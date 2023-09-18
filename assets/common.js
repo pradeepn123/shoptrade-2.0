@@ -1056,3 +1056,62 @@ $(document).ready(function () {
     }
   });
 });
+
+//ask us btn to open contact us pop up in product page
+document.addEventListener('DOMContentLoaded', function(){
+
+
+    function InitializeSlider(){
+    let contactSlider = new Swiper('#contactForm_slider', {
+        speed: 1000,
+        slidesPerView: 1,
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
+        draggable: true,
+        autoplay: {
+            delay: 2500,
+        },
+        pagination: {
+            el: '.swiper-pagination-contact',
+            clickable: true,
+        },
+    });
+  }
+    const slides = document.querySelectorAll('.swiper-slide');
+    slides.forEach((slide) => {
+        slide.addEventListener('click', () => {
+            contactSlider.autoplay.stop();
+        });
+    });
+
+    const closeCtnBtn = document.querySelectorAll('#close-icon-btn');
+    closeCtnBtn.forEach(function (e) {
+        e.addEventListener('click', function () {
+            contactSlider.destroy(true, true);
+    });
+
+  //product page ask us 
+    let productAskUS = document.querySelectorAll("#opentContactUs");
+    productAskUS.forEach( function (k){
+      k.addEventListener("click", InitializeSlider);
+    });
+
+  //plus page contact us
+    let plusBtn = document.querySelector(".plus-btn-main");
+    plusBtn.addEventListener("click", InitializeSlider);
+      
+    //plus page contact us
+    let plusBtnnext = document.querySelector(".plus-btn");
+    plusBtnnext.addEventListener("click", InitializeSlider);
+
+    // lets-talk-btn
+    let letsTalkBtn = document.querySelector(".lets-talk-btn");
+    letsTalkBtn.addEventListener("click", InitializeSlider);
+
+    //quick services 
+    let quickService = document.querySelector("a.quick-services__block-link.link-1");
+    quickService.addEventListener("click", InitializeSlider);
+  
+});
+});
