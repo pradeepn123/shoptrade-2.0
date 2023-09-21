@@ -537,6 +537,7 @@
         },
         "a4ec640d-4ac6-41ba-8404-2100cf25ed3f": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",
