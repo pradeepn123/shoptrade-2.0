@@ -106,38 +106,42 @@ $(document).ready(function () {
     aboutTeamContent.controller.control = aboutTeam;
 // 
 let abtctn = document.querySelector("#contact-btn-about");
+const mediaQuery = window.matchMedia('(min-width: 840px)');
 
-abtctn.addEventListener("click", function(){
-    let contactSlider = new Swiper('#contactForm_slider', {
-        speed: 1000,
-        slidesPerView: 1,
-        direction: 'horizontal',
-        loop: true,
-        centeredSlides: true,
-        draggable: true,
-        autoplay: {
-            delay: 2500,
-        },
-        pagination: {
-            el: '.swiper-pagination-contact',
-            clickable: true,
-        },
-    });
+if (mediaQuery.matches) {
+    abtctn.addEventListener("click", function(){
 
-    const slides = document.querySelectorAll('.swiper-slide');
-    slides.forEach((slide, index) => {
-        slide.addEventListener('click', () => {
-            // Stop the Swiper when a contact slide is clicked
-            contactSlider.autoplay.stop();
+        const slides = document.querySelectorAll('.swiper-slide');
+        slides.forEach((slide, index) => {
+            slide.addEventListener('click', () => {
+                // Stop the Swiper when a contact slide is clicked
+                contactSlider.autoplay.stop();
+            });
+        });
+    
+        const closeCtnBtn = document.querySelectorAll('#close-icon-btn');
+        closeCtnBtn.forEach(function (e) {
+            e.addEventListener('click', function () {
+                contactSlider.destroy(true, true);
+            });
+        });
+    
+        let contactSlider = new Swiper('#contactForm_slider', {
+            speed: 1000,
+            slidesPerView: 1,
+            direction: 'horizontal',
+            loop: true,
+            centeredSlides: true,
+            draggable: true,
+            autoplay: {
+                delay: 2500,
+            },
+            pagination: {
+                el: '.swiper-pagination-contact',
+                clickable: true,
+            },
         });
     });
-
-    const closeCtnBtn = document.querySelectorAll('#close-icon-btn');
-    closeCtnBtn.forEach(function (e) {
-        e.addEventListener('click', function () {
-            contactSlider.destroy(true, true);
-        });
-    });
-});
+};
 
 });
