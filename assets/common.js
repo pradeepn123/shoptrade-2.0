@@ -437,16 +437,14 @@ $(document).ready(function () {
     },
   });
   // Contact Form - Final Page , Change Name TO Upload instead of Drag and Drop or Browse
-  if ($(window).width() < 480) {
-    document
-      .querySelector(
-        "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
-      )
-      .previousSibling.remove();
-    document.querySelector(
-      "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
-    ).innerHTML = "Upload File";
-  }
+  // if ($(window).width() < 480) {
+  //   document.querySelector(
+  //       "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
+  //     ).previousSibling.remove();
+  //   document.querySelector(
+  //     "#contact-popup #left-contact-content .form-content .form-tab .form-group .drop-zone__prompt span"
+  //   ).innerHTML = "Upload File";
+  // }
   $(".loader ").hide();
   ContactPopUp.init();
 

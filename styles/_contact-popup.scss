@@ -74,12 +74,13 @@ textarea {
         @media screen and (max-width: 840px) {
             width: 100%;
         }
-
+        @media screen and (max-width: 520px) {
+            overflow: auto;
+        }
         .close-icon {
             float: right;
             cursor: pointer;
         }
-
         .form-content{
             margin: 0 auto 2em auto;
             width: 58%;
