@@ -802,6 +802,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", function () {
       document.querySelector(".shoptrade").classList.toggle("active");
       document.querySelector("body").classList.toggle("overflow-hide");
+      if (document.querySelector(".shoptrade").classList.contains("active")) {
+        document.querySelector(".reM_pagination").style.opacity = "0";
+      }
+      else {
+        document.querySelector(".reM_pagination").style.opacity = "1";
+      }
     });
 
   // Open Popup
