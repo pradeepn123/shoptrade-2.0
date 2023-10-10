@@ -46,6 +46,10 @@
     border-radius: 4px;
 }
 
+.no_mobile_container form .hs-input:focus-visible{
+    outline: none;
+}
+
 .no_mobile_container form span strong{
     font-weight: 600;
 }
@@ -88,7 +92,7 @@
     width: fit-content !important;
 }
 
-.hs-fieldtype-textarea.hs-input{
+div .hs-fieldtype-textarea.hs-input{
     min-height: 203px !important;
 }
 
@@ -135,12 +139,12 @@
         display: block !important;
     }
     .hs-form-field label{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .no_mobile_container form .hs-input{
         margin-top: 5px;
     }
-    .hs-fieldtype-textarea.hs-input{
+    div .hs-fieldtype-textarea.hs-input{
         min-height: 116px !important;
     }
     .hs_submit,
