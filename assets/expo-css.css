@@ -1,0 +1,185 @@
+.no_mobile_container .field:after{
+    content: none;
+}
+
+.no_mobile_container .field{
+    display: block;
+}
+
+*:focus-visible{
+    outline: none;
+}
+
+.no_mobile_container input:focus-visible{
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+/* Actual Style - Desktop */
+.no_mobile_container .expo_ecommerce_banner{
+    margin: 47px 0;
+}
+
+.no_mobile_container form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    margin-bottom: 150px;
+    padding-left: 48px;
+    padding-right: 152px;
+}
+
+.no_mobile_container form input,
+.hs_meeting_preference .input select,
+.hs_notes .input textarea{
+    margin-top: 12px;
+}
+
+.no_mobile_container form .hs-input{
+    min-height: 40px !important;
+
+    background: #F6F8FA;
+    color: #000;
+    border: 1px solid #D7D7D7;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.no_mobile_container form span strong{
+    font-weight: 600;
+}
+
+.hs-form-field label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.hs_meeting_preference,
+.hs_notes{
+    grid-column: span 2;
+}
+
+.no-list.hs-error-msgs.inputs-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no-list.hs-error-msgs.inputs-list label{
+    font-size: 14px;
+}
+
+.hs-button.primary.large{
+    min-width: 236px;
+    padding: 12px;
+    background-color: #FF7121;
+    border-radius: 4px;
+    border: 0;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.hs_submit{
+    width: fit-content !important;
+}
+
+.hs-fieldtype-textarea.hs-input{
+    min-height: 203px !important;
+}
+
+.submitted-message{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.mobile_only_image{
+    display: none;
+}
+
+.mobile_only_image img{
+    width: 100%;
+}
+@media screen and (max-width: 1023px){
+    .no_mobile_container form{
+        padding: 0 48px;
+        margin-bottom: 48px; 
+    }
+}
+
+@media screen and (max-width: 767px){
+    .no_mobile_container form{
+        padding: 0;
+        gap: 28px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .no_mobile_container form{
+        gap: 15px;
+    }
+    .no_mobile_container form div{
+        grid-column: span 2;
+    }
+    .desktop_only_image{
+        display: none;
+    }
+    .mobile_only_image{
+        display: block !important;
+    }
+    .hs-form-field label{
+        font-size: 12px !important;
+    }
+    .no_mobile_container form .hs-input{
+        margin-top: 5px;
+    }
+    .hs-fieldtype-textarea.hs-input{
+        min-height: 116px !important;
+    }
+    .hs_submit,
+    .hs-button.primary.large{
+        min-width: 100% !important;
+    }
+    .hs-error-msg{
+        font-size: 11px !important;
+    }
+    .submitted-message{
+        font-size: 25px;
+    }
+}
+/* @media screen and (min-width: 577px){
+    .no_mobile_container {
+        max-width: 540px;
+    }
+} */
+
+@media screen and (min-width: 581px){
+    .no_mobile_container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        max-width: 540px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .no_mobile_container {
+        max-width: 920px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .no_mobile_container{
+        max-width: 960px;
+    }
+}
