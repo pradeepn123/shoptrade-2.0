@@ -535,19 +535,6 @@
             "careerLink": ""
           }
         },
-        "a4ec640d-4ac6-41ba-8404-2100cf25ed3f": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/SWETA.png",
-            "memberName": "Shweta Sakshi",
-            "memberDesignation": "Front-End Engineer",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "436484f0-034c-4e1e-8ef4-471b6aae546a": {
           "type": "cardType",
           "settings": {
@@ -555,19 +542,6 @@
             "slider": "",
             "memberImage": "shopify:\/\/shop_images\/Nikil_60b60340-8f4c-4ee0-83ff-46acc94aa425.jpg",
             "memberName": "Nikhil Pandey",
-            "memberDesignation": "Full-Stack Engineer",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
-        "b83a8738-e232-4799-a200-a99760854011": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Prince_3825f6a1-366e-4219-b970-7026d0e2b303.jpg",
-            "memberName": "Prince Gehlot",
             "memberDesignation": "Full-Stack Engineer",
             "careerbtn": "",
             "careerLink": ""
@@ -633,19 +607,6 @@
             "careerLink": ""
           }
         },
-        "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4": {
-          "type": "cardType",
-          "disabled": true,
-          "settings": {
-            "profileType": "member",
-            "slider": "",
-            "memberImage": "shopify:\/\/shop_images\/Sakshi.jpg",
-            "memberName": "Sakshi Walave",
-            "memberDesignation": "Front-End Engineer (Intern)",
-            "careerbtn": "",
-            "careerLink": ""
-          }
-        },
         "6c901cf3-fceb-4bbd-b5a6-dc210ab52de2": {
           "type": "cardType",
           "settings": {
@@ -691,15 +652,12 @@
         "0379eaa3-56c3-4e2a-b127-94d7d2c2ed96",
         "21f45427-c113-4cd9-85de-b6801c87055a",
         "5103955d-0d53-4f5b-b678-cf87f3e02bb3",
-        "a4ec640d-4ac6-41ba-8404-2100cf25ed3f",
         "436484f0-034c-4e1e-8ef4-471b6aae546a",
-        "b83a8738-e232-4799-a200-a99760854011",
         "b2af9776-1f9e-42fc-911f-78cd0b063d06",
         "1b73beda-f36e-48d1-b6cb-86c51c9cebfe",
         "6792390b-b4f4-4e2d-bd67-05d4ca8b2dfc",
         "40841869-daac-4449-bf3c-6f3406395749",
         "2d2d1644-07f5-420e-ae57-14af05720f17",
-        "bc23ef70-00cf-4c3d-b916-1d2c9dd213e4",
         "6c901cf3-fceb-4bbd-b5a6-dc210ab52de2",
         "23fba3fc-0c8f-4369-99e0-f209920713bb"
       ],
