@@ -562,6 +562,7 @@
         },
         "b83a8738-e232-4799-a200-a99760854011": {
           "type": "cardType",
+          "disabled": true,
           "settings": {
             "profileType": "member",
             "slider": "",
