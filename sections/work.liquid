@@ -1,4 +1,6 @@
-<section class="work">
+<script src='https://cdn.shopify.com/s/files/1/0382/4185/files/ajaxinate.js?937' async></script>
+{% paginate page.metafields.custom.works.value by 49 %}
+<section class="work" data-ajax-parent>
   <div class="container">
     <h2 class="work-h1">{{ section.settings.heading }}
     </h2>
@@ -12,21 +14,21 @@
       {% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
       {% for tag in unique_tags %}
         {% assign Ntag = tag | replace: '(', '' | replace: ')', '' | replace: '/', '' %}
-          <a class="filters_switch " id="{{ Ntag }}" onclick='switchTab("{{ Ntag }}")'>
+          <a class="filters_switch " id="{{ Ntag }}" onclick='switchTab("{{ Ntag }}")' data-tabname = "{{  Ntag }}">
             {% assign split_tags = tag | split: ',' %}
             {% assign first_word = split_tags[0] %}
             {% assign first_words = first_word | replace: '_', '   ' %}
               {{ first_words }}
           </a>
       {% endfor %}
-
+      {% comment %} data-active-class="{{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', '' }} {% endcomment %}
   </div>
   </div>
   <div class="workpage__cards_parent">
     <div class="container">
-      <ul class="ourWork__cards workpage__cards " id="ul">
+      <ul class="ourWork__cards workpage__cards " id="ul" data-magepow-Loop>
         {% for block in page.metafields.custom.works.value %}
-          <a {% if block.make_it_as_coming_soon == false %} href="{{ block.link }}" {% endif %} {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', '' }}">
+          <a {% if block.make_it_as_coming_soon == false %} href="{{ block.link }}" {% endif %} {% if block.open_in_new_tab %} target="_blank" {% endif %} class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', '' }}" data-div>
             <div class="ourWork__cardBody">
               <div class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
@@ -100,10 +102,15 @@
           </a>
         {% endfor %}
       </ul>
-      
     </div>
   </div>
-
+  <div id="magepow-Pagination">
+    {% if paginate.next %}
+    <a href="{{ paginate.next.url }}">Loading More</a>
+    {% endif %}  
+  </div>
+</section>
+{% endpaginate %}
 
 
 {% schema %}
@@ -130,25 +137,60 @@
 
 <script>
 
-  let ul = document.getElementById("ul")
-  let allcards = ul.querySelectorAll(".workpage__card");
+    let ul = document.getElementById("ul");
+    let allcards = ul.querySelectorAll(".workpage__card");
+    let div = document.querySelectorAll('[data-div]');
 
     function switchTab(tabname) {
+      const numberOfItemsPerPage = 5;
+      document.querySelector('.filters_switch.activeWork')?.classList.remove('activeWork');
+      let currentActive = document.querySelector(`#${tabname}`)?.classList.add('activeWork');
 
-       var current = document.getElementsByClassName("activeWork");
-      current[0].className = current[0].className.replace(" activeWork", "");
-      event.target.classList.add("activeWork");
-
-      allcards.forEach(c => {
+      {% comment %} allcards.forEach(c => {
         c.style.display = "none";
-      })
+      }); {% endcomment %}
 
-      let show = ul.querySelectorAll("."+tabname);
+      let show = ul.querySelectorAll(`.${tabname}`);
+      console.log('show.length', show.length);
+
+       {% comment %} if (show.length > numberOfItemsPerPage) {
+        const parentEl = document.querySelector('[data-ajax-parent]');
+        if (parentEl) {
+          const ajaxHtml = `<div id="magepow-Pagination">
+             {% if paginate.next %}
+              <a href="{{ paginate.next.url }}">Loading More</a>
+              {% endif %} 
+          </div>`;
+          parentEl.insertAdjacentHTML('beforeend', ajaxHtml);
+        }
+      } {% endcomment %}
 
       show.forEach(c => {
-        c.style.display = "block";
+          console.log(c)
+           c.style.display = "block";
+          
+      });
+      div.forEach( (r)=>{
+        if(!r.classList.contains(`${tabname}`)){
+          console.log('`${tabname}`',!r.classList.contains(`${tabname}`));
+          r.style.display = "none";
+        }
+        
       })
 
-    }
+     console.log('tabname',tabname);
 
+
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+    var endlessScroll = new Ajaxinate({
+        container: '[data-magepow-Loop]',
+        pagination: '#magepow-Pagination',
+        callback: function () {
+         const activeTab = document.querySelector('.filters_switch.activeWork')?.dataset.tabname;
+         console.log('activeTab',activeTab)
+          switchTab(activeTab);
+        }
+    });
+  });
 </script>
