@@ -1,4 +1,4 @@
-<script src='https://cdn.shopify.com/s/files/1/0382/4185/files/ajaxinate.js?937' async></script>
+<script src='https://cdn.shopify.com/s/files/1/0382/4185/files/ajaxinate.js?937' defer></script>
 {% paginate page.metafields.custom.works.value by 49 %}
 <section class="work" data-ajax-parent>
   <div class="container">
@@ -146,9 +146,9 @@
       document.querySelector('.filters_switch.activeWork')?.classList.remove('activeWork');
       let currentActive = document.querySelector(`#${tabname}`)?.classList.add('activeWork');
 
-      {% comment %} allcards.forEach(c => {
+      allcards.forEach(c => {
         c.style.display = "none";
-      }); {% endcomment %}
+      });
 
       let show = ul.querySelectorAll(`.${tabname}`);
       console.log('show.length', show.length);
@@ -166,17 +166,17 @@
       } {% endcomment %}
 
       show.forEach(c => {
-          console.log(c)
+          {% comment %} console.log(c) {% endcomment %}
            c.style.display = "block";
           
       });
-      div.forEach( (r)=>{
+      {% comment %} div.forEach( (r)=>{
         if(!r.classList.contains(`${tabname}`)){
           console.log('`${tabname}`',!r.classList.contains(`${tabname}`));
           r.style.display = "none";
         }
         
-      })
+      }) {% endcomment %}
 
      console.log('tabname',tabname);
 
@@ -188,7 +188,7 @@
         pagination: '#magepow-Pagination',
         callback: function () {
          const activeTab = document.querySelector('.filters_switch.activeWork')?.dataset.tabname;
-         console.log('activeTab',activeTab)
+         {% comment %} console.log('activeTab',activeTab) {% endcomment %}
           switchTab(activeTab);
         }
     });
