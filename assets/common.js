@@ -1102,8 +1102,8 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
   //plus page contact us
-    // let plusBtn = document.querySelector(".plus-btn-main");
-    // plusBtn.addEventListener("click", InitializeSlider);
+    let plusBtn = document.querySelector(".plus-btn-main");
+    plusBtn.addEventListener("click", InitializeSlider);
       
     //plus page contact us
     let plusBtnnext = document.querySelector(".plus-btn");

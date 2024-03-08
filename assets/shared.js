@@ -78,6 +78,7 @@ function create_each_block_1(ctx) {
 	let t0_value = /*tab*/ ctx[16].replace("_", " ").replace("(", " ").replace(")", " ") + "";
 	let t0;
 	let t1;
+	let a_class_value;
 	let a_id_value;
 	let a_data_tabname_value;
 	let mounted;
@@ -92,7 +93,11 @@ function create_each_block_1(ctx) {
 			a = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("a");
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", "filters_switch");
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", a_class_value = "filters_switch " + (/*tab*/ ctx[16] == /*selectedTab*/ ctx[0]
+			? "activeWork"
+			: ''));
+
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "id", a_id_value = /*tab*/ ctx[16]);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "data-tabname", a_data_tabname_value = /*tab*/ ctx[16]);
 		},
@@ -108,13 +113,19 @@ function create_each_block_1(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*tabs*/ 1 && t0_value !== (t0_value = /*tab*/ ctx[16].replace("_", " ").replace("(", " ").replace(")", " ") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*tabs*/ 2 && t0_value !== (t0_value = /*tab*/ ctx[16].replace("_", " ").replace("(", " ").replace(")", " ") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
 
-			if (dirty & /*tabs*/ 1 && a_id_value !== (a_id_value = /*tab*/ ctx[16])) {
+			if (dirty & /*tabs, selectedTab*/ 3 && a_class_value !== (a_class_value = "filters_switch " + (/*tab*/ ctx[16] == /*selectedTab*/ ctx[0]
+			? "activeWork"
+			: ''))) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", a_class_value);
+			}
+
+			if (dirty & /*tabs*/ 2 && a_id_value !== (a_id_value = /*tab*/ ctx[16])) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "id", a_id_value);
 			}
 
-			if (dirty & /*tabs*/ 1 && a_data_tabname_value !== (a_data_tabname_value = /*tab*/ ctx[16])) {
+			if (dirty & /*tabs*/ 2 && a_data_tabname_value !== (a_data_tabname_value = /*tab*/ ctx[16])) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "data-tabname", a_data_tabname_value);
 			}
 		},
@@ -216,7 +227,7 @@ function create_if_block_5(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(a, div);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*renderedProducts*/ 2 && a_href_value !== (a_href_value = /*block*/ ctx[13].link)) {
+			if (dirty & /*renderedProducts*/ 4 && a_href_value !== (a_href_value = /*block*/ ctx[13].link)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "href", a_href_value);
 			}
 		},
@@ -228,7 +239,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (145:16) {#if block.make_it_as_coming_soon }
+// (145:16) {#if block.make_it_as_coming_soon == "true" }
 function create_if_block_3(ctx) {
 	let div1;
 
@@ -272,7 +283,7 @@ function create_else_block(ctx) {
 			if (if_block) if_block.m(p, null);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*renderedProducts*/ 2 && t0_value !== (t0_value = /*block*/ ctx[13].brand_name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*renderedProducts*/ 4 && t0_value !== (t0_value = /*block*/ ctx[13].brand_name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
 
 			if (/*block*/ ctx[13].link) {
 				if (if_block) {
@@ -297,7 +308,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (151:18) {#if block.show_logo_insted_of_text }
+// (151:18) {#if block.show_logo_insted_of_text == "true" }
 function create_if_block(ctx) {
 	let div;
 	let img;
@@ -322,7 +333,7 @@ function create_if_block(ctx) {
 			if (if_block) if_block.m(div, null);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*renderedProducts*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = " " + /*block*/ ctx[13].brand_logo + "  ")) {
+			if (dirty & /*renderedProducts*/ 4 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = " " + /*block*/ ctx[13].brand_logo + "  ")) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
@@ -356,7 +367,7 @@ function create_if_block_2(ctx) {
 	return {
 		c() {
 			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = ``;
+			span.innerHTML = `<img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Mediamodifier-Design.svg?v=1709880488" alt=""/>`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "work_hover_arrow");
 		},
 		m(target, anchor) {
@@ -377,7 +388,7 @@ function create_if_block_1(ctx) {
 	return {
 		c() {
 			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = ``;
+			span.innerHTML = `<img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Mediamodifier-Design.svg?v=1709880488" alt=""/>`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "work_hover_arrow");
 		},
 		m(target, anchor) {
@@ -402,7 +413,7 @@ function create_each_block(ctx) {
 	let t0;
 	let div0;
 	let html_tag;
-	let raw_value = /*block*/ ctx[13].work_information.replace(' ', '  &bull; ') + "";
+	let raw_value = /*block*/ ctx[13].work_information.replaceAll(' ', '  &bull; ') + "";
 	let t1;
 	let h6;
 	let t2_value = /*block*/ ctx[13].brand_info + "";
@@ -414,11 +425,12 @@ function create_each_block(ctx) {
 	let t6;
 	let a_href_value;
 	let a_class_value;
+	let a_target_value;
 	let if_block0 = /*block*/ ctx[13].show_button && create_if_block_4(ctx);
-	let if_block1 = /*block*/ ctx[13].make_it_as_coming_soon && create_if_block_3(ctx);
+	let if_block1 = /*block*/ ctx[13].make_it_as_coming_soon == "true" && create_if_block_3(ctx);
 
 	function select_block_type_1(ctx, dirty) {
-		if (/*block*/ ctx[13].show_logo_insted_of_text) return create_if_block;
+		if (/*block*/ ctx[13].show_logo_insted_of_text == "true") return create_if_block;
 		return create_else_block;
 	}
 
@@ -457,8 +469,11 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "img-container");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "ourWork__cardBody");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "href", a_href_value = /*block*/ ctx[13].link);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "target", "_blank");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", a_class_value = "ourWork__card workpage__card " + /*block*/ ctx[13].tag);
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "target", a_target_value = /*block*/ ctx[13].open_in_new_tab == "true"
+			? "__blank"
+			: '');
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, a, anchor);
@@ -482,12 +497,12 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(a, t6);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*renderedProducts*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*block*/ ctx[13].image)) {
+			if (dirty & /*renderedProducts*/ 4 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*block*/ ctx[13].image)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
-			if (dirty & /*renderedProducts*/ 2 && raw_value !== (raw_value = /*block*/ ctx[13].work_information.replace(' ', '  &bull; ') + "")) html_tag.p(raw_value);
-			if (dirty & /*renderedProducts*/ 2 && t2_value !== (t2_value = /*block*/ ctx[13].brand_info + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*renderedProducts*/ 4 && raw_value !== (raw_value = /*block*/ ctx[13].work_information.replaceAll(' ', '  &bull; ') + "")) html_tag.p(raw_value);
+			if (dirty & /*renderedProducts*/ 4 && t2_value !== (t2_value = /*block*/ ctx[13].brand_info + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 
 			if (/*block*/ ctx[13].show_button) {
 				if (if_block0) {
@@ -502,7 +517,7 @@ function create_each_block(ctx) {
 				if_block0 = null;
 			}
 
-			if (/*block*/ ctx[13].make_it_as_coming_soon) {
+			if (/*block*/ ctx[13].make_it_as_coming_soon == "true") {
 				if (if_block1) {
 					
 				} else {
@@ -527,12 +542,18 @@ function create_each_block(ctx) {
 				}
 			}
 
-			if (dirty & /*renderedProducts*/ 2 && a_href_value !== (a_href_value = /*block*/ ctx[13].link)) {
+			if (dirty & /*renderedProducts*/ 4 && a_href_value !== (a_href_value = /*block*/ ctx[13].link)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "href", a_href_value);
 			}
 
-			if (dirty & /*renderedProducts*/ 2 && a_class_value !== (a_class_value = "ourWork__card workpage__card " + /*block*/ ctx[13].tag)) {
+			if (dirty & /*renderedProducts*/ 4 && a_class_value !== (a_class_value = "ourWork__card workpage__card " + /*block*/ ctx[13].tag)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "class", a_class_value);
+			}
+
+			if (dirty & /*renderedProducts*/ 4 && a_target_value !== (a_target_value = /*block*/ ctx[13].open_in_new_tab == "true"
+			? "__blank"
+			: '')) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(a, "target", a_target_value);
 			}
 		},
 		d(detaching) {
@@ -554,14 +575,14 @@ function create_fragment(ctx) {
 	let div3;
 	let div2;
 	let ul;
-	let each_value_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*tabs*/ ctx[0]);
+	let each_value_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*tabs*/ ctx[1]);
 	let each_blocks_1 = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
 	}
 
-	let each_value = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*renderedProducts*/ ctx[1]);
+	let each_value = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*renderedProducts*/ ctx[2]);
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -614,8 +635,8 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*tabs, handleTabSelect*/ 5) {
-				each_value_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*tabs*/ ctx[0]);
+			if (dirty & /*tabs, selectedTab, handleTabSelect*/ 11) {
+				each_value_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*tabs*/ ctx[1]);
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -637,8 +658,8 @@ function create_fragment(ctx) {
 				each_blocks_1.length = each_value_1.length;
 			}
 
-			if (dirty & /*renderedProducts*/ 2) {
-				each_value = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*renderedProducts*/ ctx[1]);
+			if (dirty & /*renderedProducts*/ 4) {
+				each_value = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.ensure_array_like)(/*renderedProducts*/ ctx[2]);
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -684,19 +705,19 @@ function instance($$self, $$props, $$invalidate) {
 
 	const updateSelectedTab = () => {
 		if (hasAllProductLoaded) {
-			$$invalidate(3, selectedTab = tabs[0]);
+			$$invalidate(0, selectedTab = tabs[0]);
 		}
 	};
 
 	const handleTabSelect = tab => {
-		$$invalidate(3, selectedTab = tab);
+		$$invalidate(0, selectedTab = tab);
 	};
 
 	const getFilteredProduct = () => {
 		if (selectedTab == "All Work") {
-			$$invalidate(1, renderedProducts = products);
+			$$invalidate(2, renderedProducts = products);
 		} else {
-			$$invalidate(1, renderedProducts = products.filter(item => {
+			$$invalidate(2, renderedProducts = products.filter(item => {
 				if (item.tag.includes(selectedTab)) {
 					return item;
 				}
@@ -716,7 +737,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const setTabs = tabData => {
-		$$invalidate(0, tabs = [...tabData]);
+		$$invalidate(1, tabs = [...tabData]);
 	};
 
 	const getAndSetDataFromApi = async () => {
@@ -754,16 +775,16 @@ function instance($$self, $$props, $$invalidate) {
 			$: (hasAllProductLoaded, updateSelectedTab());
 		}
 
-		if ($$self.$$.dirty & /*selectedTab*/ 8) {
+		if ($$self.$$.dirty & /*selectedTab*/ 1) {
 			$: (selectedTab, getFilteredProduct());
 		}
 	};
 
 	return [
+		selectedTab,
 		tabs,
 		renderedProducts,
 		handleTabSelect,
-		selectedTab,
 		hasAllProductLoaded,
 		click_handler
 	];

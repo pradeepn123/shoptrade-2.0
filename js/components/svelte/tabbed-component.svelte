@@ -81,7 +81,7 @@
     <div class="filters_card_child">
         {#each tabs as tab}
             <a
-                class="filters_switch"
+                class="filters_switch { tab == selectedTab ? "activeWork" : ''}"
                 id={tab}
                 data-tabname={tab}
                 on:click={() => {
@@ -99,15 +99,15 @@
         {#each renderedProducts as block }
         <a
             href="{block.link}"
-            target="_blank"
             class="ourWork__card workpage__card {block.tag}"
+            target = { block.open_in_new_tab == "true" ? "__blank" : ''}
             >
             <div class="ourWork__cardBody">
               <div class="img-container">
                 <div id="work-img-wrp" class="img-wrp">
                   <img class="thumb-img" src="{block.image}">
                   <div class="workOn-hover--info">
-                    {@html (block.work_information).replace( ' ', '  &bull; ')}
+                    {@html (block.work_information).replaceAll( ' ', '  &bull; ')}
                     <h6 class="work_info_author">
                       {block.brand_info}
                     </h6>
@@ -142,18 +142,18 @@
                     </div>
                   {/if}
                 </div>
-                {#if block.make_it_as_coming_soon }
+                {#if block.make_it_as_coming_soon == "true" }
                   <div class="coming-soon-parent">
                     <div class="coming-soon-peoject">Coming Soon</div>
                   </div>
                 {/if}
                 <div class="work-logo-footer ">
-                  {#if block.show_logo_insted_of_text }
+                  {#if block.show_logo_insted_of_text == "true" } 
                     <div class="work-logo-footer__imgWrp">
                       <img class=" brandLogo" src=" { block.brand_logo}  ">
                       {#if block.link }
                         <span class="work_hover_arrow">
-                          <!-- {% render 'arrow-icon' %} -->
+                          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Mediamodifier-Design.svg?v=1709880488" alt="">
                         </span>
                       {/if}
                     </div>
@@ -163,10 +163,10 @@
            
                     >
                     <!-- {#if block.link %}work--cur-notAllow {/if} -->
-                      { block.brand_name }
+                      { block.brand_name  }
                       {#if block.link }
                         <span class="work_hover_arrow">
-                          <!-- {% render 'arrow-icon' %} -->
+                          <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Mediamodifier-Design.svg?v=1709880488" alt="">
                         </span>
                       {/if}
                     </p>
@@ -176,21 +176,6 @@
             </div>
           </a>
         {/each} 
- 
-         <!-- {#each block as renderedProducts }
-          <a
-          {% if block.make_it_as_coming_soon == false %}
-          href="{{ block.link }}"
-          {% endif %}
-          {% if block.open_in_new_tab %}
-          target="_blank"
-          {% endif %}
-          class="ourWork__card workpage__card {{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', '' }}"
-          data-work-card="{{ block.tag | replace: '(', '' | replace: ')', '' | replace: '/', ''  }}"
-          >
-     
-            </a>
-          {/each} -->
         </ul>
       </div>
     </div>

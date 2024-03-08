@@ -1608,10 +1608,10 @@ body.overflow-hidden {
   flex-direction: column;
   flex: 1;
 }
-.ourWork__cardBody:hover .work_hover_arrow svg {
+.ourWork__cardBody:hover .work_hover_arrow img {
   opacity: 1;
 }
-.ourWork__cardBody .work_hover_arrow svg {
+.ourWork__cardBody .work_hover_arrow img {
   width: 32px;
   height: 20px;
   opacity: 0;
