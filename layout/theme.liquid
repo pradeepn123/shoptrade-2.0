@@ -442,7 +442,11 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script src="{{ 'vendors.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'shared.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'section.js' | asset_url }}" defer="defer"></script>
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21154059.js"></script>
     <!-- End of HubSpot Embed Code -->

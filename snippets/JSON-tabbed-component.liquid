@@ -1,0 +1,22 @@
+{
+    "products": [
+        {% paginate page.metafields.custom.works.value by 49 %}
+            {%  for work in page.metafields.custom.works.value  %}
+                {%  unless forloop.first %},{% endunless %}
+                    {
+                        "brand_info": "{{work.brand_info}}",
+                        "brand_logo": "{{work.brand_logo | image_url}}",
+                        "brand_name": "{{work.brand_name}}",
+                        "image": "{{work.image | image_url}}",
+                        "link":"{{work.link}}",
+                        "make_it_as_coming_soon": "{{work.make_it_as_coming_soon}}",
+                        "open_in_new_tab": "{{work.open_in_new_tab}}",
+                        "show_logo_insted_of_text": "{{work.show_logo_insted_of_text}}",
+                        "tag": {{work.tag | json}},
+                        "work_information": "{{work.work_information}}"
+                    }
+            {%  endfor %}
+        {%  endpaginate %} 
+    ],
+    "tabs": {{ page.metafields.custom.work_card_tab.value | json }}
+}

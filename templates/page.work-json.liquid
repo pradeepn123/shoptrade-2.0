@@ -1,20 +1,18 @@
 {%- layout none -%}
-{% assign unique_tags = page.metafields.custom.works.value | map: 'tag' | uniq %}
+
 {
-    "tags": {{ unique_tags | json}},
     "paginate": 
     {% paginate page.metafields.custom.works.value by 49 %}
-      {% comment %} {{ paginate .parts | map: 'url' | json }} {% endcomment %}
+
       [
       {%  for links in paginate.parts %}
-         {% if forloop.first %} 
-           "/pages/work?view=work-json"
-           {%  else  %}
-           , {{ links.url | json }}
-        {%  endif %}
+          {% unless forloop.first %} 
+            ,{%  endunless %}
+             {{ links.url | json }}
       {%  endfor %}
     ]
-    {%  endpaginate %} 
+    {%  endpaginate %} ,
+    "data": {%  render 'JSON-tabbed-component' %}
 }
 
 

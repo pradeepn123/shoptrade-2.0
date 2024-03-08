@@ -20,7 +20,9 @@
 /* harmony import */ var lazysizes_plugins_bgset_ls_bgset__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lazysizes_plugins_bgset_ls_bgset__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var lazysizes_plugins_respimg_ls_respimg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lazysizes/plugins/respimg/ls.respimg */ "./node_modules/lazysizes/plugins/respimg/ls.respimg.js");
 /* harmony import */ var lazysizes_plugins_respimg_ls_respimg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lazysizes_plugins_respimg_ls_respimg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _tabbed_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./tabbed-component */ "./js/sections/tabbed-component.js");
 //global imports here
+
 
 
 
@@ -30,7 +32,28 @@
 //lazyload image dependencies
 (lazysizes__WEBPACK_IMPORTED_MODULE_0___default().cfg).loadMode = 1; //init lazyload
 
-document.addEventListener('DOMContentLoaded', () => {});
+document.addEventListener('DOMContentLoaded', () => {
+  (0,_tabbed_component__WEBPACK_IMPORTED_MODULE_6__["default"])();
+});
+
+/***/ }),
+
+/***/ "./js/sections/tabbed-component.js":
+/*!*****************************************!*\
+  !*** ./js/sections/tabbed-component.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var JsComponents_svelte_wrapper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! JsComponents/svelte-wrapper */ "./js/components/svelte-wrapper.js");
+/* harmony import */ var SvelteComponents_tabbed_component_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! SvelteComponents/tabbed-component.svelte */ "./js/components/svelte/tabbed-component.svelte");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  (0,JsComponents_svelte_wrapper__WEBPACK_IMPORTED_MODULE_0__["default"])(SvelteComponents_tabbed_component_svelte__WEBPACK_IMPORTED_MODULE_1__["default"], 'tabbed-component', '');
+});
 
 /***/ })
 
@@ -195,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {});
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors"], () => (__webpack_require__("./js/sections/global.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors","shared"], () => (__webpack_require__("./js/sections/global.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
