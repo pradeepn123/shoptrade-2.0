@@ -788,7 +788,7 @@ $(document).ready(function () {
   setTimeout(function () {
     $(".backdrop").hide();
     $("body").css("overflow", "auto");
-  }, 1);
+  }, 4000);
 });
 //
 
