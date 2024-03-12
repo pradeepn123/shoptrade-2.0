@@ -1,2 +1,7 @@
-package-lock.json
+.babelrc
+./*.js
+sampleenv
 package.json
+package-lock.json
+./scss
+./js

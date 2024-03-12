@@ -1103,19 +1103,19 @@ document.addEventListener('DOMContentLoaded', function(){
 
   //plus page contact us
     let plusBtn = document.querySelector(".plus-btn-main");
-    plusBtn.addEventListener("click", InitializeSlider);
+    plusBtn?.addEventListener("click", InitializeSlider);
       
     //plus page contact us
     let plusBtnnext = document.querySelector(".plus-btn");
-    plusBtnnext.addEventListener("click", InitializeSlider);
+    plusBtnnext?.addEventListener("click", InitializeSlider);
 
     // lets-talk-btn
     let letsTalkBtn = document.querySelector(".lets-talk-btn");
-    letsTalkBtn.addEventListener("click", InitializeSlider);
+    letsTalkBtn?.addEventListener("click", InitializeSlider);
 
     //quick services 
     let quickService = document.querySelector("a.quick-services__block-link.link-1");
-    quickService.addEventListener("click", InitializeSlider);
+    quickService?.addEventListener("click", InitializeSlider);
   
 });
 });

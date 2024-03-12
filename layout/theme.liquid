@@ -58,6 +58,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global-events.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
 
     {%- liquid
@@ -369,11 +370,13 @@
   </head>
 
   <body class="gradient">
-    <div class="backdrop">
-      <div class="loader">
-        <span></span>
-      </div>
-    </div> 
+    {% unless template == "page.work-1" %}
+      <div class="backdrop">
+        <div class="loader">
+          <span></span>
+        </div>
+      </div> 
+    {% endunless %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -442,6 +445,11 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <script src="{{ 'vendors.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'shared.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'section.js' | asset_url }}" defer="defer"></script>
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21154059.js"></script>
     <!-- End of HubSpot Embed Code -->
