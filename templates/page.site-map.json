@@ -39,7 +39,7 @@
           "type": "sitelink",
           "settings": {
             "siteName": "Blogs",
-            "siteUrl": "shopify:\/\/blogs\/insights",
+            "siteUrl": "shopify:\/\/pages\/commerce-insights",
             "siteSublinks": "<ul class=\"site-list\">\n                    <li class=\"site-list__item\">\n                        <a href=\"https:\/\/shoptrade.co\/pages\/commerce-insights\">Shopify Markets: A Comprehensive Guide<\/a>\n                    <\/li>\n<\/ul>"
           }
         },
