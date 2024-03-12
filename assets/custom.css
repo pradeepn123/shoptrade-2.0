@@ -147,7 +147,7 @@ body {
 }
 @media (max-width: 320px) {
   .h1-main {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -526,6 +526,13 @@ input::-moz-placeholder {
   font-size: 24px;
   line-height: 34px;
   color: var(--COLOR-BLACK);
+  word-wrap: break-word;
+}
+@media(max-width: 768px){
+  .terms-condition p {
+  font-size: 16px;
+  line-height: 1.6;
+  }
 }
 .terms-condition p a {
   color: #000000;
@@ -1607,6 +1614,14 @@ body.overflow-hidden {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+.ourWork__cardBody:hover .work_hover_arrow svg {
+  opacity: 1;
+}
+.ourWork__cardBody .work_hover_arrow svg {
+  width: 32px;
+  height: 20px;
+  opacity: 0;
 }
 .ourWork__cardBody:hover .work_hover_arrow img {
   opacity: 1;
