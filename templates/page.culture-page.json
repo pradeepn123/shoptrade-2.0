@@ -484,69 +484,113 @@
         "hide_block_if": false
       }
     },
-    "text_columns_images_QFBMwy": {
-      "type": "text-columns-images",
+    "promotion_blocks_HCAVU9": {
+      "type": "promotion-blocks",
       "blocks": {
-        "image_DUxbLk": {
-          "type": "image",
+        "card_8DWgGw": {
+          "type": "card",
           "settings": {
-            "media_shape": "9999px 9999px 9999px 9999px",
-            "title": "Shipping",
-            "caption": "<p>Useful information about your shipping details.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
+            "image": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": true,
+            "hide_media": false,
+            "title": "",
+            "subtitle": "",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
             "target": false,
             "seo_h_tag": "h3"
           }
         },
-        "image_KxUffT": {
-          "type": "image",
+        "card_K3r7Ke": {
+          "type": "card",
           "settings": {
-            "media_shape": "9999px 9999px 9999px 9999px",
-            "title": "Returns",
-            "caption": "<p>Show how much time customers have for testing your products.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Mohammadu Mifras",
+            "subtitle": "FOUNDER & CEO\n\nMifras is a young entrepreneur with a deep understanding of Commerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
             "target": false,
             "seo_h_tag": "h3"
           }
         },
-        "image_Wybcfr": {
-          "type": "image",
+        "card_pViLtP": {
+          "type": "card",
           "settings": {
-            "media_shape": "9999px 9999px 9999px 9999px",
-            "title": "Pickup",
-            "caption": "<p>Let your customers know about local pickup.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
+            "image": "shopify:\/\/shop_images\/Deekshith.jpg",
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": true,
+            "hide_media": false,
+            "title": "",
+            "subtitle": "",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_f3xNbW": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Deekshith K Suvarna",
+            "subtitle": "DIRECTOR (INDIA) | HEAD OF DESIGN\n\nDeekshith is an accomplished professional with over 9+ years of experience in the field of Design,  Branding, Graphic Design, UX, UI and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.",
+            "text_color_scheme": "scheme_1",
+            "button_label": "",
+            "button_link": "",
             "target": false,
             "seo_h_tag": "h3"
           }
         }
       },
       "block_order": [
-        "image_DUxbLk",
-        "image_KxUffT",
-        "image_Wybcfr"
+        "card_8DWgGw",
+        "card_K3r7Ke",
+        "card_pViLtP",
+        "card_f3xNbW"
       ],
       "settings": {
         "heading": "Say Hello to the leaders",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "layout_desktop": "grid-3 grid-lap-2",
+        "layout_desktop": "grid-4 grid-lap-3",
+        "layout_mobile": "grid-palm-1",
         "style": "grid",
         "image_aspect_ratio": "1",
-        "title_text_font": "text-font--headings",
-        "title_text_size": "text-size--20",
-        "title_text_weight": true,
-        "subtitle_text_font": "text-font--body",
-        "subtitle_text_size": "text-size--18",
-        "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "",
+        "alignment": "horizontal-left align-content--vertical-top",
+        "width": "100",
+        "title_font": "text-font--headings",
+        "title_size": "text-size--40",
+        "mobile_text_size": "1",
+        "subtitle_size": "text-size--18",
+        "spacing": 12,
+        "gutter": "grid-padding",
+        "button_style": "outline",
+        "button_size": "button--regular",
+        "button_hover": "-arrow",
+        "cta_label": "",
+        "cta_url": "",
+        "color_scheme": "scheme4",
         "disable_section_bottom_border": false,
         "disable_border": false,
         "remove_border_radius": false,
-        "remove_padding": false
+        "remove_padding": false,
+        "hide_block_if": false
       }
     }
   },
@@ -558,6 +602,6 @@
     "promotion_blocks_jTkEbT",
     "video_Mx63EX",
     "promotion_blocks_RcyXUR",
-    "text_columns_images_QFBMwy"
+    "promotion_blocks_HCAVU9"
   ]
 }
