@@ -483,6 +483,71 @@
         "remove_padding": false,
         "hide_block_if": false
       }
+    },
+    "text_columns_images_QFBMwy": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_DUxbLk": {
+          "type": "image",
+          "settings": {
+            "media_shape": "9999px 9999px 9999px 9999px",
+            "title": "Shipping",
+            "caption": "<p>Useful information about your shipping details.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_KxUffT": {
+          "type": "image",
+          "settings": {
+            "media_shape": "9999px 9999px 9999px 9999px",
+            "title": "Returns",
+            "caption": "<p>Show how much time customers have for testing your products.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_Wybcfr": {
+          "type": "image",
+          "settings": {
+            "media_shape": "9999px 9999px 9999px 9999px",
+            "title": "Pickup",
+            "caption": "<p>Let your customers know about local pickup.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_DUxbLk",
+        "image_KxUffT",
+        "image_Wybcfr"
+      ],
+      "settings": {
+        "heading": "Say Hello to the leaders",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1",
+        "title_text_font": "text-font--headings",
+        "title_text_size": "text-size--20",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
     }
   },
   "order": [
@@ -492,6 +557,7 @@
     "vertical_slider_BxeYTt",
     "promotion_blocks_jTkEbT",
     "video_Mx63EX",
-    "promotion_blocks_RcyXUR"
+    "promotion_blocks_RcyXUR",
+    "text_columns_images_QFBMwy"
   ]
 }
