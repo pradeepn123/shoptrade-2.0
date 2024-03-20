@@ -202,12 +202,31 @@
             "seo_h_tag_title": "h2",
             "seo_h_tag_subtitle": "span"
           }
+        },
+        "slide_JHUYfP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5K8A6461.jpg",
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "hide_media": false,
+            "title": "",
+            "subtitle": "",
+            "text_color_scheme": "scheme2",
+            "text_blending": "normal",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag_title": "h2",
+            "seo_h_tag_subtitle": "span"
+          }
         }
       },
       "block_order": [
         "slide_dhnwEM",
         "slide_ir8pwC",
-        "slide_6xRNPz"
+        "slide_6xRNPz",
+        "slide_JHUYfP"
       ],
       "settings": {
         "image_aspect_ratio_desktop": "1.77777",
@@ -236,12 +255,120 @@
         "remove_zoom": false,
         "remove_prlx": false
       }
+    },
+    "promotion_blocks_jTkEbT": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "card_rKyzdR": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "5+ Years",
+            "subtitle": "We’re young, but with 5+ years' worth of domain experience, we’re here to help you get to the next stage.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_iHffHN": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "100% Success",
+            "subtitle": "It’s not always easy, but no matter what, we deliver. It’s our mission to go above and beyond for our clients.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_bBkpQ6": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "200+ Projects",
+            "subtitle": "Successfully delivered 200+ projects so far. Always on the lookout for the next one.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_8wMnnC": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "95% Retention",
+            "subtitle": "We're treating every client as the first one. That's why most of them stick with us.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "card_rKyzdR",
+        "card_iHffHN",
+        "card_bBkpQ6",
+        "card_8wMnnC"
+      ],
+      "settings": {
+        "heading": "Our Numbers",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-4 grid-lap-3",
+        "layout_mobile": "grid-palm-1",
+        "style": "grid",
+        "image_aspect_ratio": "1",
+        "alignment": "horizontal-left align-content--vertical-middle",
+        "width": "100",
+        "title_font": "text-font--headings",
+        "title_size": "text-size--100",
+        "mobile_text_size": "1",
+        "subtitle_size": "text-size--18",
+        "spacing": 12,
+        "gutter": "grid-padding",
+        "button_style": "outline",
+        "button_size": "button--regular",
+        "button_hover": "-arrow",
+        "cta_label": "",
+        "cta_url": "",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "hide_block_if": false
+      }
     }
   },
   "order": [
     "main",
     "rich_text_jnBDC4",
     "promotion_blocks_mLNkjm",
-    "vertical_slider_BxeYTt"
+    "vertical_slider_BxeYTt",
+    "promotion_blocks_jTkEbT"
   ]
 }
