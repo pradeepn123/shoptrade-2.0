@@ -1,23 +1,17 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
+{%- render 'page-heading', title: 'general.404.title', title_is_translation: true -%}
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
-
-<div class="template-404 page_width page-margin center">
-  <p>
-    {{ 'templates.404.subtext' | t }}
-  </p>
-  <h1 class="title">
-    {{ 'templates.404.title' | t }}
-  </h1>
-  <a href="/" class="btn">
-    {{ 'general.continue_shopping' | t }}
-  </a>
+<div class="gutter-horiz--regular gutter-top--regular gutter-bottom--regular">
+  <div class="rte">
+    <p>{{ 'general.404.subtitle' | t }}</p>
+  </div>
+  <a style="margin-top:1em" href="{{ routes.all_products_collection_url }}" class="button button--solid--hover-accent"><span class="button__text">{{ 'general.404.continue_browsing' | t }}</span></a>
 </div>
+
+{%- render 'color-scheme', color_scheme: blank, hide_section_bottom_border: false -%}
+
+{% schema %}
+  {
+    "name": "t:sections.main-404.name",
+    "class": "element--has-section-borders"
+  }
+{% endschema %}

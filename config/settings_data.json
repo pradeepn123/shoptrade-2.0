@@ -1,162 +1,496 @@
 {
   "current": {
-    "colors_accent_2": "#ff7121",
-    "social_facebook_link": "https:\/\/www.facebook.com\/shoptradeco",
-    "social_instagram_link": "https:\/\/www.instagram.com\/shoptrade.co\/",
-    "social_linkedIn_link": "https:\/\/www.linkedin.com\/company\/shoptrade\/",
-    "favicon": "shopify:\/\/shop_images\/Fevicon_T.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_81a582d3-6db5-41d4-a66d-ea63923f6e9a.png",
-    "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
-    "checkout_accent_color": "#3a4ed4",
-    "checkout_button_color": "#3a4ed4",
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "logo-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo.svg?v=1668161224",
-          "logombile-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/shoptrade-logo-mbl.svg?v=1668161454",
-          "menu": "main-menu",
-          "button_1_text": "CRO Audit",
-          "button_1_url": "shopify:\/\/pages\/cro-audit-for-ecommerce-brands",
-          "button_2_text": "Contact Us",
-          "button_2_url": "#contact-us"
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "bf493e11-c07c-47f5-99a0-9060a649d427": {
-            "type": "work",
-            "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/meeting_icon.svg",
-              "workText": "Book a Meeting",
-              "togetherlink": "https:\/\/meetings.hubspot.com\/shoptrade\/us"
-            }
-          },
-          "db12f8d7-c1d9-40f1-ba95-87a17f614c3a": {
-            "type": "work",
-            "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/phone_icon.svg",
-              "workText": "+1 844 583 0025",
-              "togetherlink": "tel:+1 844 583 0025"
-            }
-          },
-          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9": {
-            "type": "work",
-            "settings": {
-              "workImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/mail_icon.svg",
-              "workText": "hello@shoptrade.co",
-              "togetherlink": "mailto:hello@shoptrade.co"
-            }
-          },
-          "541cd2b6-c97b-4993-a6a5-8321cb74334f": {
-            "type": "office",
-            "settings": {
-              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/hq_footer_icon.svg",
-              "officeText": "ShopTrade, LLC 1228 E 7th Ave Suite 200, Tampa, FL 33605, United States"
-            }
-          },
-          "033f647e-512b-4664-a49e-971590198d28": {
-            "type": "office",
-            "settings": {
-              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/br_icon.svg",
-              "officeText": "ShopTrade Technologies Private Limited 508 1st Floor, Koramangala, Bengaluru, Karnataka, India - 560095"
-            }
-          },
-          "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a": {
-            "type": "social",
-            "disabled": true,
-            "settings": {
-              "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Facebook_1.svg?v=1668162476",
-              "socailLink": ""
-            }
-          },
-          "add81eb4-0979-4e24-903d-4c12438da9ad": {
-            "type": "social",
-            "disabled": true,
-            "settings": {
-              "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/Instagram_1.svg?v=1668162476",
-              "socailLink": ""
-            }
-          },
-          "e751e079-4ac3-49f4-932e-dae294a34145": {
-            "type": "social",
-            "disabled": true,
-            "settings": {
-              "socialIcons-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/LinkedIn.svg?v=1668162336",
-              "socailLink": ""
-            }
-          },
-          "76ef51ca-0dfb-48ab-88b6-aa546f6dc7eb": {
-            "type": "office",
-            "settings": {
-              "officeImage-svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0662\/5122\/7356\/files\/br_icon.svg",
-              "officeText": "ShopTrade PTE. LTD. 160 Robinson Road, #14-04, Singapore 068914"
-            }
-          }
-        },
-        "block_order": [
-          "bf493e11-c07c-47f5-99a0-9060a649d427",
-          "db12f8d7-c1d9-40f1-ba95-87a17f614c3a",
-          "ebee9700-c7fd-4ae3-9cfc-d1da3ac6bfe9",
-          "541cd2b6-c97b-4993-a6a5-8321cb74334f",
-          "033f647e-512b-4664-a49e-971590198d28",
-          "eac43cc4-fac6-44a4-b8ff-a38b3a3a3c1a",
-          "add81eb4-0979-4e24-903d-4c12438da9ad",
-          "e751e079-4ac3-49f4-932e-dae294a34145",
-          "76ef51ca-0dfb-48ab-88b6-aa546f6dc7eb"
-        ],
-        "settings": {
-          "footerLink": "footer",
-          "footerBottomLink": "footer-bottom"
-        }
-      },
-      "announcement-bar": {
-        "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "<p>Check out our new project <a href=\"https:\/\/shoptrade.co\/\" title=\"https:\/\/shoptrade.co\/\">Heal & Co<\/a><\/p>",
-              "text_alignment": "center",
-              "link": ""
-            }
-          },
-          "ca0b996b-f28a-4499-8c3d-e092cda863b8": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "<p>Welcome to our store<\/p>",
-              "text_alignment": "center",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0",
-          "ca0b996b-f28a-4499-8c3d-e092cda863b8"
-        ],
-        "settings": {
-          "enable_announcement": false,
-          "enable_sticky": false,
-          "text_size": "text-xs",
-          "navigation_mode": "arrows",
-          "scrolling_speed": 15,
-          "background": "#121212",
-          "background_gradient": "",
-          "text_color": "#ffffff"
-        }
-      }
-    },
+    "page_padding_horizontal": 20,
+    "page_padding_vertical": 20,
+    "page_padding_remove_on_mobile": true,
+    "page_boxed_layout": false,
+    "grid_padding": 20,
+    "border_radius_grid": 20,
+    "border_style_container": "solid",
+    "border_width_container": 1,
+    "border_style_grid": "solid",
+    "border_width_grid": 1,
+    "border_padding_horizontal": false,
+    "border_padding_vertical": false,
+    "border_style_sections": "solid",
+    "border_width_sections": 1,
+    "border_padding_sections_horizontal_select": "never",
+    "color_scheme_container": "scheme1",
+    "color_background_body": "#ffffff",
+    "color_scheme_drawers": "scheme4",
+    "headings_font": "dm_sans_n7",
+    "headings_size": 42,
+    "headings_line": 1,
+    "headings_spacing": -1,
+    "body_font": "dm_sans_n4",
+    "body_size": 16,
+    "body_line": 1.5,
+    "section_titles_font": "text-font--headings",
+    "section_titles_size": "text-size--80",
+    "section_titles_mobile_size": "var(--mobile-text-size-large)",
+    "section_titles_line_height": "text-line-height--default",
+    "section_title_bold": false,
+    "section_title_italic": false,
+    "section_titles_padding_top": "large",
+    "section_titles_padding_bottom": "regular",
+    "nav_in_heading": false,
+    "section_footer_button_style": "outline",
+    "section_footer_button_hover": "",
+    "page_transform_uppercase": true,
+    "border_radius_buttons_select": "120",
+    "border_width_buttons": 1,
+    "product_card_aspect_ratio": "0.83333",
+    "product_card_hover": "zoom-in",
+    "product_card_show_secondary_image": false,
+    "product_card_text_transform": false,
+    "product_card_extra_caption_size": "text-size--14",
+    "product_card_disable_border": false,
+    "product_card_remove_padding": false,
+    "product_quick_buy_background_background": "#ffffff",
+    "product_quick_buy_background_text": "#000000",
+    "reviews_badge_desktop": "always",
+    "reviews_badge_color": "#faff5b",
+    "product_card_badge_sale_color": "#ff8900",
+    "cart_action": "no-overlay",
+    "cart_free_shipping": false,
+    "cart_free_shipping_amount": "100",
+    "gift_wrap_product": "gift-wrapping",
+    "cart_notes_enable": false,
+    "image_loading": "pixelate",
+    "image_links_hover": "zoom-in",
+    "text_underline": "text",
+    "card_hover": "none",
+    "parallax_effects": false,
+    "zoom_effects": false,
+    "social_behance": "https:\/\/www.behance.net\/shoptrade-design",
+    "social_email": "",
+    "social_phone": "",
+    "social_facebook": "",
+    "social_instagram": "https:\/\/www.instagram.com\/shoptrade.co\/",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/shoptrade\/",
+    "product_card_remove_border_radius": false,
+    "product_card_custom_padding": 20,
+    "cart_upsell_heading": "PROMOTION",
+    "cart_upsell_product": "loose-t-shirt-3",
+    "product_card_aspect_ratio_fit": false,
+    "proudct_card_aspect_ratio_padding": 10,
+    "product_card_background": "rgba(0,0,0,0)",
+    "border_padding_sections_horizontal": false,
+    "page_padding": 20,
+    "border_radius_container": 0,
+    "border_style_menu": "solid",
+    "border_width_menu": 0,
+    "border_style_drawers": "solid",
+    "border_width_drawers": 1,
+    "border_radius_drawers": 14,
+    "show_gotop": false,
     "content_for_index": [
 
     ],
-    "blocks": {
-      "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": true,
+    "color_schemes": {
+      "scheme1": {
         "settings": {
+          "background": "#ffffff",
+          "borders": "#151515",
+          "text": "#151515",
+          "accent": "#ff7121",
+          "accent_foreground": "#ffffff"
+        }
+      },
+      "scheme2": {
+        "settings": {
+          "background": "#ffffff",
+          "borders": "#3e3e3e",
+          "text": "#ffffff",
+          "accent": "#151515",
+          "accent_foreground": "#ffffff"
+        }
+      },
+      "scheme3": {
+        "settings": {
+          "background": "#151515",
+          "borders": "#4a4a4a",
+          "text": "#f1f1f1",
+          "accent": "#ff7121",
+          "accent_foreground": "#e4e4e4"
+        }
+      },
+      "scheme4": {
+        "settings": {
+          "background": "#f0f0f0",
+          "borders": "#151515",
+          "text": "#000000",
+          "accent": "#151515",
+          "accent_foreground": "#ffffff"
+        }
+      },
+      "scheme5": {
+        "settings": {
+          "background": "#ff7121",
+          "borders": "#fff5f0",
+          "text": "#fff5f0",
+          "accent": "#151515",
+          "accent_foreground": "#ffffff"
+        }
+      },
+      "scheme-43149232-1864-4c89-a4dc-9b552cd96856": {
+        "settings": {
+          "background": "#474747",
+          "borders": "#919191",
+          "text": "#ffffff",
+          "accent": "#ff7121",
+          "accent_foreground": "#ffffff"
+        }
+      },
+      "scheme-943a8e74-d64b-450a-a892-5cee4163084f": {
+        "settings": {
+          "background": "#ff7121",
+          "borders": "#151515",
+          "text": "#151515",
+          "accent": "#ff7121",
+          "accent_foreground": "#ffffff"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Raw": {
+      "page_padding_horizontal": 20,
+      "page_padding_vertical": 20,
+      "page_padding_remove_on_mobile": true,
+      "grid_padding": 20,
+      "border_radius_grid": 30,
+      "border_style_container": "solid",
+      "border_width_container": 1,
+      "border_style_grid": "solid",
+      "border_width_grid": 1,
+      "border_padding_horizontal": false,
+      "border_padding_vertical": false,
+      "border_style_sections": "solid",
+      "border_width_sections": 1,
+      "border_padding_sections_horizontal_select": "never",
+      "color_scheme_container": "scheme1",
+      "color_background_body": "#ffffff",
+      "color_scheme_drawers": "scheme3",
+      "headings_font": "helvetica_n4",
+      "headings_size": 80,
+      "headings_line": 1,
+      "headings_spacing": -1,
+      "body_font": "helvetica_n4",
+      "body_size": 18,
+      "body_line": 1.1,
+      "section_titles_font": "text-font--headings",
+      "section_titles_size": "text-size--30",
+      "section_titles_line_height": "text-line-height--default",
+      "section_title_bold": false,
+      "section_title_italic": false,
+      "section_titles_padding_top": "large",
+      "section_titles_padding_bottom": "regular",
+      "nav_in_heading": false,
+      "page_transform_uppercase": true,
+      "border_width_buttons": 2,
+      "product_card_aspect_ratio": "0.83333",
+      "product_card_hover": "zoom-in",
+      "product_card_show_secondary_image": false,
+      "product_card_text_transform": false,
+      "product_card_extra_caption_size": "text-size--14",
+      "product_card_disable_border": false,
+      "product_card_remove_padding": false,
+      "product_quick_buy_background_background": "#ffffff",
+      "product_quick_buy_background_text": "#000000",
+      "reviews_badge_desktop": "always",
+      "reviews_badge_color": "#faff5b",
+      "product_card_badge_sale_color": "#ff8900",
+      "cart_free_shipping": true,
+      "cart_free_shipping_amount": "100",
+      "gift_wrap_product": "gift-wrapping",
+      "image_loading": "pixelate",
+      "image_links_hover": "zoom-in",
+      "text_underline": "italic",
+      "card_hover": "accent",
+      "parallax_effects": false,
+      "product_card_remove_border_radius": false,
+      "product_card_custom_padding": 20,
+      "cart_upsell_heading": "PROMOTION",
+      "cart_upsell_product": "loose-t-shirt-3",
+      "product_card_aspect_ratio_fit": false,
+      "proudct_card_aspect_ratio_padding": 10,
+      "product_card_background": "rgba(0,0,0,0)",
+      "border_padding_sections_horizontal": false,
+      "page_padding": 20,
+      "border_radius_container": 0,
+      "border_style_menu": "solid",
+      "border_width_menu": 0,
+      "border_style_drawers": "solid",
+      "border_width_drawers": 1,
+      "border_radius_drawers": 14,
+      "show_gotop": false,
+      "content_for_index": [
+
+      ],
+      "color_schemes": {
+        "scheme1": {
+          "settings": {
+            "background": "#ffffff",
+            "borders": "#202020",
+            "text": "#151515",
+            "accent": "#151515",
+            "accent_foreground": "#ffffff"
+          }
+        },
+        "scheme2": {
+          "settings": {
+            "background": "#ffffff",
+            "borders": "#151515",
+            "text": "#ffffff",
+            "accent": "#151515",
+            "accent_foreground": "#ffffff"
+          }
+        },
+        "scheme3": {
+          "settings": {
+            "background": "#151515",
+            "borders": "#3e3e3e",
+            "text": "#f1f1f1",
+            "accent": "#151515",
+            "accent_foreground": "#e4e4e4"
+          }
+        },
+        "scheme4": {
+          "settings": {
+            "background": "#cccccc",
+            "borders": "#151515",
+            "text": "#000000",
+            "accent": "#e4e4e4",
+            "accent_foreground": "#151515"
+          }
+        },
+        "scheme5": {
+          "settings": {
+            "background": "#684934",
+            "borders": "#efefef",
+            "text": "#f5e5bb",
+            "accent": "#151515",
+            "accent_foreground": "#ffffff"
+          }
+        }
+      }
+    },
+    "Objekts": {
+      "page_padding_horizontal": 0,
+      "page_padding_vertical": 0,
+      "page_padding_remove_on_mobile": true,
+      "page_boxed_layout": false,
+      "grid_padding": 50,
+      "border_radius_grid": 30,
+      "border_style_container": "solid",
+      "border_width_container": 0,
+      "border_style_grid": "dotted",
+      "border_width_grid": 1,
+      "border_padding_horizontal": true,
+      "border_padding_vertical": true,
+      "border_style_sections": "solid",
+      "border_width_sections": 2,
+      "border_padding_sections_horizontal_select": "always",
+      "color_background_body": "#f7f7f7",
+      "color_scheme_drawers": "scheme1",
+      "headings_font": "helvetica_n3",
+      "headings_size": 100,
+      "headings_line": 1,
+      "headings_spacing": -1,
+      "body_font": "helvetica_n4",
+      "body_size": 18,
+      "body_line": 1.2,
+      "body_spacing": 0,
+      "section_titles_size": "text-size--100",
+      "section_title_bold": false,
+      "section_title_italic": false,
+      "section_titles_padding_top": "xlarge",
+      "section_titles_padding_bottom": "regular",
+      "nav_in_heading": true,
+      "page_titles_size": "text-size--100",
+      "border_radius_buttons_select": "50",
+      "border_width_buttons": 1,
+      "buttons_transform_uppercase": true,
+      "product_card_aspect_ratio": "0.83333",
+      "product_card_hover": "zoom-in",
+      "product_card_show_secondary_image": true,
+      "product_card_text_alignment": "left",
+      "product_card_text_size": "18",
+      "product_card_text_weight": true,
+      "product_card_text_transform": false,
+      "product_card_disable_border": false,
+      "product_card_remove_padding": false,
+      "product_card_border_radius_grid": 21,
+      "enable_quick_buy": true,
+      "location_quick_buy": "right",
+      "product_quick_buy_background_background": "#191919",
+      "product_quick_buy_background_text": "#f7f7f7",
+      "reviews_badge_desktop": "hover",
+      "product_card_badge_sale_color": "#ff8900",
+      "cart_free_shipping": true,
+      "image_loading": "blur",
+      "text_underline": "text",
+      "link_arrows": false,
+      "card_hover": "none",
+      "padding_padding_horizontal_overlap": false,
+      "product_card_remove_border_radius": true,
+      "product_card_custom_padding": 40,
+      "cart_upsell_product": "yield-6oz-double-wall-glasses",
+      "product_card_aspect_ratio_fit": false,
+      "proudct_card_aspect_ratio_padding": 0,
+      "product_card_background": "rgba(0,0,0,0)",
+      "border_padding_sections_horizontal": true,
+      "page_padding": 0,
+      "border_radius_container": 0,
+      "border_style_menu": "solid",
+      "border_style_drawers": "solid",
+      "border_width_drawers": 1,
+      "border_radius_drawers": 14,
+      "border_radius_buttons": 30,
+      "show_gotop": true,
+      "content_for_index": [
+
+      ],
+      "color_schemes": {
+        "scheme1": {
+          "settings": {
+            "background": "#f7f7f7",
+            "borders": "#000000",
+            "text": "#000000",
+            "accent": "#000000",
+            "accent_foreground": "#f7f7f7"
+          }
+        },
+        "scheme2": {
+          "settings": {
+            "background": "#f7f7f7",
+            "borders": "#000000",
+            "text": "#000000",
+            "accent": "#000000",
+            "accent_foreground": "#f7f7f7"
+          }
+        },
+        "scheme3": {
+          "settings": {
+            "background": "#000000",
+            "borders": "#6c6c6c",
+            "text": "#efefef",
+            "accent": "#f7fc6b",
+            "accent_foreground": "#000000"
+          }
+        },
+        "scheme4": {
+          "settings": {
+            "background": "#f6df73",
+            "borders": "#000000",
+            "text": "#000000",
+            "accent": "#f6df73",
+            "accent_foreground": "#000000"
+          }
+        },
+        "scheme5": {
+          "settings": {
+            "background": "#f7f7f7",
+            "borders": "#000000",
+            "text": "#000000",
+            "accent": "#ffffff",
+            "accent_foreground": "#000000"
+          }
+        }
+      }
+    },
+    "Black": {
+      "grid_padding": 30,
+      "border_radius_grid": 50,
+      "border_style_container": "solid",
+      "border_width_container": 0,
+      "border_style_grid": "solid",
+      "border_style_sections": "solid",
+      "border_padding_sections_horizontal_select": "never",
+      "color_scheme_container": "scheme-5856a5b2-5f82-4acf-88b3-5d90d4422924",
+      "color_background_body": "#292929",
+      "color_scheme_drawers": "scheme-aa6ef783-6c22-466d-b738-fdae0a08f7b0",
+      "headings_font": "goudy_old_style_n4",
+      "headings_size": 80,
+      "headings_spacing": -2,
+      "body_font": "helvetica_n4",
+      "body_size": 16,
+      "body_line": 1.1,
+      "section_titles_font": "text-font--body",
+      "section_titles_size": "text-size--30",
+      "section_title_bold": false,
+      "section_titles_padding_top": "large",
+      "section_titles_padding_bottom": "regular",
+      "page_titles_size": "text-size--40",
+      "border_radius_buttons_select": "120",
+      "border_width_buttons": 2,
+      "buttons_transform_uppercase": true,
+      "product_card_aspect_ratio": "0.83333",
+      "product_card_hover": "zoom-in",
+      "product_grid_image_overlay": "#000000",
+      "product_grid_image_overlay_opacity": 0,
+      "product_card_text_alignment": "center",
+      "product_card_text_size": "18",
+      "product_card_text_transform": false,
+      "product_card_disable_border": false,
+      "product_card_remove_padding": true,
+      "product_quick_buy_background_background": "#d3ec18",
+      "product_quick_buy_background_text": "#000000",
+      "product_card_badge_sale_color": "#ff8900",
+      "image_loading": "pixelate",
+      "text_underline": "italic",
+      "card_hover": "accent",
+      "parallax_effects": false,
+      "product_card_remove_border_radius": false,
+      "content_for_index": [
+
+      ],
+      "color_schemes": {
+        "scheme1": {
+          "settings": {
+            "background": "#101010",
+            "borders": "#494848",
+            "text": "#efefef",
+            "accent": "#efefef",
+            "accent_foreground": "#292929"
+          }
+        },
+        "scheme2": {
+          "settings": {
+            "background": "#101010",
+            "borders": "#494848",
+            "text": "#efefef",
+            "accent": "#d3ec18",
+            "accent_foreground": "#292929"
+          }
+        },
+        "scheme3": {
+          "settings": {
+            "background": "#101010",
+            "borders": "#494848",
+            "text": "#dfdfdf",
+            "accent": "#101010",
+            "accent_foreground": "#d3ec18"
+          }
+        },
+        "scheme4": {
+          "settings": {
+            "background": "#2b2b2b",
+            "borders": "#cfcfcf",
+            "text": "#efefef",
+            "accent": "#efefef",
+            "accent_foreground": "#565656"
+          }
+        },
+        "scheme5": {
+          "settings": {
+            "background": "#d3ec18",
+            "borders": "#a1c92c",
+            "text": "#000000",
+            "accent": "#000000",
+            "accent_foreground": "#d3ec18"
+          }
         }
       }
     }

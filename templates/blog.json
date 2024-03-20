@@ -1,19 +1,21 @@
 {
   "sections": {
-    "blog-banner": {
-      "type": "blog-banner",
+    "main": {
+      "type": "main-blog",
       "settings": {
-        "heading": "Insights"
-      }
-    },
-    "list": {
-      "type": "blog-list",
-      "settings": {
+        "enable_tags": true,
+        "post_limit": 6,
+        "style": "grid",
+        "blog_show_image": true,
+        "media_shape": "none",
+        "show_date": true,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": true
       }
     }
   },
   "order": [
-    "blog-banner",
-    "list"
+    "main"
   ]
 }

@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "text_columns_images_QFrj6U": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_GrTm6x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Solefly.jpg",
+            "media_shape": "none",
+            "title": "Solefly",
+            "caption": "<p>Sneakers and apparel store that is located in South Miami & Cutler Bay. Carrying the most predominant brands in the industry.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_BqzixF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SNS.jpg",
+            "media_shape": "none",
+            "title": "SNS Health",
+            "caption": "<p>Shop online for the finest vitamins and supplements from top brands at SNS Health, in Canada. <\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_k4fGRN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cowboy.jpg",
+            "media_shape": "none",
+            "title": "Cowtown Cowboy Outfitters",
+            "caption": "<p>Shop cowboy boots & hats, western wear, work boots and much more from your favorite authentic western brands.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_rcmiKJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Winerack.jpg",
+            "media_shape": "none",
+            "title": "WineRacks",
+            "caption": "<p>For than more twenty years, WineRacks has been providing residences and businesses alike with custom made wine racks and wine cellars.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_mX3arM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
+            "media_shape": "none",
+            "title": "Hathaspace",
+            "caption": "<p>Air purifiers and air filtration systems for home & office help keep the air inside where you live or work fresh & healthy.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_bMncj9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_melissani.webp",
+            "media_shape": "none",
+            "title": "Melissani",
+            "caption": "<p>Upgrade your home's water quality with Melissani's premium countertop RO water purifiers. <\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_GrTm6x",
+        "image_BqzixF",
+        "image_k4fGRN",
+        "image_rcmiKJ",
+        "image_mX3arM",
+        "image_bMncj9"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_columns_images_QFrj6U"
+  ]
+}

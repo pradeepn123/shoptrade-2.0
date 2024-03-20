@@ -3,20 +3,8 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "Expert Task",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
-          "settings": {
-          }
-        },
-        "product-rating": {
-          "type": "rating",
           "settings": {
           }
         },
@@ -28,142 +16,49 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "btn_url_start": "",
-            "btn_start": ""
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
           }
         },
         "description": {
           "type": "description",
           "settings": {
+            "product_description_truncated": "full"
           }
         },
         "share": {
           "type": "share",
-          "disabled": true,
           "settings": {
-            "share_label": "Share"
-          }
-        },
-        "00fac909-e934-48fb-a652-e2a03f390350": {
-          "type": "question",
-          "settings": {
-            "question_text": "<p>Have a question?<\/p>",
-            "question_popUp": "Ask us"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "product-rating",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "00fac909-e934-48fb-a652-e2a03f390350"
+        "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "media_position": "left",
-        "gallery_layout": "thumbnail",
-        "media_size": "medium",
-        "mobile_thumbnails": "show",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 20,
-        "padding_bottom": 0,
-        "bg-linear-section": "#ff7121",
-        "product_heading": "Package details"
+        "enable_zoom": true,
+        "enable_video_looping": false
       }
     },
-    "168414448731360b9c": {
-      "type": "apps",
-      "disabled": true,
+    "product-recommendations": {
+      "type": "product-recommendations",
       "settings": {
-        "include_margins": true
-      }
-    },
-    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3": {
-      "type": "news-gallery",
-      "settings": {
-        "neg_heading": "Gallery"
-      }
-    },
-    "c4140a39-1d4c-4de8-9de4-88c4e0200333": {
-      "type": "product-multicoumn",
-      "settings": {
-        "pm_heading": "How it works"
-      }
-    },
-    "cf15af33-4bb1-43df-a296-ef91aeed87bd": {
-      "type": "ET-hour_pack",
-      "blocks": {
-        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1": {
-          "type": "points",
-          "settings": {
-            "hp_lines": "Development & design work",
-            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
-          }
-        },
-        "f2a2742e-37cc-4593-9629-0c35e58a3d7b": {
-          "type": "points",
-          "settings": {
-            "hp_lines": "Fast turnaround",
-            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
-          }
-        },
-        "5f646eef-4f0b-4d11-bdd6-04e8c138b967": {
-          "type": "points",
-          "settings": {
-            "hp_lines": "Dedicated Experts",
-            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
-          }
-        },
-        "3f46b0c1-98d8-47f7-bdee-bf754980c115": {
-          "type": "points",
-          "settings": {
-            "hp_lines": "Replenish as needed",
-            "icon": "shopify:\/\/shop_images\/Wavy_Check.svg"
-          }
-        }
-      },
-      "block_order": [
-        "3640c1c8-23f4-46de-8ab8-6be7acd5afd1",
-        "f2a2742e-37cc-4593-9629-0c35e58a3d7b",
-        "5f646eef-4f0b-4d11-bdd6-04e8c138b967",
-        "3f46b0c1-98d8-47f7-bdee-bf754980c115"
-      ],
-      "settings": {
-        "hp_heading": "Hour Packs",
-        "hp_para": "<p>Pre-purchased hourly bundles that can be utilized for any of our design and development services.<\/p>",
-        "hp_btn_txt": "Buy Hour Packs",
-        "hp_btn_url": "shopify:\/\/pages\/hour-packs",
-        "ser_url": "",
-        "ser_text": "View Services",
-        "bg-linear-color": "#ff7121"
+        "heading": "Recommended"
       }
     }
   },
   "order": [
     "main",
-    "168414448731360b9c",
-    "a0947f9e-cfbb-4f6d-93b5-e0db28b40ec3",
-    "c4140a39-1d4c-4de8-9de4-88c4e0200333",
-    "cf15af33-4bb1-43df-a296-ef91aeed87bd"
+    "product-recommendations"
   ]
 }

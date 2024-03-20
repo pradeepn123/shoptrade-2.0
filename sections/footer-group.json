@@ -1,0 +1,195 @@
+{
+  "type": "footer",
+  "name": "t:sections.refactor_words.labels.footer_group",
+  "sections": {
+    "rich_text_phMjnr": {
+      "type": "rich-text",
+      "blocks": {
+        "empty_FtFLrj": {
+          "type": "empty",
+          "disabled": true,
+          "settings": {
+            "height": ""
+          }
+        },
+        "text_bF4BGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Interested in collaborating on a project?<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--80",
+            "mobile_text_size": "var(--mobile-text-size-large)",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "h2"
+          }
+        },
+        "text_wQQzzk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Looking to make your mark in the digital world? Reach out today and let's start creating something extraordinary together!<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "button_KbjqEa": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        },
+        "empty_epwkBj": {
+          "type": "empty",
+          "disabled": true,
+          "settings": {
+            "height": ""
+          }
+        }
+      },
+      "block_order": [
+        "empty_FtFLrj",
+        "text_bF4BGQ",
+        "text_wQQzzk",
+        "button_KbjqEa",
+        "empty_epwkBj"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "top no-image",
+        "image_position_mobile": "hide",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-center align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "70",
+        "color_scheme": "scheme3",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "scheme3",
+        "disable_border": true,
+        "remove_border_radius": false,
+        "remove_padding": true,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "menu_CikjbX": {
+          "type": "menu",
+          "settings": {
+            "title": "CONTACT US",
+            "menu": "footer-contact-us-2",
+            "link_new_window": false
+          }
+        },
+        "menu": {
+          "type": "menu",
+          "settings": {
+            "title": "AGENCY",
+            "menu": "footer",
+            "link_new_window": false
+          }
+        },
+        "social_icons": {
+          "type": "social_icons",
+          "settings": {
+            "title": "SOCIALS",
+            "hide_icons": true,
+            "enable_follow_on_shop": false
+          }
+        },
+        "text_B98fzE": {
+          "type": "text",
+          "settings": {
+            "title": "NEWSLETTER",
+            "content": "<p>[subscribe form]<\/p>",
+            "size": "text-size--18"
+          }
+        },
+        "text_RhypG9": {
+          "type": "text",
+          "settings": {
+            "title": "FLORIDA - US",
+            "content": "<p>ShopTrade LLC 1228 E 7th Ave Suite 200, Tampa, FL 33605, United States<\/p>",
+            "size": "text-size--18"
+          }
+        },
+        "text_JznHkH": {
+          "type": "text",
+          "settings": {
+            "title": "BENGALURU - IN",
+            "content": "<p>ShopTrade Technologies Private Limited, 6th Block, Koramangala, Bengaluru,  India 560095<\/p>",
+            "size": "text-size--18"
+          }
+        },
+        "text_JtVn6U": {
+          "type": "text",
+          "settings": {
+            "title": "SINGAPORE - SEA",
+            "content": "<p>ShopTrade PTE. LTD. 160 Robinson Road, #14-04, Singapore 068914<\/p>",
+            "size": "text-size--18"
+          }
+        },
+        "image_Xk6zyc": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "image": "shopify:\/\/shop_images\/shopify_plus_-_color_white.png",
+            "media_shape": "none",
+            "link": "https:\/\/www.shopify.com\/in\/plus\/partners\/shoptrade",
+            "link_new_window": true
+          }
+        }
+      },
+      "block_order": [
+        "menu_CikjbX",
+        "menu",
+        "social_icons",
+        "text_B98fzE",
+        "text_RhypG9",
+        "text_JznHkH",
+        "text_JtVn6U",
+        "image_Xk6zyc"
+      ],
+      "custom_css": [
+        "img {width: 150px; object-fit: contain;}"
+      ],
+      "settings": {
+        "layout": "grid-4 grid-portable-2 grid-lap-1",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--18",
+        "color_scheme": "scheme3",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "seo_h_tag": "h2"
+      }
+    },
+    "footer-bar": {
+      "type": "footer-bottom",
+      "settings": {
+        "color_scheme": "scheme3"
+      }
+    }
+  },
+  "order": [
+    "rich_text_phMjnr",
+    "footer",
+    "footer-bar"
+  ]
+}

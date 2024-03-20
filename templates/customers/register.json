@@ -1,10 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-register",
+      "type": "customers-register",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },

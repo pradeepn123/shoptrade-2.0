@@ -1,91 +1,94 @@
-{%- style -%}
-.section-{{ section.id }}-padding {
-  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
-}
+{%- render 'section-heading', heading: section.settings.heading, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border  -%}
 
-@media screen and (min-width: 750px) {
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
-  }
-}
-{%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
-  </div>
+<div
+  {% unless section.settings.remove_padding %} class="gutter--grid-padding gutter-top--large" {% endunless %}
+>
+  {{ section.settings.custom_liquid }}
+  {%- render 'color-scheme', color_scheme: blank, hide_section_bottom_border: section.settings.disable_section_bottom_border -%}
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.custom-liquid.name",
-  "tag": "section",
-  "class": "section",
+  "name": "t:sections.refactor_words.custom_code.name",
+  "class": "element--has-section-borders",
   "settings": [
     {
-      "type": "liquid",
-      "id": "custom_liquid",
-      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
-      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+      "type": "header",
+      "content": "t:raw-extra-words.settings_schema.layout_labels.section_heading.label"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "t:sections.local-extra-words.sections.headings.heading"
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "seo_h_tag",
+      "label": "t:sections.refactor_words.seo.label",
+      "info": "t:sections.refactor_words.seo.info",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "h1",
+          "label": "H1"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "h2",
+          "label": "H2"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "h3",
+          "label": "H3"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "h4",
+          "label": "H4"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "span",
+          "label": "span"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+      "default": "h2"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_section_title_border",
+      "label": "t:raw-extra-words.settings_schema.borders.remove.hide_section_title_border",
+      "default": false
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "t:sections.local-extra-words.sections.faq.headings.content"
     },
     {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 40
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label"
     },
     {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 52
+      "type": "header",
+      "content": "t:raw-extra-words.settings_schema.colors.header_section"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_padding",
+      "label": "t:raw-extra-words.settings_schema.borders.remove.padding",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_section_bottom_border",
+      "label": "t:raw-extra-words.settings_schema.borders.remove.hide_section_bottom_border",
+      "default": false
     }
   ],
   "presets": [
     {
-      "name": "t:sections.custom-liquid.presets.name"
+      "name": "t:sections.refactor_words.custom_code.name"
     }
-  ]
+  ],
+  "disabled_on": {
+    "groups": ["custom.drawers", "custom.overlay"]
+  }
 }
 {% endschema %}

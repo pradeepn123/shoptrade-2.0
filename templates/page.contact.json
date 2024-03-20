@@ -1,166 +1,130 @@
 {
   "sections": {
-    "form": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "70b49539-fd12-4e72-acae-255da86decf7": {
       "type": "contact-form",
       "blocks": {
-        "1b255bd2-0892-4541-be44-b102b80758ed": {
-          "type": "options",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-1": {
+          "type": "field",
           "settings": {
-            "option": "Shopify"
+            "label": "Name",
+            "type": "input",
+            "required": true
           }
         },
-        "5de6ca4b-273d-48d2-8e28-96a95390451f": {
-          "type": "options",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-email-1": {
+          "type": "email",
           "settings": {
-            "option": "Shopify Plus"
           }
         },
-        "d0bb0f9c-0aa2-4d2d-b98d-56e99511dc6f": {
-          "type": "options",
+        "af24c9de-4455-4b6c-b094-bf62a3f8ecfb": {
+          "type": "field",
           "settings": {
-            "option": "Maganto 1"
+            "label": "Label",
+            "type": "input",
+            "required": false
           }
         },
-        "ce802fea-9dcb-4637-8d07-ac3e1c9bff18": {
-          "type": "options",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-2": {
+          "type": "field",
           "settings": {
-            "option": "Maganto 2"
+            "label": "Message",
+            "type": "textarea",
+            "required": true
           }
         },
-        "7ce453d8-f455-4332-8502-d37565bb0e52": {
-          "type": "options",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-button-1": {
+          "type": "button",
           "settings": {
-            "option": "Salesforce Commerce Cloud (Demandware)"
-          }
-        },
-        "69a016e5-f4ea-456b-bb70-dd0cbe51890b": {
-          "type": "options",
-          "settings": {
-            "option": "SAP Hybris"
-          }
-        },
-        "fa1eaaa1-3e6f-47e4-8c8e-375e06eb0d58": {
-          "type": "options",
-          "settings": {
-            "option": "Aptos"
-          }
-        },
-        "8ba665ce-7d71-4835-85fc-a3d18f7dd429": {
-          "type": "options",
-          "settings": {
-            "option": "Big Commerce"
-          }
-        },
-        "79cfd460-2c5f-4d2a-8ba5-a260faf048e7": {
-          "type": "options",
-          "settings": {
-            "option": "WooCommerce"
-          }
-        },
-        "62a7611b-82ff-4404-bbff-3b8078be908b": {
-          "type": "options",
-          "settings": {
-            "option": "PrestaShop"
-          }
-        },
-        "597e0afd-7688-4768-bbd3-2cb8a4eca7f8": {
-          "type": "options",
-          "settings": {
-            "option": "Suite Commerce (Netsuite)"
-          }
-        },
-        "89582fef-80df-4535-8cb5-4c65bb021459": {
-          "type": "options",
-          "settings": {
-            "option": "Visualsoft"
-          }
-        },
-        "bd711b94-0e3e-4764-aad1-43148e1b0d10": {
-          "type": "options",
-          "settings": {
-            "option": "Workarea"
-          }
-        },
-        "4d3faf07-24ff-4483-b2c4-db9c6c0d3c0e": {
-          "type": "options",
-          "settings": {
-            "option": "WIX"
-          }
-        },
-        "1da1e17d-16af-44b6-85d4-37f76f06ae89": {
-          "type": "options",
-          "settings": {
-            "option": "Launch to Market"
-          }
-        },
-        "50aae37e-3d45-44a1-9cb0-2fe3b32fbb2c": {
-          "type": "options",
-          "settings": {
-            "option": "Bespoke"
-          }
-        },
-        "e372113d-2ab6-48bc-8a7e-d6f10c2939f9": {
-          "type": "options",
-          "settings": {
-            "option": "Other"
-          }
-        },
-        "64ab3783-e565-4a8b-a582-d0825701a54c": {
-          "type": "plateform",
-          "settings": {
-            "plateformoption": "Social Media"
-          }
-        },
-        "3f4992f7-3603-4030-8a4d-a869769c5456": {
-          "type": "plateform",
-          "settings": {
-            "plateformoption": "Google search"
-          }
-        },
-        "f6ea1c3f-1e7d-4b67-a940-3d01b0eb8aaa": {
-          "type": "plateform",
-          "settings": {
-            "plateformoption": "Online Ads"
-          }
-        },
-        "6c1a9eba-9f9c-40dc-98ee-180d48bf60ca": {
-          "type": "plateform",
-          "settings": {
-            "plateformoption": "Referral From Friends"
+            "label": "Submit"
           }
         }
       },
       "block_order": [
-        "1b255bd2-0892-4541-be44-b102b80758ed",
-        "5de6ca4b-273d-48d2-8e28-96a95390451f",
-        "d0bb0f9c-0aa2-4d2d-b98d-56e99511dc6f",
-        "ce802fea-9dcb-4637-8d07-ac3e1c9bff18",
-        "7ce453d8-f455-4332-8502-d37565bb0e52",
-        "69a016e5-f4ea-456b-bb70-dd0cbe51890b",
-        "fa1eaaa1-3e6f-47e4-8c8e-375e06eb0d58",
-        "8ba665ce-7d71-4835-85fc-a3d18f7dd429",
-        "79cfd460-2c5f-4d2a-8ba5-a260faf048e7",
-        "62a7611b-82ff-4404-bbff-3b8078be908b",
-        "597e0afd-7688-4768-bbd3-2cb8a4eca7f8",
-        "89582fef-80df-4535-8cb5-4c65bb021459",
-        "bd711b94-0e3e-4764-aad1-43148e1b0d10",
-        "4d3faf07-24ff-4483-b2c4-db9c6c0d3c0e",
-        "1da1e17d-16af-44b6-85d4-37f76f06ae89",
-        "50aae37e-3d45-44a1-9cb0-2fe3b32fbb2c",
-        "e372113d-2ab6-48bc-8a7e-d6f10c2939f9",
-        "64ab3783-e565-4a8b-a582-d0825701a54c",
-        "3f4992f7-3603-4030-8a4d-a869769c5456",
-        "f6ea1c3f-1e7d-4b67-a940-3d01b0eb8aaa",
-        "6c1a9eba-9f9c-40dc-98ee-180d48bf60ca"
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-1",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-email-1",
+        "af24c9de-4455-4b6c-b094-bf62a3f8ecfb",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-2",
+        "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-button-1"
       ],
       "settings": {
-        "heading": "Let’s Talk",
-        "subtext": "We believe in long-standing relationships that start with a simple \"Hello\". Fill in your project details below and an expert from our side will get back to you within 24 hours. Or simply shoot us an email at",
-        "mail": "hello@shoptrade.co"
+        "heading": "Drop us a line",
+        "seo_h_tag": "h4",
+        "content": "<p><strong>Contact<\/strong><br\/>1-222-333-4444<br\/>email@website.com<\/p><p><strong>Useful information<\/strong><br\/>Street address <br\/>City, <br\/>ZIP CODE<br\/>Country<\/p><p><strong>Hours<\/strong><br\/>Monday-Friday: <em>9am-5pm<\/em><br\/>Saturday-Sunday: <em>Closed<\/em><\/p>",
+        "color_scheme": "",
+        "disable_section_bottom_border": false
+      }
+    },
+    "0b012d24-03be-4ca5-ae2c-fb15c31e15da": {
+      "type": "text-columns-images",
+      "blocks": {
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-3": {
+          "type": "image",
+          "settings": {
+            "title": "Store title",
+            "caption": "<p>Street name. City. County. Country<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-2": {
+          "type": "image",
+          "settings": {
+            "title": "Store title",
+            "caption": "<p>Street name. City. County. Country<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Store title",
+            "caption": "<p>Street name. City. County. Country<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-3",
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-2",
+        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-1"
+      ],
+      "settings": {
+        "heading": "LOCAL STORES",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "0.83333",
+        "title_text_font": "text-font--headings",
+        "title_text_size": "text-size--20",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
       }
     }
   },
   "order": [
-    "form"
+    "main",
+    "70b49539-fd12-4e72-acae-255da86decf7",
+    "0b012d24-03be-4ca5-ae2c-fb15c31e15da"
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "type": "header",
+  "name": "t:sections.refactor_words.labels.header_group",
+  "sections": {
+    "header": {
+      "type": "header",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "logo_src": "shopify:\/\/shop_images\/shoptrade-logo.svg",
+        "logo_height": 32,
+        "logo_mobile_height": 25,
+        "logo_center_absolute": false,
+        "main_linklist": "main-menu",
+        "style": "one-row",
+        "menu_type": "classic",
+        "alignment": "left",
+        "icons_labels": "icons",
+        "icons_layout": "regular",
+        "header_custom_padding_select": true,
+        "menu_text_size": "text-size--18",
+        "menu_bold_text": false,
+        "submenu_layout": "fourth",
+        "submenu_titles": "em-title",
+        "submenu_bold_text": true,
+        "sticky_header_behavior": "always",
+        "show_search": false,
+        "show_cart": false,
+        "show_account": false,
+        "show_country_selector": false,
+        "show_locale_selector": false,
+        "color_scheme": "scheme1",
+        "disable_section_bottom_border": false,
+        "limit_inner_borders_width": true
+      }
+    }
+  },
+  "order": [
+    "header"
+  ]
+}

@@ -1,275 +1,127 @@
-{% comment %} <section class="newsletter">
-  <div class="container">
-    <div class="newsletter__wrp">
-      <div class="newsletter__head">
-        <h3>
-          Sign up for our free ecommerce newsletter.
-        </h3>
-      </div>
-      <div class="newsletter__body">
-        <div class="newsletter__bodyWrp">
-          <div class="form-group">
-            <input type="email" placeholder="Enter Your Email ID">
-            <button type="submit">
-              <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/arrow-orange.svg?v=1665512744">
+<div id="element-{{ section.id }}" class="{% if section.settings.is_centered %} text-align--center {% endif %} element--overflow-hidden">
+
+  <div class="card newsletter">
+    <div class="newsletter__container gutter-top--regular gutter-bottom--regular {% if section.settings.is_centered %} newsletter__container--centered {% endif %} spacing--large remove-empty-space">
+
+      {%- unless section.settings.title == blank -%}
+        <{{ section.settings.seo_h_tag }} class="text-font--headings text-size--40">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
+      {%- endunless -%}
+
+      {%- assign form_id = 'newsletter-' | append: section.id -%}
+      {%- form 'customer', id: form_id, class: '' -%}
+      
+        {%- render 'form-errors', form: form -%}
+
+        {%- if form.posted_successfully? -%}
+          
+          <p class="text-size--20">{{ 'general.newsletter.confirmation' | t }}</p>
+
+        {%- else -%}
+          
+          <fieldset>
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="email" class="newsletter__input" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email-{{ form_id }}" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off" required>
+            <button type="submit" class="go go--next" id="Subscribe-{{ form_id }}" aria-label="{{ 'general.newsletter.submit_label' | t }}">
+              <span class="visually-hidden">{{ 'general.newsletter.submit_label' | t }}</span>
+              <span aria-hidden="true">{%- render 'theme-symbols' icon: 'arrow' -%}</span>
             </button>
-          </div>
-          <p class="newsletter__text">By providing your email, you agree for us to contact you via email with e‑commerce
-            advice. Your data is stored securely and we never pass it on to third parties.</p>
-        </div>
-      </div>
-    </div>
+          </fieldset>
+
+        {%- endif -%}
+
+      {%- endform -%}
+
+      {%- unless section.settings.text == blank -%}
+        <span class="newsletter__info rte remove-empty-space text-size--18">{{ section.settings.text }}</span>
+      {%- endunless -%}
+
+		</div>
   </div>
-</section> {% endcomment %}
 
-
-
-{% comment %} {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
-{{ 'newsletter-section.css' | asset_url | stylesheet_tag }} {% endcomment %}
-
-{%- style -%}
-/* .section-{{ section.id }}-padding {
-  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-}
-
-@media screen and (min-width: 750px) {
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
-  }
-} */
-{%- endstyle -%}
-
-<div class="newsletter  {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}" style="{% if section.settings.border_top == true %}border-top: 1px solid black;{% endif %}">
-  <div class="container">
-    <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-      
-          {%- when 'heading' -%}
-            <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
-      
-          {%- when 'paragraph' -%}
-            <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-      
-          {%- when 'email_form' -%}
-            <div {{ block.shopify_attributes }}>
-            <div class="newsletter__wrp">
-              <div class="newsletter__head">
-                <h3>{{ section.settings.heading }}</h3>
-              </div>
-              <div class="newsletter__body_main">
-                <div class="newsletter__body">
-                  {% form 'customer', class: 'newsletter-form' %}
-                  <div class="newsletter__bodyWrp">
-                    <div class="newsletter__body_wrapper">
-                      <div class="form-group">
-                        {% comment %} <input type="email" placeholder="Enter Your Email ID"> {% endcomment %}
-                        <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter-form__field-wrapper">
-                          <div class="field">
-                            <input id="NewsletterForm--{{ section.id }}" type="email" name="contact[email]"
-                              class="field__input" value="{{ form.email }}" aria-required="true" autocorrect="off"
-                              autocapitalize="off" autocomplete="email" {% if form.errors %} autofocus aria-invalid="true"
-                              aria-describedby="Newsletter-error--{{ section.id }}" {% elsif form.posted_successfully? %}
-                              aria-describedby="Newsletter-success--{{ section.id }}" {% endif %}
-                              placeholder="{{ 'newsletter.label' | t }}" required>
-                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                              {{ 'newsletter.label' | t }}
-                            </label>
-                          </div>
-                          {%- if form.errors -%}
-                          <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{%
-                            render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{
-                            form.errors.messages['email'] }}</small>
-                          {%- endif -%}
-                        </div>
-                        {%- if form.posted_successfully? -%}
-                        <h3 class="newsletter-form__message newsletter-form__message--success form__message"
-                          id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{
-                          'newsletter.success' | t }}</h3>
-                        {%- endif -%}
-                        <button type="submit" class="newsletter-form__button field__button btn-wrap mobile_only news-icon-mob" name="commit"
-                          id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                          <img class="mobile_only pos-abs"
-                            src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Group_8306.svg?v=1687347593">
-                        </button>
-                      </div>
-                      <button type="submit" class="newsletter-form__button field__button btn-wrap desktop_only" name="commit"
-                        id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                        <span class="desktop_only btn news-button-clr">Subscribe</span>
-                      </button>
-                    </div>
-                    <p class="newsletter__text"> {{ section.settings.agreeTxt }} </p>
-                  </div>
-                  {% endform %}
-                </div>
-              </div>
-            </div>
-          </div>
-        {%- endcase -%}
-      {%- endfor -%}
-    </div>
-  </div>
+  {%- render 'color-scheme', color_scheme: section.settings.color_scheme, hide_section_bottom_border: section.settings.disable_section_bottom_border -%}
+  
 </div>
 
 {% schema %}
 {
-"name": "t:sections.newsletter.name",
-"tag": "section",
-"class": "section",
-"settings": [
-{
-  "type": "checkbox",
-  "id": "border_top",
-  "label": "Border Top",
-  "default": false
-},
-{
-"type": "select",
-"id": "color_scheme",
-"options": [
-{
-"value": "accent-1",
-"label": "t:sections.all.colors.accent_1.label"
-},
-{
-"value": "accent-2",
-"label": "t:sections.all.colors.accent_2.label"
-},
-{
-"value": "background-1",
-"label": "t:sections.all.colors.background_1.label"
-},
-{
-"value": "background-2",
-"label": "t:sections.all.colors.background_2.label"
-},
-{
-"value": "inverse",
-"label": "t:sections.all.colors.inverse.label"
-}
-],
-"default": "background-1",
-"label": "t:sections.all.colors.label"
-},{
-"id":"heading",
-"type":"text",
-"label":"Heading"
-},{
-"id":"agreeTxt",
-"type":"text",
-"label":"Agree content"
-},
-{
-"type": "checkbox",
-"id": "full_width",
-"default": true,
-"label": "t:sections.newsletter.settings.full_width.label"
-},
-{
-"type": "paragraph",
-"content": "t:sections.newsletter.settings.paragraph.content"
-},
-{
-"type": "header",
-"content": "t:sections.all.padding.section_padding_heading"
-},
-{
-"type": "range",
-"id": "padding_top",
-"min": 0,
-"max": 100,
-"step": 4,
-"unit": "px",
-"label": "t:sections.all.padding.padding_top",
-"default": 40
-},
-{
-"type": "range",
-"id": "padding_bottom",
-"min": 0,
-"max": 100,
-"step": 4,
-"unit": "px",
-"label": "t:sections.all.padding.padding_bottom",
-"default": 52
-}
-],
-"blocks": [
-{
-"type": "heading",
-"name": "t:sections.newsletter.blocks.heading.name",
-"limit": 1,
-"settings": [
-{
-"type": "text",
-"id": "heading",
-"default": "Subscribe to our emails",
-"label": "t:sections.newsletter.blocks.heading.settings.heading.label"
-},
-{
-"type": "select",
-"id": "heading_size",
-"options": [
-{
-"value": "h2",
-"label": "t:sections.all.heading_size.options__1.label"
-},
-{
-"value": "h1",
-"label": "t:sections.all.heading_size.options__2.label"
-},
-{
-"value": "h0",
-"label": "t:sections.all.heading_size.options__3.label"
-}
-],
-"default": "h1",
-"label": "t:sections.all.heading_size.label"
-}
-]
-},
-{
-"type": "paragraph",
-"name": "t:sections.newsletter.blocks.paragraph.name",
-"limit": 1,
-"settings": [
-{
-"type": "richtext",
-"id": "text",
-"default": "<p>Be the first to know about new collections and exclusive offers.</p>",
-"label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
-}
-]
-},
-{
-"type": "email_form",
-"name": "t:sections.newsletter.blocks.email_form.name",
-"limit": 1
-},
-{
-"type": "@app"
-}
-],
-"presets": [
-{
-"name": "t:sections.newsletter.presets.name",
-"blocks": [
-{
-"type": "heading"
-},
-{
-"type": "paragraph"
-},
-{
-"type": "email_form"
-}
-]
-}
-]
+  "name": "t:sections.newsletter.name",
+  "class": "element--has-section-borders mount-newsletter",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.local-extra-words.sections.headings.title",
+      "default": "Subscribe to our newsletter"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.rich-text.blocks.text.settings.text.label",
+      "default": "<p>Be the first to know about new collections and exclusive offers.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_centered",
+      "label": "t:raw-extra-words.settings_schema.labels.centered_content",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:raw-extra-words.settings_schema.colors.header_section"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:color-schemes.name_singular",
+      "default": "scheme_1"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_section_bottom_border",
+      "label": "t:raw-extra-words.settings_schema.borders.remove.hide_section_bottom_border",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "t:sections.refactor_words.seo.name"
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "t:sections.refactor_words.seo.label",
+      "info": "t:sections.refactor_words.seo.info",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.newsletter.name"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "custom.drawers", "custom.overlay"]
+  }
 }
 {% endschema %}
