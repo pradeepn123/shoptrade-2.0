@@ -362,6 +362,20 @@
         "remove_padding": false,
         "hide_block_if": false
       }
+    },
+    "video_Mx63EX": {
+      "type": "video",
+      "settings": {
+        "heading": "Our Values",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "image": "shopify:\/\/shop_images\/5K8A6537.jpg",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
     }
   },
   "order": [
@@ -369,6 +383,7 @@
     "rich_text_jnBDC4",
     "promotion_blocks_mLNkjm",
     "vertical_slider_BxeYTt",
-    "promotion_blocks_jTkEbT"
+    "promotion_blocks_jTkEbT",
+    "video_Mx63EX"
   ]
 }
