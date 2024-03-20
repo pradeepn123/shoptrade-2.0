@@ -81,16 +81,15 @@
         "text_aKFjp4": {
           "type": "text",
           "settings": {
-            "title": "01 Shopify Plus Design + Dev",
-            "body": "<p>Level up with Shopify Plus and our expert team. As specialized Shopify Partners, we provide tailored solutions for high-growth businesses. From enterprise brands to explosive startups, we optimise your eCommerce strategy to achieve your goals. Our platform knowledge and leadership make us the global partner of choice for complex projects. Let's take your game to the next level.<\/p>",
-            "image": "shopify:\/\/shop_images\/illus-theme_edit.jpg"
+            "title": "01. Shopify Plus Design + Dev",
+            "body": "<p>Level up with Shopify Plus and our expert team. As specialized Shopify Partners, we provide tailored solutions for high-growth businesses. From enterprise brands to explosive startups, we optimise your eCommerce strategy to achieve your goals. Our platform knowledge and leadership make us the global partner of choice for complex projects. Let's take your game to the next level.<\/p>"
           }
         },
         "text_PfYtdk": {
           "type": "text",
           "settings": {
             "title": "Delivery details",
-            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>"
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href=\"#\">offers page<\/a>.<\/p>"
           }
         },
         "text_pDPp7q": {
