@@ -78,32 +78,41 @@
     "content_toggles_4wXKDW": {
       "type": "content-toggles",
       "blocks": {
-        "text_aKFjp4": {
-          "type": "text",
-          "settings": {
-            "title": "01. Shopify Plus Design + Dev",
-            "body": "<p>Level up with Shopify Plus and our expert team. As specialized Shopify Partners, we provide tailored solutions for high-growth businesses. From enterprise brands to explosive startups, we optimise your eCommerce strategy to achieve your goals. Our platform knowledge and leadership make us the global partner of choice for complex projects. Let's take your game to the next level.<\/p>"
-          }
-        },
         "text_PfYtdk": {
           "type": "text",
           "settings": {
-            "title": "Delivery details",
-            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href=\"#\">offers page<\/a>.<\/p>"
+            "title": "01. Shopify Plus Development",
+            "body": "<p>Achieve your dream online storefront with ShopTrade's expert development services. Whether you need a custom Shopify theme, powerful Shopify apps, or cutting-edge Headless Commerce solutions, we're here to help. Launch fast or go bespoke—our team ensures speed, scalability, and seamless user experiences, tailored to your needs.<\/p>",
+            "image": "shopify:\/\/shop_images\/illus-theme_edit.jpg"
+          }
+        },
+        "text_aKFjp4": {
+          "type": "text",
+          "settings": {
+            "title": "02. UI\/UX + Design Services",
+            "body": "<p>Captivate your audience and drive engagement with ShopTrade's innovative design solutions. From data-driven UI\/UX strategies to visually stunning email designs and immersive 3D modeling, we craft experiences that leave a lasting impression. Elevate your brand with our expertise in UGC video editing and expert photo retouching, creating a standout online presence.<\/p>"
           }
         },
         "text_pDPp7q": {
           "type": "text",
           "settings": {
-            "title": "Returns details",
-            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>"
+            "title": "03. Brand Identity Creation",
+            "body": "<p>Craft a compelling brand story with ShopTrade's identity services. Collaborate with us to develop a strategic roadmap for your brand, from establishing a distinctive identity to creating captivating packaging and bringing your vision to life through art direction. Leave a lasting impact on your audience with our tailored solutions.<\/p>"
+          }
+        },
+        "text_Dj8DCD": {
+          "type": "text",
+          "settings": {
+            "title": "04. Marketing Strategies",
+            "body": "<p>Drive growth and nurture relationships with ShopTrade's marketing expertise. Our strategies focus on tangible outcomes, from targeted performance marketing to personalized email campaigns. Increase traffic, boost conversions, and achieve your goals with precision and expertise.<\/p>"
           }
         }
       },
       "block_order": [
-        "text_aKFjp4",
         "text_PfYtdk",
-        "text_pDPp7q"
+        "text_aKFjp4",
+        "text_pDPp7q",
+        "text_Dj8DCD"
       ],
       "settings": {
         "heading": "",
