@@ -33,6 +33,7 @@
         },
         "button_xEdW47": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Contact Us",
             "link": "",
@@ -71,7 +72,7 @@
         "disable_border": true,
         "remove_border_radius": false,
         "remove_padding": true,
-        "add_border": false,
+        "add_border": true,
         "hide_block_if": false
       }
     },
