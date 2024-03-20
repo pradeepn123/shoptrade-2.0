@@ -592,6 +592,75 @@
         "remove_padding": false,
         "hide_block_if": false
       }
+    },
+    "rich_text_i7mXkN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pb9Awn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you the pro we're searching for?<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--60",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "text_UxMiaU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are constantly looking for talent across the board. Feel like you have what it takes To make a difference for our clients.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "button_3KgX7G": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Openings",
+            "link": "",
+            "target": false,
+            "button_style": "solid",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        }
+      },
+      "block_order": [
+        "text_pb9Awn",
+        "text_UxMiaU",
+        "button_3KgX7G"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image": "shopify:\/\/shop_images\/Group_1885_1.png",
+        "image_aspect_ratio": "1",
+        "image_position": "left",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": true,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "50",
+        "color_scheme": "scheme4",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "scheme4",
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
     }
   },
   "order": [
@@ -602,6 +671,7 @@
     "promotion_blocks_jTkEbT",
     "video_Mx63EX",
     "promotion_blocks_RcyXUR",
-    "promotion_blocks_HCAVU9"
+    "promotion_blocks_HCAVU9",
+    "rich_text_i7mXkN"
   ]
 }
