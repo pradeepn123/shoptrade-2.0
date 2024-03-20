@@ -376,6 +376,113 @@
         "remove_border_radius": false,
         "remove_padding": false
       }
+    },
+    "promotion_blocks_RcyXUR": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "card_CBiFy7": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Personal Touch",
+            "subtitle": "Each of our customers ranks first on our priority list. We’re constantly seeking ways to make your life easier. We treat each project as our own, and we get heavily invested in your product, no matter whether you’re a start-up, mid-sized, or enterprise-level company.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_By3pUd": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Transparency",
+            "subtitle": "Transparency is the foundation of successful long-term collaborations, and we love those. When working with ShopTrade, you’ll embark on a journey of growth while our team of professionals will guide you every step of the way.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_PVTHxG": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Passion",
+            "subtitle": "We surround ourselves only with passionate people because we believe in win-win relationships where our clients are delighted with successful products that take their customer base and conversion to a new level.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_mnQKp7": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Quality",
+            "subtitle": "Our priority is delivering highly scalable pixel-perfect solutions. We’re not here to jump from one project to the other but rather to help our clients becoming established brands in their market, and the only way to do so is with high-quality services.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "card_CBiFy7",
+        "card_By3pUd",
+        "card_PVTHxG",
+        "card_mnQKp7"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-2",
+        "layout_mobile": "grid-palm-1",
+        "style": "grid",
+        "image_aspect_ratio": "2",
+        "alignment": "horizontal-left align-content--vertical-top",
+        "width": "70",
+        "title_font": "text-font--headings",
+        "title_size": "text-size--80",
+        "mobile_text_size": "1",
+        "subtitle_size": "text-size--18",
+        "spacing": 12,
+        "gutter": "grid-padding",
+        "button_style": "outline",
+        "button_size": "button--regular",
+        "button_hover": "-arrow",
+        "cta_label": "",
+        "cta_url": "",
+        "color_scheme": "scheme1",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "hide_block_if": false
+      }
     }
   },
   "order": [
@@ -384,6 +491,7 @@
     "promotion_blocks_mLNkjm",
     "vertical_slider_BxeYTt",
     "promotion_blocks_jTkEbT",
-    "video_Mx63EX"
+    "video_Mx63EX",
+    "promotion_blocks_RcyXUR"
   ]
 }
