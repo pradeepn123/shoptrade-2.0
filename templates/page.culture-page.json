@@ -6,6 +6,75 @@
       "settings": {
       }
     },
+    "rich_text_jnBDC4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7hHbVY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Culture at ShopTrade<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--100",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "text_8TrKNQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scale your business with a team of highly skilled professionals<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "button_xEdW47": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us",
+            "link": "",
+            "target": false,
+            "button_style": "solid",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        }
+      },
+      "block_order": [
+        "text_7hHbVY",
+        "text_8TrKNQ",
+        "button_xEdW47"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image": "shopify:\/\/shop_images\/5K8A6607.jpg",
+        "image_aspect_ratio": "1.33333",
+        "image_position": "right",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "grid-padding",
+        "width": "70",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": true,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
     "rich_text_izMxpJ": {
       "type": "rich-text",
       "blocks": {
@@ -61,56 +130,11 @@
         "add_border": false,
         "hide_block_if": false
       }
-    },
-    "rich_text_jnBDC4": {
-      "type": "rich-text",
-      "blocks": {
-        "text_8TrKNQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our Mission<\/p>",
-            "text_font": "text-font--headings",
-            "text_size": "text-size--80",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span"
-          }
-        }
-      },
-      "block_order": [
-        "text_8TrKNQ"
-      ],
-      "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "image": "shopify:\/\/shop_images\/5K8A6607.jpg",
-        "image_aspect_ratio": "1",
-        "image_position": "left",
-        "image_position_mobile": "above",
-        "image_crop": false,
-        "image_overlap": false,
-        "image_overlay": "rgba(0,0,0,0)",
-        "media_shape": "none",
-        "remove_media_border_radius": false,
-        "text_alignment": "horizontal-left align-content--vertical-middle",
-        "spacing": 24,
-        "gutter": "grid-padding",
-        "width": "50",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "color_scheme_card": "",
-        "disable_border": true,
-        "remove_border_radius": false,
-        "remove_padding": false,
-        "add_border": false,
-        "hide_block_if": false
-      }
     }
   },
   "order": [
     "main",
-    "rich_text_izMxpJ",
-    "rich_text_jnBDC4"
+    "rich_text_jnBDC4",
+    "rich_text_izMxpJ"
   ]
 }
