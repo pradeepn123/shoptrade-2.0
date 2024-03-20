@@ -54,7 +54,7 @@
         "disable_section_title_border": false,
         "image": "shopify:\/\/shop_images\/Rectangle_3774_1.png",
         "image_aspect_ratio": "1.33333",
-        "image_position": "left",
+        "image_position": "right",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
