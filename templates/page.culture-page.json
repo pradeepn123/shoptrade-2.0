@@ -138,7 +138,7 @@
         "button_hover": "-arrow",
         "cta_label": "",
         "cta_url": "",
-        "color_scheme": "",
+        "color_scheme": "scheme1",
         "disable_section_bottom_border": false,
         "disable_border": false,
         "remove_border_radius": false,
