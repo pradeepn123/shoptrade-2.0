@@ -647,7 +647,7 @@
         "image_overlap": false,
         "image_overlay": "rgba(0,0,0,0)",
         "media_shape": "none",
-        "remove_media_border_radius": true,
+        "remove_media_border_radius": false,
         "text_alignment": "horizontal-left align-content--vertical-middle",
         "spacing": 24,
         "gutter": "large",
@@ -658,7 +658,7 @@
         "disable_border": false,
         "remove_border_radius": false,
         "remove_padding": false,
-        "add_border": false,
+        "add_border": true,
         "hide_block_if": false
       }
     }
