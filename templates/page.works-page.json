@@ -2,7 +2,66 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "rich_text_dWBxQF": {
+      "type": "rich-text",
+      "blocks": {
+        "empty_ngH3R3": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
+        },
+        "text_X4fxiD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Work<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--100",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "empty_iRafMi": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
+        }
+      },
+      "block_order": [
+        "empty_ngH3R3",
+        "text_X4fxiD",
+        "empty_iRafMi"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "top no-image",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "grid-padding",
+        "width": "70",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": true,
+        "remove_border_radius": true,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
       }
     },
     "text_columns_images_QFrj6U": {
@@ -229,6 +288,7 @@
   },
   "order": [
     "main",
+    "rich_text_dWBxQF",
     "text_columns_images_QFrj6U",
     "text_columns_images_74rMfM"
   ]
