@@ -75,59 +75,74 @@
         "hide_block_if": false
       }
     },
-    "rich_text_izMxpJ": {
-      "type": "rich-text",
+    "promotion_blocks_mLNkjm": {
+      "type": "promotion-blocks",
       "blocks": {
-        "text_yefXQB": {
-          "type": "text",
+        "card_jWGCWd": {
+          "type": "card",
           "settings": {
-            "text": "<p>Scale your business with a team of highly skilled professionals<\/p>",
-            "text_font": "text-font--headings",
-            "text_size": "text-size--80",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span"
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Our Mission",
+            "subtitle": "Our mission is to establish a network of entrepreneurs that help each other with the sole purpose of scaling their businesses. In an ever-changing online world, the only way to stay ahead of the curve is by surrounding yourself with like-minded energetic professionals.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
           }
         },
-        "button_PDyL6R": {
-          "type": "button",
+        "card_A4nmhN": {
+          "type": "card",
           "settings": {
-            "button_label": "Contact Us",
-            "link": "",
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Our Vision",
+            "subtitle": "Our vision is to become the swiss army knife that every online entrepreneur has in their pockets. We’re getting there through intelligent partnerships with established companies, building our own suite of products, and enabling clients to reach new business heights by providing them with on-demand teams of agile professionals.",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
             "target": false,
-            "button_style": "solid",
-            "button_size": "button--regular",
-            "button_hover": "-arrow"
+            "seo_h_tag": "h3"
           }
         }
       },
       "block_order": [
-        "text_yefXQB",
-        "button_PDyL6R"
+        "card_jWGCWd",
+        "card_A4nmhN"
       ],
       "settings": {
         "heading": "",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "image_aspect_ratio": "1",
-        "image_position": "top no-image",
-        "image_position_mobile": "above",
-        "image_crop": false,
-        "image_overlap": false,
-        "image_overlay": "rgba(0,0,0,0)",
-        "media_shape": "none",
-        "remove_media_border_radius": false,
-        "text_alignment": "horizontal-left align-content--vertical-middle",
-        "spacing": 24,
+        "layout_desktop": "grid-2",
+        "layout_mobile": "grid-palm-1",
+        "style": "grid",
+        "image_aspect_ratio": "2",
+        "alignment": "horizontal-left align-content--vertical-top",
+        "width": "70",
+        "title_font": "text-font--headings",
+        "title_size": "text-size--80",
+        "mobile_text_size": "1",
+        "subtitle_size": "text-size--18",
+        "spacing": 12,
         "gutter": "grid-padding",
-        "width": "50",
+        "button_style": "outline",
+        "button_size": "button--regular",
+        "button_hover": "-arrow",
+        "cta_label": "",
+        "cta_url": "",
         "color_scheme": "",
         "disable_section_bottom_border": false,
-        "color_scheme_card": "",
-        "disable_border": true,
+        "disable_border": false,
         "remove_border_radius": false,
         "remove_padding": false,
-        "add_border": false,
         "hide_block_if": false
       }
     }
@@ -135,6 +150,6 @@
   "order": [
     "main",
     "rich_text_jnBDC4",
-    "rich_text_izMxpJ"
+    "promotion_blocks_mLNkjm"
   ]
 }
