@@ -70,7 +70,7 @@
         "color_scheme_card": "",
         "disable_border": true,
         "remove_border_radius": false,
-        "remove_padding": false,
+        "remove_padding": true,
         "add_border": false,
         "hide_block_if": false
       }
