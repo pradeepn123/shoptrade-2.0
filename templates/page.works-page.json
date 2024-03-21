@@ -171,7 +171,7 @@
         "cta_label": "",
         "cta_link": "",
         "seo_h_tag": "h2",
-        "image_hover": "none",
+        "image_hover": "view-project",
         "disable_section_title_border": false,
         "layout_desktop": "grid-2",
         "style": "grid",
