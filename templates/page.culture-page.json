@@ -358,7 +358,7 @@
         "layout_desktop": "grid-4 grid-lap-3",
         "layout_mobile": "grid-palm-1",
         "style": "grid",
-        "image_aspect_ratio": "2",
+        "image_aspect_ratio": "1.33333",
         "alignment": "horizontal-left align-content--vertical-middle",
         "width": "100",
         "title_font": "text-font--headings",
