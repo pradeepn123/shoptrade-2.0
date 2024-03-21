@@ -189,7 +189,7 @@
         "card_7BaHdY"
       ],
       "settings": {
-        "heading": "Our Numbers",
+        "heading": "Our Impact",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
         "layout_desktop": "grid-3",
@@ -209,7 +209,7 @@
         "button_hover": "-arrow",
         "cta_label": "",
         "cta_url": "",
-        "color_scheme": "scheme4",
+        "color_scheme": "scheme1",
         "disable_section_bottom_border": false,
         "disable_border": false,
         "remove_border_radius": false,
