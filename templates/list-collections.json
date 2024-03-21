@@ -3,6 +3,13 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
+        "display_type": "all",
+        "sort": "alphabetical",
+        "layout_desktop": "grid-2 grid-lap-1",
+        "layout_mobile": "grid-palm-1",
+        "image_aspect_ratio": "1",
+        "text_alignment": "left",
+        "text_size": "30"
       }
     }
   },

@@ -3,6 +3,19 @@
     "collection": {
       "type": "main-collection",
       "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "image_height": "small",
+        "text_overlay": "rgba(0,0,0,0)",
+        "image_overlay": "rgba(0,0,0,0)",
+        "image_overlay_opacity": 30,
+        "image_hide_on_mobile": false,
+        "products_number": 24,
+        "layout_desktop": "four-columns",
+        "layout_mobile": "grid-palm-2",
+        "enable_sorting": false,
+        "enable_filtering": false,
+        "filters_position": "sidebar"
       }
     }
   },
