@@ -627,19 +627,6 @@
             "seo_h_tag": "h3"
           }
         },
-        "image_fcebUT": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Arjun.jpg",
-            "media_shape": "none",
-            "title": "Arjun GM",
-            "caption": "<p>Business Analyst<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_dK63rr": {
           "type": "image",
           "settings": {
@@ -660,6 +647,31 @@
             "media_shape": "none",
             "title": "Sushanth Suvarna",
             "caption": "<p>Admin & HR Associate<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_fcebUT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Arjun.jpg",
+            "media_shape": "none",
+            "title": "Arjun GM",
+            "caption": "<p>Business Analyst<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_9TGVBq": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Vithika",
+            "caption": "<p>Business Development<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -743,6 +755,30 @@
             "seo_h_tag": "h3"
           }
         },
+        "image_zLHitx": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Umesh",
+            "caption": "<p>Lead Developer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_TccPRx": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Kaustubh",
+            "caption": "<p>Head Of Theme<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
         "image_awrwUD": {
           "type": "image",
           "settings": {
@@ -815,6 +851,30 @@
             "media_shape": "none",
             "title": "Vinod Kalyan",
             "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_gLMdt3": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Madhan S",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_hBnaiL": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Kenneth",
+            "caption": "",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -916,21 +976,26 @@
       "block_order": [
         "image_KxfFDM",
         "image_mCVe99",
-        "image_fcebUT",
         "image_dK63rr",
         "image_pbe3PX",
+        "image_fcebUT",
+        "image_9TGVBq",
         "image_Ab8Eix",
         "image_Jii8PU",
         "image_rJtbdm",
         "image_A4YNrX",
         "image_T3Ecmy",
         "image_ReqXVk",
+        "image_zLHitx",
+        "image_TccPRx",
         "image_awrwUD",
         "image_GWnRe7",
         "image_giECXa",
         "image_kFAFMG",
         "image_DG73Cy",
         "image_8LDRXm",
+        "image_gLMdt3",
+        "image_hBnaiL",
         "image_JGFAa7",
         "image_qbbcVw",
         "image_h94zNC",
