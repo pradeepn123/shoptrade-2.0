@@ -5,7 +5,7 @@
       "settings": {
         "enable_tags": true,
         "post_limit": 6,
-        "style": "grid",
+        "style": "list",
         "blog_show_image": true,
         "media_shape": "none",
         "show_date": true,
