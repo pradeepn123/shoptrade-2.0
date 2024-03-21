@@ -200,7 +200,7 @@
         "width": "70",
         "title_font": "text-font--headings",
         "title_size": "text-size--80",
-        "mobile_text_size": "1",
+        "mobile_text_size": "var(--mobile-text-size-large)",
         "subtitle_size": "text-size--18",
         "spacing": 12,
         "gutter": "grid-padding",
