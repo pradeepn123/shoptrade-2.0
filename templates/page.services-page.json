@@ -189,17 +189,17 @@
         "card_7BaHdY"
       ],
       "settings": {
-        "heading": "Rich blocks",
+        "heading": "Our Numbers",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
         "layout_desktop": "grid-3",
         "layout_mobile": "grid-palm-1",
         "style": "grid",
-        "image_aspect_ratio": "1.33333",
+        "image_aspect_ratio": "2",
         "alignment": "horizontal-left align-content--vertical-top",
         "width": "70",
         "title_font": "text-font--headings",
-        "title_size": "text-size--100",
+        "title_size": "text-size--80",
         "mobile_text_size": "1",
         "subtitle_size": "text-size--18",
         "spacing": 12,
@@ -223,7 +223,7 @@
         "text_6iFKbe": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.<\/p>",
+            "text": "<p>Explore the esteemed roster of companies we've joined forces with to deliver exceptional e-commerce solutions. From industry giants to innovative startups, our partnerships fuel success and drive growth.<\/p>",
             "text_font": "text-font--body",
             "text_size": "text-size--20",
             "mobile_text_size": "1",
