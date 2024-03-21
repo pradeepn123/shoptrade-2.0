@@ -21,7 +21,7 @@
             "text": "<p>Work<\/p>",
             "text_font": "text-font--headings",
             "text_size": "text-size--100",
-            "mobile_text_size": "1",
+            "mobile_text_size": "var(--mobile-text-size-large)",
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "span"
           }
@@ -71,8 +71,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Solefly.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -84,8 +86,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/SNS.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -97,8 +101,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Cowboy.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -110,8 +116,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Winerack.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -123,8 +131,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -136,8 +146,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/project_thumbnail_melissani.webp",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -156,7 +168,10 @@
       ],
       "settings": {
         "heading": "",
+        "cta_label": "",
+        "cta_link": "",
         "seo_h_tag": "h2",
+        "image_hover": "none",
         "disable_section_title_border": false,
         "layout_desktop": "grid-2",
         "style": "grid",
@@ -181,8 +196,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Solefly.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Solefly",
+            "title_url": "",
             "caption": "<p>Sneakers and apparel store that is located in South Miami & Cutler Bay. Carrying the most predominant brands in the industry.<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -194,8 +211,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/SNS.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "SNS Health",
+            "title_url": "",
             "caption": "<p>Shop online for the finest vitamins and supplements from top brands at SNS Health, in Canada. <\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -207,8 +226,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Cowboy.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Cowtown Cowboy Outfitters",
+            "title_url": "",
             "caption": "<p>Shop cowboy boots & hats, western wear, work boots and much more from your favorite authentic western brands.<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -220,8 +241,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Winerack.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "WineRacks",
+            "title_url": "",
             "caption": "<p>For than more twenty years, WineRacks has been providing residences and businesses alike with custom made wine racks and wine cellars.<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -233,8 +256,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Hathaspace",
+            "title_url": "",
             "caption": "<p>Air purifiers and air filtration systems for home & office help keep the air inside where you live or work fresh & healthy.<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -246,8 +271,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/project_thumbnail_melissani.webp",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Melissani",
+            "title_url": "",
             "caption": "<p>Upgrade your home's water quality with Melissani's premium countertop RO water purifiers. <\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -267,7 +294,10 @@
       "disabled": true,
       "settings": {
         "heading": "",
+        "cta_label": "",
+        "cta_link": "",
         "seo_h_tag": "h2",
+        "image_hover": "none",
         "disable_section_title_border": false,
         "layout_desktop": "grid-3 grid-lap-2",
         "style": "grid",
@@ -291,8 +321,10 @@
         "image_kNpFUY": {
           "type": "image",
           "settings": {
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Blog title",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -303,8 +335,10 @@
         "image_eWhFfP": {
           "type": "image",
           "settings": {
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Blog title",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -315,8 +349,10 @@
         "image_NqAJCe": {
           "type": "image",
           "settings": {
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Blog title",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -332,7 +368,10 @@
       ],
       "settings": {
         "heading": "Insights",
+        "cta_label": "",
+        "cta_link": "",
         "seo_h_tag": "h2",
+        "image_hover": "none",
         "disable_section_title_border": false,
         "layout_desktop": "grid-3 grid-lap-2",
         "style": "grid",

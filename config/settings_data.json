@@ -36,6 +36,7 @@
     "nav_in_heading": false,
     "section_footer_button_style": "outline",
     "section_footer_button_hover": "",
+    "page_titles_mobile_size": "1",
     "page_transform_uppercase": true,
     "border_radius_buttons_select": "120",
     "border_width_buttons": 1,
