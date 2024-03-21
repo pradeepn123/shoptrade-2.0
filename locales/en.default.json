@@ -14,7 +14,7 @@
     },
     "newsletter": {
       "email_label": "Enter your email",
-      "submit_label": "Submit",
+      "submit_label": "Subscribe",
       "confirmation": "Thanks for subscribing!",
       "title": "Newsletter"
     },

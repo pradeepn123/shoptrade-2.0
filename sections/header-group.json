@@ -13,6 +13,8 @@
         "logo_mobile_height": 25,
         "logo_center_absolute": false,
         "main_linklist": "main-menu",
+        "button_label": "Contact Us",
+        "button_link": "",
         "style": "one-row",
         "menu_type": "classic",
         "alignment": "left",

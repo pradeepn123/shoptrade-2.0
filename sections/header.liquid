@@ -1,4 +1,5 @@
 {{ 'section-header.css' | asset_url | stylesheet_tag }}
+{{ 'custom-header-section.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign logo_height = section.settings.logo_height
@@ -133,8 +134,14 @@
     </div>
   {%- endcapture -%}
 
+  {%- capture header_btn_classic -%}
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}" class="button button__custom button--regular">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  {%- endcapture -%}
+
   <div 
-    class="site-header__grid site-header__grid--{{ section.settings.style }} site-header__grid--logo-{{ section.settings.alignment }}"
+    class="site-header__grid site-header__grid--{{ section.settings.style }} site-header__grid--logo-{{ section.settings.alignment }} {% if header_btn_classic != blank %}site-header__btn{% endif %}"
     style="
       --header-item-padding: {% if section.settings.header_custom_padding_select %} min(var(--gutter-header-icons), var(--grid-padding)) {% else %} var(--grid-padding) {% endif %}; 
       --max-header-border-width: {% if section.settings.limit_inner_borders_width %} 1px {% else %} {{ settings.border_width_grid | at_most: settings.border_width_sections }}px {% endif %};
@@ -173,6 +180,12 @@
       {%- liquid
         if section.settings.style == 'one-row'
           echo header_menu_classic
+        endif
+      -%}
+
+      {%- liquid
+        if section.settings.style == 'one-row'
+          echo header_btn_classic
         endif
       -%}
 
@@ -536,6 +549,20 @@
       "id": "main_linklist",
       "label": "t:sections.split-extra-words.sections.header.settings.menu",
       "default": "main-menu"
+    },
+    {
+      "type": "header",
+      "content": "Header Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
     },
     {
       "type": "header",

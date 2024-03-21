@@ -7,7 +7,7 @@
       "disabled": true,
       "settings": {
         "title": "Subscribe to our newsletter",
-        "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href='#'>privacy policy<\/a>.<\/p>",
+        "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href=\"#\">privacy policy<\/a>.<\/p>",
         "show_after": 6,
         "show_repeat": "week",
         "color_scheme": "",

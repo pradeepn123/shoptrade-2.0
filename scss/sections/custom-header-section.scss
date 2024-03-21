@@ -1,0 +1,28 @@
+@import 'StyleComponents/typography';
+@import 'StyleComponents/breakpoints';
+@import 'Token';
+
+
+.site-header__grid--logo-left.site-header__btn {
+    grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
+    @media(--md-large){
+        grid-template-areas: "logo nav btn icons";
+    }
+    .area--nav{
+        justify-content: center;
+    }
+}
+.button__custom{
+    @include use-text-style('body-alt');
+    color: #FFFFFF;
+    background-color: #FF7121;
+    border: 0;
+    margin: 12px 0;
+    padding: 16px 18px;
+    font-family: inherit;
+    display: none;
+    @media(--md-large){
+        display: block;
+    }
+}
+

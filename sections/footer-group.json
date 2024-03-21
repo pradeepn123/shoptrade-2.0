@@ -116,10 +116,18 @@
         },
         "text_B98fzE": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "NEWSLETTER",
             "content": "<p>[subscribe form]<\/p>",
             "size": "text-size--18"
+          }
+        },
+        "newsletter_j7Jz6x": {
+          "type": "newsletter",
+          "settings": {
+            "title": "NEWSLETTER",
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
           }
         },
         "text_RhypG9": {
@@ -162,6 +170,7 @@
         "menu",
         "social_icons",
         "text_B98fzE",
+        "newsletter_j7Jz6x",
         "text_RhypG9",
         "text_JznHkH",
         "text_JtVn6U",

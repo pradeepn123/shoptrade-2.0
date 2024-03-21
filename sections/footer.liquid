@@ -1,3 +1,5 @@
+{{ 'custom-footer-section.css' | asset_url | stylesheet_tag }}
+
 {%- if section.blocks.size > 0 -%}
 
   <div class="footer-top grid grid--layout {{ section.settings.layout }}">
@@ -23,15 +25,37 @@
                 {{ block.settings.content }}
               </div>
               
-              {%- when 'menu' -%}
-                <nav class="footer-item__menu">
-                  {%- for link in linklists[block.settings.menu].links -%}
-                    <a class="link-arrow text-size--18" href="{{ link.url }}" {%- if block.settings.link_new_window -%} target="_blank" {%- endif -%}>
-                      <span class="link-arrow__icon">{%- render 'theme-symbols', icon: 'arrow' -%}</span>
-                      <span class="link-arrow__text"><span class="text-weight--bold text-animation--underline">{{ link.title | escape }}</span></span>
-                    </a>
-                  {%- endfor -%}
-                </nav>
+            {%- when 'menu' -%}
+              <nav class="footer-item__menu">
+                {%- for link in linklists[block.settings.menu].links -%}
+                  <a class="link-arrow text-size--18" href="{{ link.url }}" {%- if block.settings.link_new_window -%} target="_blank" {%- endif -%}>
+                    <span class="link-arrow__icon">{%- render 'theme-symbols', icon: 'arrow' -%}</span>
+                    <span class="link-arrow__text"><span class="text-weight--bold text-animation--underline">{{ link.title | escape }}</span></span>
+                  </a>
+                {%- endfor -%}
+              </nav>
+              
+            {%- when 'newsletter' -%}
+              <div class="newsletter">
+                <div class="newsletter__container gutter-bottom--regular {% if section.settings.is_centered %} newsletter__container--centered {% endif %} spacing--large remove-empty-space">
+                  {%- assign form_id = 'newsletter-' | append: section.id -%}
+                  {%- form 'customer', id: form_id, class: '' -%}
+                    {%- render 'form-errors', form: form -%}
+                    {%- if form.posted_successfully? -%}
+                      <p class="text-size--20">{{ 'general.newsletter.confirmation' | t }}</p>
+                    {%- else -%}
+                      <div class="fieldset">
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input type="email" class="newsletter__input" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email-{{ form_id }}" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off" required>
+                        <button type="submit" class="button button--regular" id="Subscribe-{{ form_id }}" aria-label="{{ 'general.newsletter.submit_label' | t }}">
+                          <span class="btn-label">{{ 'general.newsletter.submit_label' | t }}</span>
+                          <span aria-hidden="true">{%- render 'theme-symbols' icon: 'arrow' -%}</span>
+                        </button>
+                      </div>
+                    {%- endif -%}
+                  {%- endform -%}
+                </div>
+              </div>
 
             {%- when 'image' -%}
               <div class="footer-item__image" id="element-{{ block.id }}">
@@ -103,7 +127,7 @@
   {
     "name": "t:sections.footer.name",
     "class": "mount-footer element--has-section-borders",
-    "max_blocks": 8,
+    "max_blocks": 9,
     "settings": [
       {
         "type": "select",
@@ -275,6 +299,24 @@
             "id": "link_new_window",
             "label": "t:footer-menu-items.open_links_in_new_window",
             "default": false
+          }
+        ]
+      },
+      {
+        "type": "newsletter",
+        "name": "Newsletter",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.local-extra-words.sections.headings.title",
+            "default": "Subscribe to our newsletter"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:sections.rich-text.blocks.text.settings.text.label",
+            "default": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         ]
       },

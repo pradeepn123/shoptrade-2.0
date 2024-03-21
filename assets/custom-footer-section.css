@@ -1,0 +1,33 @@
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/sections/custom-footer-section.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+.footer-top .footer-item .newsletter .fieldset .newsletter__input {
+  width: 100%;
+  background: #222222;
+  color: #4A4A4A;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: inherit;
+  font-weight: 400;
+  border: 1px solid #4A4A4A;
+  padding: 12px 18px;
+}
+.footer-top .footer-item .newsletter .fieldset .button {
+  border-radius: var(--border-radius-buttons);
+  margin-top: 10px;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #F1F1F1;
+  font-family: inherit;
+  font-weight: 400;
+}
+.footer-top .footer-item .newsletter .fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill,
+.footer-top .footer-item .newsletter .fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:hover,
+.footer-top .footer-item .newsletter .fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:focus,
+.footer-top .footer-item .newsletter .fieldset input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1.875rem #4A4A4A inset !important;
+}

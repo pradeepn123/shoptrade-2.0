@@ -1,0 +1,36 @@
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/sections/custom-header-section.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+.site-header__grid--logo-left.site-header__btn {
+  grid-template-columns: -webkit-max-content minmax(0, 1fr) minmax(0, -webkit-max-content);
+  grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
+}
+@media (min-width: 1200px) {
+  .site-header__grid--logo-left.site-header__btn {
+    grid-template-areas: "logo nav btn icons";
+  }
+}
+.site-header__grid--logo-left.site-header__btn .area--nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__custom {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  background-color: #FF7121;
+  border: 0;
+  margin: 12px 0;
+  padding: 16px 18px;
+  font-family: inherit;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .button__custom {
+    display: block;
+  }
+}

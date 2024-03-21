@@ -1,0 +1,36 @@
+@import 'StyleComponents/typography';
+@import 'StyleComponents/breakpoints';
+@import 'Token';
+
+.footer-top{
+    .footer-item{
+        .newsletter{
+            .fieldset{
+                .newsletter__input{
+                    width: 100%;
+                    background: #222222;
+                    color: #4A4A4A;
+                    @include use-text-style('heading-3');
+                    font-family: inherit;
+                    font-weight: 400;
+                    border: 1px solid #4A4A4A;
+                    padding: 12px 18px;
+                }
+                .button{
+                    border-radius: var(--border-radius-buttons);
+                    margin-top: 10px;
+                    @include use-text-style('heading-3');
+                    color: #F1F1F1;
+                    font-family: inherit;
+                    font-weight: 400;
+                }
+                input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill, 
+                input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:hover, 
+                input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:focus, 
+                input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:active{
+                    -webkit-box-shadow: 0 0 0 1.875rem #4A4A4A inset!important;
+                }
+            }
+        }
+    }
+}
