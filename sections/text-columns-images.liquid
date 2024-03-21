@@ -1,3 +1,39 @@
+{% style %}
+  {%- for block in section.blocks -%}
+      #element-{{ block.id }} .card__image{
+        border: 1px solid #000000;
+      }
+  {% endfor %}
+   {% if section.settings.image_hover =='underline' %}
+     #element-{{ section.id }} .underline_on-hover .text-underline{
+      background-size: 0% 1px !important;
+    }
+    #element-{{ section.id }} .underline_on-hover:hover .text-underline {
+      background-size: 100% 1px !important;
+    }
+     #element-{{ section.id }} .text-underline{
+      background-repeat: no-repeat;
+      display: inline;
+      padding-bottom: 0;
+      transition: background-size 175ms linear;
+      position: relative;
+    }
+    #element-{{ section.id }} .text-underline {
+      background-position: right bottom;
+    }
+    #element-{{ section.id }} .text-underline{
+      background-position: left bottom;
+    }
+    #element-{{ section.id }} .text-underline {
+      background-image: linear-gradient(to right, var(--color-scheme-text), var(--color-scheme-text));
+      background-size: 0% 2px;
+    }
+    {% endif %}
+
+{% endstyle %}
+
+{{ 'text-column-image.css' | asset_url | stylesheet_tag }}
+
 {%- liquid
   if section.settings.style == 'slider'
     assign slider_id = section.id
@@ -20,7 +56,7 @@
   >
 {%- endif -%}
 
-  <div class="grid {% if section.settings.style == 'slider' %} grid--slider {% else %} grid--layout element--overflow-hidden {% endif %} {{ section.settings.layout_desktop }} grid-palm-1 {% if section.settings.disable_border %} element--hide-inner-borders {% endif %} grid--align-items-stretch">
+  <div id="element-{{ section.id }}"  class="grid {% if section.settings.style == 'slider' %} grid--slider {% else %} grid--layout element--overflow-hidden {% endif %} {{ section.settings.layout_desktop }} grid-palm-1 {% if section.settings.disable_border %} element--hide-inner-borders {% endif %} grid--align-items-stretch">
 
     {%- for block in section.blocks -%}
 
@@ -34,7 +70,7 @@
 
         {%- render 'media-shape', shape: block.settings.media_shape, id: block.id, element: 'element' -%}
 
-        <div class="spacing--xlarge remove-empty-space">
+        <div class="spacing--xlarge remove-empty-space underline_on-hover">
           <div 
             class="card__image"
             style="padding-top:{{ 100 | divided_by: section.settings.image_aspect_ratio }}%"
@@ -55,6 +91,13 @@
                 echo placeholder_svg | placeholder_svg_tag: 'onboarding-svg'
               endunless
             -%}
+            {% if section.settings.image_hover =='view-project' %}
+           <a href="{{block.settings.view-project_url}}">
+             <div class="card__image-badge">
+              <span class="circle__content">View Project</span>
+            </div>
+          </a>
+            {% endif %}
           </div>
           
           {%- unless block.settings.title == blank and block.settings.caption == blank -%}
@@ -62,15 +105,17 @@
             <div class="spacing--xlarge remove-empty-space {% if section.settings.remove_padding %} gutter--small {% endif %}">
 
               {%- unless block.settings.title == blank -%}
-                <div>
-                  <{{ block.settings.seo_h_tag }} class="text-line-height--small
+                <a href="{{ block.settings.title_url }}">
+                  <div class="">
+                  <{{ block.settings.seo_h_tag }} class="text-line-height--small text-underline
                     {{ section.settings.title_text_size }} {{ section.settings.title_text_font }}
                     {% if section.settings.title_text_weight %} text-weight--bold {% endif %}
                   " style="margin-bottom:0"
                   >
-                    {{ block.settings.title | escape }}
+                  {{ block.settings.title | escape }}
                   </{{ block.settings.seo_h_tag }}>
                 </div>
+                </a>
               {%- endunless -%}
 
               {%- unless block.settings.caption == blank -%}
@@ -153,6 +198,26 @@
         }
       ],
       "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "image_hover",
+      "label": "hover Effect",
+      "options": [
+        {
+          "value": "underline",
+          "label": "Underline"
+        },
+        {
+          "value": "view-project",
+          "label": "View Project badge"
+        },
+        {
+          "value": "none",
+          "label": "none"
+        }
+      ],
+      "default": "none"
     },
     {
       "type": "checkbox",
@@ -405,6 +470,11 @@
           "label": "t:sections.gallery.blocks.image.settings.image.label",
           "info": "t:sections.local-extra-words.sections.text-columns-with-images.blocks.image.info"
         },
+         {
+          "type": "url",
+          "id": "view-project_url",
+          "label": "View Project Url"
+         },
         {
           "type": "select",
           "id": "media_shape",
@@ -446,6 +516,11 @@
           "id": "title",
           "label": "t:sections.local-extra-words.sections.headings.title",
           "default": "Text with icon"
+        },
+        {
+          "type": "url",
+          "id": "title_url",
+          "label": "Title Url"
         },
         {
           "type": "richtext",

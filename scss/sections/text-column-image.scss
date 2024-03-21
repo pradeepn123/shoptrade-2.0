@@ -1,0 +1,45 @@
+@import 'Token';
+@import 'StyleComponents/layout';
+@import 'StyleComponents/button';
+
+
+
+.card{
+    &__image{
+        position: relative;
+    }
+    &__image-badge{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FF7121;
+        height:128px;
+        width:128px;
+        border-radius: 50%; 
+        display: none;
+    }
+    &__image-badge span{
+        color: #FFFFFF;
+        font-size:14px;
+        font-weight:700;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+  
+}
+
+.spacing--xlarge:hover .card__image-badge{
+    display: inline-table;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 500ms;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
