@@ -787,19 +787,6 @@
             "seo_h_tag": "h3"
           }
         },
-        "image_TccPRx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/default_profile_3.jpg",
-            "media_shape": "none",
-            "title": "Kaustubh",
-            "caption": "<p>Software Developer Engineer-III<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_awrwUD": {
           "type": "image",
           "settings": {
@@ -872,6 +859,19 @@
             "media_shape": "none",
             "title": "Vinod Kalyan",
             "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_TccPRx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/default_profile_3.jpg",
+            "media_shape": "none",
+            "title": "Kaustubh",
+            "caption": "<p>Software Developer Engineer-III<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -1010,13 +1010,13 @@
         "image_T3Ecmy",
         "image_ReqXVk",
         "image_zLHitx",
-        "image_TccPRx",
         "image_awrwUD",
         "image_GWnRe7",
         "image_giECXa",
         "image_kFAFMG",
         "image_DG73Cy",
         "image_8LDRXm",
+        "image_TccPRx",
         "image_gLMdt3",
         "image_hBnaiL",
         "image_JGFAa7",
