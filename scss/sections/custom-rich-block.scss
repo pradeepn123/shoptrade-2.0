@@ -39,6 +39,15 @@
     }
        
   }
+  &_cta_block_wrapper{
+    border-radius: 20px;
+    @media (--lg){
+    display: flex;
+    border: 1px solid colors.$gray-450;
+    justify-content: space-between;
+    padding: 16px;
+    }
+  }
 
   &_cta_block{
       display: flex;
@@ -59,7 +68,12 @@
       }
       @media(--md-large){
         flex-direction: row;
-        
+      }
+      @media (--lg){
+        justify-content: unset; 
+        padding: unset; 
+        border: unset;
+        border-radius: unset;
       }
   } 
   &_cta{
@@ -103,6 +117,10 @@
     }
   }
   &_cta_logo{
+    display: block;
+    @media (--lg){
+      display: none;
+    }
     height: 30px;
     width: 97px; 
     @media (--sm) {
@@ -115,6 +133,13 @@
       height: 100%;
       object-fit: contain;
     }
+  }
+  &_wider_logo{
+    display: none;
+    @media (--lg){
+      display: block;
+    }
+
   }
 
 }

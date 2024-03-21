@@ -8,7 +8,7 @@
   }
   .custom-rich-blocks-{{ section.id }}  .custom-rich-blocks_heading {{ sections.seo_h_tag }}{
       font-size: {{ sections.text_size | times: 0.70 | round: 0  }}px;
-      line-height: 1.1; 
+      line-height: 1.1;
     }
     /* .custom-rich-blocks-{{ section.id }}  .button__text{
      font-size: {{ sections.text_size_button | times: 0.60 | round: 0 }}px;
@@ -16,6 +16,10 @@
   .custom-rich-blocks-{{ section.id }} .custom-rich-blocks_cta_block{
     background-color: {{  sections.bg_color }};
   }
+  .custom-rich-blocks-{{ section.id }} .custom-rich-blocks_cta_block_wrapper{
+    background-color: {{  sections.bg_color }};
+  }
+
 
   @media screen and (min-width: 1024px) {
     .custom-rich-blocks-{{ section.id }} {
@@ -44,32 +48,37 @@
     </div>
     <div class="custom-rich-blocks_para_cta">
       <div class="custom-rich-blocks_para">{{ sections.paragraph }}</div>
-      <div class="custom-rich-blocks_cta_block">
+      <div class="custom-rich-blocks_cta_block_wrapper">
+        <div class="custom-rich-blocks_cta_block">
+          <div class="custom-rich-blocks_cta">
+            {%- liquid
+              assign button_style = sections.button_style | append: sections.button_hover
+              render 'button', label: sections.button_label, link: sections.link, style: button_style, class: sections.button_size, target: sections.target
+            -%}
+          </div>
 
-        <div class="custom-rich-blocks_cta">
-          {%- liquid
-            assign button_style = sections.button_style | append: sections.button_hover
-            render 'button', label: sections.button_label, link: sections.link, style: button_style, class: sections.button_size, target: sections.target
-          -%}
-        </div> 
-        
-        <div class=custom-rich-blocks_cta_content>
-        {% if sections.image %}
-          <div class="custom-rich-blocks_cta_imgs"><img src=" {{ sections.image | image_url }}"></div>
-        {% endif %}
-        <div class="custom-rich-blocks_cta_txt">
-          {{ sections.text }}
+          <div class="custom-rich-blocks_cta_content">
+            {% if sections.image %}
+              <div class="custom-rich-blocks_cta_imgs"><img src=" {{ sections.image | image_url }}"></div>
+            {% endif %}
+            <div class="custom-rich-blocks_cta_txt">
+              {{ sections.text }}
+            </div>
+            {% if sections.logo %}
+              <div class="custom-rich-blocks_cta_logo"><img src="{{ sections.logo |  image_url }}"></div>
+            {% endif %}
+          </div>
         </div>
         {% if sections.logo %}
-          <div class="custom-rich-blocks_cta_logo"><img src="{{ sections.logo |  image_url }}"></div>
+          <div class="custom-rich-blocks_cta_logo custom-rich-blocks_wider_logo">
+            <img src="{{ sections.logo |  image_url }}">
+          </div>
         {% endif %}
-      </div>
-
       </div>
     </div>
   </div>
 </section>
- {% if sections.show_line %}  <div class="horizontal_line"> </div> {% endif %}
+{% if sections.show_line %}<div class="horizontal_line"></div>{% endif %}
 {% schema %}
 {
   "name": "custom rich blocks",
@@ -264,7 +273,7 @@
       "id": "show_line",
       "type": "checkbox",
       "label": "Show horizontal line",
-      "default": true 
+      "default": true
     }
   ],
   "presets": [
