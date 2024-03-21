@@ -30,9 +30,9 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_quantity_selector": true,
+            "show_quantity_selector": false,
             "show_preorder": false,
-            "show_inventory": true,
+            "show_inventory": false,
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false,
             "show_price": true,
@@ -50,6 +50,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
           }
         }
