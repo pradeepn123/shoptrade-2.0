@@ -11,7 +11,7 @@
         "image_overlay_opacity": 30,
         "image_hide_on_mobile": false,
         "products_number": 24,
-        "layout_desktop": "four-columns",
+        "layout_desktop": "three-columns",
         "layout_mobile": "grid-palm-2",
         "enable_sorting": false,
         "enable_filtering": false,

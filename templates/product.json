@@ -6,6 +6,9 @@
         "title": {
           "type": "title",
           "settings": {
+            "text_font": "text-font--headings",
+            "text_size": "text-size--80",
+            "mobile_text_size": "1"
           }
         },
         "price": {
@@ -16,18 +19,32 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "variants_style": "radio",
+            "unavailable_variants": "disable",
+            "size_guide_set": "size,format,größe,talla,taille,dimension,mărime,dimensione,tamanho,寸法",
+            "size_guide_button": "SIZE GUIDE",
+            "size_guide_page": "",
+            "size_guide_open": "popup"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true
+            "show_preorder": false,
+            "show_inventory": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_price": true,
+            "color_scheme": ""
           }
         },
         "description": {
           "type": "description",
           "settings": {
+            "text_font": "text-font--body",
+            "text_size": "text-size--24",
+            "text_line_height": "text-line-height--default",
             "product_description_truncated": "full"
           }
         },
@@ -46,14 +63,33 @@
         "share"
       ],
       "settings": {
+        "gallery_layout": "one-col scroll",
+        "gallery_desktop_width": "one-half",
+        "gallery_aspect_ratio": "1",
+        "media_shape": "none",
+        "add_gallery_item_border": true,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "show_thumbnails": false,
+        "add_parallax": true,
         "enable_zoom": true,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "remove_border_vertical": false,
+        "remove_border_blocks": false,
+        "default_to_first_variant": true,
+        "color_scheme": "",
+        "disable_section_bottom_border": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Recommended"
+        "heading": "Recommended",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-4 grid-lap-3",
+        "layout_mobile": "grid-palm-2",
+        "color_scheme": "",
+        "disable_section_bottom_border": false
       }
     }
   },
