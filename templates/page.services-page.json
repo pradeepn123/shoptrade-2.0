@@ -120,18 +120,165 @@
         "cta_label": "",
         "cta_url": "",
         "title_font": "text-font--body",
-        "title_size": "40",
+        "title_size": "30",
         "title_weight": false,
         "text_size": "18",
         "color_scheme": "scheme1",
         "invert_selected_toggle": false,
         "disable_section_bottom_border": false
       }
+    },
+    "promotion_blocks_gJAWjU": {
+      "type": "promotion-blocks",
+      "blocks": {
+        "card_zV6a3q": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Promotion",
+            "subtitle": "Write about it",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_YYr9YE": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Promotion",
+            "subtitle": "Write about it",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "card_7BaHdY": {
+          "type": "card",
+          "settings": {
+            "image_overlay": "rgba(0,0,0,0)",
+            "image_overlay_opacity": 30,
+            "media_shape": "none",
+            "add_gallery_item_border": false,
+            "hide_media": true,
+            "title": "Promotion",
+            "subtitle": "Write about it",
+            "text_color_scheme": "",
+            "button_label": "",
+            "button_link": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "card_zV6a3q",
+        "card_YYr9YE",
+        "card_7BaHdY"
+      ],
+      "settings": {
+        "heading": "Rich blocks",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3",
+        "layout_mobile": "grid-palm-1",
+        "style": "grid",
+        "image_aspect_ratio": "1.33333",
+        "alignment": "horizontal-left align-content--vertical-top",
+        "width": "70",
+        "title_font": "text-font--headings",
+        "title_size": "text-size--60",
+        "mobile_text_size": "1",
+        "subtitle_size": "text-size--18",
+        "spacing": 12,
+        "gutter": "grid-padding",
+        "button_style": "outline",
+        "button_size": "button--regular",
+        "button_hover": "-arrow",
+        "cta_label": "",
+        "cta_url": "",
+        "color_scheme": "scheme4",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "hide_block_if": false
+      }
+    },
+    "rich_text_8hAM3x": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6iFKbe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--30",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "button_cDDBDL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        }
+      },
+      "block_order": [
+        "text_6iFKbe",
+        "button_cDDBDL"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "right",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-center align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "100",
+        "color_scheme": "scheme4",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "scheme4",
+        "disable_border": true,
+        "remove_border_radius": true,
+        "remove_padding": true,
+        "add_border": false,
+        "hide_block_if": false
+      }
     }
   },
   "order": [
     "main",
     "rich_text_aX9w6R",
-    "content_toggles_4wXKDW"
+    "content_toggles_4wXKDW",
+    "promotion_blocks_gJAWjU",
+    "rich_text_8hAM3x"
   ]
 }
