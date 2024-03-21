@@ -1,7 +1,7 @@
 @use 'StyleComponents/colors';
 @use 'StyleComponents/typography';
 
-.button {
+.button--secondary {
     background: colors.$red;
     color: currentColor;
     border-radius: 4px;

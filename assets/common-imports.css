@@ -32,7 +32,7 @@
   }
 }
 
-.button {
+.button--secondary {
   background: #ED1C24;
   color: currentColor;
   border-radius: 4px;
@@ -49,12 +49,12 @@
   font-weight: 600;
 }
 @media (--xxs) {
-  .button {
+  .button--secondary {
     padding: 13px 28px;
   }
 }
 @media (--md) {
-  .button {
+  .button--secondary {
     font-family: "poppins";
     font-size: 16px;
     font-weight: 400;
@@ -62,21 +62,21 @@
     font-weight: 600;
   }
 }
-.button svg {
+.button--secondary svg {
   vertical-align: middle;
   margin-left: 5px;
 }
-.button--text:hover {
+.button--secondary--text:hover {
   border: 0;
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.button--transparent {
+.button--secondary--transparent {
   background: transparent !important;
   color: currentColor !important;
 }
-.button--outline {
+.button--secondary--outline {
   background: transparent !important;
   color: currentColor !important;
   border: 1px solid #fff;
@@ -84,12 +84,12 @@
   margin-top: 10px;
 }
 @media (--md) {
-  .button--outline {
+  .button--secondary--outline {
     margin-top: 28px;
     padding: 13px 15px;
   }
 }
-.button--outline:hover {
+.button--secondary--outline:hover {
   border-color: #fff !important;
   outline: 0;
   -webkit-box-shadow: none !important;

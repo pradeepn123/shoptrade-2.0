@@ -69,6 +69,7 @@
     </div>
   </div>
 </section>
+ {% if sections.show_line %}  <div class="horizontal_line"> </div> {% endif %}
 {% schema %}
 {
   "name": "custom rich blocks",
@@ -258,6 +259,12 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Logo"
+    },
+    {
+      "id": "show_line",
+      "type": "checkbox",
+      "label": "Show horizontal line",
+      "default": true 
     }
   ],
   "presets": [
