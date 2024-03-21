@@ -20,6 +20,86 @@
         "remove_padding": false
       }
     },
+    "custom_rich_block_KVBVnU": {
+      "type": "custom-rich-block",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title": "Full Spectrum Ecommerce Agency",
+        "seo_h_tag": "h1",
+        "text_font": "text-font--headings",
+        "text_size": 48,
+        "paragraph": "<p>Designing, developing, and scaling e-commerce stores for industry leaders. Our expertise ensures tailored solutions that drive growth and success for our top clients.<\/p>",
+        "bg_color": "#f6f6f6",
+        "button_style": "solid",
+        "button_hover": "",
+        "button_label": "Book a call",
+        "link": "",
+        "button_size": "button--regular",
+        "text_size_button": 23,
+        "target": false,
+        "image": "shopify:\/\/shop_images\/founders-2.png",
+        "text": "<p>Your Personal <br> Success Team<\/p>",
+        "logo": "shopify:\/\/shop_images\/shopify_plus-png.png"
+      }
+    },
+    "rich_text_N98y9k": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8VciYP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--30",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--custom-medium",
+            "seo_h_tag": "span"
+          }
+        },
+        "button_pJqipk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "link": "shopify:\/\/collections\/frontpage",
+            "target": false,
+            "button_style": "solid",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        }
+      },
+      "block_order": [
+        "text_8VciYP",
+        "button_pJqipk"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Rich text",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "top no-image",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-center align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "100",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
     "promotion_blocks_FCbwaW": {
       "type": "promotion-blocks",
       "blocks": {
@@ -62,6 +142,7 @@
         "card_cGYMz9",
         "card_E6kdpV"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "seo_h_tag": "h1",
@@ -1668,6 +1749,8 @@
   },
   "order": [
     "video_Ty4PtA",
+    "custom_rich_block_KVBVnU",
+    "rich_text_N98y9k",
     "promotion_blocks_FCbwaW",
     "scrolling_images_4W3aRA",
     "text_columns_images_HN4YEx",

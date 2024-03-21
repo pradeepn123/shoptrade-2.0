@@ -1,0 +1,269 @@
+{{ 'custom-rich-block.css' | asset_url | stylesheet_tag }}
+
+{% assign sections = section.settings %}
+{%- style -%}
+  .custom-rich-blocks-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | times: 0.50 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.50 | round: 0 }}px;
+  }
+  .custom-rich-blocks-{{ section.id }}  .custom-rich-blocks_heading {{ sections.seo_h_tag }}{
+      font-size: {{ sections.text_size | times: 0.70 | round: 0  }}px;
+      line-height: 1.1; 
+    }
+    /* .custom-rich-blocks-{{ section.id }}  .button__text{
+     font-size: {{ sections.text_size_button | times: 0.60 | round: 0 }}px;
+  } */
+  .custom-rich-blocks-{{ section.id }} .custom-rich-blocks_cta_block{
+    background-color: {{  sections.bg_color }};
+  }
+
+  @media screen and (min-width: 1024px) {
+    .custom-rich-blocks-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    .custom-rich-blocks-{{ section.id }}  .custom-rich-blocks_heading {{ sections.seo_h_tag }}{
+      font-size: {{ sections.text_size }}px;
+    }
+    .custom-rich-blocks-{{ section.id }}  .button__text{
+    font-size: {{ sections.text_size_button }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="custom-rich-blocks custom-rich-blocks-{{ section.id }}">
+  <div class="custom-rich-blocks_wrapper">
+    <div class="custom-rich-blocks_heading">
+      <{{ sections.seo_h_tag }}
+        class="{{ sections.text_font }} rte remove-empty-space"
+        {{ block.shopify_attributes }}
+        id="block-{{ block.id }}"
+      >
+        {{ sections.title }}
+      </{{ sections.seo_h_tag }}>
+    </div>
+    <div class="custom-rich-blocks_para_cta">
+      <div class="custom-rich-blocks_para">{{ sections.paragraph }}</div>
+      <div class="custom-rich-blocks_cta_block">
+
+        <div class="custom-rich-blocks_cta">
+          {%- liquid
+            assign button_style = sections.button_style | append: sections.button_hover
+            render 'button', label: sections.button_label, link: sections.link, style: button_style, class: sections.button_size, target: sections.target
+          -%}
+        </div> 
+        
+        <div class=custom-rich-blocks_cta_content>
+        {% if sections.image %}
+          <div class="custom-rich-blocks_cta_imgs"><img src=" {{ sections.image | image_url }}"></div>
+        {% endif %}
+        <div class="custom-rich-blocks_cta_txt">
+          {{ sections.text }}
+        </div>
+        {% if sections.logo %}
+          <div class="custom-rich-blocks_cta_logo"><img src="{{ sections.logo |  image_url }}"></div>
+        {% endif %}
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "custom rich blocks",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding bottom",
+      "default": 36
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Full Spectrum Ecommerce Agency"
+    },
+    {
+      "type": "select",
+      "id": "seo_h_tag",
+      "label": "t:sections.refactor_words.seo.label",
+      "info": "t:sections.refactor_words.seo.info",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "text_font",
+      "label": "t:raw-extra-words.new_schema.text_font",
+      "options": [
+        {
+          "value": "text-font--body",
+          "label": "t:sections.split-extra-words.settings_schema.typography.headings.body"
+        },
+        {
+          "value": "text-font--headings",
+          "label": "t:sections.split-extra-words.settings_schema.typography.headings.headings"
+        }
+      ],
+      "default": "text-font--body"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Text size",
+      "default": 48
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "paragraph"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Body text",
+      "default": "#000000"
+    },
+    {
+      "id": "button_style",
+      "label": "t:sections.local-extra-words.sections.buttons.style.label",
+      "type": "select",
+      "options": [
+        {
+          "value": "outline",
+          "label": "t:sections.local-extra-words.sections.buttons.style.option__1"
+        },
+        {
+          "value": "solid",
+          "label": "t:sections.local-extra-words.sections.buttons.style.option__2"
+        }
+      ],
+      "default": "outline"
+    },
+    {
+      "type": "select",
+      "id": "button_hover",
+      "label": "t:raw-extra-words.new_schema.button_hover.label",
+      "options": [
+        {
+          "value": "-arrow",
+          "label": "t:raw-extra-words.new_schema.button_hover.option_1"
+        },
+        {
+          "value": "",
+          "label": "t:raw-extra-words.new_schema.button_hover.option_2"
+        }
+      ],
+      "default": "-arrow"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.rich-text.blocks.button.settings.button_label.label",
+      "default": "Show more"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "t:sections.rich-text.blocks.button.settings.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "t:sections.local-extra-words.sections.main-header.settings.promotion_block.button.size",
+      "options": [
+        {
+          "value": "button--small",
+          "label": "t:raw-extra-words.settings_schema.options.small"
+        },
+        {
+          "value": "button--regular",
+          "label": "t:raw-extra-words.settings_schema.options.regular"
+        },
+        {
+          "value": "button--large",
+          "label": "t:raw-extra-words.settings_schema.options.large"
+        }
+      ],
+      "default": "button--regular"
+    },
+    {
+      "type": "range",
+      "id": "text_size_button",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "button font size",
+      "default": 23
+    },
+    {
+      "type": "checkbox",
+      "id": "target",
+      "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "text"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom rich blocks"
+    }
+  ]
+}
+{% endschema %}
