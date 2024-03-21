@@ -1,3 +1,5 @@
+{{ 'video.css' | asset_url |stylesheet_tag }}
+
 {%- render 'section-heading', heading: section.settings.heading, navigation: false, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border -%}
 
 {%- unless section.settings.video == blank -%}
@@ -29,7 +31,7 @@
         {%- endif -%}
       </template>
 
-      <div class="video-popup__container card__image"  style="padding-top:56.25%" data-js-video-popup-container id="element-{{ block.id }}">
+      <div class="video-popup__container card__image"  style="padding-top:{{ section.settings.video_height }}%; {% if section.settings.add_border %} border: 1px solid {{ section.settings.border_color }}{% endif %}" data-js-video-popup-container id="element-{{ block.id }}">
 
         <a class="video-popup__link" href="{{ section.settings.video }}" data-js-video-popup-link data-no-instant>
 
@@ -135,6 +137,27 @@
         "label": "t:sections.local-extra-words.sections.video.settings.video.label",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "checkbox",
+        "id": "add_border",
+        "label": "Add border",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "border_color",
+        "label": "Border color",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "video_height",
+        "label": "Adjust the height of video (%)",
+        "min": 20,
+        "max": 100,
+        "step": 1,
+        "default": 56
       },
       {
         "type": "image_picker",

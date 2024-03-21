@@ -68,63 +68,12 @@
         "width": "70",
         "color_scheme": "",
         "disable_section_bottom_border": false,
-        "color_scheme_card": "scheme1",
+        "color_scheme_card": "",
         "disable_border": true,
         "remove_border_radius": false,
         "remove_padding": true,
         "add_border": true,
         "hide_block_if": false
-      }
-    },
-    "text_columns_icons_3LfdG3": {
-      "type": "text-columns-icons",
-      "blocks": {
-        "image_VNbzbw": {
-          "type": "image",
-          "settings": {
-            "icon": "earth-globe",
-            "title": "Our Mission",
-            "caption": "<p>Our mission is to establish a network of entrepreneurs that help each other with the sole purpose of scaling their businesses. In an ever-changing online world, the only way to stay ahead of the curve is by surrounding yourself with like-minded energetic professionals.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_xj3HzF": {
-          "type": "image",
-          "settings": {
-            "icon": "star",
-            "title": "Our Vision",
-            "caption": "<p>Our vision is to become the swiss army knife that every online entrepreneur has in their pockets. We’re getting there through intelligent partnerships with established companies, building our own suite of products, and enabling clients to reach new business heights by providing them with on-demand teams of agile professionals.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "image_VNbzbw",
-        "image_xj3HzF"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "hide_image_icon": false,
-        "layout_desktop": "grid-2",
-        "style": "grid",
-        "title_text_font": "text-font--body",
-        "title_text_size": "text-size--40",
-        "title_text_weight": true,
-        "subtitle_text_font": "text-font--body",
-        "subtitle_text_size": "text-size--18",
-        "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "disable_border": false
       }
     },
     "promotion_blocks_mLNkjm": {
@@ -717,7 +666,6 @@
   "order": [
     "main",
     "rich_text_jnBDC4",
-    "text_columns_icons_3LfdG3",
     "promotion_blocks_mLNkjm",
     "vertical_slider_BxeYTt",
     "promotion_blocks_jTkEbT",

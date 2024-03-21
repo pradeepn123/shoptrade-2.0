@@ -36,6 +36,10 @@
         <div class="go go--next" data-js-slider-next><span class="visually-hidden">{{ 'general.accessibility_labels.next' | t }}</span> {% render 'theme-symbols' icon: 'arrow' %}</div>
       </css-slider-navigation>
     {%- endunless -%}
+
+    {%- unless label == blank -%}
+      {% render 'button', style: "outline", label: label, link: link%}
+    {% endunless %}
   
   </div>
 

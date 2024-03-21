@@ -23,13 +23,14 @@
   endif
 
 -%}
+
 {%- if type == 'button' -%}
   <button {{ id }} {% if is_submit %} type="submit" {% endif %} {% if onclick %} onclick="{{ onclick }}" {% endif %} {% if cta_target %} target="{{ cta_target }}" {%- endif -%}
 {%- else -%}
   <a href="{{ link | escape }}" {% if target %} target="_blank" {% endif %} {% if onclick %} onclick="{{ onclick }}" {% endif %} {% if cta_target %} target="{{ cta_target }}" {% endif -%}
 {%- endif -%}
 
-  class="button {{ style_class }} {{ class }}" title="{{ label }}" {{ attribute }}>
+  class="button {{ style_class }}{{ class }}" title="{{ label }}" {{ attribute }}>
 
     <span class="button__text">{{ label }}</span>
 
