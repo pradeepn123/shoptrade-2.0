@@ -1,0 +1,361 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich_text_dWBxQF": {
+      "type": "rich-text",
+      "blocks": {
+        "empty_ngH3R3": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
+        },
+        "text_X4fxiD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Work<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--100",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span"
+          }
+        },
+        "empty_iRafMi": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
+        }
+      },
+      "block_order": [
+        "empty_ngH3R3",
+        "text_X4fxiD",
+        "empty_iRafMi"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "top no-image",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "grid-padding",
+        "width": "70",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": true,
+        "remove_border_radius": true,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
+    "text_columns_images_QFrj6U": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_GrTm6x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Solefly.jpg",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_BqzixF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SNS.jpg",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_k4fGRN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cowboy.jpg",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_rcmiKJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Winerack.jpg",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_mX3arM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_bMncj9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_melissani.webp",
+            "media_shape": "none",
+            "title": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_GrTm6x",
+        "image_BqzixF",
+        "image_k4fGRN",
+        "image_rcmiKJ",
+        "image_mX3arM",
+        "image_bMncj9"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-2",
+        "style": "grid",
+        "image_aspect_ratio": "1.33333",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "scheme3",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    },
+    "text_columns_images_74rMfM": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_makqAV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Solefly.jpg",
+            "media_shape": "none",
+            "title": "Solefly",
+            "caption": "<p>Sneakers and apparel store that is located in South Miami & Cutler Bay. Carrying the most predominant brands in the industry.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_aVBjWX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SNS.jpg",
+            "media_shape": "none",
+            "title": "SNS Health",
+            "caption": "<p>Shop online for the finest vitamins and supplements from top brands at SNS Health, in Canada. <\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_3HGaF7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cowboy.jpg",
+            "media_shape": "none",
+            "title": "Cowtown Cowboy Outfitters",
+            "caption": "<p>Shop cowboy boots & hats, western wear, work boots and much more from your favorite authentic western brands.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_YEtE9p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Winerack.jpg",
+            "media_shape": "none",
+            "title": "WineRacks",
+            "caption": "<p>For than more twenty years, WineRacks has been providing residences and businesses alike with custom made wine racks and wine cellars.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_KAehxj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
+            "media_shape": "none",
+            "title": "Hathaspace",
+            "caption": "<p>Air purifiers and air filtration systems for home & office help keep the air inside where you live or work fresh & healthy.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_y77jUJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_melissani.webp",
+            "media_shape": "none",
+            "title": "Melissani",
+            "caption": "<p>Upgrade your home's water quality with Melissani's premium countertop RO water purifiers. <\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_makqAV",
+        "image_aVBjWX",
+        "image_3HGaF7",
+        "image_YEtE9p",
+        "image_KAehxj",
+        "image_y77jUJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    },
+    "text_columns_images_hFdgt7": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_kNpFUY": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Blog title",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_eWhFfP": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Blog title",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_NqAJCe": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Blog title",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_kNpFUY",
+        "image_eWhFfP",
+        "image_NqAJCe"
+      ],
+      "settings": {
+        "heading": "Insights",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1.33333",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_dWBxQF",
+    "text_columns_images_QFrj6U",
+    "text_columns_images_74rMfM",
+    "text_columns_images_hFdgt7"
+  ]
+}
