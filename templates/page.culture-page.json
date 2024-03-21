@@ -371,6 +371,9 @@
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "add_border": true,
+        "border_color": "#000",
+        "video_height": 56,
         "image": "shopify:\/\/shop_images\/5K8A6537.jpg",
         "color_scheme": "",
         "disable_section_bottom_border": false,
@@ -566,7 +569,7 @@
         "card_f3xNbW"
       ],
       "settings": {
-        "heading": "Say Hello to the leaders",
+        "heading": "Say hello to the leaders",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
         "layout_desktop": "grid-4 grid-lap-3",
@@ -586,12 +589,376 @@
         "button_hover": "-arrow",
         "cta_label": "",
         "cta_url": "",
-        "color_scheme": "scheme4",
+        "color_scheme": "scheme1",
         "disable_section_bottom_border": false,
         "disable_border": false,
         "remove_border_radius": false,
         "remove_padding": false,
         "hide_block_if": false
+      }
+    },
+    "text_columns_images_Na86Er": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_KxfFDM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/career-profile.png",
+            "media_shape": "none",
+            "title": "View Openings",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_mCVe99": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
+            "media_shape": "none",
+            "title": "Amit Gupta",
+            "caption": "<p>Head of Engineering<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_fcebUT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Arjun.jpg",
+            "media_shape": "none",
+            "title": "Arjun GM",
+            "caption": "<p>Business Analyst<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_dK63rr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Akila.jpg",
+            "media_shape": "none",
+            "title": "Akila Mohan",
+            "caption": "<p>Senior Manager - People Operations<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_pbe3PX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sushanth.jpg",
+            "media_shape": "none",
+            "title": "Sushanth Suvarna",
+            "caption": "<p>Admin & HR Associate<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_Ab8Eix": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chaman.jpg",
+            "media_shape": "none",
+            "title": "Chaman Madhu",
+            "caption": "<p>Design II - (Product Design Specialist)<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_Jii8PU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Faizal.jpg",
+            "media_shape": "none",
+            "title": "Faizal Ahmed",
+            "caption": "<p>Design II - (Product Design Specialist)<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_rJtbdm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rosh_54915d4c-6020-4e24-a339-9613d27bae6a.jpg",
+            "media_shape": "none",
+            "title": "Rosh VR",
+            "caption": "<p>Design II - (User Interface Design Specialist)<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_A4YNrX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ash_2.png",
+            "media_shape": "none",
+            "title": "Adarsh S",
+            "caption": "<p>Design II - (Multimedia Design Specialist)<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_T3Ecmy": {
+          "type": "image",
+          "settings": {
+            "media_shape": "none",
+            "title": "Danish",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_ReqXVk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pradeep_431e0921-d376-42a5-86f9-cb5e6012ed3e.jpg",
+            "media_shape": "none",
+            "title": "Pradeep Neginhal",
+            "caption": "<p>Senior Front-End Engineering Manager<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_awrwUD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sumayya.jpg",
+            "media_shape": "none",
+            "title": "Sumayya Ishaq",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_GWnRe7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shivanshi.jpg",
+            "media_shape": "none",
+            "title": "Shivanshi Gupta",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_giECXa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Darshika_70c19156-2db9-45ff-b68e-8f290eaea9b9.jpg",
+            "media_shape": "none",
+            "title": "Darshika Pillai",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_kFAFMG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Keerthi.jpg",
+            "media_shape": "none",
+            "title": "Keerthi Sindhura",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_DG73Cy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sarudh.jpg",
+            "media_shape": "none",
+            "title": "Sahrudh Prathi",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_8LDRXm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vinod_30c4a7cf-fa58-43b7-941f-9b407a8cf4c7.jpg",
+            "media_shape": "none",
+            "title": "Vinod Kalyan",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_JGFAa7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nagavasavi.jpg",
+            "media_shape": "none",
+            "title": "Nagavasavi L",
+            "caption": "<p>Quality Assurance Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_qbbcVw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hadhil.jpg",
+            "media_shape": "none",
+            "title": "Mohamed Hadhil",
+            "caption": "<p>Support Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_h94zNC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shiv.jpg",
+            "media_shape": "none",
+            "title": "Shivanand A Khot",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_7mHEQe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ritu_86df88eb-cebc-4375-8672-908e67bc02bb.jpg",
+            "media_shape": "none",
+            "title": "Ritu R Shiragannavar",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_paDGgY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gururaj_1.png",
+            "media_shape": "none",
+            "title": "Gururaj Mannolkar",
+            "caption": "<p>Full-Stack Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_HBjg3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brijesh.png",
+            "media_shape": "none",
+            "title": "Brijesh M Patil",
+            "caption": "<p>Front-End Engineer<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_QzCQ7y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hussain.jpg",
+            "media_shape": "none",
+            "title": "Saddam Husen",
+            "caption": "<p>Office Assistant<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_KxfFDM",
+        "image_mCVe99",
+        "image_fcebUT",
+        "image_dK63rr",
+        "image_pbe3PX",
+        "image_Ab8Eix",
+        "image_Jii8PU",
+        "image_rJtbdm",
+        "image_A4YNrX",
+        "image_T3Ecmy",
+        "image_ReqXVk",
+        "image_awrwUD",
+        "image_GWnRe7",
+        "image_giECXa",
+        "image_kFAFMG",
+        "image_DG73Cy",
+        "image_8LDRXm",
+        "image_JGFAa7",
+        "image_qbbcVw",
+        "image_h94zNC",
+        "image_7mHEQe",
+        "image_paDGgY",
+        "image_HBjg3a",
+        "image_QzCQ7y"
+      ],
+      "settings": {
+        "heading": "Meet our team",
+        "cta_label": "",
+        "cta_link": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-4 grid-portable-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "scheme1",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
       }
     },
     "rich_text_i7mXkN": {
@@ -672,6 +1039,7 @@
     "video_Mx63EX",
     "promotion_blocks_RcyXUR",
     "promotion_blocks_HCAVU9",
+    "text_columns_images_Na86Er",
     "rich_text_i7mXkN"
   ]
 }
