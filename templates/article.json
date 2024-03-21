@@ -8,10 +8,10 @@
         "blog_show_comments": false,
         "show_image": true,
         "image_width": "one-half",
-        "image_alignment": "left",
+        "image_alignment": "center",
         "media_shape": "none",
         "content_width": "one-half",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "text_font": "text-font--body",
         "text_size": "text-size--20",
         "text_line_height": "text-line-height--default"
