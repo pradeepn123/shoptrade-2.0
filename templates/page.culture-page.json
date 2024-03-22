@@ -1261,7 +1261,7 @@
         "disable_section_title_border": false,
         "image_aspect_ratio": "1",
         "image_position": "top no-image",
-        "image_position_mobile": "above",
+        "image_position_mobile": "hide",
         "image_crop": false,
         "image_overlap": false,
         "image_overlay": "rgba(0,0,0,0)",
