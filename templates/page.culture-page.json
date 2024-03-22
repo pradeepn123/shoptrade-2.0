@@ -598,6 +598,7 @@
         "card_pViLtP",
         "card_f3xNbW"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Say hello to the leaders",
         "seo_h_tag": "h2",
@@ -625,6 +626,67 @@
         "remove_border_radius": false,
         "remove_padding": false,
         "hide_block_if": false
+      }
+    },
+    "text_columns_images_fh476q": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_inKVNC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
+            "view-project_url": "",
+            "media_shape": "none",
+            "title": "Mohammadu Mifras",
+            "title_url": "",
+            "caption": "<p>FOUNDER & CEO<br\/><br\/>Mifras is a young entrepreneur with a deep understanding of Commerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_CUFEpA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Deekshith.jpg",
+            "view-project_url": "",
+            "media_shape": "none",
+            "title": "Deekshith K Suvarna",
+            "title_url": "",
+            "caption": "<p>DIRECTOR (INDIA) | HEAD OF DESIGN<br\/><br\/>Deekshith is an accomplished professional with over 9+ years of experience in the field of Design,  Branding, Graphic Design, UX, UI and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_inKVNC",
+        "image_CUFEpA"
+      ],
+      "settings": {
+        "heading": "Say hello to the leaders",
+        "cta_label": "",
+        "cta_link": "",
+        "seo_h_tag": "h2",
+        "image_hover": "none",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-2",
+        "style": "slider",
+        "image_aspect_ratio": "1",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
       }
     },
     "text_columns_images_Na86Er": {
@@ -1200,6 +1262,7 @@
     "video_Mx63EX",
     "promotion_blocks_RcyXUR",
     "promotion_blocks_HCAVU9",
+    "text_columns_images_fh476q",
     "text_columns_images_Na86Er",
     "rich_text_i7mXkN"
   ]
