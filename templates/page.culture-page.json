@@ -637,6 +637,20 @@
             "image": "shopify:\/\/shop_images\/Mifras_17d7bafe-3940-4fc8-9224-770f45e902f2.jpg",
             "view-project_url": "",
             "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_kMXnDG": {
+          "type": "image",
+          "settings": {
+            "view-project_url": "",
+            "media_shape": "none",
             "title": "Mohammadu Mifras",
             "title_url": "",
             "caption": "<p>FOUNDER & CEO<br\/><br\/>Mifras is a young entrepreneur with a deep understanding of Commerce solutions and a proven track record of scaling online businesses, working with companies looking to transition to, or expand, their online presence.   He has successfully built, developed and launched a significant number of DTC brands for his clients.<\/p>",
@@ -652,6 +666,20 @@
             "image": "shopify:\/\/shop_images\/Deekshith.jpg",
             "view-project_url": "",
             "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_YByNtU": {
+          "type": "image",
+          "settings": {
+            "view-project_url": "",
+            "media_shape": "none",
             "title": "Deekshith K Suvarna",
             "title_url": "",
             "caption": "<p>DIRECTOR (INDIA) | HEAD OF DESIGN<br\/><br\/>Deekshith is an accomplished professional with over 9+ years of experience in the field of Design,  Branding, Graphic Design, UX, UI and Art Direction across various industries including Information Technology, Fashion, Food and Beverages. He believes that technology can revolutionise how people learn, communicate and create and he is passionate about shaping products and services that help people focus on what they do best.<\/p>",
@@ -664,7 +692,9 @@
       },
       "block_order": [
         "image_inKVNC",
-        "image_CUFEpA"
+        "image_kMXnDG",
+        "image_CUFEpA",
+        "image_YByNtU"
       ],
       "settings": {
         "heading": "Say hello to the leaders",
@@ -673,7 +703,7 @@
         "seo_h_tag": "h2",
         "image_hover": "none",
         "disable_section_title_border": false,
-        "layout_desktop": "grid-2",
+        "layout_desktop": "grid-4 grid-portable-3 grid-lap-2",
         "style": "grid",
         "image_aspect_ratio": "1",
         "title_text_font": "text-font--body",
