@@ -9,6 +9,12 @@
     "rich_text_jnBDC4": {
       "type": "rich-text",
       "blocks": {
+        "empty_cjxz7X": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
+        },
         "text_7hHbVY": {
           "type": "text",
           "settings": {
@@ -42,12 +48,20 @@
             "button_size": "button--regular",
             "button_hover": "-arrow"
           }
+        },
+        "empty_hz9aNt": {
+          "type": "empty",
+          "settings": {
+            "height": ""
+          }
         }
       },
       "block_order": [
+        "empty_cjxz7X",
         "text_7hHbVY",
         "text_8TrKNQ",
-        "button_xEdW47"
+        "button_xEdW47",
+        "empty_hz9aNt"
       ],
       "settings": {
         "heading": "",
@@ -621,8 +635,10 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/career-profile.png",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "View Openings",
+            "title_url": "",
             "caption": "",
             "cta_label": "",
             "cta_url": "",
@@ -634,8 +650,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Amit_a1983923-7187-48d3-b3ee-0f2cf9e5132b.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Amit Gupta",
+            "title_url": "",
             "caption": "<p>Head of Engineering<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -647,8 +665,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Akila.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Akila Mohan",
+            "title_url": "",
             "caption": "<p>Senior Manager - People Operations<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -660,8 +680,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Sushanth.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Sushanth Suvarna",
+            "title_url": "",
             "caption": "<p>Admin & HR Associate<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -673,8 +695,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Arjun.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Arjun GM",
+            "title_url": "",
             "caption": "<p>Business Analyst<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -686,8 +710,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_1.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Vithika",
+            "title_url": "",
             "caption": "<p>Business Development Executive<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -699,8 +725,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Chaman.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Chaman Madhu",
+            "title_url": "",
             "caption": "<p>Design II - (Product Design Specialist)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -712,8 +740,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Faizal.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Faizal Ahmed",
+            "title_url": "",
             "caption": "<p>Design II - (Product Design Specialist)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -725,8 +755,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rosh_54915d4c-6020-4e24-a339-9613d27bae6a.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Rosh VR",
+            "title_url": "",
             "caption": "<p>Design II - (User Interface Design Specialist)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -738,8 +770,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/ash_2.png",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Adarsh S",
+            "title_url": "",
             "caption": "<p>Design II - (Multimedia Design Specialist)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -751,8 +785,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_6.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Danish",
+            "title_url": "",
             "caption": "<p>Design II - (Visual Design Specialist)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -764,8 +800,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Pradeep_431e0921-d376-42a5-86f9-cb5e6012ed3e.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Pradeep Neginhal",
+            "title_url": "",
             "caption": "<p>Senior Front-End Engineering Manager<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -777,8 +815,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_2.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Umesh",
+            "title_url": "",
             "caption": "<p>Team Lead (Front-End)<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -790,8 +830,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Sumayya.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Sumayya Ishaq",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -803,8 +845,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shivanshi.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Shivanshi Gupta",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -816,8 +860,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Darshika_70c19156-2db9-45ff-b68e-8f290eaea9b9.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Darshika Pillai",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -829,8 +875,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Keerthi.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Keerthi Sindhura",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -842,8 +890,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Sarudh.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Sahrudh Prathi",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -855,8 +905,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Vinod_30c4a7cf-fa58-43b7-941f-9b407a8cf4c7.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Vinod Kalyan",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -868,8 +920,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_3.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Kaustubh",
+            "title_url": "",
             "caption": "<p>Software Developer Engineer-III<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -881,8 +935,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_4.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Madhan S",
+            "title_url": "",
             "caption": "<p>Software Developer Engineer-II<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -894,8 +950,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/default_profile_5.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Kenneth",
+            "title_url": "",
             "caption": "<p>Software Developer Engineer-II<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -907,8 +965,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Nagavasavi.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Nagavasavi L",
+            "title_url": "",
             "caption": "<p>Quality Assurance Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -920,8 +980,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Hadhil.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Mohamed Hadhil",
+            "title_url": "",
             "caption": "<p>Support Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -933,8 +995,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shiv.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Shivanand A Khot",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -946,8 +1010,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Ritu_86df88eb-cebc-4375-8672-908e67bc02bb.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Ritu R Shiragannavar",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -959,8 +1025,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/gururaj_1.png",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Gururaj Mannolkar",
+            "title_url": "",
             "caption": "<p>Full-Stack Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -972,8 +1040,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/brijesh.png",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Brijesh M Patil",
+            "title_url": "",
             "caption": "<p>Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -985,8 +1055,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Hussain.jpg",
+            "view-project_url": "",
             "media_shape": "none",
             "title": "Saddam Husen",
+            "title_url": "",
             "caption": "<p>Office Assistant<\/p>",
             "cta_label": "",
             "cta_url": "",
@@ -1031,6 +1103,7 @@
         "cta_label": "",
         "cta_link": "",
         "seo_h_tag": "h2",
+        "image_hover": "none",
         "disable_section_title_border": false,
         "layout_desktop": "grid-4 grid-portable-3 grid-lap-2",
         "style": "grid",
