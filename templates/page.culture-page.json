@@ -493,7 +493,7 @@
         "heading": "",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "layout_desktop": "grid-4 grid-lap-3",
+        "layout_desktop": "grid-2",
         "layout_mobile": "grid-palm-1",
         "style": "grid",
         "image_aspect_ratio": "2",
