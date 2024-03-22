@@ -230,22 +230,10 @@
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "span"
           }
-        },
-        "button_cDDBDL": {
-          "type": "button",
-          "settings": {
-            "button_label": "Become a partner",
-            "link": "",
-            "target": false,
-            "button_style": "outline",
-            "button_size": "button--regular",
-            "button_hover": "-arrow"
-          }
         }
       },
       "block_order": [
-        "text_6iFKbe",
-        "button_cDDBDL"
+        "text_6iFKbe"
       ],
       "settings": {
         "heading": "",
