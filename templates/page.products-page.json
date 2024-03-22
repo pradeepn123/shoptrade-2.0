@@ -67,30 +67,30 @@
     "text_columns_images_QFrj6U": {
       "type": "text-columns-images",
       "blocks": {
-        "image_GrTm6x": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-21_172903758.png",
-            "view-project_url": "",
-            "media_shape": "none",
-            "title": "",
-            "title_url": "",
-            "caption": "",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_BqzixF": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_2024-03-21_172950452.png",
             "view-project_url": "",
             "media_shape": "none",
-            "title": "",
-            "title_url": "",
-            "caption": "",
+            "title": "Sendif: Order Status Updates",
+            "title_url": "https:\/\/apps.shopify.com\/sendif",
+            "caption": "<p>If you sell products with lead times, it's important to keep customers updated so that they don't have to ask you when their order will be ready. We wanted a way to do that, so we built Sendif: an easy way to automate personalised order status update emails to customers that build trust and loyalty while saving you time on customer support.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_GrTm6x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2024-03-21_172903758.png",
+            "view-project_url": "",
+            "media_shape": "none",
+            "title": "TikShop ‑ Insta & TikTok Feeds",
+            "title_url": "https:\/\/apps.shopify.com\/new-tikshop",
+            "caption": "<p>TikShop brings aesthetic shoppable Instagram and TikTok feeds to your Shopify store. Simply connect your TikTok and\/or Instagram account and start building shoppable feeds. TikShop is highly responsive and does not slow down your store.<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -103,9 +103,9 @@
             "image": "shopify:\/\/shop_images\/image_2024-03-21_173057713.png",
             "view-project_url": "",
             "media_shape": "none",
-            "title": "",
-            "title_url": "",
-            "caption": "",
+            "title": "LensAdvizor: Prescription Lens",
+            "title_url": "https:\/\/apps.shopify.com\/lensadvizor",
+            "caption": "<p>With LensAdvizor, you can easily sell prescription lenses with your eyewear products. LensAdvizor lets your customers upload and enter their prescriptions and add lenses to your frames, just like how leading online brands do. Save time and sell more frames with a no-hassle setup and our dedicated support team.<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -114,8 +114,8 @@
         }
       },
       "block_order": [
-        "image_GrTm6x",
         "image_BqzixF",
+        "image_GrTm6x",
         "image_k4fGRN"
       ],
       "settings": {
@@ -123,7 +123,7 @@
         "cta_label": "",
         "cta_link": "",
         "seo_h_tag": "h2",
-        "image_hover": "none",
+        "image_hover": "view-project",
         "disable_section_title_border": false,
         "layout_desktop": "grid-2",
         "style": "grid",
