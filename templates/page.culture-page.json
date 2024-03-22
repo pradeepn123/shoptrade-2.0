@@ -106,56 +106,6 @@
         "hide_block_if": false
       }
     },
-    "text_columns_icons_AraniG": {
-      "type": "text-columns-icons",
-      "blocks": {
-        "image_Mx34Qb": {
-          "type": "image",
-          "settings": {
-            "icon": "delivery",
-            "title": "Our Mission",
-            "caption": "<p>Empower your business growth by connecting with energetic professionals in our entrepreneur network.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_QXtTFt": {
-          "type": "image",
-          "settings": {
-            "icon": "time-limit",
-            "title": "Our Vision",
-            "caption": "<p>Our vision is to become the swiss army knife that every online entrepreneur has in their pockets. We’re getting there through intelligent partnerships with established companies, building our own suite of products, and enabling clients to reach new business heights by providing them with on-demand teams of agile professionals.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "image_Mx34Qb",
-        "image_QXtTFt"
-      ],
-      "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "hide_image_icon": false,
-        "layout_desktop": "grid-2",
-        "style": "grid",
-        "title_text_font": "text-font--body",
-        "title_text_size": "text-size--40",
-        "title_text_weight": true,
-        "subtitle_text_font": "text-font--body",
-        "subtitle_text_size": "text-size--18",
-        "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "disable_border": false
-      }
-    },
     "promotion_blocks_mLNkjm": {
       "type": "promotion-blocks",
       "blocks": {
@@ -543,14 +493,14 @@
         "heading": "",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "layout_desktop": "grid-2",
+        "layout_desktop": "grid-4 grid-lap-3",
         "layout_mobile": "grid-palm-1",
         "style": "grid",
         "image_aspect_ratio": "2",
         "alignment": "horizontal-left align-content--vertical-top",
         "width": "70",
         "title_font": "text-font--headings",
-        "title_size": "text-size--80",
+        "title_size": "text-size--60",
         "mobile_text_size": "1",
         "subtitle_size": "text-size--18",
         "spacing": 12,
@@ -1336,7 +1286,6 @@
     "main",
     "rich_text_jnBDC4",
     "image_xQfN9c",
-    "text_columns_icons_AraniG",
     "promotion_blocks_mLNkjm",
     "vertical_slider_BxeYTt",
     "promotion_blocks_jTkEbT",
