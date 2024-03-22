@@ -76,7 +76,7 @@
         "text_alignment": "horizontal-center align-content--vertical-middle",
         "spacing": 24,
         "gutter": "large",
-        "width": "70",
+        "width": "100",
         "color_scheme": "scheme3",
         "disable_section_bottom_border": false,
         "color_scheme_card": "scheme3",
