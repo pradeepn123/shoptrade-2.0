@@ -598,7 +598,6 @@
         "card_pViLtP",
         "card_f3xNbW"
       ],
-      "disabled": true,
       "settings": {
         "heading": "Say hello to the leaders",
         "seo_h_tag": "h2",
@@ -666,6 +665,7 @@
         "image_inKVNC",
         "image_CUFEpA"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Say hello to the leaders",
         "cta_label": "",
