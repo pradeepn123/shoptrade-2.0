@@ -183,7 +183,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/project_thumbnail_polejunkie.webp",
-            "view-project_url": "",
+            "view-project_url": "shopify:\/\/pages\/hathaspace",
             "media_shape": "none",
             "title": "PoleJunkie",
             "title_url": "",
