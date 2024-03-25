@@ -1,4 +1,14 @@
-{{ 'video.css' | asset_url |stylesheet_tag }}
+{% style %}
+  .section-{{ section.id }} .video-popup__container.card__image{
+    padding-top:{{ section.settings.video_height_mob }}%;
+  }
+
+  @media(min-width: 768px){
+    .section-{{ section.id }} .video-popup__container.card__image{
+       padding-top:{{ section.settings.video_height }}%;
+    }
+  }
+{% endstyle %}
 
 {%- render 'section-heading', heading: section.settings.heading, navigation: false, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border -%}
 
@@ -8,7 +18,8 @@
 
   <div class="card element--overflow-hidden
     {% if section.settings.remove_padding %} card--no-padding {% endif %}
-    {% if section.settings.remove_border_radius or section.settings.remove_padding %} card--no-radius {% endif %}"
+    {% if section.settings.remove_border_radius or section.settings.remove_padding %} card--no-radius {% endif %}
+    section-{{ section.id }}"
   >
 
     <video-popup id="video-popup-{{ section.id }}" class="video-popup video-popup--section" style="display:block"
@@ -31,7 +42,7 @@
         {%- endif -%}
       </template>
 
-      <div class="video-popup__container card__image"  style="padding-top:{{ section.settings.video_height }}%; {% if section.settings.add_border %} border: 1px solid {{ section.settings.border_color }}{% endif %}" data-js-video-popup-container id="element-{{ block.id }}">
+      <div class="video-popup__container card__image"  style="{% if section.settings.add_border %} border: 1px solid {{ section.settings.border_color }}{% endif %}" data-js-video-popup-container id="element-{{ block.id }}">
 
         <a class="video-popup__link" href="{{ section.settings.video }}" data-js-video-popup-link data-no-instant>
 
@@ -158,6 +169,15 @@
         "max": 100,
         "step": 1,
         "default": 56
+      },
+      {
+        "type": "range",
+        "id": "video_height_mob",
+        "label": "Adjust the height of video mobile (%)",
+        "min": 10,
+        "max": 100,
+        "step": 1,
+        "default": 42
       },
       {
         "type": "image_picker",

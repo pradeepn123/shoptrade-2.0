@@ -1,3 +1,4 @@
+@use 'StyleComponents/colors'; 
 @import 'StyleComponents/typography';
 @import 'StyleComponents/breakpoints';
 @import 'Token';
@@ -8,19 +9,22 @@
             .fieldset{
                 .newsletter__input{
                     width: 100%;
-                    background: #222222;
-                    color: #4A4A4A;
+                    background: colors.$black-300;
+                    color: colors.$black-200;
                     @include use-text-style('heading-3');
                     font-family: inherit;
                     font-weight: 400;
-                    border: 1px solid #4A4A4A;
+                    border: 1px solid colors.$black-100;
                     padding: 12px 18px;
+                    &::placeholder{
+                        color: colors.$black-100;
+                    }
                 }
                 .button{
                     border-radius: var(--border-radius-buttons);
-                    margin-top: 10px;
+                    margin-top: 20px;
                     @include use-text-style('heading-3');
-                    color: #F1F1F1;
+                    color: colors.$gray-350; 
                     font-family: inherit;
                     font-weight: 400;
                 }
@@ -28,7 +32,7 @@
                 input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:hover, 
                 input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:focus, 
                 input:not([type=checkbox]):not([type=radio]):not([type=submit]):-webkit-autofill:active{
-                    -webkit-box-shadow: 0 0 0 1.875rem #4A4A4A inset!important;
+                    -webkit-box-shadow: 0 0 0 1.875rem colors.$black-100 inset!important;
                 }
             }
         }

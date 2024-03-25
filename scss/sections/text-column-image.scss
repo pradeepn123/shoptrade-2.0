@@ -32,6 +32,7 @@
 .spacing--xlarge:hover .card__image-badge{
     display: inline-table;
     -webkit-animation: fadeIn 1s;
+    z-index: 2;
     animation: fadeIn 500ms;
 }
 @-webkit-keyframes fadeIn {
