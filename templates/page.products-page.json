@@ -71,7 +71,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
-            "view-project_url": "",
+            "view-project_url": "https:\/\/apps.shopify.com\/sendif",
             "media_shape": "none",
             "title": "Sendif: Order Status Updates",
             "title_url": "https:\/\/apps.shopify.com\/sendif",
@@ -86,7 +86,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/thumbnail_sendif.webp",
-            "view-project_url": "",
+            "view-project_url": "https:\/\/apps.shopify.com\/new-tikshop",
             "media_shape": "none",
             "title": "TikShop ‑ Insta & TikTok Feeds",
             "title_url": "https:\/\/apps.shopify.com\/new-tikshop",
@@ -101,7 +101,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
-            "view-project_url": "",
+            "view-project_url": "https:\/\/apps.shopify.com\/lensadvizor",
             "media_shape": "none",
             "title": "LensAdvizor: Prescription Lens",
             "title_url": "https:\/\/apps.shopify.com\/lensadvizor",
