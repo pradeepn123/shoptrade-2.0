@@ -70,7 +70,7 @@
         "image_BqzixF": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-21_172950452.png",
+            "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
             "view-project_url": "",
             "media_shape": "none",
             "title": "Sendif: Order Status Updates",
@@ -85,7 +85,7 @@
         "image_GrTm6x": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-21_172903758.png",
+            "image": "shopify:\/\/shop_images\/thumbnail_sendif.webp",
             "view-project_url": "",
             "media_shape": "none",
             "title": "TikShop ‑ Insta & TikTok Feeds",
@@ -100,7 +100,7 @@
         "image_k4fGRN": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-21_173057713.png",
+            "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
             "view-project_url": "",
             "media_shape": "none",
             "title": "LensAdvizor: Prescription Lens",
@@ -134,7 +134,7 @@
         "subtitle_text_font": "text-font--body",
         "subtitle_text_size": "text-size--18",
         "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "scheme3",
+        "color_scheme": "scheme1",
         "disable_section_bottom_border": false,
         "disable_border": false,
         "remove_border_radius": false,
@@ -266,87 +266,12 @@
         "remove_border_radius": false,
         "remove_padding": false
       }
-    },
-    "text_columns_images_hFdgt7": {
-      "type": "text-columns-images",
-      "blocks": {
-        "image_kNpFUY": {
-          "type": "image",
-          "settings": {
-            "view-project_url": "",
-            "media_shape": "none",
-            "title": "Blog title",
-            "title_url": "",
-            "caption": "",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_eWhFfP": {
-          "type": "image",
-          "settings": {
-            "view-project_url": "",
-            "media_shape": "none",
-            "title": "Blog title",
-            "title_url": "",
-            "caption": "",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_NqAJCe": {
-          "type": "image",
-          "settings": {
-            "view-project_url": "",
-            "media_shape": "none",
-            "title": "Blog title",
-            "title_url": "",
-            "caption": "",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "image_kNpFUY",
-        "image_eWhFfP",
-        "image_NqAJCe"
-      ],
-      "settings": {
-        "heading": "Insights",
-        "cta_label": "",
-        "cta_link": "",
-        "seo_h_tag": "h2",
-        "image_hover": "none",
-        "disable_section_title_border": false,
-        "layout_desktop": "grid-3 grid-lap-2",
-        "style": "grid",
-        "image_aspect_ratio": "1.33333",
-        "title_text_font": "text-font--body",
-        "title_text_size": "text-size--30",
-        "title_text_weight": true,
-        "subtitle_text_font": "text-font--body",
-        "subtitle_text_size": "text-size--18",
-        "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "disable_border": false,
-        "remove_border_radius": false,
-        "remove_padding": false
-      }
     }
   },
   "order": [
     "main",
     "rich_text_dWBxQF",
     "text_columns_images_QFrj6U",
-    "text_columns_images_74rMfM",
-    "text_columns_images_hFdgt7"
+    "text_columns_images_74rMfM"
   ]
 }
