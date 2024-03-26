@@ -6,6 +6,7 @@
         "enable_tags": true,
         "post_limit": 6,
         "style": "list",
+        "make_sticky": false,
         "blog_show_image": true,
         "media_shape": "none",
         "show_date": true,

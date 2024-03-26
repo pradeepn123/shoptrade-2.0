@@ -1,0 +1,135 @@
+{{ 'text-with-icons.css' | asset_url | stylesheet_tag }}
+
+{% assign sections = section.settings %}
+
+{%- style -%}
+    .text_with_icon--{{ section.id }} {
+      padding-top: {{ sections.padding_top | times: 0.60 | round: 0 }}px;
+      padding-bottom: {{ sections.padding_bottom | times: 0.60 | round: 0 }}px;
+    }
+
+    .text_with_icon--{{ section.id }} {
+      background-color: {{  sections.bg_color }};
+    }
+
+    .text_with_icon--{{ section.id }}  .text_with_icon_imgs{
+        padding-top: {{ sections.padding_top_mob_text }}px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      .text_with_icon--{{ section.id }} {
+        padding-top: {{ sections.padding_top }}px;
+        padding-bottom: {{ sections.padding_bottom }}px;
+    }
+
+  }
+{%- endstyle -%}
+{{ page.template }}
+
+<section class="text_with_icon text_with_icon--{{ section.id }}">
+  <div class="text_with_icon_content">{{ sections.title }}</div>
+  <div class="text_with_icon_imgs">
+    {% for block in section.blocks %}
+      {% assign blocks = block.settings %}
+      {% if blocks.img %}
+        <div class="icon_img text_with_icon--{{ block.id }}">
+          <a
+            {% if blocks.url %}
+              href="{{ blocks.url }}"
+            {% endif %}
+            {% if blocks.target %}
+              target="_blank"
+            {% endif %}
+          >
+            <img src="{{ blocks.img | image_url }}">
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% if sections.show_line %}<div class="horizontal_line"></div>{% endif %}
+{% schema %}
+{
+  "name": "text with icons",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "padding bottom",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#A2A2A2"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "paragraph"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob_text",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "logos padding top mobile",
+      "default": 36
+    },
+    {
+      "id": "show_line",
+      "type": "checkbox",
+      "label": "Show horizontal line",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Brand logo",
+      "type": "Brand_logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image",
+          "info": "add a png image with 4X"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "brand link"
+        },
+        {
+          "type": "checkbox",
+          "id": "target",
+          "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "text with icons"
+    }
+  ]
+}
+{% endschema %}

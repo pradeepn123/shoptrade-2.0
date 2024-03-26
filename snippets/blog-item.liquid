@@ -1,6 +1,6 @@
 {%- assign date_format = 'general.date_format.month_day_year' | t -%}
 
-<div class="card card--hover blog-item js-slider-item spacing--large remove-empty-space"> 
+<div class="card card--hover blog-item js-slider-item spacing--large remove-empty-space {% if make_sticky == false %} blog_list_non_sticky {% endif %}"> 
 
 {%- if block_style == "list" -%}
   <sticky-image-block class="sticky-image-block">
@@ -9,7 +9,7 @@
   <div class="card__hover"></div>
 
   {%- if show_image -%}
-    <div class="blog-item__image card__image {% if block_style == 'list' %} is-sticky {% endif %}">
+    <div class="blog-item__image card__image {% if block_style == 'list' and make_sticky %} is-sticky {% endif %}">
       <a href="{{ article.url }}" title="{{ article.title | escape }}">
         {%- liquid
           if article.image == blank
@@ -62,7 +62,7 @@
       {%- endif -%}
 
       <a href="{{ article.url }}" title="{{ article.title | escape }}">
-        <span class="text-animation--underline text-size--40 text-line-height--small">
+        <span class="{% if make_sticky %} text-animation--underline {% endif %} text-size--40 text-line-height--small">
           {%- liquid
             unless blank_article
               echo article.title | escape

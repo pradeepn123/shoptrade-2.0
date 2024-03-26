@@ -217,48 +217,100 @@
         "hide_block_if": false
       }
     },
-    "rich_text_8hAM3x": {
-      "type": "rich-text",
+    "text_with_icons_XmyfYE": {
+      "type": "text-with-icons",
       "blocks": {
-        "text_6iFKbe": {
-          "type": "text",
+        "brand_logo_JHFDJW": {
+          "type": "Brand_logo",
           "settings": {
-            "text": "<p>Explore the esteemed roster of companies we've joined forces with to deliver exceptional e-commerce solutions. From industry giants to innovative startups, our partnerships fuel success and drive growth.<\/p>",
-            "text_font": "text-font--body",
-            "text_size": "text-size--20",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span"
+            "img": "shopify:\/\/shop_images\/Mask_group_1_c033d42b-ef25-403b-897e-d2bf2c6fada3.png",
+            "url": "",
+            "target": true
+          }
+        },
+        "brand_logo_NPW4YN": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_1000005420.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_CDEqjJ": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_563.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_DTBNJ8": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_1000005421.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_p3Wz4y": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_1000005422.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_64DPqP": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_1000005419.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_aNCQt7": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_568.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_LwnQw3": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Group_1000005421.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_3YPk4y": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/image_563.png",
+            "url": "",
+            "target": false
           }
         }
       },
       "block_order": [
-        "text_6iFKbe"
+        "brand_logo_JHFDJW",
+        "brand_logo_NPW4YN",
+        "brand_logo_CDEqjJ",
+        "brand_logo_DTBNJ8",
+        "brand_logo_p3Wz4y",
+        "brand_logo_64DPqP",
+        "brand_logo_aNCQt7",
+        "brand_logo_LwnQw3",
+        "brand_logo_3YPk4y"
       ],
       "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "image_aspect_ratio": "2",
-        "image_position": "right",
-        "image_position_mobile": "below",
-        "image_crop": false,
-        "image_overlap": false,
-        "image_overlay": "rgba(0,0,0,0)",
-        "media_shape": "none",
-        "remove_media_border_radius": false,
-        "text_alignment": "horizontal-left align-content--vertical-top",
-        "spacing": 24,
-        "gutter": "large",
-        "width": "70",
-        "color_scheme": "scheme4",
-        "disable_section_bottom_border": false,
-        "color_scheme_card": "scheme4",
-        "disable_border": true,
-        "remove_border_radius": true,
-        "remove_padding": true,
-        "add_border": false,
-        "hide_block_if": false
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "bg_color": "#f1f1f1",
+        "title": "<p>Explore the esteemed roster of companies we've joined forces with to deliver exceptional e-commerce solutions. From industry giants to innovative startups, our partnerships fuel success and drive growth.<\/p>",
+        "padding_top_mob_text": 36,
+        "show_line": false
       }
     }
   },
@@ -267,6 +319,6 @@
     "rich_text_aX9w6R",
     "content_toggles_4wXKDW",
     "promotion_blocks_gJAWjU",
-    "rich_text_8hAM3x"
+    "text_with_icons_XmyfYE"
   ]
 }

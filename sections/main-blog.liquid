@@ -1,4 +1,5 @@
 {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
+{{ 'main-blog.css' | asset_url | stylesheet_tag }}
 
 {% render 'page-heading', title: blog.title | escape %}
 
@@ -32,7 +33,7 @@
         >
           {%- liquid
             for article in blog.articles
-              render 'blog-item', article: article, show_image: section.settings.blog_show_image, show_author: section.settings.show_author, show_comments: section.settings.show_comments, show_tags: section.settings.show_tags, show_date: section.settings.show_date, show_excerpt: section.settings.show_excerpt, block_style: section.settings.style
+              render 'blog-item', article: article, show_image: section.settings.blog_show_image, show_author: section.settings.show_author, show_comments: section.settings.show_comments, show_tags: section.settings.show_tags, show_date: section.settings.show_date, show_excerpt: section.settings.show_excerpt, block_style: section.settings.style, make_sticky: section.settings.make_sticky
             endfor
           -%}
         </div>
@@ -93,6 +94,12 @@
           }
         ],
         "default": "grid"
+      },
+      {
+        "id": "make_sticky",
+        "type": "checkbox",
+        "label": "Make stikcy image",
+        "default": false
       },
       {
         "type": "header",

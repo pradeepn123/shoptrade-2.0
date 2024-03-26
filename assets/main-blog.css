@@ -1,0 +1,94 @@
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/sections/main-blog.scss ***!
+  \*************************************************************************************************************************************************************************************************************************/
+.blog_list_non_sticky {
+  display: inline !important;
+  display: initial !important;
+}
+.blog_list_non_sticky sticky-image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 768px) {
+  .blog_list_non_sticky sticky-image-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 27px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog_list_non_sticky sticky-image-block {
+    gap: 40px;
+  }
+}
+.blog_list_non_sticky sticky-image-block .blog-item__image {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .blog_list_non_sticky sticky-image-block .blog-item__image {
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (min-width: 1200px) {
+  .blog_list_non_sticky sticky-image-block .blog-item__image {
+    height: 16.25rem;
+  }
+}
+.blog_list_non_sticky sticky-image-block .blog-item__image a figure img {
+  -o-object-position: top;
+     object-position: top;
+  top: -20%;
+}
+@media (min-width: 390px) {
+  .blog_list_non_sticky sticky-image-block .blog-item__image a figure img {
+    top: 0;
+    -o-object-fit: none;
+       object-fit: none;
+  }
+}
+@media (min-width: 768px) {
+  .blog_list_non_sticky sticky-image-block .blog-item__image a figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .blog_list_non_sticky sticky-image-block .blog-item__image a figure img {
+    top: -20%;
+  }
+}
+.blog_list_non_sticky sticky-image-block .blog-item__text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.blog_list_non_sticky sticky-image-block .blog-item__text .blog-item__title-holder a span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.blog_list_non_sticky sticky-image-block .blog-item__text .blog-item__title-holder a span:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
