@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Gilroy-semibold';
+    src: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Gilroy-Semibold-500-600.ttf?v=1711550810');
+     font-weight: 600;
+    font-style: normal; 
+  } 
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Gilroy-Medium-500.ttf?v=1711552060');
+    font-weight: 500;
+    font-style: normal;
+}
+
+  @font-face {
+      font-family: 'Gilroy-bold';
+      src: url('https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Gilroy-Bold-700-900.ttf?v=1711550810');
+      font-weight: 700;
+      font-style: normal; 
+  }
+
+  :root{
+    --font-stack-body : 'Gilroy'; 
+    --font-stack-headings : 'Gilroy-bold'; 
+  }
+
