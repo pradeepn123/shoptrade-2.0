@@ -32,6 +32,9 @@
             @media (--md-large) {
                 height: 16.25rem;
             }
+            @media (--lg){
+                width: 30rem;
+            }
 
             a {
                 figure {
@@ -48,7 +51,7 @@
                             object-fit: cover;
                         }
                         @media (--md-large){
-                            top: -20%;
+                            top: -14%;
                         }
                     }
                 }
@@ -73,6 +76,12 @@
                             transition: 0.3s all ease;
                         }
                     }
+                }
+            }
+            .blog-item__excerpt{ 
+                max-width: 100%;
+                @media (--md){
+                    max-width: 70%;
                 }
             }
         }
