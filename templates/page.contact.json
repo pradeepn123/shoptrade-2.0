@@ -21,14 +21,6 @@
           "settings": {
           }
         },
-        "af24c9de-4455-4b6c-b094-bf62a3f8ecfb": {
-          "type": "field",
-          "settings": {
-            "label": "Label",
-            "type": "input",
-            "required": false
-          }
-        },
         "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-2": {
           "type": "field",
           "settings": {
@@ -47,84 +39,22 @@
       "block_order": [
         "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-1",
         "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-email-1",
-        "af24c9de-4455-4b6c-b094-bf62a3f8ecfb",
         "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-field-2",
         "template--21403294695713__70b49539-fd12-4e72-acae-255da86decf7-button-1"
       ],
       "settings": {
         "heading": "Drop us a line",
         "seo_h_tag": "h4",
-        "content": "<p><strong>Contact<\/strong><br\/>1-222-333-4444<br\/>email@website.com<\/p><p><strong>Useful information<\/strong><br\/>Street address <br\/>City, <br\/>ZIP CODE<br\/>Country<\/p><p><strong>Hours<\/strong><br\/>Monday-Friday: <em>9am-5pm<\/em><br\/>Saturday-Sunday: <em>Closed<\/em><\/p>",
+        "heading_size": "30",
+        "heading_weight": true,
+        "content": "<p><strong>Contact<\/strong><br\/><a href=\"tel:+18445830025\">+1 844 583 0025<br\/><\/a><a href=\"mailto:hello@shoptrade.co\">hello@shoptrade.co<\/a><\/p><p><strong>Socials<br\/><\/strong><a href=\"https:\/\/www.behance.net\/shoptrade-design\" target=\"_blank\">Behance<br\/><\/a><a href=\"https:\/\/www.instagram.com\/shoptrade.co\/\" target=\"_blank\">Instagram<br\/><\/a><a href=\"https:\/\/www.linkedin.com\/company\/shoptrade\/\" target=\"_blank\">LinkedIn<\/a><\/p>",
         "color_scheme": "",
         "disable_section_bottom_border": false
-      }
-    },
-    "0b012d24-03be-4ca5-ae2c-fb15c31e15da": {
-      "type": "text-columns-images",
-      "blocks": {
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-3": {
-          "type": "image",
-          "settings": {
-            "title": "Store title",
-            "caption": "<p>Street name. City. County. Country<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-2": {
-          "type": "image",
-          "settings": {
-            "title": "Store title",
-            "caption": "<p>Street name. City. County. Country<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-1": {
-          "type": "image",
-          "settings": {
-            "title": "Store title",
-            "caption": "<p>Street name. City. County. Country<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-3",
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-2",
-        "template--21403294695713__0b012d24-03be-4ca5-ae2c-fb15c31e15da-image-1"
-      ],
-      "settings": {
-        "heading": "LOCAL STORES",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "layout_desktop": "grid-3 grid-lap-2",
-        "style": "grid",
-        "image_aspect_ratio": "0.83333",
-        "title_text_font": "text-font--headings",
-        "title_text_size": "text-size--20",
-        "title_text_weight": true,
-        "subtitle_text_font": "text-font--body",
-        "subtitle_text_size": "text-size--18",
-        "subtitle_text_line_height": "text-line-height--default",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "disable_border": false,
-        "remove_border_radius": false,
-        "remove_padding": false
       }
     }
   },
   "order": [
     "main",
-    "70b49539-fd12-4e72-acae-255da86decf7",
-    "0b012d24-03be-4ca5-ae2c-fb15c31e15da"
+    "70b49539-fd12-4e72-acae-255da86decf7"
   ]
 }
