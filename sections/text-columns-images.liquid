@@ -142,7 +142,7 @@
         {%- unless block.settings.title == blank and block.settings.caption == blank -%}
           <div class="spacing--xlarge remove-empty-space {% if section.settings.remove_padding %} gutter--small {% endif %}">
             {%- unless block.settings.title == blank -%}
-              <a href="{{ block.settings.title_url }}">
+              <a {% if block.settings.title_url %} href="{{ block.settings.title_url }}" {% endif %}>
                 <div class="">
                   <{{ block.settings.seo_h_tag }} class="
                       text-line-height--small text-underline

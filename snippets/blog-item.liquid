@@ -22,9 +22,14 @@
             else
               assign preload = false
             endif
-            render 'lazy-image', image: article.image.src, alt: article.title, sizes: sizes, ratio: 1, preload: preload, hover_animation: true
+            if make_sticky == true 
+              render 'lazy-image', image: article.image.src, alt: article.title, sizes: sizes, ratio: 1, preload: preload, hover_animation: true 
+            endif
           endif
         -%}
+          {% if make_sticky == false %}  
+           <img class="non-sticky-blog-image" src="{{  article.image.src | image_url }}"> 
+          {% endif %}
       </a>
     </div>
   {%- endif -%}
