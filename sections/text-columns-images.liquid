@@ -112,7 +112,9 @@
         {% if block.settings.image  %}
         <a
           class="card__image"
-       {% if block.settings.view-project_url %}   href="{{ block.settings.view-project_url }}" {% endif %}
+          {% if block.settings.view-project_url %}   href="{{ block.settings.view-project_url }}" {% endif %}
+          {% if block.settings.open_in_new %}   target="_blank" {% endif %} 
+          
           style="padding-top:{{ 100 | divided_by: section.settings.image_aspect_ratio }}%">
           
             {%- liquid
@@ -142,7 +144,7 @@
         {%- unless block.settings.title == blank and block.settings.caption == blank -%}
           <div class="spacing--xlarge remove-empty-space {% if section.settings.remove_padding %} gutter--small {% endif %}">
             {%- unless block.settings.title == blank -%}
-              <a {% if block.settings.title_url %} href="{{ block.settings.title_url }}" {% endif %}>
+              <a {% if block.settings.title_url %} href="{{ block.settings.title_url }}" {% endif %} {% if block.settings.open_in_new_tab %}   target="_blank" {% endif %}>
                 <div class="">
                   <{{ block.settings.seo_h_tag }} class="
                       text-line-height--small text-underline
@@ -518,6 +520,12 @@
           "label": "View Project Url"
         },
         {
+          "type": "checkbox",
+          "id": "open_in_new",
+          "label": "open in new tab",
+          "default": false
+        },
+        {
           "type": "select",
           "id": "media_shape",
           "label": "t:raw-extra-words.settings_schema.labels.media_shape",
@@ -563,6 +571,12 @@
           "type": "url",
           "id": "title_url",
           "label": "Title Url"
+        }, 
+        {
+          "type": "checkbox",
+          "id": "open_in_new_tab",
+          "label": "open in new tab",
+          "default": false
         },
         {
           "type": "richtext",

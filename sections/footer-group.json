@@ -39,7 +39,7 @@
           "type": "button",
           "settings": {
             "button_label": "Contact Us",
-            "link": "",
+            "link": "\/pages\/contact-us-1",
             "target": false,
             "button_style": "outline",
             "button_size": "button--regular",

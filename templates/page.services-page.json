@@ -35,8 +35,8 @@
           "type": "button",
           "settings": {
             "button_label": "Get in touch",
-            "link": "",
-            "target": false,
+            "link": "https:\/\/meetings.hubspot.com\/shoptrade\/us",
+            "target": true,
             "button_style": "solid",
             "button_size": "button--regular",
             "button_hover": "-arrow"
@@ -287,9 +287,9 @@
         "brand_logo_3YPk4y": {
           "type": "Brand_logo",
           "settings": {
-            "img": "shopify:\/\/shop_images\/image_563.png",
+            "img": "shopify:\/\/shop_images\/more..._2.png",
             "url": "",
-            "target": false
+            "target": true
           }
         }
       },

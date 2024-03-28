@@ -29,7 +29,7 @@
         "promotion_image_link": "",
         "promotion_content": "Get in touch",
         "promotion_image_button_label": "Contact Us",
-        "promotion_image_button_link": "",
+        "promotion_image_button_link": "shopify:\/\/pages\/contact-us-1",
         "promotion_image_button_target": false
       }
     },
