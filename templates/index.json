@@ -281,7 +281,7 @@
       "settings": {
         "heading": "Selected Works",
         "cta_label": "All Works",
-        "cta_link": "",
+        "cta_link": "shopify:\/\/pages\/work",
         "seo_h_tag": "h2",
         "image_hover": "view-project",
         "disable_section_title_border": false,
