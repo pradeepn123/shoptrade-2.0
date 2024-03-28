@@ -358,7 +358,7 @@
       "settings": {
         "heading": "Our Capabilities",
         "cta_label": "All services",
-        "cta_link": "",
+        "cta_link": "shopify:\/\/pages\/services",
         "seo_h_tag": "h2",
         "image_hover": "underline",
         "disable_section_title_border": false,
