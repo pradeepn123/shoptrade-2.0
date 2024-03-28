@@ -1,0 +1,485 @@
+<div id="contact-popup">
+    <div class="contact-content" id="contact-content">
+        <div id="left-contact-content">
+            {% comment %} <div class="close-icon display-hidden-onDesktop" onclick="ContactPopUp.closePopup()" id="close-icon-btn">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"></path>
+                    <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"></path>
+                    <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"></path>
+                </svg>
+            </div> {% endcomment %}
+            <div class="logo-icon">
+                <a href="/">
+                    <svg width="49" height="66" viewBox="0 0 49 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.9998 33.8918C48.9998 31.7229 47.2455 29.9639 45.0815 29.9639H43.0582C40.8942 29.9639 39.1399 31.722 39.1399 33.8909C39.1399 36.0597 40.8942 37.8189 43.0582 37.8189H45.0815C47.2455 37.8189 48.9998 36.0606 48.9998 33.8918Z" fill="#FF7121"/>
+                    <path d="M37.2012 33.6C37.203 33.5813 37.203 33.5626 37.2012 33.5439C37.1977 33.4393 37.1866 33.3351 37.1678 33.2321C37.1661 33.2047 37.1661 33.1771 37.1678 33.1497C37.1489 33.0594 37.1344 32.9772 37.1119 32.8913L37.0668 32.7294L37.0334 32.6281C36.8356 32.005 36.483 31.4424 36.0086 30.9933C35.5344 30.5442 34.9539 30.2233 34.322 30.0607H34.2768L34.1046 30.0191L33.8574 29.9776H33.7528C33.6517 29.9776 33.5543 29.9586 33.4533 29.955H2.15329L0.947278 31.3472C0.276246 32.1234 -0.0610353 33.1342 0.00910351 34.1588C0.0792423 35.1834 0.551103 36.1385 1.32162 36.8155L1.39648 36.8834C1.7924 37.2277 2.25428 37.4876 2.75385 37.6469C3.25343 37.8062 3.78018 37.8617 4.30188 37.81H24.6695L5.97603 59.3365C5.29566 60.122 4.95314 61.1455 5.02328 62.1833C5.09342 63.2211 5.57052 64.189 6.35037 64.8754C7.13481 65.5578 8.15682 65.9013 9.19316 65.831C10.2295 65.7607 11.196 65.2823 11.8816 64.5003L36.2215 36.4621C36.4403 36.208 36.6252 35.9266 36.7718 35.6249C36.7718 35.6249 36.7908 35.5915 36.798 35.5761C36.8313 35.5012 36.8656 35.4297 36.8954 35.3547C36.9251 35.2797 36.9369 35.2463 36.9549 35.1892L37 35.0617C37.0262 34.9714 37.0524 34.881 37.0712 34.7905L37.0939 34.7083C37.104 34.6047 37.1215 34.502 37.1461 34.4009C37.1442 34.3811 37.1442 34.3611 37.1461 34.3412C37.1426 34.2332 37.1502 34.125 37.1687 34.0186V33.8875C37.1921 33.7934 37.203 33.6968 37.2012 33.6Z" fill="#FF7121"/>
+                    <path d="M32.6803 6.4892C33.3524 5.71281 33.6905 4.70123 33.6203 3.67574C33.5502 2.65026 33.0776 1.69436 32.306 1.01718L32.2311 0.949379C31.4566 0.27686 30.4481 -0.0611706 29.4257 0.00912367C28.4035 0.0794179 27.4504 0.552324 26.7748 1.32454L5.71899 25.7185H16.1103L32.6803 6.4892Z" fill="#FF7121"/>
+                </svg>
+                </a>
+            </div>
+            <div class="form-content">
+                <h1>
+                    Contact Us
+                </h1>
+                <h2>Let's discuss strategies for expanding your brand.</h2>
+                <div class="form-tab">
+                    <form id='new-contactForm' method="POST">
+                        <div class="form-group flex-form-group">
+                            <input type="text" name="firstname" id="new-firstName" placeholder="First Name">
+                            <div class="firstName-errormsg" style="color: red; display: none" error-message error-firstName>Please check your First name Input</div>
+                        </div>
+
+                        <div class="form-group flex-form-group">
+                            <input type="text" name="lastname" id="new-lastName" placeholder="Last Name">
+                            <div class="lastName-errormsg" style="color: red; display: none" error-message error-lastName>Please check your Last name Input</div>
+                        </div>
+
+                        <div class="form-group flex-form-group">
+                            <input type="email" name="email" id="new-Email" placeholder="Email">
+                            <div class="email-errormsg" style="color: red; display: none" error-message error-email>Please check your Email Input</div>
+                        </div>
+
+                        <div class="form-group flex-form-group">
+                            <input type="text" name="company" id="new-Company" placeholder="Company">
+                            <div class="company-errormsg" style="color: red; display: none" error-message error-company>Please check your Company input</div>
+                        </div>
+
+                        <div class="form-group flex-form-group">
+                            <textarea id="new-details" name="Additional Note" placeholder="Details about your project (Services, Scope, Timeline, Etc.)"></textarea>
+                            <div class="projectDetails-errormsg" style="color: red; display: none" error-message error-additionalMessage>Please check your Details input</div>
+                        </div>
+
+                        <p class="formSubmissionAgreement">By providing your email, you agree for us to contact you via email with eCommerce advice. Your data is stored securely and we never pass it on to third parties.</p>
+
+                        <div class="form-buttons" style="justify-content: flex-end;">
+                            <button type="submit" id="submitBtn" class="btn btn--orange" style="display: block;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% comment %} <div id="testimonial-content">      
+            <div class="close-icon" onclick="ContactPopUp.closePopup()" id="close-icon-btn">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
+                    <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
+                    <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            
+            <div class="swiper-container" id="contactForm_slider">
+             <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        
+                        <div class="card-image">
+                            <img class="card-img" src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/card_img1.png?v=1669717469"/>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+                            <p class="testimonial">
+                                “ShopTrade builds some of the most beautiful and elegant e-commerce experiences that would delight any user. “
+                            </p>
+                            <p class="author">
+                                Harley Finkelstein
+                            </p>
+                            <p class="designation">
+                                President of Shopify
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            2
+                        {% endcomment %}
+                        <div class="card-image">
+                            <iframe  src="https://www.youtube.com/embed/9Erlh1_oMxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0662/5122/7356/files/Shopify_logo.png?v=1669639015"/>
+                            <p class="testimonial">
+                                “I am continually impressed by their expertise in Shopify & web development.”
+                            </p>
+                            <p class="author">
+                                Eddie Rosado
+                            </p>
+                            <p class="designation">
+                                VP of product developtment
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            3
+                        {% endcomment %}
+                        <div class="card-image">
+                            <iframe  src="https://www.youtube.com/embed/PBrlQ2hrX98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/lensAdvisorLogo.png?v=1669874735"/>
+                            <p class="testimonial">
+                                “ShopTrade was experieced  in developing apps and set  realistic timelines.”
+                            </p>
+                            <p class="author">
+                                Zenos Schmickrath
+                            </p>
+                            <p class="designation">
+                                Co-Founder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        {% comment %}
+                            4
+                        {% endcomment %}
+                        <div class="card-image">
+                            <img class="card-img" src="https://cdn.shopify.com/s/files/1/1951/9451/files/grahamRyan.png?v=1669895433"/>
+                        </div>
+                        <div class="card-content">
+                            <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/synchroLogo.png?v=1669895532"/>
+                            <p class="testimonial">
+                                “Their communication and responsiveness are impressive in the workflow.”
+                            </p>
+                            <p class="author">
+                                Graham Ryan
+                            </p>
+                            <p class="designation">
+                                Founder & CEO
+                            </p>
+                        </div>
+                    </div>
+             </div>
+             <div class="swiper-pagination-contact"></div>
+           </div>
+        </div> {% endcomment %}
+  
+        <div id="form-submit-content">
+            <div class="close-icon" onclick="ContactPopUp.closePopup()">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2461 48.7009C8.15649 46.6277 -0.77411 34.3358 1.29909 21.2461C3.37228 8.15649 15.6642 -0.774109 28.7539 1.29909C41.8435 3.37229 50.7741 15.6642 48.7009 28.7539C46.6277 41.8435 34.3358 50.7741 21.2461 48.7009Z" fill="white" stroke="black" stroke-width="2"/>
+                    <path d="M34.375 34.375L25 25L34.375 15.625" stroke="black" stroke-width="2"/>
+                    <path d="M15.625 34.375L25 25L15.625 15.625" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="logo-icon">
+                <svg width="49" height="66" viewBox="0 0 49 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.9998 33.8918C48.9998 31.7229 47.2455 29.9639 45.0815 29.9639H43.0582C40.8942 29.9639 39.1399 31.722 39.1399 33.8909C39.1399 36.0597 40.8942 37.8189 43.0582 37.8189H45.0815C47.2455 37.8189 48.9998 36.0606 48.9998 33.8918Z" fill="#FF7121"/>
+                    <path d="M37.2012 33.6C37.203 33.5813 37.203 33.5626 37.2012 33.5439C37.1977 33.4393 37.1866 33.3351 37.1678 33.2321C37.1661 33.2047 37.1661 33.1771 37.1678 33.1497C37.1489 33.0594 37.1344 32.9772 37.1119 32.8913L37.0668 32.7294L37.0334 32.6281C36.8356 32.005 36.483 31.4424 36.0086 30.9933C35.5344 30.5442 34.9539 30.2233 34.322 30.0607H34.2768L34.1046 30.0191L33.8574 29.9776H33.7528C33.6517 29.9776 33.5543 29.9586 33.4533 29.955H2.15329L0.947278 31.3472C0.276246 32.1234 -0.0610353 33.1342 0.00910351 34.1588C0.0792423 35.1834 0.551103 36.1385 1.32162 36.8155L1.39648 36.8834C1.7924 37.2277 2.25428 37.4876 2.75385 37.6469C3.25343 37.8062 3.78018 37.8617 4.30188 37.81H24.6695L5.97603 59.3365C5.29566 60.122 4.95314 61.1455 5.02328 62.1833C5.09342 63.2211 5.57052 64.189 6.35037 64.8754C7.13481 65.5578 8.15682 65.9013 9.19316 65.831C10.2295 65.7607 11.196 65.2823 11.8816 64.5003L36.2215 36.4621C36.4403 36.208 36.6252 35.9266 36.7718 35.6249C36.7718 35.6249 36.7908 35.5915 36.798 35.5761C36.8313 35.5012 36.8656 35.4297 36.8954 35.3547C36.9251 35.2797 36.9369 35.2463 36.9549 35.1892L37 35.0617C37.0262 34.9714 37.0524 34.881 37.0712 34.7905L37.0939 34.7083C37.104 34.6047 37.1215 34.502 37.1461 34.4009C37.1442 34.3811 37.1442 34.3611 37.1461 34.3412C37.1426 34.2332 37.1502 34.125 37.1687 34.0186V33.8875C37.1921 33.7934 37.203 33.6968 37.2012 33.6Z" fill="#FF7121"/>
+                    <path d="M32.6803 6.4892C33.3524 5.71281 33.6905 4.70123 33.6203 3.67574C33.5502 2.65026 33.0776 1.69436 32.306 1.01718L32.2311 0.949379C31.4566 0.27686 30.4481 -0.0611706 29.4257 0.00912367C28.4035 0.0794179 27.4504 0.552324 26.7748 1.32454L5.71899 25.7185H16.1103L32.6803 6.4892Z" fill="#FF7121"/>
+                </svg>
+            </div>
+            <div id="thankyou-card">
+                <div class="progress-complete">
+                    <progress id="form-progress" value="100" max="100">
+                        100%
+                    </progress>
+                    <svg class="done-svg" width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_1995_4840)">
+                        <circle cx="40.5" cy="32.5" r="16.5" fill="white"/>
+                    </g>
+                    <path d="M33 32.7391L38.1765 38L49 27" stroke="#FF7121" stroke-width="3"/>
+                    <defs>
+                        <filter id="filter0_d_1995_4840" x="0" y="0" width="81" height="81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="8"/>
+                            <feGaussianBlur stdDeviation="12"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1995_4840"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1995_4840" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+                </div>
+                <div class="form-success-image">
+                    <img src="https://cdn.shopify.com/s/files/1/1951/9451/files/contactSuccessImage.png?v=1669898920" width="212px" height="242px"/>
+                </div>
+                <h2 class="success-title">
+                    Thank you for reaching out to us.
+                </h2>
+                <p class="success-text">
+                    A specialist from our team will respond to you within 24 hours.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+ <script>
+    document.querySelector("#new-contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        // newForm();
+        validationForm();
+    });
+
+
+    function validationForm(){
+        const nameRegex = /^[a-zA-Z ]{2,30}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const textOnlyRegex = /^.{2,}$/;
+
+        let fname_cotuner = 0;
+        let lname_counter = 0;
+        let nemail_counter = 0 ;
+        let ncompany_cotuner = 0;
+        let ndetails_counter = 0;
+
+        // Values
+        let fname = document.querySelector("#new-firstName").value;
+        let lname = document.querySelector("#new-lastName").value;
+        let nemail = document.querySelector("#new-Email").value;
+        let ncompany = document.querySelector("#new-Company").value;
+        let ndetails = document.querySelector("#new-details").value;
+
+
+        // First Name Regex
+        if (!nameRegex.test(fname)) {
+            document.querySelector("div[error-firstname]").style.display = "block";
+            fname_cotuner = 0;
+        }
+        else{
+            document.querySelector("div[error-firstname]").style.display = "none";
+            fname_cotuner = 1;
+        }
+
+        // Last Name Regex
+        if (!nameRegex.test(lname)) {
+            document.querySelector("div[error-lastName]").style.display = "block";
+            lname_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-lastName]").style.display = "none";
+            lname_counter = 1;
+        }
+
+        // Email Regex
+        if (!emailRegex.test(nemail)) {
+            document.querySelector("div[error-email]").style.display = "block";
+            nemail_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-email]").style.display = "none";
+            nemail_counter = 1;
+        }
+
+        // Company Regex
+        if (!textOnlyRegex.test(ncompany)) {
+            document.querySelector("div[error-company]").style.display = "block";
+            ncompany_cotuner = 0;
+        }
+        else{
+            document.querySelector("div[error-company]").style.display = "none";
+            ncompany_cotuner = 1;
+        }
+
+        // Extra text
+        if (!textOnlyRegex.test(ndetails)) {
+            document.querySelector("div[error-additionalMessage]").style.display = "block";
+            ndetails_counter = 0;
+        }
+        else{
+            document.querySelector("div[error-additionalMessage]").style.display = "none";
+            ndetails_counter = 1;
+        }
+        if(fname_cotuner && lname_counter && nemail_counter && ncompany_cotuner && ndetails_counter){
+            newForm();
+            const thankCard = document.querySelector('#form-submit-content');
+         
+            setTimeout ( ()=>{  
+                thankCard.style.display = "block"; 
+            },1000);
+
+            setTimeout(() => {
+                window.location.href = "/"; // Replace "/" with your home page URL
+            }, 5000);
+        }
+     
+    }
+ 
+
+        //New Contact us Form
+        function newForm(){
+            // Single Page Contact Form
+            let errorMessagesContactForm = document.querySelectorAll("div[error-message");
+
+            // Values
+            let fname = document.querySelector("#new-firstName").value;
+            let lname = document.querySelector("#new-lastName").value;
+            let nemail = document.querySelector("#new-Email").value;
+            let ncompany = document.querySelector("#new-Company").value;
+            let ndetails = document.querySelector("#new-details").value;
+
+        
+            // Create the new request
+            var xhr = new XMLHttpRequest();
+            var url =
+            "https://api.hsforms.com/submissions/v3/integration/submit/21154059/66008c3b-7382-4a19-ae04-157cd634e76b";
+            
+            // Generating HUTK code
+            function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(";");
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == " ") {
+                c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+            }
+
+            // Getting ip address 
+            let ipAddress = (function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://api.ipify.org?format=json", false); // use synchronous request
+            xhr.send();
+            if (xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                return response.ip;
+            }
+            return "";
+            })();
+            
+            var hutk = getCookie("hubspotutk");
+
+
+            var data = {
+            submittedAt: `${Date.now()}`,
+            fields: [
+                {
+                    objectTypeId: "0-1",
+                    name: "firstname",
+                    value: `${fname}`,
+                },
+                {
+                    objectTypeId: "0-1",
+                    name: "lastname",
+                    value: `${lname}`,
+                },
+                {
+                    objectTypeId: "0-1",
+                    name: "email",
+                    value: `${nemail}`,
+                },
+                {
+                    objectTypeId: "0-1",
+                    name: "form_company",
+                    value: `${ncompany}`,
+                },
+                {
+                    objectTypeId: "0-1",
+                    name: "extra_info",
+                    value: `${ndetails}`,
+                }
+            ],
+            context: {
+                "hutk": hutk,
+                "ipAddress": ipAddress,
+                "pageUri": "www.shoptrade.co",
+                "pageName": "ShopTrade"
+            },
+            legalConsentOptions: {
+                consent: {
+                consentToProcess: true,
+                text: "I agree to allow Example Company to store and process my personal data.",
+                communications: [
+                    {
+                    value: true,
+                    subscriptionTypeId: 999,
+                    text: "I agree to receive marketing communications from Example Company.",
+                    },
+                ],
+                },
+            },
+            };
+
+            var final_data = JSON.stringify(data);
+
+            xhr.open("POST", url);
+            // Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    console.log(xhr.responseText); // Returns a 200 response if the submission is successful.
+
+                    // Get all Data
+                    document.querySelector("#left-contact-content").style.display = "none";
+                    document.querySelector("#testimonial-content").style.display = "none";
+                    document.querySelector("#form-submit-content").style.display = "block";
+
+                    // Redirect to Homepage after submission
+                    setTimeout(() => {
+                        window.location.href = "/";
+                    }, 6000)
+                    // Reset the form
+                    document.querySelector("#new-contactForm").reset();
+
+                } else if (xhr.readyState == 4 && xhr.status == 400) {
+                    console.log(xhr.responseText); // Returns a 400 error the submission is rejected.
+                } else if (xhr.readyState == 4 && xhr.status == 403) {
+                    console.log(xhr.responseText); // Returns a 403 error if the portal isn't allowed to post submissions.
+                } else if (xhr.readyState == 4 && xhr.status == 404) {
+                    console.log(xhr.responseText); //Returns a 404 error if the formGuid isn't found
+                }
+            };
+            // Sends the request
+            xhr.send(final_data);
+        }
+
+    {% comment %} window.onload = function() {
+    document.querySelector("#contactus-name").focus();
+    function focusOnAutoFocus() {
+        let autoFocus = document.querySelector('#autoFocus');
+        autoFocus.focus();
+    }
+    
+    let contactBtn = document.querySelector("#contact-btn-details");
+    contactBtn.addEventListener("click", focusOnAutoFocus);
+    
+    let askUs = document.querySelector("#opentContactUs");
+    askUs.addEventListener("click", focusOnAutoFocus); 
+    } {% endcomment %}
+    //
+    {% comment %} window.addEventListener("DOMContentLoaded", () => {
+       const contactBtn = document.querySelector(".button");
+    
+        contactBtn.addEventListener('click', () => {
+            let contactSlider = new Swiper('#contactForm_slider', {
+                speed: 1000,
+                slidesPerView: 1,
+                direction: 'horizontal',
+                loop: true,
+                centeredSlides: true,
+                draggable: true,
+                autoplay: {
+                    delay: 2500,
+                },
+                pagination: {
+                    el: '.swiper-pagination-contact',
+                    clickable: true,
+                },
+            });
+
+            const slides = document.querySelectorAll('.swiper-slide');
+            slides.forEach((slide, index) => {
+                slide.addEventListener('click', () => {
+                    // Stop the Swiper when a contact slide is clicked
+                    contactSlider.autoplay.stop();
+                });
+            });
+
+            const closeCtnBtn = document.querySelectorAll('#close-icon-btn'); 
+            closeCtnBtn.forEach(function (e) {
+                e.addEventListener('click', function () {
+                    contactSlider.destroy(true, true);
+                });
+            });
+        });
+    }); {% endcomment %}
+</script> 

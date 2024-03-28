@@ -1,0 +1,870 @@
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/sections/contact-popup.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+.formSubmissionAgreement {
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #83898c;
+}
+
+[error-message] {
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+  font-family: "Gilroy";
+}
+
+#contact-popup {
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+#contact-popup progress {
+  color: #FF7121;
+  font-size: 0.6em;
+  line-height: 1.5em;
+  text-indent: 0.5em;
+  width: 100%;
+  height: 9.25px;
+  border: 1px solid #EFEFEF;
+  background: #fff;
+  border-radius: 18.49px;
+  margin-top: 0px;
+  margin-top: 1%;
+  margin-right: -8%;
+  margin-bottom: 4.3%;
+}
+#contact-popup progress::-moz-progress-bar {
+  background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
+  border-radius: 18.49px;
+}
+#contact-popup progress::-webkit-progress-bar {
+  background: #EFEFEF;
+  border-radius: 18.49px;
+}
+#contact-popup progress::-webkit-progress-value {
+  background: -webkit-gradient(linear, right top, left top, color-stop(-0.26%, #FF7121), to(rgba(255, 113, 33, 0.21)));
+  background: linear-gradient(270deg, #FF7121 -0.26%, rgba(255, 113, 33, 0.21) 100%);
+  border-radius: 18.49px;
+}
+#contact-popup .contact-content {
+  height: 100%;
+  overflow-y: scroll;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+#contact-popup #left-contact-content {
+  padding: 30px;
+  display: block;
+  height: 100%;
+  background-color: #fff;
+}
+@media screen and (max-width: 840px) {
+  #contact-popup #left-contact-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  #contact-popup #left-contact-content {
+    overflow: auto;
+  }
+}
+#contact-popup #left-contact-content .close-icon {
+  float: right;
+  cursor: pointer;
+}
+#contact-popup #left-contact-content .form-content {
+  margin: 0 auto 2em auto;
+  width: 58%;
+}
+@media screen and (max-width: 1200px) {
+  #contact-popup #left-contact-content .form-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 840px) {
+  #contact-popup #left-contact-content .form-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content {
+    margin: 1.5em auto 2em auto;
+  }
+}
+#contact-popup #left-contact-content .form-content h1 {
+  font-family: "Gilroy-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin-bottom: 0.5em;
+}
+#contact-popup #left-contact-content .form-content h2 {
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 20px 0 25px;
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content h2 {
+    margin: 0 0 25px;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab h2.form-tab-sub-headings {
+  font-family: "Gilroy";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 30px 0 21px;
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab h2.form-tab-sub-headings {
+    margin: 10px 0 21px;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab .block {
+  display: block !important;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group {
+  width: 100%;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]) {
+  border: 1px solid #A6A9AB;
+  border-radius: 8px;
+  padding: 18px 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file])::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file])::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]):-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file])::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file])::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]):focus {
+  border-color: #000000;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]) :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group input:not([type=file]) ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #83898C;
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper:hover input[type=checkbox] ~ .custom-checkbox {
+  background-color: #ccc;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox {
+  background-color: #FF7121;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
+  content: "";
+  position: absolute;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox:after {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .custom-checkbox-wrapper .custom-checkbox:after {
+  left: 7px;
+  top: 3.6px;
+  width: 5.5px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2B2F32;
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  margin-bottom: 21px;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 21px;
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+@media screen and (min-width: 1341px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox-span {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox {
+  display: block;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  background-color: #eee;
+  border: 1px solid #83898C;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper:hover input[type=checkbox] ~ .custom-checkbox {
+  background-color: #ccc;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox {
+  background-color: #FF7121;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox:after {
+  content: "";
+  position: absolute;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox:after {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:not(:checked) ~ .custom-checkbox-span {
+  color: #808080;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper input[type=checkbox]:checked ~ .custom-checkbox-span {
+  color: #2b2f32;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .checkbox-wrapper .custom-checkbox:after {
+  left: 7px;
+  width: 5.5px;
+  top: 3.6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #additional-note, #contact-popup #left-contact-content .form-content .form-tab .form-group #new-details {
+  width: 100%;
+  border-radius: 7px;
+  padding: 1em;
+  min-height: 100px;
+  outline: none;
+  font-size: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #bbb3b3;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b6b8ba;
+  opacity: 1; /* Firefox */
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details:focus {
+  border-color: #000000;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group #new-details ::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b6b8ba;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group .invalid {
+  border-color: red;
+}
+#contact-popup #left-contact-content .form-content .form-tab .flex-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1.4rem;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #2B2F32;
+  display: grid;
+  grid-column-gap: 0.1rem;
+  grid-template-columns: 30px auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper {
+    grid-column-gap: 0;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-checkbox-span {
+  display: block;
+}
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-checkbox-span {
+    font-size: 14px;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #83898C;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper:hover input[type=radio] ~ .custom-radio {
+  background-color: #ccc;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio {
+  background-color: #FF7121;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio:after {
+  content: "";
+  position: absolute;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper input[type=radio]:checked ~ .custom-radio:after {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .form-group1 .radio-wrapper .custom-radio:after {
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select {
+  border: 1px solid #83898C;
+  padding: 1em 1.2em;
+  margin-bottom: 20px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+@media screen and (max-width: 320px) {
+  #contact-popup #left-contact-content .form-content .form-tab .project-select {
+    padding: 1em 0 1em 0.2em;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select .form-group {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select-label {
+  margin: 2rem 0 0.6rem 0;
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select-label .project-select-label-text {
+  border: 1px solid #A6A9AB;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 1.3;
+  margin-bottom: 0;
+  margin-bottom: initial;
+}
+#contact-popup #left-contact-content .form-content .form-tab .project-select-label .project-select-label-text .project-select-label-text-small {
+  font-size: 13px;
+  color: #878a8a;
+}
+#contact-popup #left-contact-content .form-content .form-tab .label-text {
+  padding: 12px 16px 12px 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ABAFB1;
+}
+#contact-popup #left-contact-content .form-content .form-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #left-contact-content .form-content .form-buttons {
+    padding-bottom: 40px;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn {
+  padding: 11px 22px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Gilroy", sans-serif;
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn--back {
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  font-family: "Gilroy", sans-serif;
+  padding: 0px 0px 5px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.4rem;
+     -moz-column-gap: 0.4rem;
+          column-gap: 0.4rem;
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn--back span {
+  display: block;
+  margin-top: 3px;
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn--back svg.back-svg {
+  vertical-align: middle !important;
+}
+#contact-popup #left-contact-content .form-content .form-buttons #nextBtn {
+  display: block;
+}
+#contact-popup #left-contact-content .form-content .form-buttons #submitBtn {
+  width: 100%;
+}
+#contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+  width: 102%;
+}
+@media screen and (max-width: 840px) {
+  #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+    width: 101%;
+  }
+}
+@media screen and (max-width: 575px) {
+  #contact-popup #left-contact-content .form-content .form-buttons #submitBtn:after {
+    width: 102%;
+  }
+}
+#contact-popup #left-contact-content .form-content .form-buttons .btn--orange:after {
+  background: #FF7121;
+  border: 1px solid #000000;
+  border-radius: 6px 15px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#contact-popup #testimonial-content {
+  display: block;
+  width: 50%;
+  padding: 30px;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+#contact-popup #testimonial-content .close-icon {
+  float: right;
+  cursor: pointer;
+}
+#contact-popup #testimonial-content #contactForm_slider {
+  margin: 0.5rem 10rem 0 10rem;
+}
+@media (max-width: 1340px) {
+  #contact-popup #testimonial-content #contactForm_slider {
+    margin: 0 6rem;
+  }
+}
+@media (max-width: 1200px) {
+  #contact-popup #testimonial-content #contactForm_slider {
+    margin: 0 4rem;
+  }
+}
+@media (max-width: 1023px) {
+  #contact-popup #testimonial-content #contactForm_slider {
+    margin: 0 2rem;
+  }
+}
+#contact-popup #testimonial-content .testimonial-card {
+  border-radius: 10px;
+  display: block !important;
+  cursor: -webkit-grab;
+  cursor: grab;
+  height: auto;
+  background-color: #fff;
+  margin: 2.5em auto 0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1490196078);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1490196078);
+}
+#contact-popup #testimonial-content .testimonial-card:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+@media (max-width: 1024px) {
+  #contact-popup #testimonial-content .testimonial-card {
+    padding-left: 0;
+  }
+}
+#contact-popup #testimonial-content .testimonial-card .card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contact-popup #testimonial-content .testimonial-card .card-image, #contact-popup #testimonial-content .testimonial-card .card-img, #contact-popup #testimonial-content .testimonial-card iframe {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  width: inherit;
+}
+#contact-popup #testimonial-content .testimonial-card .card-content {
+  padding: 20px 30px;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 1200px) {
+  #contact-popup #testimonial-content .testimonial-card .card-content {
+    padding: 20px;
+  }
+}
+#contact-popup #testimonial-content .testimonial-card .card-content .testimonial {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 38px;
+  color: #000000;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 1200px) {
+  #contact-popup #testimonial-content .testimonial-card .card-content .testimonial {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+#contact-popup #testimonial-content .testimonial-card .card-content .author {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.28px;
+  margin-bottom: 0;
+  color: #000000;
+}
+#contact-popup #testimonial-content .testimonial-card .card-content .designation {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.28px;
+  margin-top: 0;
+  color: #000000;
+}
+#contact-popup #testimonial-content .swiper-pagination-contact {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9f9f9;
+}
+#contact-popup #testimonial-content .swiper-pagination-contact .swiper-pagination-bullet {
+  background-color: orange;
+}
+#contact-popup #form-submit-content {
+  display: none;
+  width: 100%;
+  padding: 30px;
+}
+#contact-popup #form-submit-content .close-icon {
+  float: right;
+  cursor: pointer;
+}
+#contact-popup #form-submit-content #thankyou-card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  margin: 0.5em auto 5em auto;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  #contact-popup #form-submit-content #thankyou-card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #form-submit-content #thankyou-card {
+    max-width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 1em auto 5em auto;
+  }
+}
+#contact-popup #form-submit-content #thankyou-card .progress-complete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  #contact-popup #form-submit-content #thankyou-card .progress-complete {
+    max-height: 50px;
+  }
+}
+#contact-popup #form-submit-content #thankyou-card .form-success-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5em;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  #contact-popup #form-submit-content #thankyou-card .form-success-image {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-popup #form-submit-content #thankyou-card .form-success-image {
+    margin-top: 0;
+  }
+}
+#contact-popup #form-submit-content #thankyou-card .form-success-image img {
+  margin: auto;
+}
+#contact-popup #form-submit-content #thankyou-card .success-title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* or 48px */
+  letter-spacing: -0.03em;
+  color: #FF7121;
+}
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  #contact-popup #form-submit-content #thankyou-card .success-title {
+    margin: 0;
+  }
+}
+#contact-popup #form-submit-content #thankyou-card .success-text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 30px */
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+#contact-popup .error {
+  color: red;
+  font-size: 12px;
+}
+
+.drop-zone {
+  padding: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  color: #A6A9AB;
+  border: 1px dashed #A6A9AB;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: #F8F8F8;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+  height: 200px;
+  display: inline !important;
+  display: initial !important;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}

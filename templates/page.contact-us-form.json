@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "contact_popup_section_46aAbY": {
+      "type": "contact-popup-section",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact_popup_section_46aAbY"
+  ]
+}
