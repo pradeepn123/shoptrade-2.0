@@ -185,6 +185,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_8qWhcc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/adapthealth_1.png",
+            "view-project_url": "https:\/\/adapthealth.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -194,7 +211,8 @@
         "image_rcmiKJ",
         "image_mX3arM",
         "image_bMncj9",
-        "image_AN9mUJ"
+        "image_AN9mUJ",
+        "image_8qWhcc"
       ],
       "settings": {
         "heading": "",
