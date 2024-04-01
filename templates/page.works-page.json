@@ -406,6 +406,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_DqfWKY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/buunni.png",
+            "view-project_url": "https:\/\/www.buunnicoffee.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -428,7 +445,8 @@
         "image_RdNKE7",
         "image_rmkHPq",
         "image_pF9rj8",
-        "image_3wbCBe"
+        "image_3wbCBe",
+        "image_DqfWKY"
       ],
       "settings": {
         "heading": "",
