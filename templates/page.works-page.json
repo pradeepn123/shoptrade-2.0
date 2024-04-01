@@ -389,6 +389,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_3wbCBe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WIld_Junke_1.jpg",
+            "view-project_url": "https:\/\/wildjunkieboutique.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -410,7 +427,8 @@
         "image_CVPRMK",
         "image_RdNKE7",
         "image_rmkHPq",
-        "image_pF9rj8"
+        "image_pF9rj8",
+        "image_3wbCBe"
       ],
       "settings": {
         "heading": "",
