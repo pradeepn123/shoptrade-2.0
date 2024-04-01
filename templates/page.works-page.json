@@ -168,6 +168,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_AN9mUJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BEsynchro.jpg",
+            "view-project_url": "https:\/\/besynchro.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Introduce your brand<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -176,7 +193,8 @@
         "image_k4fGRN",
         "image_rcmiKJ",
         "image_mX3arM",
-        "image_bMncj9"
+        "image_bMncj9",
+        "image_AN9mUJ"
       ],
       "settings": {
         "heading": "",
