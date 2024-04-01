@@ -5,7 +5,7 @@
 
 .site-header__grid--logo-left.site-header__btn {
     grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
-    @media(--md-large){
+    @media(--md){
         grid-template-areas: "logo nav btn icons";
     }
     .area--nav{
@@ -21,7 +21,7 @@
     padding: 16px 18px;
     font-family: inherit;
     display: none;
-    @media(--md-large){
+    @media(--md){ 
         display: block;
     }
 }

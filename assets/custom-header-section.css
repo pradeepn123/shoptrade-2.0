@@ -5,7 +5,7 @@
   grid-template-columns: -webkit-max-content minmax(0, 1fr) minmax(0, -webkit-max-content);
   grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .site-header__grid--logo-left.site-header__btn {
     grid-template-areas: "logo nav btn icons";
   }
@@ -29,7 +29,7 @@
   font-family: inherit;
   display: none;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .button__custom {
     display: block;
   }
