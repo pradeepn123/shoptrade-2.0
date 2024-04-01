@@ -116,7 +116,7 @@
   {%- if settings.parallax_effects or settings.zoom_effects -%}
     <script src="{{ 'component-parallax.js' | asset_url }}"></script>
   {%- endif -%}
-  
+
     <script type="text/javascript">
       if ( 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch ) { document.querySelector('body').classList.remove('no-touchevents'); document.querySelector('body').classList.add('touchevents'); } 
     </script>
@@ -291,5 +291,7 @@
       <script src="{{ 'instantpage.js' | asset_url }}" type="module" defer></script>
     {%- endif -%}
   
+    <script src="{{'global.js' | asset_url }}" defer></script> 
+    
   </body>
   </html>
