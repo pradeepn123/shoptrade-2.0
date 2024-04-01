@@ -477,10 +477,9 @@
         },
         "image_W4f6p3": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8_1.jpg",
-            "view-project_url": "https:\/\/getcheckit.co\/",
+            "view-project_url": "https:\/\/apps.shopify.com\/checkit?show_store_picker=1",
             "open_in_new": true,
             "media_shape": "none",
             "title": "",
