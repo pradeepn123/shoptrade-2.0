@@ -287,6 +287,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_hyqdqn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elevatione_1_0e1cb173-f747-4b8c-8845-ddc4dc77da56.png",
+            "view-project_url": "https:\/\/www.elevatione.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -302,7 +319,8 @@
         "image_FKwMK7",
         "image_mNiVgG",
         "image_EYytHb",
-        "image_xarcbp"
+        "image_xarcbp",
+        "image_hyqdqn"
       ],
       "settings": {
         "heading": "",
