@@ -35,7 +35,7 @@
           "type": "button",
           "settings": {
             "button_label": "Get in touch",
-            "link": "https:\/\/meetings.hubspot.com\/shoptrade\/us",
+            "link": "shopify:\/\/pages\/contact-us",
             "target": true,
             "button_style": "solid",
             "button_size": "button--regular",
