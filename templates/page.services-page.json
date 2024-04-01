@@ -278,8 +278,17 @@
         },
         "brand_logo_LwnQw3": {
           "type": "Brand_logo",
+          "disabled": true,
           "settings": {
             "img": "shopify:\/\/shop_images\/Group_1000005421.png",
+            "url": "",
+            "target": false
+          }
+        },
+        "brand_logo_KUHNYW": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/recharge_logo.png",
             "url": "",
             "target": false
           }
@@ -290,14 +299,6 @@
             "img": "shopify:\/\/shop_images\/more..._2.png",
             "url": "",
             "target": true
-          }
-        },
-        "brand_logo_KUHNYW": {
-          "type": "Brand_logo",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/recharge_logo.png",
-            "url": "",
-            "target": false
           }
         }
       },
@@ -310,8 +311,8 @@
         "brand_logo_64DPqP",
         "brand_logo_aNCQt7",
         "brand_logo_LwnQw3",
-        "brand_logo_3YPk4y",
-        "brand_logo_KUHNYW"
+        "brand_logo_KUHNYW",
+        "brand_logo_3YPk4y"
       ],
       "settings": {
         "padding_top": 36,
