@@ -236,6 +236,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_mNiVgG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ShopTrade-Work_Midway.jpg",
+            "view-project_url": "https:\/\/midwaysports.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -248,7 +265,8 @@
         "image_AN9mUJ",
         "image_8qWhcc",
         "image_Fpp774",
-        "image_FKwMK7"
+        "image_FKwMK7",
+        "image_mNiVgG"
       ],
       "settings": {
         "heading": "",
