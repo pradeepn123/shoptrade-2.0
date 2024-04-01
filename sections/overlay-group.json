@@ -45,7 +45,7 @@
             "icon": "helpline",
             "custom_icon": "shopify:\/\/shop_images\/st-logo-svg.svg",
             "link": "shopify:\/\/pages\/contact-us",
-            "link_target": true,
+            "link_target": false,
             "spacing": 1.4,
             "text_scale": 1.5,
             "badge_scale": 0.5,
