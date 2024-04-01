@@ -291,6 +291,14 @@
             "url": "",
             "target": true
           }
+        },
+        "brand_logo_KUHNYW": {
+          "type": "Brand_logo",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/recharge_logo.png",
+            "url": "",
+            "target": false
+          }
         }
       },
       "block_order": [
@@ -302,7 +310,8 @@
         "brand_logo_64DPqP",
         "brand_logo_aNCQt7",
         "brand_logo_LwnQw3",
-        "brand_logo_3YPk4y"
+        "brand_logo_3YPk4y",
+        "brand_logo_KUHNYW"
       ],
       "settings": {
         "padding_top": 36,
