@@ -38,7 +38,7 @@
         "link": "https:\/\/meetings.hubspot.com\/shoptrade\/us",
         "button_size": "button--regular",
         "text_size_button": 23,
-        "target": false,
+        "target": true,
         "image": "shopify:\/\/shop_images\/founders-2.png",
         "text": "<p>Your Personal <br> Success Team<\/p>",
         "logo": "shopify:\/\/shop_images\/shopify_plus-png.png",
