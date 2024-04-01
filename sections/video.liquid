@@ -2,11 +2,27 @@
   .section-{{ section.id }} .video-popup__container.card__image{
     padding-top:{{ section.settings.video_height_mob }}%;
   }
+  .home_banner_video video{
+    height: auto !important;
+  }
+  .home_banner_video_desk{
+    display: none;
+  }
+  .home_banner_video_mob{
+    display: block;
+  }
 
   @media(min-width: 768px){
     .section-{{ section.id }} .video-popup__container.card__image{
        padding-top:{{ section.settings.video_height }}%;
     }
+    .home_banner_video_desk{
+      display: block;
+    }
+    .home_banner_video_mob{
+     display: none;
+    }
+    
   }
 {% endstyle %}
 
@@ -35,11 +51,10 @@
       -%}
 
       <template>
-        {%- if section.settings.video.type == 'youtube' -%}
-          <iframe src="https://www.youtube.com/embed/{{ section.settings.video.id }}?enablejsapi=1&autoplay=1" class="js-youtube video-popup__iframe" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.title | escape }}"></iframe>
-        {%- else -%}
-          <iframe src="https://player.vimeo.com/video/{{ section.settings.video.id }}?autoplay=1" class="js-vimeo video-popup__iframe" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.title | escape }}"></iframe>
-        {%- endif -%}
+        <div class="home_banner_video">
+           <div class="home_banner_video_desk">  {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} </div>
+           <div class="home_banner_video_mob">  {{ section.settings.video_mob | default: section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} </div>
+           </div>
       </template>
 
       <div class="video-popup__container card__image"  style="{% if section.settings.add_border %} border: 1px solid {{ section.settings.border_color }}{% endif %}" data-js-video-popup-container id="element-{{ block.id }}">
@@ -144,10 +159,13 @@
       },
       {
         "id": "video",
-        "type": "video_url",
-        "label": "t:sections.local-extra-words.sections.video.settings.video.label",
-        "accept": ["youtube", "vimeo"],
-        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        "type": "video",
+        "label": "video desktop" 
+      },
+      {
+        "id": "video_mob", 
+        "type": "video",
+        "label": "video mobile" 
       },
       {
         "type": "checkbox",
