@@ -253,6 +253,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_EYytHb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/US.jpg",
+            "view-project_url": "https:\/\/www.uspoloassn.co.uk\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -266,7 +283,8 @@
         "image_8qWhcc",
         "image_Fpp774",
         "image_FKwMK7",
-        "image_mNiVgG"
+        "image_mNiVgG",
+        "image_EYytHb"
       ],
       "settings": {
         "heading": "",
