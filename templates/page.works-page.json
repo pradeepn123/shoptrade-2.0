@@ -494,9 +494,8 @@
         },
         "image_rGpahw": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/thumbnail_sendif.webp",
+            "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
             "view-project_url": "https:\/\/apps.shopify.com\/sendif?show_store_picker=1",
             "open_in_new": true,
             "media_shape": "none",
