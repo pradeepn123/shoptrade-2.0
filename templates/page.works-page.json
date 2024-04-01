@@ -304,6 +304,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_VYGhGw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/project_thumbnail_polejunkie.webp",
+            "view-project_url": "https:\/\/www.polejunkie.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -320,7 +337,8 @@
         "image_mNiVgG",
         "image_EYytHb",
         "image_xarcbp",
-        "image_hyqdqn"
+        "image_hyqdqn",
+        "image_VYGhGw"
       ],
       "settings": {
         "heading": "",
