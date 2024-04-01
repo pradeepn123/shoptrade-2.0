@@ -219,6 +219,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_FKwMK7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/angles90.png",
+            "view-project_url": "https:\/\/shoptrade.co\/pages\/angles",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -230,7 +247,8 @@
         "image_bMncj9",
         "image_AN9mUJ",
         "image_8qWhcc",
-        "image_Fpp774"
+        "image_Fpp774",
+        "image_FKwMK7"
       ],
       "settings": {
         "heading": "",
