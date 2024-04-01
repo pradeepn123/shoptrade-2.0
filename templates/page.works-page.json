@@ -477,9 +477,28 @@
         },
         "image_W4f6p3": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8_1.jpg",
             "view-project_url": "https:\/\/getcheckit.co\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_rGpahw": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_sendif.webp",
+            "view-project_url": "https:\/\/apps.shopify.com\/sendif?show_store_picker=1",
             "open_in_new": true,
             "media_shape": "none",
             "title": "",
@@ -518,7 +537,8 @@
         "image_pdiaHX",
         "image_GBwGYn",
         "image_cVcGib",
-        "image_W4f6p3"
+        "image_W4f6p3",
+        "image_rGpahw"
       ],
       "settings": {
         "heading": "",
