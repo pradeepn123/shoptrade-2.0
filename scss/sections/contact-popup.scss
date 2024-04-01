@@ -1,3 +1,7 @@
+@use 'StyleComponents/typography';
+@use 'StyleComponents/colors';
+@import 'breakpoints';
+
 @media screen and (min-width: 769px){
     .display-hidden-onDesktop{
         //display: none;
@@ -532,6 +536,14 @@ textarea {
                     font-size: 16px;
                     line-height: 100%;
                     font-family: 'Gilroy' , sans-serif;
+                    // background-color: colors.$orange;
+                    // color: colors.$white; 
+                    &:hover{
+                        border: 1.2px solid colors.$orange;
+                    }
+                    @media(--sm){
+                        font-size: 20px;
+                    }
                 }
 
                 .btn--back {
@@ -576,25 +588,29 @@ textarea {
                 }
 
                 .btn--orange {
-                    &:after {
-                        background: #FF7121;
+                    
+                        background-color: colors.$orange;
                         border: 1px solid #000000;
-                        border-radius: 6px 15px;
+                        // border-radius: 6px 15px;
                         width: 100%;
                         height: 100%;
                         z-index: 1;
+                        color: colors.$white;
+                        transition: 0.3s all ease-in;
+                    
+                    &:hover {
+                        // margin-left: 0.2%;
+                        background-color: colors.$white;
+                        color: colors.$orange; 
+                        transition: 0.3s all ease-in;
+                        &:after {
+                            opacity: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            border: none;
+                        }
                     }
-                    // &:hover {
-                    //     margin-left: 0.2%;
-                    //     background-color: #fff;
-                    //     &:after {
-                    //         opacity: 0;
-                    //         width: 100%;
-                    //         height: 100%;
-                    //         z-index: -1;
-                    //         border: none;
-                    //     }
-                    // }
                 }
             }
         }
