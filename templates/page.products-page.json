@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
             "view-project_url": "https:\/\/apps.shopify.com\/sendif",
-            "open_in_new": false,
+            "open_in_new": true,
             "media_shape": "none",
             "title": "Sendif: Order Status Updates",
             "title_url": "https:\/\/apps.shopify.com\/sendif",
@@ -89,7 +89,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8.jpg",
             "view-project_url": "https:\/\/apps.shopify.com\/new-tikshop",
-            "open_in_new": false,
+            "open_in_new": true,
             "media_shape": "none",
             "title": "CheckIt ‑ Insta & TikTok Feeds",
             "title_url": "https:\/\/apps.shopify.com\/new-tikshop",
@@ -106,7 +106,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
             "view-project_url": "https:\/\/apps.shopify.com\/lensadvizor",
-            "open_in_new": false,
+            "open_in_new": true,
             "media_shape": "none",
             "title": "LensAdvizor: Prescription Lens",
             "title_url": "https:\/\/apps.shopify.com\/lensadvizor",
