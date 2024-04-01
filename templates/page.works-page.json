@@ -457,6 +457,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_cVcGib": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LensAdvisor_13c6a77f-95dd-4ed8-9642-1b54ab09a304.jpg",
+            "view-project_url": "https:\/\/www.lensadvisor.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -482,7 +499,8 @@
         "image_3wbCBe",
         "image_DqfWKY",
         "image_pdiaHX",
-        "image_GBwGYn"
+        "image_GBwGYn",
+        "image_cVcGib"
       ],
       "settings": {
         "heading": "",
