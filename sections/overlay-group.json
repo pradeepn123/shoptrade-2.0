@@ -44,7 +44,7 @@
             "size": 30,
             "icon": "helpline",
             "custom_icon": "shopify:\/\/shop_images\/st-logo-svg.svg",
-            "link": "https:\/\/meetings.hubspot.com\/shoptrade\/us?uuid=90eed62b-886e-4fdb-bb88-64f59447bc37",
+            "link": "shopify:\/\/pages\/contact-us",
             "link_target": true,
             "spacing": 1.4,
             "text_scale": 1.5,
