@@ -372,6 +372,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_pF9rj8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sproos_4d07625c-c72f-4b6b-b482-3463e3a5742e.jpg",
+            "view-project_url": "https:\/\/sprooslife.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -392,7 +409,8 @@
         "image_VYGhGw",
         "image_CVPRMK",
         "image_RdNKE7",
-        "image_rmkHPq"
+        "image_rmkHPq",
+        "image_pF9rj8"
       ],
       "settings": {
         "heading": "",
