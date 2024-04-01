@@ -270,6 +270,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_xarcbp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Heal-_-ci_1.jpg",
+            "view-project_url": "https:\/\/healco.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -284,7 +301,8 @@
         "image_Fpp774",
         "image_FKwMK7",
         "image_mNiVgG",
-        "image_EYytHb"
+        "image_EYytHb",
+        "image_xarcbp"
       ],
       "settings": {
         "heading": "",
