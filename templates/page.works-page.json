@@ -338,6 +338,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_RdNKE7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chill_eb790833-a7ed-433a-bec2-2eb6681f2742.jpg",
+            "view-project_url": "https:\/\/chill.com\/",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -356,7 +373,8 @@
         "image_xarcbp",
         "image_hyqdqn",
         "image_VYGhGw",
-        "image_CVPRMK"
+        "image_CVPRMK",
+        "image_RdNKE7"
       ],
       "settings": {
         "heading": "",
