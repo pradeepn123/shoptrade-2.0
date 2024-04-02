@@ -136,7 +136,17 @@
 
   {%- capture header_btn_classic -%}
     {%- if section.settings.button_label != blank -%}
+      {% if section.settings.show_custom_button == false %}
       <a href="{{ section.settings.button_link }}" class="button button__custom button--regular">{{ section.settings.button_label }}</a>
+    {% else %}
+    <div class="custom__button">
+    {%- liquid
+      assign sections = section.settings
+      assign button_style = sections.button_style | append: sections.button_hover
+      render 'button', label: sections.button_label, link: sections.button_link, style: button_style, class: sections.button_size, target: sections.target
+    -%}
+    </div>
+      {%- endif -%}
     {%- endif -%}
   {%- endcapture -%}
 
@@ -560,9 +570,57 @@
       "label": "Button Label"
     },
     {
+      "type": "checkbox",
+      "id": "show_custom_button",
+      "label": "show custom button",
+      "default": false 
+    },
+    {
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
+    },
+    {
+      "id": "button_style",
+      "label": "t:sections.local-extra-words.sections.buttons.style.label",
+      "type": "select",
+      "options": [
+        {
+          "value": "outline",
+          "label": "t:sections.local-extra-words.sections.buttons.style.option__1"
+        },
+        {
+          "value": "solid",
+          "label": "t:sections.local-extra-words.sections.buttons.style.option__2"
+        }
+      ],
+      "default": "outline"
+    },
+    {
+      "type": "select",
+      "id": "button_size",
+      "label": "t:sections.local-extra-words.sections.main-header.settings.promotion_block.button.size",
+      "options": [
+        {
+          "value": "button--small",
+          "label": "t:raw-extra-words.settings_schema.options.small"
+        },
+        {
+          "value": "button--regular",
+          "label": "t:raw-extra-words.settings_schema.options.regular"
+        },
+        {
+          "value": "button--large",
+          "label": "t:raw-extra-words.settings_schema.options.large"
+        }
+      ],
+      "default": "button--regular"
+    },
+    {
+      "type": "checkbox",
+      "id": "target",
+      "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
+      "default": false
     },
     {
       "type": "header",

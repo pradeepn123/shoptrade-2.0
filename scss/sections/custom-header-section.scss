@@ -5,6 +5,7 @@
 
 .site-header__grid--logo-left.site-header__btn {
     grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
+    align-items: center;
     @media(--md){
         grid-template-areas: "logo nav btn icons";
     }
@@ -13,16 +14,37 @@
     }
 }
 .button__custom{
-    @include use-text-style('body-alt');
+    // @include use-text-style('body-alt');
     color: #FFFFFF;
     background-color: #FF7121;
     border: 0;
     margin: 12px 0;
-    padding: 16px 18px;
+    padding: 19px 18px 16px 18px;
     font-family: inherit;
     display: none;
+    transition: 0.3s all ease;
+    border: 1px solid #0000;
+    // font-family: var(--font-stack-headings);
     @media(--md){ 
         display: block;
+        font-size: 21px;
+    }
+    &:hover{
+        color: #FF7121;
+        background-color: #FFFFFF;
+        border: 1px solid #FF7121;
+        transition: 0.3s all ease;
     }
 }
-
+.custom__button{
+    .button{
+        --color-scheme-text : #FF7121  !important;
+        --color-scheme-accent-foreground: #FF7121; 
+    }
+    .button:before{
+        --color-scheme-accent: #ffffff;
+    }
+    a{
+        font-size: 21px !important;
+    }
+}

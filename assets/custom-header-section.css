@@ -4,6 +4,9 @@
 .site-header__grid--logo-left.site-header__btn {
   grid-template-columns: -webkit-max-content minmax(0, 1fr) minmax(0, -webkit-max-content);
   grid-template-columns: max-content minmax(0, 1fr) minmax(0, max-content);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (min-width: 1024px) {
   .site-header__grid--logo-left.site-header__btn {
@@ -17,20 +20,38 @@
 }
 
 .button__custom {
-  font-family: "poppins";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
   color: #FFFFFF;
   background-color: #FF7121;
   border: 0;
   margin: 12px 0;
-  padding: 16px 18px;
+  padding: 19px 18px 16px 18px;
   font-family: inherit;
   display: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 @media (min-width: 1024px) {
   .button__custom {
     display: block;
+    font-size: 21px;
   }
+}
+.button__custom:hover {
+  color: #FF7121;
+  background-color: #FFFFFF;
+  border: 1px solid #FF7121;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.custom__button .button {
+  --color-scheme-text: #FF7121 !important;
+  --color-scheme-accent-foreground: #FF7121;
+}
+.custom__button .button:before {
+  --color-scheme-accent: #ffffff;
+}
+.custom__button a {
+  font-size: 21px !important;
 }
