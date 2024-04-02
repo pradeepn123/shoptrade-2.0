@@ -151,6 +151,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_BEfD6V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Netwise.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "NetWise",
+            "title_url": "https:\/\/apps.shopify.com\/netwise",
+            "open_in_new_tab": false,
+            "caption": "<p>Netwise is a B2B management platform that helps businesses get paid faster. It automates invoice reconciliation, sends automated reminders, credit management for customers and tracks customer payment history with detailed aging reports. Netwise is built to work with Shopify B2B, making it a great choice for businesses that use Shopify.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -158,7 +175,8 @@
         "image_GrTm6x",
         "image_k4fGRN",
         "image_XEDVpq",
-        "image_XFLNae"
+        "image_XFLNae",
+        "image_BEfD6V"
       ],
       "settings": {
         "heading": "",
