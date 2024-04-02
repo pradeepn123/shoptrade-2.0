@@ -134,13 +134,31 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_XFLNae": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lensify.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Lensify",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Coming Soon!<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
         "image_BqzixF",
         "image_GrTm6x",
         "image_k4fGRN",
-        "image_XEDVpq"
+        "image_XEDVpq",
+        "image_XFLNae"
       ],
       "settings": {
         "heading": "",
