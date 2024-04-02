@@ -783,23 +783,6 @@
             "seo_h_tag": "h3"
           }
         },
-        "image_pbe3PX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Sushanth.jpg",
-            "view-project_url": "",
-            "open_in_new": false,
-            "media_shape": "none",
-            "title": "Sushanth Suvarna",
-            "title_url": "",
-            "open_in_new_tab": false,
-            "caption": "<p>Project Coordinator<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_fcebUT": {
           "type": "image",
           "settings": {
@@ -811,6 +794,23 @@
             "title_url": "",
             "open_in_new_tab": false,
             "caption": "<p>Business Analyst<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_pbe3PX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sushanth.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Sushanth Suvarna",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Project Coordinator<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -946,7 +946,7 @@
             "title": "Umesh",
             "title_url": "",
             "open_in_new_tab": false,
-            "caption": "<p>Team Lead (Front-End)<\/p>",
+            "caption": "<p>Head of Front-End Engineering<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -1230,8 +1230,8 @@
         "image_KxfFDM",
         "image_mCVe99",
         "image_dK63rr",
-        "image_pbe3PX",
         "image_fcebUT",
+        "image_pbe3PX",
         "image_9TGVBq",
         "image_Ab8Eix",
         "image_Jii8PU",
