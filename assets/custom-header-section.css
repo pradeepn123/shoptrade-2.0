@@ -45,6 +45,14 @@
   transition: 0.3s all ease;
 }
 
+.custom__button {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .custom__button {
+    display: block;
+  }
+}
 .custom__button .button {
   --color-scheme-text: #FF7121 !important;
   --color-scheme-accent-foreground: #FF7121;

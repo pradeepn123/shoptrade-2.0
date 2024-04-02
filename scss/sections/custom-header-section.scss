@@ -37,6 +37,11 @@
     }
 }
 .custom__button{
+    display: none;
+    @media(--md){ 
+        display: block;
+      
+    } 
     .button{
         --color-scheme-text : #FF7121  !important;
         --color-scheme-accent-foreground: #FF7121; 
@@ -47,4 +52,5 @@
     a{
         font-size: 21px !important;
     }
+   
 }
