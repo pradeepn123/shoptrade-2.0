@@ -67,57 +67,6 @@
     "text_columns_images_QFrj6U": {
       "type": "text-columns-images",
       "blocks": {
-        "image_BqzixF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
-            "view-project_url": "https:\/\/apps.shopify.com\/sendif",
-            "open_in_new": true,
-            "media_shape": "none",
-            "title": "Sendif: Order Status Updates",
-            "title_url": "https:\/\/apps.shopify.com\/sendif",
-            "open_in_new_tab": false,
-            "caption": "<p>If you sell products with lead times, it's important to keep customers updated so that they don't have to ask you when their order will be ready. We wanted a way to do that, so we built Sendif: an easy way to automate personalised order status update emails to customers that build trust and loyalty while saving you time on customer support.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_GrTm6x": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8.jpg",
-            "view-project_url": "https:\/\/apps.shopify.com\/new-tikshop",
-            "open_in_new": true,
-            "media_shape": "none",
-            "title": "CheckIt ‑ Insta & TikTok Feeds",
-            "title_url": "https:\/\/apps.shopify.com\/new-tikshop",
-            "open_in_new_tab": false,
-            "caption": "<p>Checkit brings aesthetic shoppable Instagram and TikTok feeds to your Shopify store. Simply connect your TikTok and\/or Instagram account and start building shoppable feeds. Checkit is highly responsive and does not slow down your store.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
-        "image_k4fGRN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
-            "view-project_url": "https:\/\/apps.shopify.com\/lensadvizor",
-            "open_in_new": true,
-            "media_shape": "none",
-            "title": "LensAdvizor: Prescription Lens",
-            "title_url": "https:\/\/apps.shopify.com\/lensadvizor",
-            "open_in_new_tab": false,
-            "caption": "<p>With LensAdvizor, you can easily sell prescription lenses with your eyewear products. LensAdvizor lets your customers upload and enter their prescriptions and add lenses to your frames, just like how leading online brands do. Save time and sell more frames with a no-hassle setup and our dedicated support team.<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_XEDVpq": {
           "type": "image",
           "settings": {
@@ -168,15 +117,66 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_k4fGRN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
+            "view-project_url": "https:\/\/apps.shopify.com\/lensadvizor",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "LensAdvizor: Prescription Lens",
+            "title_url": "https:\/\/apps.shopify.com\/lensadvizor",
+            "open_in_new_tab": false,
+            "caption": "<p>With LensAdvizor, you can easily sell prescription lenses with your eyewear products. LensAdvizor lets your customers upload and enter their prescriptions and add lenses to your frames, just like how leading online brands do. Save time and sell more frames with a no-hassle setup and our dedicated support team.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_BqzixF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
+            "view-project_url": "https:\/\/apps.shopify.com\/sendif",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "Sendif: Order Status Updates",
+            "title_url": "https:\/\/apps.shopify.com\/sendif",
+            "open_in_new_tab": false,
+            "caption": "<p>If you sell products with lead times, it's important to keep customers updated so that they don't have to ask you when their order will be ready. We wanted a way to do that, so we built Sendif: an easy way to automate personalised order status update emails to customers that build trust and loyalty while saving you time on customer support.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_GrTm6x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Checkit_2409cf49-293f-49c3-bdfa-d2365ce557d8.jpg",
+            "view-project_url": "https:\/\/apps.shopify.com\/new-tikshop",
+            "open_in_new": true,
+            "media_shape": "none",
+            "title": "CheckIt ‑ Insta & TikTok Feeds",
+            "title_url": "https:\/\/apps.shopify.com\/new-tikshop",
+            "open_in_new_tab": false,
+            "caption": "<p>Checkit brings aesthetic shoppable Instagram and TikTok feeds to your Shopify store. Simply connect your TikTok and\/or Instagram account and start building shoppable feeds. Checkit is highly responsive and does not slow down your store.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
-        "image_BqzixF",
-        "image_GrTm6x",
-        "image_k4fGRN",
         "image_XEDVpq",
         "image_XFLNae",
-        "image_BEfD6V"
+        "image_BEfD6V",
+        "image_k4fGRN",
+        "image_BqzixF",
+        "image_GrTm6x"
       ],
       "settings": {
         "heading": "",
