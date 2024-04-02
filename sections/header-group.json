@@ -14,7 +14,7 @@
         "logo_center_absolute": false,
         "main_linklist": "main-menu",
         "button_label": "Contact Us",
-        "show_custom_button": true,
+        "show_custom_button": false,
         "button_link": "shopify:\/\/pages\/contact-us",
         "button_style": "solid",
         "button_size": "button--regular",
