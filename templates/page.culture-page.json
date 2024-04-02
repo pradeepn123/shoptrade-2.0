@@ -919,23 +919,6 @@
             "seo_h_tag": "h3"
           }
         },
-        "image_ReqXVk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Pradeep_431e0921-d376-42a5-86f9-cb5e6012ed3e.jpg",
-            "view-project_url": "",
-            "open_in_new": false,
-            "media_shape": "none",
-            "title": "Pradeep Neginhal",
-            "title_url": "",
-            "open_in_new_tab": false,
-            "caption": "<p>Senior Front-End Engineering Manager<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
-        },
         "image_zLHitx": {
           "type": "image",
           "settings": {
@@ -947,6 +930,23 @@
             "title_url": "",
             "open_in_new_tab": false,
             "caption": "<p>Head of Front-End Engineering<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_ReqXVk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pradeep_431e0921-d376-42a5-86f9-cb5e6012ed3e.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Pradeep Neginhal",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Senior Front-End Engineer<\/p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -1238,8 +1238,8 @@
         "image_rJtbdm",
         "image_A4YNrX",
         "image_T3Ecmy",
-        "image_ReqXVk",
         "image_zLHitx",
+        "image_ReqXVk",
         "image_awrwUD",
         "image_GWnRe7",
         "image_giECXa",
