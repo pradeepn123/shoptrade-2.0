@@ -105,7 +105,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Netwise.jpg",
-            "view-project_url": "",
+            "view-project_url": "https:\/\/apps.shopify.com\/netwise",
             "open_in_new": false,
             "media_shape": "none",
             "title": "NetWise",
