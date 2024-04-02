@@ -138,19 +138,19 @@
             "size": "text-size--18"
           }
         },
-        "text_JznHkH": {
-          "type": "text",
-          "settings": {
-            "title": "BENGALURU - IN",
-            "content": "<p>ShopTrade Technologies Pvt Ltd, Koramangala, Bengaluru,  India 560095<\/p>",
-            "size": "text-size--18"
-          }
-        },
         "text_JtVn6U": {
           "type": "text",
           "settings": {
             "title": "SINGAPORE - SEA",
             "content": "<p>ShopTrade PTE. LTD. 160 Robinson Road, #14-04, Singapore 068914<\/p>",
+            "size": "text-size--18"
+          }
+        },
+        "text_JznHkH": {
+          "type": "text",
+          "settings": {
+            "title": "BENGALURU - IN",
+            "content": "<p>ShopTrade Technologies Pvt Ltd, Koramangala, Bengaluru,  India 560095<\/p>",
             "size": "text-size--18"
           }
         },
@@ -172,8 +172,8 @@
         "text_B98fzE",
         "newsletter_rzYX3d",
         "text_RhypG9",
-        "text_JznHkH",
         "text_JtVn6U",
+        "text_JznHkH",
         "image_Xk6zyc"
       ],
       "custom_css": [
