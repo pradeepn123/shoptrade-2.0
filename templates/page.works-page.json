@@ -426,6 +426,7 @@
         },
         "image_GBwGYn": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/lucky-you.png",
             "view-project_url": "https:\/\/luckyyougifts.com\/",
