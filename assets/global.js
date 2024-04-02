@@ -1,19 +1,53 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./js/sections/common.js":
 /*!*******************************!*\
   !*** ./js/sections/common.js ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var links = document.links;
-for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-  if (links[i].hostname !== window.location.hostname) {
-    links[i].target = '_blank';
-    links[i].rel = 'noreferrer noopener';
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  var links = document.links;
+  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+    if (links[i].hostname !== window.location.hostname) {
+      links[i].target = '_blank';
+      links[i].rel = 'noreferrer noopener';
+    }
   }
-}
+});
+
+/***/ }),
+
+/***/ "./js/sections/video-banner.js":
+/*!*************************************!*\
+  !*** ./js/sections/video-banner.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => {
+  var bannerImage = document.querySelectorAll('[data-video-banner] img');
+  var bannerVideo = document.querySelectorAll('[data-home-banner] video');
+  bannerVideo.forEach(video => {
+    video.onloadeddata = function () {
+      bannerImage.forEach(img => {
+        img.style.display = "none";
+      });
+    };
+  });
+  setTimeout(() => {
+    bannerImage.forEach(img => {
+      img.style.display = "none";
+    });
+  }, 3000);
+});
 
 /***/ })
 
@@ -44,18 +78,6 @@ for (var i = 0, linksLength = links.length; i < linksLength; i++) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -75,17 +97,18 @@ for (var i = 0, linksLength = links.length; i < linksLength; i++) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!*******************************!*\
   !*** ./js/sections/global.js ***!
   \*******************************/
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ "./js/sections/common.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_common__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _video_banner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./video-banner */ "./js/sections/video-banner.js");
+
 
 document.addEventListener('DOMContentLoaded', () => {
-  _common__WEBPACK_IMPORTED_MODULE_0___default()();
+  (0,_common__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_video_banner__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 })();
 

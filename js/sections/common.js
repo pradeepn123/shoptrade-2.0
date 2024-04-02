@@ -1,4 +1,4 @@
-
+export default () => {
     const links = document.links;
     for (let i = 0, linksLength = links.length; i < linksLength; i++) {
         if (links[i].hostname !== window.location.hostname) {
@@ -6,3 +6,4 @@
             links[i].rel = 'noreferrer noopener';
         }
     }
+}

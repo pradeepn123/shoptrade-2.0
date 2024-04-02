@@ -1,6 +1,6 @@
 <div class="footer-bottom__content gutter-horiz--regular gutter-top--regular gutter-bottom--regular">
-  {{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name | escape }}</a>.
-  <span class="powered-by-shopify">{{ powered_by_link }}</span>
+  {{ 'general.copyright' | t }} &copy; {{ 'now' | date: "%Y" }} <a href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
+  {% comment %} <span class="powered-by-shopify">{{ powered_by_link }}</span> {% endcomment %}
 </div>
 
 {%- render 'color-scheme', color_scheme: section.settings.color_scheme -%}
