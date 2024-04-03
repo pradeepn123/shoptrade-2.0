@@ -440,6 +440,23 @@
             "target": false,
             "seo_h_tag": "h3"
           }
+        },
+        "image_6VjGJB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_423.png",
+            "view-project_url": "https:\/\/cohoimports.com\/",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Co-Ho Imports",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
         }
       },
       "block_order": [
@@ -464,7 +481,8 @@
         "image_pF9rj8",
         "image_3wbCBe",
         "image_DqfWKY",
-        "image_pdiaHX"
+        "image_pdiaHX",
+        "image_6VjGJB"
       ],
       "settings": {
         "heading": "",
