@@ -67,6 +67,23 @@
     "text_columns_images_QFrj6U": {
       "type": "text-columns-images",
       "blocks": {
+        "image_GK9RQz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_4_461f91ed-02da-4ae8-bfc3-af7d26ec76a1.png",
+            "view-project_url": "https:\/\/www.dgclub.in\/",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "DG Club",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
         "image_GrTm6x": {
           "type": "image",
           "settings": {
@@ -423,26 +440,10 @@
             "target": false,
             "seo_h_tag": "h3"
           }
-        },
-        "image_GK9RQz": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_4_461f91ed-02da-4ae8-bfc3-af7d26ec76a1.png",
-            "view-project_url": "https:\/\/www.dgclub.in\/",
-            "open_in_new": false,
-            "media_shape": "none",
-            "title": "DG Club",
-            "title_url": "",
-            "open_in_new_tab": false,
-            "caption": "<p>Introduce your brand<\/p>",
-            "cta_label": "",
-            "cta_url": "",
-            "target": false,
-            "seo_h_tag": "h3"
-          }
         }
       },
       "block_order": [
+        "image_GK9RQz",
         "image_GrTm6x",
         "image_BqzixF",
         "image_k4fGRN",
@@ -463,8 +464,7 @@
         "image_pF9rj8",
         "image_3wbCBe",
         "image_DqfWKY",
-        "image_pdiaHX",
-        "image_GK9RQz"
+        "image_pdiaHX"
       ],
       "settings": {
         "heading": "",
