@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-.spacing--xlarge:hover .card__image-badge {
+.card_img_wrapper:hover .card__image-badge {
   display: inline-table;
   -webkit-animation: fadeIn 1s;
   z-index: 2;

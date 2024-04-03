@@ -53,7 +53,7 @@
         overflow: hidden;
       }
 
-      #element-{{ section.id }} .card__image:hover::after {
+      #element-{{ section.id }} .card_img_wrapper:hover::after {
         content: '';
         position: absolute;
         top: 0;
@@ -111,7 +111,7 @@
      
         {% if block.settings.image  %}
         <a
-          class="card__image"
+          class="card__image  {% if block.settings.view-project_url %} card_img_wrapper {% endif %}"
           {% if block.settings.view-project_url %}   href="{{ block.settings.view-project_url }}" {% endif %}
           {% if block.settings.open_in_new %}   target="_blank" {% endif %} 
           
