@@ -725,7 +725,7 @@
         "disable_section_title_border": false,
         "layout_desktop": "grid-3 grid-lap-2",
         "style": "slider",
-        "image_aspect_ratio": "1.33333",
+        "image_aspect_ratio": "1.77777",
         "title_text_font": "text-font--body",
         "title_text_size": "text-size--30",
         "title_text_weight": true,
