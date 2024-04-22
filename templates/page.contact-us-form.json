@@ -8,6 +8,7 @@
     },
     "contact_popup_section_46aAbY": {
       "type": "contact-popup-section",
+      "disabled": true,
       "settings": {
       }
     },
@@ -35,7 +36,6 @@
       "block_order": [
         "forms_inline_agfBaJ"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "seo_h_tag": "h2",
