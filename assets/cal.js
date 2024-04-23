@@ -32,5 +32,5 @@ Cal("init", { origin: "https://app.cal.com" });
 
 Cal("inline", {
   elementOrSelector: "#my-cal-inline",
-  calLink: "https://cal.com/team/shoptrade",
+  calLink: "/team/shoptrade",
 });
