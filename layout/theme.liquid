@@ -82,7 +82,7 @@
       <link rel="stylesheet" href="{{ 'theme-noscript.css' | asset_url }}">
     </noscript>
     <link rel="stylesheet" href="{{ 'custom-fonts.css' | asset_url }}">
-     <script>
+     <script type="text/javascript">
       (function (C, A, L) {
         let p = function (a, ar) {
           a.q.push(ar);
@@ -112,8 +112,14 @@
             }
             p(cal, ar);
           };
-      })(window, "https://cal.com/embed.js", "init");
-   </script>
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", { origin: "https://app.cal.com" });
+
+      Cal("inline", {
+        elementOrSelector: "#my-cal-inline",
+        calLink: "rick/get-rick-rolled"
+      });
+    </script>
   </head>
   
   <body id="{{ page_title | handle }}" class="
