@@ -27,5 +27,10 @@
       }
       p(cal, ar);
     };
+
+  // Provide the URL directly
+  const calLink = "/team/shoptrade/us";
+
+  // Initialize Cal.com with the provided URL
+  Cal("init", calLink);
 })(window, "https://cal.com/embed.js", "init");
-Cal("init");
