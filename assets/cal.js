@@ -41,7 +41,7 @@
   let calLink;
   switch (currentDomain) {
     case "shoptrade.co":
-      calLink = "/team/shoptrade/us";
+      calLink = "/team/shoptrade";
       break;
     case "shoptrade.sg":
       calLink = "/team/shoptrade/sg";
@@ -56,11 +56,11 @@
   // Initialize Cal.com with dynamic calLink
   Cal("init", { origin: "https://app.cal.com" });
 
-  // Only call Cal("inline") if #my-cal-inline element exists
-  if (document.getElementById("my-cal-inline")) {
-    Cal("inline", {
-      elementOrSelector: "#my-cal-inline",
-      calLink: calLink,
-    });
-  }
-})(window, "https://app.cal.com/embed/embed.js", "init");
+  // Set data-cal-link attribute of the button
+  document.addEventListener("DOMContentLoaded", function () {
+    let button = document.querySelector("[data-cal-link]");
+    if (button) {
+      button.setAttribute("data-cal-link", calLink);
+    }
+  });
+})(window, "https://cal.com/embed.js", "init");
