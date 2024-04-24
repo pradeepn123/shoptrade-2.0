@@ -31,7 +31,7 @@
   // Function to get the domain from the URL
   function getDomain(url) {
     let domain = url.split("//")[1].split("/")[0];
-    return domain.split(".").slice(-2).join(".");
+    return domain.split(".").slice(-2).join("."); // Get last two parts of domain
   }
 
   // Function to set calLink based on the domain
@@ -40,7 +40,7 @@
     let calLink;
     switch (currentDomain) {
       case "shoptrade.co":
-        calLink = "/team/shoptrade";
+        calLink = "/team/shoptrade/us";
         break;
       case "shoptrade.sg":
         calLink = "/team/shoptrade/sg";
@@ -49,15 +49,17 @@
         calLink = "/team/shoptrade/in";
         break;
       default:
-        calLink = "/team/shoptrade";
+        calLink = "/team/shoptrade"; // Default calLink
     }
-    let calButton = document.querySelector("[data-cal-link]");
-    if (calButton) {
-      calButton.setAttribute("data-cal-link", calLink);
-    }
-    if (calButton) {
-      calButton.click();
-    }
+
+    // Initialize Cal.com with dynamic calLink
+    Cal("init", { origin: "https://app.cal.com" });
+
+    // Trigger Cal.com inline widget to open
+    Cal("inline", {
+      elementOrSelector: "#my-cal-inline",
+      calLink: calLink,
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -68,4 +70,4 @@
       });
     }
   });
-})(window, "https://cal.com/embed.js", "init");
+})(window, "https://app.cal.com/embed/embed.js", "init");
