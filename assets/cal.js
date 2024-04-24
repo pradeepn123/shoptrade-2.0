@@ -31,7 +31,7 @@
   // Function to get the domain from the URL
   function getDomain(url) {
     let domain = url.split("//")[1].split("/")[0];
-    return domain.split(".").slice(-2).join("."); // Get last two parts of domain
+    return domain.split(".").slice(-2).join(".");
   }
 
   // Function to set calLink based on the domain
@@ -62,12 +62,17 @@
     });
   }
 
+  // Function to handle click on footer link
+  function handleFooterLinkClick(event) {
+    event.preventDefault();
+    setCalLink();
+  }
+
+  // Add event listener to footer link
   document.addEventListener("DOMContentLoaded", function () {
-    let bookMeetingLink = document.querySelector("#footer-book-meeting-link");
-    if (bookMeetingLink) {
-      bookMeetingLink.addEventListener("click", function (event) {
-        setCalLink();
-      });
+    let footerLink = document.querySelector("#footer-book-meeting-link");
+    if (footerLink) {
+      footerLink.addEventListener("click", handleFooterLinkClick);
     }
   });
 })(window, "https://app.cal.com/embed/embed.js", "init");
