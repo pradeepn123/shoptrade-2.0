@@ -52,11 +52,17 @@
     });
   }
 
-  // Bind function to click event of footer link
+  // Function to handle click on footer link
+  function handleFooterLinkClick(event) {
+    event.preventDefault();
+    setCalLink();
+  }
+
+  // Add event listener to footer link
   document.addEventListener("DOMContentLoaded", function () {
     let footerLink = document.querySelector("#footer-book-meeting-link");
     if (footerLink) {
-      footerLink.addEventListener("click", setCalLink);
+      footerLink.addEventListener("click", handleFooterLinkClick);
     }
   });
 
