@@ -1,7 +1,4 @@
 (function (C, A, L) {
-  let p = function (a, ar) {
-    a.q.push(ar);
-  };
   let d = C.document;
   C.Cal =
     C.Cal ||
@@ -16,27 +13,23 @@
       }
       if (ar[0] === L) {
         const api = function () {
-          p(api, arguments);
+          api.q.push(arguments);
         };
-        const namespace = ar[1];
         api.q = api.q || [];
-        typeof namespace === "string"
-          ? (cal.ns[namespace] = api) && p(api, ar)
-          : p(cal, ar);
+        const namespace = ar[1];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = api;
+        } else {
+          cal.q.push(ar);
+        }
         return;
       }
-      p(cal, ar);
+      cal.q.push(ar);
     };
-
-  // Function to get the domain from the URL
-  function getDomain(url) {
-    let domain = url.split("//")[1].split("/")[0];
-    return domain.split(".").slice(-2).join(".");
-  }
 
   // Function to set calLink based on the domain
   function setCalLink() {
-    let currentDomain = getDomain(window.location.href);
+    let currentDomain = window.location.hostname;
     let calLink;
     switch (currentDomain) {
       case "shoptrade.co":
@@ -51,9 +44,6 @@
       default:
         calLink = "/team/shoptrade"; // Default calLink
     }
-
-    // Initialize Cal.com with dynamic calLink
-    Cal("init", { origin: "https://app.cal.com" });
 
     // Trigger Cal.com inline widget to open
     Cal("inline", {
