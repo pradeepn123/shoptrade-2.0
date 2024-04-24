@@ -41,7 +41,7 @@
   let calLink;
   switch (currentDomain) {
     case "shoptrade.co":
-      calLink = "/team/shoptrade";
+      calLink = "/team/shoptrade/us";
       break;
     case "shoptrade.sg":
       calLink = "/team/shoptrade/sg";
