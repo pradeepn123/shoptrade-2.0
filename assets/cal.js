@@ -65,4 +65,7 @@
       footerLink.addEventListener("click", handleFooterLinkClick);
     }
   });
+
+  // Initialize Cal.com with the script URL
+  Cal("init", { origin: "https://app.cal.com" });
 })(window, "https://app.cal.com/embed/embed.js", "init");
