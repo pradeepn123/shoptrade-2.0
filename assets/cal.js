@@ -1,13 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-    // Function to get the domain from the URL
-    function getDomain(url) {
-      let domain = url.split("//")[1].split("/")[0];
-      return domain.split(".").slice(-2).join("."); // Get last two parts of domain
-    }
-  
+document.addEventListener('DOMContentLoaded', () => {  
     // Get the current domain
-    let currentDomain = getDomain(window.location.href);
+    let currentDomain = window.location.hostname;
   
     // Set calLink based on the domain
     let calLink;
