@@ -41,8 +41,8 @@ if ( typeof MainHeader !== 'function' ) {
 				}
 			});
 			if ( this.classList.contains('site-header--alignment-left') ) {
-				document.getElementById('site-search-sidebar').classList.remove('sidebar--left');
-				document.getElementById('site-search-sidebar').classList.add('sidebar--right');
+				document.getElementById('site-search-sidebar')?.classList.remove('sidebar--left');
+				document.getElementById('site-search-sidebar')?.classList.add('sidebar--right');
 			}
 			
 			// closing drawers

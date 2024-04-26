@@ -10,13 +10,13 @@
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
         "video_auto_play": false,
-        "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
-        "video_mob": "shopify:\/\/files\/videos\/shoptrade website video 02.mp4",
+        "video": "shopify://files/videos/shoptrade homepage(4.1mb).mp4",
+        "video_mob": "shopify://files/videos/shoptrade website video 02.mp4",
         "add_border": true,
         "border_color": "#000000",
         "video_height": 70,
         "video_height_mob": 32,
-        "image": "shopify:\/\/shop_images\/grid_bg_white_-_thumb_4deb02dc-7575-4df6-a73c-30091ccf1e15.jpg",
+        "image": "shopify://shop_images/grid_bg_white_-_thumb_4deb02dc-7575-4df6-a73c-30091ccf1e15.jpg",
         "color_scheme": "scheme1",
         "disable_section_bottom_border": true,
         "remove_border_radius": false,
@@ -32,18 +32,18 @@
         "seo_h_tag": "h1",
         "text_font": "text-font--headings",
         "text_size": 48,
-        "paragraph": "<p>Designing, developing, and scaling e-commerce stores for industry leaders. Our expertise ensures tailored solutions that drive growth and success for our top clients.<\/p>",
+        "paragraph": "<p>Designing, developing, and scaling e-commerce stores for industry leaders. Our expertise ensures tailored solutions that drive growth and success for our top clients.</p>",
         "bg_color": "#f6f6f6",
         "button_style": "solid",
         "button_hover": "",
         "button_label": "Book a call",
-        "link": "https:\/\/meetings.hubspot.com\/shoptrade\/us",
+        "link": "#book-a-meeting",
         "button_size": "button--regular",
         "text_size_button": 23,
         "target": true,
-        "image": "shopify:\/\/shop_images\/founders-2.png",
-        "text": "<p>Your Personal <br> Success Team<\/p>",
-        "logo": "shopify:\/\/shop_images\/shopify_plus-png.png",
+        "image": "shopify://shop_images/founders-2.png",
+        "text": "<p>Your Personal <br> Success Team</p>",
+        "logo": "shopify://shop_images/shopify_plus-png.png",
         "show_line": true
       }
     },
@@ -53,7 +53,7 @@
         "image_7yxthE": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_us_polo.png",
+            "image": "shopify://shop_images/brand_-_us_polo.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -64,7 +64,7 @@
         "image_xR7kqJ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_sns_health.png",
+            "image": "shopify://shop_images/brand_-_sns_health.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -75,7 +75,7 @@
         "image_fWU48Q": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_hathaspace.png",
+            "image": "shopify://shop_images/brand_-_hathaspace.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -86,7 +86,7 @@
         "image_pmFCCY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_chill.png",
+            "image": "shopify://shop_images/brand_-_chill.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -97,7 +97,7 @@
         "image_jADCNY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_healco.png",
+            "image": "shopify://shop_images/brand_-_healco.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -108,7 +108,7 @@
         "image_mbkx6Q": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_polejunkie.png",
+            "image": "shopify://shop_images/brand_-_polejunkie.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -119,7 +119,7 @@
         "image_W7ciDL": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_swing.png",
+            "image": "shopify://shop_images/brand_-_swing.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -130,7 +130,7 @@
         "image_r7aTNg": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_melissani.png",
+            "image": "shopify://shop_images/brand_-_melissani.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -141,7 +141,7 @@
         "image_aWq38m": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/brand_-_midway.png",
+            "image": "shopify://shop_images/brand_-_midway.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -184,12 +184,12 @@
         "image_gXjbfb": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/project_thumbnail_polejunkie.webp",
-            "view-project_url": "https:\/\/www.polejunkie.com",
+            "image": "shopify://shop_images/project_thumbnail_polejunkie.webp",
+            "view-project_url": "https://www.polejunkie.com",
             "open_in_new": true,
             "media_shape": "none",
             "title": "PoleJunkie",
-            "title_url": "https:\/\/www.polejunkie.com",
+            "title_url": "https://www.polejunkie.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -201,12 +201,12 @@
         "image_ThHn3G": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/project_thumbnail_hathaspace.webp",
-            "view-project_url": "https:\/\/hathaspace.com",
+            "image": "shopify://shop_images/project_thumbnail_hathaspace.webp",
+            "view-project_url": "https://hathaspace.com",
             "open_in_new": true,
             "media_shape": "none",
             "title": "Hathaspace",
-            "title_url": "https:\/\/hathaspace.com",
+            "title_url": "https://hathaspace.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -218,12 +218,12 @@
         "image_YPmJrh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/project_thumbnail_cco.webp",
-            "view-project_url": "https:\/\/cowtowncowboy.com",
+            "image": "shopify://shop_images/project_thumbnail_cco.webp",
+            "view-project_url": "https://cowtowncowboy.com",
             "open_in_new": true,
             "media_shape": "none",
             "title": "Cowtown Cowboy Outfitters",
-            "title_url": "https:\/\/cowtowncowboy.com",
+            "title_url": "https://cowtowncowboy.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -235,12 +235,12 @@
         "image_DYfKzU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/project_thumbnail_sns_health.webp",
-            "view-project_url": "https:\/\/snshealth.com",
+            "image": "shopify://shop_images/project_thumbnail_sns_health.webp",
+            "view-project_url": "https://snshealth.com",
             "open_in_new": true,
             "media_shape": "none",
             "title": "SNS Health",
-            "title_url": "https:\/\/snshealth.com",
+            "title_url": "https://snshealth.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -252,12 +252,12 @@
         "image_pKPc8t": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/project_thumbnail_healco.webp",
-            "view-project_url": "https:\/\/healco.com",
+            "image": "shopify://shop_images/project_thumbnail_healco.webp",
+            "view-project_url": "https://healco.com",
             "open_in_new": true,
             "media_shape": "none",
             "title": "Heal & Co",
-            "title_url": "https:\/\/healco.com",
+            "title_url": "https://healco.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -269,12 +269,12 @@
         "image_x6Jh36": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Winerack.jpg",
-            "view-project_url": "https:\/\/wineracks.com\/",
+            "image": "shopify://shop_images/Winerack.jpg",
+            "view-project_url": "https://wineracks.com/",
             "open_in_new": true,
             "media_shape": "none",
             "title": "WineRacks",
-            "title_url": "https:\/\/melissaniwater.com",
+            "title_url": "https://melissaniwater.com",
             "open_in_new_tab": true,
             "caption": "",
             "cta_label": "",
@@ -295,7 +295,7 @@
       "settings": {
         "heading": "Selected Works",
         "cta_label": "All Works",
-        "cta_link": "shopify:\/\/pages\/work",
+        "cta_link": "shopify://pages/work",
         "seo_h_tag": "h2",
         "image_hover": "view-project",
         "disable_section_title_border": false,
@@ -321,14 +321,14 @@
         "image_znahYh": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/illus-theme_edit.jpg",
+            "image": "shopify://shop_images/illus-theme_edit.jpg",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Shopify Plus Design & Build",
-            "title_url": "shopify:\/\/pages\/services",
+            "title_url": "shopify://pages/services",
             "open_in_new_tab": false,
-            "caption": "<p>Redesign an existing website, create from scratch, or replatform to Shopify Plus.<\/p>",
+            "caption": "<p>Redesign an existing website, create from scratch, or replatform to Shopify Plus.</p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -338,14 +338,14 @@
         "image_X44Qr9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/illus-product_dev.jpg",
+            "image": "shopify://shop_images/illus-product_dev.jpg",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Product Design & Development",
-            "title_url": "shopify:\/\/pages\/services",
+            "title_url": "shopify://pages/services",
             "open_in_new_tab": false,
-            "caption": "<p>From custom checkout to managing your inventory better, or adding special features to stand out.<\/p>",
+            "caption": "<p>From custom checkout to managing your inventory better, or adding special features to stand out.</p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -355,14 +355,14 @@
         "image_hqKA7b": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/illus-migration.jpg",
+            "image": "shopify://shop_images/illus-migration.jpg",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "CRO & AOV Optimization",
-            "title_url": "shopify:\/\/pages\/services",
+            "title_url": "shopify://pages/services",
             "open_in_new_tab": false,
-            "caption": "<p>Deep-dive into site performance & opportunities that lead to concrete next steps.<\/p>",
+            "caption": "<p>Deep-dive into site performance & opportunities that lead to concrete next steps.</p>",
             "cta_label": "",
             "cta_url": "",
             "target": false,
@@ -378,7 +378,7 @@
       "settings": {
         "heading": "Our Capabilities",
         "cta_label": "All services",
-        "cta_link": "shopify:\/\/pages\/services",
+        "cta_link": "shopify://pages/services",
         "seo_h_tag": "h2",
         "image_hover": "underline",
         "disable_section_title_border": false,
@@ -404,7 +404,7 @@
         "card_3Di7eD": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/harley_frank_bg2.webp",
+            "image": "shopify://shop_images/harley_frank_bg2.webp",
             "image_overlay": "rgba(0,0,0,0)",
             "image_overlay_opacity": 30,
             "media_shape": "none",
@@ -461,7 +461,7 @@
           "settings": {
             "author_name": "Harley Finkelstein",
             "author_title": "President, Shopify",
-            "quote": "<p>\"ShopTrade builds some of the most beautiful and elegant ecommerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they'll love.\"<\/p>"
+            "quote": "<p>\"ShopTrade builds some of the most beautiful and elegant ecommerce experiences that would delight any user. Their custom solutions take your brand to new heights while giving your customers a tailored experience they'll love.\"</p>"
           }
         },
         "testimonial_jhXNiR": {
@@ -469,7 +469,7 @@
           "settings": {
             "author_name": "Zenos Schmickrath",
             "author_title": "Co-Founder, LensAdvisor",
-            "quote": "<p>\"ShopTrade was experienced in developing apps and set realistic timelines.\"<\/p>"
+            "quote": "<p>\"ShopTrade was experienced in developing apps and set realistic timelines.\"</p>"
           }
         },
         "testimonial_LADaRj": {
@@ -477,7 +477,7 @@
           "settings": {
             "author_name": "Marc Heuberger",
             "author_title": "CMO, Elevation",
-            "quote": "<p>\"They've done a really good job. They were on top of things from the get-go.\"<\/p>"
+            "quote": "<p>\"They've done a really good job. They were on top of things from the get-go.\"</p>"
           }
         },
         "testimonial_CN4Hjy": {
@@ -485,7 +485,7 @@
           "settings": {
             "author_name": "Graham Ryan",
             "author_title": "Founder & CEO, Synchro",
-            "quote": "<p>\"Their communication and responsiveness are impressive in the workflow.\"<\/p>"
+            "quote": "<p>\"Their communication and responsiveness are impressive in the workflow.\"</p>"
           }
         },
         "testimonial_GTkYFN": {
@@ -493,7 +493,7 @@
           "settings": {
             "author_name": "Eddie Rosado",
             "author_title": "VP of Product Development,  AEROCARE",
-            "quote": "<p>\"I am continually impressed by their expertise in Shopify and web development.\"<\/p>"
+            "quote": "<p>\"I am continually impressed by their expertise in Shopify and web development.\"</p>"
           }
         }
       },
@@ -528,7 +528,7 @@
         "image_REmYXY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner-shopify.png",
+            "image": "shopify://shop_images/partner-shopify.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -539,7 +539,7 @@
         "image_ykGamF": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_klaviyo.png",
+            "image": "shopify://shop_images/partner_-_klaviyo.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -550,7 +550,7 @@
         "image_ckyHYa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_gorgias.png",
+            "image": "shopify://shop_images/partner_-_gorgias.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -561,7 +561,7 @@
         "image_eCaRdk": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_okendo.png",
+            "image": "shopify://shop_images/partner_-_okendo.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -572,7 +572,7 @@
         "image_rn94Nq": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_rebuy.png",
+            "image": "shopify://shop_images/partner_-_rebuy.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -583,7 +583,7 @@
         "image_qQ8c7d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_recharge.png",
+            "image": "shopify://shop_images/partner_-_recharge.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -594,7 +594,7 @@
         "image_VTrjbY": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_refersion.png",
+            "image": "shopify://shop_images/partner_-_refersion.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -605,7 +605,7 @@
         "image_MjkNTt": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_-_smile.png",
+            "image": "shopify://shop_images/partner_-_smile.png",
             "media_shape": "none",
             "link": "",
             "open_in_new_tab": false,
@@ -644,12 +644,12 @@
         "image_h9nhm7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-18_123448860.png",
+            "image": "shopify://shop_images/image_2024-03-18_123448860.png",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Elevating Your Migration: How a Shopify Plus Agency...",
-            "title_url": "shopify:\/\/blogs\/business-strategy\/elevating-your-migration-how-a-shopify-plus-agency-takes-your-magento-to-shopify-plus-transition-to-the-next-level",
+            "title_url": "shopify://blogs/business-strategy/elevating-your-migration-how-a-shopify-plus-agency-takes-your-magento-to-shopify-plus-transition-to-the-next-level",
             "open_in_new_tab": false,
             "caption": "",
             "cta_label": "",
@@ -661,12 +661,12 @@
         "image_6TabyU": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-18_123551933.png",
+            "image": "shopify://shop_images/image_2024-03-18_123551933.png",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Shopify Markets: A Comprehensive Guide",
-            "title_url": "shopify:\/\/blogs\/business-strategy\/comprehensive-guide-on-shopify-markets",
+            "title_url": "shopify://blogs/business-strategy/comprehensive-guide-on-shopify-markets",
             "open_in_new_tab": false,
             "caption": "",
             "cta_label": "",
@@ -678,12 +678,12 @@
         "image_VXaTL6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-18_123636213.png",
+            "image": "shopify://shop_images/image_2024-03-18_123636213.png",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Smart Order Routing: Save Cost and Faster Delivery",
-            "title_url": "shopify:\/\/blogs\/shopify\/smart-order-routing",
+            "title_url": "shopify://blogs/shopify/smart-order-routing",
             "open_in_new_tab": false,
             "caption": "",
             "cta_label": "",
@@ -695,12 +695,12 @@
         "image_XQKD6B": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2024-03-18_123517918.png",
+            "image": "shopify://shop_images/image_2024-03-18_123517918.png",
             "view-project_url": "",
             "open_in_new": false,
             "media_shape": "none",
             "title": "Future of B2B Commerce: Unpacking Shopify B2B...",
-            "title_url": "shopify:\/\/blogs\/business-strategy\/future-of-b2b-commerce-unpacking-shopify-b2b",
+            "title_url": "shopify://blogs/business-strategy/future-of-b2b-commerce-unpacking-shopify-b2b",
             "open_in_new_tab": false,
             "caption": "",
             "cta_label": "",

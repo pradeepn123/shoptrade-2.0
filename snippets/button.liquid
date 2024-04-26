@@ -24,16 +24,17 @@
 
 -%}
 
+{% assign is_meeting_link = false %}
+{%  if link == '#book-a-meeting' %} 
+  {% assign is_meeting_link = true %}
+{%  endif %}
 {%- if type == 'button' -%}
   <button {{ id }} {% if is_submit %} type="submit" {% endif %} {% if onclick %} onclick="{{ onclick }}" {% endif %} {% if cta_target %} target="{{ cta_target }}" {%- endif -%}
 {%- else -%}
-  <a href="{{ link | escape }}" {% if target %} target="_blank" {% endif %} {% if onclick %} onclick="{{ onclick }}" {% endif %} {% if cta_target %} target="{{ cta_target }}" {% endif -%}
+  <a  {% unless is_meeting_link %} href="{{ link | escape }}" {% if target %} target="_blank" {% endif %} {% if onclick %} onclick="{{ onclick }}" {% endif %} {% if cta_target %} target="{{ cta_target }}" {% endif -%}  {%  endunless %} 
 {%- endif -%}
-
   class="button {{ style_class }} {{ class }}" title="{{ label }}" {{ attribute }}>
-
-    <span class="button__text">{{ label }}</span>
-
+    <span class="button__text" {% if is_meeting_link %} data-cal-link="/team/shoptrade" {%  endif  %}>{{ label }}</span>
     {%- if style_class contains '-arrow' -%}
       <span class="button__arrow">{%- render 'theme-symbols', icon: 'arrow' -%}</span>
     {%- endif -%}

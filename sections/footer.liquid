@@ -28,10 +28,18 @@
             {%- when 'menu' -%}
               <nav class="footer-item__menu">
                 {%- for link in linklists[block.settings.menu].links -%}
+                  {%  assign title = link.title | downcase %}
+                  {%  if title contains "meeting" or title contains "book" %} 
+                  <a  style="cursor: pointer" class="link-arrow text-size--18"  {%- if block.settings.link_new_window -%} target="_blank" {%- endif -%}>
+                    <span class="link-arrow__icon">{%- render 'theme-symbols', icon: 'arrow' -%}</span>
+                    <span class="link-arrow__text"><span class="text-weight--bold text-animation--underline" data-cal-link="/team/shoptrade">{{ link.title | escape }}</span></span>
+                  </a>
+                  {%  else %}
                   <a class="link-arrow text-size--18" href="{{ link.url }}" {%- if block.settings.link_new_window -%} target="_blank" {%- endif -%}>
                     <span class="link-arrow__icon">{%- render 'theme-symbols', icon: 'arrow' -%}</span>
                     <span class="link-arrow__text"><span class="text-weight--bold text-animation--underline">{{ link.title | escape }}</span></span>
                   </a>
+                {%  endif %}
                 {%- endfor -%}
               </nav>
               

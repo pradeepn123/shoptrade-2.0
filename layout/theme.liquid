@@ -8,7 +8,39 @@
   -%}
   <html id="html" class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
   <head>
-  
+    <script>
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              typeof namespace === "string"
+                ? (cal.ns[namespace] = api) && p(api, ar)
+                : p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://cal.com/embed.js", "init");
+      Cal("init");
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0">
@@ -130,7 +162,6 @@
       <div id="screen-reader-info" aria-live="polite" class="visually-hidden"></div>
     
       {%- sections 'header-group' -%}
-    
       {{ 'component-slider.css' | asset_url | stylesheet_tag }}
       {{ 'component-product-item.css' | asset_url | stylesheet_tag }}
       {%- if settings.enable_quick_buy -%}
