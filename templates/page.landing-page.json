@@ -449,6 +449,37 @@
         "invert_selected_toggle": false,
         "disable_section_bottom_border": false
       }
+    },
+    "landingpage_tech_stack_kJWLDw": {
+      "type": "landingpage-tech-stack",
+      "blocks": {
+        "text_4zQdQw": {
+          "type": "text",
+          "settings": {
+            "title": "frontend technology",
+            "background": "#000000",
+            "image": "shopify:\/\/shop_images\/tech_-_react.png"
+          }
+        },
+        "text_EWDqG9": {
+          "type": "text",
+          "settings": {
+            "title": "Backend technologies",
+            "background": "#000000",
+            "image": "shopify:\/\/shop_images\/tech-_python.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_4zQdQw",
+        "text_EWDqG9"
+      ],
+      "settings": {
+        "heading": "Tech Stack",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1.77777"
+      }
     }
   },
   "order": [
@@ -458,6 +489,7 @@
     "media_with_tabs_gANk7f",
     "text_columns_images_3pcaAn",
     "text_columns_images_DTeicY",
-    "content_toggles_RH68hW"
+    "content_toggles_RH68hW",
+    "landingpage_tech_stack_kJWLDw"
   ]
 }

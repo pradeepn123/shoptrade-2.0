@@ -13,16 +13,29 @@
 
 .tech-stack-info{
     border-bottom: 1px solid colors.$black-100;
-    @include mixins.grid(4,100px,100px);          
+    @include mixins.grid(4,100px,100px);   
+    column-gap: 0;       
     &__title{
         @include use-text-style('heading-1');
         font-weight: typography.$regular-weight;
+        font-family: "Gilroy", sans-serif;
         grid-column: span 1;
         padding: 50px; 
         color: colors.$white;
-
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__image{
         grid-column: span 3;
+        padding: 40px 30px;
+    }
+    &__img{
+        @include mixins.grid(4,100px,100px);  
+        column-gap: 0;
+    }
+    &__item{
+        padding: 22px 49px;
     }
 }  
