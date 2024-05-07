@@ -3,50 +3,7 @@
 {%- render 'section-heading', heading: section.settings.heading, navigation: false, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border -%}
 
 {%- if section.blocks.size > 0 -%}
-  <toggle-group class="element--overflow-hidden" style="display:block">
-
-    {%- for block in section.blocks -%}
-      <toggle-tab class="toggle toggle--faq {% if forloop.index == 1 and section.settings.open_first %}opened{% endif %} toggle--invert-color-{{ section.settings.invert_selected_toggle }}" 
-        data-togglepack-alternate
-        {{ block.shopify_attributes }}
-      >
-        <div class="card {% if section.settings.invert_selected_toggle %} card--hover {% endif %}">
-
-          {%- if section.settings.invert_selected_toggle -%} <div class="card__hover"></div> {%- endif -%}
-
-          <span class="toggle__title" data-js-title tabindex="0" aria-expanded="false" role="button" aria-controls="toggle-{{ block.id }}">
-            <div class="toggle__heading">
-              <span class="
-                {{ section.settings.title_font }} text-size--{{ section.settings.title_size }}
-                {% if section.settings.title_weight %} text-weight--bold {% endif %}
-              ">
-                <span class="text-animation--underline">{{ block.settings.title | escape }}</span>
-              </span>
-            </div>
-          </span>
-
-          <div id="toggle-{{ block.id }}" data-js-content class="toggle__content" role="region">
-            <div class="rte remove-empty-space text-size--{{ section.settings.text_size }}">
-              {{ block.settings.body }}
-            </div>
-            {%- liquid
-              unless block.settings.image == blank 
-                if settings.page_boxed_layout
-                  assign sizes = 'sizes="(max-width: 1360px) 100vw, 1360px"'
-                else
-                  assign sizes = 'sizes="100vw"'
-                endif
-                render 'lazy-image', image: block.settings.image, alt: block.settings.title, sizes: sizes
-              endunless
-            -%}
-          </div>
-          
-        </div>
-
-      </toggle-tab>
-    {%- endfor -%}
-
-  </toggle-group>
+  {% render 'content-toggle-group', block: block %}
 {%- endif -%}
 
 {%- render 'section-footer', cta_label: section.settings.cta_label, cta_label_is_translation: false, cta_url: section.settings.cta_url, nav: false, nav_desktop: false, nav_mobile: true -%}

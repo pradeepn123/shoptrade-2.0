@@ -2,12 +2,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
     "rich_text_cyX6Wm": {
       "type": "rich-text",
       "blocks": {
+        "text_xayCUR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Launch Your MVP in 6 Weeks! <\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--80",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "h2"
+          }
+        },
         "text_Hinqiy": {
           "type": "text",
           "settings": {
@@ -25,25 +37,120 @@
             "button_label": "Show more",
             "link": "",
             "target": false,
+            "button_style": "solid",
+            "button_size": "button--regular",
+            "button_hover": ""
+          }
+        },
+        "button_fhWyqU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "link": "",
+            "target": false,
             "button_style": "outline",
             "button_size": "button--regular",
-            "button_hover": "-arrow"
+            "button_hover": ""
           }
         }
       },
       "block_order": [
+        "text_xayCUR",
         "text_Hinqiy",
-        "button_8kthaj"
+        "button_8kthaj",
+        "button_fhWyqU"
       ],
-      "disabled": true,
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image": "shopify:\/\/shop_images\/hathaspace_358947a9-0cba-4f0e-8ae6-938962f79d2a.png",
+        "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
+        "image_aspect_ratio": "1.33333",
+        "image_position": "right",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "100",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "scheme3",
+        "disable_border": false,
+        "remove_border_radius": true,
+        "remove_padding": true,
+        "add_border": true,
+        "hide_block_if": false
+      }
+    },
+    "custom_rich_block_BD6A37": {
+      "type": "custom-rich-block",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "title": "Struggling to get your innovative idea off the ground?",
+        "seo_h_tag": "h2",
+        "text_font": "text-font--headings",
+        "text_size": 48,
+        "paragraph": "<p>We fast-track your vision into a tangible MVP in just <strong>6 weeks<\/strong>, so you can gather real-world user feedback and make data-driven decisions about your product's future.<\/p>",
+        "bg_color": "#f6f6f6",
+        "button_style": "solid",
+        "button_hover": "",
+        "button_label": "Book a call",
+        "link": "",
+        "button_size": "button--regular",
+        "text_size_button": 23,
+        "target": true,
+        "image": "shopify:\/\/shop_images\/founders-2.png",
+        "text": "<p>Your Personal <br> Success Team<\/p>",
+        "logo": "shopify:\/\/shop_images\/shopify_plus-png.png",
+        "show_line": true
+      }
+    },
+    "media_with_tabs_gANk7f": {
+      "type": "media-with-tabs",
+      "blocks": {
+        "text_nnN6KK": {
+          "type": "text",
+          "settings": {
+            "title": "Question title",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+          }
+        },
+        "text_9Qgg6F": {
+          "type": "text",
+          "settings": {
+            "title": "Question title",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+          }
+        },
+        "text_jffNKb": {
+          "type": "text",
+          "settings": {
+            "title": "Question title",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_nnN6KK",
+        "text_9Qgg6F",
+        "text_jffNKb"
+      ],
       "settings": {
         "heading": "Rich text",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "image_aspect_ratio": "1",
-        "image_position": "top no-image",
+        "image": "shopify:\/\/shop_images\/Lensify.jpg",
+        "image_aspect_ratio": "1.33333",
+        "image_position": "right",
         "image_position_mobile": "above",
-        "image_crop": false,
+        "image_crop": true,
         "image_overlap": false,
         "image_overlay": "rgba(0,0,0,0)",
         "media_shape": "none",
@@ -61,10 +168,296 @@
         "add_border": false,
         "hide_block_if": false
       }
+    },
+    "text_columns_images_3pcaAn": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_Qdhffk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/007.png",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "We turn groundbreaking ideas into reality, fast.",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Our team has a proven track record of building successful MVPs for startups and businesses of all sizes. We've helped launch 10+ innovative products in the market, with a focus on achieving rapid validation and user traction.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_nKwecQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/003.png",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Speed & Efficiency is Our Middle Name",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Our streamlined process, built on agile methodologies, allows us to deliver a functional MVP in just 6 weeks. This means you get to market faster, gather valuable user feedback sooner, and make data-driven decisions to optimize your product for success.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_ddzgGJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/006.png",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Data Drives Our Decisions",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "<p>Building an MVP isn't just about coding. We leverage user testing and feedback throughout the 6-week process to iterate and refine your product. This ensures your MVP is not just functional, but truly resonates with your target audience.<\/p>",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_Qdhffk",
+        "image_nKwecQ",
+        "image_ddzgGJ"
+      ],
+      "settings": {
+        "heading": "Why Choose Us?",
+        "cta_label": "",
+        "cta_link": "",
+        "seo_h_tag": "h2",
+        "image_hover": "underline",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1.33333",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    },
+    "text_columns_images_DTeicY": {
+      "type": "text-columns-images",
+      "blocks": {
+        "image_wP9pQJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_sendif.webp",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "ShopCRM",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_FEnbFN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lensify_2.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Lensify",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_rJRTrV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Netwise.jpg",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Netwise",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h2"
+          }
+        },
+        "image_Ezc4Bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_lens_advisor.webp",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "LensAdvizor",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_Mtngzf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thumbnail_tikshop.webp",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Sendif",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        },
+        "image_TAQ8BL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2024-03-21_172903758.png",
+            "view-project_url": "",
+            "open_in_new": false,
+            "media_shape": "none",
+            "title": "Checkit",
+            "title_url": "",
+            "open_in_new_tab": false,
+            "caption": "",
+            "cta_label": "",
+            "cta_url": "",
+            "target": false,
+            "seo_h_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "image_wP9pQJ",
+        "image_FEnbFN",
+        "image_rJRTrV",
+        "image_Ezc4Bd",
+        "image_Mtngzf",
+        "image_TAQ8BL"
+      ],
+      "settings": {
+        "heading": "Our works \/ Case study",
+        "cta_label": "All Works",
+        "cta_link": "#",
+        "seo_h_tag": "h2",
+        "image_hover": "view-project",
+        "disable_section_title_border": false,
+        "layout_desktop": "grid-3 grid-lap-2",
+        "style": "grid",
+        "image_aspect_ratio": "1.33333",
+        "title_text_font": "text-font--body",
+        "title_text_size": "text-size--30",
+        "title_text_weight": true,
+        "subtitle_text_font": "text-font--body",
+        "subtitle_text_size": "text-size--18",
+        "subtitle_text_line_height": "text-line-height--default",
+        "color_scheme": "scheme3",
+        "disable_section_bottom_border": false,
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false
+      }
+    },
+    "content_toggles_RH68hW": {
+      "type": "content-toggles",
+      "blocks": {
+        "text_JXFLme": {
+          "type": "text",
+          "settings": {
+            "title": "What is an MVP, and why is it important for product development?",
+            "body": "<p>Write some useful information about your shipping details<\/p><p>Link to your <a href=\"#\">shipping policy<\/a>.<\/p>"
+          }
+        },
+        "text_fKrNA7": {
+          "type": "text",
+          "settings": {
+            "title": "How can ShopTrade help in launching a successful MVP?",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href=\"#\">offers page<\/a>.<\/p>"
+          }
+        },
+        "text_h8GRYp": {
+          "type": "text",
+          "settings": {
+            "title": "What insights can be gained from launching an MVP?",
+            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href=\"#\">returns policy<\/a>.<\/p>"
+          }
+        },
+        "text_eRKmJQ": {
+          "type": "text",
+          "settings": {
+            "title": "What is the significance of iterative development in MVP creation?",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+          }
+        },
+        "text_HFpf4M": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it typically take to launch an MVP with ShopTrade?",
+            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_JXFLme",
+        "text_fKrNA7",
+        "text_h8GRYp",
+        "text_eRKmJQ",
+        "text_HFpf4M"
+      ],
+      "settings": {
+        "heading": "Audience Insights",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "cta_label": "",
+        "cta_url": "",
+        "title_font": "text-font--body",
+        "title_size": "24",
+        "title_weight": false,
+        "text_size": "18",
+        "color_scheme": "",
+        "invert_selected_toggle": false,
+        "disable_section_bottom_border": false
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_cyX6Wm"
+    "rich_text_cyX6Wm",
+    "custom_rich_block_BD6A37",
+    "media_with_tabs_gANk7f",
+    "text_columns_images_3pcaAn",
+    "text_columns_images_DTeicY",
+    "content_toggles_RH68hW"
   ]
 }

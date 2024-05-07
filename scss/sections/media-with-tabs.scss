@@ -1,0 +1,24 @@
+@use 'StyleComponents/colors';
+@use 'StyleComponents/typography';
+@import 'Token';
+@import 'StyleComponents/layout';
+
+
+.media-with-tabs{
+    &__section-wrapper {
+        
+    }
+    &__section-content {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 50% 50%;
+        
+        &-tabs{
+            
+        }
+        &-image{
+
+        }
+    }
+}
