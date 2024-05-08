@@ -7,41 +7,43 @@
     assign title_weight = options.title_weight 
 -%}
 
-<toggle-group class="element--overflow-hidden" style="display:block">
-    {%- for block in section.blocks -%}
-        <toggle-tab class="toggle toggle--faq {% if forloop.index == 1 and open_first %}opened{% endif %} toggle--invert-color-{{ invert_selected_toggle }}" 
-            data-togglepack-alternate
-            {{ block.shopify_attributes }}
-        >
-            <div class="card {% if invert_selected_toggle %} card--hover {% endif %}">
-                {%- if invert_selected_toggle -%} <div class="card__hover"></div> {%- endif -%}
-                <span class="toggle__title" data-js-title tabindex="0" aria-expanded="false" role="button" aria-controls="toggle-{{ block.id }}">
-                    <div class="toggle__heading">
-                    <span class="
-                        {{ title_font }} text-size--{{ title_size }}
-                        {% if title_weight %} text-weight--bold {% endif %}
-                    ">
-                        <span class="text-animation--underline">{{ block.settings.title | escape }}</span>
+<div class="{{ wrapper_class }}">
+    <toggle-group class="element--overflow-hidden" style="display:block">
+        {%- for block in section.blocks -%}
+            <toggle-tab class="toggle toggle--faq {% if forloop.index == 1 and open_first %}opened{% endif %} toggle--invert-color-{{ invert_selected_toggle }}" 
+                data-togglepack-alternate
+                {{ block.shopify_attributes }}
+            >
+                <div class="card {% if invert_selected_toggle %} card--hover {% endif %}">
+                    {%- if invert_selected_toggle -%} <div class="card__hover"></div> {%- endif -%}
+                    <span class="toggle__title" data-js-title tabindex="0" aria-expanded="false" role="button" aria-controls="toggle-{{ block.id }}">
+                        <div class="toggle__heading">
+                        <span class="
+                            {{ title_font }} text-size--{{ title_size }}
+                            {% if title_weight %} text-weight--bold {% endif %}
+                        ">
+                            <span class="text-animation--underline">{{ block.settings.title | escape }}</span>
+                        </span>
+                        </div>
                     </span>
-                    </div>
-                </span>
 
-                <div id="toggle-{{ block.id }}" data-js-content class="toggle__content" role="region">
-                    <div class="rte remove-empty-space text-size--{{ section.settings.text_size }}">
-                        {{ block.settings.body }}
-                    </div>
-                    {%- liquid
-                        unless block.settings.image == blank 
-                            if settings.page_boxed_layout
-                                assign sizes = 'sizes="(max-width: 1360px) 100vw, 1360px"'
-                            else
-                                assign sizes = 'sizes="100vw"'
-                            endif
-                            render 'lazy-image', image: block.settings.image, alt: block.settings.title, sizes: sizes
-                        endunless
-                    -%}
-                </div> 
-            </div>
-        </toggle-tab>
-    {%- endfor -%}
-</toggle-group>
+                    <div id="toggle-{{ block.id }}" data-js-content class="toggle__content" role="region">
+                        <div class="rte remove-empty-space text-size--{{ section.settings.text_size }}">
+                            {{ block.settings.body }}
+                        </div>
+                        {%- liquid
+                            unless block.settings.image == blank 
+                                if settings.page_boxed_layout
+                                    assign sizes = 'sizes="(max-width: 1360px) 100vw, 1360px"'
+                                else
+                                    assign sizes = 'sizes="100vw"'
+                                endif
+                                render 'lazy-image', image: block.settings.image, alt: block.settings.title, sizes: sizes
+                            endunless
+                        -%}
+                    </div> 
+                </div>
+            </toggle-tab>
+        {%- endfor -%}
+    </toggle-group>
+</div>

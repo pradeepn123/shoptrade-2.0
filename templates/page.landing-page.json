@@ -118,22 +118,22 @@
         "text_nnN6KK": {
           "type": "text",
           "settings": {
-            "title": "Question title",
-            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+            "title": "Week 1: Deep Dive & Strategy",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><li>Design Kick-off: Establish design direction, brand alignment, and initial design mockups.<\/li><\/ul>"
           }
         },
         "text_9Qgg6F": {
           "type": "text",
           "settings": {
-            "title": "Question title",
-            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+            "title": "Weeks 2-3: Design & Prototyping",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><\/ul><p><\/p>"
           }
         },
         "text_jffNKb": {
           "type": "text",
           "settings": {
-            "title": "Question title",
-            "body": "<p>Write a complete answer to the most frequent questions that your customers might have, such as important product information, shipping policies, payment issues or returns.<\/p>"
+            "title": "Weeks 4-6: Development, Testing and Launch",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><\/ul><p><\/p>"
           }
         }
       },
@@ -143,30 +143,27 @@
         "text_jffNKb"
       ],
       "settings": {
-        "heading": "Rich text",
+        "heading": "Our 6-Week MVP Process:",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "image": "shopify:\/\/shop_images\/Lensify.jpg",
+        "image": "shopify:\/\/shop_images\/UX.jpg",
         "image_aspect_ratio": "1.33333",
         "image_position": "right",
         "image_position_mobile": "above",
-        "image_crop": true,
+        "image_crop": false,
         "image_overlap": false,
         "image_overlay": "rgba(0,0,0,0)",
         "media_shape": "none",
         "remove_media_border_radius": false,
-        "text_alignment": "horizontal-center align-content--vertical-middle",
-        "spacing": 24,
-        "gutter": "large",
-        "width": "100",
-        "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "color_scheme_card": "",
-        "disable_border": false,
-        "remove_border_radius": false,
+        "gutter": "grid-padding",
+        "color_scheme": "scheme1",
+        "color_scheme_card": "scheme1",
         "remove_padding": false,
-        "add_border": false,
-        "hide_block_if": false
+        "title_font": "text-font--body",
+        "title_size": "30",
+        "title_weight": true,
+        "text_size": "24",
+        "open_first": true
       }
     },
     "text_columns_images_3pcaAn": {

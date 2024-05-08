@@ -1,4 +1,4 @@
-<div class="rich-text__image 
+<div class="rich-text__image {{wrapper_class}}
     {% if section.settings.image_crop %} rich-text__image--fill {% endif %} 
     {% unless section.settings.image_crop %} rich-text__image--fit {% endunless %}" 
     style="padding-top:{{ 100 | divided_by: section.settings.image_aspect_ratio }}%;--border-radius-grid:{% if section.settings.remove_media_border_radius %}0{% else %}{{ settings.border_radius_grid }}{% endif %}px"
