@@ -4,38 +4,74 @@
 @import 'Token';
 @import 'StyleComponents/breakpoints';
 
-.texh-stack{
-    &__wrapper{
-       
+
+.mobile{
+    display: block;
+    @media(--md){
+        display: none;  
+    }
+}
+.desktop{
+    display: none;
+    @media(--md){
+        display: block;
     }
 }
 
 
-.tech-stack-info{
-    border-bottom: 1px solid colors.$black-100;
-    @include mixins.grid(4,100px,100px);   
-    column-gap: 0;       
+.tech-stack-info{    
+    border-bottom: 1px solid colors.$black-100;       
+    @include mixins.grid(2,100px,100px);   
+    column-gap: 0;   
+    @media(--sm){
+        @include mixins.grid(3,100px,100px);  
+        column-gap: 0; 
+    }   
+    @media(--md){
+        @include mixins.grid(4,100px,100px);  
+        column-gap: 0; 
+    }     
     &__title{
-        @include use-text-style('heading-1');
+        @include use-text-style('heading-2');
         font-weight: typography.$regular-weight;
         font-family: "Gilroy", sans-serif;
         grid-column: span 1;
-        padding: 50px; 
         color: colors.$white;
         text-align: left;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
+        @media(--sm){
+            @include use-text-style('heading-1');
+            font-weight: typography.$regular-weight;
+        }
+        @media(--md){
+            padding: calc(var(--setion-top-padding)*2);
+        }
     }
     &__image{
         grid-column: span 3;
-        padding: 40px 30px;
+        padding: calc(var(--section-margin)*2) calc(var(--nav-vertical-padding)*2);
     }
     &__img{
-        @include mixins.grid(4,100px,100px);  
-        column-gap: 0;
+        @include mixins.grid(2,100px,100px);  
+        column-gap: calc(var(--section-margin)*2);
+        row-gap: 10px;
+        @media(--sm){
+            @include mixins.grid(4,100px,100px);  
+            column-gap: calc(var(--nav-vertical-padding)*2);
+            row-gap: var(--grid-column-gap);
+        }
+        @media(--md-large){
+            column-gap: 0;
+        }
     }
     &__item{
-        padding: 22px 49px;
+        @media(--md-large){
+            padding: var(--image-stack-padding);
+        }
+        img{
+            object-fit: contain !important;
+        }
     }
 }  

@@ -13,10 +13,16 @@
 
 <div class="tech-stack">
     <div class="tech-stack__container">
-        <div class="tech-stack__wrapper">
-            {% for block in section.blocks %}             
-                {% render 'landing-tech-stack', block: block , section:section%}
-            {% endfor %}
+        <div class="tech-stack__wrapper desktop">  
+          {%- if section.blocks.size >0 -%}       
+            {% render 'landing-tech-stack', block: block , section:section %}
+          {%- endif -%}
+        </div>
+
+        <div class="tech-stack__wrapper mobile">     
+          {%- if section.blocks.size >0 -%}
+            {% render 'landing-tech-stack-mobile', block: block , section:section %}
+          {%- endif -%}
         </div>
     </div>
 </div>

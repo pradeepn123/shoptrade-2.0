@@ -458,6 +458,34 @@
             "handle": "1"
           }
         },
+        "image_6hMaBr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_169_b295d69f-7770-4017-b0a4-7a7627dd6836.png",
+            "handle_one": "1"
+          }
+        },
+        "image_9bDpxN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_518.png",
+            "handle_one": "1"
+          }
+        },
+        "image_aJwBhh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_520.png",
+            "handle_one": "1"
+          }
+        },
+        "image_86ebCA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_521.png",
+            "handle_one": "1"
+          }
+        },
         "text_EWDqG9": {
           "type": "text",
           "settings": {
@@ -466,18 +494,18 @@
             "handle": "2"
           }
         },
-        "image_6hMaBr": {
+        "image_igNdpe": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_4_4_1.png",
-            "handle_one": "1"
+            "image": "shopify:\/\/shop_images\/image_522.png",
+            "handle_one": "2"
           }
         },
-        "image_3EbcVW": {
+        "image_jBCdeb": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_4_4_3.png",
-            "handle_one": "1"
+            "image": "shopify:\/\/shop_images\/image_177_624d4bbd-9a38-4543-8ac7-2b661d36278e.png",
+            "handle_one": "2"
           }
         },
         "text_mameLh": {
@@ -485,16 +513,93 @@
           "settings": {
             "title": "Frameworks",
             "background": "#000000",
-            "handle": ""
+            "handle": "3"
+          }
+        },
+        "image_3EbcVW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_166_6e2046aa-dd0b-49cc-a0b9-215e34b4b25f.png",
+            "handle_one": "3"
+          }
+        },
+        "image_LkxDy8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_235.png",
+            "handle_one": "3"
+          }
+        },
+        "image_eziX6q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_523.png",
+            "handle_one": "3"
+          }
+        },
+        "image_xjfKzJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_524.png",
+            "handle_one": "3"
+          }
+        },
+        "image_RC9tHE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_172_f5688d87-187a-4efd-a428-614b42a28f78.png",
+            "handle_one": "3"
+          }
+        },
+        "image_BdigQX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_525.png",
+            "handle_one": "3"
+          }
+        },
+        "text_DVUPgB": {
+          "type": "text",
+          "settings": {
+            "title": "Databases",
+            "background": "#000000",
+            "handle": "4"
+          }
+        },
+        "image_HG746h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_526.png",
+            "handle_one": "4"
+          }
+        },
+        "image_XHJ3DR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_527.png",
+            "handle_one": "4"
           }
         }
       },
       "block_order": [
         "text_4zQdQw",
-        "text_EWDqG9",
         "image_6hMaBr",
+        "image_9bDpxN",
+        "image_aJwBhh",
+        "image_86ebCA",
+        "text_EWDqG9",
+        "image_igNdpe",
+        "image_jBCdeb",
+        "text_mameLh",
         "image_3EbcVW",
-        "text_mameLh"
+        "image_LkxDy8",
+        "image_eziX6q",
+        "image_xjfKzJ",
+        "image_RC9tHE",
+        "image_BdigQX",
+        "text_DVUPgB",
+        "image_HG746h",
+        "image_XHJ3DR"
       ],
       "settings": {
         "heading": "Tech Stack",

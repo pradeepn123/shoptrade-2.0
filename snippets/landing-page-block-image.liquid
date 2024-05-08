@@ -1,0 +1,12 @@
+{%- liquid 
+    assign options = block.settings
+    assign image = options.image
+-%} 
+
+
+<div class="tech-stack-info__item">
+    {% if image != blank %}
+        {%- render 'lazy-image', image: image, sizes: 'sizes="(max-width: 480px) calc(100vw - 10px), 20vw"', alt: image.alt, ratio: 2.8, type: 'fit', class: 'tech-stack-info__stack-image', image_class: 'tech-stack-info__media-image' -%}
+    {% endif %}
+</div> 
+     
