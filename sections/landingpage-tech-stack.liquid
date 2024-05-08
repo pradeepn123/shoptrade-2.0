@@ -14,7 +14,7 @@
 <div class="tech-stack">
     <div class="tech-stack__container">
         <div class="tech-stack__wrapper">
-            {% for block in section.blocks %}
+            {% for block in section.blocks %}             
                 {% render 'landing-tech-stack', block: block , section:section%}
             {% endfor %}
         </div>
@@ -23,9 +23,9 @@
 
 {% schema %}
 {
-    "name": "Landing page Tech Stack",
-    "settings": [ 
-          {
+  "name": "Landing page Tech Stack",
+  "settings": [ 
+    {
       "type": "header",
       "content": "t:raw-extra-words.settings_schema.layout_labels.section_heading.label"
     },
@@ -96,32 +96,48 @@
     }
     ],
     "blocks": [    
-        {
+      {
+        "type": "text",
+        "name": "stack",
+        "settings": [
+          {
             "type": "text",
-            "name": "stack",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "title",
-                    "label": "Heading"
-                },
-                {
-                    "type": "color",
-                    "id": "background",
-                    "label": "Heading Background"
-                },
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image Logo"
-                }
-            ]
-        }
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Heading Background"
+          },
+          {
+            "type": "text",
+            "id": "handle",
+            "label": "Handle"
+          }   
+        ]
+      },
+      {
+        "type": "image",
+        "name": "image stack",
+        "settings": [          
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image Logo"
+          },
+          {
+            "type": "text",
+            "id": "handle_one",
+            "label": "Handle"
+          }
+        ]
+      }
     ],
     "presets": [
-        {
-            "name": "Landing page Tech Stack"
-        }
-    ]
+      {
+        "name": "Landing page Tech Stack"
+      }
+  ]
 }
 {%  endschema %}

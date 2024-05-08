@@ -2,21 +2,30 @@
     assign options = block.settings
     assign title = options.title
     assign background = options.background
-    assign image = options.image
-    assign aspect_ratio = section.settings.image_aspect_ratio 
-
+    assign handle = options.handle
 -%}
 
 
 <div class="tech-stack-info">
-    <div class="tech-stack-info__title" style="background:{{background}}">{{title}}</div>
-    <div class="tech-stack-info__image">
-        <div class="tech-stack-info__img">
-       {% for i in (1..4) %}
-            <div class="tech-stack-info__item">
-                 {%- render 'lazy-image', image: image, sizes: 'sizes="(max-width: 480px) calc(100vw - 10px), 20vw"', alt: image.alt, ratio: 2.8, type: 'fit', class: 'tech-stack-info__stack-image', image_class: 'tech-stack-info__media-image' -%}
+    {% if block.type == 'text' %}
+        <div class="tech-stack-info__title" style="background:{{background}}">
+            {{title}}
+        </div>
+        <div class="tech-stack-info__image">
+            <div class="tech-stack-info__img">
+                {% for block in section.blocks %}
+                    {%- liquid 
+                        assign options = block.settings
+                        assign image = options.image  
+                        assign handle_one = options.handle_one
+                    -%}
+                    {% if block.type == 'image' and handle == handle_one %}
+                        <div class="tech-stack-info__item">
+                            {%- render 'lazy-image', image: image, sizes: 'sizes="(max-width: 480px) calc(100vw - 10px), 20vw"', alt: image.alt, ratio: 2.8, type: 'fit', class: 'tech-stack-info__stack-image', image_class: 'tech-stack-info__media-image' -%}
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
-       {% endfor %}
-       </div>
-    </div>
+        </div>
+    {% endif %}
 </div>   

@@ -455,7 +455,7 @@
           "settings": {
             "title": "frontend technology",
             "background": "#000000",
-            "image": "shopify:\/\/shop_images\/tech_-_react.png"
+            "handle": "1"
           }
         },
         "text_EWDqG9": {
@@ -463,13 +463,38 @@
           "settings": {
             "title": "Backend technologies",
             "background": "#000000",
-            "image": "shopify:\/\/shop_images\/tech-_python.png"
+            "handle": "2"
+          }
+        },
+        "image_6hMaBr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_4_4_1.png",
+            "handle_one": "1"
+          }
+        },
+        "image_3EbcVW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_4_4_3.png",
+            "handle_one": "1"
+          }
+        },
+        "text_mameLh": {
+          "type": "text",
+          "settings": {
+            "title": "Frameworks",
+            "background": "#000000",
+            "handle": ""
           }
         }
       },
       "block_order": [
         "text_4zQdQw",
-        "text_EWDqG9"
+        "text_EWDqG9",
+        "image_6hMaBr",
+        "image_3EbcVW",
+        "text_mameLh"
       ],
       "settings": {
         "heading": "Tech Stack",
