@@ -1,0 +1,79 @@
+@media screen and (max-width: 767px) {
+    .text-font--headings.text-size--custom {
+      font-size: calc(
+                  (55px * var(--font-mobile-corrector)) / 80 * var(--base-headings-size) + 0px
+              ) !important;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .text-font--headings.text-size--custom {
+      font-size: calc(
+                  (65px * var(--font-mobile-corrector)) / 80 * var(--base-headings-size) + 0px
+              );
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .text-font--headings.text-size--custom {
+      font-size: calc(
+                      (90px * var(--font-mobile-corrector)) / 80 * var(--base-headings-size) + 0px
+                  );
+    }
+}
+@media screen and (min-width: 1281px) {
+    .text-font--headings.text-size--custom {
+      font-size: calc(
+                  (130px * var(--font-mobile-corrector)) / 80 * var(--base-headings-size) + 0px
+              );
+    }
+}
+.text-font--headings{
+    max-width: var(--desktop-text-width);
+    margin: 0 auto;
+}
+.button_container{
+    max-width: var(--desktop-button-width);
+    margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+    .button_container.button--full-width .button {
+      width: 100%;
+      justify-content: center;
+    }
+}
+.button--regular {
+    --button-padding-horizontal: 15px;
+    --button-padding-vertical: 9px;
+    --button-arrow-width: 18px;
+    border-width: 1px;
+    min-height: 0;
+}
+@media screen and (max-width: 1023px) {
+    .button--regular {
+      font-size: calc(
+                  (22px * var(--font-mobile-corrector)) / 18 * var(--base-body-size) + 0px
+              );
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .button--regular {
+      font-size: calc(
+                      (24px * var(--font-mobile-corrector)) / 18 * var(--base-body-size) + 0px
+                  );
+    }
+}
+@media screen and (min-width: 1281px) {
+    .button--regular {
+      font-size: calc(
+                  (24px * var(--font-mobile-corrector)) / 18 * var(--base-body-size) + 0px
+              );
+    }
+}
+.button--regular .button__arrow {
+    height: 15px;
+}
+html[dir=rtl] .button--regular .button__arrow {
+    left: var(--button-padding-horizontal);
+}
+html[dir=ltr] .button--regular .button__arrow {
+    right: var(--button-padding-horizontal);
+}

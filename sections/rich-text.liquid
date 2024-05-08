@@ -20,6 +20,7 @@
 {%- if show_section -%}
 
   {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+  {{ 'section-rich-text-adddon.css' | asset_url | stylesheet_tag }}
 
   {%- render 'section-heading', heading: section.settings.heading, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border -%}
 
@@ -490,6 +491,10 @@
             {
               "value": "text-size--100",
               "label": "t:raw-extra-words.settings_schema.options.huge"
+            },
+            {
+              "value": "text-size--custom",
+              "label": "Custom"
             }
           ],
           "default": "text-size--30"
@@ -517,6 +522,22 @@
             }
           ],
           "default": "1"
+        },
+        {
+          "type": "checkbox",
+          "id": "fixed_container_width",
+          "label": "Fixed container width",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "desktop_text_width",
+          "label": "Text container width",
+          "min": 400,
+          "max": 700,
+          "step": 100,
+          "default": 400,
+          "unit": "px"
         },
         {
           "type": "select",
@@ -615,6 +636,22 @@
           "default": "outline"
         },
         {
+          "type": "checkbox",
+          "id": "fixed_button_width",
+          "label": "Fixed button width",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "desktop_button_width",
+          "label": "Text button width",
+          "min": 400,
+          "max": 700,
+          "step": 100,
+          "default": 400,
+          "unit": "px"
+        },
+        {
           "type": "select",
           "id": "button_size",
           "label": "t:sections.local-extra-words.sections.main-header.settings.promotion_block.button.size",
@@ -626,6 +663,10 @@
             {
               "value": "button--regular",
               "label": "t:raw-extra-words.settings_schema.options.regular"
+            },
+            {
+              "value": "button--medium",
+              "label": "Medium"
             },
             {
               "value": "button--large",
