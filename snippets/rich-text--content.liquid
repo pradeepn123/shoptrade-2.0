@@ -4,48 +4,51 @@
     endfor
 -%}
 <div class="rich-text__text align-content align-content--{{ section.settings.text_alignment }} gutter--{{ section.settings.gutter }}">
-    <div class="card__text spacing--custom remove-empty-space element--width-{{ section.settings.width }} {% if count > 2 %}custom-button__wrapper{% endif %}" 
-        style="--spacing:{{ section.settings.spacing }}px">
-        {%- for block in section.blocks -%}
-            {%- case block.type %}
+  <div class="card__text spacing--custom remove-empty-space element--width-{{ section.settings.width }}" style="--spacing:{{ section.settings.spacing }}px">
+    {%- for block in section.blocks -%}
+      {%- case block.type %}
+        {%- when 'text' -%}
+          <{{ block.settings.seo_h_tag }}
+            class="{{ block.settings.text_font }} {{ block.settings.text_line_height }} {{ block.settings.text_size }} rte remove-empty-space"
+            {{ block.shopify_attributes }}
+            id="block-{{ block.id }}"
+            {% if block.settings.fixed_container_width %}
+              style="--desktop-text-width:{{ block.settings.desktop_text_width }}px"
+            {% endif %}
+          >
+            {{ block.settings.text }}
+          </{{ block.settings.seo_h_tag }}>
 
-                {%- when 'text' -%}
-                    <{{ block.settings.seo_h_tag }}
-                        class="{{ block.settings.text_font }} {{ block.settings.text_line_height }} {{ block.settings.text_size }} rte remove-empty-space"
-                        {{ block.shopify_attributes }}
-                        id="block-{{ block.id }}"
-                        >
-                        {{ block.settings.text }}
-                    </{{ block.settings.seo_h_tag }}>
+          {%- if block.settings.mobile_text_size != '1' -%}
+            <style tyle="text/css" style="display:none!important">
+              @media screen and (max-width: 767px) {
+                #block-{{ block.id }} {
+                  --font-mobile-corrector: {{ block.settings.mobile_text_size }};
+                }
+              }
+            </style>
+          {%- endif -%}
 
-                    {%- if block.settings.mobile_text_size != "1" -%}
-                        <style tyle="text/css" style="display:none!important">
-                            @media screen and (max-width: 767px) {
-                                #block-{{ block.id }} {
-                                    --font-mobile-corrector: {{ block.settings.mobile_text_size }};
-                                }
-                            }
-                        </style>
-                    {%- endif -%}
+        {%- when 'button' -%}
+          <div class="flex {% if block.settings.fixed_button_width %}button--full-width{% endif %} {% if count > 2 %}custom-button__{{forloop.index}}{% endif %}" {% if block.settings.fixed_button_width %}style="--desktop-button-width:{{ block.settings.desktop_button_width }}px"{% endif %}>
+            <div {{ block.shopify_attributes }}>
+                {%- liquid
+                assign button_style = block.settings.button_style | append: block.settings.button_hover
+                render 'button', label: block.settings.button_label, link: block.settings.link, style: button_style, class: block.settings.button_size, target: block.settings.target
+                -%}
+            </div>
+          </div>
 
-                {%- when 'button' -%}
-                    <div class="flex {% if count > 2 %}custom-button__{{forloop.index}}{% endif %}">
-                        <div {{ block.shopify_attributes }}>
-                            {%- liquid
-                                assign button_style = block.settings.button_style | append: block.settings.button_hover 
-                                render 'button', label: block.settings.button_label, link: block.settings.link, style: button_style, class: block.settings.button_size, target: block.settings.target 
-                            -%}
-                        </div>
-                    </div>
+        {%- when 'empty' -%}
+          <div {{ block.shopify_attributes }} class="{{ block.settings.height }}">
+            &nbsp;
+          </div>
 
-                {%- when 'empty' -%}
-                    <div {{ block.shopify_attributes }} class="{{ block.settings.height }}">&nbsp;</div>
-
-                {%- when 'custom_liquid' -%}
-                    <div {{ block.shopify_attributes }}>
-                        {{ block.settings.custom_liquid }}
-                    </div>
-            {%- endcase %}
-        {%- endfor -%}
-    </div>  
+        {%- when 'custom_liquid' -%}
+          <div {{ block.shopify_attributes }}>
+            {{ block.settings.custom_liquid }}
+          </div>
+      {%- endcase %}
+    {%- endfor -%}
+  </div>
 </div>

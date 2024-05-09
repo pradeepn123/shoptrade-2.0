@@ -30,12 +30,12 @@
     max-width: var(--desktop-text-width);
     margin: 0 auto;
 }
-.button_container{
+.rich-text__text .flex.button--full-width {
     max-width: var(--desktop-button-width);
     margin: 0 auto;
 }
 @media screen and (min-width: 769px) {
-    .button_container.button--full-width .button {
+    .rich-text__text .flex.button--full-width .button {
       width: 100%;
       justify-content: center;
     }

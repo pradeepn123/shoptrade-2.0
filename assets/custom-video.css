@@ -164,7 +164,7 @@ html[dir=ltr] .video-popup__close {
     height: 100%;
     width: 100%;
 }
-.rich-text__text .text-font--body {
+.custom-video--grid .rich-text__text .text-font--body {
     margin: 0;
 }
 .rich-text__text .testimonial__meta {
