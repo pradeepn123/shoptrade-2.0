@@ -336,3 +336,19 @@
     padding-top: 0;
   }
 }
+
+.custom-button__wrapper{
+  clear: both;
+}
+.custom-button__3{
+  float:left;
+}
+.custom-button__4{  
+  float: left;    
+  margin-left: 4px;
+}
+@media(min-width: 1200px){
+  .custom-button__4{ 
+    margin-left: 27px;
+  }
+}

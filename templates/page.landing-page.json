@@ -34,7 +34,7 @@
         "button_8kthaj": {
           "type": "button",
           "settings": {
-            "button_label": "Show more",
+            "button_label": "Get in touch",
             "link": "",
             "target": false,
             "button_style": "solid",
@@ -45,7 +45,7 @@
         "button_fhWyqU": {
           "type": "button",
           "settings": {
-            "button_label": "Show more",
+            "button_label": "Our Products",
             "link": "",
             "target": false,
             "button_style": "outline",

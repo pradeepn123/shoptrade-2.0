@@ -1,38 +1,37 @@
-<toggle-group class="toggle toggle--faq  toggle--invert-color-false" style="display:block">
+<toggle-group class="toggle toggle--faq  toggle--invert-color-false {{wrapper_class}}" style="display:block">
     {%- for block in section.blocks -%}
-      {% if block.type == 'text' %}
-        {%- liquid 
-            assign options = block.settings
-            assign title = options.title
-            assign background = options.background
-            assign handle = options.handle
-        -%}
-        <toggle-tab class="toggle toggle--faq {% if block_index == 1 and open_first %}opened{% endif %} toggle--invert-color-{{ invert_selected_toggle }}" data-togglepack-alternate-arrow {{ block.shopify_attributes }}>
-            <div class="tech-stack__div-wrapper">
-                <span class="toggle__title" data-js-title tabindex="0" aria-expanded="false" role="button" aria-controls="toggle-{{ block.id }}" style="padding: 20px;background:{{background}};margin-top:0;border-bottom: 1px solid #4A4A4A">
-                    <div class="toggle__heading">
-                        <span class="tech-stack-info__title">{{ title }}</span>
-                    </div>
-                </span>
+        {% if block.type == 'text' %}
+            {%- liquid 
+                assign options = block.settings
+                assign title = options.title
+                assign background = options.background
+                assign handle = options.handle
+            -%}
+            <toggle-tab class="toggle toggle--faq {% if block_index == 1 and open_first %}opened{% endif %} toggle--invert-color-{{ invert_selected_toggle }}" data-togglepack-alternate-arrow {{ block.shopify_attributes }}>
+                <div class="tech-stack__div-wrapper">
+                    <span class="toggle__title" data-js-title tabindex="0" aria-expanded="false" role="button" aria-controls="toggle-{{ block.id }}" style="padding: 20px;background:{{background}};margin-top:0;border-bottom: 1px solid #4A4A4A">
+                        <div class="toggle__heading">
+                            <span class="tech-stack-info__title">{{ title }}</span>
+                        </div>
+                    </span>
 
-
-                <div class="tech-stack-info__image toggle__content" id="toggle-{{ block.id }}" data-js-content role="region">
-                    <div class="tech-stack-info__img">
-                        {% for block in section.blocks %}
-                            {%- liquid 
-                                assign options = block.settings
-                                assign image = options.image  
-                                assign handle_one = options.handle_one
-                            -%}
-                            {% if block.type == 'image' and handle == handle_one %}
-                                {% render 'landing-page-block-image' , block:block %}
-                            {% endif %}
-                        {% endfor %}
+                    <div class="tech-stack-info__image toggle__content" id="toggle-{{ block.id }}" data-js-content role="region">
+                        <div class="tech-stack-info__img">
+                            {% for block in section.blocks %}
+                                {%- liquid 
+                                    assign options = block.settings
+                                    assign image = options.image  
+                                    assign handle_one = options.handle_one
+                                -%}
+                                {% if block.type == 'image' and handle == handle_one %}
+                                    {% render 'landing-page-block-image', block: block %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
                     </div>
+
                 </div>
-
-            </div>
-        </toggle-tab>
+            </toggle-tab>
         {% endif %}
     {% endfor %}
 </toggle-group>

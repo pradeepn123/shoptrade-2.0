@@ -11,6 +11,15 @@
         @media(--md){
             display: none;  
         }
+        .tech_stack_arrow{
+            .tech-stack-info__arrow-bottom,
+            .toggle__icon--minus{
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
     }
     &__desktop{
         display: none;
@@ -39,7 +48,7 @@
         column-gap: 0; 
     }     
     &__title{
-        @include use-text-style('heading-2');
+        @include use-text-style('heading-3');
         font-weight: typography.$regular-weight;
         font-family: 'Gilroy-bold' !important;
         grid-column: span 1;

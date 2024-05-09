@@ -21,7 +21,7 @@
 
         <div class="tech-stack__wrapper tech-stack__mobile">     
           {%- if section.blocks.size >0 -%}
-            {% render 'landing-tech-stack-mobile', block: block , section:section %}
+            {% render 'landing-tech-stack-mobile', block: block , section:section, wrapper_class: 'tech_stack_arrow' %}
           {%- endif -%}
         </div>
     </div>

@@ -9,6 +9,11 @@
     display: none;
   }
 }
+.tech-stack__mobile .tech_stack_arrow .tech-stack-info__arrow-bottom svg,
+.tech-stack__mobile .tech_stack_arrow .toggle__icon--minus svg {
+  width: 20px;
+  height: 20px;
+}
 .tech-stack__desktop {
   display: none;
 }
@@ -88,7 +93,7 @@
 }
 .tech-stack-info__title {
   font-family: "poppins";
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   font-weight: 400;
