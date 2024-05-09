@@ -112,58 +112,267 @@
         "show_line": true
       }
     },
-    "media_with_tabs_gANk7f": {
-      "type": "media-with-tabs",
+    "image_with_text_blocks_jH9Wd8": {
+      "type": "image-with-text-blocks",
       "blocks": {
-        "text_nnN6KK": {
-          "type": "text",
+        "image_4rFJAf": {
+          "type": "image",
           "settings": {
-            "title": "Week 1: Deep Dive & Strategy",
-            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><li>Design Kick-off: Establish design direction, brand alignment, and initial design mockups.<\/li><\/ul>"
+            "image_position": "text image",
+            "image": "shopify:\/\/shop_images\/Frame_44.jpg",
+            "image_aspect_ratio": "2",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Launch Faster with Seamless Integration",
+            "text": "<p>Our team of Shopify experts possesses a deep understanding of the platform's architecture and functionalities. This expertise allows us to handle the technical complexities of integrating your MVP seamlessly with your existing Shopify store. By taking care of these technical hurdles, we free up your valuable time and resources. This frees you to focus on your core business competencies, allowing you to strategically invest your time and energy into the areas that drive your Shopify business forward. <\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "solid",
+            "button_size": "button--large",
+            "button_hover": ""
           }
         },
-        "text_9Qgg6F": {
-          "type": "text",
+        "image_NFnf4G": {
+          "type": "image",
           "settings": {
-            "title": "Weeks 2-3: Design & Prototyping",
-            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><\/ul><p><\/p>"
+            "image_position": "image text",
+            "image": "shopify:\/\/shop_images\/Frame_45.jpg",
+            "image_aspect_ratio": "2",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Make Data-Driven Decisions for Growth",
+            "text": "<p>Don't rely on assumptions when it comes to optimizing your MVP for success within the Shopify marketplace. We utilize a combination of built-in Shopify analytics and targeted user testing to gather comprehensive user data on behavior and buying patterns within your store. This data paints a clear picture of how your target audience interacts with your MVP.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
           }
         },
-        "text_jffNKb": {
-          "type": "text",
+        "image_AiGdqG": {
+          "type": "image",
           "settings": {
-            "title": "Weeks 4-6: Development, Testing and Launch",
-            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><\/ul><p><\/p>"
+            "image_position": "text image",
+            "image": "shopify:\/\/shop_images\/Frame_45_1.jpg",
+            "image_aspect_ratio": "2",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Rapid Iteration & Shopify Optimization",
+            "text": "<p>At ShopTrade, we employ an agile development approach, which allows us to break down the development process into manageable sprints. This enables us to quickly iterate on your MVP based on user feedback and Shopify data insights after each sprint. This iterative process ensures your MVP is constantly evolving and optimized for the specific needs of your target audience within the Shopify marketplace.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
           }
         }
       },
       "block_order": [
-        "text_nnN6KK",
-        "text_9Qgg6F",
-        "text_jffNKb"
+        "image_4rFJAf",
+        "image_NFnf4G",
+        "image_AiGdqG"
       ],
       "settings": {
-        "heading": "Our 6-Week MVP Process:",
+        "heading": "Fast. Data-Driven. Shopify-Ready: Your MVP Advantage with ShopTrade",
+        "seo_h_tag": "h2",
+        "spacing": 24,
+        "gutter": "large",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
+    "landingpage_tech_stack_kJWLDw": {
+      "type": "landingpage-tech-stack",
+      "blocks": {
+        "text_4zQdQw": {
+          "type": "text",
+          "settings": {
+            "title": "frontend technology",
+            "background": "#000000",
+            "handle": "1"
+          }
+        },
+        "image_6hMaBr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_169_b295d69f-7770-4017-b0a4-7a7627dd6836.png",
+            "handle_one": "1"
+          }
+        },
+        "image_9bDpxN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_518.png",
+            "handle_one": "1"
+          }
+        },
+        "image_aJwBhh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_520.png",
+            "handle_one": "1"
+          }
+        },
+        "image_86ebCA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_521.png",
+            "handle_one": "1"
+          }
+        },
+        "text_EWDqG9": {
+          "type": "text",
+          "settings": {
+            "title": "Backend technologies",
+            "background": "#000000",
+            "handle": "2"
+          }
+        },
+        "image_igNdpe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_522.png",
+            "handle_one": "2"
+          }
+        },
+        "image_jBCdeb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_177_624d4bbd-9a38-4543-8ac7-2b661d36278e.png",
+            "handle_one": "2"
+          }
+        },
+        "text_mameLh": {
+          "type": "text",
+          "settings": {
+            "title": "Frameworks",
+            "background": "#000000",
+            "handle": "3"
+          }
+        },
+        "image_3EbcVW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_166_6e2046aa-dd0b-49cc-a0b9-215e34b4b25f.png",
+            "handle_one": "3"
+          }
+        },
+        "image_LkxDy8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_235.png",
+            "handle_one": "3"
+          }
+        },
+        "image_eziX6q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_523.png",
+            "handle_one": "3"
+          }
+        },
+        "image_xjfKzJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_524.png",
+            "handle_one": "3"
+          }
+        },
+        "image_RC9tHE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_172_f5688d87-187a-4efd-a428-614b42a28f78.png",
+            "handle_one": "3"
+          }
+        },
+        "image_BdigQX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_525.png",
+            "handle_one": "3"
+          }
+        },
+        "text_DVUPgB": {
+          "type": "text",
+          "settings": {
+            "title": "Databases",
+            "background": "#000000",
+            "handle": "4"
+          }
+        },
+        "image_HG746h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_526.png",
+            "handle_one": "4"
+          }
+        },
+        "image_XHJ3DR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_527.png",
+            "handle_one": "4"
+          }
+        }
+      },
+      "block_order": [
+        "text_4zQdQw",
+        "image_6hMaBr",
+        "image_9bDpxN",
+        "image_aJwBhh",
+        "image_86ebCA",
+        "text_EWDqG9",
+        "image_igNdpe",
+        "image_jBCdeb",
+        "text_mameLh",
+        "image_3EbcVW",
+        "image_LkxDy8",
+        "image_eziX6q",
+        "image_xjfKzJ",
+        "image_RC9tHE",
+        "image_BdigQX",
+        "text_DVUPgB",
+        "image_HG746h",
+        "image_XHJ3DR"
+      ],
+      "settings": {
+        "heading": "Tech Stack",
         "seo_h_tag": "h2",
         "disable_section_title_border": false,
-        "image": "shopify:\/\/shop_images\/UX.jpg",
-        "image_aspect_ratio": "1.33333",
-        "image_position": "right",
-        "image_position_mobile": "above",
-        "image_crop": false,
-        "image_overlap": false,
-        "image_overlay": "rgba(0,0,0,0)",
-        "media_shape": "none",
-        "remove_media_border_radius": false,
-        "gutter": "grid-padding",
-        "color_scheme": "scheme1",
-        "color_scheme_card": "scheme1",
-        "remove_padding": false,
-        "title_font": "text-font--body",
-        "title_size": "30",
-        "title_weight": true,
-        "text_size": "24",
-        "open_first": true
+        "image_aspect_ratio": "1.77777"
       }
     },
     "text_columns_images_3pcaAn": {
@@ -247,6 +456,60 @@
         "disable_border": false,
         "remove_border_radius": false,
         "remove_padding": false
+      }
+    },
+    "media_with_tabs_gANk7f": {
+      "type": "media-with-tabs",
+      "blocks": {
+        "text_nnN6KK": {
+          "type": "text",
+          "settings": {
+            "title": "Week 1: Deep Dive & Strategy",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><li>Design Kick-off: Establish design direction, brand alignment, and initial design mockups.<\/li><\/ul>"
+          }
+        },
+        "text_9Qgg6F": {
+          "type": "text",
+          "settings": {
+            "title": "Weeks 2-3: Design & Prototyping",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><\/ul><p><\/p>"
+          }
+        },
+        "text_jffNKb": {
+          "type": "text",
+          "settings": {
+            "title": "Weeks 4-6: Development, Testing and Launch",
+            "body": "<ul><li>Requirement Gathering: Collaborative workshops to define your vision, target audience, and core functionalities.<\/li><li>Ideation & User Journey Mapping: Brainstorming sessions to explore concepts, user flows, and key features for your MVP.<\/li><\/ul><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_nnN6KK",
+        "text_9Qgg6F",
+        "text_jffNKb"
+      ],
+      "settings": {
+        "heading": "Our 6-Week MVP Process:",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image": "shopify:\/\/shop_images\/UX.jpg",
+        "image_aspect_ratio": "1.33333",
+        "image_position": "right",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "gutter": "grid-padding",
+        "color_scheme": "scheme1",
+        "color_scheme_card": "scheme1",
+        "remove_padding": false,
+        "title_font": "text-font--body",
+        "title_size": "30",
+        "title_weight": true,
+        "text_size": "24",
+        "open_first": true
       }
     },
     "text_columns_images_DTeicY": {
@@ -447,267 +710,12 @@
         "disable_section_bottom_border": false
       }
     },
-    "landingpage_tech_stack_kJWLDw": {
-      "type": "landingpage-tech-stack",
-      "blocks": {
-        "text_4zQdQw": {
-          "type": "text",
-          "settings": {
-            "title": "frontend technology",
-            "background": "#000000",
-            "handle": "1"
-          }
-        },
-        "image_6hMaBr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_169_b295d69f-7770-4017-b0a4-7a7627dd6836.png",
-            "handle_one": "1"
-          }
-        },
-        "image_9bDpxN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_518.png",
-            "handle_one": "1"
-          }
-        },
-        "image_aJwBhh": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_520.png",
-            "handle_one": "1"
-          }
-        },
-        "image_86ebCA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_521.png",
-            "handle_one": "1"
-          }
-        },
-        "text_EWDqG9": {
-          "type": "text",
-          "settings": {
-            "title": "Backend technologies",
-            "background": "#000000",
-            "handle": "2"
-          }
-        },
-        "image_igNdpe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_522.png",
-            "handle_one": "2"
-          }
-        },
-        "image_jBCdeb": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_177_624d4bbd-9a38-4543-8ac7-2b661d36278e.png",
-            "handle_one": "2"
-          }
-        },
-        "text_mameLh": {
-          "type": "text",
-          "settings": {
-            "title": "Frameworks",
-            "background": "#000000",
-            "handle": "3"
-          }
-        },
-        "image_3EbcVW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_166_6e2046aa-dd0b-49cc-a0b9-215e34b4b25f.png",
-            "handle_one": "3"
-          }
-        },
-        "image_LkxDy8": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_235.png",
-            "handle_one": "3"
-          }
-        },
-        "image_eziX6q": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_523.png",
-            "handle_one": "3"
-          }
-        },
-        "image_xjfKzJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_524.png",
-            "handle_one": "3"
-          }
-        },
-        "image_RC9tHE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_172_f5688d87-187a-4efd-a428-614b42a28f78.png",
-            "handle_one": "3"
-          }
-        },
-        "image_BdigQX": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_525.png",
-            "handle_one": "3"
-          }
-        },
-        "text_DVUPgB": {
-          "type": "text",
-          "settings": {
-            "title": "Databases",
-            "background": "#000000",
-            "handle": "4"
-          }
-        },
-        "image_HG746h": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_526.png",
-            "handle_one": "4"
-          }
-        },
-        "image_XHJ3DR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image_527.png",
-            "handle_one": "4"
-          }
-        }
-      },
-      "block_order": [
-        "text_4zQdQw",
-        "image_6hMaBr",
-        "image_9bDpxN",
-        "image_aJwBhh",
-        "image_86ebCA",
-        "text_EWDqG9",
-        "image_igNdpe",
-        "image_jBCdeb",
-        "text_mameLh",
-        "image_3EbcVW",
-        "image_LkxDy8",
-        "image_eziX6q",
-        "image_xjfKzJ",
-        "image_RC9tHE",
-        "image_BdigQX",
-        "text_DVUPgB",
-        "image_HG746h",
-        "image_XHJ3DR"
-      ],
+    "empty_space_wxPgBn": {
+      "type": "empty-space",
       "settings": {
-        "heading": "Tech Stack",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "image_aspect_ratio": "1.77777"
-      }
-    },
-    "image_with_text_blocks_jH9Wd8": {
-      "type": "image-with-text-blocks",
-      "blocks": {
-        "image_4rFJAf": {
-          "type": "image",
-          "settings": {
-            "image_position": "image text",
-            "image": "shopify:\/\/shop_images\/UX.jpg",
-            "image_aspect_ratio": "1.33333",
-            "image_position_mobile": "above",
-            "image_crop": false,
-            "image_overlap": false,
-            "image_overlay": "rgba(0,0,0,0)",
-            "remove_media_border_radius": false,
-            "block_heading": "Launch Faster with Seamless Integration",
-            "text": "<p>Our team of Shopify experts possesses a deep understanding of the platform's architecture and functionalities. This expertise allows us to handle the technical complexities of integrating your MVP seamlessly with your existing Shopify store. By taking care of these technical hurdles, we free up your valuable time and resources. This frees you to focus on your core business competencies, allowing you to strategically invest your time and energy into the areas that drive your Shopify business forward. <\/p>",
-            "text_font": "text-font--body",
-            "text_size": "text-size--20",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span",
-            "button_label": "",
-            "link": "",
-            "target": false,
-            "button_style": "solid",
-            "button_size": "button--large",
-            "button_hover": ""
-          }
-        },
-        "image_NFnf4G": {
-          "type": "image",
-          "settings": {
-            "image_position": "text image",
-            "image": "shopify:\/\/shop_images\/UX.jpg",
-            "image_aspect_ratio": "1.33333",
-            "image_position_mobile": "above",
-            "image_crop": false,
-            "image_overlap": false,
-            "image_overlay": "rgba(0,0,0,0)",
-            "remove_media_border_radius": false,
-            "block_heading": "Make Data-Driven Decisions for Growth",
-            "text": "<p>Don't rely on assumptions when it comes to optimizing your MVP for success within the Shopify marketplace. We utilize a combination of built-in Shopify analytics and targeted user testing to gather comprehensive user data on behavior and buying patterns within your store. This data paints a clear picture of how your target audience interacts with your MVP.<\/p>",
-            "text_font": "text-font--body",
-            "text_size": "text-size--20",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span",
-            "button_label": "",
-            "link": "",
-            "target": false,
-            "button_style": "outline",
-            "button_size": "button--regular",
-            "button_hover": "-arrow"
-          }
-        },
-        "image_AiGdqG": {
-          "type": "image",
-          "settings": {
-            "image_position": "image text",
-            "image": "shopify:\/\/shop_images\/UX.jpg",
-            "image_aspect_ratio": "1.33333",
-            "image_position_mobile": "above",
-            "image_crop": false,
-            "image_overlap": false,
-            "image_overlay": "rgba(0,0,0,0)",
-            "remove_media_border_radius": false,
-            "block_heading": "Rapid Iteration & Shopify Optimization",
-            "text": "<p>At ShopTrade, we employ an agile development approach, which allows us to break down the development process into manageable sprints. This enables us to quickly iterate on your MVP based on user feedback and Shopify data insights after each sprint. This iterative process ensures your MVP is constantly evolving and optimized for the specific needs of your target audience within the Shopify marketplace.<\/p>",
-            "text_font": "text-font--body",
-            "text_size": "text-size--20",
-            "mobile_text_size": "1",
-            "text_line_height": "text-line-height--default",
-            "seo_h_tag": "span",
-            "button_label": "",
-            "link": "",
-            "target": false,
-            "button_style": "outline",
-            "button_size": "button--regular",
-            "button_hover": "-arrow"
-          }
-        }
-      },
-      "block_order": [
-        "image_4rFJAf",
-        "image_NFnf4G",
-        "image_AiGdqG"
-      ],
-      "settings": {
-        "heading": "Fast. Data-Driven. Shopify-Ready: Your MVP Advantage with ShopTrade",
-        "seo_h_tag": "h2",
-        "spacing": 24,
-        "gutter": "large",
+        "height": "gutter--regular",
         "color_scheme": "",
-        "disable_section_bottom_border": false,
-        "color_scheme_card": "",
-        "disable_border": false,
-        "remove_border_radius": false,
-        "remove_padding": false,
-        "add_border": false,
-        "hide_block_if": false
+        "disable_section_bottom_border": true
       }
     }
   },
@@ -715,11 +723,12 @@
     "main",
     "rich_text_cyX6Wm",
     "custom_rich_block_BD6A37",
-    "media_with_tabs_gANk7f",
+    "image_with_text_blocks_jH9Wd8",
+    "landingpage_tech_stack_kJWLDw",
     "text_columns_images_3pcaAn",
+    "media_with_tabs_gANk7f",
     "text_columns_images_DTeicY",
     "content_toggles_RH68hW",
-    "landingpage_tech_stack_kJWLDw",
-    "image_with_text_blocks_jH9Wd8"
+    "empty_space_wxPgBn"
   ]
 }
