@@ -607,6 +607,108 @@
         "disable_section_title_border": false,
         "image_aspect_ratio": "1.77777"
       }
+    },
+    "image_with_text_blocks_jH9Wd8": {
+      "type": "image-with-text-blocks",
+      "blocks": {
+        "image_4rFJAf": {
+          "type": "image",
+          "settings": {
+            "image_position": "image text",
+            "image": "shopify:\/\/shop_images\/UX.jpg",
+            "image_aspect_ratio": "1.33333",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Launch Faster with Seamless Integration",
+            "text": "<p>Our team of Shopify experts possesses a deep understanding of the platform's architecture and functionalities. This expertise allows us to handle the technical complexities of integrating your MVP seamlessly with your existing Shopify store. By taking care of these technical hurdles, we free up your valuable time and resources. This frees you to focus on your core business competencies, allowing you to strategically invest your time and energy into the areas that drive your Shopify business forward. <\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "solid",
+            "button_size": "button--large",
+            "button_hover": ""
+          }
+        },
+        "image_NFnf4G": {
+          "type": "image",
+          "settings": {
+            "image_position": "text image",
+            "image": "shopify:\/\/shop_images\/UX.jpg",
+            "image_aspect_ratio": "1.33333",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Make Data-Driven Decisions for Growth",
+            "text": "<p>Don't rely on assumptions when it comes to optimizing your MVP for success within the Shopify marketplace. We utilize a combination of built-in Shopify analytics and targeted user testing to gather comprehensive user data on behavior and buying patterns within your store. This data paints a clear picture of how your target audience interacts with your MVP.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        },
+        "image_AiGdqG": {
+          "type": "image",
+          "settings": {
+            "image_position": "image text",
+            "image": "shopify:\/\/shop_images\/UX.jpg",
+            "image_aspect_ratio": "1.33333",
+            "image_position_mobile": "above",
+            "image_crop": false,
+            "image_overlap": false,
+            "image_overlay": "rgba(0,0,0,0)",
+            "remove_media_border_radius": false,
+            "block_heading": "Rapid Iteration & Shopify Optimization",
+            "text": "<p>At ShopTrade, we employ an agile development approach, which allows us to break down the development process into manageable sprints. This enables us to quickly iterate on your MVP based on user feedback and Shopify data insights after each sprint. This iterative process ensures your MVP is constantly evolving and optimized for the specific needs of your target audience within the Shopify marketplace.<\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--20",
+            "mobile_text_size": "1",
+            "text_line_height": "text-line-height--default",
+            "seo_h_tag": "span",
+            "button_label": "",
+            "link": "",
+            "target": false,
+            "button_style": "outline",
+            "button_size": "button--regular",
+            "button_hover": "-arrow"
+          }
+        }
+      },
+      "block_order": [
+        "image_4rFJAf",
+        "image_NFnf4G",
+        "image_AiGdqG"
+      ],
+      "settings": {
+        "heading": "Fast. Data-Driven. Shopify-Ready: Your MVP Advantage with ShopTrade",
+        "seo_h_tag": "h2",
+        "spacing": 24,
+        "gutter": "large",
+        "color_scheme": "",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "",
+        "disable_border": false,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "add_border": false,
+        "hide_block_if": false
+      }
     }
   },
   "order": [
@@ -617,6 +719,7 @@
     "text_columns_images_3pcaAn",
     "text_columns_images_DTeicY",
     "content_toggles_RH68hW",
-    "landingpage_tech_stack_kJWLDw"
+    "landingpage_tech_stack_kJWLDw",
+    "image_with_text_blocks_jH9Wd8"
   ]
 }

@@ -1,0 +1,81 @@
+<div class="rich-text__image {{wrapper_class}}
+    {% if block.settings.image_crop %} rich-text__image--fill {% endif %} 
+    {% unless block.settings.image_crop %} rich-text__image--fit {% endunless %}" 
+    style="padding-top:{{ 100 | divided_by: block.settings.image_aspect_ratio }}%;--border-radius-grid:{% if block.settings.remove_media_border_radius %}0{% else %}{{ settings.border_radius_grid }}{% endif %}px"
+    aria-hidden="true"
+>
+    {%- if settings.border_radius_grid > 20 and block.settings.remove_media_border_radius == false -%}
+        <style type="text/css">
+        @media screen and (max-width: 767px) {
+            #shopify-section-{{ section.id }} .rich-text__image {
+                --border-radius-grid: 20px !important;
+            }
+        }
+        </style>
+    {%- endif -%}
+
+    <div class="rich-text__image-container">
+        {%- liquid
+            if section.index == 1 and section.location == 'template'
+                assign preload = "high"
+            else
+                assign preload = false
+            endif
+            if block.settings.image_position == 'top'
+                if settings.page_boxed_layout
+                    assign sizes = 'sizes="(max-width: 1360px) 100vw, 1360px"'
+                else
+                    assign sizes = 'sizes="100vw"'
+                endif
+            else
+                assign sizes = 'size="(max-width: 767px) 100vw, '
+                if settings.page_boxed_layout
+                    assign sizes = sizes | append: '(max-width: 1360px) 50vw, 680px"'
+                else
+                    assign sizes = sizes | append: '50vw"'
+                endif
+            endif
+        -%}
+        {%- unless block.settings.video == blank -%}
+            <video-background-element class="video-background lazy-image lazy-image--background" data-id="{{ section.id }}" {% unless block.settings.image_crop %} style="padding-top:{{ 100 | divided_by: block.settings.image_aspect_ratio }}%" {% endunless %}>
+                <video autoplay muted loop playsinline>
+                    {%- for source in block.settings.video.sources -%}
+                        <source data-src="{{ source.url }}" type="{{ source.mime_type }}">
+                    {%- endfor -%}
+                </video>
+                
+                {%- unless block.settings.image == blank -%}
+                    <div data-video-background-fallback data-id="{{ section.id }}">
+                        <template>
+                            {%- render 'lazy-image', image: block.settings.image, type: 'background', sizes: sizes, preload: preload, overlay: block.settings.image_overlay -%}
+                        </template>
+                    </div>
+                {%- endunless -%}
+
+                {% unless block.settings.image_overlay == 'rgba(0,0,0,0)' %}
+                    <div class="lazy-image__overlay" style="background-color: {{ block.settings.image_overlay }}"></div>
+                {% endunless %}
+            
+                {%- if settings.image_loading != 'none' -%}
+                    <div class="lazy-image__preloader lazy-image__preloader--{{ settings.image_loading }}">
+                        {%- if settings.image_loading != 'solid' -%}
+                        <img style="opacity:1!important;image-rendering: pixelated;transition: none !important" src="{{ block.settings.image | image_url: width: 10, height: 10, crop: 'center' }}" width="10" height="10" alt="" />
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+                
+            </video-background-element>
+            <script src="{{ 'component-video-background.js' | asset_url }}" defer></script>
+        
+        {%- else -%}
+
+            {%- liquid
+                unless block.settings.image == blank
+                render 'lazy-image', image: block.settings.image, sizes: sizes, preload: preload, type: 'background', image_alignment: true, overlay: block.settings.image_overlay, prlx: true
+                else
+                echo 'detailed-apparel-1' | placeholder_svg_tag: 'onboarding-svg'
+                endunless
+            -%}
+        {%- endunless -%}
+    </div>
+</div>

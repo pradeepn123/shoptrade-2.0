@@ -1,0 +1,34 @@
+{%- case block.type %}
+    {%- when 'image' -%}
+        <h2>{{ block.settings.block_heading }}</h2>
+        <{{ block.settings.seo_h_tag }}
+            class="{{ block.settings.text_font }} {{ block.settings.text_line_height }} {{ block.settings.text_size }} rte remove-empty-space"
+            {{ block.shopify_attributes }}
+            id="block-{{ block.id }}"
+        >
+            {{ block.settings.text }}
+        </{{ block.settings.seo_h_tag }}>
+
+        {%- if block.settings.mobile_text_size != "1" -%}
+            <style tyle="text/css" style="display:none!important">
+                @media screen and (max-width: 767px) {
+                    #block-{{ block.id }} {
+                        --font-mobile-corrector: {{ block.settings.mobile_text_size }};
+                    }
+                }
+            </style>
+        {%- endif -%}
+
+        {% if block.settings.button_label != blank %}
+            <div {{ block.shopify_attributes }}>
+                {%- liquid
+                    assign button_style = block.settings.button_style | append: block.settings.button_hover 
+                    render 'button', label: block.settings.button_label, link: block.settings.link, style: button_style, class: block.settings.button_size, target: block.settings.target 
+                -%} 
+            </div>
+        {% endif %}
+
+    {%- when 'empty' -%}
+        <div {{ block.shopify_attributes }} class="{{ block.settings.height }}">&nbsp;</div>
+    
+{%- endcase %}
