@@ -76,6 +76,7 @@
         "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
         "image_aspect_ratio": "1.33333",
         "image_position": "right",
+        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
@@ -846,6 +847,7 @@
         "disable_section_title_border": false,
         "image_aspect_ratio": "1",
         "image_position": "top no-image",
+        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
@@ -865,6 +867,53 @@
         "add_border": false,
         "hide_block_if": false
       }
+    },
+    "custom_video_MbGMzj": {
+      "type": "custom-video",
+      "blocks": {
+        "text_eLKf4A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The ShopTrade Difference: In their own words<\/strong><\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--40",
+            "mobile_text_size": "1",
+            "width": "100",
+            "fixed_container_width": true,
+            "desktop_text_width": 500,
+            "text_line_height": "text-line-height--custom-small",
+            "seo_h_tag": "h2"
+          }
+        },
+        "author_YmEwfR": {
+          "type": "author",
+          "settings": {
+            "author_name": "Zenos Schmickrath",
+            "author_title": "Co - Founder, LensAdvisor & Sendif"
+          }
+        }
+      },
+      "block_order": [
+        "text_eLKf4A",
+        "author_YmEwfR"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": true,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
+        "video_mob": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
+        "add_border": false,
+        "border_color": "#000000",
+        "color_scheme": "",
+        "disable_section_bottom_border": true,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "spacing": 24,
+        "gutter": "large",
+        "width": "100"
+      }
     }
   },
   "order": [
@@ -880,6 +929,7 @@
     "content_toggles_RH68hW",
     "empty_space_wxPgBn",
     "landingpage_tech_stack_kJWLDw",
-    "rich_text_iq3BiN"
+    "rich_text_iq3BiN",
+    "custom_video_MbGMzj"
   ]
 }

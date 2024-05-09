@@ -43,7 +43,7 @@
       endif
     -%}
 
-    <div class="card__content rich-text__container 
+    <div class="card__content rich-text__container rich-text__container--{{ section.settings.left_container_width }}
       rich-text__container--image-{{ section.settings.image_position }} 
       rich-text__container--mobile-media-{{ mobile_image_position }} 
       {% unless section.settings.image_crop %} rich-text__container--mobile-image-fit {% endunless %}
@@ -154,6 +154,10 @@
           "label": "t:raw-extra-words.settings_schema.aspect_ratio.landscape"
         },
         {
+          "value": "1.5",
+          "label": "Landscape(3:2)"
+        },
+        {
           "value": "1.33333",
           "label": "t:sections.gallery.settings.aspect_ratio.options__1.label"
         },
@@ -195,6 +199,26 @@
         }
       ],
       "default": "top no-image"
+    },
+    {
+      "type": "select",
+      "id": "left_container_width",
+      "label": "Left container width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "equal",
+          "label": "Equal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "equal"
     },
     {
       "type": "select",
