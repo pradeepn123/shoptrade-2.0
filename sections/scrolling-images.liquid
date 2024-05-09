@@ -5,8 +5,8 @@
 {{ 'section-scrolling-images.css' | asset_url | stylesheet_tag }}
 
 {%- if section.blocks.size > 0 -%}
-    
-  <style type="text/css">
+
+   <style type="text/css">
     #shopify-section-{{ section.id }} .scrolling-images {
       width: calc({{ section.blocks.size }} * {{ 100 | divided_by: section.settings.columns }}%);
     }
@@ -43,6 +43,27 @@
       }
     {%- endif -%}
   </style>
+
+ {% if page.handle == 'landing-page' %}
+
+  <style>
+     #shopify-section-{{ section.id }} .scrolling-images {
+      width: calc({{ section.blocks.size }} * {{ 100 | divided_by: 5 }}%) !important;
+    }
+    .card--less-padding{
+      padding:0 15px;
+    }
+    .lazy-image img{
+      object-fit: contain !important;  
+    }
+  </style>
+
+  {%- capture sizes -%}
+    sizes="sizes="(max-width: 480px) calc(100vw - 10px), 20vw"
+  {%- endcapture %} 
+
+ {% endif %}
+
 
   {%- capture sizes -%}
     sizes="{%- if section.settings.columns == '4' or section.settings.columns == '5' or section.settings.columns == '6' -%}

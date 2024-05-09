@@ -106,18 +106,14 @@
       -ms-flex-pack: left;
           justify-content: left;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .tech-stack-info__title {
+    padding: calc(var(--setion-top-padding) * 2);
     font-family: "poppins";
     font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     font-weight: 400;
-  }
-}
-@media (min-width: 1024px) {
-  .tech-stack-info__title {
-    padding: calc(var(--setion-top-padding) * 2);
   }
 }
 .tech-stack-info__image {

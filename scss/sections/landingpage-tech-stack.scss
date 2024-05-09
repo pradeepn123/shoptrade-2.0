@@ -48,12 +48,10 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        @media(--sm){
-            @include use-text-style('heading-1');
-            font-weight: typography.$regular-weight;
-        }
         @media(--md){
             padding: calc(var(--setion-top-padding)*2);
+            @include use-text-style('heading-1');
+            font-weight: typography.$regular-weight;
         }
     }
     &__image{
