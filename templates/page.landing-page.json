@@ -911,6 +911,7 @@
         "remove_border_radius": false,
         "remove_padding": false,
         "spacing": 24,
+        "video_overlay": 0.3,
         "gutter": "large",
         "width": "100"
       }
@@ -928,7 +929,6 @@
     "text_columns_images_DTeicY",
     "content_toggles_RH68hW",
     "empty_space_wxPgBn",
-    "landingpage_tech_stack_kJWLDw",
     "rich_text_iq3BiN",
     "custom_video_MbGMzj"
   ]

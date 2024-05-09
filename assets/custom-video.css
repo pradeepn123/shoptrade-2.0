@@ -188,3 +188,12 @@ html[dir=ltr] .video-popup__close {
         padding: 60px var(--grid-padding);
     }
 }
+.video_overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}

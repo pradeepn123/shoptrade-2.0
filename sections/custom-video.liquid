@@ -145,6 +145,7 @@
                 <span aria-hidden="true" class="exit">{%- render 'theme-symbols', icon: 'close' -%}</span>
             </button>
         </video-popup>
+        <div class="video_overlay" style="opacity:{{ section.settings.video_overlay }}"></div>
     </div>
 
     <div class="rich-text__text 
@@ -391,6 +392,15 @@
         "step": 1,
         "default": 24,
         "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "video_overlay",
+        "label": "Overlay",
+        "min": 0,
+        "max": 0.5,
+        "step": 0.1,
+        "default": 0
       },
       {
         "type": "select",
