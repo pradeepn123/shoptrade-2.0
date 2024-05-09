@@ -197,6 +197,10 @@ toggle-tab.opened .toggle__title + .toggle__content {
   display: block;
 }
 
+.toggle--faq .tech-stack-info__arrow-top , .toggle--faq .tech-stack-info__arrow-bottom{
+      width: var(--section-margin);
+}
+
 @media screen and (min-width: 768px) {
   .toggle--mobile .toggle__title {
     display: none;

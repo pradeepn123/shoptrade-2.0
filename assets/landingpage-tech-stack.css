@@ -1,25 +1,27 @@
 /*!**************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./scss/sections/landingpage-tech-stack.scss ***!
   \**************************************************************************************************************************************************************************************************************************************/
-.mobile {
+.tech-stack__mobile {
   display: block;
 }
 @media (min-width: 1024px) {
-  .mobile {
+  .tech-stack__mobile {
     display: none;
   }
 }
-
-.desktop {
+.tech-stack__desktop {
   display: none;
 }
 @media (min-width: 1024px) {
-  .desktop {
+  .tech-stack__desktop {
     display: block;
   }
 }
 
 .tech-stack-info {
+  --setion-top-padding:25px;
+  --image-stack-padding: 22px 49px;
+  --image-wrap-padding: 40px 30px;
   border-bottom: 1px solid #4A4A4A;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -90,7 +92,7 @@
   font-weight: 700;
   line-height: 1.2;
   font-weight: 400;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy-bold" !important;
   grid-column: span 1;
   color: #fff;
   text-align: left;
@@ -120,7 +122,12 @@
 }
 .tech-stack-info__image {
   grid-column: span 3;
-  padding: calc(var(--section-margin) * 2) calc(var(--nav-vertical-padding) * 2);
+  padding: var(--section-margin) !important;
+}
+@media (min-width: 768px) {
+  .tech-stack-info__image {
+    padding: var(--image-wrap-padding) !important;
+  }
 }
 .tech-stack-info__img {
   display: grid;
@@ -173,6 +180,17 @@
             column-gap: 0;
   }
 }
+.tech-stack-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media (min-width: 1200px) {
   .tech-stack-info__item {
     padding: var(--image-stack-padding);
@@ -181,4 +199,9 @@
 .tech-stack-info__item img {
   -o-object-fit: contain !important;
      object-fit: contain !important;
+}
+.tech-stack-info__stack-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }

@@ -13,13 +13,13 @@
 
 <div class="tech-stack">
     <div class="tech-stack__container">
-        <div class="tech-stack__wrapper desktop">  
+        <div class="tech-stack__wrapper tech-stack__desktop">  
           {%- if section.blocks.size >0 -%}       
             {% render 'landing-tech-stack', block: block , section:section %}
           {%- endif -%}
         </div>
 
-        <div class="tech-stack__wrapper mobile">     
+        <div class="tech-stack__wrapper tech-stack__mobile">     
           {%- if section.blocks.size >0 -%}
             {% render 'landing-tech-stack-mobile', block: block , section:section %}
           {%- endif -%}
