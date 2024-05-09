@@ -1,0 +1,59 @@
+@use 'StyleComponents/mixins';
+@use 'StyleComponents/colors';
+@use 'StyleComponents/typography';
+@import 'Token';
+@import 'StyleComponents/breakpoints';
+
+
+.landing-page-header{
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: var(--grid-row-gap);
+        padding: var( --section-padding);
+    }
+    &__logo{
+        flex: 1;
+        .lazy-image {
+            padding-left: 94px !important;
+            padding-right: 85px !important;
+            @media(--xxs){
+                padding-left: 134px !important;
+            }
+            @media(--sm){
+                padding: 23px !important;
+            }
+            img{
+                width: 165px;
+                @media(--sm){
+                    width: 219px;
+                }
+            }
+        }
+    }
+    &__button-atc{
+        &:hover{
+            color: colors.$orange !important; 
+        }
+    }
+    &__button{
+        display: block !important;
+    }
+    .custom__button a{
+        font-size: 12px !important;
+        @media(--xxs){
+            font-size: 15px !important;
+        }
+        @media(--xs){
+            font-size: typography.$body-alt-size !important;
+            font-weight: typography.$regular-weight !important; 
+            font-family: 'Gilroy-bold' !important; 
+        }
+        @media(--sm){
+            font-size: typography.$heading-2-size !important;
+            font-weight: typography.$regular-weight !important; 
+            font-family: 'Gilroy-bold' !important;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{{ 'landing-page-header.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+    assign options = section.settings    
+    assign logo = options.logo_src
+    assign button = options.button_label
+    assign button_color= options.button_label_color
+    assign button_bg = options.button_background
+    assign url = options.button_link
+-%}
+
+
+<div class="landing-page-header">
+    <div class="landing-page-header__container">
+        <div class="landing-page-header__logo"> 
+            {% if logo != blank %}
+                {%- render 'lazy-image', image: logo, sizes: 'sizes="(max-width: 480px) calc(100vw - 80px), 50vw"', alt: image.alt-%}
+            {% endif %} 
+        </div>
+
+        <div class="landing-page-header__button custom__button">   
+            {% if url != blank and button != blank %}
+                <a href="{{ url }}" target="_self" class="landing-page-header__button-atc button button--solid--hover-accent button--regular" style="color: {{button_color}};background:{{button_bg}};border:1px solid {{button_bg}}"><span class="button__text">{{button}}</span></a> 
+            {% endif %} 
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Landing Page Header",
+  "settings": [ 
+    {
+      "type": "image_picker",
+      "id": "logo_src",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "color",
+      "id": "button_label_color",
+      "label": "Button Label color"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button Background color"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Landing Page Header"
+      }
+  ]
+}
+{%  endschema %}

@@ -1,5 +1,15 @@
 {
   "sections": {
+    "landing_page_header_9qmKr7": {
+      "type": "landing-page-header",
+      "settings": {
+        "logo_src": "shopify:\/\/shop_images\/shoptrade-logo.svg_fill.png",
+        "button_label": "SHEDULE A MEETING",
+        "button_label_color": "#ffffff",
+        "button_background": "#ff7121",
+        "button_link": "shopify:\/\/pages\/landing-page"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -918,6 +928,7 @@
     }
   },
   "order": [
+    "landing_page_header_9qmKr7",
     "main",
     "rich_text_cyX6Wm",
     "custom_rich_block_BD6A37",
