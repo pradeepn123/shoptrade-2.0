@@ -601,6 +601,115 @@
         "open_first": true
       }
     },
+    "rich_text_iq3BiN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_wM8z9T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Let’s turn your idea into Reality! 🚀<\/p>",
+            "text_font": "text-font--headings",
+            "text_size": "text-size--custom",
+            "mobile_text_size": "1",
+            "fixed_container_width": true,
+            "desktop_text_width": 700,
+            "text_line_height": "text-line-height--custom-medium",
+            "seo_h_tag": "h1"
+          }
+        },
+        "button_F8VjRY": {
+          "type": "button",
+          "settings": {
+            "button_label": "TALK TO AN EXPERT",
+            "link": "",
+            "target": false,
+            "button_style": "solid",
+            "fixed_button_width": true,
+            "desktop_button_width": 600,
+            "button_size": "button--regular",
+            "button_hover": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_wM8z9T",
+        "button_F8VjRY"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": false,
+        "image_aspect_ratio": "1",
+        "image_position": "top no-image",
+        "left_container_width": "equal",
+        "image_position_mobile": "above",
+        "image_crop": false,
+        "image_overlap": false,
+        "image_overlay": "rgba(0,0,0,0)",
+        "media_shape": "none",
+        "remove_media_border_radius": false,
+        "text_alignment": "horizontal-center align-content--vertical-middle",
+        "spacing": 24,
+        "gutter": "large",
+        "width": "100",
+        "color_scheme": "scheme3",
+        "disable_section_bottom_border": false,
+        "color_scheme_card": "scheme3",
+        "disable_border": true,
+        "remove_border_radius": false,
+        "remove_padding": true,
+        "add_border": false,
+        "hide_block_if": false
+      }
+    },
+    "custom_video_MbGMzj": {
+      "type": "custom-video",
+      "blocks": {
+        "text_eLKf4A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The ShopTrade Difference: In their own words<\/strong><\/p>",
+            "text_font": "text-font--body",
+            "text_size": "text-size--40",
+            "mobile_text_size": "1",
+            "width": "100",
+            "fixed_container_width": true,
+            "desktop_text_width": 500,
+            "text_line_height": "text-line-height--custom-small",
+            "seo_h_tag": "h2"
+          }
+        },
+        "author_YmEwfR": {
+          "type": "author",
+          "settings": {
+            "author_name": "Zenos Schmickrath",
+            "author_title": "Co - Founder, LensAdvisor & Sendif"
+          }
+        }
+      },
+      "block_order": [
+        "text_eLKf4A",
+        "author_YmEwfR"
+      ],
+      "settings": {
+        "heading": "",
+        "seo_h_tag": "h2",
+        "disable_section_title_border": true,
+        "text_alignment": "horizontal-left align-content--vertical-middle",
+        "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
+        "video_mob": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
+        "add_border": false,
+        "border_color": "#000000",
+        "color_scheme": "",
+        "disable_section_bottom_border": true,
+        "remove_border_radius": false,
+        "remove_padding": false,
+        "spacing": 24,
+        "video_overlay": 0.3,
+        "gutter": "large",
+        "width": "100"
+      }
+    },
     "text_columns_images_DTeicY": {
       "type": "text-columns-images",
       "blocks": {
@@ -806,115 +915,6 @@
         "color_scheme": "",
         "disable_section_bottom_border": true
       }
-    },
-    "rich_text_iq3BiN": {
-      "type": "rich-text",
-      "blocks": {
-        "text_wM8z9T": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Let’s turn your idea into Reality! 🚀<\/p>",
-            "text_font": "text-font--headings",
-            "text_size": "text-size--custom",
-            "mobile_text_size": "1",
-            "fixed_container_width": true,
-            "desktop_text_width": 700,
-            "text_line_height": "text-line-height--custom-medium",
-            "seo_h_tag": "h1"
-          }
-        },
-        "button_F8VjRY": {
-          "type": "button",
-          "settings": {
-            "button_label": "TALK TO AN EXPERT",
-            "link": "",
-            "target": false,
-            "button_style": "solid",
-            "fixed_button_width": true,
-            "desktop_button_width": 600,
-            "button_size": "button--regular",
-            "button_hover": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_wM8z9T",
-        "button_F8VjRY"
-      ],
-      "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "image_aspect_ratio": "1",
-        "image_position": "top no-image",
-        "left_container_width": "equal",
-        "image_position_mobile": "above",
-        "image_crop": false,
-        "image_overlap": false,
-        "image_overlay": "rgba(0,0,0,0)",
-        "media_shape": "none",
-        "remove_media_border_radius": false,
-        "text_alignment": "horizontal-center align-content--vertical-middle",
-        "spacing": 24,
-        "gutter": "large",
-        "width": "100",
-        "color_scheme": "scheme3",
-        "disable_section_bottom_border": false,
-        "color_scheme_card": "scheme3",
-        "disable_border": true,
-        "remove_border_radius": false,
-        "remove_padding": true,
-        "add_border": false,
-        "hide_block_if": false
-      }
-    },
-    "custom_video_MbGMzj": {
-      "type": "custom-video",
-      "blocks": {
-        "text_eLKf4A": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>The ShopTrade Difference: In their own words<\/strong><\/p>",
-            "text_font": "text-font--body",
-            "text_size": "text-size--40",
-            "mobile_text_size": "1",
-            "width": "100",
-            "fixed_container_width": true,
-            "desktop_text_width": 500,
-            "text_line_height": "text-line-height--custom-small",
-            "seo_h_tag": "h2"
-          }
-        },
-        "author_YmEwfR": {
-          "type": "author",
-          "settings": {
-            "author_name": "Zenos Schmickrath",
-            "author_title": "Co - Founder, LensAdvisor & Sendif"
-          }
-        }
-      },
-      "block_order": [
-        "text_eLKf4A",
-        "author_YmEwfR"
-      ],
-      "settings": {
-        "heading": "",
-        "seo_h_tag": "h2",
-        "disable_section_title_border": true,
-        "text_alignment": "horizontal-left align-content--vertical-middle",
-        "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
-        "video_mob": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
-        "add_border": false,
-        "border_color": "#000000",
-        "color_scheme": "",
-        "disable_section_bottom_border": true,
-        "remove_border_radius": false,
-        "remove_padding": false,
-        "spacing": 24,
-        "video_overlay": 0.3,
-        "gutter": "large",
-        "width": "100"
-      }
     }
   },
   "order": [
@@ -926,10 +926,10 @@
     "landingpage_tech_stack_kJWLDw",
     "text_columns_images_3pcaAn",
     "media_with_tabs_gANk7f",
+    "rich_text_iq3BiN",
+    "custom_video_MbGMzj",
     "text_columns_images_DTeicY",
     "content_toggles_RH68hW",
-    "empty_space_wxPgBn",
-    "rich_text_iq3BiN",
-    "custom_video_MbGMzj"
+    "empty_space_wxPgBn"
   ]
 }
