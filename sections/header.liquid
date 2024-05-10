@@ -36,6 +36,14 @@
   {% endstyle %}
 {%- endif -%}
 
+  {% if page.handle == 'landing-page' %}
+      <style>
+        .element--has-section-borders-alternate:after {
+          border-bottom: none !important;
+        }
+      </style>
+    {% endif %}
+
 <main-header id="site-header" 
   class="site-header site-header--border 
   site-header--grid-{{ section.settings.style }}

@@ -14,7 +14,9 @@
     <div class="landing-page-header__container">
         <div class="landing-page-header__logo"> 
             {% if logo != blank %}
+              <a class="logo-img " title="ShopTrade®" href="/" style="height:var(--header-logo)" data-no-instant="">
                 {%- render 'lazy-image', image: logo, sizes: 'sizes="(max-width: 480px) calc(100vw - 80px), 50vw"', alt: image.alt-%}
+              </a>
             {% endif %} 
         </div>
 
