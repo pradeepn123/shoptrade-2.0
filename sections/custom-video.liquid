@@ -103,8 +103,20 @@
 
             <template>
                 <div class="home_banner_video">
-                    <div class="home_banner_video_desk">  {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} </div>
-                    <div class="home_banner_video_mob">  {{ section.settings.video_mob | default: section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} </div>
+                    <div class="home_banner_video_desk"> 
+                        {%- if section.settings.video_url != blank -%}
+                            <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" data-video class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                            {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
+                        {%- endif -%} 
+                    </div>
+                    <div class="home_banner_video_mob"> 
+                        {%- if section.settings.video_url != blank -%}
+                            <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1" data-video class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                            {{ section.settings.video_mob | default: section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
+                        {%- endif -%} 
+                    </div>
                 </div>
             </template>
 
@@ -325,14 +337,25 @@
         "content": "t:raw-extra-words.settings_schema.labels.content"
       },
       {
+        "type": "video_url",
+        "id": "video_url",
+        "accept": [
+          "youtube"
+        ],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "label": "YouTube Video Link",
+        "placeholder": "t:sections.video.settings.video_url.placeholder",
+        "info": "Overrides all other links."
+      },
+      {
         "id": "video",
         "type": "video",
-        "label": "video desktop" 
+        "label": "video desktop (Shopify)" 
       },
       {
         "id": "video_mob", 
         "type": "video",
-        "label": "video mobile" 
+        "label": "video mobile (Shopify)" 
       },
       {
         "type": "checkbox",
