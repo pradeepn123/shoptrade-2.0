@@ -6,6 +6,7 @@
 
 
 .landing-page-header{
+    --button-padding:16px 24px;
     &__container{
         display: flex;
         justify-content: space-between;
@@ -33,6 +34,9 @@
         }
     }
     &__button-atc{
+        @media(--sm){
+            padding: var(--button-padding);
+        }
         &:hover{
             color: colors.$orange !important; 
         }
@@ -51,7 +55,7 @@
             font-family: 'Gilroy-bold' !important; 
         }
         @media(--sm){
-            font-size: typography.$heading-2-size !important;
+            font-size: typography.$heading-3-size !important;
             font-weight: typography.$regular-weight !important; 
             font-family: 'Gilroy-bold' !important;
         }

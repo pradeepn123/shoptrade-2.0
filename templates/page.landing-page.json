@@ -35,9 +35,9 @@
         "text_Hinqiy": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements or welcome customers to your store.<\/p>",
+            "text": "<p>At <strong>ShopTrade<\/strong>, we specialize in crafting <strong>Full-fledged Minimum Viable Products <\/strong>(MVPs) that allow you to attract early-adopter customers and validate your product concept swiftly.<\/p>",
             "text_font": "text-font--body",
-            "text_size": "text-size--30",
+            "text_size": "text-size--20",
             "mobile_text_size": "1",
             "fixed_container_width": false,
             "desktop_text_width": 400,
@@ -470,8 +470,7 @@
       "settings": {
         "heading": "Tech Stack",
         "seo_h_tag": "h2",
-        "disable_section_title_border": false,
-        "image_aspect_ratio": "1.77777"
+        "disable_section_title_border": false
       }
     },
     "text_columns_images_3pcaAn": {
