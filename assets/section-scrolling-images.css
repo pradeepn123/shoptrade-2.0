@@ -4,8 +4,7 @@
 
 .scrolling-images-parent {
   display: flex;
-  overflow: hidden;  
-  padding-bottom: 15px;
+  overflow: hidden;
 }
 
 .scrolling-images {

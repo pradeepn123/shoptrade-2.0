@@ -53,6 +53,9 @@
     #element-{{ section.id }} .lazy-image img{
       object-fit: contain !important;  
     }
+    .scrolling-images-parent {
+      padding-bottom: 15px;
+    }
     @media(min-width:1200px){
       #shopify-section-{{ section.id }} .scrolling-images {
         width: calc({{ section.blocks.size }} * {{ 100 | divided_by: 5 }}%) !important;
