@@ -20,7 +20,7 @@
 {%- if show_section -%}
 
   {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
-  {{ 'section-rich-text-adddon.css' | asset_url | stylesheet_tag }}
+  {% comment %} {{ 'section-rich-text-adddon.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
   {%- render 'section-heading', heading: section.settings.heading, seo_h_tag: section.settings.seo_h_tag, hide_border: section.settings.disable_section_title_border -%}
 
