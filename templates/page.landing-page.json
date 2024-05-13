@@ -26,6 +26,8 @@
             "text_font": "text-font--headings",
             "text_size": "text-size--80",
             "mobile_text_size": "1",
+            "fixed_container_width": false,
+            "desktop_text_width": 400,
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "h2"
           }
@@ -37,6 +39,8 @@
             "text_font": "text-font--body",
             "text_size": "text-size--20",
             "mobile_text_size": "1",
+            "fixed_container_width": false,
+            "desktop_text_width": 400,
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "span"
           }
@@ -48,6 +52,8 @@
             "link": "",
             "target": false,
             "button_style": "solid",
+            "fixed_button_width": false,
+            "desktop_button_width": 400,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -59,6 +65,8 @@
             "link": "",
             "target": false,
             "button_style": "outline",
+            "fixed_button_width": false,
+            "desktop_button_width": 400,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -78,6 +86,7 @@
         "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
         "image_aspect_ratio": "1.33333",
         "image_position": "right",
+        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
@@ -436,6 +445,57 @@
             "image": "shopify:\/\/shop_images\/image_527.png",
             "handle_one": "4"
           }
+        },
+        "text_QTfJQK": {
+          "type": "text",
+          "settings": {
+            "title": "Cloud platform services",
+            "background": "#000000",
+            "handle": "5"
+          }
+        },
+        "image_PCixaG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_528.png",
+            "handle_one": "5"
+          }
+        },
+        "image_d6U7et": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_233.png",
+            "handle_one": "5"
+          }
+        },
+        "image_gziBAg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_529.png",
+            "handle_one": "5"
+          }
+        },
+        "text_a9nbjH": {
+          "type": "text",
+          "settings": {
+            "title": "Shopify platform services",
+            "background": "#000000",
+            "handle": "6"
+          }
+        },
+        "image_fXrAGk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1000005663.png",
+            "handle_one": "6"
+          }
+        },
+        "image_9krhxP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_234.png",
+            "handle_one": "6"
+          }
         }
       },
       "block_order": [
@@ -456,7 +516,14 @@
         "image_BdigQX",
         "text_DVUPgB",
         "image_HG746h",
-        "image_XHJ3DR"
+        "image_XHJ3DR",
+        "text_QTfJQK",
+        "image_PCixaG",
+        "image_d6U7et",
+        "image_gziBAg",
+        "text_a9nbjH",
+        "image_fXrAGk",
+        "image_9krhxP"
       ],
       "settings": {
         "heading": "Tech Stack",
@@ -611,6 +678,8 @@
             "text_font": "text-font--headings",
             "text_size": "text-size--custom",
             "mobile_text_size": "1",
+            "fixed_container_width": false,
+            "desktop_text_width": 400,
             "text_line_height": "text-line-height--custom-medium",
             "seo_h_tag": "h1"
           }
@@ -622,6 +691,8 @@
             "link": "shopify:\/\/pages\/contact-us",
             "target": false,
             "button_style": "solid",
+            "fixed_button_width": false,
+            "desktop_button_width": 400,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -637,6 +708,7 @@
         "disable_section_title_border": false,
         "image_aspect_ratio": "1",
         "image_position": "top no-image",
+        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
