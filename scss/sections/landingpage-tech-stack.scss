@@ -81,6 +81,7 @@
             @include mixins.grid(4,100px,100px);  
             column-gap: calc(var(--nav-vertical-padding)*2);
             row-gap: var(--grid-column-gap);
+            padding: 0 var(--section-padding);
         }
         @media(--md-large){
             column-gap: 0;

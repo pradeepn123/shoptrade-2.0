@@ -172,6 +172,7 @@
        -moz-column-gap: calc(var(--nav-vertical-padding) * 2);
             column-gap: calc(var(--nav-vertical-padding) * 2);
     row-gap: var(--grid-column-gap);
+    padding: 0 var(--section-padding);
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {

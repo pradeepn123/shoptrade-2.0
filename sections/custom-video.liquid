@@ -9,61 +9,45 @@
     height: 100%;
     object-fit: cover;
   }
-
   .home_banner_video_auto-play.video_auto-play--{{ section.id }} video{
     height:100%;
   }
-
   .home_banner_video_auto-play.video_auto-play--{{ section.id }} video{
     width: 100%;
     object-fit: cover;
   }
-
-
   {% if section.settings.remove_border_radius == false or section.settings.remove_padding == false %} 
-
-  .home_banner_video_auto-play.video_auto-play--{{ section.id }}{
-       padding: 20px; 
-       padding-bottom: 0px;
-    
-  } 
-
-  .home_banner_video_auto-play.video_auto-play--{{ section.id }} video{
-      border-radius: 20px;
-      border: 1px solid #000;
-  }
-
-
-  .thubnail_image_video figure img{
-      padding: 20px !important;
-      padding-bottom: 7px !important;
-      border-radius: 30px !important;
-     
-  }
-
+    .home_banner_video_auto-play.video_auto-play--{{ section.id }}{
+        padding: 20px; 
+        padding-bottom: 0px;
+      
+    }
+    .home_banner_video_auto-play.video_auto-play--{{ section.id }} video{
+        border-radius: 20px;
+        border: 1px solid #000;
+    }
+    .thubnail_image_video figure img{
+        padding: 20px !important;
+        padding-bottom: 7px !important;
+        border-radius: 30px !important;
+    }
   {% endif %}
 
   .home_banner_video_desk{
     display: none;
     height: 100%;
   }
-
   .home_banner_video_mob{
     display: block;
     height: 100%;
   }
-  
-
   @media(min-width: 768px){
     .section-{{ section.id }} .video-popup__container.card__image{
       height:100%;
     }
- 
-
     .home_banner_video_auto-play.video_auto-play--{{ section.id }} video{
        height:100%;
     }
-
     .home_banner_video_desk{
       display: block;
       height: 100%;
@@ -72,7 +56,6 @@
      display: none;
      height: 100%;
     }
-    
   }
 {% endstyle %}
 
@@ -103,20 +86,16 @@
 
             <template>
                 <div class="home_banner_video">
-                    <div class="home_banner_video_desk"> 
-                        {%- if section.settings.video_url != blank -%}
-                            <iframe src="https://www.youtube.com/embed/{{section.settings.video_url.id}}?autoplay=1" data-video class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
-                        {%- else -%}
-                            {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
-                        {%- endif -%} 
+                  {%- if section.settings.video_url != blank -%}
+                    <iframe src="https://www.youtube.com/embed/{{section.settings.video_url.id}}?autoplay=1" data-video class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+                  {%- else -%}
+                    <div class="home_banner_video_desk">
+                      {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
                     </div>
                     <div class="home_banner_video_mob"> 
-                        {%- if section.settings.video_url != blank -%}
-                            <iframe src="https://www.youtube.com/embed/{{section.settings.video_url.id}}?autoplay=1" data-video class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
-                        {%- else -%}
-                            {{ section.settings.video_mob | default: section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
-                        {%- endif -%} 
+                      {{ section.settings.video_mob | default: section.settings.video | video_tag: autoplay: true, loop: true, muted: true , controls: true, width: '100%' , height : '100%' }} 
                     </div>
+                  {%- endif -%} 
                 </div>
             </template>
 
@@ -136,7 +115,7 @@
                 {%- endif -%}
 
                 {%- unless section.settings.image == blank -%}
-                    <span class="video-popup__background " aria-hidden="true">
+                    <span class="video-popup__background" aria-hidden="true">
                     {%- liquid
                         assign sizes = 'sizes="100vw"'
                         render 'lazy-image', image: section.settings.image, type: 'background', alt: section.settings.title, preload: preload, sizes: sizes, image_alignment: true
