@@ -3,6 +3,7 @@
   \***********************************************************************************************************************************************************************************************************************************/
 .landing-page-header {
   --button-padding:16px 24px;
+  --header-padding: 18px 20px;
 }
 .landing-page-header__container {
   display: -webkit-box;
@@ -15,7 +16,7 @@
       -ms-flex-align: center;
           align-items: center;
   row-gap: var(--grid-row-gap);
-  padding: var(--section-padding);
+  padding: var(--header-padding);
 }
 .landing-page-header__logo {
   -webkit-box-flex: 1;

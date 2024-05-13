@@ -35,6 +35,7 @@
     --setion-top-padding:25px;
     --image-stack-padding: 22px 49px;
     --image-wrap-padding: 40px 30px;
+    --title-common-padding: 16px;
 
     border-bottom: 1px solid colors.$black-100;       
     @include mixins.grid(2,100px,100px);   
@@ -58,9 +59,12 @@
         align-items: center;
         justify-content: left;
         @media(--md){
-            padding: calc(var(--setion-top-padding)*2);
+            padding: var(--title-common-padding);
             @include use-text-style('heading-1');
             font-weight: typography.$regular-weight;
+        }
+        @media(--md-large){
+            padding: calc(var(--setion-top-padding)*2);
         }
     }
     &__image{

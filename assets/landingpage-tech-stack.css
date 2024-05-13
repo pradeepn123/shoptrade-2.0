@@ -27,6 +27,7 @@
   --setion-top-padding:25px;
   --image-stack-padding: 22px 49px;
   --image-wrap-padding: 40px 30px;
+  --title-common-padding: 16px;
   border-bottom: 1px solid #4A4A4A;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -113,12 +114,17 @@
 }
 @media (min-width: 1024px) {
   .tech-stack-info__title {
-    padding: calc(var(--setion-top-padding) * 2);
+    padding: var(--title-common-padding);
     font-family: "poppins";
     font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     font-weight: 400;
+  }
+}
+@media (min-width: 1200px) {
+  .tech-stack-info__title {
+    padding: calc(var(--setion-top-padding) * 2);
   }
 }
 .tech-stack-info__image {

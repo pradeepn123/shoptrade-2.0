@@ -7,12 +7,13 @@
 
 .landing-page-header{
     --button-padding:16px 24px;
+    --header-padding: 18px 20px;
     &__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         row-gap: var(--grid-row-gap);
-        padding: var( --section-padding);
+        padding: var(--header-padding);
     }
     &__logo{
         flex: 1;
