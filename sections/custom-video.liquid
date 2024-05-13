@@ -128,7 +128,7 @@
 
                     <div class="video-popup__overlay-content remove-empty-space">
                     {%- unless section.settings.video == blank -%}
-                        <span class="video-popup__play" aria-hidden="true" onclick="playYouTubeVideo('{{ section.settings.video_url.id }}')">
+                        <span class="video-popup__play" aria-hidden="true">
                         {%- render 'theme-symbols', icon: 'play-white' -%}
                         </span>
                     {%- endunless -%}
