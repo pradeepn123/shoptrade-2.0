@@ -26,9 +26,11 @@
               );
     }
 }
-.text-font--headings, .text-font--body{
-    max-width: var(--desktop-text-width);
-    margin: 0 auto;
+@media screen and (min-width: 768px) {
+    .text-font--headings, .text-font--body{
+        max-width: var(--desktop-text-width);
+        margin: 0 auto;
+    }
 }
 .rich-text__text .flex.button--full-width {
     max-width: var(--desktop-button-width);

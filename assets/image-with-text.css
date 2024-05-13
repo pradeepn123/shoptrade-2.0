@@ -99,5 +99,6 @@
 @media (min-width: 768px) {
   .image-with-text-blocks__image-right .image-with-text-blocks__text {
     padding: var(--image-text-gutter);
+    padding-right: 0;
   }
 }

@@ -9,8 +9,14 @@
     assign url = options.button_link
 -%}
 
+{%- style -%}
+.landing-page-header--{{ section.id }} .lazy-image[data-ratio] img {
+  object-fit: contain;
+}
+{% endstyle %}
 
-<div class="landing-page-header">
+
+<div class="landing-page-header landing-page-header--{{ section.id }}">
     <div class="landing-page-header__container">
         <div class="landing-page-header__logo"> 
             {% if logo != blank %}

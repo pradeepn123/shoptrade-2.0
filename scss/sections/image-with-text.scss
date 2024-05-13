@@ -52,6 +52,7 @@
         .image-with-text-blocks__text {
             @media(--sm){
                 padding: var(--image-text-gutter);
+                padding-right: 0;
             }
         }
     }

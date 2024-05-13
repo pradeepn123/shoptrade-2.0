@@ -678,8 +678,8 @@
             "text_font": "text-font--headings",
             "text_size": "text-size--custom",
             "mobile_text_size": "1",
-            "fixed_container_width": false,
-            "desktop_text_width": 400,
+            "fixed_container_width": true,
+            "desktop_text_width": 700,
             "text_line_height": "text-line-height--custom-medium",
             "seo_h_tag": "h1"
           }
@@ -691,8 +691,8 @@
             "link": "shopify:\/\/pages\/contact-us",
             "target": false,
             "button_style": "solid",
-            "fixed_button_width": false,
-            "desktop_button_width": 400,
+            "fixed_button_width": true,
+            "desktop_button_width": 600,
             "button_size": "button--regular",
             "button_hover": ""
           }
