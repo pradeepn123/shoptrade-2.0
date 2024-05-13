@@ -26,8 +26,6 @@
             "text_font": "text-font--headings",
             "text_size": "text-size--80",
             "mobile_text_size": "1",
-            "fixed_container_width": false,
-            "desktop_text_width": 400,
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "h2"
           }
@@ -39,8 +37,6 @@
             "text_font": "text-font--body",
             "text_size": "text-size--20",
             "mobile_text_size": "1",
-            "fixed_container_width": false,
-            "desktop_text_width": 400,
             "text_line_height": "text-line-height--default",
             "seo_h_tag": "span"
           }
@@ -52,8 +48,6 @@
             "link": "",
             "target": false,
             "button_style": "solid",
-            "fixed_button_width": false,
-            "desktop_button_width": 400,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -65,8 +59,6 @@
             "link": "",
             "target": false,
             "button_style": "outline",
-            "fixed_button_width": false,
-            "desktop_button_width": 400,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -86,7 +78,6 @@
         "video": "shopify:\/\/files\/videos\/shoptrade homepage(4.1mb).mp4",
         "image_aspect_ratio": "1.33333",
         "image_position": "right",
-        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,
@@ -620,8 +611,6 @@
             "text_font": "text-font--headings",
             "text_size": "text-size--custom",
             "mobile_text_size": "1",
-            "fixed_container_width": true,
-            "desktop_text_width": 700,
             "text_line_height": "text-line-height--custom-medium",
             "seo_h_tag": "h1"
           }
@@ -633,8 +622,6 @@
             "link": "",
             "target": false,
             "button_style": "solid",
-            "fixed_button_width": true,
-            "desktop_button_width": 600,
             "button_size": "button--regular",
             "button_hover": ""
           }
@@ -650,7 +637,6 @@
         "disable_section_title_border": false,
         "image_aspect_ratio": "1",
         "image_position": "top no-image",
-        "left_container_width": "equal",
         "image_position_mobile": "above",
         "image_crop": false,
         "image_overlap": false,

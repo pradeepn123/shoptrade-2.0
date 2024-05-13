@@ -47,15 +47,24 @@
  {% if page.handle == 'landing-page' %}
 
   <style>
-     #shopify-section-{{ section.id }} .scrolling-images {
-      width: calc({{ section.blocks.size }} * {{ 100 | divided_by: 5 }}%) !important;
-    }
     .card--less-padding{
       padding:0 15px;
     }
     .lazy-image img{
       object-fit: contain !important;  
     }
+    @media(min-width:1200px){
+      #shopify-section-{{ section.id }} .scrolling-images {
+        width: calc({{ section.blocks.size }} * {{ 100 | divided_by: 5 }}%) !important;
+      }
+      .card--less-padding{
+        padding:0 32px;
+      }
+    }
+    .scrolling-images--cell {
+      padding-top: calc({{ 100 | divided_by: section.settings.image_aspect_ratio }}% / 1.5) !important;
+    }
+    
   </style>
 
   {%- capture sizes -%}
@@ -115,15 +124,13 @@
 
           <div class="element--overflow-hidden">
             <div class="scrolling-images--cell card__image"
-              style="padding-top:{{ 100 | divided_by: section.settings.image_aspect_ratio }}%"
+              style="padding-top: {{ 100 | divided_by: section.settings.image_aspect_ratio }}%"
             >
-
               {%- if block.settings.image == blank -%}
                 <span class="onboarding-svg onboarding-svg--background" id="block-{{ block.id }}">{{ 'product-apparel-1' | placeholder_svg_tag }}</span>
               {%- else -%}              
                 {%- render 'lazy-image', type: 'background', image: block.settings.image, sizes: sizes, preload: preload, hover_animation: add_hover_animation -%}
               {%- endif -%}
-          
             </div>
           </div>
 
